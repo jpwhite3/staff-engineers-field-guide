@@ -9,3 +9,5 @@ for f in REWRITTEN_FILES:
     original_file = Path(str(f).replace(REWRITTEN_FILE_SUFFIX, ".md"))
     if original_file.is_file():
         print(f"Deleting {original_file} ...")
+        original_file.unlink()
+        f.rename(original_file)
