@@ -1,110 +1,121 @@
----
-title: "Tell, Don't Ask"
-date: "2015-03-03"
-description: The Tell, Don't Ask (TDA) principle suggests that it is better to issue an object a command to perform some operation or logic, rather than to query its state and then take some action as a result.
----
+```markdown
+# Tell, Don't Ask: Designing for Predictability and Flexibility
 
-The Tell, Don't Ask (TDA) principle suggests that it is better to issue an object a command do perform some operation or logic, rather than to query its state and then take some action as a result. It is related to the [Flags Over Objects](/antipatterns/flags-over-objects) antipattern as well as the [Anemic Domain Model](/domain-driven-design/anemic-model/) antipattern. You can easily spot violations of TDA in code that queries or uses several properties of an object in order to perform some calculation. This is especially problematic when the same kind of calculation is done in many places (violating the [Don't Repeat Yourself](/principles/dont-repeat-yourself/) principle), but can represent a design deficiency even if it only occurs in one location in the current codebase.
+## Introduction
 
-## Example
+The "Tell, Don't Ask" (TDA) principle is a cornerstone of robust software design, particularly relevant for building systems that are adaptable, maintainable, and less prone to unexpected behavior. At its core, TDA advocates for issuing commands to objects, instructing them *what* to do, rather than querying the object’s internal state to determine *if* an action should be taken. Violating this principle can lead to brittle systems where changes in internal state trigger cascading, often undocumented, changes throughout your codebase. Consider a financial trading system: a slight change in market conditions could trigger a chain reaction of automated trades, leading to significant financial losses if the underlying logic isn’t carefully designed. TDA is deeply intertwined with the Anemic Domain Model antipattern, and strongly supports the Don't Repeat Yourself (DRY) principle. Understanding and applying TDA is a critical skill for staff-level engineers, enabling them to build systems that can gracefully handle evolving requirements.
 
-``` java
-// Violates TDA
-public class CpuMonitor
-{
-    public int Value { get; set; }
-}
+## The Problem with Asking
 
-public class Client
-{
-    public void AlertService(List<CpuMonitor> cpuMonitors)
-    {
-        foreach (var cpuMonitor in cpuMonitors)
-        {
-            if (cpuMonitor.Value > 90)
-            {
-                // alert
-            }
-        }
-    }
-}
-```
+Let’s consider a simplified example: a temperature monitoring system for a server room. Traditionally, you might have a `ServerTemperature` object with a `currentTemperature` property. Your application code then queries the `currentTemperature` to decide whether to send an alert if it exceeds a threshold. This approach creates several problems.
 
-```java
-// Refactored
-public class CpuMonitor
-{
-    private readonly int _alertThreshold;
+1.  **Tight Coupling:** The application is tightly coupled to the internal state of the `ServerTemperature` object. Any changes to the internal representation of temperature (e.g., a change in sensor accuracy, or a change in how the temperature is measured) will require modifications throughout the application.
 
-    public CpuMonitor(int alertThreshold)
-    {
-        _alertThreshold = alertThreshold;
-    }
+2.  **Hidden Dependencies:** The application code doesn’t explicitly know *how* the `currentTemperature` is determined. This makes it harder to reason about the system’s behavior and increases the risk of introducing bugs.
 
-    public int Value { get; set; }
-    public bool ExceedsThreshold {  get { return Value >= _alertThreshold; } }
-}
+3.  **Violation of DRY:** The logic for determining when an alert should be triggered is often duplicated across multiple locations in the application.
 
-public class Client
-{
-    public void AlertService(List<CpuMonitor> cpuMonitors)
-    {
-        foreach (var cpuMonitor in cpuMonitors)
-        {
-            if (cpuMonitor.ExceedsThreshold)
-            {
-                // alert
-            }
-        }
-    }
-}
-```
+## Real-World Examples & Scenarios
+
+Let's explore how this principle applies across different domains:
+
+*   **Financial Trading:**  Imagine a high-frequency trading system. Instead of repeatedly querying the state of an `Order` object to determine if it should be executed based on price fluctuations, the system should *tell* the order to execute, specifying the price and quantity. This eliminates the risk of hidden dependencies and ensures that order execution is predictable.
+
+*   **Medical Device Monitoring:**  Consider a device monitoring a patient’s vital signs. Instead of repeatedly querying the device's internal sensors, the device should *tell* the monitoring system when a value exceeds a threshold, allowing for immediate action.
+
+*   **E-commerce Cart Management:**  Suppose a system tracks items in a customer's shopping cart. Instead of repeatedly checking if the quantity of a product in the cart exceeds the stock level, the system should *tell* the product management system to update the stock level when an item is purchased.
+
+## Refactoring for TDA
+
+Let’s refactor the simplified example to illustrate the application of TDA:
+
+**Original Code (Violates TDA):**
 
 ```java
-// Refactored Further
-public class CpuMonitor
+public class ServerTemperature
 {
-    private readonly int _alertThreshold;
-    private readonly Action<CpuMonitor> _alertAction;
+    private int currentTemperature;
+    private int alertThreshold;
 
-    public CpuMonitor(int alertThreshold, Action<CpuMonitor> alertAction)
+    public ServerTemperature(int alertThreshold)
     {
-        _alertThreshold = alertThreshold;
-        _alertAction = alertAction;
+        this.alertThreshold = alertThreshold;
     }
 
-    public int Value { get; set; }
-    public bool ExceedsThreshold { get { return Value >= _alertThreshold; } }
-
-    public void Sample()
+    public int GetCurrentTemperature()
     {
-        if (ExceedsThreshold)
+        // Assume some logic to read the temperature from the sensor
+        return currentTemperature;
+    }
+
+    public void SendAlert()
+    {
+        if (GetCurrentTemperature() > alertThreshold)
         {
-            _alertAction(this);
+            System.out.println("Temperature alert!");
         }
     }
 }
 
 public class Client
 {
-    public void AlertService(List<CpuMonitor> cpuMonitors)
+    public void MonitorTemperature(ServerTemperature temperature)
     {
-        foreach (var cpuMonitor in cpuMonitors)
+        while (true)
         {
-            cpuMonitor.Sample();
+            temperature.SendAlert();
+            // Do other work...
         }
     }
 }
 ```
 
-In the example above, the first refactoring looks at the magic number representing the alert threshold, and moves this concept into the monitor itself. This might not be worth correcting if this client code were the only instance of this behavior, but if you find repetition in this kind of code, follow the [Don't Repeat Yourself](/principles/dont-repeat-yourself/) principle and consolidate it into a class (in this case, CpuMonitor). The initial refactoring is still querying each monitor and then performing some action based on that query, and so is still asking, not telling. The final refactoring moves the responsibility for sending alerts into the monitor itself, while still avoiding tightly coupling it to any particular alert implementation. In this way, monitor remains loosely coupled from whatever alert implementation the system might have in place.
+**Refactored Code (Enforces TDA):**
 
-It's not necessary to follow the "don't ask" part of this principle to the extreme of eliminating all access to objects' state. In general, it's ok to query an object for its state, provided the information isn't being used to make a decision related to the object. If it is, then that decision and any corresponding behavior should most likely be moved within the object itself. Another consequence of violating TDA is that often magic numbers or business rules end up sprinkled throughout code that references object state, rather than embedded within the object itself or passed into the object as a defined and well-named construct (such as CpuAlertThreshold in the example above).
+```java
+public class ServerTemperature
+{
+    private int alertThreshold;
 
-## See Also
+    public ServerTemperature(int alertThreshold)
+    {
+        this.alertThreshold = alertThreshold;
+    }
 
-[Anemic Model](/domain-driven-design/anemic-model/)
+    public void SendAlert()
+    {
+        if (GetCurrentTemperature() > alertThreshold)
+        {
+            System.out.println("Temperature alert!");
+        }
+    }
+}
 
-## References
+public class Client
+{
+    public void MonitorTemperature(ServerTemperature temperature)
+    {
+        temperature.SendAlert();
+    }
+}
+```
 
-[Tell Don't Ask on C2 Wiki](http://c2.com/cgi/wiki?TellDontAsk)
+Notice how the `Client` now simply *calls* the `SendAlert()` method on the `ServerTemperature` object. It doesn’t need to know *how* the alert is triggered – it just tells the object to do it.
+
+## Advanced Considerations & Best Practices
+
+*   **Command Objects:** For complex actions, consider using Command objects to encapsulate the command and its associated data. This allows you to decouple the client code from the specific implementation details of the command.
+
+*   **Event-Driven Architectures:**  TDA aligns well with event-driven architectures, where objects *emit* events rather than being queried for their state.
+
+*   **Guard Clauses:**  Use guard clauses to handle potential errors or invalid states gracefully, avoiding the need to query the object's state.
+
+## Conclusion
+
+The "Tell, Don't Ask" principle is a fundamental design pattern that promotes predictability, flexibility, and maintainability. By issuing commands instead of queries, you create systems that are more robust, easier to understand, and less prone to unexpected behavior. Mastering TDA is a critical skill for any staff-level engineer, allowing you to build systems that are truly resilient and adaptable to change.
+
+## Resources
+
+*   [Tell Don't Ask on C2 Wiki](http://c2.com/cgi/wiki?TellDontAsk)
+*   [Martin Fowler’s Site](https://martinfowler.com/principles.html)
+```

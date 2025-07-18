@@ -1,24 +1,48 @@
----
-title: "Explicit Dependencies Principle"
+```markdown
+# Explicit Dependencies Principle
+
 date: "2014-11-26"
 description: The Explicit Dependencies Principle states that methods and classes should explicitly require (typically through method parameters or constructor parameters) any collaborating objects they need in order to function correctly.
+
 ---
 
-The _**Explicit Dependencies Principle**_ states:
+As a staff engineer, you're constantly battling systems that are overly complex, brittle, and difficult to maintain. A key contributor to these problems is often a lack of clear dependency management. The Explicit Dependencies Principle offers a straightforward solution: make your code’s needs explicit. This isn’t just about following a rule; it’s about building systems that are more resilient, testable, and ultimately, easier to evolve. Failure to adhere to this principle results in a codebase that’s a tangled mess of implicit relationships—a “new is glue” scenario where components are tightly coupled, making it difficult to understand, change, or reuse them.
 
-_**Methods and classes should explicitly require (typically through method parameters or constructor parameters) any collaborating objects they need in order to function correctly.**_
+## The Problem with Implicit Dependencies
 
-If your classes require other classes to perform their operations, these other classes are dependencies.  These dependencies are implicit if they exist only in the code within your class, and not in its public interface.  Explicit dependencies appear most often in an object's constructor, for class-level dependencies, or in a particular method's parameter list, for more local dependencies.
+When dependencies are implicit – meaning a class relies on another through mechanisms like static variables or global objects – it creates a fragile system. Imagine a large application with dozens of classes, each potentially relying on a shared static variable. Now, a small change in one class can ripple through the entire system, leading to unexpected bugs and a significant amount of rework. Testing becomes exponentially harder because you have to mock and stub *everything* that might be affected, a process known as "dependency hell.”  These implicit dependencies also introduce "god classes" – monstrously large classes that handle too much, making them the single point of failure for your application. Without explicit dependencies, you’re essentially building a house of cards—one slight disturbance, and it all collapses.
 
-Classes with implicit dependencies cost more to maintain than those with explicit dependencies.  They are more difficult to test because they are more tightly coupled to their collaborators.  They are more difficult to analyze for side effects, because the entire class's codebase must be searched for object instantiations or calls to static methods.  They are more brittle and more tightly coupled to their collaborators, resulting in more rigid and brittle designs.
+## Understanding the Principle
 
-Classes with explicit dependencies are more honest.  They state very clearly what they require in order to perform their particular function.  They tend to follow the [Principle of Least Surprise](http://en.wikipedia.org/wiki/Principle_of_least_astonishment) by not affecting parts of the application they didn't explicitly demonstrate they needed to affect.  Explicit dependencies can easily be swapped out with other implementations, whether in production or during testing or debugging.  This makes them much easier to maintain and far more open to change.
+The Explicit Dependencies Principle states that methods and classes should explicitly require any collaborating objects they need in order to function correctly. This typically means using constructor parameters or method parameters to pass in the objects your class needs. This doesn’t mean you're creating unnecessary coupling – it’s about making the relationships clear and manageable.
 
-The Explicit Dependencies Principle is closely related to the [Dependency Inversion Principle](/principles/dependency-inversion-principle) and the [Hollywood Principle](/principles/hollywood-principle).
+Let’s break down the key concepts:
 
-Consider the PersonalizedResponse class in this Gist, which can be constructed without any dependencies:
+* **Collaboration:** Dependencies arise when classes work together to achieve a common goal.
+* **Explicit Requirements:** Clearly defining what your class needs from other classes.
+* **Constructor vs. Method Parameters:**  Class-level dependencies should be passed through the constructor. Method-level dependencies can be passed through method parameters.
 
-## Implicit Dependencies Example
+## Analogy: Building a Car
+
+Think about building a car. You wouldn’t just haphazardly throw parts together and hope it works. Instead, you’d have a blueprint that specifies exactly what components are needed—the engine, wheels, transmission, etc. Each component has a defined interface that others can interact with. Similarly, explicit dependencies define the interfaces your classes need to operate effectively.
+
+## Real-World Examples
+
+Here are some examples demonstrating the impact of implicit vs. explicit dependencies:
+
+1. **Logging:**  Consider a system that needs to log events. If the logging mechanism is implemented globally (e.g., through a static logger), any class can potentially write to the log, leading to uncontrolled output and difficulty in tracing issues. Explicitly passing a logger instance to a class allows for precise control over logging behavior and enables integration with more sophisticated logging frameworks.
+
+2. **Database Access:** Imagine a reporting class that needs to retrieve data from a database.  If the database connection is hardcoded, you've created a brittle dependency. By passing a database connection object to the class, you can easily swap out different database implementations for testing or production environments.
+
+3. **UI Frameworks:** In complex UI frameworks (like React or Angular), components often rely on data and services provided by other components. Explicitly passing these dependencies ensures that your components are loosely coupled and can be easily reused and tested.
+
+## The “New is Glue” Problem
+
+This principle directly addresses the “New is Glue” problem. When new functionality is added, it’s often coupled to existing code through implicit dependencies. This means that every change can have unintended consequences, leading to a tangled, hard-to-maintain codebase. Explicit dependencies prevent this by ensuring that new functionality is built on a foundation of clearly defined interfaces.
+
+## Code Example: Implicit Dependencies
+
+Let’s look at a Java example demonstrating the problems with implicit dependencies.
 
 ```java lineNumbers=true
 using System;
@@ -92,9 +116,11 @@ namespace ImplicitDependencies
 }
 ```
 
-This class is clearly tightly coupled to the file system and the system clock, as well as a particular customer instance via the global Context class.  If we were to refactor this class to make its dependencies explicit, it might look something like this:
+In this example, the `PersonalizedResponse` class relies on the `Context` class for logging and the `Customer` class for data. The dependencies are not explicitly declared, making the class difficult to test, understand, and maintain.  The `Context` class has global state, making it difficult to reason about the flow of execution.
 
-## Explicit Dependencies Example
+## Code Example: Explicit Dependencies
+
+Now, let’s refactor this code to explicitly declare the dependencies.
 
 ```java lineNumbers=true
 using System;
@@ -165,17 +191,17 @@ namespace ExplicitDependencies
     public class PersonalizedResponse
     {
         private readonly ILogger _logger;
-
         private readonly IDateTime _dateTime;
+        private readonly Customer _customer;
 
-        public PersonalizedResponse(ILogger logger,
-            IDateTime dateTime)
+        public PersonalizedResponse(ILogger logger, IDateTime dateTime, Customer customer)
         {
-            this._dateTime = dateTime;
-            this._logger = logger;
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _dateTime = dateTime ?? throw new ArgumentNullException(nameof(dateTime));
+            _customer = customer ?? throw new ArgumentNullException(nameof(customer));
         }
 
-        public string GetResponse(Customer customer)
+        public string GetResponse()
         {
             _logger.Log("Generating personalized response.");
             string formatString = "Good {0}, {1} {2}! Would you like a {3} widget today?";
@@ -189,15 +215,15 @@ namespace ExplicitDependencies
                 timeOfDay = "evening";
             }
             return String.Format(formatString, timeOfDay,
-                customer.Title,
-                customer.Fullname,
-                customer.FavoriteColor);
+                _customer.Title,
+                _customer.Fullname,
+                _customer.FavoriteColor);
         }
     }
 }
 ```
 
-In this case, the logging and time dependencies have been pulled into constructor parameters, while the customer being acted upon has been pulled into a method parameter.  The end result is code that can only be used when the things it needs have been provided for it (and whether you scope dependencies at the class or method level will depend on how they're used by the class, how many methods reference the item in question, etc. - both options are shown here even though in this case everything could simply have been provided as method parameters).
+Now, the `PersonalizedResponse` class explicitly depends on an `ILogger` and `IDateTime` interface, which are implemented by concrete classes. This approach makes the class more testable, as you can easily mock these dependencies during testing. It also promotes loose coupling, allowing you to swap out different logging or time implementations without affecting the core functionality of the class.
 
 ## See Also
 
@@ -206,3 +232,4 @@ In this case, the logging and time dependencies have been pulled into constructo
 ## References
 
 [New Is Glue](http://ardalis.com/new-is-glue) (Ardalis.com)
+```
