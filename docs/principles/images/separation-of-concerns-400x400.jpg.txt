@@ -1,0 +1,9 @@
+This is a placeholder for the Separation of Concerns diagram.
+
+The image should illustrate the concept of separating different aspects of a system into distinct components, such as:
+1. User Interface (UI)
+2. Business Logic
+3. Data Access Layer
+4. Infrastructure Layer
+
+Each component should have clear boundaries and responsibilities.

@@ -1,0 +1,6 @@
+This is a placeholder for the Strategy Pattern UML diagram.
+
+The diagram should illustrate the relationships between:
+1. Context - The class that uses the strategy
+2. Strategy Interface - The common interface for all concrete strategies
+3. Concrete Strategies - The specific implementations of the strategy interface
