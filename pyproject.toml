@@ -13,7 +13,8 @@ dependencies = [
     "ipdb (>=0.13.13,<0.14.0)",
     "mkdocs (>=1.6.1,<2.0.0)",
     "mkdocs-material (>=9.6.15,<10.0.0)",
-    "pyyaml (>=6.0.2,<7.0.0)"
+    "pyyaml (>=6.0.2,<7.0.0)",
+    "mkdocs-mermaid2-plugin (>=1.2.1,<2.0.0)"
 ]
 
 
