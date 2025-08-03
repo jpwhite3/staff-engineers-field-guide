@@ -10,10 +10,16 @@ This is the classic speed versus quality dilemma. It's often framed as a simple 
 
 Consider these four execution modes:
 
-| | Low Quality | High Quality |
-|---|---|---|
-| **Slow Speed** | **Worst of Both Worlds** <br> Slow and shoddy work destroys value | **Craftsmanship** <br> Meticulous attention to detail, possibly over-engineered |
-| **High Speed** | **Technical Debt** <br> Deliberate compromises that must be repaid | **Sustainable Flow** <br> The ideal state where speed enables quality |
+```mermaid
+quadrantChart
+    title "The Quadrants of Execution"
+    x-axis "Low Quality" --> "High Quality"
+    y-axis "Slow Speed" --> "High Speed"
+    quadrant-1 "Worst of Both Worlds"
+    quadrant-2 "Craftsmanship"
+    quadrant-3 "Technical Debt"
+    quadrant-4 "Sustainable Flow (Goal)"
+```
 
 The goal is not to always be in the "High Quality, High Speed" quadrant—that's not always possible. The goal is to make intentional, strategic choices about where on this spectrum you should operate for a specific project at a specific time, and to be transparent about the implications of those choices.
 
@@ -105,3 +111,21 @@ The most important aspect of managing the speed-quality balance is transparent c
 * **With customers:** Set expectations about feature completeness and potential issues.
 
 Great Staff Engineers don't just execute trade-offs; they facilitate informed decisions by making the implications of those trade-offs visible to everyone involved.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Over-prioritizing Speed:** Rushing can lead to buggy releases and frustrated users. Implement critical tests that focus on the most used features first and use a "definition of done" to ensure quality criteria are met.
+- **Ignoring Technical Debt:** Constantly building over a shaky foundation is unsustainable. Allocate regular time for code maintenance and treat technical debt like a financial liability that needs to be managed.
+- **Lack of Communication:** Teams may not align on what “quality” means. Foster open discussions about quality expectations and trade-offs during planning meetings.
+
+## A Practical Exercise: The Quality vs. Speed Race
+
+- **Objective:** To experience the consequences of focusing too much on speed or quality without balance.
+- **Setup:** Split your team into small groups. Each group works on building a simple app or feature. One group is told to prioritize speed above all else; the other is told to prioritize quality.
+- **Debrief:** After a set time, discuss the results. The speed-focused group will likely have more features but more bugs. The quality-focused group will have a more robust but incomplete feature. This highlights the need for a balanced approach.
+
+## Further Reading
+
+- *The Phoenix Project* by Gene Kim, Kevin Behr, George Spafford
+- *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim
+- *Continuous Delivery* by Jez Humble and David Farley

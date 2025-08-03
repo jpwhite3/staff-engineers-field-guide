@@ -244,3 +244,15 @@ Whether your pitch succeeds or fails, there are valuable lessons:
 * Plan how to gather data that would strengthen your case
 
 Remember that executive pitches are often iterative. A "no" today can become a "yes" tomorrow with the right approach, timing, and evidence. By mastering the art of pitching to executives, you transform from a technical implementer to a business leader capable of driving strategic technical direction.
+
+## Common Pitfalls to Avoid
+
+- **Over-Technical Explanations:** Instead of describing the architecture, describe what the architecture *enables* for the business.
+- **Ignoring Business Impact:** Don't just state the technical improvement; state the resulting business outcome (e.g., cost savings, revenue unlocked, risk reduced).
+- **Lack of Executive Sponsorship:** Engage with a potential executive sponsor *before* the pitch to build alignment and get feedback.
+
+## Further Reading
+
+- *The Lean Startup* by Eric Ries
+- *Presentation Zen* by Garr Reynolds
+- *Made to Stick* by Chip Heath & Dan Heath

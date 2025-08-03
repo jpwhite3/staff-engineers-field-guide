@@ -145,3 +145,16 @@ Watch for these warning signs:
 * **The Retrospective Roundabout:** Discussing the same issues sprint after sprint without addressing root causes
 
 The measure of agility isn't how many ceremonies you perform—it's how quickly you can respond to change while maintaining technical quality. As a Staff Engineer, your role is to ensure the team balances speed and sustainability, embracing agile principles rather than just following agile processes.
+
+## A Practical Exercise: The Methodology Match-Up
+
+-   **Objective:** To reinforce understanding by applying theory to practical situations.
+-   **Setup:** Divide participants into small groups. Provide each group with cards describing various project scenarios (e.g., "a greenfield project with high uncertainty," "an operations team managing incoming bug reports," "a project with a fixed deadline and scope").
+-   **Execution:** Groups must match each scenario to the most appropriate methodology (Scrum, Kanban) and justify their reasoning, discussing the pros and cons.
+-   **Debrief:** Discuss the different matchups and the nuances of choosing a process that fits the work.
+
+## Further Reading
+
+-   *Agile Estimating and Planning* by Mike Cohn
+-   *Kanban: Successful Evolutionary Change for Your Technology Business* by David J. Anderson
+-   *The Lean Startup* by Eric Ries

@@ -92,4 +92,9 @@ The key insight from Meyer's work is not that one approach is better than anothe
 
 3. **Create Inclusive Team Norms:** Establish explicit team agreements about how you'll work together, recognizing and accommodating different cultural preferences.
 
+## Real-World Scenarios
+
+*   **The Agile Sprint Delay:** Imagine a Scrum team with members from the US (linear-time) and India (flexible-time). The US team is rigidly focused on the deadline, while the Indian team prioritizes building a deeply tested solution, taking time to talk to stakeholders. The resulting delay is a direct consequence of their differing approaches to time and context.
+*   **The Code Review Conflict:** During a code review involving developers from Germany (direct feedback) and Brazil (indirect feedback), a German engineer bluntly points out a logical flaw. The Brazilian developer, feeling personally attacked, responds defensively, leading to a tense exchange and stalled progress.
+
 By doing so, you transform cultural differences from a source of friction to a source of strength, allowing your global team to harness the full power of its diverse perspectives.

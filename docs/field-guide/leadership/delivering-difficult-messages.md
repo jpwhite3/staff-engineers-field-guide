@@ -8,10 +8,17 @@ Delivering bad news is one of the hardest things a leader must do. The temptatio
 
 ## The Four Quadrants of Difficult Conversations
 
-|  | Low Empathy | High Empathy |
-| :---- | :---- | :---- |
-| **High Clarity** | **The Blunt Leader:** "Team, Project Phoenix is canceled, effective immediately. It's no longer a priority. Your new assignments are on the wiki. Let's move on." (Clear, but demoralizing and destroys trust). | **The Daring Leader:** The target state. Clear, direct, and compassionate. |
-| **Low Clarity** | **The Absent Leader:** Avoids the conversation entirely, letting the news trickle out through rumors. (The most destructive option). | **The Soft Leader:** "Hey team, so, there are some strategic shifts happening... we may need to rethink our resource allocation... let's just pause on Project Phoenix for now and see..." (Avoids the hard truth, creating uncertainty and anxiety). |
+```mermaid
+quadrantChart
+    title "Clarity-Empathy Axis"
+    x-axis "Low Empathy" --> "High Empathy"
+    y-axis "Low Clarity" --> "High Clarity"
+    quadrant-1 "The Soft Leader"
+    quadrant-2 "The Daring Leader (Goal)"
+    quadrant-3 "The Absent Leader"
+    quadrant-4 "The Blunt Leader"
+    "Your Position": [0.8, 0.8]
+```
 
 ## A Playbook for Daring Delivery
 
@@ -47,3 +54,14 @@ Provide immediate clarity on what happens next.
 ## The Impact of Clear, Compassionate Communication
 
 By being direct, you honor the team's maturity. By being empathetic, you honor their humanity. This approach turns a potentially trust-destroying event into an opportunity to reinforce your leadership and the team's resilience.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Vagueness:** Overcome this with a structured, data-driven approach and clear definitions.
+- **Ignoring Emotional Responses:** Acknowledge emotions and create a safe space for open communication.
+- **Defensive Posturing:** Instead of defending your position, validate the other person’s concerns and focus on finding a mutually acceptable solution.
+
+## Further Reading
+
+- *Crucial Conversations: Tools for Talking When Stakes Are High* by Kerry Patterson et al.
+- *Nonviolent Communication: A Language of Life* by Marshall B. Rosenberg

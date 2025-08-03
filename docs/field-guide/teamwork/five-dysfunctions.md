@@ -78,3 +78,21 @@ When no one is holding each other accountable, people tend to focus on their own
 **Keep the team's goals front and center.** Start meetings by reminding the team of the key objective for the sprint or quarter. Celebrate collective achievements, not individual heroics.
 
 Fixing a dysfunctional team is not a quick process. It starts at the bottom of the pyramid. By building a foundation of trust, you unlock the team's ability to engage in the healthy conflict necessary to achieve real commitment and, ultimately, real results.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Ignoring Dysfunctions**: Teams often overlook these issues until they become serious problems. Regularly assess your team’s health through surveys, 1:1s, and retrospective meetings.
+- **Overlooking Personal Biases**: Be aware of your own biases and how they might influence your perception of team dynamics. Implement a "bias check" process during discussions to ensure diverse viewpoints are considered.
+- **Relying Solely on Technical Skills**: Remember, technical skills are crucial but don’t solve interpersonal challenges. Invest in soft skills training and coaching.
+
+## A Practical Exercise: Team Dysfunction Role Play
+
+1.  **Setup**: Divide your team into small groups.
+2.  **Scenario**: Each group gets a scenario depicting one of the five dysfunctions. For example: “Your team is working on a critical feature, but a junior developer is hesitant to raise concerns about a potential performance bottleneck.”
+3.  **Act It Out**: Groups act out how they would typically respond, then re-enact the scene using strategies to overcome the dysfunction.
+4.  **Discussion**: Discuss what worked and why, and how the strategies felt in practice.
+
+## Further Reading
+
+- *The Five Dysfunctions of a Team* by Patrick Lencioni
+- *The Phoenix Project* by Gene Kim

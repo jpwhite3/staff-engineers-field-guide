@@ -49,3 +49,25 @@ Encourage the trio to sit together or have a dedicated, persistent video call ro
 ## The Power of True Cross-Functional Teams
 
 A truly cross-functional team isn't one where different functions hand work off to each other. It's one where the lines blur, where the engineer cares about the user experience, the designer understands the technical constraints, and the product manager values the long-term health of the system. Your job is to build the bridges that make that possible.
+
+## A Practical Exercise: The Cross-Functional Challenge
+
+To solidify these concepts, consider running a simulation. 
+
+1.  **Form a Trio:** Create a group with a Product Manager, a Designer, and an Engineer.
+2.  **Define a Fictional Project:** Give them a simple goal, like designing a new app feature.
+3.  **Introduce a Challenge:** Inject a surprise constraint—a technical glitch, a design limitation, or a sudden market shift.
+4.  **Observe and Debrief:** Watch how the team interacts. Do they collaborate to solve the problem or retreat to their silos? Discuss the results afterward.
+
+## Common Pitfalls to Avoid
+
+- **Feature-Length Discussions:** Avoid getting bogged down in deep technical debates during product-focused meetings. Keep the technical input high-level and targeted.
+- **The Escalation Cycle:** Empower the "Three Amigos" trio to resolve issues collaboratively before escalating to management.
+- **Data Silos:** Ensure that Product, Design, and Engineering all have access to the same user analytics, market research, and performance data.
+
+## Further Reading
+
+- *The DevOps Handbook* by Gene Kim et al.
+- *Shape Up: Stop Running in Circles and Ship Work That Matters* by Ryan Singer
+- *The Lean Product Playbook* by Marty Cagan
+- *Sprint* by Jake Knapp

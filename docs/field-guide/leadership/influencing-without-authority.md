@@ -42,3 +42,20 @@ Start a difficult conversation by preemptively listing every negative assumption
 * **You, to the PM and Director:** "I know what you're probably thinking. You're thinking that I'm an engineer who has fallen in love with a technical problem, that I'm disconnected from the business needs, that I'm trying to gold-plate a system at the expense of a critical feature, and that this is going to be another black hole of a project that will be impossible to predict and will put your commitments at risk."
 
 By saying it all first, you neutralize the negative energy. Their internal monologue has been spoken aloud, and now they are open to hearing what you have to say next. You've moved from an adversary to a tuned-in collaborator. This is how you lead without authority.
+
+## Common Pitfalls to Avoid
+
+- **Overstepping Boundaries:** Avoid coming across as authoritative. Frame your suggestions as options to be considered, not commands to be followed.
+- **Ignoring Feedback:** Dismissing concerns without genuine consideration will quickly erode trust. Acknowledge and address all feedback, even if you don't ultimately agree.
+- **Failing to Build Trust:** Influence is built on a foundation of trust. This is earned through consistent behavior: delivering on promises, being transparent, and demonstrating a genuine interest in others' perspectives.
+
+## A Practical Exercise: Role-Play Negotiation
+
+1.  **Setup:** Split participants into pairs. One person is the Staff Engineer advocating for a change (e.g., adopting a new coding standard); the other is a skeptical team member.
+2.  **Objective:** The engineer must use tactical empathy, mirroring, labeling, and calibrated questions to address the team member's concerns and gain their buy-in.
+3.  **Debrief:** After 10-15 minutes, discuss what worked, what didn't, and how the techniques felt in practice.
+
+## Further Reading
+
+- *Never Split the Difference* by Chris Voss
+- *Influence: The Psychology of Persuasion* by Robert B. Cialdini

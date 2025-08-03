@@ -196,6 +196,12 @@ These four DORA metrics provide a baseline for improvement.
 * Foster a blameless culture for deployment failures
 * Recognize and reward improvements in process and automation
 
+### 6. Integrate Security (DevSecOps)
+
+* Embed security into every stage of the development lifecycle.
+* Automate security scans (SAST, DAST, dependency scanning) within the pipeline.
+* Treat security as a shared responsibility, not an afterthought.
+
 ## The Future of CI/CD: Where It's Heading
 
 As you build your CI/CD capabilities, keep an eye on emerging trends:
@@ -207,3 +213,24 @@ As you build your CI/CD capabilities, keep an eye on emerging trends:
 * **Developer Experience Platforms:** Internal platforms that abstract away CI/CD complexity
 
 By investing in robust CI/CD practices, you don't just improve your team's efficiency—you fundamentally change how software is built. You enable a culture of experimentation, quality, and rapid feedback that is the hallmark of high-performing software organizations.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Skipping Tests:** Ensure a comprehensive suite of automated tests are created and maintained. A pipeline without good tests is just a fast way to ship bugs.
+- **Ignoring Build Failures:** Treat build failures as high-priority and address them immediately. A broken main branch blocks the entire team.
+- **Ignoring Security:** "Move fast and break things" is a dangerous mantra. Integrate security checks into the pipeline to build security in from the start.
+- **Overlooking Monitoring:** Implement robust monitoring to identify issues in production early. CI/CD gets you to production faster; observability tells you if you *should have*.
+- **Underestimating Culture Shift:** Educate the team on CI/CD practices and foster a culture of continuous integration and frequent feedback.
+
+## A Practical Exercise: The "Broken Pipeline" Game
+
+- **Objective:** To reinforce the importance of automation, collaboration, and rapid feedback in a hands-on manner.
+- **Setup:** Divide participants into small teams. Assign each team a simulated software development project with a pre-built, simple CI pipeline.
+- **Challenge:** Introduce "breakdowns" – simulated bugs or integration issues – into the repository. Teams must react quickly, troubleshoot the issues, fix them, and get the pipeline green again.
+- **Debrief:** The team that most efficiently resolves the "broken pipeline" wins. Discuss the communication and debugging strategies that worked best.
+
+## Further Reading
+
+- *Continuous Delivery* by Jez Humble and David Farley
+- *The DevOps Handbook* by Gene Kim, Patrick Debois, John Willis, and Jez Humble
+- *Accelerate* by Nicole Forsgren, Jez Humble, and Gene Kim

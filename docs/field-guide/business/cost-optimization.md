@@ -374,3 +374,16 @@ A midsize SaaS company was spending $250,000/month on cloud infrastructure with 
 As a Staff Engineer, your ultimate goal is to make cost a first-class design parameter, considered alongside performance, reliability, and other architectural qualities. When cost awareness is built into your engineering culture from the beginning, you don't need special cost-cutting initiatives—efficiency becomes part of your team's DNA.
 
 By mastering FinOps principles and tools, you not only help your company's bottom line but also become a more valuable technical leader who understands the business impact of engineering decisions.
+
+## A Practical Exercise: The Cost Optimization Challenge
+
+-   **Objective:** To have teams practice optimizing a cloud architecture for cost without compromising performance.
+-   **Setup:** Provide each team with a simplified, pre-configured cloud environment and a budget. The environment should have a running application with a reasonable workload.
+-   **Task:** Teams must analyze the current resource usage, identify areas for optimization, and implement their chosen strategies (e.g., tagging, right-sizing, scheduling).
+-   **Debrief:** Each team presents their optimization strategy, the tools they used, and the expected impact on costs and performance. Discuss the different approaches and best practices.
+
+## Further Reading
+
+-   *FinOps: A Practical Guide to Cloud Financial Management*
+-   AWS Well-Architected Framework
+-   Google Cloud’s Cost Management Documentation

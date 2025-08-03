@@ -399,9 +399,21 @@ The architecture creates natural team boundaries:
 
 ### 3. Port Explosion
 
-**Anti-pattern:** Creating too many specific ports, leading to interface bloat.
+**Anti-pattern:** Creating too many fine-grained ports, making the system hard to navigate.
 
-**Solution:** Design ports around capabilities, not implementations. Group related operations into cohesive interfaces.
+**Solution:** Group related operations into cohesive port interfaces. Find the right balance between granularity and usability.
+
+## A Practical Exercise: The System Design Game
+
+-   **Objective:** To demonstrate the value of structured, decoupled design.
+-   **Setup:** Provide participants with cards representing: "Core Order Logic," "Database Adapter," "Web UI Adapter," and "Payment Gateway Adapter."
+-   **Execution:** Have participants arrange the cards on a whiteboard and draw the connections, discussing how they interact to fulfill an order. Introduce a change, like "we need to add a mobile app," and see how easily the architecture adapts.
+-   **Debrief:** Discuss the challenges, the importance of interfaces (ports), and how the hexagonal design accommodates change.
+
+## Further Reading
+
+-   *Clean Architecture* by Robert C. Martin
+-   *Enterprise Integration Patterns* by Gregor Hohpe and Bobby Woolf
 
 ### 4. Hexagonal Everything
 

@@ -96,6 +96,31 @@ Categorize decisions by how difficult they are to change later:
 
 Spend more time and rigor on Type 1 decisions, but move quickly on Type 2 decisions.
 
+### 5. RICE Scoring
+
+**The Model:** A prioritization framework that stands for Reach, Impact, Confidence, and Effort.
+
+**Engineering Application:** Making informed decisions about which features or projects to tackle first, especially when resources are limited. The "Confidence" score is a direct way to account for uncertainty.
+
+**Example:** When comparing two features:
+*   **Feature A:** High Reach, High Impact, Low Confidence (50%), High Effort.
+*   **Feature B:** Medium Reach, Medium Impact, High Confidence (90%), Low Effort.
+
+Feature B might be a better choice to start with, as it delivers value with less risk and effort, while the team works to increase confidence in Feature A.
+
+### 6. Scenario Planning
+
+**The Model:** Developing multiple plausible future scenarios based on different key uncertainties.
+
+**Engineering Application:** Preparing for potential market shifts, technological disruptions, or competitive threats.
+
+**Example:** An infrastructure team might develop scenarios for:
+*   A 10x growth in user traffic.
+*   A major cloud provider outage.
+*   The introduction of new data sovereignty regulations.
+
+This forces the team to build more resilient and adaptable systems.
+
 ## Leading Through Uncertainty
 
 As a Staff Engineer, your job isn't just to navigate uncertainty yourself but to help your team do so:
@@ -149,3 +174,22 @@ Let's return to our opening scenario. How might a Staff Engineer approach it?
    * Celebrate learning and adaptation, not just delivery
 
 By applying these approaches, you transform uncertainty from a source of frustration into a competitive advantage—enabling your team to learn and adapt faster than the competition.
+
+## Common Pitfalls & How to Avoid Them
+
+-   **Analysis Paralysis:** Spending excessive time gathering data without making a decision. **Mitigation:** Apply the 80/20 rule and set time limits for analysis before committing to a path.
+-   **Resistance to Change:** Holding onto initial plans despite new information. **Mitigation:** Embrace a growth mindset and view change as an opportunity to learn and improve.
+-   **Poor Communication:** Failing to communicate changes effectively can result in misaligned teams. **Mitigation:** Schedule regular check-ins, use visual aids, and actively solicit feedback.
+
+## A Practical Exercise: The Agile Shipwreck Simulation
+
+-   **Objective:** To demonstrate the importance of adaptability and communication under uncertain conditions.
+-   **Setup:** Divide participants into small teams, each representing the crew of a ship facing unexpected challenges.
+-   **Execution:** Midway through a simulated journey, introduce escalating "storms" (e.g., a sudden equipment malfunction, a lost map). At regular intervals, present new information that requires teams to reassess their strategy.
+-   **Debrief:** Discuss what worked well, where communication broke down, and how the team could have responded more effectively. Highlight the importance of a shared understanding and a commitment to adapting to changing conditions.
+
+## Further Reading
+
+-   *The Lean Startup* by Eric Ries
+-   *Thinking, Fast and Slow* by Daniel Kahneman
+-   *Agile Estimating and Planning* by Mike Cohn

@@ -297,3 +297,22 @@ As you grow in your role, focus on developing these strategic capabilities:
 * Balance immediate needs with future capabilities
 
 By mastering these skills, you transform from an executor of technical tasks to a shaper of technical strategy—and ultimately, a valuable contributor to business strategy itself.
+
+## Common Pitfalls & How to Avoid Them
+
+-   **Technical Myopia:** Focusing solely on technology without considering its strategic impact. *Solution:* Regularly conduct strategic reviews to evaluate tech decisions against business objectives.
+-   **Isolated Decision-Making:** Making engineering choices in a silo. *Solution:* Foster a culture of collaboration across departments with shared tools and clear communication channels.
+-   **Short-Term Thinking:** Prioritizing quick fixes over long-term strategic alignment. *Solution:* Implement a strategic roadmap that outlines long-term technology investments aligned with business goals.
+
+## A Practical Exercise: The Strategy Alignment Relay
+
+-   **Objective:** To demonstrate the importance of aligning technology decisions with business strategies.
+-   **Setup:** Divide participants into small teams, assigning each a department role (e.g., engineering, marketing, sales).
+-   **Execution:** Give each team a business objective (e.g., “Increase Customer Retention”). The engineering team proposes a tech solution, then consults with the other departments to refine it based on their strategic insights.
+-   **Debrief:** Each team presents their refined proposal, articulating how it aligns with the business strategy. The group discusses the challenges and the importance of cross-functional collaboration.
+
+## Further Reading
+
+-   *The Lean Startup* by Eric Ries
+-   *Competing on Analytics* by Thomas H. Davenport and Jeanne G. Harris
+-   *Engineering Management for Startups* by Bret Taylor

@@ -38,6 +38,7 @@ nav:
     - Presentation & Persuasion Skills: field-guide/leadership/presentation-persuasion-skills.md
     - Working Across Boundaries: field-guide/leadership/working-across-boundaries.md
     - Asynchronous Communication: field-guide/leadership/async-communication.md
+    - Navigating Tough Technical Discussions: field-guide/leadership/navigating-tough-technical-discussions.md
   - Teamwork:
     - Introduction: field-guide/teamwork/index.md
     - Team Formation: field-guide/teamwork/team-formation.md
@@ -53,7 +54,8 @@ nav:
     - Building a Business Case: field-guide/execution/business-case.md
     - Strategic Thinking: field-guide/execution/strategic-thinking.md
     - Speed vs. Quality: field-guide/execution/speed-vs-quality.md
-    - Navigating Uncertainty: field-guide/execution/navigating-uncertainty.md
+    - Navigating Uncertainty & Change: field-guide/execution/navigating-uncertainty.md
+    - Prioritization Frameworks: field-guide/execution/prioritization-frameworks.md
     - Organizational Transformation: field-guide/execution/organizational-transformation.md
   - Engineering:
     - Introduction: field-guide/engineering/index.md
@@ -66,204 +68,100 @@ nav:
     - Architecture Decision Records: field-guide/engineering/adrs.md
     - Hexagonal Architecture: field-guide/engineering/hexagonal-architecture.md
     - Story Mapping & Splitting: field-guide/engineering/story-mapping.md
+    - Bias in Automation: field-guide/engineering/bias-in-automation.md
+    - Software Supply Chain Security: field-guide/engineering/software-supply-chain-security.md
+    - Source Control: field-guide/engineering/source-control.md
+    - Chaos Engineering: field-guide/engineering/chaos-engineering.md
   - Critical Thinking:
     - Introduction: field-guide/thinking/index.md
     - Mental Models for Engineers: field-guide/thinking/mental-models.md
     - Cognitive Biases: field-guide/thinking/cognitive-biases.md
     - Structured Problem-Solving: field-guide/thinking/structured-problem-solving.md
     - Mind Mapping & Visual Thinking: field-guide/thinking/mind-mapping.md
+    - Strategic Thinking: field-guide/thinking/strategic-thinking.md
   - Business:
     - Introduction: field-guide/business/index.md
     - Aligning Technology to Business Strategy: field-guide/business/aligning-technology.md
     - Pitching to Executives: field-guide/business/pitching-to-executives.md
+    - Building a Better Business Case: field-guide/business/business-case.md
+    - Revenue vs. Risk: field-guide/business/revenue-vs-risk.md
     - Cost Optimization & FinOps: field-guide/business/cost-optimization.md
     - Empowered Teams & Engineering Culture: field-guide/business/empowered-teams.md
-- Antipatterns:
-  - Overview: antipatterns/index.md
-  - 'Antipatterns: Recognizing and Avoiding Design Missteps': antipatterns/antipatterns-overview.md
-  - 'Assumption Driven Programming: Building Software for *Everyone*': antipatterns/assumption-driven-programming.md
-  - 'The Big Ball of Mud: A Critical Architectural Anti-Pattern': antipatterns/big-ball-of-mud.md
-  - 'The Blob: A Dangerous Growth Pattern': antipatterns/blob.md
-  - 'Broken Windows: Maintaining Code Health Through Consistent Small Actions': antipatterns/broken-windows.md
-  - 'The Calendar Coder: A Cargo Cult in Software Development': antipatterns/calendar-coder.md
-  - 'Code Smells: Recognizing and Addressing Problems in Your Code': antipatterns/code-smells.md
-  - 'Copy Folder Versioning: A Critical Anti-Pattern': antipatterns/copy-folder-versioning.md
-  - 'Copy-Paste Programming: A Critical Anti-Pattern': antipatterns/copy-paste-programming.md
-  - 'Death by Planning: Prioritizing Velocity Over Detailed Roadmaps': antipatterns/death-by-planning.md
-  - 'Death March: Recognizing and Mitigating the Symptoms of Unsustainable Projects': antipatterns/death-march.md
-  - 'The Duct Tape Coder: A Critical Examination of Expedient Software': antipatterns/duct-tape-coder.md
-  - 'Exposing Collection Properties: A Critical Review': antipatterns/exposing-collection-properties.md
-  - 'Fast Beats Right: The Cost of Speeding Through Quality': antipatterns/fast-beats-right.md
-  - 'Feature Creep: Understanding and Mitigating Scope Expansion in Software Development': antipatterns/feature-creep.md
-  - 'Flags Over Objects: A Deep Dive into a Critical Code Smell': antipatterns/flags-over-objects.md
-  - The Perilous Practice of "Found on the Internet" Code: antipatterns/found-on-internet.md
-  - 'Frankencode: The Frankenstein of Software Systems': antipatterns/frankencode.md
-  - 'The Golden Hammer: Avoiding Technological Lock-In': antipatterns/golden-hammer.md
-  - 'Iceberg Classes: Understanding and Avoiding Deeply Encapsulated Classes': antipatterns/iceberg-class.md
-  - 'Eliminating Magic Strings: A Critical Architectural Pattern': antipatterns/magic-strings.md
-  - 'Mushroom Management: Why Lack of Transparency Undermines Software Development': antipatterns/mushroom-management.md
-  - 'Not Invented Here (NIH): The Cost of Blind Innovation': antipatterns/not-invented-here.md
-  - 'One Thing To Rule Them All: Understanding the Anti-Pattern': antipatterns/one-thing-to-rule-them-all.md
-  - 'Reinventing the Wheel: A Critical Examination': antipatterns/reinventing-the-wheel.md
-  - 'The Shiny Toy Anti-Pattern: A Critical Defense Against Technological Momentum': antipatterns/shiny-toy.md
-  - 'Smoke and Mirrors: The Peril of Unrealistic Customer Expectations': antipatterns/smoke-and-mirrors.md
-  - 'Spaghetti Code: A Systemic Threat to Maintainability and Scalability': antipatterns/spaghetti-code.md
-  - 'Static Cling: Avoiding Unnecessary Coupling': antipatterns/static-cling.md
-  - 'Walking Through a Minefield: The Cost of Premature Release': antipatterns/walking-through-a-minefield.md
-  - 'Understanding the Waterfall Model: A Critical Examination': antipatterns/waterfall.md
-- Communication:
-  - Overview: communication/index.md
-  - 'Asynchronous Communication Best Practices: Building Robust Distributed Teams': communication/asynchronous-communication-best-practices.md
-  - "Cross-Functional Teams & Collaboration: A Staff Engineer\u2019s Perspective": communication/crossfunctional-teams-collaboration.md
-  - 'Delivering Difficult Messages: Navigating Tough Conversations with Empathy and Clarity': communication/delivering-difficult-messages.md
-  - Building High-Performing Engineering-Product Collaboration: communication/how-great-engineering-teams-work-with-product-teams.md
-  - "Mastering Project Pitching to Executives: A Staff Engineer\u2019s Guide": communication/how-to-pitch-engineering-projects-to-executives.md
-  - 'Influencing Without Authority: A Staff Engineer''s Guide': communication/influencing-without-authority.md
-  - "Navigating Global Teams with \u201CThe Culture Map\u201D: A Staff Engineer\u2019s Guide": communication/lessons-from-the-culture-map.md
-  - 'Mastering the Art of Persuasion: Presentation Skills for Staff Engineers': communication/presentation-persuasion-skills.md
-  - 'Communicating Technical Ideas Effectively: The Art of Strategic Storytelling for Engineers': communication/storytelling-for-engineers.md
-  - Technical Writing for Influence: communication/technical-writing-for-influence.md
-  - 'Mastering the Art of the Technical Discussion: Navigating the "Dirty Dozen"': communication/the-dirty-dozen-hardest-questions-in-technical-discussions.md
-- Design Patterns:
-  - Overview: design-patterns/index.md
-  - 'Adapter Design Pattern: Bridging the Gap Between Incompatible Interfaces': design-patterns/adapter-design-pattern.md
-  - 'The Builder Design Pattern: Constructing Complex Objects with Control': design-patterns/builder-pattern.md
-  - 'Design Patterns: A Practical Guide for Engineers': design-patterns/design-patterns-overview.md
-  - 'Guard Clauses: Defensive Programming for Clarity and Robustness': design-patterns/guard-clause.md
-  - 'The Null Object Pattern: A Robust Strategy for Handling Missing Data': design-patterns/null-object-pattern.md
-  - Repository Pattern: design-patterns/repository-pattern.md
-  - 'The REPR Design Pattern: A Streamlined Approach to API Development': design-patterns/repr-design-pattern.md
-  - 'Mastering the Singleton Pattern: A Deep Dive for Staff Engineers': design-patterns/singleton.md
-  - 'The Specification Pattern: A Robust Approach to Querying and Filtering Data': design-patterns/specification-pattern.md
-  - State Design Pattern: design-patterns/state-design-pattern.md
-  - Strategy Pattern: design-patterns/strategy-pattern.md
-- Domain Driven Design:
-  - Overview: domain-driven-design/index.md
-  - Aggregate Pattern: domain-driven-design/aggregate-pattern.md
-  - 'The Anemic Domain Model: A Critical Design Flaw': domain-driven-design/anemic-model.md
-  - 'Anti-Corruption Layers: Protecting Your Domain Model': domain-driven-design/anti-corruption-layer.md
-  - 'Domain-Driven Design: Building Software That Aligns with Reality': domain-driven-design/ddd-overview.md
-  - 'Understanding Entities: Core Concepts for Robust Systems': domain-driven-design/entity.md
-  - 'Ubiquitous Language: The Foundation of Reliable Software': domain-driven-design/ubiquitous-language.md
-  - 'Value Objects: Representing Concepts with Immutable Data': domain-driven-design/value-object.md
-- Laws:
-  - Overview: laws/index.md
-  - 'Cunningham''s Law: The Paradox of Online Collaboration': laws/cunninghams-law.md
-  - 'Laws of Software Development: A Deep Dive for Staff Engineers': laws/laws-overview.md
-  - Understanding and Applying Murphy's Law in Systems Engineering: laws/murphys-law.md
-- Leadership:
-  - Overview: leadership/index.md
-  - Building High-Performing, Empowered Teams: leadership/empowered-teams-decisionmaking.md
-  - Feature Teams & Organizational Transformation: leadership/feature-teams-organizational-transformation.md
-  - 'Developing Future Staff Engineers: A Strategic Approach to Technical Leadership': leadership/how-to-develop-future-staff-engineers.md
-  - Cultivating Psychological Safety and Trust in Engineering Teams: leadership/psychological-safety-trust-in-teams.md
-  - "Building High-Performing Teams: Understanding Tuckman\u2019s Stages": leadership/team-formation-highperforming-teams.md
-  - 'The Five Dysfunctions of a Team: A Practical Guide for Staff Engineers': leadership/the-five-dysfunctions-of-a-team.md
-  - "Mastering System Resilience: A Staff Engineer\u2019s Guide to Downtime Mitigation": leadership/the-importance-of-mentorship-sponsorship.md
-  - 'The Power of Vulnerability in Leadership: Building Trust, Resilience, and High-Performing Teams': leadership/the-power-of-vulnerability-in-leadership.md
-  - "Leading Cross-Functional & Distributed Teams: A Staff Engineer\u2019s Perspective": leadership/working-across-boundaries-managing-stakeholders.md
-- Personal_Growth:
-  - Overview: personal_growth/index.md
-  - 'Building & Using Your Network: How Relationships Amplify Career Opportunities': personal_growth/building-using-your-network.md
-  - Cognitive Biases in Engineering: personal_growth/cognitive-biases-in-engineering.md
-  - 'Cultivating Deep Technical Expertise: A Staff Engineer''s Imperative': personal_growth/developing-deep-technical-expertise.md
-  - Lifelong Learning & Strategic Industry Trend Monitoring for Technical Leaders: personal_growth/lifelong-learning-staying-ahead-of-industry-trends.md
-  - 'System Design: Scalability and Resilience': personal_growth/power-influence-in-organizations.md
-  - 'Decoding Human Behavior: A Practical Guide to Personality Assessments': personal_growth/selfawareness-personality-types.md
-  - 'The Ethical Engineer: Navigating Uncertainty with Integrity': personal_growth/the-ethical-engineer-decisionmaking-under-uncertainty.md
-- Practices:
-  - Overview: practices/index.md
-  - 'Code Readability: A Foundation for Sustainable Software': practices/code-readability.md
-  - 'Collective Code Ownership: Building Resilient and Collaborative Systems': practices/collective-code-ownership.md
-  - 'Common Architectural Vision: Building for Adaptability': practices/common-architectural-vision.md
-  - "Continuous Integration: A Staff Engineer\u2019s Perspective": practices/continuous-integration.md
-  - 'Defensive Programming: Building Robust Systems Through Anticipation': practices/defensive-programming.md
-  - 'Dependency Injection: Building Robust and Maintainable Systems': practices/dependency-injection.md
-  - 'Descriptive Error Messages: Crafting User-Centric and Developer-Friendly Responses': practices/descriptive-error-messages.md
-  - 'Dogfooding: A Critical Practice for Product Development and API Design': practices/dogfooding.md
-  - "Know Where You\u2019re Going: The Critical Role of User-Centered Software Development": practices/know-where-you-are-going.md
-  - 'Naming Conventions: A Foundation for Robust Code': practices/naming-things.md
-  - 'Pain-Driven Development: A Strategic Approach to Code Evolution': practices/pain-driven-development.md
-  - 'Pair Programming: A Deep Dive for Staff Engineers': practices/pair-programming.md
-  - 'Mastering Engineering Practices: A Foundation for Robust Systems': practices/practices-overview.md
-  - 'Read the Manual: A Foundation for Reliable Systems': practices/read-the-manual.md
-  - 'Refactoring: Building Robust and Maintainable Systems': practices/refactoring.md
-  - 'Rubber Duck Debugging: A Surprisingly Effective Technique': practices/rubber-duck-debugging.md
-  - 'Shipping Is A Feature: Delivering Value Through Consistent Releases': practices/shipping-is-a-feature.md
-  - 'Simple Design: Crafting Elegant and Maintainable Code': practices/simple-design.md
-  - 'Test-Driven Development: Building Robust Systems Through Intent': practices/test-driven-development.md
-  - 'Update the Plan: Beyond Simple Deadline Shifting': practices/update-the-plan.md
-  - 'Vertical Slices: Delivering Value Incrementally': practices/vertical-slices.md
-  - 'Mastering Whole Team Development: Reducing Waste and Accelerating Delivery': practices/whole-team-activity.md
-  - "The Whole Team: A Staff Engineer\u2019s Perspective": practices/whole-team.md
-- Principles:
-  - Overview: principles/index.md
-  - 'The Boy Scout Rule: Leaving Code Better Than You Found It': principles/boy-scout-rule.md
-  - 'Dependency Inversion Principle: Building Robust, Maintainable Systems': principles/dependency-inversion-principle.md
-  - "Don\u2019t Repeat Yourself (DRY): A Foundation for Robust Software": principles/dont-repeat-yourself.md
-  - 'Encapsulation: Protecting State and Promoting Robust Designs': principles/encapsulation.md
-  - Explicit Dependencies Principle: principles/explicit-dependencies-principle.md
-  - 'Fail Fast: A Foundation for Resilient Systems': principles/fail-fast.md
-  - 'The Hollywood Principle: Embrace Asynchronous Control': principles/hollywood-principle.md
-  - 'The Interface Segregation Principle: Designing for Flexibility and Maintainability': principles/interface-segregation.md
-  - 'Inversion of Control: Architecting for Flexibility and Maintainability': principles/inversion-of-control.md
-  - 'The KISS Principle: Simplicity as a Foundation for Robust Systems': principles/keep-it-simple.md
-  - 'The Liskov Substitution Principle: Ensuring Robust Polymorphism': principles/liskov-substitution-principle.md
-  - 'Once and Only Once: Eliminating Redundancy for Robust Systems': principles/once-and-only-once.md
-  - 'The Open-Closed Principle: Designing for Extensibility': principles/open-closed-principle.md
-  - 'Persistence Ignorance: Building Robust Systems Through Domain-Driven Design': principles/persistence-ignorance.md
-  - 'Principles: A Foundation for Robust and Maintainable Software': principles/principles-overview.md
-  - 'Separation of Concerns: A Foundation for Robust Systems': principles/separation-of-concerns.md
-  - 'The Single Responsibility Principle: A Deep Dive': principles/single-responsibility-principle.md
-  - 'SOLID: Foundations for Robust Object-Oriented Design': principles/solid.md
-  - 'Stable Dependencies: A Foundation for Reliable Software': principles/stable-dependencies.md
-  - 'Tell, Don''t Ask: Designing for Predictability and Flexibility': principles/tell-dont-ask.md
-  - "YAGNI: You Ain\u2019t Gonna Need It \u2013 A Strategic Approach to Software Development": principles/yagni.md
-- Process:
-  - Overview: process/index.md
-  - 'Agile Essentials: Scrum, Kanban, and Lean Thinking for Waste Reduction': process/agile-essentials.md
-  - "Countering Groupthink & Mismanagement of Agreement: A Staff Engineer\u2019s Guide": process/countering-groupthink-mismanagement-of-agreement.md
-  - 'Understanding the Abilene Paradox: Recognizing and Resolving Silent Misalignments in Teams': process/mismanagement-of-agreement.md
-  - 'Navigating Uncertainty & Change: A Staff Engineer''s Guide': process/navigating-uncertainty-change.md
-  - 'Prioritization Frameworks: Beyond MoSCoW': process/story-mapping-story-splitting.md
-- Strategy:
-  - Overview: strategy/index.md
-  - Aligning Technology to Business Strategy: strategy/aligning-technology-to-business-strategy.md
-  - 'Building a Better Business Case: Aligning Technical Recommendations with Business Needs': strategy/building-a-better-business-case.md
-  - Cost Optimization & Cloud Financial Management (FinOps): strategy/cost-optimization-cloud-financial-management.md
-  - 'Deliberate Chaos: Understanding and Managing System Complexity': strategy/customercentric-thinking-in-engineering.md
-  - Decision-Making Frameworks for Engineers: strategy/decisionmaking-frameworks-for-engineers.md
-  - 'Mental Models for Engineers: Harnessing First Principles, Inversion, and Second-Order Effects': strategy/mental-models-for-engineers.md
-  - Mastering Problem Decomposition with Mind Mapping & Visual Thinking: strategy/mind-mapping-visual-thinking-for-problem-solving.md
-  - Revenue & Risk Trade-offs in Engineering: strategy/revenue-risk-tradeoffs-in-engineering.md
-  - 'Strategic Thinking for Engineers: Aligning Work with Company Objectives': strategy/strategic-thinking-for-engineers.md
-  - 'Mastering Structured Problem-Solving: A Staff Engineer''s Toolkit': strategy/structured-problemsolving-techniques.md
-- Technical:
-  - Overview: technical/index.md
-  - "Architecture Decision Records (ADRs): A Staff Engineer\u2019s Guide": technical/architecture-decision-records.md
-  - Balancing Speed vs. Quality in Engineering: technical/balancing-speed-vs-quality-in-engineering.md
-  - 'Bias in Machine Learning & Automation: A Staff Engineer''s Perspective': technical/bias-in-machine-learning-automation.md
-  - 'Code Hygiene & Refactoring: Building Robust, Maintainable Systems': technical/code-hygiene-refactoring.md
-  - Continuous Integration & Continuous Delivery (CI/CD): technical/continuous-integration-continuous-delivery.md
-  - 'DevOps & Automation Engineering: A Staff Engineer''s Perspective': technical/devops-automation-engineering.md
-  - Hexagonal Architecture & Scalable System Design: technical/hexagonal-architecture-scalable-system-design.md
-  - 'Securing the Software Supply Chain: A Staff Engineer''s Perspective': technical/software-supply-chain-security.md
-  - "Mastering Source Code Management with Git: A Staff Engineer\u2019s Guide": technical/source-code-management-git-best-practices.md
-  - 'Test-Driven Development: Ensuring Quality Through Automated Testing': technical/testdriven-development.md
-- Terms:
-  - Overview: terms/index.md
-  - Understanding and Mitigating the Bus Factor: terms/bus-factor.md
-  - Kinds of Models in Application Architecture: terms/kinds-of-models.md
-  - 'Understanding Technical Debt: A Strategic Approach': terms/technical-debt.md
-- Tools:
-  - Overview: tools/index.md
-  - 'Understanding Build Servers: The Foundation of Reliable Software Delivery': tools/build-server.md
-  - 'Version Control: A Foundation for Reliable Software Development': tools/version-control.md
-- Values:
-  - Overview: values/index.md
-  - Mastering Communication in Software Development: values/communication.md
-  - Cultivating Courage in High-Performing Software Teams: values/courage.md
-  - 'Feedback: The Engine of Continuous Improvement': values/feedback.md
-  - 'Cultivating Respect: A Foundation for High-Performing Teams': values/respect.md
-  - 'Simplicity: The Foundation of Robust Systems': values/simplicity.md
-  - Understanding and Applying Extreme Programming Values: values/values-overview.md
+- Appendix:
+  - Antipatterns:
+    - Overview: antipatterns/index.md
+    - 'Antipatterns: Recognizing and Avoiding Design Missteps': antipatterns/antipatterns-overview.md
+    - 'Assumption Driven Programming: Building Software for *Everyone*': antipatterns/assumption-driven-programming.md
+    - 'The Big Ball of Mud: A Critical Architectural Anti-Pattern': antipatterns/big-ball-of-mud.md
+    - 'The Blob: A Dangerous Growth Pattern': antipatterns/blob.md
+    - 'Broken Windows: Maintaining Code Health Through Consistent Small Actions': antipatterns/broken-windows.md
+    - 'The Calendar Coder: A Cargo Cult in Software Development': antipatterns/calendar-coder.md
+    - 'Code Smells: Recognizing and Addressing Problems in Your Code': antipatterns/code-smells.md
+    - 'Copy Folder Versioning: A Critical Anti-Pattern': antipatterns/copy-folder-versioning.md
+    - 'Copy-Paste Programming: A Critical Anti-Pattern': antipatterns/copy-paste-programming.md
+    - 'Death by Planning: Prioritizing Velocity Over Detailed Roadmaps': antipatterns/death-by-planning.md
+    - 'Death March: Recognizing and Mitigating the Symptoms of Unsustainable Projects': antipatterns/death-march.md
+    - 'The Duct Tape Coder: A Critical Examination of Expedient Software': antipatterns/duct-tape-coder.md
+    - 'Exposing Collection Properties: A Critical Review': antipatterns/exposing-collection-properties.md
+    - 'Fast Beats Right: The Cost of Speeding Through Quality': antipatterns/fast-beats-right.md
+    - 'Feature Creep: Understanding and Mitigating Scope Expansion in Software Development': antipatterns/feature-creep.md
+    - 'Flags Over Objects: A Deep Dive into a Critical Code Smell': antipatterns/flags-over-objects.md
+    - The Perilous Practice of "Found on the Internet" Code: antipatterns/found-on-internet.md
+    - 'Frankencode: The Frankenstein of Software Systems': antipatterns/frankencode.md
+    - 'The Golden Hammer: Avoiding Technological Lock-In': antipatterns/golden-hammer.md
+    - 'Iceberg Classes: Understanding and Avoiding Deeply Encapsulated Classes': antipatterns/iceberg-class.md
+    - 'Eliminating Magic Strings: A Critical Architectural Pattern': antipatterns/magic-strings.md
+    - 'Mushroom Management: Why Lack of Transparency Undermines Software Development': antipatterns/mushroom-management.md
+    - 'Not Invented Here (NIH): The Cost of Blind Innovation': antipatterns/not-invented-here.md
+    - 'One Thing To Rule Them All: Understanding the Anti-Pattern': antipatterns/one-thing-to-rule-them-all.md
+    - 'Reinventing the Wheel: A Critical Examination': antipatterns/reinventing-the-wheel.md
+    - 'The Shiny Toy Anti-Pattern: A Critical Defense Against Technological Momentum': antipatterns/shiny-toy.md
+    - 'Smoke and Mirrors: The Peril of Unrealistic Customer Expectations': antipatterns/smoke-and-mirrors.md
+    - 'Spaghetti Code: A Systemic Threat to Maintainability and Scalability': antipatterns/spaghetti-code.md
+    - 'Static Cling: Avoiding Unnecessary Coupling': antipatterns/static-cling.md
+    - 'Walking Through a Minefield: The Cost of Premature Release': antipatterns/walking-through-a-minefield.md
+    - 'Understanding the Waterfall Model: A Critical Examination': antipatterns/waterfall.md
+  - Design Patterns:
+    - Overview: design-patterns/index.md
+    - 'Adapter Design Pattern: Bridging the Gap Between Incompatible Interfaces': design-patterns/adapter-design-pattern.md
+    - 'The Builder Design Pattern: Constructing Complex Objects with Control': design-patterns/builder-pattern.md
+    - 'Design Patterns: A Practical Guide for Engineers': design-patterns/design-patterns-overview.md
+    - 'Guard Clauses: Defensive Programming for Clarity and Robustness': design-patterns/guard-clause.md
+    - 'The Null Object Pattern: A Robust Strategy for Handling Missing Data': design-patterns/null-object-pattern.md
+    - Repository Pattern: design-patterns/repository-pattern.md
+    - 'The REPR Design Pattern: A Streamlined Approach to API Development': design-patterns/repr-design-pattern.md
+    - 'Mastering the Singleton Pattern: A Deep Dive for Staff Engineers': design-patterns/singleton.md
+    - 'The Specification Pattern: A Robust Approach to Querying and Filtering Data': design-patterns/specification-pattern.md
+    - State Design Pattern: design-patterns/state-design-pattern.md
+    - Strategy Pattern: design-patterns/strategy-pattern.md
+  - Domain Driven Design:
+    - Overview: domain-driven-design/index.md
+    - Aggregate Pattern: domain-driven-design/aggregate-pattern.md
+    - 'The Anemic Domain Model: A Critical Design Flaw': domain-driven-design/anemic-model.md
+    - 'Anti-Corruption Layers: Protecting Your Domain Model': domain-driven-design/anti-corruption-layer.md
+    - 'Domain-Driven Design: Building Software That Aligns with Reality': domain-driven-design/ddd-overview.md
+    - 'Understanding Entities: Core Concepts for Robust Systems': domain-driven-design/entity.md
+    - 'Ubiquitous Language: The Foundation of Reliable Software': domain-driven-design/ubiquitous-language.md
+    - 'Value Objects: Representing Concepts with Immutable Data': domain-driven-design/value-object.md
+  - Laws:
+    - Overview: laws/index.md
+    - 'Cunningham''s Law: The Paradox of Online Collaboration': laws/cunninghams-law.md
+    - 'Laws of Software Development: A Deep Dive for Staff Engineers': laws/laws-overview.md
+    - Understanding and Applying Murphy's Law in Systems Engineering: laws/murphys-law.md
+  - Terms:
+    - Overview: terms/index.md
+    - Understanding and Mitigating the Bus Factor: terms/bus-factor.md
+    - Kinds of Models in Application Architecture: terms/kinds-of-models.md
+    - 'Understanding Technical Debt: A Strategic Approach': terms/technical-debt.md
+  - Tools:
+    - Overview: tools/index.md
+    - 'Understanding Build Servers: The Foundation of Reliable Software Delivery': tools/build-server.md
+    - 'Version Control: A Foundation for Reliable Software Development': tools/version-control.md
+  - Values:
+    - Overview: values/index.md
+    - Mastering Communication in Software Development: values/communication.md
+    - Cultivating Courage in High-Performing Software Teams: values/courage.md
+    - 'Feedback: The Engine of Continuous Improvement': values/feedback.md
+    - 'Cultivating Respect: A Foundation for High-Performing Teams': values/respect.md
+    - 'Simplicity: The Foundation of Robust Systems': values/simplicity.md
+    - Understanding and Applying Extreme Programming Values: values/values-overview.md

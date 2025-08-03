@@ -335,3 +335,25 @@ Like any skill, visual thinking improves with practice:
 5. **Seek feedback:** Share your visuals and improve based on input
 
 The most important step is to make visual thinking part of your regular practice. Next time you're explaining something complex, try reaching for a pen instead of typing another paragraph. The clarity it brings to both your thinking and communication may surprise you.
+
+## Common Pitfalls & How to Avoid Them
+
+-   **Over-Elaboration:** Resist the urge to create overly detailed maps. Focus on capturing the essential relationships. A cluttered map is less effective than a clear one.
+-   **Linear Thinking:** Mind mapping thrives on non-linearity. If you find yourself forcing the map into a linear structure, step back and reconsider your approach.
+-   **Lack of Collaboration:** Mind mapping is often more effective when done collaboratively. Involve multiple stakeholders to incorporate diverse perspectives and identify potential blind spots.
+
+## A Practical Exercise: The “System Root Cause” Challenge
+
+-   **Objective:** To practice identifying root causes and dependencies in a complex system using visual thinking.
+-   **Scenario:** A critical API is experiencing intermittent failures, impacting several downstream services.
+-   **Process:**
+    1.  Start with a central node: “API Failure.”
+    2.  As a group, brainstorm all potential causes (e.g., network issues, database errors, code bugs, resource contention).
+    3.  Create a mind map or concept map, connecting causes to their potential impacts and to each other.
+    4.  Use the visual map to identify the most likely root cause—the underlying factor driving the problem.
+-   **Debrief:** Discuss how the collaborative visual process helped uncover hidden dependencies and prioritize investigation efforts.
+
+## Further Reading
+
+-   *The Mind Map Book* by Tony Buzan
+-   *The Back of the Napkin: Solving Problems and Selling Ideas with Pictures* by Dan Roam

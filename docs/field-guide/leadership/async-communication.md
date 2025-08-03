@@ -84,3 +84,21 @@ The specific tools matter less than establishing clear workflows:
 * **Record and Share Knowledge:** When answering a question 1:1, consider if that answer should be documented for others.
 
 By establishing these practices, you create an environment where thoughtful async communication is the norm, collaboration is inclusive, and the team can work effectively across time and space.
+
+## Common Pitfalls to Avoid
+
+- **Information Overload:** Avoid overwhelming channels with too many messages. Use dedicated threads and clear guidelines for channel usage to minimize noise.
+- **Lack of Context:** Don't assume others understand your request. Provide sufficient background information or links to relevant documents.
+- **Ignoring Responses:** Acknowledge received messages promptly, even if you don't have an immediate answer. This confirms receipt and manages expectations.
+
+## A Practical Exercise: The "Remote Bug Hunt"
+
+- **Objective:** To demonstrate the effectiveness of asynchronous communication in a bug-fixing scenario.
+- **Setup:** Divide your team into small groups. Each group receives a brief, complex bug report via a shared document.
+- **Challenge:** Groups must collaboratively diagnose and propose a solution to the bug within 24 hours, using only written communication.
+- **Debrief:** Discuss the strategies that worked best, the challenges encountered, and how the process could be improved.
+
+## Further Reading
+
+- *The Art of Community* by Jono Bacon
+- *Remote: Office Not Required* by Jason Fried and David Heinemeier Hansson

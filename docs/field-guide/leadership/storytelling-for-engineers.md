@@ -41,3 +41,19 @@ Paint a picture of the "happily ever after." What does the world look like once 
 * **Good (A story):** "Our customers trust us to be there for them. Last week, we broke that trust for 30% of them because of a single service. If we don't fix it, it will happen again, and it will be worse. But we have a plan to not just fix it, but to build a platform that is ready for the future."
 
 Your job as a Staff Engineer isn't just to be the smartest person in the room; it's to be the most effective communicator. Stop presenting data. Start telling stories.
+
+## Common Pitfalls to Avoid
+
+- **Jargon Overload:** Resist the urge to impress with technical terms. Use simple, clear language that everyone can understand.
+- **Data Dump:** Avoid overwhelming your audience with numbers. Focus on the key trends and outcomes that support your story's conflict and resolution.
+- **Ignoring the Human Element:** People connect with stories about people. Frame your technical problem in terms of its impact on customers or your teammates.
+
+## A Practical Exercise: The "Impact-Driven Story" Workshop
+
+- **Objective:** To train engineers in crafting impactful technical stories.
+- **Process:** Divide participants into small groups. Assign each group a specific technical concept (e.g., “serverless computing” or "technical debt"). Task them with creating a 3-5 minute story using the Hook, Conflict, Resolution structure. Have groups present their stories and provide constructive feedback.
+
+## Further Reading
+
+- *Made to Stick* by Chip Heath & Dan Heath
+- *The Art of Explanation* by Lee LeFever

@@ -291,3 +291,21 @@ As a Staff Engineer, you have unique responsibilities around ADRs:
 * Ensure the collection of ADRs tells a coherent story of the system's evolution
 
 By establishing ADRs as a regular practice, you create a living history of your architecture that builds institutional memory, promotes thoughtful decision-making, and allows your team to move forward with confidence rather than constantly revisiting the past.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Overly Technical Language:** Avoid jargon and focus on business-level explanations. ADRs should be accessible to all stakeholders.
+- **Insufficient Detail:** Don't just state the decision; describe the context, constraints, and trade-offs.
+- **Ignoring Updates:** ADRs evolve with the system. Regularly review and update them to reflect new information and changing priorities.
+- **Treating ADRs as a Burden:** Encourage the team to view ADRs as a valuable tool that promotes collaboration and reduces risk, not as a bureaucratic hurdle.
+
+## A Practical Exercise: The "Design Dilemma"
+
+- **Objective:** To demonstrate the value of structured decision-making through a collaborative design exercise.
+- **Process:** Divide participants into small groups. Task each group with designing a simple online store. As a group, they must create an ADR for the most critical architectural decision (e.g., database choice).
+- **Debrief:** Discuss the value of documenting decisions, the benefits of collaborative decision-making, and the potential pitfalls of making assumptions.
+
+## Further Reading
+
+- *Designing Data-Intensive Applications* by Martin Kleppmann
+- *The Staff Engineer's Path* by Tanya Reilly

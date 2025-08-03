@@ -50,3 +50,21 @@ Writing the doc is only half the battle.
 * **Summarize and Close the Loop:** Once the deadline passes, post a summary at the top of the document: "Thank you for the feedback. We have incorporated X and Y, and have decided to move forward. See the implementation plan below."
 
 Treat your documents as products, not as artifacts. They are tools designed to achieve a specific outcome: clarity, alignment, and action.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Overloading with Jargon:** Resist the urge to use complex terminology. Prioritize clear, accessible language.
+- **Ignoring Audience Needs:** Tailor your writing style and level of detail to your audience. Don't explain the obvious to an expert or overwhelm a novice.
+- **Neglecting Feedback Loops:** Always seek reviews from peers and stakeholders to catch ambiguities before the document is finalized.
+
+## A Practical Exercise: The "Proposal Pitch" Blitz
+
+1.  **Objective:** Create a concise, persuasive proposal for a fictional technical solution in 10 minutes.
+2.  **Setup:** Divide the team into small groups. Provide each group with a brief problem statement (e.g., “Improve the performance of our recommendation engine”).
+3.  **Execution:** Each group drafts a high-level proposal focusing on benefits, risks, and costs.
+4.  **Feedback:** After presentations, discuss what made some proposals more effective than others. This highlights the key elements of influential technical writing in an engaging way.
+
+## Further Reading
+
+- *The Elements of Technical Writing* by Gary Blake and Robert W. Bly
+- *Made to Stick* by Chip Heath and Dan Heath

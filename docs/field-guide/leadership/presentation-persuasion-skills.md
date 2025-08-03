@@ -54,3 +54,22 @@ Persuasion isn't about manipulation—it's about effectively communicating value
 * **Pathos (Emotion):** Connect to what your audience cares about. Even in technical contexts, decisions are influenced by hopes, fears, and aspirations. How will your proposal make life better for users, the team, or the business?
 
 The most persuasive presentations balance all three elements, adapting their emphasis based on the audience and context.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Overloading Slides:** Too much text or complex charts overwhelm your audience. Each slide should support a single, clear point.
+- **Ignoring Audience Needs:** Failing to tailor your content to the audience's technical depth and concerns leads to disengagement.
+- **Lack of Engagement:** A one-way lecture quickly loses audience interest. Integrate interactive elements like polls or Q&A sessions.
+- **Technical Jargon:** Using excessive jargon alienates non-technical stakeholders. Use analogies and plain language whenever possible.
+
+## A Practical Exercise: The Pitch Competition
+
+1.  **Setup:** Create realistic scenarios requiring participants to pitch a technical solution to a panel of "judges" (other team members).
+2.  **Execution:** Presenters deliver their pitch, and the judges provide immediate feedback on clarity, persuasiveness, and engagement.
+3.  **Debrief:** Discuss what worked, what could be improved, and how the presenter gauged the audience's understanding.
+
+## Further Reading
+
+- *Made to Stick* by Chip Heath & Dan Heath
+- *Presentation Zen* by Garr Reynolds
+- *The Art of Explanation* by Lee LeFever

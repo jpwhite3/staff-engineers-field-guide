@@ -46,3 +46,21 @@ You can't improve what you don't measure. Periodically, ask the team to anonymou
 ## The Impact of Psychological Safety
 
 The data will tell you where you stand. Psychological safety isn't about being "nice." It's about creating a rigorous environment where the truth can be spoken, ideas can be challenged, and mistakes can be turned into learning. It is the bedrock of innovation and speed.
+
+## Common Pitfalls to Avoid
+
+- **The "Blame Game":** Resist the urge to assign blame after incidents. Instead, focus on understanding *what* happened and *why*, without judgment. Implement blameless post-mortems to foster a culture of learning.
+- **Dismissing Ideas Quickly:** Before rejecting an idea, take the time to fully understand its rationale. Ask clarifying questions and explore potential benefits.
+- **Over-Reliance on Authority:** Avoid dictating solutions without soliciting input. Instead, frame your suggestions as options for consideration.
+
+## A Practical Exercise: The Improv Game
+
+- **Objective:** To create a low-stakes environment where participants can take risks and build upon each other’s ideas.
+- **Setup:** Gather a group of 6-10 people with a set of LEGOs or a virtual whiteboard.
+- **Execution:** Start with a simple prompt: "Build a house." Each person gets 60 seconds to add to the creation, building on what the previous person did.
+- **Debrief:** Discuss the experience. How did it feel to build on someone else’s creation? Did you feel pressure to conform? This exercise demonstrates how psychological safety allows ideas to evolve collaboratively.
+
+## Further Reading
+
+- *The Fearless Organization* by Amy Edmondson
+- *Dare to Lead* by Brené Brown

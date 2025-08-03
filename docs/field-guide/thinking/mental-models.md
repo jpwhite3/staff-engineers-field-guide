@@ -53,7 +53,7 @@ A balancing loop: More load → autoscaling adds servers → load per server dec
 * Medium leverage: Improving test automation
 * High leverage: Changing incentives to reward quality over speed
 
-## Decision-Making Models
+## Problem-Solving & Decision-Making Models
 
 ### 1. Expected Value
 
@@ -68,6 +68,14 @@ A balancing loop: More load → autoscaling adds servers → load per server dec
   * Expected value: (0.5 × 3) - (0.5 × 2) = 1.5 - 1.0 = +0.5 days
 
 Approach A has slightly higher expected value.
+
+### 2. First Principles Thinking
+
+**The Model:** Deconstruct a problem into its most basic, fundamental truths and reason up from there, rather than relying on analogy or convention.
+
+**Engineering Application:** Radical innovation and solving problems that seem impossible.
+
+**Example:** Instead of trying to make batteries cheaper (analogy), Elon Musk asked, "What are the fundamental material constituents of batteries?" and found that the cost of the raw materials was a fraction of the total price. He then built SpaceX from the ground up based on the physics of rocketry, not just by iterating on existing rocket designs.
 
 ### 2. Opportunity Cost
 
@@ -87,6 +95,16 @@ Approach A has slightly higher expected value.
 **Engineering Application:** Finding failure modes and improving system resilience.
 
 **Example:** Instead of asking "How do we build a reliable service?", ask "What would make our service fail?" This identifies critical vulnerabilities like single points of failure, cascading dependencies, or resource exhaustion.
+
+### 4. Second-Order Thinking
+
+**The Model:** Thinking beyond the immediate result of an action to consider its longer-term consequences. First-order thinking is fast and easy. Second-order thinking is more deliberate and asks, "And then what?"
+
+**Engineering Application:** Avoiding unintended consequences and making more robust long-term decisions.
+
+**Example:** A team decides to add a caching layer to improve performance.
+*   **First-Order Effect:** Faster response times for users (Good).
+*   **Second-Order Effects:** Increased infrastructure complexity, potential for stale data issues, a new single point of failure if the cache goes down (Requires careful management).
 
 ## Probabilistic Thinking Models
 
@@ -226,3 +244,9 @@ As a Staff Engineer, continuously expand your collection of mental models:
 * Recognize team members when they effectively apply mental models
 
 By developing a rich toolkit of mental models, you transform yourself from a narrow technical specialist into a versatile thinker capable of solving the complex, multidimensional problems that Staff Engineers face every day.
+
+## Further Reading
+
+-   *Super Thinking: The Big Book of Mental Models* by Gabriel Weinberg and Lauren McCann
+-   *Thinking, Fast and Slow* by Daniel Kahneman
+-   *The Great Mental Models* series by Shane Parrish

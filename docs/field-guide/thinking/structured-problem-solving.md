@@ -356,3 +356,15 @@ As a technical leader, your role is often to guide the problem-solving process r
 * Update runbooks and post-mortem templates
 
 By applying structured problem-solving approaches, you transform your team from reactive firefighters to methodical investigators. This not only leads to more effective solutions but builds organizational capability to handle increasingly complex challenges.
+
+## A Practical Exercise: The Scenario Challenge
+
+-   **Objective:** To practice applying structured problem-solving frameworks to a complex, ambiguous problem.
+-   **Setup:** Divide participants into small teams. Provide each team with a scenario requiring a decision (e.g., "A critical service is experiencing intermittent latency, and the cause is unknown.").
+-   **Execution:** Ask each team to choose a suitable framework (like the 5 Whys or a Fishbone Diagram), apply it to the scenario, document their process, and present their findings and proposed next steps.
+-   **Debrief:** Facilitate a discussion on the rationale behind their choice, the challenges they encountered, and how a structured approach helped them move from ambiguity to a clear plan.
+
+## Further Reading
+
+-   *Problem Solving with Root Cause Analysis* by James R. Reston
+-   *Toyota Kata: Managing People for Improvement, Adaptiveness, and Innovation* by Mike Rother

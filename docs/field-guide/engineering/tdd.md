@@ -304,3 +304,22 @@ npx stryker run
 ```
 
 By mastering TDD and helping your team adopt it, you create a virtuous cycle: better tests drive better design, which enables more confident refactoring, which improves code quality, which makes testing easier. It's one of the most powerful technical practices a Staff Engineer can champion.
+
+## Common Pitfalls & How to Avoid Them
+
+- **Overengineering Tests:** Don't write tests for the sake of writing them. Each test should serve a specific purpose and test a clearly defined behavior.
+- **Neglecting Refactoring:** Remember, refactoring is not optional in TDD; it’s essential to keep your codebase healthy and manageable. Strive for clean, maintainable code.
+- **Test Duplication:** Avoid writing tests that simply replicate the functionality of existing code. Focus on testing the *behavior* of the code, not the implementation details.
+
+## A Practical Exercise: The Broken Calculator
+
+- **Objective:** To illustrate the core Red-Green-Refactor cycle in a collaborative setting.
+- **Setup:** Split the team into pairs. One person's role is to write tests for a basic calculator function (e.g., `add`, `subtract`); the other's role is to write the implementation.
+- **Execution:** The test writer creates a failing test (Red). The implementer writes just enough code to make it pass (Green). Then, they refactor the code together while keeping the test green (Refactor). Switch roles and repeat for the next function.
+- **Debrief:** This quick game highlights the TDD rhythm and its collaborative nature.
+
+## Further Reading
+
+- *Test Driven Development: By Example* by Kent Beck
+- *Growing Object-Oriented Software, Guided by Tests* by Steve Freeman and Nat Pryce
+- *Working Effectively with Legacy Code* by Michael Feathers

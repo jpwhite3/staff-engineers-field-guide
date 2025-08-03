@@ -341,3 +341,22 @@ Use reviews as teaching opportunities:
 * Measure and share improvements in development velocity
 
 By promoting code hygiene as a daily practice rather than a special event, you create a sustainable approach to maintaining code quality. Remember: the goal isn't perfect code—it's code that gets better every day.
+
+## Common Pitfalls & How to Avoid Them
+
+- **The "Quick Fix" Trap:** Resist the urge to simply patch a code smell. Small, incremental refactorings are almost always preferable to large, sweeping changes.
+- **Over-Refactoring:** Don’t refactor just for the sake of it. Only refactor when it genuinely improves the code and provides tangible benefits, focusing on measurable improvements in complexity or performance.
+- **Ignoring Small Smells:** Neglecting minor code smells can lead to significant problems as they compound over time. Foster a culture where developers are empowered to address small issues as part of their daily workflow.
+- **Lack of Testing:** Never refactor code without a thorough test suite to ensure that your changes don’t introduce new bugs.
+
+## A Practical Exercise: The “Code Smell Detective”
+
+- **Objective:** To train developers in identifying and fixing common code quality issues.
+- **Process:** Provide the team with snippets of code containing intentional “smells” (e.g., long methods, duplicated code). Task them with identifying the smells and proposing refactoring solutions.
+- **Debrief:** Discuss the proposed solutions as a group, focusing on the trade-offs of each approach.
+
+## Further Reading
+
+- *Refactoring: Improving the Design of Existing Code* by Martin Fowler
+- *Clean Code: A Handbook of Agile Software Craftsmanship* by Robert C. Martin
+- *The Pragmatic Programmer: Your Journey to Mastery* by Andrew Hunt and David Thomas

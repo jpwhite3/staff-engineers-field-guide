@@ -153,3 +153,22 @@ Let's apply these frameworks to our opening scenario:
    - "Whatever approach we choose, let's identify key metrics to observe and set a timeframe for revisiting the decision based on what we learn."
 
 By applying these frameworks, the Staff Engineer transforms a circular debate into a structured decision process. The goal isn't to make perfect decisions—it's to make sound decisions efficiently and learn from them quickly.
+
+## Common Pitfalls & How to Avoid Them
+
+-   **Analysis Paralysis:** Spending excessive time gathering data without making a decision. **Mitigation:** Set time limits for each stage of the decision process.
+-   **Confirmation Bias:** Seeking out information that confirms pre-existing beliefs. **Mitigation:** Actively solicit diverse opinions and challenge your own assumptions.
+-   **Ignoring Context:** Applying a framework without considering the specific circumstances. **Mitigation:** Regularly review the context and adjust your approach accordingly.
+-   **Over-Reliance on Frameworks:** Using frameworks rigidly without applying judgment. **Mitigation:** Remember that frameworks are tools, not rules, and adapt them to the situation at hand.
+
+## A Practical Exercise: The Scenario Challenge
+
+-   **Objective:** To practice applying decision-making frameworks to a complex problem.
+-   **Setup:** Divide participants into small teams. Provide each team with an ambiguous scenario requiring a decision (e.g., "A critical bug has been found in a newly released feature, but the team has limited resources to fix it.").
+-   **Execution:** Ask each team to choose a suitable framework, apply it to the scenario, document their process, and present their recommendation.
+-   **Debrief:** Facilitate a discussion on the rationale behind their choice, the challenges they encountered, and the lessons learned.
+
+## Further Reading
+
+-   *Thinking, Fast and Slow* by Daniel Kahneman
+-   *The Staff Engineer’s Path* by Tanya Reilly
