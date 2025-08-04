@@ -8,15 +8,26 @@ Additionally, staff engineers must master technical storytelling, using both wri
 
 ## Discrete Topics Covered
 
-1. [Influencing Without Authority](influencing-without-authority.md) (Chris Voss – Tactical Empathy, Mirroring, Labeling, Calibrated Questions) 
-2. [The Power of Vulnerability in Leadership](vulnerability-leadership.md) (Brené Brown on Authenticity & Trust-Building)  
-3. [Self-Awareness & Personality Types](self-awareness-personality-types.md) (Myers-Briggs, DISC, Big Five, and how to communicate effectively with different types)  
-4. [Giving & Receiving Feedback](giving-receiving-feedback.md) (How to create a culture of continuous improvement)  
-5. [Delivering Difficult Messages](delivering-difficult-messages.md) (Navigating tough conversations with empathy & clarity)  
-6. [Psychological Safety & Trust in Teams](psychological-safety-trust.md) (Creating environments where engineers feel safe to take risks & innovate)  
-7. [Power & Influence in Organizations](power-influence-organizations.md) (Understanding how to navigate organizational dynamics)  
-8. [Storytelling for Engineers](storytelling-for-engineers.md) (How to communicate technical ideas effectively to executives & stakeholders)  
-9. [Technical Writing for Influence](technical-writing-for-influence.md) (How to craft compelling tech proposals, docs, and RFCs)  
-10. [Presentation & Persuasion Skills](presentation-persuasion-skills.md) (Perfecting the Pitch, Creating Effective Visual Aids)  
-11. [Working Across Boundaries & Managing Stakeholders](working-across-boundaries.md) (Leading cross-functional & distributed teams)  
-12. [Asynchronous Communication Best Practices](async-communication.md) (How to communicate effectively in distributed teams)
+* [Influencing without Authority](influencing-without-authority.md): Learn tactical empathy techniques to persuade and align teams, inspired by former FBI negotiator Chris Voss.
+* [Vulnerability in Leadership](vulnerability-leadership.md): Explore how embracing vulnerability, as detailed in Brené Brown's *Dare to Lead*, can build trust and psychological safety.
+* [Giving & Receiving Feedback](giving-receiving-feedback.md): Master the art of delivering and receiving constructive feedback using frameworks like Radical Candor and the SBI model.
+* [Self-Awareness & Personality Types](self-awareness-personality-types.md): Understand how different personality models (like Myers-Briggs or DiSC) can improve communication and collaboration.
+* [Technical Writing for Influence](technical-writing-for-influence.md): Write clear, persuasive technical documents that drive decisions and create alignment.
+* [Presentation & Persuasion Skills](presentation-persuasion-skills.md): Develop the skills to present technical concepts effectively and persuade diverse audiences.
+* [Working Across Boundaries](working-across-boundaries.md): Learn to manage stakeholders and collaborate effectively across different teams and departments.
+* [Asynchronous Communication](async-communication.md): Master the best practices for clear and efficient communication in distributed and hybrid teams.
+* [The Power of Influence in Organizations](power-influence-organizations.md): Understand the dynamics of organizational power and how to build influence ethically.
+* [Navigating Tough Technical Discussions](navigating-tough-technical-discussions.md): Develop strategies for facilitating productive conversations around contentious technical topics.
+* [Storytelling for Engineers](storytelling-for-engineers.md): Learn to use narrative and storytelling to make your technical ideas more compelling and memorable.
+* [Psychological Safety & Trust](psychological-safety-trust.md): Discover how to cultivate an environment where team members feel safe to take risks, admit mistakes, and speak up.
+
+## Further Reading
+
+This chapter draws on insights from several key books on leadership, influence, and communication. For a deeper dive, consider exploring:
+
+*   **Brown, Brené. *Dare to Lead: Brave Work. Tough Conversations. Whole Hearts.*** (2018). A foundational text on the power of vulnerability in leadership.
+*   **Cialdini, Robert B. *Influence: The Psychology of Persuasion*.** (1984). A classic work on the principles of persuasion and how to apply them ethically.
+*   **Reilly, Tanya. *The Staff Engineer's Path: A Guide for Individual Contributors*.** (2022). An essential guide covering many of the topics discussed, with a focus on the Staff Engineer role.
+*   **Scott, Kim. *Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity*.** (2017). Provides a practical framework for giving and receiving effective feedback.
+*   **Stone, Douglas, and Sheila Heen. *Thanks for the Feedback: The Science and Art of Receiving Feedback Well*.** (2014). An insightful guide on how to solicit and gracefully handle feedback.
+*   **Voss, Chris. *Never Split the Difference: Negotiating As If Your Life Depended On It*.** (2016). The source of the Tactical Empathy techniques discussed for influencing without authority.

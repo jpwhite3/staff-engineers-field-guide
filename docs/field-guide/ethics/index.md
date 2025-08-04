@@ -8,4 +8,17 @@ This final chapter is about developing your ethical intuition. We will provide f
 
 ## Discrete Topics Covered
 
-* [Bias in Machine Learning & Automation](../engineering/bias-in-automation.md): The Ghost in the Machine
+*   **Bias in Automation & AI**: Learn to identify and mitigate the hidden biases that can be encoded into our automated systems and machine learning models.
+*   **Data Privacy & User Trust**: Explore the principles of designing systems that are transparent, respect user privacy, and build long-term trust.
+*   **Ethical Frameworks for Technologists**: Apply established ethical models (like utilitarianism, deontology, and virtue ethics) to navigate complex engineering trade-offs.
+*   **The Ethics of Scale**: Understand how seemingly small technical decisions can have a massive societal impact when deployed at scale.
+*   **Responsible Innovation**: Develop practices for anticipating the unintended consequences of new technologies and building safeguards into your designs.
+
+## Further Reading
+
+This chapter touches on a rapidly evolving and critically important field. For a deeper understanding of technology ethics, we recommend these works:
+
+*   **Eubanks, Virginia. *Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor*.** (2018). A powerful investigation into the real-world impact of biased algorithms.
+*   **O'Neil, Cathy. *Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy*.** (2016). A foundational text on how algorithms can reinforce and amplify societal biases.
+*   **Vallor, Shannon. *Technology and the Virtues: A Philosophical Guide to a Future Worth Wanting*.** (2016). Provides a framework for thinking about ethical self-cultivation in the context of 21st-century technologies.
+*   **Zuboff, Shoshana. *The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power*.** (2019). A comprehensive analysis of the business models that drive data collection and its ethical implications.

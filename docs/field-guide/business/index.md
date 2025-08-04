@@ -8,7 +8,19 @@ In this chapter, we will explore what it means to be a business-minded engineer.
 
 ## Discrete Topics Covered
 
-* [Aligning Technology to Business Strategy](aligning-technology.md): From Coder to Strategist
-* [How to Pitch Engineering Projects to Executives](pitching-to-executives.md): Selling Your Vision
-* [Cost Optimization & FinOps](cost-optimization.md): Engineering the Bottom Line
-* [Empowered Teams & Decision-Making](empowered-teams.md): The Art of Letting Go
+* [Aligning Technology to Business Strategy](aligning-technology.md): Learn to translate high-level business goals into a coherent technical strategy.
+* [Building a Business Case](business-case.md): Frame technical projects in terms of business value, risk, and opportunity to get buy-in.
+* [Cost Optimization & FinOps](cost-optimization.md): Understand the principles of cloud financial management to make cost-aware engineering decisions.
+* [Empowered Teams](empowered-teams.md): Move beyond being a "feature factory" by creating a culture of ownership, autonomy, and accountability.
+* [Pitching to Executives](pitching-to-executives.md): Master the art of communicating technical vision to leadership in the language they understand.
+* [Balancing Revenue and Risk](revenue-vs-risk.md): Develop a framework for making sound decisions that balance the drive for growth with the need for stability and security.
+
+## Further Reading
+
+This chapter bridges the gap between technology and business, drawing on concepts from product management, business strategy, and lean enterprise thinking. For further reading, consider:
+
+*   **Cagan, Marty. *Inspired: How to Create Tech Products Customers Love*.** (2017). A foundational text on the role of product management and how empowered engineering teams should function.
+*   **Heath, Chip, and Dan Heath. *Made to Stick: Why Some Ideas Survive and Others Die*.** (2007). Provides a framework for making your ideas and pitches more memorable and effective.
+*   **Moore, Geoffrey A. *Crossing the Chasm: Marketing and Selling Disruptive Products to Mainstream Customers*.** (1991). A classic on understanding technology adoption cycles and how to position products for different market segments.
+*   **Porter, Michael E. *Competitive Strategy: Techniques for Analyzing Industries and Competitors*.** (1980). The definitive book on business strategy and competitive advantage.
+*   **Ries, Eric. *The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses*.** (2011). Essential reading for understanding how to connect engineering work to validated learning and business outcomes.
