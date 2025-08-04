@@ -25,7 +25,13 @@ nav:
 - Field Guide:
   - Introduction: field-guide/intro/index.md
   - Learning: field-guide/learning/index.md
-  - Ethics: field-guide/ethics/index.md
+  - Ethics:
+    - Introduction: field-guide/ethics/index.md
+    - Bias in Automation: field-guide/ethics/bias-in-automation.md
+    - Data Privacy & User Trust: field-guide/ethics/data-privacy.md
+    - Ethical Frameworks: field-guide/ethics/ethical-frameworks.md
+    - The Ethics of Scale: field-guide/ethics/ethics-of-scale.md
+    - Responsible Innovation: field-guide/ethics/responsible-innovation.md
   - Leadership:
     - Introduction: field-guide/leadership/index.md
     - Influencing Without Authority: field-guide/leadership/influencing-without-authority.md
@@ -70,7 +76,6 @@ nav:
     - Architecture Decision Records: field-guide/engineering/adrs.md
     - Hexagonal Architecture: field-guide/engineering/hexagonal-architecture.md
     - Story Mapping & Splitting: field-guide/engineering/story-mapping.md
-    - Bias in Automation: field-guide/engineering/bias-in-automation.md
     - Software Supply Chain Security: field-guide/engineering/software-supply-chain-security.md
     - Source Control: field-guide/engineering/source-control.md
     - Chaos Engineering: field-guide/engineering/chaos-engineering.md

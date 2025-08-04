@@ -8,11 +8,11 @@ This final chapter is about developing your ethical intuition. We will provide f
 
 ## Discrete Topics Covered
 
-*   **Bias in Automation & AI**: Learn to identify and mitigate the hidden biases that can be encoded into our automated systems and machine learning models.
-*   **Data Privacy & User Trust**: Explore the principles of designing systems that are transparent, respect user privacy, and build long-term trust.
-*   **Ethical Frameworks for Technologists**: Apply established ethical models (like utilitarianism, deontology, and virtue ethics) to navigate complex engineering trade-offs.
-*   **The Ethics of Scale**: Understand how seemingly small technical decisions can have a massive societal impact when deployed at scale.
-*   **Responsible Innovation**: Develop practices for anticipating the unintended consequences of new technologies and building safeguards into your designs.
+*   [Bias in Automation & AI](bias-in-automation.md): Learn to identify and mitigate the hidden biases that can be encoded into our automated systems and machine learning models.
+*   [Data Privacy & User Trust](data-privacy.md): Explore the principles of designing systems that are transparent, respect user privacy, and build long-term trust.
+*   [Ethical Frameworks for Technologists](ethical-frameworks.md): Apply established ethical models (like utilitarianism, deontology, and virtue ethics) to navigate complex engineering trade-offs.
+*   [The Ethics of Scale](ethics-of-scale.md): Understand how seemingly small technical decisions can have a massive societal impact when deployed at scale.
+*   [Responsible Innovation](responsible-innovation.md): Develop practices for anticipating the unintended consequences of new technologies and building safeguards into your designs.
 
 ## Further Reading
 

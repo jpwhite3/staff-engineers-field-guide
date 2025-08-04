@@ -9,7 +9,7 @@ As a Staff Engineer, you are no longer just a *practitioner* of these skills; yo
 ## Discrete Topics Covered
 
 * [Architecture Decision Records (ADRs)](adrs.md): Learn to document significant architectural decisions to preserve context and accelerate future work.
-* [Bias in Automation](bias-in-automation.md): Understand how to identify and mitigate bias in automated systems and machine learning models.
+
 * [Chaos Engineering](chaos-engineering.md): Discover how to proactively test system resilience by injecting controlled failures.
 * [CI/CD](cicd.md): Master the principles of Continuous Integration and Continuous Delivery to build a high-velocity, reliable deployment pipeline.
 * [Code Hygiene & Refactoring](code-hygiene.md): Adopt the "Boy Scout Rule" to continuously improve codebase health and prevent technical debt.
