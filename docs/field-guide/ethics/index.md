@@ -8,5 +8,4 @@ This final chapter is about developing your ethical intuition. We will provide f
 
 ## Discrete Topics Covered
 
-* [The Ethical Engineer](ethical-engineer.md): Decision-Making Under Uncertainty
-* [Bias in Machine Learning & Automation](bias-in-ml.md): The Ghost in the Machine
+* [Bias in Machine Learning & Automation](../engineering/bias-in-automation.md): The Ghost in the Machine

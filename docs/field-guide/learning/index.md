@@ -6,10 +6,4 @@ Continuous learning is not a passive activity—it's an active, strategic discip
 
 In this chapter, we explore the practices of the lifelong learner. We will discuss how to move beyond surface-level knowledge to develop true expertise, the critical roles of mentorship and sponsorship in accelerating your growth, and your responsibility to cultivate the next generation of technical leaders. We'll provide strategies for staying ahead of industry trends without getting lost in the hype, and for building a professional network that serves as a source of knowledge, opportunity, and support. This is how you future-proof your career.
 
-## Discrete Topics Covered
 
-* [Developing Deep Technical Expertise](deep-expertise.md): Beyond the Surface
-* [The Importance of Mentorship & Sponsorship](mentorship-sponsorship.md): Your Career Accelerants
-* [How to Develop Future Staff Engineers](developing-staff-engineers.md): The Leadership Pipeline
-* [Lifelong Learning & Staying Ahead of Industry Trends](lifelong-learning.md): Signal vs. Noise
-* [Building & Using Your Network](building-network.md): Your External Brain

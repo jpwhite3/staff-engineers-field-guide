@@ -128,10 +128,10 @@ This refactoring introduces the `IOrderLoggerAdapter` interface.  The `CheckoutC
 
 **Resources**
 
-* [Dependency Injection](../practices/dependency-injection.md)
+* [Dependency Injection](../field-guide/engineering/tdd.md)
 * [Strategy Design Pattern](../design-patterns/strategy-pattern.md)
 * [Adapter Design Pattern](../design-patterns/adapter-design-pattern.md)
-* [Explicit Dependencies Principle](../principles/explicit-dependencies-principle.md)
+
 
 **References**
 

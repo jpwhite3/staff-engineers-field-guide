@@ -23,7 +23,9 @@ markdown_extensions:
 nav:
 - Home: index.md
 - Field Guide:
-  - Introduction: field-guide/index.md
+  - Introduction: field-guide/intro/index.md
+  - Learning: field-guide/learning/index.md
+  - Ethics: field-guide/ethics/index.md
   - Leadership:
     - Introduction: field-guide/leadership/index.md
     - Influencing Without Authority: field-guide/leadership/influencing-without-authority.md

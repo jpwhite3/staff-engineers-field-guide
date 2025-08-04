@@ -1,6 +1,6 @@
 # Execution & Delivery
 
-Great engineering isn't just about writing good code—it's about delivering meaningful outcomes. Staff engineers must develop a strategic mindset, making decisions that balance speed, quality, and long-term sustainability. Agile methodologies like SCRUM and Kanban provide frameworks for execution, but mastering delivery requires more than process—it demands structured decision-making, risk management, and adaptability in the face of uncertainty.
+Great engineering isn’t just about writing good code—it’s about delivering meaningful outcomes. Staff engineers must develop a strategic mindset, making decisions that balance speed, quality, and long-term sustainability. Agile methodologies like SCRUM and Kanban provide frameworks for execution, but mastering delivery requires more than process—it demands structured decision-making, risk management, and adaptability in the face of uncertainty.
 
 The ability to build a strong business case for technical projects is critical. Engineers must align their recommendations with business goals, ensuring that technical investments translate into real impact. They must also understand organizational transformation, as engineering teams evolve through scaling challenges.
 

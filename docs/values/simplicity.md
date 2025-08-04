@@ -1,6 +1,6 @@
 # Simplicity: The Foundation of Robust Systems
 
-![Zen Simplicity](images/iStock_000014302733Small-300x224.jpg)
+
 
 Simplicity isn’t just a value in Extreme Programming; it’s the bedrock upon which robust, maintainable, and ultimately successful systems are built. As a staff engineer, you’ll spend a significant portion of your time understanding, mitigating, and preventing technical debt. A deep commitment to simplicity is arguably _the_ most effective way to achieve this. Without it, even the most brilliant designs can quickly become tangled in complexity, leading to wasted effort, increased risk, and frustrated teams. This article will delve into the principles of simplicity within the context of Extreme Programming, equipping you with the knowledge and frameworks needed to consistently deliver high-quality solutions.
 
