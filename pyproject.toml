@@ -16,7 +16,7 @@ dependencies = [
     "pyyaml (>=6.0.2,<7.0.0)",
     "mkdocs-mermaid2-plugin (>=1.2.1,<2.0.0)"
 ]
-
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
