@@ -24,11 +24,11 @@ The two most common frameworks teams adopt are Scrum and Kanban. Each has streng
 Scrum provides structure through fixed-length sprints (typically 1-4 weeks), with defined roles (Scrum Master, Product Owner, Development Team) and ceremonies (Sprint Planning, Daily Standup, Sprint Review, Retrospective).
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph "Scrum Cycle"
         A[Product Backlog] --> B{Sprint Planning}
         B --> C[Sprint Backlog]
-        C --> D{Sprint (1-4 weeks)}
+        C --> D{Sprint}
         D --> E(Daily Standup)
         E --> D
         D --> F[Increment]
@@ -55,13 +55,12 @@ graph TD
 Kanban visualizes work flowing through a system, limits work in progress (WIP), and optimizes for cycle time—how quickly work moves from start to finish.
 
 ```mermaid
-graph LR
+flowchart LR
     A[Backlog] --> B(To Do)
-    B --> C{In Progress (WIP Limit: 3)}
+    B --> C{In Progress}
     C --> D(Code Review)
     D --> E((Done))
 ```
-
 
 **When to Use Kanban:**
 * When work is more operational or maintenance-focused
