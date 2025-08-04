@@ -23,8 +23,20 @@ markdown_extensions:
 nav:
 - Home: index.md
 - Field Guide:
-  - Introduction: field-guide/intro/index.md
-  - Learning: field-guide/learning/index.md
+  - Introduction:
+    - Introduction: field-guide/intro/index.md
+    - The Tech Lead: field-guide/intro/tech-lead.md
+    - The Architect: field-guide/intro/architect.md
+    - The Solver: field-guide/intro/solver.md
+    - The Right Hand: field-guide/intro/right-hand.md
+    - Becoming a Force Multiplier: field-guide/intro/force-multiplier.md
+  - Learning:
+    - Introduction: field-guide/learning/index.md
+    - Developing Expertise: field-guide/learning/developing-expertise.md
+    - Mentorship & Sponsorship: field-guide/learning/mentorship-sponsorship.md
+    - Staying Current: field-guide/learning/staying-current.md
+    - The Learning Organization: field-guide/learning/learning-organization.md
+    - Teaching to Learn: field-guide/learning/teaching-to-learn.md
   - Ethics:
     - Introduction: field-guide/ethics/index.md
     - Bias in Automation: field-guide/ethics/bias-in-automation.md

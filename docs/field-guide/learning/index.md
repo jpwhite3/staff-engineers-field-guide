@@ -6,11 +6,11 @@ This chapter is about moving beyond the passive consumption of information and d
 
 ## Discrete Topics Covered
 
-*   **Developing Expertise**: Move beyond surface-level knowledge to cultivate deep, durable skills in your chosen domain.
-*   **Mentorship & Sponsorship**: Understand the distinct roles of mentors and sponsors and learn how to cultivate these critical relationships.
-*   **Staying Current**: Develop a strategy for tracking industry trends without chasing hype, using tools like technology radars.
-*   **The Learning Organization**: Go beyond individual learning to help build a culture of continuous improvement and knowledge sharing on your team.
-*   **Teaching to Learn**: Solidify your own understanding and scale your impact by effectively teaching and mentoring others.
+*   [Developing Expertise](developing-expertise.md): Move beyond surface-level knowledge to cultivate deep, durable skills in your chosen domain.
+*   [Mentorship & Sponsorship](mentorship-sponsorship.md): Understand the distinct roles of mentors and sponsors and learn how to cultivate these critical relationships.
+*   [Staying Current](staying-current.md): Develop a strategy for tracking industry trends without chasing hype, using tools like technology radars.
+*   [The Learning Organization](learning-organization.md): Go beyond individual learning to help build a culture of continuous improvement and knowledge sharing on your team.
+*   [Teaching to Learn](teaching-to-learn.md): Solidify your own understanding and scale your impact by effectively teaching and mentoring others.
 
 ## Further Reading
 

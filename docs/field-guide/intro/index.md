@@ -1,5 +1,7 @@
 # Setting the Stage: What It Means to Be a Staff Engineer
 
+> This guide is designed as a companion to "The Staff Engineer's Path" by Tanya Reilly, expanding on the concepts and providing practical frameworks for applying them in your daily work as a Staff Engineer.
+
 This first section lays the groundwork for your journey. Before diving into specific tactics and skills, it's crucial to understand the fundamental shift in mindset and responsibility that defines the Staff Engineer role. It's less about what you *do* and more about the *impact* you have.
 
 ## The Role of a Staff Engineer: Beyond the Code
@@ -31,3 +33,25 @@ How do you become a force multiplier?
 * **Making Decisions that Unblock:** You have the context and technical depth to make difficult trade-off decisions that unblock entire teams. You see the bigger picture and can confidently say, "We will do X, and here's why," providing clarity and enabling forward momentum.
 
 Adopting this mindset is the key to unlocking the true potential of the Staff Engineer role. The rest of this guide is dedicated to giving you the tools to do just that.
+
+## Discrete Topics Covered
+
+* [The Tech Lead](tech-lead.md): Learn how to guide the technical direction of a team, maintain code health, and mentor other engineers while balancing leadership with hands-on contribution.
+* [The Architect](architect.md): Explore how to shape technical strategy, design scalable systems, and establish governance while maintaining alignment with business goals.
+* [The Solver](solver.md): Discover how to tackle the most complex technical challenges, from production firefighting to technical exploration and legacy system navigation.
+* [The Right Hand](right-hand.md): Understand how to partner with senior leadership, drive strategic initiatives, and influence across the organization.
+* [Becoming a Force Multiplier](force-multiplier.md): Master the strategies for scaling your impact by enabling others to be more effective and productive.
+
+## Further Reading
+
+To deepen your understanding of the Staff Engineer role and how to succeed in it, consider these influential works:
+
+* **Reilly, Tanya. *The Staff Engineer's Path: A Guide for Individual Contributors Navigating Growth and Change*.** (2022). The definitive guide to the Staff Engineer role and the primary resource this field guide is designed to complement. Reilly provides a comprehensive framework for understanding and excelling in technical leadership positions beyond the management track.
+
+* **Fournier, Camille. *The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change*.** (2017). Provides a roadmap for engineering leadership roles, including the transition from Senior to Staff Engineer.
+
+* **Larson, Will. *Staff Engineer: Leadership Beyond the Management Track*.** (2021). A collection of stories and insights from Staff Engineers across the industry, offering diverse perspectives on the role.
+
+* **Gruver, Gary, et al. *A Practical Approach to Large-Scale Agile Development*.** (2012). Offers insights into leading large-scale technical initiatives and driving organizational change.
+
+* **Brandolini, Alberto. *Introducing EventStorming: An Act of Deliberate Collective Learning*.** (2019). A powerful approach for collaborative exploration of complex domains, useful for Staff Engineers in any archetype.
