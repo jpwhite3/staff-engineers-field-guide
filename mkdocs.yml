@@ -184,3 +184,5 @@ nav:
     - 'Cultivating Respect: A Foundation for High-Performing Teams': appendix/values/respect.md
     - 'Simplicity: The Foundation of Robust Systems': appendix/values/simplicity.md
     - Understanding and Applying Extreme Programming Values: appendix/values/values-overview.md
+  - Recommended Reading:
+    - Overview: appendix/reading/index.md
