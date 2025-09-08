@@ -46,6 +46,7 @@ nav:
     - Responsible Innovation: field-guide/ethics/responsible-innovation.md
   - Leadership:
     - Introduction: field-guide/leadership/index.md
+    - Technical Vision & Purpose: field-guide/leadership/technical-vision.md
     - Influencing Without Authority: field-guide/leadership/influencing-without-authority.md
     - Vulnerability in Leadership: field-guide/leadership/vulnerability-leadership.md
     - Self-Awareness & Personality Types: field-guide/leadership/self-awareness-personality-types.md
@@ -61,6 +62,7 @@ nav:
     - Navigating Tough Technical Discussions: field-guide/leadership/navigating-tough-technical-discussions.md
   - Teamwork:
     - Introduction: field-guide/teamwork/index.md
+    - Organizational Design: field-guide/teamwork/organizational-design.md
     - Team Formation: field-guide/teamwork/team-formation.md
     - Five Dysfunctions of a Team: field-guide/teamwork/five-dysfunctions.md
     - Cross-Functional Collaboration: field-guide/teamwork/cross-functional-collaboration.md
@@ -174,6 +176,7 @@ nav:
     - 'Understanding Technical Debt: A Strategic Approach': appendix/terms/technical-debt.md
   - Tools:
     - Overview: appendix/tools/index.md
+    - 'Team Topology Assessment Framework': appendix/tools/team-topology-assessment.md
     - 'Understanding Build Servers: The Foundation of Reliable Software Delivery': appendix/tools/build-server.md
     - 'Version Control: A Foundation for Reliable Software Development': appendix/tools/version-control.md
   - Values:
