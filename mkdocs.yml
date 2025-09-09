@@ -81,6 +81,10 @@ nav:
     - Organizational Transformation: field-guide/execution/organizational-transformation.md
   - Engineering:
     - Introduction: field-guide/engineering/index.md
+    - Site Reliability Engineering: field-guide/engineering/site-reliability-engineering.md
+    - Clean Architecture: field-guide/engineering/clean-architecture.md
+    - Evolutionary Architecture: field-guide/engineering/evolutionary-architecture.md
+    - Continuous Delivery: field-guide/engineering/continuous-delivery.md
     - CI/CD: field-guide/engineering/cicd.md
     - Git Best Practices: field-guide/engineering/git-practices.md
     - DevOps & Automation: field-guide/engineering/devops.md
@@ -176,6 +180,7 @@ nav:
     - 'Understanding Technical Debt: A Strategic Approach': appendix/terms/technical-debt.md
   - Tools:
     - Overview: appendix/tools/index.md
+    - 'Engineering Excellence Assessment Framework': appendix/tools/engineering-excellence-assessment.md
     - 'Team Topology Assessment Framework': appendix/tools/team-topology-assessment.md
     - 'Understanding Build Servers: The Foundation of Reliable Software Delivery': appendix/tools/build-server.md
     - 'Version Control: A Foundation for Reliable Software Development': appendix/tools/version-control.md
