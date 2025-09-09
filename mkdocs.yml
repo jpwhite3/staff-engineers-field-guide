@@ -185,6 +185,9 @@ nav:
     - 'Understanding Technical Debt: A Strategic Approach': appendix/terms/technical-debt.md
   - Tools:
     - Overview: appendix/tools/index.md
+    - 'Staff Engineer Competency Assessment': appendix/tools/staff-engineer-competency-assessment.md
+    - 'Team Health Diagnostic': appendix/tools/team-health-diagnostic.md
+    - 'Development Tracking System': appendix/tools/development-tracking-system.md
     - 'Engineering Excellence Assessment Framework': appendix/tools/engineering-excellence-assessment.md
     - 'Critical Thinking Assessment': appendix/tools/critical-thinking-assessment.md
     - 'Team Topology Assessment Framework': appendix/tools/team-topology-assessment.md
