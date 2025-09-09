@@ -139,14 +139,70 @@ McChrystal's insights on leading large, complex organizations provide crucial gu
 - Decentralized decision-making
 - Adaptability in rapidly changing environments
 
+### The Fifth Discipline
+**Author:** Peter M. Senge  
+**Focus:** Systems thinking and learning organizations  
+**Field Guide Integration:** Comprehensive integration in organizational design with systems thinking frameworks
+
+Senge's work on systems thinking provides fundamental insights for understanding organizational complexity and designing structures that enable rather than constrain performance.
+
+**Key Concepts Applied:**
+- Leverage points in engineering organizations
+- System archetypes and dysfunction patterns
+- Mental models and organizational paradigms
+- Learning organizations and feedback loops
+- Systems structure and power distribution
+
+### Thinking in Systems
+**Author:** Donella Meadows  
+**Focus:** System dynamics and leverage points  
+**Field Guide Integration:** Referenced in organizational design and strategic thinking chapters
+
+Meadows' primer on systems thinking provides practical tools for understanding complex organizational and technical systems, essential for staff engineers influencing system-wide change.
+
+**Key Concepts Applied:**
+- Twelve leverage points for system intervention
+- System structure drives behavior
+- Purpose and function in complex systems
+- Resilience and self-organization
+- System traps and how to avoid them
+
 ## Technical Architecture and Engineering Excellence
+
+### Clean Code
+**Author:** Robert C. Martin (Uncle Bob)  
+**Focus:** Professional software development and code craftsmanship  
+**Field Guide Integration:** Integrated throughout clean architecture and engineering excellence chapters
+
+Martin's foundational work on professional programming provides the building blocks for maintainable software. Essential reading for understanding how clean code practices scale to clean architecture.
+
+**Key Concepts Applied:**
+- Meaningful naming and expressive code
+- Functions that do one thing well
+- Comment practices and code documentation
+- Error handling and defensive programming
+- Code formatting and team standards
+
+### Clean Agile
+**Author:** Robert C. Martin (Uncle Bob)  
+**Focus:** Agile software development principles and practices  
+**Field Guide Integration:** Integrated with clean architecture for holistic development approach
+
+Martin's perspective on agile development emphasizes technical excellence as the foundation for successful agile practices, bridging engineering discipline with business agility.
+
+**Key Concepts Applied:**
+- Technical practices that enable agility
+- Test-driven development as agile practice
+- Continuous integration and deployment
+- Agile architecture and design principles
+- Professional responsibility in agile teams
 
 ### Clean Architecture
 **Author:** Robert C. Martin (Uncle Bob)  
 **Focus:** Software architecture principles and dependency management  
-**Field Guide Integration:** Comprehensive integration in clean architecture chapter and architectural decision-making
+**Field Guide Integration:** Comprehensive integration in clean architecture chapter with clean code foundation
 
-Martin's architectural principles provide the foundation for building maintainable, testable, and flexible software systems at scale.
+Martin's architectural principles provide the foundation for building maintainable, testable, and flexible software systems at scale, built on clean code practices.
 
 **Key Concepts Applied:**
 - SOLID principles in system design
@@ -211,6 +267,20 @@ Beck's foundational work on TDD provides essential techniques for staff engineer
 - Emergent design through testing
 - Quality as a technical practice
 
+### Software Engineering at Google
+**Authors:** Titus Winters, Tom Manshreck, Hyrum Wright  
+**Focus:** Engineering practices and culture at massive scale  
+**Field Guide Integration:** Integrated throughout engineering excellence and code hygiene chapters
+
+Google's engineering practices offer battle-tested approaches to maintaining quality and productivity with tens of thousands of engineers working on billions of lines of code.
+
+**Key Concepts Applied:**
+- Code review as teaching and learning mechanism
+- Readability reviews and certification systems
+- Large-scale changes and automated refactoring
+- "Two inches to the right" improvement philosophy
+- Engineering culture and knowledge sharing
+
 ### Building Microservices
 **Author:** Sam Newman  
 **Focus:** Distributed systems architecture and operational concerns  
@@ -224,6 +294,20 @@ Newman's comprehensive guide to microservices provides crucial insights for staf
 - Inter-service communication patterns
 - Testing microservices architectures
 - Organizational implications of microservices
+
+### The Lean Startup
+**Author:** Eric Ries  
+**Focus:** Building products through validated learning  
+**Field Guide Integration:** Integrated with clean architecture for experimental design and business alignment
+
+Ries's methodology for building products under uncertainty provides frameworks for technical leaders to design systems that support rapid experimentation and learning.
+
+**Key Concepts Applied:**
+- Build-Measure-Learn cycle for technical decisions
+- Minimum viable product development
+- Validated learning through architecture
+- Metrics and measurement built into systems
+- Pivot strategies and technical adaptability
 
 ## Critical Thinking and Decision Making
 
@@ -341,6 +425,34 @@ Harvard Negotiation Project's principled negotiation provides staff engineers wi
 - Generating options for mutual gain
 - Using objective criteria for decisions
 
+### Never Split the Difference
+**Author:** Chris Voss  
+**Focus:** FBI negotiation tactics for high-stakes conversations  
+**Field Guide Integration:** Comprehensive integration in advanced conflict resolution chapter
+
+Voss's tactical negotiation approach provides powerful tools for technical leaders dealing with high-emotion, high-stakes technical decisions and organizational conflicts.
+
+**Key Concepts Applied:**
+- Tactical empathy in technical discussions
+- Labeling emotions to defuse tension
+- Calibrated questions for exploration
+- Getting to "that's right" instead of "yes"
+- Strategic patience in technical decision-making
+
+### Surrounded by Idiots
+**Author:** Thomas Erikson  
+**Focus:** DISC-based communication and personality understanding  
+**Field Guide Integration:** Referenced in communication and self-awareness chapters
+
+Erikson's practical application of DISC personality types provides technical leaders with frameworks for adapting communication styles to different personality types on technical teams.
+
+**Key Concepts Applied:**
+- Four communication styles in technical teams
+- Adapting technical explanations to different styles
+- Understanding team dynamics through personality types
+- Conflict resolution across different communication preferences
+- Building inclusive communication practices
+
 ## Psychological Safety and Team Culture
 
 ### The Fearless Organization
@@ -414,6 +526,20 @@ Wiseman's research on how leaders multiply intelligence provides crucial insight
 - Challenger and Debate Maker roles
 - Investor approach to development
 - Creating genius in others
+
+### The First 90 Days
+**Author:** Michael Watkins  
+**Focus:** Transition strategies for new leadership roles  
+**Field Guide Integration:** Integrated in career development and leadership transition guidance
+
+Watkins' framework for successful leadership transitions provides valuable guidance for staff engineers taking on new roles or responsibilities.
+
+**Key Concepts Applied:**
+- Transition acceleration strategies
+- Early wins and credibility building
+- Stakeholder analysis and relationship building
+- Learning and assessment frameworks
+- Team development in new roles
 
 ## Product and Business Integration
 
