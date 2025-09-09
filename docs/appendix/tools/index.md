@@ -16,7 +16,3 @@ These frameworks transform the Field Guide from reference material into a comple
 - [Critical Thinking Assessment](critical-thinking-assessment.md) - Decision-making and problem-solving evaluation
 - [Team Topology Assessment Framework](team-topology-assessment.md) - Organizational design effectiveness
 
-## Technical Tools
-
-- [Understanding Build Servers: The Foundation of Reliable Software Delivery](build-server.md)
-- [Version Control: A Foundation for Reliable Software Development](version-control.md)
