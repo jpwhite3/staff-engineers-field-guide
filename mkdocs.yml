@@ -85,6 +85,7 @@ nav:
     - Clean Architecture: field-guide/engineering/clean-architecture.md
     - Evolutionary Architecture: field-guide/engineering/evolutionary-architecture.md
     - Continuous Delivery: field-guide/engineering/continuous-delivery.md
+    - Advanced Testing Strategies: field-guide/engineering/advanced-testing-strategies.md
     - CI/CD: field-guide/engineering/cicd.md
     - Git Best Practices: field-guide/engineering/git-practices.md
     - DevOps & Automation: field-guide/engineering/devops.md
@@ -108,6 +109,8 @@ nav:
   - Business:
     - Introduction: field-guide/business/index.md
     - Aligning Technology to Business Strategy: field-guide/business/aligning-technology.md
+    - Product-Engineering Collaboration: field-guide/business/product-engineering-collaboration.md
+    - Engineering Metrics & Business Alignment: field-guide/business/engineering-metrics-business-alignment.md
     - Pitching to Executives: field-guide/business/pitching-to-executives.md
     - Building a Better Business Case: field-guide/business/business-case.md
     - Revenue vs. Risk: field-guide/business/revenue-vs-risk.md
@@ -183,6 +186,7 @@ nav:
     - Overview: appendix/tools/index.md
     - 'Engineering Excellence Assessment Framework': appendix/tools/engineering-excellence-assessment.md
     - 'Critical Thinking Assessment': appendix/tools/critical-thinking-assessment.md
+    - 'Technical Debt Management Framework': appendix/tools/technical-debt-management-framework.md
     - 'Team Topology Assessment Framework': appendix/tools/team-topology-assessment.md
     - 'Understanding Build Servers: The Foundation of Reliable Software Delivery': appendix/tools/build-server.md
     - 'Version Control: A Foundation for Reliable Software Development': appendix/tools/version-control.md
