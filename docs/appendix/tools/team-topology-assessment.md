@@ -1,6 +1,12 @@
 # Team Topology Assessment Framework
 
-This assessment framework helps Staff Engineers evaluate and optimize team structures using Team Topologies principles. Use these tools to diagnose organizational health and identify improvement opportunities.
+> *"You can't improve what you don't measure, and you can't measure what you don't understand."*
+
+Ever walked into an engineering organization and immediately sensed something was "off"? Maybe teams seemed frustrated, delivery was slower than it should be, or there was constant friction between groups? Often, the root cause isn't technical—it's organizational.
+
+**This assessment framework helps you diagnose organizational health using Team Topologies principles.** Think of it as a health check for your engineering organization, designed to identify problems before they become crises and find opportunities for improvement.
+
+Whether you're joining a new company, restructuring existing teams, or just trying to understand why things feel harder than they should be, these tools will give you the data you need to make informed decisions about team structure and evolution.
 
 ## Quick Team Type Assessment
 
@@ -32,11 +38,15 @@ flowchart TD
     style F fill:#fff3e0
 ```
 
-## Comprehensive Team Health Assessment
+## How Healthy Are Your Teams? A Comprehensive Assessment
+
+**Before you start:** These assessments work best when completed by multiple people (team members, stakeholders, leadership) and compared. Different perspectives often reveal blind spots.
 
 ### Stream-Aligned Team Health Check
 
-Rate each item from 1 (Poor) to 5 (Excellent):
+> **Quick gut check**: Is this team able to deliver value to users independently, or are they constantly waiting for other teams?
+
+**Rate each dimension from 1 (Poor) to 5 (Excellent).** Be honest—this is about identifying opportunities for improvement, not scoring perfect 5s.
 
 #### Value Stream Clarity (Weight: 25%)
 - [ ] Team has clear understanding of their users and user needs (1-5)

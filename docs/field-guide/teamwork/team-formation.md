@@ -8,41 +8,69 @@ A new team has been formed to tackle a high-priority greenfield project. The fir
 
 The team isn't broken; it's just following a predictable pattern. But as a Staff Engineer, you need to consider two complementary perspectives: **what type of team** you're forming and **what developmental stage** they're in. The structure and purpose of your team (informed by Team Topologies) determines how you approach their natural development stages (described by Tuckman's model).
 
-## Team Type Determines Formation Strategy
+## Here's What Most People Get Wrong About Team Formation
 
-Before diving into team development stages, it's crucial to understand what type of team you're forming. Different team types require different formation approaches:
+Most managers approach team formation like they're assembling IKEA furniture—they think if they just get the right people in the right roles, following the right process, everything will work out. But here's the thing: **the type of team you're forming completely changes how you should approach that formation process.**
 
-### Stream-Aligned Teams
-**Formation Focus:** End-to-end capability building and user value alignment
+A platform team forming to build internal developer tools needs fundamentally different early experiences than a stream-aligned team forming to own a customer-facing product. Yet most organizations use the same generic "team formation" playbook for everyone.
 
-These teams need cross-functional skills and direct connection to user outcomes. During formation, emphasize:
-- **Skills diversity:** Ensure all capabilities needed for the value stream
-- **User connection:** Early and regular contact with actual users
-- **Outcome orientation:** Focus on business results, not just technical delivery
+**Before you can successfully guide a team through the classic forming-storming-norming-performing stages**, you need to understand what kind of team you're building and tailor your approach accordingly.
 
-### Platform Teams  
-**Formation Focus:** Customer empathy and product thinking
+### Stream-Aligned Teams: Building User-Centric Product Teams
 
-Platform teams serve other engineering teams. During formation, emphasize:
-- **Customer research:** Understanding developer pain points and needs
-- **Product mindset:** Treating internal tools as products with real users
-- **Service excellence:** Building for reliability, usability, and backwards compatibility
+> *Formation mantra: "Get them talking to users as quickly as possible"*
 
-### Enabling Teams
-**Formation Focus:** Teaching and knowledge transfer capabilities
+When you're forming a stream-aligned team, your biggest risk isn't technical—it's that the team will optimize for technical elegance rather than user outcomes. These teams need to develop a shared understanding of their users and a collective sense of ownership over business results.
 
-These teams exist to build capability in other teams. During formation, emphasize:
-- **Pedagogical skills:** Not just expertise, but ability to teach and coach
-- **Temporary mindset:** Success means making yourself unnecessary
-- **Systemic thinking:** Understanding problems across the organization
+**Here's how to set them up for success during formation:**
 
-### Complicated Subsystem Teams
-**Formation Focus:** Deep expertise and clear interface design
+🎯 **Start with users, not architecture**: Before anyone writes code, have the team do user interviews, review support tickets, or shadow customer success calls. You want them thinking like product owners, not just engineers.
 
-These teams manage complex, specialized domains. During formation, emphasize:
-- **Domain expertise:** Deep knowledge in the specialized area
-- **Interface thinking:** Ability to hide complexity behind clean APIs  
-- **Collaboration skills:** Working effectively with stream teams that depend on them
+🔄 **Build the full stack of skills**: Make sure you have frontend, backend, testing, and operations capabilities within the team. Gaps in capability become dependencies on other teams, which slows down delivery.
+
+📊 **Define success in business terms**: Help them understand what "good" looks like beyond technical metrics. How will they know if they're succeeding with users?
+
+### Platform Teams: Building Products for Engineers
+
+> *Formation mantra: "Your customer is the engineer trying to ship features faster"*
+
+Platform teams have a unique challenge: their customers are other engineers who have strong technical opinions and zero patience for bad developer experiences. During formation, these teams need to develop deep empathy for their internal customers and a product mindset about their tools.
+
+**Focus on these key areas:**
+
+👥 **Meet your customers early**: Have the forming team spend time with stream-aligned teams, understanding their daily frustrations and workflow bottlenecks.
+
+🛠️ **Think like a product team**: Platform teams need product management skills, user research capabilities, and a healthy obsession with adoption metrics.
+
+📈 **Measure what matters**: Success isn't building cool technology—it's making other teams faster and more effective. Set up measurement systems that track adoption, satisfaction, and developer productivity.
+
+### Enabling Teams: Building Teaching and Coaching Capabilities  
+
+> *Formation mantra: "Success means making yourself unnecessary"*
+
+Enabling teams have perhaps the most counterintuitive mission in technology: their goal is to work themselves out of a job by making other teams capable of handling challenges independently.
+
+**During formation, focus on:**
+
+🎓 **Develop teaching skills**: Technical expertise isn't enough—they need to be able to transfer knowledge effectively. Consider bringing in training on adult learning principles and coaching techniques.
+
+⏱️ **Embrace the temporary mindset**: Help them understand that longer engagements aren't better engagements. The goal is capability transfer, not dependency creation.
+
+🔍 **Build systemic perspective**: They need to see patterns across teams and identify root causes, not just solve individual problems.
+
+### Complicated Subsystem Teams: Balancing Deep Expertise with Collaboration
+
+> *Formation mantra: "Hide complexity behind simplicity"*
+
+These teams own the gnarly technical stuff that would overwhelm other teams, but they can't afford to become ivory towers. They need to balance deep technical focus with effective collaboration.
+
+**Key formation priorities:**
+
+🔬 **Establish domain authority**: Make sure the team has or develops deep expertise in their specialized area—this is their primary value proposition.
+
+🌉 **Build interface thinking**: They need to excel at hiding complexity behind clean, well-documented APIs. Complexity containment is as important as problem-solving.
+
+🤝 **Maintain connection**: Set up regular interaction patterns with stream teams to ensure the subsystem evolves in ways that support broader system goals.
 
 ## The Four Stages
 
