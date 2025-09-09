@@ -47,6 +47,8 @@ nav:
   - Leadership:
     - Introduction: field-guide/leadership/index.md
     - Technical Vision & Purpose: field-guide/leadership/technical-vision.md
+    - Advanced Conflict Resolution: field-guide/leadership/advanced-conflict-resolution.md
+    - Advanced Mentorship & Career Development: field-guide/leadership/advanced-mentorship-career-development.md
     - Influencing Without Authority: field-guide/leadership/influencing-without-authority.md
     - Vulnerability in Leadership: field-guide/leadership/vulnerability-leadership.md
     - Self-Awareness & Personality Types: field-guide/leadership/self-awareness-personality-types.md
@@ -64,6 +66,7 @@ nav:
     - Introduction: field-guide/teamwork/index.md
     - Organizational Design: field-guide/teamwork/organizational-design.md
     - Team Formation: field-guide/teamwork/team-formation.md
+    - Cultural Transformation & Psychological Safety: field-guide/teamwork/cultural-transformation-psychological-safety.md
     - Five Dysfunctions of a Team: field-guide/teamwork/five-dysfunctions.md
     - Cross-Functional Collaboration: field-guide/teamwork/cross-functional-collaboration.md
     - Mismanagement Agreement: field-guide/teamwork/mismanagement-agreement.md
@@ -73,6 +76,7 @@ nav:
     - Introduction: field-guide/execution/index.md
     - Agile Essentials: field-guide/execution/agile-essentials.md
     - Decision-Making Frameworks: field-guide/execution/decision-making-frameworks.md
+    - Change Management for Technical Transformations: field-guide/execution/change-management-technical-transformations.md
     - Building a Business Case: field-guide/execution/business-case.md
     - Strategic Thinking: field-guide/execution/strategic-thinking.md
     - Speed vs. Quality: field-guide/execution/speed-vs-quality.md
