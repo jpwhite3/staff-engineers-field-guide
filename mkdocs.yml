@@ -100,6 +100,7 @@ nav:
   - Critical Thinking:
     - Introduction: field-guide/thinking/index.md
     - Mental Models for Engineers: field-guide/thinking/mental-models.md
+    - Algorithmic Decision-Making: field-guide/thinking/algorithmic-decision-making.md
     - Cognitive Biases: field-guide/thinking/cognitive-biases.md
     - Structured Problem-Solving: field-guide/thinking/structured-problem-solving.md
     - Mind Mapping & Visual Thinking: field-guide/thinking/mind-mapping.md
@@ -181,6 +182,7 @@ nav:
   - Tools:
     - Overview: appendix/tools/index.md
     - 'Engineering Excellence Assessment Framework': appendix/tools/engineering-excellence-assessment.md
+    - 'Critical Thinking Assessment': appendix/tools/critical-thinking-assessment.md
     - 'Team Topology Assessment Framework': appendix/tools/team-topology-assessment.md
     - 'Understanding Build Servers: The Foundation of Reliable Software Delivery': appendix/tools/build-server.md
     - 'Version Control: A Foundation for Reliable Software Development': appendix/tools/version-control.md
