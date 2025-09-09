@@ -24,11 +24,11 @@ When you're forming a stream-aligned team, your biggest risk isn't technical—i
 
 **Here's how to set them up for success during formation:**
 
-🎯 **Start with users, not architecture**: Before anyone writes code, have the team do user interviews, review support tickets, or shadow customer success calls. You want them thinking like product owners, not just engineers.
+**Start with users, not architecture**: Before anyone writes code, have the team do user interviews, review support tickets, or shadow customer success calls. You want them thinking like product owners, not just engineers.
 
-🔄 **Build the full stack of skills**: Make sure you have frontend, backend, testing, and operations capabilities within the team. Gaps in capability become dependencies on other teams, which slows down delivery.
+**Build the full stack of skills**: Make sure you have frontend, backend, testing, and operations capabilities within the team. Gaps in capability become dependencies on other teams, which slows down delivery.
 
-📊 **Define success in business terms**: Help them understand what "good" looks like beyond technical metrics. How will they know if they're succeeding with users?
+**Define success in business terms**: Help them understand what "good" looks like beyond technical metrics. How will they know if they're succeeding with users?
 
 ### Platform Teams: Building Products for Engineers
 
@@ -38,11 +38,11 @@ Platform teams have a unique challenge: their customers are other engineers who 
 
 **Focus on these key areas:**
 
-👥 **Meet your customers early**: Have the forming team spend time with stream-aligned teams, understanding their daily frustrations and workflow bottlenecks.
+**Meet your customers early**: Have the forming team spend time with stream-aligned teams, understanding their daily frustrations and workflow bottlenecks.
 
-🛠️ **Think like a product team**: Platform teams need product management skills, user research capabilities, and a healthy obsession with adoption metrics.
+**Think like a product team**: Platform teams need product management skills, user research capabilities, and a healthy obsession with adoption metrics.
 
-📈 **Measure what matters**: Success isn't building cool technology—it's making other teams faster and more effective. Set up measurement systems that track adoption, satisfaction, and developer productivity.
+**Measure what matters**: Success isn't building cool technology—it's making other teams faster and more effective. Set up measurement systems that track adoption, satisfaction, and developer productivity.
 
 ### Enabling Teams: Building Teaching and Coaching Capabilities  
 
@@ -52,11 +52,11 @@ Enabling teams have perhaps the most counterintuitive mission in technology: the
 
 **During formation, focus on:**
 
-🎓 **Develop teaching skills**: Technical expertise isn't enough—they need to be able to transfer knowledge effectively. Consider bringing in training on adult learning principles and coaching techniques.
+**Develop teaching skills**: Technical expertise isn't enough—they need to be able to transfer knowledge effectively. Consider bringing in training on adult learning principles and coaching techniques.
 
-⏱️ **Embrace the temporary mindset**: Help them understand that longer engagements aren't better engagements. The goal is capability transfer, not dependency creation.
+**Embrace the temporary mindset**: Help them understand that longer engagements aren't better engagements. The goal is capability transfer, not dependency creation.
 
-🔍 **Build systemic perspective**: They need to see patterns across teams and identify root causes, not just solve individual problems.
+**Build systemic perspective**: They need to see patterns across teams and identify root causes, not just solve individual problems.
 
 ### Complicated Subsystem Teams: Balancing Deep Expertise with Collaboration
 
@@ -66,11 +66,11 @@ These teams own the gnarly technical stuff that would overwhelm other teams, but
 
 **Key formation priorities:**
 
-🔬 **Establish domain authority**: Make sure the team has or develops deep expertise in their specialized area—this is their primary value proposition.
+**Establish domain authority**: Make sure the team has or develops deep expertise in their specialized area—this is their primary value proposition.
 
-🌉 **Build interface thinking**: They need to excel at hiding complexity behind clean, well-documented APIs. Complexity containment is as important as problem-solving.
+**Build interface thinking**: They need to excel at hiding complexity behind clean, well-documented APIs. Complexity containment is as important as problem-solving.
 
-🤝 **Maintain connection**: Set up regular interaction patterns with stream teams to ensure the subsystem evolves in ways that support broader system goals.
+**Maintain connection**: Set up regular interaction patterns with stream teams to ensure the subsystem evolves in ways that support broader system goals.
 
 ## The Four Stages
 

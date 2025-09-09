@@ -45,11 +45,11 @@ If you've ever worked at a company where product teams could ship features witho
 
 Here's what makes them special:
 
-🎯 **Complete ownership**: They build it, they ship it, they run it. No throwing code over the wall.
+**Complete ownership**: They build it, they ship it, they run it. No throwing code over the wall.
 
-👥 **Cross-functional**: All the skills needed for their stream live within the team—frontend, backend, testing, operations, even some design and product sense.
+**Cross-functional**: All the skills needed for their stream live within the team—frontend, backend, testing, operations, even some design and product sense.
 
-📊 **User-focused metrics**: They measure success by user outcomes, not engineering outputs. Did usage go up? Did customer satisfaction improve? Did the feature solve the problem?
+**User-focused metrics**: They measure success by user outcomes, not engineering outputs. Did usage go up? Did customer satisfaction improve? Did the feature solve the problem?
 
 **Your role as a Staff Engineer** is to help these teams succeed by defining clear stream boundaries (what's in their domain vs. what's not), ensuring they have the technical capabilities they need, and ruthlessly removing dependencies that slow them down.
 
@@ -67,11 +67,11 @@ The best platform teams understand a crucial truth: **engineering teams don't wa
 
 What makes platform teams effective:
 
-🛠️ **Product mindset**: They don't just build tools, they build *products* with real users (other engineers) who have real problems.
+**Product mindset**: They don't just build tools, they build *products* with real users (other engineers) who have real problems.
 
-📈 **Adoption metrics**: A platform that nobody uses is just expensive tech debt. They measure success by how many teams adopt their services and how much faster those teams ship.
+**Adoption metrics**: A platform that nobody uses is just expensive tech debt. They measure success by how many teams adopt their services and how much faster those teams ship.
 
-🔧 **Self-service everything**: The goal is to eliminate the "please open a ticket" interactions. Teams should be able to provision infrastructure, deploy services, and get monitoring without talking to anyone.
+**Self-service everything**: The goal is to eliminate the "please open a ticket" interactions. Teams should be able to provision infrastructure, deploy services, and get monitoring without talking to anyone.
 
 **Your role as a Staff Engineer** is to define the platform strategy (what should be standardized vs. what teams should choose freely), ensure the platform evolves based on real team needs, and maintain that delicate balance between consistency and autonomy.
 
@@ -87,11 +87,11 @@ You could hire security experts for every team (expensive and probably impossibl
 
 The magic happens in how they work:
 
-🎓 **Teaching, not doing**: They don't take over the work—they pair with team members to build skills and knowledge that persist after they leave.
+**Teaching, not doing**: They don't take over the work—they pair with team members to build skills and knowledge that persist after they leave.
 
-⏰ **Temporary by design**: Engagements typically last weeks or months, not years. If an enabling team is still "helping" the same team a year later, something's wrong.
+**Temporary by design**: Engagements typically last weeks or months, not years. If an enabling team is still "helping" the same team a year later, something's wrong.
 
-🎯 **Capability focused**: They're not just solving today's problem; they're building the team's ability to solve similar problems in the future.
+**Capability focused**: They're not just solving today's problem; they're building the team's ability to solve similar problems in the future.
 
 **Your role as a Staff Engineer** is to spot capability gaps across teams (often you're the one who can see patterns across the organization), coordinate enabling team interventions, and most importantly, ensure that knowledge actually transfers and sticks.
 
@@ -105,11 +105,11 @@ Every system has that one component that makes everyone's eyes glaze over when y
 
 Complicated subsystem teams are the specialists who own these intricate pieces:
 
-🔬 **Deep domain expertise**: They have the mathematical, scientific, or regulatory knowledge needed to make sense of the complexity.
+**Deep domain expertise**: They have the mathematical, scientific, or regulatory knowledge needed to make sense of the complexity.
 
-🏗️ **Interface masters**: They hide complexity behind clean, well-documented APIs so other teams can use their subsystem without understanding its internals.
+**Interface masters**: They hide complexity behind clean, well-documented APIs so other teams can use their subsystem without understanding its internals.
 
-⚡ **Performance obsessed**: They measure success by subsystem reliability, performance, and how well they enable other teams to build on top of their work.
+**Performance obsessed**: They measure success by subsystem reliability, performance, and how well they enable other teams to build on top of their work.
 
 The key insight here is **when to use them**. Not everything needs a complicated subsystem team—most complexity can and should be handled within stream-aligned teams. But when you encounter true irreducible complexity that requires specialized knowledge, these teams prevent that complexity from spreading throughout your organization.
 

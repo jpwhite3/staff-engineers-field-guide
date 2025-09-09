@@ -52,21 +52,21 @@ When you start with "why," you're not explaining database choices or deployment 
 
 Let's look at some real examples. Notice how the weak versions focus on what we're doing, while the strong versions focus on why it matters:
 
-**🏗️ Infrastructure Example:**
-- **❌ Weak:** "We need to move to microservices"
-- **✅ Strong:** "We believe that teams should be able to innovate independently without being blocked by other teams' decisions or timelines"
+**Infrastructure Example:**
+- **Weak:** "We need to move to microservices"
+- **Strong:** "We believe that teams should be able to innovate independently without being blocked by other teams' decisions or timelines"
 
-**⚡ Architecture Example:**
-- **❌ Weak:** "We should adopt event-driven architecture"  
-- **✅ Strong:** "We believe our users deserve real-time experiences that feel magical, and our engineers deserve systems that are easy to understand and modify"
+**Architecture Example:**
+- **Weak:** "We should adopt event-driven architecture"  
+- **Strong:** "We believe our users deserve real-time experiences that feel magical, and our engineers deserve systems that are easy to understand and modify"
 
-**🛠️ Platform Example:**
-- **❌ Weak:** "We're building a developer portal"
-- **✅ Strong:** "We believe that engineers should spend their time solving business problems, not fighting with tooling and infrastructure"
+**Platform Example:**
+- **Weak:** "We're building a developer portal"
+- **Strong:** "We believe that engineers should spend their time solving business problems, not fighting with tooling and infrastructure"
 
-**🔒 Security Example:**
-- **❌ Weak:** "We need to implement zero-trust security"
-- **✅ Strong:** "We believe that security should be invisible to users and automatic for developers, creating trust through transparency"
+**Security Example:**
+- **Weak:** "We need to implement zero-trust security"
+- **Strong:** "We believe that security should be invisible to users and automatic for developers, creating trust through transparency"
 
 **See the pattern?** The strong versions all contain beliefs about how things should work and why that matters to people. They paint a picture of a better future state that gets people excited to be part of the journey.
 
