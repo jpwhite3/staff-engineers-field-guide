@@ -288,6 +288,95 @@ The key principle: **Your application uses these tools; it doesn't depend on the
 
 The most powerful aspect of Clean Architecture is how it applies the Dependency Inversion Principle. Instead of high-level modules depending on low-level modules, both depend on abstractions.
 
+### **The Clean Architecture Dependency Rule Visualization**
+
+Understanding the flow of dependencies is crucial for implementing Clean Architecture effectively. The golden rule: dependencies can only point inward, toward the business rules.
+
+```mermaid
+graph TB
+    subgraph "Enterprise Business Rules (Entities)"
+        E1[User Entity]
+        E2[Order Entity]  
+        E3[Product Entity]
+    end
+    
+    subgraph "Application Business Rules (Use Cases)"
+        U1[Create Order Use Case]
+        U2[Process Payment Use Case]
+        U3[Update Inventory Use Case]
+        U4[Send Notification Use Case]
+    end
+    
+    subgraph "Interface Adapters"
+        C1[Order Controller]
+        C2[REST API Presenter]
+        C3[Repository Interface]
+        C4[Payment Gateway Interface]
+    end
+    
+    subgraph "Frameworks & Drivers"
+        F1[Web Framework<br/>FastAPI/Django]
+        F2[Database<br/>PostgreSQL]
+        F3[Payment Service<br/>Stripe API]
+        F4[Message Queue<br/>RabbitMQ]
+    end
+    
+    %% Dependency arrows (pointing inward only)
+    U1 --> E1
+    U1 --> E2
+    U2 --> E1
+    U3 --> E3
+    
+    C1 --> U1
+    C1 --> U2
+    C2 --> U1
+    C3 --> E2
+    C4 --> U2
+    
+    F1 --> C1
+    F1 --> C2
+    F2 --> C3
+    F3 --> C4
+    F4 --> U4
+    
+    %% Dependency inversion (shown as dashed lines)
+    U1 -.->|depends on abstraction| C3
+    U2 -.->|depends on abstraction| C4
+    C3 -.->|implements| F2
+    C4 -.->|implements| F3
+    
+    %% Layer styling
+    style E1 fill:#e8f5e8
+    style E2 fill:#e8f5e8  
+    style E3 fill:#e8f5e8
+    style U1 fill:#e3f2fd
+    style U2 fill:#e3f2fd
+    style U3 fill:#e3f2fd
+    style U4 fill:#e3f2fd
+    style C1 fill:#f3e5f5
+    style C2 fill:#f3e5f5
+    style C3 fill:#f3e5f5
+    style C4 fill:#f3e5f5
+    style F1 fill:#fff3e0
+    style F2 fill:#fff3e0
+    style F3 fill:#fff3e0
+    style F4 fill:#fff3e0
+```
+
+**Key Architectural Insights:**
+
+**The Dependency Rule**: Dependencies point inward only. Use cases depend on entities, but entities never depend on use cases. Controllers depend on use cases, but use cases don't depend on controllers.
+
+**Dependency Inversion at Boundaries**: When use cases need infrastructure (databases, external APIs), they depend on interfaces defined in the application layer. Infrastructure components implement these interfaces, creating the inversion.
+
+**Protection of Business Rules**: Your core business logic (entities and use cases) remain completely independent of frameworks, databases, and external services. This means:
+- You can test business logic without databases or web servers
+- You can change databases without touching business rules  
+- You can replace web frameworks without affecting use cases
+- You can modify external integrations without changing core logic
+
+**Stable vs. Volatile**: The inner layers are stable (they change less frequently), while outer layers are volatile (they change more often). Dependencies point toward stability.
+
 ### Traditional Approach (Dependencies pointing outward)
 ```python
 # BAD: Business logic depends on infrastructure

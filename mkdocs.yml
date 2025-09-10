@@ -11,6 +11,15 @@ theme:
   - navigation.expand
   - navigation.indexes
   - toc.integrate
+plugins:
+  - search
+  - pdf-export:
+      verbose: true
+      media_type: print
+      enabled_if_env: ENABLE_PDF_EXPORT
+      combined: true
+      combined_output_path: staff-engineers-field-guide.pdf
+
 markdown_extensions:
   - admonition
   - codehilite
@@ -37,23 +46,43 @@ nav:
     - Staying Current: field-guide/learning/staying-current.md
     - The Learning Organization: field-guide/learning/learning-organization.md
     - Teaching to Learn: field-guide/learning/teaching-to-learn.md
-  - Ethics:
-    - Introduction: field-guide/ethics/index.md
-    - Bias in Automation: field-guide/ethics/bias-in-automation.md
-    - Data Privacy & User Trust: field-guide/ethics/data-privacy.md
-    - Ethical Frameworks: field-guide/ethics/ethical-frameworks.md
-    - The Ethics of Scale: field-guide/ethics/ethics-of-scale.md
-    - Responsible Innovation: field-guide/ethics/responsible-innovation.md
+  - Engineering:
+    - Introduction: field-guide/engineering/index.md
+    - Site Reliability Engineering: field-guide/engineering/site-reliability-engineering.md
+    - Continuous Delivery: field-guide/engineering/continuous-delivery.md
+    - CI/CD: field-guide/engineering/cicd.md
+    - Test-Driven Development: field-guide/engineering/tdd.md
+    - Advanced Testing Strategies: field-guide/engineering/advanced-testing-strategies.md
+    - Clean Architecture: field-guide/engineering/clean-architecture.md
+    - Evolutionary Architecture: field-guide/engineering/evolutionary-architecture.md
+    - Supply Chain Security: field-guide/engineering/supply-chain-security.md
+    - Software Supply Chain Security: field-guide/engineering/software-supply-chain-security.md
+    - DevOps & Automation: field-guide/engineering/devops.md
+    - Git Best Practices: field-guide/engineering/git-practices.md
+    - Source Control: field-guide/engineering/source-control.md
+    - Code Hygiene & Refactoring: field-guide/engineering/code-hygiene.md
+    - Architecture Decision Records: field-guide/engineering/adrs.md
+    - Hexagonal Architecture: field-guide/engineering/hexagonal-architecture.md
+    - Story Mapping & Splitting: field-guide/engineering/story-mapping.md
+    - Chaos Engineering: field-guide/engineering/chaos-engineering.md
+  - Critical Thinking:
+    - Introduction: field-guide/thinking/index.md
+    - Mental Models for Engineers: field-guide/thinking/mental-models.md
+    - Algorithmic Decision-Making: field-guide/thinking/algorithmic-decision-making.md
+    - Cognitive Biases: field-guide/thinking/cognitive-biases.md
+    - Structured Problem-Solving: field-guide/thinking/structured-problem-solving.md
+    - Mind Mapping & Visual Thinking: field-guide/thinking/mind-mapping.md
+    - Strategic Thinking: field-guide/thinking/strategic-thinking.md
   - Leadership:
     - Introduction: field-guide/leadership/index.md
     - Technical Vision & Purpose: field-guide/leadership/technical-vision.md
-    - Advanced Conflict Resolution: field-guide/leadership/advanced-conflict-resolution.md
-    - Advanced Mentorship & Career Development: field-guide/leadership/advanced-mentorship-career-development.md
     - Influencing Without Authority: field-guide/leadership/influencing-without-authority.md
-    - Vulnerability in Leadership: field-guide/leadership/vulnerability-leadership.md
-    - Self-Awareness & Personality Types: field-guide/leadership/self-awareness-personality-types.md
+    - Advanced Conflict Resolution: field-guide/leadership/advanced-conflict-resolution.md
     - Giving & Receiving Feedback: field-guide/leadership/giving-receiving-feedback.md
     - Delivering Difficult Messages: field-guide/leadership/delivering-difficult-messages.md
+    - Advanced Mentorship & Career Development: field-guide/leadership/advanced-mentorship-career-development.md
+    - Vulnerability in Leadership: field-guide/leadership/vulnerability-leadership.md
+    - Self-Awareness & Personality Types: field-guide/leadership/self-awareness-personality-types.md
     - Psychological Safety & Trust: field-guide/leadership/psychological-safety-trust.md
     - Power & Influence in Organizations: field-guide/leadership/power-influence-organizations.md
     - Storytelling for Engineers: field-guide/leadership/storytelling-for-engineers.md
@@ -76,40 +105,13 @@ nav:
     - Introduction: field-guide/execution/index.md
     - Agile Essentials: field-guide/execution/agile-essentials.md
     - Decision-Making Frameworks: field-guide/execution/decision-making-frameworks.md
+    - Strategic Thinking: field-guide/execution/strategic-thinking.md
     - Change Management for Technical Transformations: field-guide/execution/change-management-technical-transformations.md
     - Building a Business Case: field-guide/execution/business-case.md
-    - Strategic Thinking: field-guide/execution/strategic-thinking.md
     - Speed vs. Quality: field-guide/execution/speed-vs-quality.md
     - Navigating Uncertainty & Change: field-guide/execution/navigating-uncertainty.md
     - Prioritization Frameworks: field-guide/execution/prioritization-frameworks.md
     - Organizational Transformation: field-guide/execution/organizational-transformation.md
-  - Engineering:
-    - Introduction: field-guide/engineering/index.md
-    - Site Reliability Engineering: field-guide/engineering/site-reliability-engineering.md
-    - Clean Architecture: field-guide/engineering/clean-architecture.md
-    - Evolutionary Architecture: field-guide/engineering/evolutionary-architecture.md
-    - Continuous Delivery: field-guide/engineering/continuous-delivery.md
-    - Advanced Testing Strategies: field-guide/engineering/advanced-testing-strategies.md
-    - CI/CD: field-guide/engineering/cicd.md
-    - Git Best Practices: field-guide/engineering/git-practices.md
-    - DevOps & Automation: field-guide/engineering/devops.md
-    - Supply Chain Security: field-guide/engineering/supply-chain-security.md
-    - Test-Driven Development: field-guide/engineering/tdd.md
-    - Code Hygiene & Refactoring: field-guide/engineering/code-hygiene.md
-    - Architecture Decision Records: field-guide/engineering/adrs.md
-    - Hexagonal Architecture: field-guide/engineering/hexagonal-architecture.md
-    - Story Mapping & Splitting: field-guide/engineering/story-mapping.md
-    - Software Supply Chain Security: field-guide/engineering/software-supply-chain-security.md
-    - Source Control: field-guide/engineering/source-control.md
-    - Chaos Engineering: field-guide/engineering/chaos-engineering.md
-  - Critical Thinking:
-    - Introduction: field-guide/thinking/index.md
-    - Mental Models for Engineers: field-guide/thinking/mental-models.md
-    - Algorithmic Decision-Making: field-guide/thinking/algorithmic-decision-making.md
-    - Cognitive Biases: field-guide/thinking/cognitive-biases.md
-    - Structured Problem-Solving: field-guide/thinking/structured-problem-solving.md
-    - Mind Mapping & Visual Thinking: field-guide/thinking/mind-mapping.md
-    - Strategic Thinking: field-guide/thinking/strategic-thinking.md
   - Business:
     - Introduction: field-guide/business/index.md
     - Aligning Technology to Business Strategy: field-guide/business/aligning-technology.md
@@ -120,6 +122,13 @@ nav:
     - Revenue vs. Risk: field-guide/business/revenue-vs-risk.md
     - Cost Optimization & FinOps: field-guide/business/cost-optimization.md
     - Empowered Teams & Engineering Culture: field-guide/business/empowered-teams.md
+  - Ethics:
+    - Introduction: field-guide/ethics/index.md
+    - Bias in Automation: field-guide/ethics/bias-in-automation.md
+    - Data Privacy & User Trust: field-guide/ethics/data-privacy.md
+    - Ethical Frameworks: field-guide/ethics/ethical-frameworks.md
+    - The Ethics of Scale: field-guide/ethics/ethics-of-scale.md
+    - Responsible Innovation: field-guide/ethics/responsible-innovation.md
 - Appendix:
   - Antipatterns:
     - Overview: appendix/antipatterns/index.md
