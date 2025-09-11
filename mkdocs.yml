@@ -8,7 +8,10 @@ theme:
   features:
   - navigation.instant
   - navigation.tracking
-  - navigation.expand
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.sections
+  - navigation.prune
   - navigation.indexes
   - toc.integrate
   - content.tabs.link
@@ -54,22 +57,22 @@ markdown_extensions:
 nav:
 - Home: index.md
 - Field Guide:
-  - Introduction:
-    - Introduction: field-guide/intro/index.md
+  - field-guide/intro/index.md
+  - Staff Engineer Archetypes:
     - The Tech Lead: field-guide/intro/tech-lead.md
     - The Architect: field-guide/intro/architect.md
     - The Solver: field-guide/intro/solver.md
     - The Right Hand: field-guide/intro/right-hand.md
     - Becoming a Force Multiplier: field-guide/intro/force-multiplier.md
-  - Learning:
-    - Introduction: field-guide/learning/index.md
+  - Continuous Learning:
+    - field-guide/learning/index.md
     - Developing Expertise: field-guide/learning/developing-expertise.md
     - Mentorship & Sponsorship: field-guide/learning/mentorship-sponsorship.md
     - Staying Current: field-guide/learning/staying-current.md
     - The Learning Organization: field-guide/learning/learning-organization.md
     - Teaching to Learn: field-guide/learning/teaching-to-learn.md
-  - Engineering:
-    - Introduction: field-guide/engineering/index.md
+  - Engineering Excellence:
+    - field-guide/engineering/index.md
     - Site Reliability Engineering: field-guide/engineering/site-reliability-engineering.md
     - Continuous Delivery: field-guide/engineering/continuous-delivery.md
     - CI/CD: field-guide/engineering/cicd.md
@@ -88,15 +91,15 @@ nav:
     - Story Mapping & Splitting: field-guide/engineering/story-mapping.md
     - Chaos Engineering: field-guide/engineering/chaos-engineering.md
   - Critical Thinking:
-    - Introduction: field-guide/thinking/index.md
+    - field-guide/thinking/index.md
     - Mental Models for Engineers: field-guide/thinking/mental-models.md
     - Algorithmic Decision-Making: field-guide/thinking/algorithmic-decision-making.md
     - Cognitive Biases: field-guide/thinking/cognitive-biases.md
     - Structured Problem-Solving: field-guide/thinking/structured-problem-solving.md
     - Mind Mapping & Visual Thinking: field-guide/thinking/mind-mapping.md
     - Strategic Thinking: field-guide/thinking/strategic-thinking.md
-  - Leadership:
-    - Introduction: field-guide/leadership/index.md
+  - Leadership & Influence:
+    - field-guide/leadership/index.md
     - Technical Vision & Purpose: field-guide/leadership/technical-vision.md
     - Influencing Without Authority: field-guide/leadership/influencing-without-authority.md
     - Advanced Conflict Resolution: field-guide/leadership/advanced-conflict-resolution.md
@@ -113,8 +116,8 @@ nav:
     - Working Across Boundaries: field-guide/leadership/working-across-boundaries.md
     - Asynchronous Communication: field-guide/leadership/async-communication.md
     - Navigating Tough Technical Discussions: field-guide/leadership/navigating-tough-technical-discussions.md
-  - Teamwork:
-    - Introduction: field-guide/teamwork/index.md
+  - Teamwork & Collaboration:
+    - field-guide/teamwork/index.md
     - Organizational Design: field-guide/teamwork/organizational-design.md
     - Team Formation: field-guide/teamwork/team-formation.md
     - Cultural Transformation & Psychological Safety: field-guide/teamwork/cultural-transformation-psychological-safety.md
@@ -123,8 +126,8 @@ nav:
     - Mismanagement Agreement: field-guide/teamwork/mismanagement-agreement.md
     - Psychological Safety: field-guide/teamwork/psychological-safety.md
     - The Culture Map: field-guide/teamwork/culture-map.md
-  - Execution:
-    - Introduction: field-guide/execution/index.md
+  - Execution & Delivery:
+    - field-guide/execution/index.md
     - Agile Essentials: field-guide/execution/agile-essentials.md
     - Decision-Making Frameworks: field-guide/execution/decision-making-frameworks.md
     - Strategic Thinking: field-guide/execution/strategic-thinking.md
@@ -134,8 +137,8 @@ nav:
     - Navigating Uncertainty & Change: field-guide/execution/navigating-uncertainty.md
     - Prioritization Frameworks: field-guide/execution/prioritization-frameworks.md
     - Organizational Transformation: field-guide/execution/organizational-transformation.md
-  - Business:
-    - Introduction: field-guide/business/index.md
+  - Business Alignment:
+    - field-guide/business/index.md
     - Aligning Technology to Business Strategy: field-guide/business/aligning-technology.md
     - Product-Engineering Collaboration: field-guide/business/product-engineering-collaboration.md
     - Engineering Metrics & Business Alignment: field-guide/business/engineering-metrics-business-alignment.md
@@ -144,84 +147,21 @@ nav:
     - Revenue vs. Risk: field-guide/business/revenue-vs-risk.md
     - Cost Optimization & FinOps: field-guide/business/cost-optimization.md
     - Empowered Teams & Engineering Culture: field-guide/business/empowered-teams.md
-  - Ethics:
-    - Introduction: field-guide/ethics/index.md
+  - Engineering Ethics:
+    - field-guide/ethics/index.md
     - Bias in Automation: field-guide/ethics/bias-in-automation.md
     - Data Privacy & User Trust: field-guide/ethics/data-privacy.md
     - Ethical Frameworks: field-guide/ethics/ethical-frameworks.md
     - The Ethics of Scale: field-guide/ethics/ethics-of-scale.md
     - Responsible Innovation: field-guide/ethics/responsible-innovation.md
-- Appendix:
-  - Antipatterns:
-    - Overview: appendix/antipatterns/index.md
-    - 'Antipatterns: Recognizing and Avoiding Design Missteps': appendix/antipatterns/antipatterns-overview.md
-    - 'Assumption Driven Programming: Building Software for *Everyone*': appendix/antipatterns/assumption-driven-programming.md
-    - 'The Big Ball of Mud: A Critical Architectural Anti-Pattern': appendix/antipatterns/big-ball-of-mud.md
-    - 'The Blob: A Dangerous Growth Pattern': appendix/antipatterns/blob.md
-    - 'Broken Windows: Maintaining Code Health Through Consistent Small Actions': appendix/antipatterns/broken-windows.md
-    - 'The Calendar Coder: A Cargo Cult in Software Development': appendix/antipatterns/calendar-coder.md
-    - 'Code Smells: Recognizing and Addressing Problems in Your Code': appendix/antipatterns/code-smells.md
-    - 'Copy Folder Versioning: A Critical Anti-Pattern': appendix/antipatterns/copy-folder-versioning.md
-    - 'Copy-Paste Programming: A Critical Anti-Pattern': appendix/antipatterns/copy-paste-programming.md
-    - 'Death by Planning: Prioritizing Velocity Over Detailed Roadmaps': appendix/antipatterns/death-by-planning.md
-    - 'Death March: Recognizing and Mitigating the Symptoms of Unsustainable Projects': appendix/antipatterns/death-march.md
-    - 'The Duct Tape Coder: A Critical Examination of Expedient Software': appendix/antipatterns/duct-tape-coder.md
-    - 'Exposing Collection Properties: A Critical Review': appendix/antipatterns/exposing-collection-properties.md
-    - 'Fast Beats Right: The Cost of Speeding Through Quality': appendix/antipatterns/fast-beats-right.md
-    - 'Feature Creep: Understanding and Mitigating Scope Expansion in Software Development': appendix/antipatterns/feature-creep.md
-    - 'Flags Over Objects: A Deep Dive into a Critical Code Smell': appendix/antipatterns/flags-over-objects.md
-    - The Perilous Practice of "Found on the Internet" Code: appendix/antipatterns/found-on-internet.md
-    - 'Frankencode: The Frankenstein of Software Systems': appendix/antipatterns/frankencode.md
-    - 'The Golden Hammer: Avoiding Technological Lock-In': appendix/antipatterns/golden-hammer.md
-    - 'Iceberg Classes: Understanding and Avoiding Deeply Encapsulated Classes': appendix/antipatterns/iceberg-class.md
-    - 'Eliminating Magic Strings: A Critical Architectural Pattern': appendix/antipatterns/magic-strings.md
-    - 'Mushroom Management: Why Lack of Transparency Undermines Software Development': appendix/antipatterns/mushroom-management.md
-    - 'Not Invented Here (NIH): The Cost of Blind Innovation': appendix/antipatterns/not-invented-here.md
-    - 'One Thing To Rule Them All: Understanding the Anti-Pattern': appendix/antipatterns/one-thing-to-rule-them-all.md
-    - 'Reinventing the Wheel: A Critical Examination': appendix/antipatterns/reinventing-the-wheel.md
-    - 'The Shiny Toy Anti-Pattern: A Critical Defense Against Technological Momentum': appendix/antipatterns/shiny-toy.md
-    - 'Smoke and Mirrors: The Peril of Unrealistic Customer Expectations': appendix/antipatterns/smoke-and-mirrors.md
-    - 'Spaghetti Code: A Systemic Threat to Maintainability and Scalability': appendix/antipatterns/spaghetti-code.md
-    - 'Static Cling: Avoiding Unnecessary Coupling': appendix/antipatterns/static-cling.md
-    - 'Walking Through a Minefield: The Cost of Premature Release': appendix/antipatterns/walking-through-a-minefield.md
-    - 'Understanding the Waterfall Model: A Critical Examination': appendix/antipatterns/waterfall.md
-  - Design Patterns:
-    - Overview: appendix/design-patterns/index.md
-    - 'Adapter Design Pattern: Bridging the Gap Between Incompatible Interfaces': appendix/design-patterns/adapter-design-pattern.md
-    - 'The Builder Design Pattern: Constructing Complex Objects with Control': appendix/design-patterns/builder-pattern.md
-    - 'Design Patterns: A Practical Guide for Engineers': appendix/design-patterns/design-patterns-overview.md
-    - 'Guard Clauses: Defensive Programming for Clarity and Robustness': appendix/design-patterns/guard-clause.md
-    - 'The Null Object Pattern: A Robust Strategy for Handling Missing Data': appendix/design-patterns/null-object-pattern.md
-    - Repository Pattern: appendix/design-patterns/repository-pattern.md
-    - 'The REPR Design Pattern: A Streamlined Approach to API Development': appendix/design-patterns/repr-design-pattern.md
-    - 'Mastering the Singleton Pattern: A Deep Dive for Staff Engineers': appendix/design-patterns/singleton.md
-    - 'The Specification Pattern: A Robust Approach to Querying and Filtering Data': appendix/design-patterns/specification-pattern.md
-    - State Design Pattern: appendix/design-patterns/state-design-pattern.md
-    - Strategy Pattern: appendix/design-patterns/strategy-pattern.md
-  - Domain Driven Design:
-    - Overview: appendix/domain-driven-design/index.md
-    - Aggregate Pattern: appendix/domain-driven-design/aggregate-pattern.md
-    - 'The Anemic Domain Model: A Critical Design Flaw': appendix/domain-driven-design/anemic-model.md
-    - 'Anti-Corruption Layers: Protecting Your Domain Model': appendix/domain-driven-design/anti-corruption-layer.md
-    - 'Domain-Driven Design: Building Software That Aligns with Reality': appendix/domain-driven-design/ddd-overview.md
-    - 'Understanding Entities: Core Concepts for Robust Systems': appendix/domain-driven-design/entity.md
-    - 'Ubiquitous Language: The Foundation of Reliable Software': appendix/domain-driven-design/ubiquitous-language.md
-    - 'Value Objects: Representing Concepts with Immutable Data': appendix/domain-driven-design/value-object.md
-  - Laws:
-    - Overview: appendix/laws/index.md
-    - Understanding and Applying Murphy's Law in Systems Engineering: appendix/laws/murphys-law.md
-  - Terms:
-    - Overview: appendix/terms/index.md
-    - Understanding and Mitigating the Bus Factor: appendix/terms/bus-factor.md
-    - 'Understanding Technical Debt: A Strategic Approach': appendix/terms/technical-debt.md
-  - Tools:
-    - Overview: appendix/tools/index.md
-    - 'Staff Engineer Competency Assessment': appendix/tools/staff-engineer-competency-assessment.md
-    - 'Team Health Diagnostic': appendix/tools/team-health-diagnostic.md
-    - 'Development Tracking System': appendix/tools/development-tracking-system.md
-    - 'Engineering Excellence Assessment Framework': appendix/tools/engineering-excellence-assessment.md
-    - 'Critical Thinking Assessment': appendix/tools/critical-thinking-assessment.md
-    - 'Technical Debt Management Framework': appendix/tools/technical-debt-management-framework.md
-    - 'Team Topology Assessment Framework': appendix/tools/team-topology-assessment.md
-  - Recommended Reading:
-    - Overview: appendix/reading/index.md
+- Reference:
+  - Patterns & Antipatterns:
+    - appendix/antipatterns/index.md
+    - appendix/design-patterns/index.md
+    - appendix/domain-driven-design/index.md
+  - Assessment Tools:
+    - appendix/tools/index.md
+  - Glossary & Resources:
+    - appendix/terms/index.md
+    - appendix/laws/index.md
+    - appendix/reading/index.md
