@@ -1,0 +1,263 @@
+/* Staff Engineer's Field Guide - Custom Styling */
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 12px;
+    margin: 2rem 0;
+    padding: 0;
+}
+
+.hero-section .admonition {
+    border: none;
+    background: transparent;
+    color: white;
+}
+
+.hero-section .admonition-title {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    border-radius: 12px 12px 0 0;
+    padding: 2rem;
+    margin: 0;
+}
+
+.hero-section .admonition-title::before {
+    display: none;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin: 1.5rem 2rem;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+.stats-showcase {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1.5rem 2rem;
+}
+
+.hero-section .md-button {
+    margin: 0.5rem 1rem 2rem 2rem;
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .md-button--primary {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-section .md-button--primary:hover {
+    background: white;
+    color: #667eea;
+    transform: translateY(-2px);
+}
+
+.hero-section .md-button:not(.md-button--primary) {
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.hero-section .md-button:not(.md-button--primary):hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Authority Showcase Styling */
+.authority-showcase .admonition {
+    border-left: 4px solid #1976d2;
+}
+
+.authority-showcase .grid.cards > * {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.authority-showcase .grid.cards > *:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* Learning Paths Section Styling */
+.learning-paths-section .grid.cards > * {
+    border: 2px solid #e0e0e0;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.learning-paths-section .grid.cards > *:hover {
+    border-color: #1976d2;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(25, 118, 210, 0.1);
+}
+
+.learning-paths-section h3 {
+    color: #1976d2;
+    font-weight: 700;
+}
+
+/* Features Highlight Styling */
+.features-highlight .grid.cards > * {
+    background: linear-gradient(145deg, #f8f9ff, #ffffff);
+    border: 1px solid #e3f2fd;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.features-highlight .grid.cards > *:hover {
+    border-color: #1976d2;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(25, 118, 210, 0.1);
+}
+
+.features-highlight .grid.cards h3 {
+    color: #1565c0;
+    font-weight: 700;
+}
+
+/* Chapters Showcase Styling */
+.chapters-showcase .grid.cards > * {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.chapters-showcase .grid.cards > *::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.chapters-showcase .grid.cards > *:hover::before {
+    transform: scaleX(1);
+}
+
+.chapters-showcase .grid.cards > *:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* Call to Action Section */
+.call-to-action-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.call-to-action-section .admonition {
+    background: transparent;
+    border: none;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.cta-buttons .md-button--stretch {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.cta-buttons .md-button--primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+}
+
+.cta-buttons .md-button--primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.cta-buttons .md-button:not(.md-button--primary) {
+    background: white;
+    color: #667eea;
+    border: 2px solid #667eea;
+}
+
+.cta-buttons .md-button:not(.md-button--primary):hover {
+    background: #667eea;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .cta-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .cta-buttons .md-button--stretch {
+        flex: 1;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Enhanced Typography */
+.hero-section h1,
+.call-to-action-section h2,
+.authority-showcase h2,
+.features-highlight h2,
+.chapters-showcase h2 {
+    text-align: center;
+}
+
+/* Grid Cards Enhancement */
+.grid.cards {
+    gap: 1.5rem !important;
+}
+
+/* Smooth Animations */
+* {
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Admonition Enhancements */
+.admonition.abstract {
+    border-color: #1976d2;
+}
+
+.admonition.success {
+    border-color: #2e7d32;
+}
+
+.admonition.tip {
+    border-color: #f57c00;
+}
+
+.admonition.quote {
+    border-color: #7b1fa2;
+    background: linear-gradient(145deg, #f3e5f5, #ffffff);
+}
