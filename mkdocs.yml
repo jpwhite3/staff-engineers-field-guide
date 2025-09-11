@@ -15,6 +15,8 @@ theme:
   - content.code.annotate
   - content.action.edit
   - content.action.view
+  - search.highlight
+  - search.suggest
 plugins:
   - search
   - pdf-export:

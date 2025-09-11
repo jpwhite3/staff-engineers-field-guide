@@ -18,7 +18,12 @@ Before diving into architectural patterns, let's establish something crucial: ar
 
 Here's what I've learned from watching teams struggle with "clean architecture" implementations: the teams that succeed don't just understand dependency inversion—they also write functions that do one thing well, choose meaningful names, and structure their code so it reads like well-written prose. The teams that struggle get caught up in architectural patterns while their actual code remains difficult to understand and modify.
 
-**Clean Architecture is most powerful when it's built on a foundation of clean code practices.** Think of it as a hierarchy of craftsmanship: clean functions enable clean classes, clean classes enable clean components, and clean components enable clean architecture. Each level reinforces and amplifies the benefits of the others.
+!!! success "The Craftsmanship Hierarchy"
+    Clean Architecture is most powerful when it's built on a foundation of clean code practices. Think of it as a hierarchy of craftsmanship:
+    
+    **Clean Functions** → **Clean Classes** → **Clean Components** → **Clean Architecture**
+    
+    Each level reinforces and amplifies the benefits of the others.
 
 This integration is especially important for staff engineers because you're often responsible for both setting architectural direction and ensuring teams have the practices to implement that architecture successfully. You can't just design the system—you need to foster the culture and skills that make excellent implementation possible.
 
@@ -42,9 +47,19 @@ Think of function design as micro-architecture. Just as architectural layers hav
 
 **Tests as Architectural Documentation**
 
-Here's something many teams miss: in a Clean Architecture system, your tests should reflect your architectural boundaries. Unit tests for domain entities should never need to mock databases or web frameworks. Integration tests should clearly demonstrate how layers collaborate. This isn't just good testing practice—it's architectural validation.
-
-When tests are hard to write, it usually means your architecture has coupling problems. When tests are confusing to read, it often means your naming and design aren't as clear as they could be. Clean code practices and clean architecture practices validate each other through the feedback loop of test-driven development.
+??? tip "Tests as Architectural Documentation"
+    Here's something many teams miss: in a Clean Architecture system, your tests should reflect your architectural boundaries.
+    
+    **Good Architectural Testing:**
+    - Unit tests for domain entities never need to mock databases or web frameworks
+    - Integration tests clearly demonstrate how layers collaborate
+    - Test structure reflects architectural boundaries
+    
+    **Warning Signs:**
+    - Tests are hard to write → coupling problems in architecture
+    - Tests are confusing → naming and design clarity issues
+    
+    Clean code practices and clean architecture validate each other through TDD feedback loops.
 
 ## The Fundamental Insight: Dependency Direction Matters
 
@@ -86,7 +101,8 @@ graph TD
     style FD fill:#fff3e0,stroke:#f57c00,stroke-width:2px
 ```
 
-**The key insight**: Your business logic (Entities and Use Cases) should never import anything from the outer layers. The web framework might change from Express to FastAPI, the database might evolve from PostgreSQL to MongoDB, but your core business logic remains stable and unaffected.
+!!! info "The Key Insight: Dependency Inversion"
+    Your business logic (Entities and Use Cases) should never import anything from the outer layers. The web framework might change from Express to FastAPI, the database might evolve from PostgreSQL to MongoDB, but your core business logic remains stable and unaffected.
 
 ## The Four Layers of Clean Architecture
 

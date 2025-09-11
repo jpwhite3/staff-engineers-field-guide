@@ -18,22 +18,97 @@ This isn't just a field guide; it's a blueprint for technical leadership. Whethe
 
 ## How to Use This Guide
 
-This is not a book to be read linearly from cover to cover, though you certainly can. Think of it as a true field guide. Each chapter and section is designed to be a self-contained resource.
-
-* **Facing a specific challenge?** Jump to the relevant section, whether it's navigating team conflict, building a business case, or refining your presentation skills.
-* **Looking for growth areas?** Browse the "Discrete Topics Covered" at the end of each chapter introduction to identify skills you want to develop.
-* **Mentoring others?** Use the frameworks and concepts here to coach and guide the next generation of technical leaders.
-
-The goal is to provide practical, actionable advice you can apply immediately.
+!!! info "Field Guide Approach"
+    This is not a book to be read linearly from cover to cover. Think of it as a true field guide—each chapter and section is designed to be a self-contained resource.
+    
+    === "Facing a Challenge"
+        Jump to the relevant section for immediate help:
+        - Navigating team conflict
+        - Building a business case
+        - Refining presentation skills
+        
+    === "Identifying Growth Areas"
+        Browse "Discrete Topics Covered" at the end of each chapter to identify skills you want to develop.
+        
+    === "Mentoring Others"
+        Use frameworks and concepts to coach and guide the next generation of technical leaders.
+    
+    **Goal:** Practical, actionable advice you can apply immediately.
 
 ## Chapters
 
-1. [Setting the Stage: What It Means to Be a Staff Engineer](field-guide/intro/index.md)
-2. [Continuous Learning & Growth](field-guide/learning/index.md)
-3. [Core Engineering Skills & Practices](field-guide/engineering/index.md)
-4. [Critical Thinking & Problem-Solving](field-guide/thinking/index.md)
-5. [Leadership, Influence & Communication](field-guide/leadership/index.md)
-6. [Teamwork & Team Behavior](field-guide/teamwork/index.md)
-7. [Execution & Delivery](field-guide/execution/index.md)
-8. [The Business of Engineering](field-guide/business/index.md)
-9. [Engineering Ethics & Decision-Making](field-guide/ethics/index.md)
+<div class="grid cards" markdown>
+
+-   :material-play-circle: **Setting the Stage**
+    
+    ---
+    
+    What It Means to Be a Staff Engineer
+    
+    [:octicons-arrow-right-24: Start Here](field-guide/intro/index.md)
+
+-   :material-school: **Continuous Learning**
+    
+    ---
+    
+    Growth & Development Frameworks
+    
+    [:octicons-arrow-right-24: Learn More](field-guide/learning/index.md)
+
+-   :material-cog: **Core Engineering**
+    
+    ---
+    
+    Skills & Practices for Excellence
+    
+    [:octicons-arrow-right-24: Build Skills](field-guide/engineering/index.md)
+
+-   :material-brain: **Critical Thinking**
+    
+    ---
+    
+    Problem-Solving & Decision Making
+    
+    [:octicons-arrow-right-24: Think Deeper](field-guide/thinking/index.md)
+
+-   :material-account-supervisor: **Leadership**
+    
+    ---
+    
+    Influence & Communication
+    
+    [:octicons-arrow-right-24: Lead Better](field-guide/leadership/index.md)
+
+-   :material-account-group: **Teamwork**
+    
+    ---
+    
+    Team Behavior & Collaboration
+    
+    [:octicons-arrow-right-24: Work Together](field-guide/teamwork/index.md)
+
+-   :material-rocket-launch: **Execution**
+    
+    ---
+    
+    Delivery & Results
+    
+    [:octicons-arrow-right-24: Get Things Done](field-guide/execution/index.md)
+
+-   :material-currency-usd: **Business**
+    
+    ---
+    
+    The Business of Engineering
+    
+    [:octicons-arrow-right-24: Drive Value](field-guide/business/index.md)
+
+-   :material-scale-balance: **Ethics**
+    
+    ---
+    
+    Engineering Ethics & Decision-Making
+    
+    [:octicons-arrow-right-24: Do Right](field-guide/ethics/index.md)
+
+</div>

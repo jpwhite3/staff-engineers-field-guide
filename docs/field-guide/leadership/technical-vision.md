@@ -19,16 +19,16 @@ The Golden Circle consists of three concentric circles, with "Why" at the center
 ```mermaid
 graph TB
     subgraph "Golden Circle for Technical Vision"
-        subgraph Why ["WHY<br/>Purpose & Belief"]
-            W1[Why does this technical decision matter?<br/>What impact will it have?<br/>What do we believe about technology's role?]
+        subgraph Why ["🎯 WHY<br/>Purpose & Belief<br/><i>The inspiring center</i>"]
+            W1["• Why does this matter?<br/>• What impact will it have?<br/>• What do we believe?"]
         end
         
-        subgraph How ["HOW<br/>Process & Approach"] 
-            H1[How will we implement this vision?<br/>What principles guide our approach?<br/>What makes our method unique?]
+        subgraph How ["🛠️ HOW<br/>Process & Approach<br/><i>What makes us unique</i>"] 
+            H1["• How will we implement?<br/>• What principles guide us?<br/>• What makes us different?"]
         end
         
-        subgraph What ["WHAT<br/>Result & Evidence"]
-            WH1[What are we building?<br/>What are the specific features?<br/>What are the technical specifications?]
+        subgraph What ["📦 WHAT<br/>Result & Evidence<br/><i>What people see</i>"]
+            WH1["• What are we building?<br/>• What are the features?<br/>• What are the specs?"]
         end
     end
     
@@ -179,20 +179,29 @@ We are adopting Apollo GraphQL Server with schema federation, implementing resol
 
 When communicating with different audiences, adjust your emphasis while maintaining the Why-How-What structure:
 
-**For Engineering Teams (emphasize How and What):**
-- Lead with purpose but focus on implementation approach and technical details
-- Connect daily work to larger vision
-- Emphasize principles and practices
+=== "Engineering Teams"
+    **Focus: How + What**
+    
+    - Lead with purpose but emphasize implementation
+    - Connect daily work to larger vision
+    - Highlight principles and practices
+    - Include technical details and trade-offs
 
-**For Product Teams (emphasize Why and What):**
-- Lead with user and business impact  
-- Connect to product outcomes
-- Focus on capabilities enabled
+=== "Product Teams"
+    **Focus: Why + What**
+    
+    - Lead with user and business impact
+    - Connect to product outcomes
+    - Focus on capabilities enabled
+    - Minimize technical implementation details
 
-**For Executive Leadership (emphasize Why):**
-- Lead with business purpose and competitive advantage
-- Connect to strategic objectives
-- Focus on outcomes and value
+=== "Executive Leadership"
+    **Focus: Why**
+    
+    - Lead with business purpose and competitive advantage
+    - Connect to strategic objectives
+    - Focus on outcomes and value
+    - Provide high-level implementation confidence
 
 ## Building Technical Movements, Not Just Solutions
 
@@ -223,52 +232,89 @@ The Golden Circle helps you build movements around technical vision rather than 
 
 Use this workshop format to develop your technical vision:
 
-### Step 1: Individual Reflection (15 minutes)
-- What do you believe about technology's role?
-- What impact do you want to have?
-- What would you never compromise on?
+<div class="grid cards" markdown>
 
-### Step 2: Small Group Why Development (30 minutes)
-- Share individual reflections
-- Identify common themes and beliefs
-- Draft collective purpose statements
+-   :material-clock: **Step 1: Individual Reflection**
+    
+    ---
+    
+    **Duration:** 15 minutes
+    
+    - What do you believe about technology's role?
+    - What impact do you want to have?
+    - What would you never compromise on?
 
-### Step 3: How Alignment (20 minutes)
-- What principles support our Why?
-- What approaches align with our beliefs?
-- What practices reflect our values?
+-   :material-account-group: **Step 2: Small Group Why Development**
+    
+    ---
+    
+    **Duration:** 30 minutes
+    
+    - Share individual reflections
+    - Identify common themes and beliefs
+    - Draft collective purpose statements
 
-### Step 4: What Prioritization (15 minutes)  
-- Which technical solutions best serve our Why?
-- What implementations support our How?
-- What features deliver on our promises?
+-   :material-compass: **Step 3: How Alignment**
+    
+    ---
+    
+    **Duration:** 20 minutes
+    
+    - What principles support our Why?
+    - What approaches align with our beliefs?
+    - What practices reflect our values?
 
-### Step 5: Communication Practice (20 minutes)
-- Present technical decisions using Why-How-What structure
-- Get feedback on clarity and inspiration
-- Refine messaging for different audiences
+-   :material-check-circle: **Step 4: What Prioritization**
+    
+    ---
+    
+    **Duration:** 15 minutes
+    
+    - Which technical solutions best serve our Why?
+    - What implementations support our How?
+    - What features deliver on our promises?
+
+-   :material-presentation: **Step 5: Communication Practice**
+    
+    ---
+    
+    **Duration:** 20 minutes
+    
+    - Present technical decisions using Why-How-What structure
+    - Get feedback on clarity and inspiration
+    - Refine messaging for different audiences
+
+</div>
 
 ## Golden Circle Anti-Patterns for Technical Leaders
 
-### The Fake Why
-**Problem:** Using mission statements or buzzwords instead of genuine beliefs
-**Example:** "We believe in best practices and industry standards"
-**Solution:** Dig deeper into personal and organizational convictions about technology's role
+!!! warning "The Fake Why"
+    **Problem:** Using mission statements or buzzwords instead of genuine beliefs
+    
+    **Example:** "We believe in best practices and industry standards"
+    
+    **Solution:** Dig deeper into personal and organizational convictions
 
-### The How-Heavy Why
-**Problem:** Describing methodologies instead of purpose  
-**Example:** "We believe in agile development and continuous integration"
-**Solution:** Focus on the outcomes and impact you want to create
+!!! danger "The How-Heavy Why"
+    **Problem:** Describing methodologies instead of purpose
+    
+    **Example:** "We believe in agile development and continuous integration"
+    
+    **Solution:** Focus on the outcomes and impact you want to create
 
-### The What-Only Communication
-**Problem:** Leading with features and specifications
-**Example:** Starting every presentation with "We built a REST API with these endpoints"
-**Solution:** Always start with purpose and impact before diving into implementation
+!!! error "The What-Only Communication"
+    **Problem:** Leading with features and specifications
+    
+    **Example:** Starting presentations with "We built a REST API with these endpoints"
+    
+    **Solution:** Always start with purpose and impact
 
-### The Generic Vision
-**Problem:** Using vague, universal statements that don't differentiate
-**Example:** "We want to build reliable, scalable software"
-**Solution:** Find what makes your specific vision unique and compelling
+!!! caution "The Generic Vision"
+    **Problem:** Using vague, universal statements that don't differentiate
+    
+    **Example:** "We want to build reliable, scalable software"
+    
+    **Solution:** Find what makes your specific vision unique and compelling
 
 ## Measuring the Impact of Purpose-Driven Technical Leadership
 

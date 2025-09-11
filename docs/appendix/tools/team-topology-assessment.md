@@ -48,77 +48,77 @@ flowchart TD
 
 **Rate each dimension from 1 (Poor) to 5 (Excellent).** Be honest—this is about identifying opportunities for improvement, not scoring perfect 5s.
 
-#### Value Stream Clarity (Weight: 25%)
-- [ ] Team has clear understanding of their users and user needs (1-5)
-- [ ] Team can articulate how their work creates business value (1-5)  
-- [ ] Team has direct access to user feedback and data (1-5)
-- [ ] Team measures success through user and business outcomes (1-5)
+!!! abstract "Stream-Aligned Team Health Assessment"
+    
+    === "Value Stream Clarity (25%)"
+        - [x] Clear understanding of users and needs
+        - [x] Can articulate business value creation
+        - [ ] Has direct access to user feedback
+        - [ ] Measures success through outcomes
+        
+        **Score: 2/4** - Need better user feedback loops
+    
+    === "Technical Capability (30%)"
+        - [x] Has all needed skills for value stream
+        - [x] Can build, test, deploy, and operate
+        - [ ] Can resolve production issues independently
+        - [x] Technical decisions align with architecture
+        
+        **Score: 3/4** - Improve production issue resolution
+    
+    === "Autonomy & Flow (25%)"
+        - [ ] Can deploy without coordinating with others
+        - [ ] Minimal waiting for external dependencies
+        - [x] Makes most technical decisions independently
+        - [x] Work batch sizes appropriate
+        
+        **Score: 2/4** - Address deployment dependencies
+    
+    === "Cognitive Load (20%)"
+        - [x] Workload appropriate for capacity
+        - [x] Focus on core domain
+        - [ ] Adequate time for learning
+        - [x] Not overwhelmed by tool complexity
+        
+        **Score: 3/4** - Create more learning time
+    
+    **Overall Health: Strong (10/16)** - Focus on independence and feedback loops
 
-**Score: ___/20 → Weighted Score: ___/5**
-
-#### Technical Capability (Weight: 30%)
-- [ ] Team has all skills needed for their value stream (1-5)
-- [ ] Team can build, test, deploy, and operate their services (1-5)
-- [ ] Team can resolve production issues without external dependencies (1-5)
-- [ ] Team's technical decisions align with broader architecture (1-5)
-
-**Score: ___/20 → Weighted Score: ___/6**
-
-#### Autonomy & Flow (Weight: 25%)
-- [ ] Team can deploy to production without coordinating with other teams (1-5)
-- [ ] Team has minimal waiting time for external dependencies (1-5)
-- [ ] Team can make most technical decisions independently (1-5)
-- [ ] Team's work batch sizes are appropriately small (1-5)
-
-**Score: ___/20 → Weighted Score: ___/5**
-
-#### Cognitive Load Management (Weight: 20%)  
-- [ ] Team's workload is appropriate for their capacity (1-5)
-- [ ] Team focuses on their core domain without excessive context switching (1-5)
-- [ ] Team has adequate time for learning and improvement (1-5)
-- [ ] Team is not overwhelmed by tool and process complexity (1-5)
-
-**Score: ___/20 → Weighted Score: ___/4**
-
-**Overall Stream Team Health: ___/20**
-
-### Platform Team Health Check
-
-Rate each item from 1 (Poor) to 5 (Excellent):
-
-#### Customer Focus (Weight: 30%)
-- [ ] Team treats other engineering teams as customers, not users (1-5)
-- [ ] Team regularly collects feedback from stream teams (1-5)
-- [ ] Team measures success by stream team adoption and satisfaction (1-5)
-- [ ] Team understands and prioritizes stream team pain points (1-5)
-
-**Score: ___/20 → Weighted Score: ___/6**
-
-#### Product Excellence (Weight: 25%)
-- [ ] Platform provides self-service capabilities (1-5)
-- [ ] Platform has clear APIs and documentation (1-5)
-- [ ] Platform maintains backwards compatibility (1-5)
-- [ ] Platform has appropriate reliability and performance (1-5)
-
-**Score: ___/20 → Weighted Score: ___/5**
-
-#### Developer Experience (Weight: 25%)
-- [ ] Platform reduces cognitive load for stream teams (1-5)
-- [ ] Platform accelerates stream team delivery (1-5)
-- [ ] Platform is easy to onboard and use (1-5)
-- [ ] Platform provides helpful error messages and debugging tools (1-5)
-
-**Score: ___/20 → Weighted Score: ___/5**
-
-#### Strategic Alignment (Weight: 20%)
-- [ ] Platform roadmap aligns with organizational strategy (1-5)
-- [ ] Platform evolution balances standardization with flexibility (1-5)
-- [ ] Platform investment is appropriate for organizational scale (1-5)
-- [ ] Platform enables rather than constrains innovation (1-5)
-
-**Score: ___/20 → Weighted Score: ___/4**
-
-**Overall Platform Team Health: ___/20**
+!!! abstract "Platform Team Health Assessment"
+    
+    === "Customer Focus (30%)"
+        - [x] Treats engineering teams as customers
+        - [ ] Regularly collects feedback from stream teams
+        - [x] Measures success by team adoption
+        - [ ] Understands stream team pain points
+        
+        **Score: 2/4** - Improve feedback collection and pain point understanding
+    
+    === "Product Excellence (25%)"
+        - [x] Provides self-service capabilities
+        - [x] Has clear APIs and documentation
+        - [ ] Maintains backwards compatibility
+        - [x] Has appropriate reliability/performance
+        
+        **Score: 3/4** - Focus on backwards compatibility
+    
+    === "Developer Experience (25%)"
+        - [x] Reduces cognitive load for stream teams
+        - [ ] Accelerates stream team delivery
+        - [x] Easy to onboard and use
+        - [ ] Helpful error messages and debugging
+        
+        **Score: 2/4** - Improve delivery acceleration and debugging experience
+    
+    === "Strategic Alignment (20%)"
+        - [x] Roadmap aligns with organizational strategy
+        - [x] Balances standardization with flexibility
+        - [x] Investment appropriate for scale
+        - [ ] Enables rather than constrains innovation
+        
+        **Score: 3/4** - Ensure platform enables innovation
+    
+    **Overall Health: Good (10/16)** - Focus on feedback loops and developer experience
 
 ### Enabling Team Health Check
 

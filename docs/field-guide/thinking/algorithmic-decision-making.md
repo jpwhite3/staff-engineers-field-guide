@@ -37,36 +37,49 @@ Computer scientists have proven that the optimal strategy follows a specific pat
 
 **Algorithmic Approach**:
 
-```python
-class TechnologyExploration:
-    def __init__(self, time_horizon, switching_cost):
-        self.time_horizon = time_horizon  # How long until you need to decide
-        self.switching_cost = switching_cost  # Cost of changing later
-        self.uncertainty_threshold = self.calculate_threshold()
+```mermaid
+flowchart TD
+    A[Technology Decision Needed] --> B{Time Horizon?}
+    B -->|Long-term Project| C[Explore 20-30%]
+    B -->|Medium-term| D[Explore 10-15%]
+    B -->|Near Deadline| E[Exploit Known Solutions]
     
-    def should_explore(self, current_option, alternative_options):
-        # Gittins Index approach: explore if potential upside > switching cost
-        current_confidence = self.assess_confidence(current_option)
-        potential_upside = max([self.estimate_upside(alt) for alt in alternative_options])
-        
-        exploration_value = (potential_upside * self.time_horizon) - self.switching_cost
-        
-        return (current_confidence < self.uncertainty_threshold 
-                and exploration_value > 0)
+    C --> F{Switching Cost?}
+    F -->|High| G[Thorough Upfront Exploration<br/>Deep evaluation of alternatives]
+    F -->|Low| H[Incremental Exploration<br/>Try options gradually]
     
-    def exploration_budget(self):
-        # Spend diminishing time on exploration as deadline approaches
-        return max(0, self.time_horizon * 0.2 - self.time_elapsed * 0.1)
+    D --> I{Confidence Level?}
+    I -->|High| J[Stick with Current Choice]
+    I -->|Low| K[Limited Exploration<br/>Focus on highest-potential options]
+    
+    E --> L[Use Known Technology<br/>Optimize implementation]
+    
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#ffcdd2
 ```
 
-**Practical Guidelines**:
-
-> **Early in a project** → Spend 20-30% of time exploring alternatives
-> 
-> **Mid-project** → Reduce exploration to 10-15% of time
->
-> **Near deadlines** → Focus on exploitation of known solutions
->
+!!! tip "Practical Guidelines"
+    === "Early Project"
+        **Explore 20-30% of time**
+        
+        - High uncertainty justifies exploration
+        - Switching costs are lower early on
+        - More time to recover from mistakes
+        
+    === "Mid-Project"
+        **Explore 10-15% of time**
+        
+        - Balance learning with delivery
+        - Focus on high-impact improvements only
+        - Document findings for future projects
+        
+    === "Near Deadlines"
+        **Focus on known solutions**
+        
+        - Exploitation over exploration
+        - Optimize existing implementations
+        - Save new approaches for next iteration
 > **High switching costs** → Explore more thoroughly upfront
 >
 > **Low switching costs** → Comfortable with incremental exploration
@@ -211,27 +224,18 @@ Every Staff Engineer juggles multiple priorities, deadlines, and competing deman
 
 **Why It Works**: Getting small tasks done quickly creates momentum, reduces the psychological burden of an long todo list, and often unblocks other work.
 
-**Engineering Application - Sprint Planning**:
-```python
-def optimize_sprint_backlog(tasks):
-    # Sort by effort required (shortest first)
-    quick_wins = [t for t in tasks if t.effort <= 2 and t.value >= 5]
-    medium_tasks = [t for t in tasks if 2 < t.effort <= 5]
-    large_tasks = [t for t in tasks if t.effort > 5]
+=== "Shortest Processing Time (SPT)"
+    **When to Use:**
+    - High context-switching overhead
+    - Team morale needs momentum
+    - Uncertain requirements
     
-    # SPT within each category, but balance value
-    return (
-        sorted(quick_wins, key=lambda t: t.effort) +
-        sorted(medium_tasks, key=lambda t: t.effort / t.value) +
-        sorted(large_tasks, key=lambda t: -t.value)  # Highest value first
-    )
-```
-
-**When to Use SPT**:
-- High context-switching overhead between tasks
-- Team morale needs momentum from completed work
-- Uncertain requirements (shorter tasks = less wasted effort if requirements change)
-- Many stakeholders waiting for different pieces
+    **Benefits:**
+    - Maximizes completed tasks
+    - Builds momentum
+    - Reduces psychological burden
+    
+    **Application:** Sprint planning with quick wins first
 
 ### **Earliest Deadline First (EDF) Algorithm**
 
@@ -239,33 +243,18 @@ def optimize_sprint_backlog(tasks):
 
 **Why It's Optimal**: This is the only strategy that will meet all deadlines if meeting all deadlines is possible.
 
-**Engineering Application - Release Planning**:
-```python
-class DeadlineDrivenScheduling:
-    def __init__(self):
-        self.tasks = []
-        
-    def schedule_optimally(self, tasks_with_deadlines):
-        # Sort by deadline (earliest first)
-        sorted_tasks = sorted(tasks_with_deadlines, key=lambda t: t.deadline)
-        
-        # Check feasibility  
-        current_time = datetime.now()
-        for task in sorted_tasks:
-            if current_time + task.duration > task.deadline:
-                return self.handle_infeasible_schedule(sorted_tasks)
-            current_time += task.duration
-            
-        return sorted_tasks
+=== "Earliest Deadline First (EDF)"
+    **When to Use:**
+    - Hard deadlines exist
+    - Must meet all commitments
+    - Clear timeline constraints
     
-    def handle_infeasible_schedule(self, tasks):
-        # When impossible to meet all deadlines:
-        # 1. Identify which deadlines must be missed
-        # 2. Negotiate deadline changes
-        # 3. Reduce scope of tasks near deadlines
-        # 4. Add resources to critical path
-        pass
-```
+    **Benefits:**
+    - Optimal for deadline compliance
+    - Prevents missed commitments
+    - Clear prioritization logic
+    
+    **Application:** Release planning and milestone management
 
 ### **The Precedence Constraint Challenge**
 
@@ -277,13 +266,19 @@ class DeadlineDrivenScheduling:
 3. **Optimize the critical path** first—any delay here delays the entire project
 4. **Parallelize non-critical work** to fill slack time
 
-**Practical Example - Feature Development**:
-```
-Critical Path: Requirements → Design → Core Implementation → Integration → Testing → Deploy
-Parallel Work: Documentation, UI Polish, Monitoring Setup, Performance Testing
-
-Optimization Strategy:
-1. Focus senior engineers on critical path work
+=== "Critical Path Method (CPM)"
+    **When to Use:**
+    - Complex dependencies
+    - Large project coordination
+    - Resource optimization needed
+    
+    **Benefits:**
+    - Identifies bottlenecks
+    - Enables parallelization
+    - Optimizes resource allocation
+    
+    **Example Critical Path:**
+    Requirements → Design → Implementation → Integration → Testing → Deploy
 2. Junior engineers work on parallel tracks  
 3. Front-load risky/uncertain tasks (push them earlier in critical path)
 4. Build slack time before hard deadlines

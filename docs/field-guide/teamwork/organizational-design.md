@@ -16,24 +16,53 @@ Think about every high-performing engineering organization you've encountered. D
 
 **Here's the key insight**: Most organizational problems in tech companies stem from having too many team types, not too few. The magic happens when you constrain yourself to just these four:
 
-```mermaid
-graph TB
-    subgraph "The Four Team Types"
-        ST[Stream-Aligned Team<br/>• Product/feature focused<br/>• End-to-end ownership<br/>• Direct user value]
-        ET[Enabling Team<br/>• Research & guidance<br/>• Temporary coaching<br/>• Capability building]
-        CS[Complicated Subsystem Team<br/>• Specialized knowledge<br/>• Complex domain<br/>• Platform components]
-        PT[Platform Team<br/>• Internal services<br/>• Developer tooling<br/>• Infrastructure foundation]
-    end
+<div class="grid cards" markdown>
+
+-   :material-account-supervisor: **Stream-Aligned Team**
     
-    ET -.->|enables| ST
-    PT -->|serves| ST  
-    CS -->|provides| ST
+    ---
     
-    style ST fill:#e1f5fe
-    style PT fill:#f3e5f5
-    style ET fill:#e8f5e8
-    style CS fill:#fff3e0
-```
+    **Focus:** Product/feature delivery
+    
+    - End-to-end ownership
+    - Direct user value
+    - Cross-functional skills
+    - Autonomous deployment
+
+-   :material-server: **Platform Team**
+    
+    ---
+    
+    **Focus:** Internal services
+    
+    - Developer tooling
+    - Infrastructure foundation
+    - Self-service capabilities
+    - Treats other teams as customers
+
+-   :material-school: **Enabling Team**
+    
+    ---
+    
+    **Focus:** Capability building
+    
+    - Research & guidance  
+    - Temporary coaching
+    - Knowledge transfer
+    - Removes team blockers
+
+-   :material-puzzle: **Complicated Subsystem Team**
+    
+    ---
+    
+    **Focus:** Specialized domains
+    
+    - Complex technical knowledge
+    - Platform components
+    - Clean interfaces
+    - Rare but necessary
+
+</div>
 
 ### Stream-Aligned Teams: Your Value Delivery Engine
 
@@ -121,23 +150,53 @@ Having the right team types is only half the battle. The other half is understan
 
 **Here's what most people miss**: the interaction mode between two teams is just as important as the teams themselves. Skelton and Pais identified three fundamental ways teams can interact, and knowing which to use when is the difference between smooth collaboration and organizational friction.
 
-```mermaid
-graph LR
-    subgraph "Team A"
-        A[Team A]
-    end
+=== "Collaboration Mode"
+    **When to Use:** Figuring things out together, unclear boundaries, rapid innovation needed
     
-    subgraph "Team B"  
-        B[Team B]
-    end
+    ```mermaid
+    graph LR
+        A[Team A] <--> B[Team B]
+        A -.-> C[Joint Planning]
+        B -.-> C
+    ```
     
-    A <-->|Collaboration<br/>Joint working| B
-    A -->|X-as-a-Service<br/>Clear interface| B
-    A -.->|Facilitating<br/>Temporary coaching| B
+    **Characteristics:**
+    - High communication bandwidth
+    - Shared decision making
+    - Joint success metrics
+    - Discovery-focused
+
+=== "X-as-a-Service Mode"
+    **When to Use:** Clear interfaces, well-understood domains, need for autonomy
     
-    style A fill:#e1f5fe
-    style B fill:#f3e5f5
-```
+    ```mermaid
+    graph LR
+        A[Consumer Team] --> B[Provider Team]
+        B --> C[Clear SLA]
+        B --> D[Self-Service Interface]
+    ```
+    
+    **Characteristics:**
+    - Minimal ongoing communication
+    - Clear contracts and SLAs
+    - Provider sets standards
+    - Efficiency-focused
+
+=== "Facilitating Mode"
+    **When to Use:** Building team capabilities, knowledge transfer, overcoming obstacles
+    
+    ```mermaid
+    graph LR
+        A[Stream Team] <--> B[Enabling Team]
+        B -.-> C[Knowledge Transfer]
+        C -.-> D[Team Independence]
+    ```
+    
+    **Characteristics:**
+    - Temporary relationship
+    - Focus on capability building
+    - Success = reduced dependency
+    - Teaching-focused
 
 ### Collaboration Mode: Working Side by Side
 
@@ -322,27 +381,34 @@ Think about the last organizational problem you tried to solve. Maybe teams were
 
 That's the nature of systems problems—they resist quick fixes because the underlying structures that create them remain unchanged.
 
-**Leverage Points in Engineering Organizations**
-
-Senge identified twelve leverage points where small changes can produce big improvements in system behavior. For Staff Engineers designing team structures, the most powerful leverage points are:
-
-**Mental Models and Paradigms**
-
-The deepest leverage point is shifting how people think about the organization itself. Instead of viewing engineering teams as interchangeable resources to be optimized, what if we saw them as complex adaptive systems that need the right conditions to flourish?
-
-This shift changes everything. Instead of asking "How can we make teams work harder?" you ask "What structural conditions enable teams to do their best work?" Instead of optimizing for resource utilization, you optimize for flow and learning capability. Instead of standardizing everything, you create diversity within coherent frameworks.
-
-**System Structure and Power Distribution**
-
-The second-highest leverage point is changing who has power to make decisions. Traditional engineering organizations concentrate architectural decisions at the top, creating bottlenecks and disconnecting decision-makers from the daily reality of implementation.
-
-Team Topologies suggests a different model: distribute architectural decision-making to the teams closest to the problems, but within clear boundaries and principles. Stream-aligned teams get autonomy over their implementation details, but they operate within platform standards and architectural constraints. This isn't chaos—it's structured autonomy that enables both speed and coherence.
-
-**Information Flow and Feedback Loops**
-
-Most engineering organizations have terrible feedback loops. By the time leadership realizes that a team structure isn't working, months of productivity have been lost and team morale has suffered. By the time teams realize their technical decisions are creating problems for other teams, those problems have already become embedded in production systems.
-
-Systems thinking emphasizes creating fast, accurate feedback loops throughout the organization. This might mean regular cross-team retrospectives, real-time metrics that show the health of team interactions, or architectural fitness functions that alert teams when system boundaries are being violated.
+!!! info "Leverage Points in Engineering Organizations"
+    
+    === "Mental Models & Paradigms"
+        **Highest Leverage**
+        
+        Shift from viewing teams as resources to be optimized → complex adaptive systems needing the right conditions
+        
+        - Ask: "What enables teams' best work?" not "How can teams work harder?"
+        - Optimize for flow and learning, not resource utilization
+        - Create diversity within coherent frameworks
+        
+    === "System Structure & Power"
+        **High Leverage**
+        
+        Distribute architectural decision-making to teams closest to problems
+        
+        - Stream teams: autonomy over implementation details
+        - Within clear boundaries and platform standards
+        - Structured autonomy enables speed + coherence
+        
+    === "Information Flow & Feedback"
+        **Medium Leverage**
+        
+        Create fast, accurate feedback loops throughout organization
+        
+        - Regular cross-team retrospectives
+        - Real-time metrics on team interaction health
+        - Architectural fitness functions for boundary violations
 
 **Learning from System Archetypes**
 

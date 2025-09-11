@@ -26,11 +26,13 @@ This is your engineering intuition in action. When you immediately spot that a p
 - **Risk detection**: Sensing when something seems off
 - **Creative leaps**: Making connections between seemingly unrelated concepts
 
-**But System 1 has dangerous blind spots:**
-- **Anchoring bias**: Fixating on the first solution you think of
-- **Confirmation bias**: Seeking evidence that supports your initial hunch
-- **Availability heuristic**: Overweighting recent experiences
-- **Overconfidence**: Believing your gut feeling more than data
+!!! warning "System 1 Blind Spots"
+    **Dangerous cognitive traps to watch for:**
+    
+    - **Anchoring bias**: Fixating on the first solution you think of
+    - **Confirmation bias**: Seeking evidence that supports your initial hunch
+    - **Availability heuristic**: Overweighting recent experiences
+    - **Overconfidence**: Believing your gut feeling more than data
 
 ### **System 2: The Analytical Brain** 
 *Slow, deliberate, logical, effortful*
@@ -42,11 +44,13 @@ This is your analytical problem-solving mode. When you carefully work through th
 - **Long-term thinking**: Considering second and third-order consequences
 - **Structured comparison**: Systematically evaluating multiple options
 
-**But System 2 is expensive to run:**
-- **Energy drain**: Requires significant mental effort
-- **Time consuming**: Slow when you need quick decisions
-- **Limited capacity**: Can only handle a few variables at once
-- **Procrastination risk**: Easy to defer difficult analysis
+!!! info "System 2 Limitations"
+    **Resource constraints to manage:**
+    
+    - **Energy drain**: Requires significant mental effort
+    - **Time consuming**: Slow when you need quick decisions
+    - **Limited capacity**: Can only handle a few variables at once
+    - **Procrastination risk**: Easy to defer difficult analysis
 
 ### **The Dual-System Decision Framework**
 
@@ -102,7 +106,8 @@ flowchart TD
     style D fill:#e3f2fd
 ```
 
-**Key Insight:** The most effective Staff Engineers use System 1 for rapid pattern recognition and System 2 for high-stakes verification, creating a feedback loop that continuously improves their intuitive decision-making.
+!!! success "Key Insight: The Dual-System Advantage"
+    The most effective Staff Engineers use System 1 for rapid pattern recognition and System 2 for high-stakes verification, creating a feedback loop that continuously improves their intuitive decision-making.
 
 **The magic happens when you use both systems effectively.** Mental models serve as bridges between intuitive pattern-matching and rigorous analysis, helping you make better decisions faster.
 
@@ -132,14 +137,17 @@ Imagine you're investigating why your service is experiencing intermittent slowd
 - Connection allocation/release rate (affecting pool availability)
 - Garbage collection rate (freeing memory)
 
-**The Stock and Flow Mental Model in Action:**
+**The Stock and Flow Mental Model in Action:** (1)
+{ .annotate }
 
-```
-If Inflows > Outflows for extended periods → Stock grows until system failure
-If Outflows > Inflows consistently → Stock depletes, system becomes responsive
-```
-
-**Practical Application**: Instead of just adding more servers (increasing processing outflow), you might discover that connection pool exhaustion (stock depletion) is the real bottleneck. The solution isn't more compute—it's better connection management.
+1.  :material-information: **Stock and Flow Balance**
+    
+    This fundamental equation helps predict system behavior:
+    
+    - **If Inflows > Outflows** for extended periods → Stock grows until system failure
+    - **If Outflows > Inflows** consistently → Stock depletes, system becomes responsive
+    
+    **Practical Application**: Instead of just adding more servers (increasing processing outflow), you might discover that connection pool exhaustion (stock depletion) is the real bottleneck. The solution isn't more compute—it's better connection management.
 
 #### **Feedback Loops: Understanding System Behavior**
 
@@ -159,7 +167,8 @@ Increased Load → Higher Response Times → Auto-scaler Triggers →
 More Instances → Reduced Load per Instance → Better Response Times
 ```
 
-**Staff Engineer Application**: When you see a problem recurring, ask yourself: "What feedback loop is perpetuating this?" Often, the solution isn't fixing the immediate symptom—it's changing the feedback structure.
+!!! tip "Staff Engineer Application"
+    When you see a problem recurring, ask yourself: "What feedback loop is perpetuating this?" Often, the solution isn't fixing the immediate symptom—it's changing the feedback structure.
 
 #### **Leverage Points: Maximum Impact Interventions**
 
@@ -179,7 +188,8 @@ More Instances → Reduced Load per Instance → Better Response Times
 > **Level 1: Paradigms** - Changing the shared ideas that create the system
 > *Engineering example*: Shifting from "deploy and pray" to "test in production"
 
-**The Staff Engineer Superpower**: Most engineers focus on Level 4 and 3 solutions (more servers, different tools). Staff Engineers look for Level 2 and 1 interventions that create lasting change with less effort.
+!!! success "The Staff Engineer Superpower"
+    Most engineers focus on Level 4 and 3 solutions (more servers, different tools). Staff Engineers look for Level 2 and 1 interventions that create lasting change with less effort.
 
 ---
 
@@ -193,10 +203,16 @@ Engineering decisions are made under uncertainty with incomplete information. Th
 
 **The Core Insight**: Make decisions based on probability-weighted outcomes, not just best-case or worst-case scenarios.
 
-**The Expected Value Formula:**
-```
-E(V) = Σ(Probability × Outcome Value)
-```
+**The Expected Value Formula:** (1)
+{ .annotate }
+
+1.  :material-calculator: **Expected Value Calculation**
+    
+    ```
+    E(V) = Σ(Probability × Outcome Value)
+    ```
+    
+    This formula helps you make rational decisions under uncertainty by weighing all possible outcomes by their likelihood, rather than focusing only on best-case or worst-case scenarios.
 
 **Engineering Decision Example**: Choosing between two approaches for a critical system migration:
 

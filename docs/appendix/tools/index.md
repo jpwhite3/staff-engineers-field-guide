@@ -4,15 +4,61 @@ Practical tools and comprehensive assessment frameworks for staff engineers and 
 
 ## Assessment & Development Tools
 
-These frameworks transform the Field Guide from reference material into a complete development system:
+<div class="grid cards" markdown>
 
-- [**Staff Engineer Competency Assessment**](staff-engineer-competency-assessment.md) - Comprehensive individual assessment across 6 domains of technical leadership
-- [**Team Health Diagnostic**](team-health-diagnostic.md) - Team effectiveness assessment covering psychological safety, technical practices, and collaboration  
-- [**Development Tracking System**](development-tracking-system.md) - Progress tracking and measurement frameworks for individuals and teams
+-   :material-account-check: **Staff Engineer Competency Assessment**
+    
+    ---
+    
+    Comprehensive individual assessment across 6 domains of technical leadership
+    
+    [:octicons-arrow-right-24: Begin Assessment](staff-engineer-competency-assessment.md)
+
+-   :material-heart-pulse: **Team Health Diagnostic**
+    
+    ---
+    
+    Team effectiveness assessment covering psychological safety, technical practices, and collaboration
+    
+    [:octicons-arrow-right-24: Assess Team Health](team-health-diagnostic.md)
+
+-   :material-trending-up: **Development Tracking System**
+    
+    ---
+    
+    Progress tracking and measurement frameworks for individuals and teams
+    
+    [:octicons-arrow-right-24: Track Progress](development-tracking-system.md)
+
+</div>
 
 ## Specialized Assessment Frameworks
 
-- [Engineering Excellence Assessment Framework](engineering-excellence-assessment.md) - Technical capability evaluation
-- [Critical Thinking Assessment](critical-thinking-assessment.md) - Decision-making and problem-solving evaluation
-- [Team Topology Assessment Framework](team-topology-assessment.md) - Organizational design effectiveness
+<div class="grid cards" markdown>
+
+-   :material-cog: **Engineering Excellence**
+    
+    ---
+    
+    Technical capability evaluation
+    
+    [:octicons-arrow-right-24: Assess Excellence](engineering-excellence-assessment.md)
+
+-   :material-brain: **Critical Thinking**
+    
+    ---
+    
+    Decision-making and problem-solving evaluation
+    
+    [:octicons-arrow-right-24: Test Thinking](critical-thinking-assessment.md)
+
+-   :material-sitemap: **Team Topology**
+    
+    ---
+    
+    Organizational design effectiveness
+    
+    [:octicons-arrow-right-24: Check Topology](team-topology-assessment.md)
+
+</div>
 

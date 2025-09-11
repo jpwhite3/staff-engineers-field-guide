@@ -4,77 +4,94 @@
 
 This comprehensive assessment helps staff engineers, principal engineers, and technical leaders evaluate their current capabilities across all dimensions of technical leadership. Unlike generic leadership assessments, this framework is specifically designed for the unique challenges and opportunities that senior individual contributors face.
 
-**How to Use This Assessment:**
-- Answer honestly based on your current capabilities, not aspirations
-- Consider evidence from the past 6 months of your work
-- Use this as a baseline for your development planning
-- Revisit quarterly to track your progress
+!!! info "How to Use This Assessment"
+    - Answer honestly based on your current capabilities, not aspirations
+    - Consider evidence from the past 6 months of your work
+    - Use this as a baseline for your development planning
+    - Revisit quarterly to track your progress
 
 ## Assessment Domains
 
 ### Domain 1: Technical Architecture & Engineering Excellence
 
-**1.1 Clean Architecture & System Design**
-```
-□ Novice (1): I can implement features within existing architectural patterns
-□ Developing (2): I can design individual services with clean architectural principles
-□ Proficient (3): I can design system-wide architectures that balance technical excellence with business needs
-□ Advanced (4): I regularly influence architectural decisions across multiple teams and can refactor complex systems
-□ Expert (5): I set architectural standards for the organization and mentor others in architectural thinking
-```
+!!! question "1.1 Clean Architecture & System Design"
+    
+    **Self-Assessment Scale:**
+    
+    - [ ] **Novice (1):** Implement features within existing patterns
+    - [ ] **Developing (2):** Design individual services with clean principles  
+    - [x] **Proficient (3):** Design system-wide architectures balancing excellence with business needs
+    - [ ] **Advanced (4):** Influence multi-team decisions and refactor complex systems
+    - [ ] **Expert (5):** Set organizational standards and mentor architectural thinking
+    
+    **Current Level: 3/5** - Proficient
+    
+    ??? example "Evidence Questions"
+        - Have you designed or influenced a system architecture decision recently?
+        - Can you give examples of applying clean architecture to solve business problems?
+        - How do you balance technical perfection with delivery timelines?
 
-**Evidence Questions:**
-- In the past 6 months, have you designed or significantly influenced a system architecture decision?
-- Can you give specific examples of how you've applied clean architecture principles to solve business problems?
-- How do you balance technical perfection with delivery timelines?
+!!! question "1.2 Site Reliability & Operations Excellence"
+    
+    **Self-Assessment Scale:**
+    
+    - [ ] **Novice (1):** Monitor and debug applications in production
+    - [x] **Developing (2):** Design basic observability and establish SLIs
+    - [ ] **Proficient (3):** Establish comprehensive SLO frameworks and lead incident response
+    - [ ] **Advanced (4):** Design resilience patterns and drive operational excellence
+    - [ ] **Expert (5):** Establish organization-wide reliability practices
+    
+    **Current Level: 2/5** - Developing
+    
+    ??? example "Evidence Questions"
+        - How do you approach setting SLOs for technical systems?
+        - Can you describe an incident you led and what changes resulted?
+        - How do you balance reliability investment with feature development?
 
-**1.2 Site Reliability & Operations Excellence**
-```
-□ Novice (1): I can monitor and debug applications in production
-□ Developing (2): I can design basic observability and establish SLIs for my services
-□ Proficient (3): I can establish comprehensive SLO frameworks and lead incident response
-□ Advanced (4): I can design resilience patterns across multiple services and drive operational excellence
-□ Expert (5): I establish organization-wide reliability practices and error budget policies
-```
-
-**Evidence Questions:**
-- How do you approach setting SLOs for technical systems?
-- Can you describe an incident you led and what organizational changes resulted?
-- How do you balance reliability investment with feature development?
-
-**1.3 Continuous Delivery & DevOps Culture**
-```
-□ Novice (1): I can use existing CI/CD pipelines for deployments
-□ Developing (2): I can design deployment pipelines for individual services
-□ Proficient (3): I can establish comprehensive testing strategies and deployment practices
-□ Advanced (4): I can design organization-wide delivery practices and cultural transformation
+!!! question "1.3 Continuous Delivery & DevOps Culture"
+    
+    **Self-Assessment Scale:**
+    
+    - [ ] **Novice (1):** Use existing CI/CD pipelines for deployments
+    - [ ] **Developing (2):** Design deployment pipelines for individual services  
+    - [ ] **Proficient (3):** Establish comprehensive testing strategies and deployment practices
+    - [x] **Advanced (4):** Design organization-wide delivery practices and cultural transformation
+    - [ ] **Expert (5):** Transform organizational delivery capabilities and culture
+    
+    **Current Level: 4/5** - Advanced
 □ Expert (5): I influence industry practices and drive delivery performance improvements
 ```
 
 ### Domain 2: Strategic Thinking & Business Alignment
 
-**2.1 Strategic Technical Decision Making**
-```
-□ Novice (1): I can execute on technical projects with clear requirements
-□ Developing (2): I can connect my technical work to team goals and explain business impact
-□ Proficient (3): I can identify technical opportunities that drive business outcomes
-□ Advanced (4): I can influence product and business strategy through technical insights
-□ Expert (5): I regularly shape company strategy and identify new business opportunities through technology
-```
+!!! question "2.1 Strategic Technical Decision Making"
+    
+    **Self-Assessment Scale:**
+    
+    - [ ] **Novice (1):** Execute technical projects with clear requirements
+    - [ ] **Developing (2):** Connect technical work to team goals and business impact
+    - [ ] **Proficient (3):** Identify technical opportunities that drive business outcomes
+    - [x] **Advanced (4):** Influence product and business strategy through technical insights
+    - [ ] **Expert (5):** Shape company strategy and identify new business opportunities
+    
+    **Current Level: 4/5** - Advanced
+    
+    ??? example "Evidence Questions"
+        - How do you prioritize competing technical initiatives?
+        - Can you give an example of a technical decision that significantly impacted business outcomes?
+        - How do you communicate technical strategy to non-technical stakeholders?
 
-**Evidence Questions:**
-- How do you prioritize competing technical initiatives?
-- Can you give an example of a technical decision that significantly impacted business outcomes?
-- How do you communicate technical strategy to non-technical stakeholders?
-
-**2.2 OKR Development & Strategic Alignment**
-```
-□ Novice (1): I can contribute to team OKRs and understand their purpose
-□ Developing (2): I can write technical OKRs that connect to business objectives
-□ Proficient (3): I can cascade strategy through technical layers and measure outcomes
-□ Advanced (4): I can design OKR frameworks that align engineering with business strategy
-□ Expert (5): I influence company-wide goal-setting and strategic measurement practices
-```
+!!! question "2.2 OKR Development & Strategic Alignment"
+    
+    **Self-Assessment Scale:**
+    
+    - [ ] **Novice (1):** Contribute to team OKRs and understand their purpose
+    - [ ] **Developing (2):** Write technical OKRs that connect to business objectives
+    - [x] **Proficient (3):** Cascade strategy through technical layers and measure outcomes
+    - [ ] **Advanced (4):** Design OKR frameworks aligning engineering with business strategy
+    - [ ] **Expert (5):** Influence company-wide goal-setting and strategic measurement
+    
+    **Current Level: 3/5** - Proficient
 
 ### Domain 3: Leadership & Influence
 
