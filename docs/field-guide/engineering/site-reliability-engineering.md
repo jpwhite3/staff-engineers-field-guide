@@ -41,7 +41,8 @@ graph TB
 
 Think of these principles as a reliability flywheel. **Service Level Indicators** tell you what's actually happening to users. **Service Level Objectives** set your reliability targets. **Error Budgets** give you permission to take calculated risks. **Error Management** helps you learn from failures instead of just surviving them. And **Elimination of Toil** frees up your team to work on improvements instead of just keeping the lights on.
 
-The magic happens when these principles work together. Better SLIs lead to more realistic SLOs, which create more useful error budgets, which enable better risk-taking and learning, which reduces toil and creates time for even better monitoring. It's a virtuous cycle that gets stronger over time.
+!!! success "SRE Flywheel Effect"
+    The magic happens when these principles work together. Better SLIs lead to more realistic SLOs, which create more useful error budgets, which enable better risk-taking and learning, which reduces toil and creates time for even better monitoring. It's a virtuous cycle that gets stronger over time.
 
 ### Service Level Indicators: The North Star of Reliability
 
@@ -187,45 +188,39 @@ Create clear policies that guide decision-making when error budgets are consumed
 
 **Error Budget Policy Framework**:
 
-**Budget Status: Green (0-50% consumed)**
-- Normal development velocity
-- Regular feature releases
-- Standard change review process
-- Acceptable risk tolerance
-
-**Budget Status: Yellow (50-80% consumed)**
-- Increased change review rigor
-- Focus on reliability improvements
-- Defer non-critical features
-- Enhanced monitoring and alerting
-
-**Budget Status: Red (80%+ consumed)**
-- Feature freeze except critical bug fixes
-- All-hands focus on reliability
-- Mandatory architectural review for changes
-- Postmortem required for any further budget consumption
+```mermaid
+flowchart TD
+    A[Check Error Budget] --> B{Budget Status}
+    B -->|0-50% Green| C[Normal Velocity<br/>Regular Releases<br/>Standard Reviews<br/>Acceptable Risk]
+    B -->|50-80% Yellow| D[Increased Rigor<br/>Focus on Reliability<br/>Defer Non-Critical<br/>Enhanced Monitoring]  
+    B -->|80%+ Red| E[Feature Freeze<br/>All-hands Reliability<br/>Mandatory Reviews<br/>Postmortem Required]
+    
+    style C fill:#c8e6c9
+    style D fill:#fff3e0
+    style E fill:#ffcdd2
+```
 
 ### Building an Effective On-Call Culture
 
 On-call shouldn't be a punishment—it should be a feedback mechanism that drives system improvements. Here's how to build sustainable on-call practices:
 
-**Rotation Structure**:
-- Primary and secondary on-call engineers
-- Reasonable rotation frequency (typically 1-2 weeks)
-- Clear escalation paths and expectations
-- Time zone coverage that matches user needs
+=== "Rotation Structure"
+    - Primary and secondary on-call engineers
+    - Reasonable rotation frequency (typically 1-2 weeks)
+    - Clear escalation paths and expectations
+    - Time zone coverage that matches user needs
 
-**Alert Quality**:
-- Every alert should be actionable
-- False positive rate below 5%
-- Clear runbooks for common issues
-- Automated resolution where possible
+=== "Alert Quality"
+    - Every alert should be actionable
+    - False positive rate below 5%
+    - Clear runbooks for common issues
+    - Automated resolution where possible
 
-**Compensation and Recovery**:
-- Compensate engineers for on-call work
-- Provide time off after significant incidents
-- Limit on-call load to sustainable levels
-- Regular review of on-call burden distribution
+=== "Compensation and Recovery"
+    - Compensate engineers for on-call work
+    - Provide time off after significant incidents
+    - Limit on-call load to sustainable levels
+    - Regular review of on-call burden distribution
 
 ## Observability: The Eyes and Ears of Reliable Systems
 
@@ -233,23 +228,42 @@ Observability goes beyond traditional monitoring—it's about building systems t
 
 ### The Three Pillars of Observability
 
-**Metrics**: Aggregated numeric data over time
-- System health dashboards
-- SLI/SLO tracking
-- Resource utilization trends
-- Business metrics correlation
+<div class="grid cards" markdown>
 
-**Logs**: Structured records of discrete events
-- Request traces and debugging information
-- Error details and stack traces
-- Audit trails and compliance records
-- Correlation identifiers across services
+-   :material-chart-line: **Metrics**
+    
+    ---
+    
+    Aggregated numeric data over time
+    
+    - System health dashboards
+    - SLI/SLO tracking
+    - Resource utilization trends
+    - Business metrics correlation
 
-**Traces**: Request flow through distributed systems
-- End-to-end latency analysis
-- Dependency mapping and bottleneck identification
-- Error propagation paths
-- Performance optimization insights
+-   :material-text-box: **Logs**
+    
+    ---
+    
+    Structured records of discrete events
+    
+    - Request traces and debugging information
+    - Error details and stack traces
+    - Audit trails and compliance records
+    - Correlation identifiers across services
+
+-   :material-radar: **Traces**
+    
+    ---
+    
+    Request flow through distributed systems
+    
+    - End-to-end latency analysis
+    - Dependency mapping and bottleneck identification
+    - Error propagation paths
+    - Performance optimization insights
+
+</div>
 
 ### Implementing Effective Observability
 

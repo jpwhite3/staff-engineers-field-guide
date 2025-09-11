@@ -9,3 +9,6 @@ serve:
 
 deploy:
 	poetry run mkdocs gh-deploy --force
+
+book:
+	ENABLE_PDF_EXPORT=1 poetry run mkdocs build

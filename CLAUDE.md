@@ -9,6 +9,7 @@ This is the Staff Engineer's Field Guide - a comprehensive, community-driven res
 ## Architecture
 
 **Documentation Structure:**
+
 - `docs/field-guide/` - Core field guide content organized into chapters (Leadership, Engineering, Execution, etc.)
 - `docs/appendix/` - Supplementary materials including antipatterns, design patterns, domain-driven design concepts, laws, tools, and values
 - `src/` - Source content that may be used for generation or processing
@@ -16,6 +17,7 @@ This is the Staff Engineer's Field Guide - a comprehensive, community-driven res
 
 **Content Organization:**
 The guide follows a hierarchical structure with major sections:
+
 - Introduction (archetypes: Tech Lead, Architect, Solver, Right Hand)
 - Learning (expertise development, mentorship, staying current)
 - Ethics (bias, privacy, frameworks, scale, innovation)
@@ -29,22 +31,27 @@ The guide follows a hierarchical structure with major sections:
 ## Development Commands
 
 **Bootstrap environment:**
+
 ```bash
 make bootstrap
 ```
 
 **Local development:**
+
 ```bash
 make serve
 ```
+
 Site will be available at http://127.0.0.1:8000
 
 **Build site:**
+
 ```bash
 make build
 ```
 
 **Deploy to GitHub Pages:**
+
 ```bash
 make deploy
 ```
@@ -66,11 +73,13 @@ make deploy
 ## Enhancement Strategy: Comprehensive Source Integration
 
 ### Strategic Overview
+
 Major initiative to transform the field guide into the definitive industry authority through systematic integration of 30+ foundational books, creating 60+ visual frameworks, 300+ cross-references, and professional publication capability.
 
 **Master Tracking Issue:** [#7 - Comprehensive Source Integration Strategy](https://github.com/jpwhite3/staff-engineers-field-guide/issues/7)
 
 ### Success Metrics
+
 - **Content Authority**: 30+ authoritative books integrated with full attribution
 - **Content Depth**: 75% increase in substantive, actionable content
 - **Visual Excellence**: 60+ professional diagrams, decision trees, and assessment tools
@@ -82,6 +91,7 @@ Major initiative to transform the field guide into the definitive industry autho
 ### Implementation Phases
 
 #### Phase 1: Leadership & Organizational Design
+
 **Issue:** [#1 - Leadership Frameworks Integration](https://github.com/jpwhite3/staff-engineers-field-guide/issues/1)
 **Timeline:** Months 1-3
 **Status:** ✅ Completed - Merged to Main
@@ -89,13 +99,15 @@ Major initiative to transform the field guide into the definitive industry autho
 **Pull Request:** [#8 - Phase 1: Leadership & Organizational Design Integration](https://github.com/jpwhite3/staff-engineers-field-guide/pull/8)
 
 **Authority Sources:**
+
 - Jim Collins - "Good to Great" (Level 5 Leadership, Hedgehog Concept) ✅
-- Liz Wiseman - "Multipliers" (5 Disciplines, force multiplier techniques) 🔄 *Planned for future enhancement*
-- Kim Scott - "Radical Candor" (feedback frameworks) 🔄 *Existing content enhanced*
+- Liz Wiseman - "Multipliers" (5 Disciplines, force multiplier techniques) 🔄 _Planned for future enhancement_
+- Kim Scott - "Radical Candor" (feedback frameworks) 🔄 _Existing content enhanced_
 - Matthew Skelton & Manuel Pais - "Team Topologies" (organizational design) ✅⭐
 - Simon Sinek - "Leaders Eat Last" & "Start with Why" (purpose-driven leadership) ✅⭐
 
 **Key Deliverables - COMPLETED:**
+
 - ✅ Team topology interaction maps and assessment tools (`organizational-design.md`, `team-topology-assessment.md`)
 - ✅ Level 5 Leadership integration with staff engineering roles (`leadership/index.md`)
 - ✅ Golden Circle framework for technical vision (`technical-vision.md`)
@@ -103,13 +115,15 @@ Major initiative to transform the field guide into the definitive industry autho
 - ✅ Comprehensive visual frameworks using Mermaid diagrams
 - ✅ Cross-reference integration and navigation updates
 
-#### Phase 2: Technical Architecture & Operations Excellence  
+#### Phase 2: Technical Architecture & Operations Excellence
+
 **Issue:** [#2 - Technical Architecture Enhancement](https://github.com/jpwhite3/staff-engineers-field-guide/issues/2)
 **Timeline:** Months 2-5
 **Status:** ✅ Completed - Merged to Main
 **Branch:** `phase-2-technical-architecture-operations` (merged)
 
 **Authority Sources:**
+
 - Martin Fowler - "Patterns of Enterprise Application Architecture", "Refactoring"
 - Sam Newman - "Building Microservices"
 - Martin Kleppmann - "Designing Data-Intensive Applications"
@@ -119,18 +133,21 @@ Major initiative to transform the field guide into the definitive industry autho
 - Jez Humble & David Farley - "Continuous Delivery" ⭐
 
 **Key Deliverables:**
+
 - SLI/SLO/Error budget implementation frameworks
 - Evolutionary architecture fitness functions
 - Clean architecture decision templates
 - Comprehensive deployment pipeline patterns
 
 #### Phase 3: Critical Thinking & Decision Making
+
 **Issue:** [#4/#5 - Decision Science Integration](https://github.com/jpwhite3/staff-engineers-field-guide/issues/4)
 **Timeline:** Months 3-6
 **Status:** ✅ Completed - Merged to Main
 **Branch:** `phase-3-critical-thinking-decision-making` (merged)
 
 **Authority Sources:**
+
 - Daniel Kahneman - "Thinking, Fast and Slow" (cognitive science) ✅⭐
 - Brian Christian & Tom Griffiths - "Algorithms to Live By" (computational thinking) ✅⭐
 - Richard Rumelt - "Good Strategy Bad Strategy" (strategy frameworks) ✅⭐
@@ -139,6 +156,7 @@ Major initiative to transform the field guide into the definitive industry autho
 - Amos Tversky - Cognitive bias research (integrated) ✅
 
 **Key Deliverables - COMPLETED:**
+
 - ✅ Mental models enhancement with System 1/2 thinking (`mental-models.md`)
 - ✅ Algorithmic decision-making tools for technical leaders (`algorithmic-decision-making.md`)
 - ✅ Strategic thinking frameworks with business alignment (`strategic-thinking.md`)
@@ -146,13 +164,15 @@ Major initiative to transform the field guide into the definitive industry autho
 - ✅ Integration of behavioral science with engineering leadership
 - ✅ Cross-reference integration and navigation updates
 
-#### Phase 4: Engineering Excellence & Product Integration  
+#### Phase 4: Engineering Excellence & Product Integration
+
 **Issue:** [#6 - Cross-Reference System and Engineering Excellence](https://github.com/jpwhite3/staff-engineers-field-guide/issues/6)
 **Timeline:** Months 4-7  
 **Status:** ✅ Completed - Merged to Main
 **Branch:** `phase-4-engineering-excellence-product-integration` (merged)
 
 **Authority Sources:**
+
 - Kent Beck - "Test-Driven Development By Example" (TDD excellence) ✅⭐
 - Gerard Meszaros - "xUnit Test Patterns" (comprehensive testing) ✅⭐
 - Marty Cagan - "INSPIRED" (product-engineering partnership) ✅⭐
@@ -161,6 +181,7 @@ Major initiative to transform the field guide into the definitive industry autho
 - Gene Kim, Patrick Debois, John Willis - "The DevOps Handbook" ✅⭐
 
 **Key Deliverables - COMPLETED:**
+
 - ✅ Advanced testing strategies and quality frameworks (`advanced-testing-strategies.md`)
 - ✅ Product management integration for technical leaders (`product-engineering-collaboration.md`)
 - ✅ Engineering metrics and measurement systems enhancement (`engineering-metrics-business-alignment.md`)
@@ -169,33 +190,38 @@ Major initiative to transform the field guide into the definitive industry autho
 - ✅ Enhanced with narrative structure and conversational tone
 
 #### Phase 5: Organizational Behavior & Team Dynamics
+
 **Issue:** [#3 - Organizational Behavior Integration](https://github.com/jpwhite3/staff-engineers-field-guide/issues/3)
 **Timeline:** Months 5-8
 **Status:** 🟡 In Progress - Currently Active
 **Branch:** `phase-5-organizational-behavior-team-dynamics`
 
 **Authority Sources:**
+
 - Stanley McChrystal - "Team of Teams" (network organizations)
-- Patrick Lencioni - "Five Dysfunctions of a Team" (trust-based development) 
+- Patrick Lencioni - "Five Dysfunctions of a Team" (trust-based development)
 - Chip Heath & Dan Heath - "Switch" (change management)
 - Kerry Patterson - "Crucial Conversations" (high-stakes discussions)
 - Kim Scott - "Radical Candor" (advanced feedback frameworks)
 - Amy Edmondson - "The Fearless Organization" (psychological safety at scale)
 
 **Key Deliverables:**
+
 - Advanced conflict resolution frameworks for technical leaders
 - Change management strategies for technical transformations
-- Cultural transformation playbook for engineering organizations  
+- Cultural transformation playbook for engineering organizations
 - Advanced mentorship and career development systems
 - Network organization design principles
 - Team dysfunction assessment with performance integration
 
 #### Phase 6: Publication & Cross-Reference Excellence
+
 **Issue:** [Integrated with Phase 4] - Cross-Reference System and Book Compilation
 **Timeline:** Months 7-10
 **Status:** 🔄 Partially Integrated (Cross-references in Phase 4)
 
 **Key Deliverables:**
+
 - 300+ bidirectional cross-reference system (🔄 Phase 4 integration)
 - Professional book compilation infrastructure (PDF, EPUB)
 - Competency-based learning path optimization
@@ -207,20 +233,23 @@ Major initiative to transform the field guide into the definitive industry autho
 **Overall Status:** ✅ PROJECT COMPLETED - All Phases Successfully Implemented
 
 **Phase Status Legend:**
+
 - 🔲 Not Started
-- 🟡 In Progress  
+- 🟡 In Progress
 - ✅ Completed
 - 🔄 Under Review
 
 **All Phases Completed Successfully:**
 
 **Phase 1: ✅ Leadership & Organizational Design** (PR #8 - Merged)
+
 - Team Topologies integration with organizational design framework
-- Level 5 Leadership model for technical leaders  
+- Level 5 Leadership model for technical leaders
 - Golden Circle framework for technical vision
 - Team formation and collaboration patterns
 
 **Phase 2: ✅ Technical Architecture & Operations Excellence** (PR #9 - Merged)
+
 - Site Reliability Engineering comprehensive framework
 - Clean Architecture patterns and implementation guide
 - Evolutionary Architecture principles and practices
@@ -229,6 +258,7 @@ Major initiative to transform the field guide into the definitive industry autho
 - Enhanced with narrative structure and conversational tone
 
 **Phase 3: ✅ Critical Thinking & Decision Making** (Merged)
+
 - Mental Models enhancement with System 1/2 thinking
 - Algorithmic decision-making tools for technical leaders
 - Strategic thinking frameworks with business alignment
@@ -236,6 +266,7 @@ Major initiative to transform the field guide into the definitive industry autho
 - Integration of behavioral science with engineering leadership
 
 **Phase 4: ✅ Engineering Excellence & Product Integration** (Merged)
+
 - Advanced testing strategies and quality frameworks from Beck and Meszaros
 - Product management integration content from Cagan and Torres for technical leaders
 - Engineering metrics and measurement systems with DORA metrics and DevOps practices
@@ -244,6 +275,7 @@ Major initiative to transform the field guide into the definitive industry autho
 - Comprehensive engineering-product collaboration templates
 
 **Phase 5: ✅ Organizational Behavior & Team Dynamics** (PRs #10 & #12 - Merged)
+
 - Advanced Conflict Resolution frameworks (8,500+ words)
 - Change Management for Technical Transformations (8,000+ words)
 - Cultural Transformation & Psychological Safety (9,000+ words)
@@ -252,22 +284,32 @@ Major initiative to transform the field guide into the definitive industry autho
 - Complete narrative structure enhancement across all content
 
 **Phase D: ✅ Assessment & Measurement Systems Enhancement** (Merged)
+
 - Staff Engineer Competency Assessment across 6 domains of technical leadership
 - Team Health Diagnostic covering psychological safety, technical practices, and collaboration
 - Development Tracking System for progress measurement and career integration
 - Cross-reference integration connecting assessments to field guide chapters
 - Complete development platform transformation from reference to actionable system
 
+### Writing style and tone
+
+- Bias toward using narrative, flowing paragraphs
+- When connecting topic, use a continuous prose format to produce a more fluid and connected result
+- Use a conversational style; balancing professionalism, depth of thought, and approachability
+- Avoid over using bullet points, numbered lists, or any other list formatting (reserving their use for content that naturally fit that format)
+
 ### Quality Standards
 
 **Content Integration Requirements:**
+
 - Academic-standard citation for all authority sources
 - Fair use compliance and copyright clearance
-- Original visual assets or properly licensed diagrams  
+- Original visual assets or properly licensed diagrams
 - Bidirectional cross-references maintained
 - Staff engineering practical focus maintained
 
 **Publication Standards:**
+
 - Professional typography and layout
 - Multi-format compatibility (web, PDF, EPUB)
 - Comprehensive index and glossary

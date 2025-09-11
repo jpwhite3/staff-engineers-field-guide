@@ -29,11 +29,11 @@ The goal is to provide practical, actionable advice you can apply immediately.
 ## Chapters
 
 1. [Setting the Stage: What It Means to Be a Staff Engineer](field-guide/intro/index.md)
-2. [Leadership, Influence & Communication](field-guide/leadership/index.md)
-3. [Teamwork & Team Behavior](field-guide/teamwork/index.md)
-4. [Execution & Delivery](field-guide/execution/index.md)
-5. [Core Engineering Skills & Practices](field-guide/engineering/index.md)
-6. [Critical Thinking & Problem-Solving](field-guide/thinking/index.md)
-7. [The Business of Engineering](field-guide/business/index.md)
-8. [Continuous Learning & Growth](field-guide/learning/index.md)
+2. [Continuous Learning & Growth](field-guide/learning/index.md)
+3. [Core Engineering Skills & Practices](field-guide/engineering/index.md)
+4. [Critical Thinking & Problem-Solving](field-guide/thinking/index.md)
+5. [Leadership, Influence & Communication](field-guide/leadership/index.md)
+6. [Teamwork & Team Behavior](field-guide/teamwork/index.md)
+7. [Execution & Delivery](field-guide/execution/index.md)
+8. [The Business of Engineering](field-guide/business/index.md)
 9. [Engineering Ethics & Decision-Making](field-guide/ethics/index.md)
