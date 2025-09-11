@@ -1,3 +1,22 @@
+---
+title: Engineering Excellence
+description: Build the technical authority foundation through mastery of architecture, testing, CI/CD, and engineering practices that separate senior engineers from technical leaders.
+tags:
+  - engineering-excellence
+  - technical-leadership
+  - architecture
+  - testing
+  - ci-cd
+  - code-quality
+  - system-design
+  - devops
+  - technical-debt
+  - site-reliability
+  - clean-architecture
+  - evolutionary-architecture
+  - professional-development
+---
+
 # Engineering Excellence: The Foundation of Technical Leadership
 
 ## The Credibility Imperative

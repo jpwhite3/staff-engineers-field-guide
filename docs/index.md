@@ -35,6 +35,18 @@ This isn't just a field guide; it's a blueprint for technical leadership. Whethe
     
     **Goal:** Practical, actionable advice you can apply immediately.
 
+## Learning Path Navigation
+
+!!! tip "Choose Your Journey"
+    **New to Staff Engineering?** Follow the foundational path: [Staff Engineer Archetypes](field-guide/intro/index.md) → [Engineering Excellence](field-guide/engineering/index.md) → [Critical Thinking](field-guide/thinking/index.md) → [Leadership & Influence](field-guide/leadership/index.md)
+    
+    **Experienced Technical Lead?** Focus on advanced topics: [Team Formation](field-guide/teamwork/team-formation.md) → [Advanced Conflict Resolution](field-guide/leadership/advanced-conflict-resolution.md) → [Strategic Thinking](field-guide/execution/strategic-thinking.md)
+    
+    **Building Business Partnership?** Follow the business integration path: [Product-Engineering Collaboration](field-guide/business/product-engineering-collaboration.md) → [Engineering Metrics](field-guide/business/engineering-metrics-business-alignment.md) → [Executive Communication](field-guide/business/pitching-to-executives.md)
+
+!!! info "Cross-Reference System"
+    Every chapter includes comprehensive cross-references connecting related concepts, prerequisites, and follow-up applications. Use the **[Cross-References & Tags](reference/tags.md)** page to explore content by skill, context, or learning objective.
+
 ## Chapters
 
 <div class="grid cards" markdown>

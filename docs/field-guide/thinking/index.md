@@ -1,3 +1,19 @@
+---
+title: Critical Thinking & Decision Making
+description: Master the analytical thinking frameworks that separate technical experts from technical leaders, including mental models, cognitive biases, and systematic problem-solving.
+tags:
+  - critical-thinking
+  - decision-making
+  - mental-models
+  - cognitive-biases
+  - problem-solving
+  - system-thinking
+  - analytical-leadership
+  - metacognition
+  - algorithmic-thinking
+  - strategic-planning
+---
+
 # Critical Thinking: The Bridge from Technical Expert to Analytical Leader
 
 ## The Complexity Shift

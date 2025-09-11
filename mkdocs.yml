@@ -13,15 +13,24 @@ theme:
   - navigation.sections
   - navigation.prune
   - navigation.indexes
+  - navigation.expand
+  - navigation.top
+  - navigation.footer
   - toc.integrate
+  - toc.follow
   - content.tabs.link
   - content.code.annotate
   - content.action.edit
   - content.action.view
+  - content.tooltips
   - search.highlight
   - search.suggest
+  - search.share
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - tags:
+      tags_file: reference/tags.md
   - pdf-export:
       verbose: true
       media_type: print
@@ -155,6 +164,7 @@ nav:
     - The Ethics of Scale: field-guide/ethics/ethics-of-scale.md
     - Responsible Innovation: field-guide/ethics/responsible-innovation.md
 - Reference:
+  - Cross-References & Tags: reference/tags.md
   - Patterns & Antipatterns:
     - appendix/antipatterns/index.md
     - appendix/design-patterns/index.md

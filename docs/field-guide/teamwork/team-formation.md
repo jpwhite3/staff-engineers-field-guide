@@ -1,3 +1,21 @@
+---
+title: Team Formation
+description: Master team formation using Team Topologies and developmental stages to build high-performing, purpose-aligned teams.
+tags:
+  - team-dynamics
+  - team-formation
+  - team-topologies
+  - psychological-safety
+  - collaboration
+  - organizational-design
+  - team-performance
+  - tuckman-model
+  - stream-aligned-teams
+  - platform-teams
+  - enabling-teams
+  - complicated-subsystem-teams
+---
+
 # Team Formation: Navigating the Tides of Team Dynamics
 
 > *"The goal is a team, and the team must be greater than the sum of its parts. But the team doesn't exist until it's formed, and it can't perform until it's been through the storm."*
