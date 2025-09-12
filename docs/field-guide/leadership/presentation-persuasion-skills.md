@@ -55,6 +55,27 @@ Persuasion isn't about manipulation—it's about effectively communicating value
 
 The most persuasive presentations balance all three elements, adapting their emphasis based on the audience and context.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Storytelling for Engineers](storytelling-for-engineers.md)** - Narrative techniques provide foundation for compelling presentations
+- **[Influencing Without Authority](influencing-without-authority.md)** - Influence principles support persuasive communication
+
+### Related Concepts
+- **[Storytelling for Engineers](storytelling-for-engineers.md)** - Storytelling techniques enhance presentation narrative and audience engagement
+- **[Technical Vision](technical-vision.md)** - Vision communication requires effective presentation skills
+- **[Pitching to Executives](../business/pitching-to-executives.md)** - Executive presentations apply presentation skills to strategic communication
+- **[Advanced Conflict Resolution](advanced-conflict-resolution.md)** - Presentation skills support conflict resolution and stakeholder alignment
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your communication and influence capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing presentation and communication skills
+
+### Next Steps in Your Learning Journey
+1. **[Pitching to Executives](../business/pitching-to-executives.md)** - Apply presentation skills to high-stakes executive communication
+2. **[Technical Vision](technical-vision.md)** - Learn to communicate compelling technical visions and strategies
+3. **[Influencing Without Authority](influencing-without-authority.md)** - Master influence techniques that complement presentation skills
+
 ## Common Pitfalls & How to Avoid Them
 
 - **Overloading Slides:** Too much text or complex charts overwhelm your audience. Each slide should support a single, clear point.

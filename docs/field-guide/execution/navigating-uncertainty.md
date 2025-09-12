@@ -175,6 +175,27 @@ Let's return to our opening scenario. How might a Staff Engineer approach it?
 
 By applying these approaches, you transform uncertainty from a source of frustration into a competitive advantage—enabling your team to learn and adapt faster than the competition.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Decision-Making Frameworks](decision-making-frameworks.md)** - Systematic decision-making skills are essential for navigating uncertain situations
+- **[Strategic Thinking](strategic-thinking.md)** - Strategic perspective helps evaluate uncertainty within broader business context
+
+### Related Concepts
+- **[Decision-Making Frameworks](decision-making-frameworks.md)** - Decision-making frameworks provide structure for choices under uncertainty
+- **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Problem-solving approaches help manage complexity and ambiguous situations
+- **[Agile Essentials](agile-essentials.md)** - Agile practices are designed to handle uncertainty and changing requirements
+- **[Chaos Engineering](../engineering/chaos-engineering.md)** - Chaos engineering helps build systems resilient to uncertain failure modes
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your ability to handle ambiguity and drive decisions under uncertainty
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing uncertainty management skills
+
+### Next Steps in Your Learning Journey
+1. **[Strategic Thinking](strategic-thinking.md)** - Develop strategic frameworks for long-term planning despite uncertainty
+2. **[Decision-Making Frameworks](decision-making-frameworks.md)** - Master systematic approaches to complex decisions with incomplete information
+3. **[Change Management for Technical Transformations](change-management-technical-transformations.md)** - Learn to lead organizational change in uncertain environments
+
 ## Common Pitfalls & How to Avoid Them
 
 -   **Analysis Paralysis:** Spending excessive time gathering data without making a decision. **Mitigation:** Apply the 80/20 rule and set time limits for analysis before committing to a path.

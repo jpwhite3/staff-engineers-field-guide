@@ -154,6 +154,27 @@ Let's apply these frameworks to our opening scenario:
 
 By applying these frameworks, the Staff Engineer transforms a circular debate into a structured decision process. The goal isn't to make perfect decisions—it's to make sound decisions efficiently and learn from them quickly.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Problem-solving frameworks provide foundation for systematic decision-making
+- **[Cognitive Biases](../thinking/cognitive-biases.md)** - Understanding cognitive biases is essential for objective decision-making
+
+### Related Concepts
+- **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Problem-solving and decision-making frameworks complement each other in complex situations
+- **[Ethical Frameworks](../ethics/ethical-frameworks.md)** - Ethical considerations are often central to complex technical decisions
+- **[Prioritization Frameworks](prioritization-frameworks.md)** - Prioritization requires systematic decision-making about resource allocation
+- **[Navigating Uncertainty](navigating-uncertainty.md)** - Decision-making frameworks help manage uncertainty and ambiguous situations
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your decision-making and critical thinking capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing systematic decision-making skills
+
+### Next Steps in Your Learning Journey
+1. **[Navigating Uncertainty](navigating-uncertainty.md)** - Learn to make effective decisions in ambiguous and rapidly changing situations
+2. **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Master systematic approaches to complex problem analysis
+3. **[Strategic Thinking](strategic-thinking.md)** - Develop strategic perspective for high-impact decision-making
+
 ## Common Pitfalls & How to Avoid Them
 
 -   **Analysis Paralysis:** Spending excessive time gathering data without making a decision. **Mitigation:** Set time limits for each stage of the decision process.
@@ -171,4 +192,4 @@ By applying these frameworks, the Staff Engineer transforms a circular debate in
 ## Further Reading
 
 -   *Thinking, Fast and Slow* by Daniel Kahneman
--   *The Staff Engineer’s Path* by Tanya Reilly
+-   *The Staff Engineer's Path* by Tanya Reilly

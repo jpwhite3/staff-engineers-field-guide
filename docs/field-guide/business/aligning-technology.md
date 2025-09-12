@@ -311,6 +311,27 @@ By mastering these skills, you transform from an executor of technical tasks to 
 -   **Execution:** Give each team a business objective (e.g., “Increase Customer Retention”). The engineering team proposes a tech solution, then consults with the other departments to refine it based on their strategic insights.
 -   **Debrief:** Each team presents their refined proposal, articulating how it aligns with the business strategy. The group discusses the challenges and the importance of cross-functional collaboration.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Technical Vision](../leadership/technical-vision.md)** - Understanding how to communicate technical strategy provides foundation for business alignment
+- **[Strategic Thinking](../execution/strategic-thinking.md)** - Strategic thinking frameworks are essential for technology-business alignment
+
+### Related Concepts
+- **[Product-Engineering Collaboration](product-engineering-collaboration.md)** - Close collaboration with product teams is crucial for effective technology-business alignment
+- **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)** - Measuring and demonstrating how engineering work drives business outcomes
+- **[Business Case Development](business-case.md)** - Building compelling cases for technology investments aligned with business strategy
+- **[Cost Optimization](cost-optimization.md)** - Balancing technology investments with business financial objectives
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your business collaboration and strategic alignment capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing business-technology alignment skills
+
+### Next Steps in Your Learning Journey
+1. **[Product-Engineering Collaboration](product-engineering-collaboration.md)** - Learn specific techniques for working effectively with product teams
+2. **[Pitching to Executives](pitching-to-executives.md)** - Develop skills for communicating technology strategy to business leadership
+3. **[Strategic Thinking](../execution/strategic-thinking.md)** - Deepen your strategic thinking capabilities for long-term alignment
+
 ## Further Reading
 
 -   *The Lean Startup* by Eric Ries

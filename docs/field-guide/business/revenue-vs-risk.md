@@ -346,6 +346,27 @@ This requires you to be translator, analyst, and advisor. You translate technica
 
 Master this balance, and you become indispensable. You become the Staff Engineer who doesn't just build great systems, but builds great businesses through great systems.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Business Case Development](business-case.md)** - Understanding ROI calculation and business case development provides foundation for revenue-risk analysis
+- **[Strategic Thinking](../execution/strategic-thinking.md)** - Strategic thinking frameworks support systematic revenue and risk evaluation
+
+### Related Concepts
+- **[Business Case Development](business-case.md)** - Business cases require careful revenue-risk trade-off analysis and justification
+- **[Cost Optimization](cost-optimization.md)** - Cost management strategies complement revenue-risk decision frameworks
+- **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Systematic decision-making approaches support revenue-risk trade-offs
+- **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Risk management requires effective uncertainty navigation skills
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your business collaboration and strategic decision-making capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing revenue-risk analysis skills
+
+### Next Steps in Your Learning Journey
+1. **[Strategic Thinking](../execution/strategic-thinking.md)** - Develop strategic frameworks for long-term revenue and risk planning
+2. **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Master systematic approaches to complex business-technical trade-offs
+3. **[Cost Optimization](cost-optimization.md)** - Learn to balance revenue growth with cost management and operational efficiency
+
 ## Further Reading
 
 **Business and Risk Analysis:**

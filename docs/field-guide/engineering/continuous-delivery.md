@@ -876,6 +876,27 @@ Use this framework to evaluate your organization's CD maturity:
 
 Continuous Delivery transforms software development from a risky, batch-oriented process to a routine, reliable capability. As a Staff Engineer, your role is to champion these practices, demonstrate their value through implementation, and help your organization build the technical and cultural capabilities that enable true business agility.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[DevOps & Automation Engineering](devops.md)** - Understanding DevOps principles provides the cultural foundation for continuous delivery practices
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Comprehensive testing practices are essential for reliable continuous delivery pipelines
+
+### Related Concepts
+- **[DevOps & Automation Engineering](devops.md)** - DevOps culture and practices complement continuous delivery implementation
+- **[Site Reliability Engineering](site-reliability-engineering.md)** - SRE practices support CD with reliability engineering and error budget management
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Testing strategies must align with CD pipeline requirements and feedback loops
+- **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - DORA metrics and CD effectiveness measurement connect to business value
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your technical delivery and automation engineering capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team readiness for continuous delivery practices and culture
+
+### Next Steps in Your Learning Journey
+1. **[DevOps & Automation Engineering](devops.md)** - Master the cultural and organizational aspects of DevOps that enable CD success
+2. **[Site Reliability Engineering](site-reliability-engineering.md)** - Learn reliability engineering practices that complement continuous delivery
+3. **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Understand how to drive CD adoption across engineering organizations
+
 ## Further Reading
 
 - Humble, Jez, and David Farley. *Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation*. 2010.

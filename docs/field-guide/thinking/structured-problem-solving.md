@@ -357,6 +357,27 @@ As a technical leader, your role is often to guide the problem-solving process r
 
 By applying structured problem-solving approaches, you transform your team from reactive firefighters to methodical investigators. This not only leads to more effective solutions but builds organizational capability to handle increasingly complex challenges.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Mental Models](mental-models.md)** - Understanding mental models provides the cognitive foundation for structured problem-solving
+- **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Basic decision-making skills are essential for effective problem-solving
+
+### Related Concepts
+- **[Mental Models](mental-models.md)** - Mental models help structure how we understand and approach problems
+- **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Problem-solving and decision-making frameworks complement each other
+- **[Cognitive Biases](cognitive-biases.md)** - Recognizing cognitive biases is essential for objective problem analysis
+- **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Structured approaches help manage uncertainty in complex problems
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your problem-solving and critical thinking capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing systematic problem-solving skills
+
+### Next Steps in Your Learning Journey
+1. **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Learn to apply decision-making frameworks to complex technical choices
+2. **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Master approaches to handling ambiguous and uncertain situations
+3. **[Mental Models](mental-models.md)** - Deepen your understanding of cognitive frameworks that support problem-solving
+
 ## A Practical Exercise: The Scenario Challenge
 
 -   **Objective:** To practice applying structured problem-solving frameworks to a complex, ambiguous problem.

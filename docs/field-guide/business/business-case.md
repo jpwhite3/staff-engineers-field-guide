@@ -450,6 +450,27 @@ Remember: every successful technical leader is ultimately successful at translat
 
 ---
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)** - Understanding how to measure engineering impact provides foundation for business case development
+- **[Aligning Technology with Business Strategy](aligning-technology.md)** - Strategic alignment principles are essential for effective business case development
+
+### Related Concepts
+- **[Pitching to Executives](pitching-to-executives.md)** - Executive presentations often require compelling business cases and ROI justification
+- **[Cost Optimization](cost-optimization.md)** - Cost analysis and FinOps practices support business case financial modeling
+- **[Revenue vs Risk Decision-Making](revenue-vs-risk.md)** - Risk-return analysis frameworks complement business case evaluation
+- **[Strategic Thinking](../execution/strategic-thinking.md)** - Strategic thinking provides context for business case positioning and prioritization
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your business collaboration and strategic communication capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing business case and financial analysis skills
+
+### Next Steps in Your Learning Journey
+1. **[Pitching to Executives](pitching-to-executives.md)** - Learn to present business cases effectively to senior leadership
+2. **[Revenue vs Risk Decision-Making](revenue-vs-risk.md)** - Master frameworks for evaluating business case trade-offs and risks
+3. **[Strategic Thinking](../execution/strategic-thinking.md)** - Develop strategic perspective for positioning business cases within broader company strategy
+
 ## Further Reading and Resources
 
 **Business Case Development:**

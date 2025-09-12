@@ -46,6 +46,27 @@ This model categorizes features based on their effect on customer satisfaction.
 -   **Performance Features:** Features where more is better (e.g., faster page load times).
 -   **Delighters:** Unexpected features that create delight and a competitive advantage.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Strategic Thinking](strategic-thinking.md)** - Strategic thinking provides foundation for effective prioritization decisions
+- **[Decision-Making Frameworks](decision-making-frameworks.md)** - General decision-making skills support systematic prioritization
+
+### Related Concepts
+- **[Agile Essentials](agile-essentials.md)** - Agile practices require effective prioritization for backlog management and sprint planning
+- **[Product-Engineering Collaboration](../business/product-engineering-collaboration.md)** - Cross-functional prioritization requires collaboration between product and engineering teams
+- **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - Metrics help evaluate and measure the impact of prioritization decisions
+- **[Strategic Thinking](strategic-thinking.md)** - Strategic context enables better prioritization of long-term versus short-term work
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your execution and delivery leadership capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team alignment and clarity on priorities and decision-making
+
+### Next Steps in Your Learning Journey
+1. **[Strategic Thinking](strategic-thinking.md)** - Learn to align prioritization with broader strategic objectives
+2. **[Decision-Making Frameworks](decision-making-frameworks.md)** - Master systematic approaches to complex technical and business decisions
+3. **[Product-Engineering Collaboration](../business/product-engineering-collaboration.md)** - Develop skills for collaborative prioritization with product teams
+
 ## A Practical Exercise: The Prioritization Challenge
 
 -   **Objective:** To practice applying a prioritization framework to a real-world backlog.

@@ -347,6 +347,27 @@ Use this workshop format to develop your technical vision:
 
 Technical leadership isn't just about making good technical decisions—it's about inspiring others to believe in a vision of what technology can achieve. The Golden Circle framework helps you communicate not just what you're building, but why it matters and how it will change things for the better.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Communication & Presentation Skills](communication-presentation-skills.md)** - Effective communication skills are essential for articulating and sharing technical vision
+- **[Strategic Thinking](../execution/strategic-thinking.md)** - Strategic thinking provides foundation for developing compelling technical visions
+
+### Related Concepts
+- **[Storytelling for Engineers](storytelling-for-engineers.md)** - Storytelling techniques help communicate technical vision in compelling ways
+- **[Influence Without Authority](influence-without-authority.md)** - Technical vision requires influencing others to adopt new approaches and directions
+- **[Aligning Technology with Business Strategy](../business/aligning-technology.md)** - Technical vision must align with and support broader business strategy
+- **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Implementing technical vision requires systematic change management
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your technical leadership and vision communication capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing vision articulation and leadership skills
+
+### Next Steps in Your Learning Journey
+1. **[Storytelling for Engineers](storytelling-for-engineers.md)** - Master narrative techniques for communicating technical vision effectively
+2. **[Influence Without Authority](influence-without-authority.md)** - Develop skills for building support and adoption for your technical vision
+3. **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Learn to implement technical vision through systematic organizational change
+
 ## Further Reading
 
 - Sinek, Simon. *Start with Why: How Great Leaders Inspire Everyone to Take Action*. 2009.

@@ -145,6 +145,27 @@ Watch for these warning signs:
 
 The measure of agility isn't how many ceremonies you perform—it's how quickly you can respond to change while maintaining technical quality. As a Staff Engineer, your role is to ensure the team balances speed and sustainability, embracing agile principles rather than just following agile processes.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Team Formation](../teamwork/team-formation.md)** - Understanding team formation stages is essential before implementing agile practices
+- **[Strategic Thinking](strategic-thinking.md)** - Strategic context provides foundation for effective agile planning and prioritization
+
+### Related Concepts
+- **[Team Formation](../teamwork/team-formation.md)** - Agile practices work best when teams have strong formation and collaboration patterns
+- **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - Measuring engineering effectiveness complements agile delivery metrics
+- **[Prioritization Frameworks](prioritization-frameworks.md)** - Product backlog management requires systematic prioritization approaches
+- **[Change Management for Technical Transformations](change-management-technical-transformations.md)** - Agile adoption requires organizational change management practices
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your execution and delivery leadership capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team readiness for agile practices and process improvements
+
+### Next Steps in Your Learning Journey
+1. **[Team Formation](../teamwork/team-formation.md)** - Learn to build and develop high-performing agile teams
+2. **[Prioritization Frameworks](prioritization-frameworks.md)** - Master techniques for effective product backlog and roadmap management
+3. **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - Connect agile delivery metrics to business outcomes and value
+
 ## A Practical Exercise: The Methodology Match-Up
 
 -   **Objective:** To reinforce understanding by applying theory to practical situations.

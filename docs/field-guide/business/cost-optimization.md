@@ -382,8 +382,29 @@ By mastering FinOps principles and tools, you not only help your company's botto
 -   **Task:** Teams must analyze the current resource usage, identify areas for optimization, and implement their chosen strategies (e.g., tagging, right-sizing, scheduling).
 -   **Debrief:** Each team presents their optimization strategy, the tools they used, and the expected impact on costs and performance. Discuss the different approaches and best practices.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)** - Understanding how to measure and communicate engineering impact provides foundation for cost optimization
+- **[Technical Vision](../leadership/technical-vision.md)** - Cost optimization requires strategic technical decision-making aligned with business objectives
+
+### Related Concepts
+- **[Aligning Technology with Business Strategy](aligning-technology.md)** - Cost optimization is a key aspect of strategic technology-business alignment
+- **[Site Reliability Engineering](../engineering/site-reliability-engineering.md)** - SLO-driven engineering practices help balance cost with reliability requirements
+- **[Revenue vs Risk Decision-Making](revenue-vs-risk.md)** - Framework for making cost decisions that balance business opportunity with technical investment
+- **[Business Case Development](business-case.md)** - Building compelling cases for cost optimization initiatives and infrastructure investments
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your business collaboration and cost management capabilities
+- **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)** - Apply cost optimization principles to measure and improve engineering efficiency
+
+### Next Steps in Your Learning Journey
+1. **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)** - Learn to measure and communicate the business impact of cost optimization efforts
+2. **[Site Reliability Engineering](../engineering/site-reliability-engineering.md)** - Understand how to balance cost optimization with reliability and performance requirements
+3. **[Strategic Thinking](../execution/strategic-thinking.md)** - Develop strategic perspective on long-term cost optimization and infrastructure planning
+
 ## Further Reading
 
 -   *FinOps: A Practical Guide to Cloud Financial Management*
 -   AWS Well-Architected Framework
--   Google Cloud’s Cost Management Documentation
+-   Google Cloud's Cost Management Documentation

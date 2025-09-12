@@ -330,6 +330,27 @@ The goal isn't to break things spectacularly. It's to discover weaknesses before
 
 Remember: in production, failure is not a possibility—it's a certainty. The question isn't whether your systems will fail, but whether they'll fail gracefully or catastrophically. Chaos Engineering helps ensure it's the former.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Site Reliability Engineering](site-reliability-engineering.md)** - Understanding SLOs and reliability principles provides foundation for chaos engineering practices
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Testing fundamentals and quality practices inform chaos engineering approaches
+
+### Related Concepts
+- **[Site Reliability Engineering](site-reliability-engineering.md)** - Chaos engineering supports SLO achievement and error budget management
+- **[Continuous Delivery](continuous-delivery.md)** - Chaos engineering integrates with deployment pipelines for resilience validation
+- **[Cost Optimization](../business/cost-optimization.md)** - Chaos engineering helps prevent costly outages through proactive failure discovery
+- **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Chaos engineering provides frameworks for handling system uncertainty and ambiguity
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your system reliability and chaos engineering capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team readiness and culture for chaos engineering practices
+
+### Next Steps in Your Learning Journey
+1. **[Site Reliability Engineering](site-reliability-engineering.md)** - Deepen understanding of reliability practices and SLO management
+2. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Learn comprehensive testing approaches that complement chaos engineering
+3. **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Understand how to introduce chaos engineering practices organizationally
+
 ## Further Reading
 
 **Foundational Texts:**

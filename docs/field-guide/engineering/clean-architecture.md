@@ -769,6 +769,27 @@ Use this checklist to evaluate Clean Architecture implementation:
 
 Clean Architecture is ultimately about managing complexity and change over time. As a Staff Engineer, your role is to guide teams in applying these principles thoughtfully—not as rigid rules, but as tools for building systems that can adapt and thrive as business needs evolve.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Understanding comprehensive testing approaches is essential for clean architecture's testability benefits
+- **[Software Architecture Fundamentals](software-architecture.md)** - Basic architectural concepts provide foundation for clean architecture principles
+
+### Related Concepts
+- **[Hexagonal Architecture](hexagonal-architecture.md)** - Hexagonal architecture is a specific implementation pattern of clean architecture principles
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Clean architecture enables comprehensive testing through dependency inversion and layer separation
+- **[Domain-Driven Design](../../appendix/design-patterns/domain-driven-design.md)** - DDD concepts complement clean architecture for complex domain modeling and entity design
+- **[Microservices Architecture](microservices-architecture.md)** - Clean architecture principles apply to microservice internal structure and boundaries
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your software architecture and design capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing clean architecture and design skills
+
+### Next Steps in Your Learning Journey
+1. **[Hexagonal Architecture](hexagonal-architecture.md)** - Learn a specific implementation pattern of clean architecture principles
+2. **[Domain-Driven Design](../../appendix/design-patterns/domain-driven-design.md)** - Master domain modeling techniques that complement clean architecture
+3. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Understand comprehensive testing approaches enabled by clean architecture
+
 ## Further Reading
 
 - Martin, Robert C. *Clean Architecture: A Craftsman's Guide to Software Structure and Design*. 2017.
