@@ -1,18 +1,30 @@
-# The Staff Engineer's Path to Technical Leadership
-
-<div class="hero-section" markdown>
-
-!!! abstract "Transform Your Technical Career"
-    **The definitive guide to staff engineering excellence—from individual contributor to organizational force multiplier.**
-    
-    <div class="stats-showcase" markdown>
-    **30+ Authority Sources** • **300+ Cross-References** • **60+ Visual Frameworks** • **9 Core Domains**
+<div class="hero-wallpaper">
+  <div class="hero-content">
+    <div class="hero-title-section">
+      <h1 class="hero-title">The Staff Engineer's Field Guide</h1>
+      <p class="hero-subtitle">Transform Your Technical Career</p>
+      <p class="hero-description">The definitive guide to staff engineering excellence—from individual contributor to organizational force multiplier.</p>
+      
+      <div class="hero-stats">
+        <span class="stat-item"><strong>30+ Authority Sources</strong></span>
+        <span class="stat-item"><strong>300+ Cross-References</strong></span>
+        <span class="stat-item"><strong>60+ Visual Frameworks</strong></span>
+        <span class="stat-item"><strong>9 Core Domains</strong></span>
+      </div>
+      
+      <div class="hero-actions">
+        <a href="field-guide/intro/index.md" class="md-button md-button--primary hero-button">Get Started 🚀</a>
+        <a href="#learning-paths" class="md-button hero-button">Browse Learning Paths 🗺️</a>
+      </div>
     </div>
     
-    [Get Started :material-rocket-launch:](field-guide/intro/index.md){ .md-button .md-button--primary }
-    [Browse Learning Paths :material-map:](#learning-paths){ .md-button }
-
+    <div class="hero-scroll-indicator">
+      ⬇️
+    </div>
+  </div>
 </div>
+
+<div class="content-section">
 
 ## The Critical Transition
 
@@ -43,10 +55,11 @@ This guide bridges that gap. Drawing from 30+ authoritative sources including Ji
 
 ## Authority & Depth You Can Trust
 
-<div class="authority-showcase" markdown>
+<div class="authority-showcase modern-section" markdown>
 
-!!! quote "Built on Industry-Leading Research"
-    This field guide synthesizes insights from the most respected voices in technical leadership, organizational psychology, and engineering excellence:
+<div class="section-header">
+Built on **Industry-Leading Research** — This field guide synthesizes insights from the most respected voices in technical leadership, organizational psychology, and engineering excellence.
+</div>
 
 <div class="grid cards" markdown>
 
@@ -96,10 +109,11 @@ This guide bridges that gap. Drawing from 30+ authoritative sources including Ji
 
 ## Learning Paths {#learning-paths}
 
-<div class="learning-paths-section" markdown>
+<div class="learning-paths-section modern-section" markdown>
 
-!!! success "Choose Your Journey"
-    Select the path that matches your current role and growth objectives:
+<div class="section-header">
+**Choose Your Journey** — Select the path that matches your current role and growth objectives.
+</div>
 
 <div class="grid cards" markdown>
 
@@ -152,10 +166,11 @@ This guide bridges that gap. Drawing from 30+ authoritative sources including Ji
 
 ## Why This Field Guide Is Different
 
-<div class="features-highlight" markdown>
+<div class="features-highlight modern-section" markdown>
 
-!!! tip "Unique Value Propositions"
-    What sets this guide apart from other technical leadership resources:
+<div class="section-header">
+**Unique Value Propositions** — What sets this guide apart from other technical leadership resources.
+</div>
 
 <div class="grid cards" markdown>
 
@@ -213,10 +228,11 @@ This guide bridges that gap. Drawing from 30+ authoritative sources including Ji
 
 ## Comprehensive Chapter Coverage
 
-<div class="chapters-showcase" markdown>
+<div class="chapters-showcase modern-section" markdown>
 
-!!! abstract "Nine Domains of Staff Engineering Excellence"
-    Master the complete skill set for technical leadership success:
+<div class="section-header">
+**Nine Domains of Staff Engineering Excellence** — Master the complete skill set for technical leadership success.
+</div>
 
 <div class="grid cards" markdown>
 
@@ -316,5 +332,7 @@ This guide bridges that gap. Drawing from 30+ authoritative sources including Ji
 **Remember:** The path to staff engineering excellence isn't about perfection—it's about continuous growth, systematic skill development, and the courage to lead with both technical depth and human insight.
 
 **Welcome to your field guide for technical leadership. Your journey starts now.**
+
+</div>
 
 </div>
