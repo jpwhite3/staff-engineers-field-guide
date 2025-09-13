@@ -393,6 +393,14 @@ By promoting code hygiene as a daily practice rather than a special event, you c
 - **Process:** Provide the team with snippets of code containing intentional “smells” (e.g., long methods, duplicated code). Task them with identifying the smells and proposing refactoring solutions.
 - **Debrief:** Discuss the proposed solutions as a group, focusing on the trade-offs of each approach.
 
+## Prerequisites
+- **[Team Formation](../teamwork/team-formation.md)** - Understanding team dynamics supports establishing code quality culture across development teams
+
+## Related Technical Concepts
+- **[Git Practices](git-practices.md)** - Source control practices directly support code hygiene through structured development workflows
+- **[Test-Driven Development](tdd.md)** - TDD practices provide the testing foundation necessary for safe refactoring and code improvement
+- **[Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md)** - Code quality improvements require cultural changes that support continuous improvement
+
 ## Further Reading
 
 - *Refactoring: Improving the Design of Existing Code* by Martin Fowler

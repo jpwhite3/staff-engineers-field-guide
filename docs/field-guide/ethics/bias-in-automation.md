@@ -35,6 +35,23 @@ Bias doesn't come from the algorithms themselves, but from the data we feed them
 -   **Process:** Have teams explore the datasets, train simple models, and compare the predictions. Discuss why the models behave differently.
 -   **Outcome:** This game helps participants understand the importance of diverse, representative datasets and the subtle ways bias can creep into their work.
 
+## Apply These Concepts
+
+### In Leadership Decisions
+Bias awareness becomes critical when making high-stakes decisions that affect people and teams. Apply bias detection frameworks when evaluating hiring decisions and performance reviews, ensuring that systematic patterns don't inadvertently discriminate against individuals or groups. When choosing technical architecture approaches, use bias awareness to evaluate how system design trade-offs might affect different user groups, particularly those who are underrepresented or vulnerable.
+
+**Cross-reference**: [Influencing Without Authority](../leadership/influencing-without-authority.md), [Decision-Making Frameworks](../execution/decision-making-frameworks.md)
+
+### In Team Formation
+Building diverse, high-performing teams requires active bias mitigation. Connect bias awareness to psychological safety practices that enable team members from different backgrounds to contribute fully and challenge assumptions safely. Apply bias detection principles to create more inclusive engineering practices, particularly in code review culture where unconscious bias can affect how different team members' contributions are evaluated and received.
+
+**Cross-reference**: [Psychological Safety](../teamwork/psychological-safety.md), [Team Formation](../teamwork/team-formation.md)
+
+### Assessment Integration
+Developing bias awareness capabilities requires systematic evaluation and improvement. Connect bias detection skills to Critical Thinking Assessment tools for measuring your ability to identify systematic patterns and question assumptions in technical and organizational decision-making.
+
+**Cross-reference**: [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)
+
 ## Further Reading
 
 -   *"Weapons of Math Destruction"* by Cathy O'Neil

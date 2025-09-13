@@ -76,5 +76,17 @@ Your job as a Staff Engineer isn't just to be the smartest person in the room; i
 
 ## Further Reading
 
-- *Made to Stick* by Chip Heath & Dan Heath
-- *The Art of Explanation* by Lee LeFever
+**Storytelling and Communication Fundamentals:**
+- Heath, Chip, and Dan Heath. *Made to Stick: Why Some Ideas Survive and Others Die*. 2007. (Framework for creating memorable and influential messages using storytelling principles)
+- LeFever, Lee. *The Art of Explanation: Making Your Ideas, Products, and Services Easier to Understand*. 2012. (Practical guide to explaining complex technical concepts through narrative and visual storytelling)
+- Reynolds, Garr. *Presentation Zen: Simple Ideas on Presentation Design and Delivery*. 2019. (Design principles and storytelling techniques for effective technical presentations)
+
+**Influence and Persuasion Through Story:**
+- Duarte, Nancy. *Resonate: Present Visual Stories That Transform Audiences*. 2010. (Advanced storytelling techniques for creating persuasive technical presentations and communications)
+- McKee, Robert. *Story: Style, Structure, Substance, and the Principles of Screenwriting*. 1997. (Fundamental story structure principles applicable to technical communication and leadership messaging)
+- Cialdini, Robert B. *Influence: The Psychology of Persuasion*. 2021. (Psychological principles of influence that support effective storytelling in technical environments)
+
+**Technical Leadership Communication:**
+- Klaff, Oren. *Pitch Anything: An Innovative Method for Presenting, Persuading, and Winning the Deal*. 2011. (Advanced presentation and storytelling techniques for technical proposals and executive communication)
+- Anderson, Chris. *TED Talks: The Official TED Guide to Public Speaking*. 2016. (Professional speaking and storytelling techniques adapted for technical thought leadership)
+- Gallo, Carmine. *The Presentation Secrets of Steve Jobs: How to Be Insanely Great in Front of Any Audience*. 2009. (Storytelling and presentation techniques for technical product communication and vision sharing)

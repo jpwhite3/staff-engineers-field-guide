@@ -305,6 +305,13 @@ By establishing ADRs as a regular practice, you create a living history of your 
 - **Process:** Divide participants into small groups. Task each group with designing a simple online store. As a group, they must create an ADR for the most critical architectural decision (e.g., database choice).
 - **Debrief:** Discuss the value of documenting decisions, the benefits of collaborative decision-making, and the potential pitfalls of making assumptions.
 
+## Prerequisites
+- **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Understanding systematic decision-making approaches supports effective ADR creation
+
+## Related Technical Concepts  
+- **[Technical Architecture](technical-architecture.md)** - ADRs document architectural decisions and trade-offs in system design
+- **[Strategic Thinking](../thinking/strategic-thinking.md)** - ADRs bridge technical decisions with strategic technical direction
+
 ## Further Reading
 
 - *Designing Data-Intensive Applications* by Martin Kleppmann

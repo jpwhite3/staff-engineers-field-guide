@@ -272,3 +272,41 @@ Build your understanding of human cognition:
 * Develop your own toolkit of debiasing strategies that work for you
 
 By understanding and addressing cognitive biases, you transform your mind from a potential liability into one of your greatest assets as a Staff Engineer. Just as we debug our code, we must learn to debug our thinking—because the quality of our decisions ultimately determines the quality of our engineering.
+
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Mental Models](mental-models.md)** - Understanding mental models provides foundation for recognizing how cognitive biases distort our thinking
+- **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Systematic decision-making skills help counteract the effects of cognitive biases
+
+### Related Concepts
+- **[Mental Models](mental-models.md)** - Mental models and cognitive biases are complementary concepts for understanding how we think and make decisions
+- **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Decision frameworks provide structure to overcome cognitive bias effects
+- **[Structured Problem-Solving](structured-problem-solving.md)** - Systematic problem-solving approaches help mitigate bias-driven shortcuts and assumptions
+- **[Ethical Frameworks](../ethics/ethical-frameworks.md)** - Cognitive biases can compromise ethical decision-making and judgment
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your critical thinking and decision-making capabilities
+- **[Critical Thinking Assessment](../../appendix/tools/critical-thinking-assessment.md)** - Assess your ability to recognize and counteract cognitive biases in technical contexts
+
+### Next Steps in Your Learning Journey
+1. **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Learn systematic approaches to counteract bias in complex technical decisions
+2. **[Mental Models](mental-models.md)** - Master mental frameworks that support clear thinking and bias awareness
+3. **[Structured Problem-Solving](structured-problem-solving.md)** - Apply systematic approaches that reduce the impact of cognitive shortcuts
+
+## Further Reading
+
+**Foundational Cognitive Science:**
+- Kahneman, Daniel. *Thinking, Fast and Slow*. 2011. (Comprehensive exploration of System 1 and System 2 thinking, including extensive coverage of cognitive biases and their impact on decision-making)
+- Ariely, Dan. *Predictably Irrational: The Hidden Forces That Shape Our Decisions*. 2008. (Accessible introduction to behavioral economics and how biases systematically affect our choices)
+- Gilovich, Thomas. *How We Know What Isn't So: The Fallibility of Human Reason in Everyday Life*. 1991. (Classic examination of reasoning errors and how they lead to false beliefs)
+
+**Decision-Making and Judgment:**
+- Heath, Chip, and Dan Heath. *Decisive: How to Make Better Choices in Life and Work*. 2013. (Practical framework for overcoming decision-making biases using the WRAP process)
+- Tetlock, Philip E., and Dan M. Gardner. *Superforecasting: The Art and Science of Prediction*. 2015. (Research on how the best forecasters overcome cognitive biases to make accurate predictions)
+- Bazerman, Max H., and Don A. Moore. *Judgment in Managerial Decision Making*. 2012. (Application of bias research to organizational and technical decision-making contexts)
+
+**Engineering and Technical Applications:**
+- Dekker, Sidney. *The Field Guide to Understanding 'Human Error'*. 2014. (How cognitive biases contribute to technical failures and system accidents)
+- Leveson, Nancy. *Engineering a Safer World: Systems Thinking Applied to Safety*. 2011. (Systems thinking approaches that help overcome bias in safety-critical engineering)
+- Norman, Donald A. *The Design of Everyday Things*. 2013. (How cognitive biases affect both engineering design decisions and user interactions with technology)

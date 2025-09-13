@@ -107,8 +107,21 @@ By integrating these frameworks into your technical leadership, you move from be
 - **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Ethical decisions often involve navigating uncertain consequences and values
 
 ### Apply These Concepts
-- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your ethical decision-making and leadership capabilities
-- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing ethical reasoning skills
+
+#### In Team Formation
+Ethical decision-making culture requires teams that can navigate complex moral trade-offs collaboratively. Apply utilitarian, deontological, and virtue ethics frameworks to build teams capable of systematic ethical analysis, ensuring that moral considerations become integrated into standard technical decision-making processes. Create psychological safety for ethical concerns by establishing team norms where raising moral questions and challenging decisions on ethical grounds is valued and supported.
+
+**Cross-reference**: [Psychological Safety](../teamwork/psychological-safety.md), [Team Formation](../teamwork/team-formation.md)
+
+#### In Leadership Decisions
+Stakeholder analysis becomes more systematic when grounded in ethical frameworks. Use utilitarian analysis to systematically evaluate competing stakeholder interests in technical and business decisions, ensuring that the impacts on all affected parties are considered. Apply virtue ethics to shape engineering culture and organizational identity, making ethical reasoning a visible and valued part of technical leadership practice.
+
+**Cross-reference**: [Pitching to Executives](../business/pitching-to-executives.md), [Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md)
+
+#### Assessment Integration
+Ethical reasoning assessment requires systematic evaluation of moral reasoning and stakeholder analysis capabilities. Connect ethical frameworks competency to Critical Thinking Assessment tools for measuring your ability to navigate value conflicts and apply systematic ethical analysis to complex technical decisions.
+
+**Cross-reference**: [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md), [Development Tracking System](../../appendix/tools/development-tracking-system.md)
 
 ### Next Steps in Your Learning Journey
 1. **[Privacy by Design](privacy-by-design.md)** - Learn to apply ethical frameworks to privacy and data protection challenges

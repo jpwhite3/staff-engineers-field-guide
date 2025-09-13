@@ -387,5 +387,17 @@ By applying structured problem-solving approaches, you transform your team from 
 
 ## Further Reading
 
--   *Problem Solving with Root Cause Analysis* by James R. Reston
--   *Toyota Kata: Managing People for Improvement, Adaptiveness, and Innovation* by Mike Rother
+**Problem-Solving Methodologies:**
+- Reston, James R. *Problem Solving with Root Cause Analysis*. 2nd edition, 2016. (Systematic approach to identifying and solving root causes in technical and organizational problems)
+- Rother, Mike. *Toyota Kata: Managing People for Improvement, Adaptiveness, and Innovation*. 2009. (Scientific approach to continuous improvement and problem-solving based on Toyota's systematic methods)
+- Kepner, Charles H., and Benjamin B. Tregoe. *The New Rational Manager: An Updated Edition for a New World*. 2013. (Classic systematic approach to problem analysis and decision-making in complex environments)
+
+**Systems Thinking and Analysis:**
+- Senge, Peter M. *The Fifth Discipline: The Art and Practice of the Learning Organization*. 2006. (Systems thinking approach to understanding complex organizational and technical problems)
+- Meadows, Donella H. *Thinking in Systems: A Primer*. 2008. (Introduction to systems thinking principles for understanding interconnected problems and solutions)
+- Ackoff, Russell L. *The Art of Problem Solving: Accompanied by Ackoff's Fables*. 1987. (Advanced problem-solving concepts including problem dissolution and systems design thinking)
+
+**Technical Problem-Solving Applications:**
+- Allspaw, John. *Web Operations: Keeping the Data On Time*. 2010. (Structured approaches to operational problem-solving and incident response in technical environments)
+- Humble, Jez, Joanne Molesky, and Barry O'Reilly. *Lean Enterprise: How High Performance Organizations Innovate at Scale*. 2014. (Problem-solving frameworks for technical transformation and organizational change)
+- Goldratt, Eliyahu M., and Jeff Cox. *The Goal: A Process of Ongoing Improvement*. 2012. (Theory of constraints approach to identifying and solving systematic bottlenecks and performance problems)

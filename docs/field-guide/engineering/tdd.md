@@ -516,6 +516,13 @@ By mastering TDD and helping your team adopt it, you create a virtuous cycle: be
 - **Execution:** The test writer creates a failing test (Red). The implementer writes just enough code to make it pass (Green). Then, they refactor the code together while keeping the test green (Refactor). Switch roles and repeat for the next function.
 - **Debrief:** This quick game highlights the TDD rhythm and its collaborative nature.
 
+## Prerequisites
+- **[Code Hygiene](code-hygiene.md)** - Understanding refactoring principles supports the refactor phase of the Red-Green-Refactor cycle
+
+## Related Technical Concepts
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - TDD provides foundation for comprehensive testing approaches and quality practices
+- **[Team Formation](../teamwork/team-formation.md)** - TDD adoption requires team culture changes and collaborative development practices
+
 ## Further Reading
 
 - *Test Driven Development: By Example* by Kent Beck

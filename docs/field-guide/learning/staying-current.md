@@ -223,6 +223,17 @@ As a Staff Engineer, your value isn't in having encyclopedic knowledge of every 
 
 ## Further Reading
 
-- *The Pragmatic Programmer* by David Thomas and Andrew Hunt
-- *Continuous Delivery* by Jez Humble and David Farley  
-- *The Phoenix Project* by Gene Kim, Kevin Behr, and George Spafford
+**Continuous Learning and Professional Development:**
+- Thomas, David, and Andrew Hunt. *The Pragmatic Programmer: Your Journey to Mastery*. 2019. (Timeless principles for continuous learning and professional growth in software engineering)
+- Newport, Cal. *So Good They Can't Ignore You: Why Skills Trump Passion in the Quest for Work You Love*. 2012. (Strategic approach to skill development and career advancement through deliberate learning)
+- Foote, Brian, and Joseph Yoder. *Big Ball of Mud*. 1999. (Understanding legacy systems and technical evolution for informed technology adoption decisions)
+
+**Industry Trends and Technology Evolution:**
+- Humble, Jez, and David Farley. *Continuous Delivery: Reliable Software Releases through Build, Test, and Deployment Automation*. 2010. (Foundational practices in modern software delivery that continue to evolve)
+- Kim, Gene, Kevin Behr, and George Spafford. *The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win*. 2018. (Business and technical trends in DevOps and organizational transformation)
+- Evans, Eric. *Domain-Driven Design: Tackling Complexity in the Heart of Software*. 2003. (Enduring architectural patterns and practices for complex system design)
+
+**Learning Strategies and Knowledge Management:**
+- Brown, Peter C., Henry L. Roediger, and Mark A. McDaniel. *Make It Stick: The Science of Successful Learning*. 2014. (Evidence-based learning techniques for technical skill development and retention)
+- Weinberg, Gerald M. *Becoming a Technical Leader: An Organic Problem-Solving Approach*. 1986. (Leadership development through continuous learning and technical problem-solving)
+- Ericsson, Anders, and Robert Pool. *Peak: Secrets from the New Science of Expertise*. 2016. (Research on deliberate practice and expertise development applicable to technical skill acquisition)

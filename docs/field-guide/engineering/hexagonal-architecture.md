@@ -464,10 +464,10 @@ By implementing a hexagonal architecture, you create a system that embraces chan
 - **[Clean Architecture Principles](clean-architecture.md)** - Clean architecture concepts provide foundation for hexagonal architecture patterns
 
 ### Related Concepts
-- **[Clean Architecture Principles](clean-architecture.md)** - Hexagonal architecture is a specific implementation of clean architecture principles
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Hexagonal architecture enables comprehensive testing through dependency inversion
+- **[Clean Architecture Principles](clean-architecture.md)** - Hexagonal architecture is a specific implementation of clean architecture principles, providing concrete patterns for dependency inversion
+- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Hexagonal architecture enables comprehensive testing through dependency inversion, supporting isolated unit testing and integration testing strategies
+- **[Technical Architecture](technical-architecture.md)** - Hexagonal architecture provides structured approach to system design and architectural decision-making
 - **[Domain-Driven Design](../../appendix/design-patterns/domain-driven-design.md)** - DDD concepts complement hexagonal architecture for complex domain modeling
-- **[Microservices Architecture](microservices-architecture.md)** - Hexagonal architecture provides internal structure for microservices
 
 ### Apply These Concepts
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your software architecture and design capabilities

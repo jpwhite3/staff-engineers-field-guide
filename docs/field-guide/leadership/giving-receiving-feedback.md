@@ -143,7 +143,40 @@ This activity encourages team members to practice giving and receiving feedback 
 
 This exercise helps build the muscle for effective feedback exchanges.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Psychological Safety](../teamwork/psychological-safety.md)** - Creating safe environments is essential for effective feedback culture
+- **[Communication & Presentation Skills](presentation-persuasion-skills.md)** - Basic communication skills provide foundation for feedback conversations
+
+### Related Concepts
+- **[Psychological Safety](../teamwork/psychological-safety.md)** - Feedback cultures require psychological safety to enable honest, growth-oriented conversations
+- **[Advanced Conflict Resolution](advanced-conflict-resolution.md)** - Feedback conversations can become conflicts requiring skilled navigation
+- **[Mentorship & Sponsorship](../learning/mentorship-sponsorship.md)** - Effective feedback is a core component of mentorship relationships
+- **[Team Formation](../teamwork/team-formation.md)** - Feedback systems support team development through all formation stages
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your feedback and coaching capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team feedback culture and psychological safety levels
+
+### Next Steps in Your Learning Journey
+1. **[Advanced Conflict Resolution](advanced-conflict-resolution.md)** - Learn to handle feedback conversations that become difficult or contentious
+2. **[Mentorship & Sponsorship](../learning/mentorship-sponsorship.md)** - Master formal frameworks for ongoing feedback and career development
+3. **[Psychological Safety](../teamwork/psychological-safety.md)** - Deepen understanding of creating environments where feedback can flow freely
+
 ## Further Reading
 
-- *Radical Candor* by Kim Scott
-- *Thanks for the Feedback* by Douglas Stone and Sheila Heen
+**Feedback Frameworks and Techniques:**
+- Scott, Kim. *Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity*. 2017. (Framework for caring personally while challenging directly in feedback relationships)
+- Stone, Douglas, and Sheila Heen. *Thanks for the Feedback: The Science and Art of Receiving Feedback Well*. 2014. (Focus on receiving feedback effectively and building feedback-seeking behavior)
+- Kegan, Robert, and Lisa Laskow Lahey. *How the Way We Talk Can Change the Way We Work*. 2001. (Language patterns and conversational techniques for developmental feedback)
+
+**Communication and Difficult Conversations:**
+- Stone, Douglas, Bruce Patton, and Sheila Heen. *Difficult Conversations: How to Discuss What Matters Most*. 2010. (Framework for navigating challenging feedback and performance conversations)
+- Patterson, Kerry, Joseph Grenny, Ron McMillan, and Al Switzler. *Crucial Conversations: Tools for Talking When Stakes Are High*. 2011. (Skills for high-stakes feedback and accountability conversations)
+- Rosenberg, Marshall B. *Nonviolent Communication: A Language of Life*. 2003. (Communication approach that supports empathetic, constructive feedback)
+
+**Leadership and Team Development:**
+- Edmondson, Amy C. *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*. 2018. (Creating environments where feedback supports learning and growth)
+- Brown, Brené. *Dare to Lead: Brave Work, Tough Conversations, Whole Hearts*. 2018. (Vulnerability-based leadership that enables authentic feedback relationships)
+- Buckingham, Marcus, and Ashley Goodall. *Nine Lies About Work: A Freethinking Leader's Guide to the Real World*. 2019. (Research-based perspectives on effective feedback and performance management)

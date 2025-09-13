@@ -215,3 +215,10 @@ As you grow in your role, these advanced techniques become increasingly valuable
 * Post-receive hooks for deployment automation
 
 By elevating Git from a mere code storage tool to a central part of your engineering culture, you transform it into a powerful lever for team collaboration and code quality.
+
+## Prerequisites
+- **[Team Formation](../teamwork/team-formation.md)** - Understanding team development stages helps implement Git practices that support collaboration
+
+## Related Technical Concepts
+- **[Code Hygiene](code-hygiene.md)** - Git practices directly support code quality and refactoring workflows
+- **[Continuous Delivery](continuous-delivery.md)** - Source control practices enable effective CI/CD implementation

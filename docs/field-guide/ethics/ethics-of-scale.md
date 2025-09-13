@@ -93,3 +93,20 @@ Engineers should not be making these decisions in a vacuum. The most responsible
 ## The Weight of Your Work
 
 The code you write is not just a set of instructions for a machine. At scale, it is a set of rules for society. It shapes how we communicate, what we believe, and how we treat each other. This is a heavy responsibility, but it is also a profound opportunity. By thinking critically about the ethics of scale, you can move beyond simply building things that work and start building things that are worthy of the trust that millions of people place in them.
+
+## Apply These Concepts
+
+### In Leadership Decisions
+Strategic impact analysis becomes critical when evaluating technical and business strategy decisions that will operate at massive scale. Apply scale ethics principles to systematically evaluate the long-term societal impact of algorithmic choices, platform design decisions, and business model implementations. Use scale ethics frameworks to guide algorithmic decision governance, creating systematic approaches for evaluating automated decision-making systems that affect large populations.
+
+**Cross-reference**: [Strategic Thinking](../thinking/strategic-thinking.md), [Decision-Making Frameworks](../execution/decision-making-frameworks.md)
+
+### In Team Formation
+Building teams capable of recognizing and addressing scale ethics requires incorporating diverse perspectives beyond traditional engineering roles. Apply scale ethics insights to build cross-disciplinary teams that include sociologists, ethicists, and policy experts alongside engineers, ensuring that systemic impact analysis becomes part of standard development processes. Create systemic risk assessment culture where teams systematically evaluate externalities and unintended consequences of technical decisions.
+
+**Cross-reference**: [Team Formation](../teamwork/team-formation.md), [Psychological Safety](../teamwork/psychological-safety.md)
+
+### Assessment Integration
+Developing scale impact assessment capabilities requires systematic evaluation of your ability to analyze systemic and societal-level consequences of technical decisions. Connect scale ethics competency to Critical Thinking Assessment tools for measuring systematic thinking about amplification effects and feedback loops. Build strategic ethics leadership capabilities through Staff Engineer assessment frameworks that evaluate your ability to guide organizations in navigating scale ethics challenges.
+
+**Cross-reference**: [Critical Thinking Assessment](../../appendix/tools/critical-thinking-assessment.md), [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)

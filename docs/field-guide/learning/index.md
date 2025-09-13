@@ -291,6 +291,26 @@ In the rapidly evolving technology landscape, the companies that survive and thr
 
 Remember: your career success isn't determined by what you know today, but by how effectively you learn tomorrow. The frameworks, practices, and principles in this chapter provide the foundation for building that learning excellence. But ultimately, the most important learning you'll do is learning how to learn—and teaching that skill to everyone around you.
 
+## Cross-Reference Navigation
+
+### Prerequisites for Learning Excellence
+- **[Mental Models](../thinking/mental-models.md)** - Cognitive frameworks that accelerate learning and understanding
+- **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Systematic approaches that enhance learning from experience
+
+### Related Concepts
+- **[Teaching to Learn](teaching-to-learn.md)** - How teaching others accelerates your own learning and understanding
+- **[Mentorship & Sponsorship](mentorship-sponsorship.md)** - Formal frameworks for scaling your learning impact across organizations
+- **[Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md)** - Creating learning-oriented cultures in technical organizations
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Assess your learning capabilities across technical leadership dimensions
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track and measure your learning progress over time
+
+### Next Steps in Your Learning Journey
+1. **[Developing Expertise](developing-expertise.md)** - Build deep, specialized knowledge in your technical domain
+2. **[Staying Current](staying-current.md)** - Develop systematic approaches to keeping up with rapidly evolving technology
+3. **[Learning Organization](learning-organization.md)** - Scale learning practices to improve organizational capabilities
+
 ## Further Reading
 
 This chapter is inspired by research and writing on expertise, skill acquisition, and organizational learning. For a deeper dive, consider these influential works:

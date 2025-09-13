@@ -74,3 +74,41 @@ Nothing kills psychological safety faster than soliciting input and then ignorin
 Building psychological safety is not a one-time event—it's created or destroyed in the small moments of daily interaction. As Amy Edmondson notes, it's about creating a climate where people are "comfortable being uncomfortable" as they learn, contribute, and challenge the status quo.
 
 When you successfully foster psychological safety, you'll see more creative solutions, faster learning cycles, and a team that can handle complex challenges because they bring their full selves and perspectives to the work.
+
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Team Formation](team-formation.md)** - Understanding team development stages provides foundation for psychological safety cultivation
+- **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Conflict resolution skills are essential for creating safe environments for difficult conversations
+
+### Related Concepts
+- **[Team Formation](team-formation.md)** - Psychological safety is foundational to all stages of team development and high performance
+- **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Safe conflict resolution requires and reinforces psychological safety in teams
+- **[Giving & Receiving Feedback](../leadership/giving-receiving-feedback.md)** - Effective feedback cultures depend on psychological safety for honest, growth-oriented conversations
+- **[Influencing Without Authority](../leadership/influencing-without-authority.md)** - Psychological safety enables influence through trust and authentic relationship building
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your team leadership and psychological safety cultivation capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess current psychological safety levels and team collaboration health
+
+### Next Steps in Your Learning Journey
+1. **[Team Formation](team-formation.md)** - Learn comprehensive team development frameworks that build on psychological safety
+2. **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Master techniques for handling difficult conversations safely and productively  
+3. **[Giving & Receiving Feedback](../leadership/giving-receiving-feedback.md)** - Develop skills for creating feedback cultures that reinforce psychological safety
+
+## Further Reading
+
+**Foundational Research:**
+- Edmondson, Amy C. *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*. 2018. (The definitive guide to psychological safety from the researcher who coined the term)
+- Clark, Timothy R. *The 4 Stages of Psychological Safety: Defining the Path to Inclusion and Innovation*. 2020. (Practical framework for progressively building safety in teams)
+- Google re:Work. *Guide to Understanding Team Effectiveness*. 2016. (Research findings from Project Aristotle on psychological safety as the top factor in team performance)
+
+**Leadership and Team Dynamics:**
+- Lencioni, Patrick. *The Five Dysfunctions of a Team: A Leadership Fable*. 2002. (Trust as the foundation of team effectiveness, closely related to psychological safety)
+- Brown, Brené. *Dare to Lead: Brave Work, Tough Conversations, Whole Hearts*. 2018. (Vulnerability-based leadership that creates psychologically safe environments)
+- Kotter, John P., and Dan S. Cohen. *The Heart of Change: Real-Life Stories of How People Change Their Organizations*. 2002. (Creating safe environments for organizational transformation)
+
+**Practical Implementation:**
+- Stone, Douglas, Bruce Patton, and Sheila Heen. *Difficult Conversations: How to Discuss What Matters Most*. 2010. (Essential skills for having tough conversations safely)
+- Heath, Chip, and Dan Heath. *Switch: How to Change Things When Change Is Hard*. 2010. (Creating conditions for safe experimentation and change)
+- Sinek, Simon. *The Infinite Game*. 2019. (Building trusting cultures that enable long-term thinking and psychological safety)

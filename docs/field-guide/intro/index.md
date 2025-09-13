@@ -176,6 +176,26 @@ graph TD
 * [The Right Hand](right-hand.md): Understand how to partner with senior leadership, drive strategic initiatives, and influence across the organization.
 * [Becoming a Force Multiplier](force-multiplier.md): Master the strategies for scaling your impact by enabling others to be more effective and productive.
 
+## Cross-Reference Navigation
+
+### Prerequisites for Staff Engineering
+- **[Developing Expertise](../learning/developing-expertise.md)** - Strong foundation in continuous learning and skill development is essential
+- **[Mental Models](../thinking/mental-models.md)** - Cognitive frameworks that support strategic thinking and complex problem-solving
+
+### Related Concepts  
+- **[Strategic Thinking](../execution/strategic-thinking.md)** - Essential capability for all staff engineer archetypes
+- **[Technical Vision](../leadership/technical-vision.md)** - Core skill for communicating and implementing technical strategy
+- **[Cross-functional Collaboration](../teamwork/cross-functional-collaboration.md)** - Critical for success in staff roles
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your readiness across all staff engineering dimensions
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progression through staff engineering capabilities
+
+### Next Steps in Your Learning Journey
+1. **Choose Your Primary Archetype** - Review the five archetypes and identify which resonates most with your interests and strengths
+2. **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Establish your baseline capabilities
+3. **Begin Targeted Development** - Focus on the specific skills and knowledge areas for your chosen archetype
+
 ## Further Reading
 
 To deepen your understanding of the Staff Engineer role and how to succeed in it, consider these influential works:

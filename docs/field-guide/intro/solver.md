@@ -132,6 +132,62 @@ If you aspire to be a Solver, here are some steps you can take to develop the ne
 * **Seek Out Hard Problems:** Volunteer for challenging technical issues that others have struggled to solve.
 * **Reflect on Solutions:** After solving problems, take time to reflect on what worked, what didn't, and what you learned.
 
+## Career Progression Pathways
+
+The Solver archetype offers unique career advancement opportunities focused on deep technical expertise and complex problem-solving. Understanding these pathways helps you leverage solving capabilities for long-term career growth:
+
+### Progression Within Solver Role
+**From Specialized Solver to Cross-Domain Expert**: Expand from solving problems in a specific technical domain to becoming the go-to expert for complex problems across multiple areas. This involves developing broad technical knowledge while maintaining deep expertise in core domains.
+
+**Crisis Leadership Specialization**: Develop expertise in leading technical crisis response, becoming the leader organizations turn to during major outages or security incidents. This requires combining technical problem-solving with incident management and communication skills.
+
+### Transition to Other Archetypes
+**Solver → Architect**: Solvers often transition to architect roles, applying their deep understanding of complex systems to design better architectures. This transition leverages problem-solving experience to prevent issues through better design.
+
+**Solver → Tech Lead**: Some solvers move into Tech Lead roles, bringing their problem-solving expertise to guide teams through technical challenges. This path emphasizes mentoring others in systematic problem-solving approaches.
+
+### Leadership Development Paths
+**Technical Specialist Track**: Continue advancing as a Staff+ engineer with deep technical specialization, becoming the organizational expert in critical technical domains. This path emphasizes technical excellence and knowledge leadership.
+
+**Engineering Troubleshooter Leadership**: Progress toward roles like Principal Engineer or Distinguished Engineer, where complex problem-solving guides organizational technical decisions. This path combines deep technical knowledge with strategic influence.
+
+### Cross-Reference Navigation
+
+#### Prerequisites for This Archetype
+- **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Systematic problem-solving methodologies form the foundation of effective solving
+- **[Technical Architecture](../engineering/technical-architecture.md)** - Understanding system design helps solvers navigate complex technical challenges
+
+#### Related Concepts
+- **[Mental Models](../thinking/mental-models.md)** - Cognitive frameworks that support systematic analysis of complex technical problems
+- **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Solvers often work in ambiguous situations requiring uncertainty management skills
+- **[Site Reliability Engineering](../engineering/site-reliability-engineering.md)** - Operational excellence principles that inform systematic troubleshooting approaches
+- **[Advanced Testing Strategies](../engineering/advanced-testing-strategies.md)** - Testing methodologies that support problem diagnosis and solution validation
+
+#### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your problem-solving and technical troubleshooting capabilities
+- **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track your progress in developing deep technical expertise and problem-solving skills
+
+#### Next Steps in Your Career Journey
+1. **[Structured Problem-Solving](../thinking/structured-problem-solving.md)** - Master systematic approaches to complex technical challenges
+2. **[Clean Architecture](../engineering/clean-architecture.md)** - Develop architectural knowledge that supports more effective problem-solving
+3. **[Mental Models](../thinking/mental-models.md)** - Build cognitive frameworks for analyzing and solving complex problems
+
+## Further Reading
+
+**Problem-Solving Foundation**:
+- George Polya. *How to Solve It*. 1945. (Classic framework for systematic problem-solving that applies to technical challenges)
+- Charles Kepner, Benjamin Tregoe. *The New Rational Manager*. 1997. (Structured approaches to problem analysis and decision-making)
+- Edward de Bono. *Six Thinking Hats*. 1985. (Multiple perspectives framework for approaching complex problems)
+
+**Technical Problem-Solving**:
+- Jon Bentley. *Programming Pearls*. 1986. (Classic examples of elegant solutions to challenging programming problems)
+- Donald Knuth. *The Art of Computer Programming* (series). (Deep algorithmic thinking and problem-solving approaches)
+- Steve McConnell. *Code Complete*. 2004. (Systematic approaches to solving software construction problems)
+
+**Complex Systems and Analysis**:
+- Donella Meadows. *Thinking in Systems*. 2008. (Systems thinking approaches essential for solving complex organizational problems)
+- Nassim Nicholas Taleb. *Antifragile*. 2012. (Approaches to building resilient solutions in uncertain environments)
+
 ## Conclusion
 
 The Solver archetype represents a powerful way to leverage deep technical expertise to address the most challenging problems an organization faces. By diving into complex issues, exploring new technical territory, designing novel solutions, navigating legacy systems, and mitigating technical risks, you can have an outsized impact on your organization's success.

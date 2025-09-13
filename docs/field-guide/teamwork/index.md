@@ -416,6 +416,26 @@ This is the ultimate expression of technical leadership: not just solving proble
 * [Psychological Safety](psychological-safety.md): Discover why psychological safety is the foundation of high-performing teams and learn systematic approaches for cultivating environments where team members can take risks, admit mistakes, and contribute their best thinking.
 * [The Culture Map](culture-map.md): Navigate the complexities of working in global and cross-cultural teams using Erin Meyer's eight-scale framework for communication, evaluation, persuasion, leading, deciding, trusting, disagreeing, and scheduling across cultures.
 
+## Cross-Reference Navigation
+
+### Prerequisites for Team Excellence
+- **[Psychological Safety](psychological-safety.md)** - The foundation for all high-performing team dynamics and collaboration
+- **[Giving and Receiving Feedback](../leadership/giving-receiving-feedback.md)** - Essential skills for healthy team communication and improvement
+
+### Related Concepts
+- **[Organizational Design](organizational-design.md)** - How team structure affects performance and collaboration patterns
+- **[Cultural Transformation](cultural-transformation-psychological-safety.md)** - Scaling team excellence principles across larger organizations
+- **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Techniques for navigating team disagreements productively
+
+### Apply These Concepts
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess your team's health across multiple dimensions
+- **[Team Topology Assessment](../../appendix/tools/team-topology-assessment.md)** - Evaluate optimal team structures for your organization
+
+### Next Steps in Your Team Development Journey
+1. **[Team Formation](team-formation.md)** - Master the stages of team development and formation strategies
+2. **[Five Dysfunctions](five-dysfunctions.md)** - Identify and address the core barriers to team effectiveness
+3. **[Cross-functional Collaboration](cross-functional-collaboration.md)** - Develop skills for working effectively across organizational boundaries
+
 ## Further Reading
 
 This chapter builds on foundational ideas from several influential books on teamwork and organizational health. For a more in-depth understanding, we recommend:

@@ -92,7 +92,40 @@ Fixing a dysfunctional team is not a quick process. It starts at the bottom of t
 3.  **Act It Out**: Groups act out how they would typically respond, then re-enact the scene using strategies to overcome the dysfunction.
 4.  **Discussion**: Discuss what worked and why, and how the strategies felt in practice.
 
+## Cross-Reference Navigation
+
+### Prerequisites for This Chapter
+- **[Team Formation](team-formation.md)** - Understanding team development stages provides foundation for identifying and addressing dysfunctions
+- **[Psychological Safety](psychological-safety.md)** - Psychological safety is the foundation layer that enables teams to address dysfunctions
+
+### Related Concepts
+- **[Psychological Safety](psychological-safety.md)** - Trust-based psychological safety is the foundation for overcoming the five dysfunctions
+- **[Team Formation](team-formation.md)** - Team formation patterns help identify when dysfunctions are likely to emerge
+- **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Healthy conflict resolution skills are essential for productive team discourse
+- **[Giving & Receiving Feedback](../leadership/giving-receiving-feedback.md)** - Effective feedback systems support accountability and trust building
+
+### Apply These Concepts
+- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your team leadership and dysfunction management capabilities
+- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team health across the five dysfunction dimensions
+
+### Next Steps in Your Learning Journey
+1. **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Learn structured approaches to healthy team conflict and disagreement
+2. **[Team Formation](team-formation.md)** - Master comprehensive frameworks for building and developing high-performing teams
+3. **[Psychological Safety](psychological-safety.md)** - Deepen understanding of trust-building and safe team environments
+
 ## Further Reading
 
-- *The Five Dysfunctions of a Team* by Patrick Lencioni
-- *The Phoenix Project* by Gene Kim
+**Team Effectiveness and Dysfunction:**
+- Lencioni, Patrick. *The Five Dysfunctions of a Team: A Leadership Fable*. 2002. (The foundational work on team dysfunction patterns and remedies)
+- Lencioni, Patrick. *Overcoming the Five Dysfunctions of a Team: A Field Guide for Leaders, Managers, and Facilitators*. 2005. (Practical implementation guide with tools and exercises)
+- Edmondson, Amy C. *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*. 2018. (Deep dive into trust and psychological safety foundations)
+
+**Leadership and Team Building:**
+- Hackman, J. Richard. *Leading Teams: Setting the Stage for Great Performances*. 2002. (Research-based framework for creating conditions that enable team effectiveness)
+- Katzenbach, Jon R., and Douglas K. Smith. *The Wisdom of Teams: Creating the High-Performance Organization*. 1993. (Classic work on team formation and high-performance characteristics)
+- Sinek, Simon. *Leaders Eat Last: Why Some Teams Pull Together and Others Don't*. 2014. (Understanding trust, safety, and team cohesion from a leadership perspective)
+
+**Practical Implementation:**
+- Kim, Gene, Kevin Behr, and George Spafford. *The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win*. 2013. (Narrative example of overcoming team dysfunctions in technical organizations)
+- DeMarco, Tom, and Timothy Lister. *Peopleware: Productive Projects and Teams*. 2013. (Focus on human factors and team dynamics in software development)
+- Kerth, Norman L. *Project Retrospectives: A Handbook for Team Reviews*. 2001. (Structured approaches to team reflection and dysfunction identification)
