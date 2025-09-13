@@ -34,11 +34,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Feedback Loop Identification** (System 1 vs System 2 Thinking)
+
    - How quickly can you identify the primary feedback loops causing the cascading failures?
    - Rate your initial response: Was it intuitive (System 1) or analytical (System 2)?
    - What additional information would shift your analysis from intuitive to systematic?
 
 2. **Leverage Point Recognition**
+
    - Where would you intervene to achieve maximum impact with minimum effort?
    - How do you balance addressing symptoms versus root causes?
    - What might be the unintended consequences of your proposed intervention?
@@ -57,11 +59,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Uncertainty Quantification**
+
    - How do you assign confidence intervals to the claimed performance benefits?
    - What's your estimated probability that the retraining effort will exceed planned timelines?
    - How do you account for unknown unknowns in your analysis?
 
 2. **Bayesian Reasoning Application**
+
    - How does your team's historical performance with technology adoption inform this decision?
    - What evidence would most significantly update your probability estimates?
    - How do you balance prior experience with new information?
@@ -82,11 +86,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Information Value Assessment**
+
    - How do you determine when you have sufficient information to make a decision?
    - What criteria help you distinguish between productive exploration and wasteful experimentation?
    - How do you balance the team's current expertise against potential future value?
 
 2. **Multi-Armed Bandit Strategy**
+
    - How would you design experiments to test alternative approaches without jeopardizing current capabilities?
    - What metrics would indicate when to shift resources from exploration to exploitation?
    - How do you account for the learning curve in your calculations?
@@ -105,11 +111,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Algorithmic Scheduling Application**
+
    - How do you apply shortest processing time versus earliest due date strategies?
    - When does context switching cost outweigh parallelization benefits?
    - How do you account for uncertainty in task duration estimates?
 
 2. **Caching Strategy for Decisions**
+
    - Which decisions are worth extensive analysis versus quick heuristics?
    - How do you create reusable decision templates for recurring situations?
    - What information do you cache for future similar decisions?
@@ -130,11 +138,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Problem Definition Clarity**
+
    - How do you distinguish between symptoms and root causes?
    - What data would you collect to validate your diagnosis?
    - How do you avoid the narrative fallacy when explaining performance issues?
 
 2. **Strategic Kernel Development**
+
    - What's your hypothesis about the core challenge facing the engineering organization?
    - What guiding policy would address this challenge most effectively?
    - How do you ensure coherent action across multiple engineering teams?
@@ -153,11 +163,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Objective Setting Quality**
+
    - How do you balance aspirational goals with achievable targets?
    - What makes an objective meaningful rather than merely measurable?
    - How do you ensure objectives connect individual work to organizational purpose?
 
 2. **Key Results Design**
+
    - How do you choose metrics that drive behavior rather than just measure it?
    - What balance do you maintain between leading and lagging indicators?
    - How do you account for interdependencies between teams' key results?
@@ -178,11 +190,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Availability Heuristic Management**
+
    - How do you distinguish between relevant experience and recency bias?
    - What processes help you access broader organizational knowledge beyond immediate team experience?
    - How do you weight anecdotal evidence against systematic data?
 
 2. **Confirmation Bias Mitigation**
+
    - How do you actively seek disconfirming evidence for preferred solutions?
    - What role do devil's advocates or red team exercises play in your decision-making?
    - How do you create psychological safety for dissenting opinions?
@@ -201,11 +215,13 @@ Each dimension includes both self-assessment questions and practical application
 **Assessment Questions**:
 
 1. **Choice Architecture Design**
+
    - How do you structure options to promote better decision-making without limiting autonomy?
    - What default choices encourage sound technical practices?
    - How do you make consequences more visible to decision-makers?
 
 2. **Cognitive Load Management**
+
    - How do you simplify complex decisions without oversimplifying important trade-offs?
    - What information do you standardize versus customize for different contexts?
    - How do you balance comprehensive analysis with decision speed?
@@ -222,24 +238,28 @@ Each dimension includes both self-assessment questions and practical application
 ### Proficiency Levels
 
 **Level 1: Developing**
+
 - Relies primarily on intuitive decision-making
 - Limited awareness of systematic thinking frameworks
 - Occasional recognition of cognitive biases in hindsight
 - Tactical focus with limited strategic integration
 
 **Level 2: Practicing**
+
 - Consistently applies basic mental models to complex problems
 - Uses some algorithmic approaches for well-defined challenges
 - Recognizes common cognitive biases and implements basic mitigation strategies
 - Connects tactical decisions to strategic objectives
 
 **Level 3: Proficient**
+
 - Integrates multiple mental models for comprehensive analysis
 - Systematically applies algorithmic thinking to ambiguous problems
 - Proactively designs processes to mitigate cognitive biases
 - Balances strategic thinking with practical execution constraints
 
 **Level 4: Advanced**
+
 - Creates novel applications of thinking frameworks for unique challenges
 - Teaches others to apply systematic decision-making approaches
 - Designs organizational systems that promote better collective thinking
@@ -250,7 +270,7 @@ Each dimension includes both self-assessment questions and practical application
 For each dimension, evaluate your responses using this framework:
 
 - **Mental Model Mastery**: Score based on ability to apply appropriate frameworks, integrate multiple models, and adapt thinking approaches to context
-- **Algorithmic Decision-Making**: Score based on systematic approach to complex problems, use of quantitative reasoning, and balance of different optimization strategies  
+- **Algorithmic Decision-Making**: Score based on systematic approach to complex problems, use of quantitative reasoning, and balance of different optimization strategies
 - **Strategic Reasoning**: Score based on connection between tactical and strategic thinking, quality of problem diagnosis, and coherence of proposed solutions
 - **Cognitive Bias Awareness**: Score based on recognition of thinking errors, implementation of bias mitigation strategies, and design of decision processes
 
@@ -388,18 +408,21 @@ Conduct regular assessment updates to track skill development and adjust your le
 ### Team Development Approach
 
 **Assessment Phase** (2-4 weeks):
+
 - Team members complete individual assessments
 - Identify collective strengths and development opportunities
 - Design team learning objectives based on assessment results
 - Establish baseline metrics for decision-making quality
 
 **Skill Building Phase** (3-6 months):
+
 - Regular team exercises applying different thinking frameworks
 - Rotate responsibility for leading systematic decision processes
 - Create team templates for common decision types
 - Implement peer feedback systems for reasoning quality
 
 **Integration Phase** (6-12 months):
+
 - Apply advanced thinking frameworks to major team challenges
 - Design organizational processes that embed systematic thinking
 - Mentor other teams in developing critical thinking capabilities
@@ -408,18 +431,21 @@ Conduct regular assessment updates to track skill development and adjust your le
 ### Organizational Scaling Strategy
 
 **Individual Adoption** (Months 1-6):
+
 - Train champions in systematic thinking approaches
 - Create resources and templates for common decision types
 - Establish communities of practice around rational decision-making
 - Document and share success stories from early adopters
 
 **Team Integration** (Months 6-18):
+
 - Mandate systematic frameworks for major technical decisions
 - Incorporate thinking skills into performance evaluation criteria
 - Create organizational roles focused on decision-making quality
 - Establish metrics for collective decision-making effectiveness
 
 **Cultural Transformation** (Months 18-36):
+
 - Embed systematic thinking in hiring and promotion criteria
 - Design organizational structures that optimize collective intelligence
 - Create external partnerships focused on decision science advancement
@@ -430,18 +456,21 @@ Conduct regular assessment updates to track skill development and adjust your le
 ### Regular Assessment Schedule
 
 **Monthly Reviews**:
+
 - Update decision journal with recent complex choices
 - Reflect on mental model application effectiveness
 - Identify cognitive biases that influenced recent decisions
 - Plan learning objectives for the upcoming month
 
 **Quarterly Deep Assessments**:
+
 - Complete comprehensive assessment across all dimensions
 - Compare current scores with previous assessments
 - Adjust development focus based on progress patterns
 - Seek feedback from colleagues on observed changes
 
 **Annual Strategic Reviews**:
+
 - Evaluate connection between improved thinking skills and career outcomes
 - Design advanced development objectives for the upcoming year
 - Consider opportunities to contribute to organizational decision-making capabilities
@@ -450,18 +479,21 @@ Conduct regular assessment updates to track skill development and adjust your le
 ### Measurement and Metrics
 
 **Decision Quality Indicators**:
+
 - Frequency of decisions that meet or exceed intended outcomes
 - Speed of decision-making for complex, ambiguous challenges
 - Stakeholder satisfaction with decision-making processes
 - Organizational impact of strategic thinking contributions
 
 **Skill Development Metrics**:
+
 - Assessment score improvements across all dimensions
 - Peer feedback quality on reasoning and decision-making
 - Success rate in teaching others to apply systematic thinking
 - Innovation in applying frameworks to novel organizational challenges
 
 **Organizational Impact Measures**:
+
 - Engineering team decision-making velocity and quality
 - Reduction in decision-related conflicts and rework
 - Strategic initiative success rates and organizational alignment

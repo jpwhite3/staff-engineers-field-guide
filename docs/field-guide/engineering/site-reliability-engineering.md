@@ -109,12 +109,14 @@ Here's a scenario every engineering team faces: Product wants to ship a new feat
 This transforms the relationship between development velocity and system reliability from adversarial to collaborative:
 
 **When you have error budget remaining:**
+
 - Deploy more frequently
 - Experiment with new features
 - Try performance optimizations
 - Make architectural improvements
 
 **When you're approaching your error budget:**
+
 - Slow down feature development
 - Focus on reliability improvements
 - Increase testing and review rigor
@@ -135,6 +137,7 @@ Traditional incident response goes something like this: system fails, everyone s
 This doesn't mean accepting poor performance or avoiding accountability. It means recognizing that **complex systems fail in complex ways**, and that sustainable reliability comes from improving systems, not punishing people.
 
 A great postmortem answers these questions:
+
 - **What happened?** A clear timeline of events
 - **Why did it happen?** Root cause analysis, often revealing multiple contributing factors
 - **What can we learn?** Insights about system behavior, monitoring gaps, or process improvements
@@ -152,10 +155,10 @@ Every engineering team has that one person who spends half their time restarting
 
 The most effective approach to toil reduction is methodical:
 
-**Measure it**: Track how much time is spent on different types of operational work.
-**Prioritize it**: Focus on the toil that consumes the most time or causes the most pain.
-**Automate it**: Build tools, scripts, and systems that eliminate manual intervention.
-**Monitor it**: Ensure automation is working and continues to reduce toil over time.
+- **Measure it**: Track how much time is spent on different types of operational work.
+- **Prioritize it**: Focus on the toil that consumes the most time or causes the most pain.
+- **Automate it**: Build tools, scripts, and systems that eliminate manual intervention.
+- **Monitor it**: Ensure automation is working and continues to reduce toil over time.
 
 The compound effect of toil reduction is remarkable. Every hour of manual work you automate away gives you an hour back every time that task would have been performed. Teams that systematically eliminate toil find themselves with more time for architecture improvements, better testing, and proactive reliability work.
 
@@ -170,12 +173,15 @@ The compound effect of toil reduction is remarkable. Every hour of manual work y
 Here's a practical example from an e-commerce platform:
 
 **User Journey**: Product Purchase
+
 **Key SLIs**:
+
 - Availability: Percentage of purchase attempts that receive a response
 - Latency: 95th percentile response time for purchase API
 - Quality: Percentage of successful purchases that are correctly processed
 
 **SLO Example**:
+
 - 99.9% of purchase attempts receive a response within 10 seconds
 - 99% of purchase attempts complete successfully
 - 99.95% of successful purchases are correctly processed (charged, inventory updated, confirmation sent)
@@ -282,17 +288,20 @@ Reliable systems don't just work—they work under load, during peak usage, and 
 ### Capacity Planning Framework
 
 **Baseline Measurement**: Understand current usage patterns and resource consumption
+
 - Peak traffic patterns and seasonal variations
 - Resource utilization trends and bottlenecks
 - User growth projections and business forecasts
 
 **Load Testing Strategy**: Validate system behavior under stress
+
 - Gradual load increase to find breaking points
 - Spike testing for traffic surges
 - Chaos testing for component failures
 - Real-world scenario simulation
 
 **Scalability Analysis**: Plan for growth before you need it
+
 - Horizontal vs. vertical scaling trade-offs
 - Database scaling strategies and data partitioning
 - CDN and caching optimization
@@ -301,12 +310,14 @@ Reliable systems don't just work—they work under load, during peak usage, and 
 ### Performance Engineering Practices
 
 **Establish Performance Budgets**: Define acceptable performance targets for new features and changes
+
 - Page load time limits for frontend features
 - API response time requirements
 - Resource usage constraints for background jobs
 - Database query performance thresholds
 
 **Continuous Performance Monitoring**: Catch regressions before they reach production
+
 - Automated performance testing in CI/CD pipelines
 - Performance regression detection and alerting
 - Resource usage trend analysis
@@ -319,6 +330,7 @@ When systems fail—and they will—your response determines whether failure bec
 ### Incident Command System for Technical Incidents
 
 **Role Definition**:
+
 - **Incident Commander**: Coordinates response, makes high-level decisions, communicates with stakeholders
 - **Subject Matter Experts**: Investigate technical issues, implement fixes, provide domain knowledge
 - **Communications Lead**: Manages internal and external communications, updates status pages
@@ -326,16 +338,19 @@ When systems fail—and they will—your response determines whether failure bec
 **Response Phases**:
 
 **Detection and Assessment (0-15 minutes)**:
+
 - Acknowledge alerts and assemble response team
 - Assess impact and determine severity level
 - Establish communications channels and notification protocols
 
 **Mitigation and Investigation (15 minutes - 4 hours)**:
+
 - Implement immediate mitigations to restore service
 - Investigate root cause while maintaining service stability
 - Document timeline and decisions for postmortem analysis
 
 **Recovery and Resolution (4+ hours)**:
+
 - Implement permanent fixes and verify stability
 - Conduct initial postmortem discussion
 - Plan follow-up improvements and prevention measures
@@ -343,12 +358,14 @@ When systems fail—and they will—your response determines whether failure bec
 ### Crisis Communication Framework
 
 **Internal Communications**:
+
 - Regular status updates with specific timelines
 - Clear escalation criteria and stakeholder notification
 - Decision documentation and rationale
 - Resource needs and coordination requests
 
 **External Communications**:
+
 - Timely, accurate status page updates
 - Customer notification through appropriate channels
 - Transparent communication about impact and resolution timeline
@@ -361,16 +378,19 @@ Reliable systems survive not just component failures, but entire data center out
 ### Disaster Recovery Planning
 
 **Recovery Time Objective (RTO)**: How long can the service be unavailable?
+
 - Acceptable downtime for different service tiers
 - Business impact analysis and prioritization
 - Recovery procedure time estimation and optimization
 
 **Recovery Point Objective (RPO)**: How much data loss is acceptable?
+
 - Backup frequency and retention policies
 - Data replication strategies and consistency requirements
 - Transaction recovery and data integrity verification
 
 **Business Continuity Strategy**:
+
 - Multi-region architecture and failover procedures
 - Data backup and restoration testing
 - Vendor dependencies and alternative arrangements
@@ -379,12 +399,14 @@ Reliable systems survive not just component failures, but entire data center out
 ### Testing and Validation
 
 **Disaster Recovery Testing**: Regular exercises to validate recovery procedures
+
 - Scheduled failover tests and performance validation
 - Data restoration verification and integrity checking
 - Communication protocol testing and stakeholder engagement
 - Documentation updates based on testing results
 
 **Game Day Exercises**: Simulate realistic failure scenarios
+
 - Cross-team coordination under pressure
 - Decision-making with incomplete information
 - Communication effectiveness during crisis
@@ -395,18 +417,21 @@ Reliable systems survive not just component failures, but entire data center out
 ### Starting Small: SRE Adoption Framework
 
 **Phase 1: Foundation (Months 1-3)**
+
 - Establish SLI/SLO practices for critical services
 - Implement basic observability and alerting
 - Begin error budget tracking and reporting
 - Introduce blameless postmortem culture
 
 **Phase 2: Expansion (Months 3-9)**
+
 - Extend SRE practices to additional services
 - Build automation to reduce toil
 - Develop on-call rotations and escalation procedures
 - Implement capacity planning and load testing
 
 **Phase 3: Maturity (Months 9-18)**
+
 - Cross-team SRE expertise and knowledge sharing
 - Advanced observability and chaos engineering
 - Comprehensive disaster recovery and business continuity
@@ -415,16 +440,19 @@ Reliable systems survive not just component failures, but entire data center out
 ### Building SRE Teams and Capabilities
 
 **Embedded SRE Model**: SRE engineers work within product teams
+
 - Pros: Close collaboration, deep domain knowledge, rapid feedback
 - Cons: Risk of local optimization, inconsistent practices across teams
 - Best for: Small organizations, early SRE adoption, specialized services
 
 **Centralized SRE Model**: Dedicated SRE team supports multiple services
+
 - Pros: Consistent practices, shared expertise, efficient resource utilization
 - Cons: Potential bottlenecks, less domain-specific knowledge
 - Best for: Large organizations, mature SRE practices, platform services
 
 **Hybrid SRE Model**: Combination of embedded and centralized approaches
+
 - Pros: Flexibility, expertise sharing, scalable practices
 - Cons: Coordination complexity, role clarity challenges
 - Best for: Growing organizations, diverse service portfolio, evolving needs

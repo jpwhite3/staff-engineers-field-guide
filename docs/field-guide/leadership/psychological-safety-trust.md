@@ -14,34 +14,34 @@ As a Staff Engineer, you are a primary architect of your team's psychological sa
 
 ### 1. Frame Work as a Learning Problem, Not an Execution Problem
 
-* **Low Safety:** "We need to execute this plan flawlessly." (Signals that mistakes are unacceptable).  
-* **High Safety:** "This is a complex project with a lot of unknowns. Our goal is to learn as quickly as possible and adapt the plan as we go. We will probably get some things wrong, and that's expected." (Signals that learning and discovery are valued).  
+- **Low Safety:** "We need to execute this plan flawlessly." (Signals that mistakes are unacceptable).
+- **High Safety:** "This is a complex project with a lot of unknowns. Our goal is to learn as quickly as possible and adapt the plan as we go. We will probably get some things wrong, and that's expected." (Signals that learning and discovery are valued).
 
 ### 2. Model Curiosity and Fallibility
 
-Your reaction to being challenged is a powerful signal.  
+Your reaction to being challenged is a powerful signal.
 
-When Mei raises her concern, your job is to amplify her voice.  
+When Mei raises her concern, your job is to amplify her voice.
 
-**You:** "That's a really important point, Mei. Thank you for raising it. Can you tell us more about the failure modes you're concerned about? Senior engineer, given your experience, how have you mitigated those in the past?"  
+**You:** "That's a really important point, Mei. Thank you for raising it. Can you tell us more about the failure modes you're concerned about? Senior engineer, given your experience, how have you mitigated those in the past?"
 
-This action does two things: it validates Mei's contribution and reframes the senior engineer's comment from a shutdown into a request for mentorship.  
+This action does two things: it validates Mei's contribution and reframes the senior engineer's comment from a shutdown into a request for mentorship.
 
 ### 3. Practice Blameless Post-Mortems
 
-When an incident occurs, the goal is not to find who is at fault, but to understand the systemic reasons that allowed the failure to happen.  
+When an incident occurs, the goal is not to find who is at fault, but to understand the systemic reasons that allowed the failure to happen.
 
-* **Ask "How?" not "Who?":** Instead of "Who pushed the bad code?" ask "How did our testing and review process allow this bug to get to production?"  
-* **Focus on Contribution, Not Blame:** The engineer who caused the outage is often the person with the most context to help fix the system. Celebrate their willingness to share that context.  
+- **Ask "How?" not "Who?":** Instead of "Who pushed the bad code?" ask "How did our testing and review process allow this bug to get to production?"
+- **Focus on Contribution, Not Blame:** The engineer who caused the outage is often the person with the most context to help fix the system. Celebrate their willingness to share that context.
 
 ### 4. Measure It
 
-You can't improve what you don't measure. Periodically, ask the team to anonymously rate their agreement with these statements (from Edmondson's research):  
+You can't improve what you don't measure. Periodically, ask the team to anonymously rate their agreement with these statements (from Edmondson's research):
 
-* If you make a mistake on this team, it is not held against you.  
-* Members of this team are able to bring up problems and tough issues.  
-* It is safe to take a risk on this team.  
-* It is not difficult to ask other members of this team for help.
+- If you make a mistake on this team, it is not held against you.
+- Members of this team are able to bring up problems and tough issues.
+- It is safe to take a risk on this team.
+- It is not difficult to ask other members of this team for help.
 
 ## The Impact of Psychological Safety
 
@@ -49,7 +49,7 @@ The data will tell you where you stand. Psychological safety isn't about being "
 
 ## Common Pitfalls to Avoid
 
-- **The "Blame Game":** Resist the urge to assign blame after incidents. Instead, focus on understanding *what* happened and *why*, without judgment. Implement blameless post-mortems to foster a culture of learning.
+- **The "Blame Game":** Resist the urge to assign blame after incidents. Instead, focus on understanding _what_ happened and _why_, without judgment. Implement blameless post-mortems to foster a culture of learning.
 - **Dismissing Ideas Quickly:** Before rejecting an idea, take the time to fully understand its rationale. Ask clarifying questions and explore potential benefits.
 - **Over-Reliance on Authority:** Avoid dictating solutions without soliciting input. Instead, frame your suggestions as options for consideration.
 
@@ -62,5 +62,5 @@ The data will tell you where you stand. Psychological safety isn't about being "
 
 ## Further Reading
 
-- *The Fearless Organization* by Amy Edmondson
-- *Dare to Lead* by Brené Brown
+- _The Fearless Organization_ by Amy Edmondson
+- _Dare to Lead_ by Brené Brown

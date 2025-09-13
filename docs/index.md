@@ -10,6 +10,20 @@ This guide bridges that gap. Drawing from 30+ authoritative sources including Ji
 
 **This is your field manual for becoming the technical leader your organization needs.**
 
+## Why This Field Guide Is Different
+
+**Synthesis of 30+ Authority Sources** - Integrated insights from Collins, Sinek, Cagan, Google SRE, and so many more. No single-source bias.
+
+**300+ Cross-References** - Every concept connects to related ideas and practical applications using a systems thinking approach.
+
+**60+ Visual Frameworks** - Mermaid diagrams, decision trees, and assessment tools for visual learning.
+
+**Comprehensive Assessment System** - Self-evaluation tools for every major competency area to measure your progress.
+
+**Multiple Learning Paths** - Tailored journeys for different roles and experience levels with a personalized approach.
+
+**Immediately Actionable** - Every chapter includes practical tools and frameworks you can apply today.
+
 ## Authority & Depth You Can Trust
 
 Built on **Industry-Leading Research** — This field guide synthesizes insights from the most respected voices in technical leadership, organizational psychology, and engineering excellence.
@@ -33,22 +47,6 @@ Built on **Industry-Leading Research** — This field guide synthesizes insights
 - **Marty Cagan** - Product-engineering collaboration from "INSPIRED"
 - **John Doerr** - OKR frameworks from "Measure What Matters"
 - **Nicole Forsgren** - Engineering metrics from "Accelerate"
-
-## How to Use This Guide
-
-!!! info "Field Guide Approach"
-    This is not a book to be read linearly from cover to cover. Think of it as a true field guide—each chapter and section is designed to be a self-contained resource.
-
-**Facing a Challenge?** Jump to the relevant section for immediate help:
-- Navigating team conflict
-- Building a business case
-- Refining presentation skills
-
-**Identifying Growth Areas?** Browse "Discrete Topics Covered" at the end of each chapter to identify skills you want to develop.
-
-**Mentoring Others?** Use frameworks and concepts to coach and guide the next generation of technical leaders.
-
-**Goal:** Practical, actionable advice you can apply immediately.
 
 ## Learning Paths
 
@@ -110,20 +108,6 @@ The Business of Engineering - Aligning technical and business objectives
 
 ### [Ethics](field-guide/ethics/)
 Engineering Ethics & Decision-Making - Responsible technology leadership
-
-## Why This Field Guide Is Different
-
-**Synthesis of 30+ Authority Sources** - Integrated insights from Collins, Sinek, Cagan, Google SRE, and more. No single-source bias.
-
-**300+ Cross-References** - Every concept connects to related ideas and practical applications using a systems thinking approach.
-
-**60+ Visual Frameworks** - Mermaid diagrams, decision trees, and assessment tools for visual learning.
-
-**Comprehensive Assessment System** - Self-evaluation tools for every major competency area to measure your progress.
-
-**Multiple Learning Paths** - Tailored journeys for different roles and experience levels with a personalized approach.
-
-**Immediately Actionable** - Every chapter includes practical tools and frameworks you can apply today.
 
 ## Start Your Journey
 

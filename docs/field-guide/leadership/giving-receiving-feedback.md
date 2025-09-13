@@ -4,9 +4,9 @@
 
 A junior engineer on a team you're mentoring, Alex, submits a pull request. The code works, but it takes a shortcut that violates a core architectural principle you've been trying to establish. It's a classic case of sacrificing long-term maintainability for short-term speed.
 
-* **The Ineffective Response (The "Drive-By"):** Leaving a simple comment like, "This is wrong. Use the new pattern," and blocking the PR. This delivers the information but erodes trust, creates fear, and misses a crucial coaching opportunity. Alex learns *what* to do, but not *why*.  
+- **The Ineffective Response (The "Drive-By"):** Leaving a simple comment like, "This is wrong. Use the new pattern," and blocking the PR. This delivers the information but erodes trust, creates fear, and misses a crucial coaching opportunity. Alex learns _what_ to do, but not _why_.
 
-* **The Effective Response (The Coach):** You treat feedback not as criticism, but as an *assist*—a pass that helps your teammate score. Your goal is to improve both the code and the engineer.
+- **The Effective Response (The Coach):** You treat feedback not as criticism, but as an _assist_—a pass that helps your teammate score. Your goal is to improve both the code and the engineer.
 
 ## A Framework for Giving Better Feedback: SBI (Situation-Behavior-Impact)
 
@@ -35,13 +35,12 @@ graph LR
     style C1 fill:#efc,stroke:#333,stroke-width:2px
 ```
 
-
-1. **Situation:** State the context. Be specific.  
-   * "In the UserAuth pull request you submitted this morning..."  
-2. **Behavior:** Describe the specific, observable action. Avoid judgment words like "lazy" or "sloppy."  
-   * "...I noticed you connected directly to the primary database to fetch the user's profile."  
-3. **Impact:** Explain the concrete effect of the behavior. This is the most critical step.  
-   * "...When we do that, we bypass the caching layer, which means under high load, this could add significant latency and potentially bring down the service for everyone. It also couples the authentication service directly to the database schema, which will make our planned database upgrade much harder."
+1. **Situation:** State the context. Be specific.
+    - "In the UserAuth pull request you submitted this morning..."
+2. **Behavior:** Describe the specific, observable action. Avoid judgment words like "lazy" or "sloppy."
+    - "...I noticed you connected directly to the primary database to fetch the user's profile."
+3. **Impact:** Explain the concrete effect of the behavior. This is the most critical step.
+    - "...When we do that, we bypass the caching layer, which means under high load, this could add significant latency and potentially bring down the service for everyone. It also couples the authentication service directly to the database schema, which will make our planned database upgrade much harder."
 
 ## Putting It Together
 
@@ -51,14 +50,14 @@ _"Hey Alex, I was looking at the UserAuth PR. I noticed you connected directly t
 
 Your influence is directly proportional to how well you receive feedback. If you are defensive, people will simply stop giving it to you, and you will develop career-limiting blind spots.
 
-* **The Scenario:** In a design review for your new project, a peer points out a flaw in your caching strategy. _"I think you have a race condition here that could lead to stale data."_
+- **The Scenario:** In a design review for your new project, a peer points out a flaw in your caching strategy. _"I think you have a race condition here that could lead to stale data."_
 
-* **The Defensive Response:** "No, I thought of that. It's handled by the locking mechanism on line 427." (You immediately jump to defending your work, shutting down the conversation).  
+- **The Defensive Response:** "No, I thought of that. It's handled by the locking mechanism on line 427." (You immediately jump to defending your work, shutting down the conversation).
 
-* **The Growth Response:**  
-  1. **Listen and Clarify:** "That's an interesting point. Can you walk me through the sequence of events you're envisioning?" (Show you're taking it seriously).  
-  2. **Acknowledge and Appreciate:** "Ah, I see what you mean. That's a great catch. Thank you for pointing that out." (Validate their contribution, even if you don't agree yet).  
-  3. **Engage with Curiosity:** "How would you suggest we mitigate that? I was concerned about the performance overhead of more aggressive locking." (Turn it into a collaborative problem-solving session).
+- **The Growth Response:**
+    1. **Listen and Clarify:** "That's an interesting point. Can you walk me through the sequence of events you're envisioning?" (Show you're taking it seriously).
+    2. **Acknowledge and Appreciate:** "Ah, I see what you mean. That's a great catch. Thank you for pointing that out." (Validate their contribution, even if you don't agree yet).
+    3. **Engage with Curiosity:** "How would you suggest we mitigate that? I was concerned about the performance overhead of more aggressive locking." (Turn it into a collaborative problem-solving session).
 
 By modeling this behavior, you make it safe for others to challenge your ideas. The ultimate goal of feedback isn't to be right; it's to get it right.
 
@@ -70,7 +69,7 @@ Most technical discussions fail not because of bad ideas, but because of bad lis
 
 **The Difference Between Reactive and Intentional Listening**
 
-Reactive listening is what most of us do naturally. Someone starts explaining their concern about your architectural proposal, and immediately your mind starts generating counterarguments: "They don't understand the performance requirements." "They haven't considered the operational complexity." "Their suggestion won't scale." 
+Reactive listening is what most of us do naturally. Someone starts explaining their concern about your architectural proposal, and immediately your mind starts generating counterarguments: "They don't understand the performance requirements." "They haven't considered the operational complexity." "Their suggestion won't scale."
 
 You're hearing the words, but you're not really listening to understand their perspective—you're listening to respond.
 
@@ -123,14 +122,12 @@ This patience often reveals that their real concern is different from their init
 
 ## Common Pitfalls & How to Avoid Them
 
-- **Being Vague**: Feedback like “Do better” lacks direction. 
-  - **Solution**: Use the SBI (Situation-Behavior-Impact) model to be specific and actionable.
-
+- **Being Vague**: Feedback like “Do better” lacks direction.
+    - **Solution**: Use the SBI (Situation-Behavior-Impact) model to be specific and actionable.
 - **Neglecting Positive Feedback**: Focusing only on negatives discourages growth and damages morale.
-  - **Solution**: Make a habit of recognizing achievements and positive contributions during team meetings or one-on-ones.
-
+    - **Solution**: Make a habit of recognizing achievements and positive contributions during team meetings or one-on-ones.
 - **Ignoring Emotions**: Disregarding how feedback is received can lead to defensiveness.
-  - **Solution**: Acknowledge the other person's feelings and show empathy. Say, “I understand this might be frustrating, but here’s why it matters.”
+    - **Solution**: Acknowledge the other person's feelings and show empathy. Say, “I understand this might be frustrating, but here’s why it matters.”
 
 ## A Practical Exercise: The Feedback Circle
 
@@ -146,20 +143,24 @@ This exercise helps build the muscle for effective feedback exchanges.
 ## Cross-Reference Navigation
 
 ### Prerequisites for This Chapter
+
 - **[Psychological Safety](../teamwork/psychological-safety.md)** - Creating safe environments is essential for effective feedback culture
 - **[Communication & Presentation Skills](presentation-persuasion-skills.md)** - Basic communication skills provide foundation for feedback conversations
 
 ### Related Concepts
+
 - **[Psychological Safety](../teamwork/psychological-safety.md)** - Feedback cultures require psychological safety to enable honest, growth-oriented conversations
 - **[Advanced Conflict Resolution](advanced-conflict-resolution.md)** - Feedback conversations can become conflicts requiring skilled navigation
 - **[Mentorship & Sponsorship](../learning/mentorship-sponsorship.md)** - Effective feedback is a core component of mentorship relationships
 - **[Team Formation](../teamwork/team-formation.md)** - Feedback systems support team development through all formation stages
 
 ### Apply These Concepts
+
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your feedback and coaching capabilities
 - **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team feedback culture and psychological safety levels
 
 ### Next Steps in Your Learning Journey
+
 1. **[Advanced Conflict Resolution](advanced-conflict-resolution.md)** - Learn to handle feedback conversations that become difficult or contentious
 2. **[Mentorship & Sponsorship](../learning/mentorship-sponsorship.md)** - Master formal frameworks for ongoing feedback and career development
 3. **[Psychological Safety](../teamwork/psychological-safety.md)** - Deepen understanding of creating environments where feedback can flow freely
@@ -167,16 +168,19 @@ This exercise helps build the muscle for effective feedback exchanges.
 ## Further Reading
 
 **Feedback Frameworks and Techniques:**
-- Scott, Kim. *Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity*. 2017. (Framework for caring personally while challenging directly in feedback relationships)
-- Stone, Douglas, and Sheila Heen. *Thanks for the Feedback: The Science and Art of Receiving Feedback Well*. 2014. (Focus on receiving feedback effectively and building feedback-seeking behavior)
-- Kegan, Robert, and Lisa Laskow Lahey. *How the Way We Talk Can Change the Way We Work*. 2001. (Language patterns and conversational techniques for developmental feedback)
+
+- Scott, Kim. _Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity_. 2017. (Framework for caring personally while challenging directly in feedback relationships)
+- Stone, Douglas, and Sheila Heen. _Thanks for the Feedback: The Science and Art of Receiving Feedback Well_. 2014. (Focus on receiving feedback effectively and building feedback-seeking behavior)
+- Kegan, Robert, and Lisa Laskow Lahey. _How the Way We Talk Can Change the Way We Work_. 2001. (Language patterns and conversational techniques for developmental feedback)
 
 **Communication and Difficult Conversations:**
-- Stone, Douglas, Bruce Patton, and Sheila Heen. *Difficult Conversations: How to Discuss What Matters Most*. 2010. (Framework for navigating challenging feedback and performance conversations)
-- Patterson, Kerry, Joseph Grenny, Ron McMillan, and Al Switzler. *Crucial Conversations: Tools for Talking When Stakes Are High*. 2011. (Skills for high-stakes feedback and accountability conversations)
-- Rosenberg, Marshall B. *Nonviolent Communication: A Language of Life*. 2003. (Communication approach that supports empathetic, constructive feedback)
+
+- Stone, Douglas, Bruce Patton, and Sheila Heen. _Difficult Conversations: How to Discuss What Matters Most_. 2010. (Framework for navigating challenging feedback and performance conversations)
+- Patterson, Kerry, Joseph Grenny, Ron McMillan, and Al Switzler. _Crucial Conversations: Tools for Talking When Stakes Are High_. 2011. (Skills for high-stakes feedback and accountability conversations)
+- Rosenberg, Marshall B. _Nonviolent Communication: A Language of Life_. 2003. (Communication approach that supports empathetic, constructive feedback)
 
 **Leadership and Team Development:**
-- Edmondson, Amy C. *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*. 2018. (Creating environments where feedback supports learning and growth)
-- Brown, Brené. *Dare to Lead: Brave Work, Tough Conversations, Whole Hearts*. 2018. (Vulnerability-based leadership that enables authentic feedback relationships)
-- Buckingham, Marcus, and Ashley Goodall. *Nine Lies About Work: A Freethinking Leader's Guide to the Real World*. 2019. (Research-based perspectives on effective feedback and performance management)
+
+- Edmondson, Amy C. _The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth_. 2018. (Creating environments where feedback supports learning and growth)
+- Brown, Brené. _Dare to Lead: Brave Work, Tough Conversations, Whole Hearts_. 2018. (Vulnerability-based leadership that enables authentic feedback relationships)
+- Buckingham, Marcus, and Ashley Goodall. _Nine Lies About Work: A Freethinking Leader's Guide to the Real World_. 2019. (Research-based perspectives on effective feedback and performance management)

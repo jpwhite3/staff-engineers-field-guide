@@ -10,14 +10,15 @@ This scenario illustrates a common problem in agile development: the challenge o
 
 Story mapping, developed by Jeff Patton, is a technique for organizing user stories to create a model of the system from a user-centric perspective. Unlike a flat backlog, which obscures the big picture, a story map creates a two-dimensional view of your product:
 
-* **The horizontal axis (backbone)** represents user activities in sequential order
-* **The vertical axis (walking skeleton)** represents priority, with the most critical functionality at the top
+- **The horizontal axis (backbone)** represents user activities in sequential order
+- **The vertical axis (walking skeleton)** represents priority, with the most critical functionality at the top
 
 This visualization helps teams:
-* Understand the full scope of the system
-* Identify the minimum viable product (MVP)
-* Plan releases that deliver end-to-end value
-* Communicate the product vision to stakeholders
+
+- Understand the full scope of the system
+- Identify the minimum viable product (MVP)
+- Plan releases that deliver end-to-end value
+- Communicate the product vision to stakeholders
 
 ## Creating a Story Map
 
@@ -26,6 +27,7 @@ This visualization helps teams:
 Start by mapping the major activities users perform, in sequential order:
 
 **E-commerce Example:**
+
 1. Browse products
 2. Search for specific items
 3. Learn about products
@@ -42,28 +44,31 @@ These activities form the "backbone" of your map.
 Under each activity, list the specific tasks users perform:
 
 **Under "Search for specific items":**
-* Enter search terms
-* Filter search results
-* Sort results by relevance/price/rating
-* Compare multiple products
-* Save items for later
+
+- Enter search terms
+- Filter search results
+- Sort results by relevance/price/rating
+- Compare multiple products
+- Save items for later
 
 ### 3. Slice into Releases (The Walking Skeleton)
 
 Draw horizontal lines across your map to define releases, prioritizing tasks that create a "walking skeleton"—a thin end-to-end slice of functionality:
 
 **Release 1 (MVP):**
-* Basic search by keyword
-* Simple product detail page
-* Add to cart
-* Simple checkout flow
-* Order confirmation email
+
+- Basic search by keyword
+- Simple product detail page
+- Add to cart
+- Simple checkout flow
+- Order confirmation email
 
 **Release 2:**
-* Search filters
-* Product recommendations
-* Save for later
-* Multiple payment methods
+
+- Search filters
+- Product recommendations
+- Save for later
+- Multiple payment methods
 
 This approach ensures each release delivers end-to-end value to users.
 
@@ -74,26 +79,32 @@ Once you have a story map, you still need to split large stories into sprint-siz
 ### Common Anti-patterns in Story Splitting
 
 #### 1. Horizontal/Layer Splitting
+
 ❌ **Bad:** Splitting by technical layer
-* Frontend: Build recommendation UI
-* Backend: Create recommendation API
-* Data: Set up recommendation database
+
+- Frontend: Build recommendation UI
+- Backend: Create recommendation API
+- Data: Set up recommendation database
 
 **Problem:** No value until all three are complete
 
 #### 2. Technical Task Splitting
+
 ❌ **Bad:** Turning development tasks into stories
-* Set up development environment
-* Create database schema
-* Write automated tests
+
+- Set up development environment
+- Create database schema
+- Write automated tests
 
 **Problem:** These are tasks, not valuable increments
 
 #### 3. Split by "Happy Path" vs. Edge Cases
+
 ❌ **Bad:** Deferring all edge cases
-* Basic recommendation engine (happy path)
-* Handle new users with no history
-* Handle product categories with limited inventory
+
+- Basic recommendation engine (happy path)
+- Handle new users with no history
+- Handle product categories with limited inventory
 
 **Problem:** The system isn't truly usable without handling key edge cases
 
@@ -106,9 +117,10 @@ Once you have a story map, you still need to split large stories into sprint-siz
 **Instead of:** "As a user, I want a complete checkout process"
 
 **Split into:**
-* "As a user, I want to enter shipping information"
-* "As a user, I want to enter payment information"
-* "As a user, I want to review my order before confirming"
+
+- "As a user, I want to enter shipping information"
+- "As a user, I want to enter payment information"
+- "As a user, I want to review my order before confirming"
 
 #### 2. Split by User Personas or Segments
 
@@ -117,9 +129,10 @@ Once you have a story map, you still need to split large stories into sprint-siz
 **Instead of:** "As a user, I want personalized recommendations"
 
 **Split into:**
-* "As a returning user, I want recommendations based on my purchase history"
-* "As a new user, I want recommendations based on popular items"
-* "As a user browsing a category, I want similar items in that category"
+
+- "As a returning user, I want recommendations based on my purchase history"
+- "As a new user, I want recommendations based on popular items"
+- "As a user browsing a category, I want similar items in that category"
 
 #### 3. Split by Business Rules or Capabilities
 
@@ -128,9 +141,10 @@ Once you have a story map, you still need to split large stories into sprint-siz
 **Instead of:** "As a user, I want dynamic pricing based on multiple factors"
 
 **Split into:**
-* "As a user, I want time-based discounts (happy hour pricing)"
-* "As a user, I want volume-based discounts"
-* "As a user, I want loyalty tier-based discounts"
+
+- "As a user, I want time-based discounts (happy hour pricing)"
+- "As a user, I want volume-based discounts"
+- "As a user, I want loyalty tier-based discounts"
 
 #### 4. Split by Data Types or Parameters
 
@@ -139,9 +153,10 @@ Once you have a story map, you still need to split large stories into sprint-siz
 **Instead of:** "As a user, I want to import data from any source"
 
 **Split into:**
-* "As a user, I want to import CSV files"
-* "As a user, I want to import Excel files"
-* "As a user, I want to import Google Sheets"
+
+- "As a user, I want to import CSV files"
+- "As a user, I want to import Excel files"
+- "As a user, I want to import Google Sheets"
 
 #### 5. Split by Operational Qualities
 
@@ -150,37 +165,43 @@ Once you have a story map, you still need to split large stories into sprint-siz
 **Instead of:** "As a user, I want lightning-fast search results"
 
 **Split into:**
-* "As a user, I want relevant search results (within 2 seconds)"
-* "As a user, I want search results to appear as I type"
-* "As a user, I want search results in under 200ms"
+
+- "As a user, I want relevant search results (within 2 seconds)"
+- "As a user, I want search results to appear as I type"
+- "As a user, I want search results in under 200ms"
 
 ### The SPIDR Technique for Story Splitting
 
 SPIDR is a mnemonic for five approaches to splitting stories:
 
-* **S**pike: Create a small experiment to resolve uncertainty
-* **P**ath: Split by happy path vs. alternative paths
-* **I**nterface: Split by different interfaces or access methods
-* **D**ata: Split by data types or sources
-* **R**ules: Split by business rules or algorithms
+- **S**pike: Create a small experiment to resolve uncertainty
+- **P**ath: Split by happy path vs. alternative paths
+- **I**nterface: Split by different interfaces or access methods
+- **D**ata: Split by data types or sources
+- **R**ules: Split by business rules or algorithms
 
 ## Validating Good Story Splits
 
 After splitting stories, validate them against these criteria:
 
 ### 1. Independence
+
 Can this story be delivered independently of other stories?
 
 ### 2. Value
+
 Does this story deliver real value to users or stakeholders?
 
 ### 3. Estimable
+
 Is the story small enough and clear enough to estimate confidently?
 
 ### 4. Testable
+
 Can we write acceptance criteria that verify when it's done?
 
 ### 5. Small
+
 Can it be completed within a sprint by a pair of developers?
 
 ## Case Study: Splitting the Recommendation Engine
@@ -192,27 +213,32 @@ Let's return to our original example and split it properly:
 ### Story Map for Recommendations Feature:
 
 **User Activities:**
+
 1. View recommended products
 2. Interact with recommendations
 3. Receive increasingly relevant recommendations
 
 **Vertical Slicing - Release 1 (MVP):**
-* "As a customer viewing a product, I want to see 'Customers who bought this also bought' recommendations"
-* "As a customer, I want recommended products to link directly to their detail pages"
+
+- "As a customer viewing a product, I want to see 'Customers who bought this also bought' recommendations"
+- "As a customer, I want recommended products to link directly to their detail pages"
 
 **Release 2 (Enhanced):**
-* "As a returning customer, I want homepage recommendations based on my purchase history"
-* "As a customer, I want to rate recommendations as helpful or not helpful"
+
+- "As a returning customer, I want homepage recommendations based on my purchase history"
+- "As a customer, I want to rate recommendations as helpful or not helpful"
 
 **Release 3 (Advanced):**
-* "As a customer, I want recommendations based on my browsing behavior"
-* "As a customer, I want to see why each item was recommended to me"
+
+- "As a customer, I want recommendations based on my browsing behavior"
+- "As a customer, I want to see why each item was recommended to me"
 
 Each story:
-* Delivers tangible value
-* Can be implemented end-to-end in a single sprint
-* Builds upon previous stories
-* Is independently valuable
+
+- Delivers tangible value
+- Can be implemented end-to-end in a single sprint
+- Builds upon previous stories
+- Is independently valuable
 
 ## The Staff Engineer's Role
 

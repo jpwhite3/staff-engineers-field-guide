@@ -58,7 +58,7 @@ As a Staff Engineer, you don't just use these practices—you become their evang
 The engineering excellence you develop here sets up everything that follows:
 
 - **Chapter 4 (Critical Thinking)** assumes you can analyze complex systems and understand technical tradeoffs at a deep level
-- **Chapter 5 (Leadership)** depends on others respecting your technical judgment and seeking your guidance on difficult problems  
+- **Chapter 5 (Leadership)** depends on others respecting your technical judgment and seeking your guidance on difficult problems
 - **Chapter 6 (Teamwork)** requires you to architect team interactions and communication patterns, not just software systems
 - **Chapter 8 (Business)** needs you to translate technical capabilities into business value and risk assessment
 
@@ -66,34 +66,38 @@ Engineering excellence isn't just about writing better code—it's about buildin
 
 ## Discrete Topics Covered
 
-* [Architecture Decision Records (ADRs)](adrs.md): Learn to document significant architectural decisions to preserve context and accelerate future work.
+- [Architecture Decision Records (ADRs)](adrs.md): Learn to document significant architectural decisions to preserve context and accelerate future work.
 
-* [Chaos Engineering](chaos-engineering.md): Discover how to proactively test system resilience by injecting controlled failures.
-* [CI/CD](cicd.md): Master the principles of Continuous Integration and Continuous Delivery to build a high-velocity, reliable deployment pipeline.
-* [Code Hygiene & Refactoring](code-hygiene.md): Adopt the "Boy Scout Rule" to continuously improve codebase health and prevent technical debt.
-* [DevOps](devops.md): Embrace the "You Build It, You Run It" mindset to foster team ownership and build more operable systems.
-* [Source Control Best Practices](source-control.md): Use Git and other tools as a precise language for collaboration through atomic commits and effective pull requests.
-* [Hexagonal Architecture](hexagonal-architecture.md): Protect your core business logic from external concerns using the Ports and Adapters pattern.
-* [Software Supply Chain Security](software-supply-chain-security.md): Learn to secure your applications by managing dependencies, creating SBOMs, and hardening your build pipeline.
-* [Story Mapping & Splitting](story-mapping.md): Build a shared understanding of the user's journey and deliver value incrementally.
-* [Test-Driven Development (TDD)](tdd.md): Use testing as a design tool to create modular, maintainable, and well-designed software.
+- [Chaos Engineering](chaos-engineering.md): Discover how to proactively test system resilience by injecting controlled failures.
+- [CI/CD](cicd.md): Master the principles of Continuous Integration and Continuous Delivery to build a high-velocity, reliable deployment pipeline.
+- [Code Hygiene & Refactoring](code-hygiene.md): Adopt the "Boy Scout Rule" to continuously improve codebase health and prevent technical debt.
+- [DevOps](devops.md): Embrace the "You Build It, You Run It" mindset to foster team ownership and build more operable systems.
+- [Source Control Best Practices](source-control.md): Use Git and other tools as a precise language for collaboration through atomic commits and effective pull requests.
+- [Hexagonal Architecture](hexagonal-architecture.md): Protect your core business logic from external concerns using the Ports and Adapters pattern.
+- [Software Supply Chain Security](software-supply-chain-security.md): Learn to secure your applications by managing dependencies, creating SBOMs, and hardening your build pipeline.
+- [Story Mapping & Splitting](story-mapping.md): Build a shared understanding of the user's journey and deliver value incrementally.
+- [Test-Driven Development (TDD)](tdd.md): Use testing as a design tool to create modular, maintainable, and well-designed software.
 
 ## Cross-Reference Navigation
 
 ### Prerequisites for This Chapter
+
 - **[Staff Engineer Archetypes](../intro/index.md)** - Understanding your role context before diving into technical practices
 - **[Continuous Learning](../learning/index.md)** - Learning frameworks needed to stay current with evolving engineering practices
 
-### Related Concepts  
+### Related Concepts
+
 - **[Critical Thinking](../thinking/index.md)** - Mental models and decision-making frameworks that inform technical choices
 - **[Strategic Thinking](../execution/strategic-thinking.md)** - Understanding how technical decisions align with business strategy
 - **[Technical Vision](../leadership/technical-vision.md)** - Communicating technical direction and architectural choices
 
 ### Apply These Concepts
+
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your technical leadership capabilities across engineering domains
 - **[Technical Debt Management Framework](../../appendix/tools/technical-debt-management-framework.md)** - Apply engineering excellence principles to manage technical debt systematically
 
 ### Next Steps in Your Learning Journey
+
 1. **[Critical Thinking](../thinking/index.md)** - Develop mental models for complex technical decision-making
 2. **[Leadership & Influence](../leadership/index.md)** - Build on technical credibility to develop leadership capabilities
 3. **[Business Integration](../business/index.md)** - Connect engineering excellence to business value and outcomes
@@ -109,15 +113,18 @@ Engineering excellence isn't just about writing better code—it's about buildin
 ## Further Reading
 
 **Core Engineering Practices**:
-- Beck, Kent. *Test Driven Development: By Example*. 2002. (The seminal work on TDD, written by its creator)
-- Fowler, Martin. *Refactoring: Improving the Design of Existing Code*. 1999. (The classic catalog of code smells and refactoring techniques)  
-- Freeman, Steve, and Nat Pryce. *Growing Object-Oriented Software, Guided by Tests*. 2009. (Key text on the "London School" of TDD and outside-in development)
+
+- Beck, Kent. _Test Driven Development: By Example_. 2002. (The seminal work on TDD, written by its creator)
+- Fowler, Martin. _Refactoring: Improving the Design of Existing Code_. 1999. (The classic catalog of code smells and refactoring techniques)
+- Freeman, Steve, and Nat Pryce. _Growing Object-Oriented Software, Guided by Tests_. 2009. (Key text on the "London School" of TDD and outside-in development)
 
 **Architecture and Design**:
-- Evans, Eric. *Domain-Driven Design: Tackling Complexity in the Heart of Software*. 2003. (Foundational text for understanding how to model complex business domains)
-- Martin, Robert C. *Clean Architecture: A Craftsman's Guide to Software Structure and Design*. 2017. (Comprehensive guide to architectural principles and patterns)
-- Kleppmann, Martin. *Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems*. 2017. (Modern guide to distributed systems and data architecture)
+
+- Evans, Eric. _Domain-Driven Design: Tackling Complexity in the Heart of Software_. 2003. (Foundational text for understanding how to model complex business domains)
+- Martin, Robert C. _Clean Architecture: A Craftsman's Guide to Software Structure and Design_. 2017. (Comprehensive guide to architectural principles and patterns)
+- Kleppmann, Martin. _Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems_. 2017. (Modern guide to distributed systems and data architecture)
 
 **Legacy Systems and Continuous Improvement**:
-- Feathers, Michael C. *Working Effectively with Legacy Code*. 2004. (Essential guide for applying tests and refactoring techniques to existing codebases)
-- Ford, Neal, Rebecca Parsons, and Patrick Kua. *Building Evolutionary Architectures: Support Constant Change*. 2017. (Framework for creating architectures that can evolve with business needs)
+
+- Feathers, Michael C. _Working Effectively with Legacy Code_. 2004. (Essential guide for applying tests and refactoring techniques to existing codebases)
+- Ford, Neal, Rebecca Parsons, and Patrick Kua. _Building Evolutionary Architectures: Support Constant Change_. 2017. (Framework for creating architectures that can evolve with business needs)

@@ -33,24 +33,27 @@ The original Chaos Engineering Manifesto, created by Netflix's Chaos Engineering
 Before introducing chaos, you must understand what "normal" looks like. Steady-state isn't just "the system is up"—it's measurable, business-relevant metrics that indicate your system is delivering value.
 
 **For a streaming service like Netflix:**
+
 - Stream start success rate > 99.5%
 - Video quality degradation < 0.1%
 - Customer sign-up completion rate > 85%
 
 **For an e-commerce platform:**
+
 - Checkout conversion rate > 3.2%
 - Search result response time < 100ms
 - Payment processing success rate > 99.9%
 
-The hypothesis format: *"Given normal traffic patterns, when I introduce [specific failure], I believe the system will maintain steady-state behavior because [architectural assumption]."*
+The hypothesis format: _"Given normal traffic patterns, when I introduce [specific failure], I believe the system will maintain steady-state behavior because [architectural assumption]."_
 
 ### 2. Vary Real-World Events
 
 Chaos experiments should reflect actual failure modes, not theoretical ones. The goal is to simulate conditions your system will eventually face in production.
 
 **Common real-world events to simulate:**
+
 - **Compute failures**: Instance termination, CPU exhaustion, memory leaks
-- **Network issues**: Packet loss, increased latency, network partitions  
+- **Network issues**: Packet loss, increased latency, network partitions
 - **Storage problems**: Disk failures, read/write errors, storage capacity limits
 - **Dependency failures**: Database unavailability, third-party API timeouts
 - **Resource constraints**: Connection pool exhaustion, file descriptor limits
@@ -61,12 +64,14 @@ Chaos experiments should reflect actual failure modes, not theoretical ones. The
 This principle often generates the most resistance. "You want to break production?" The answer is: production is already breaking in ways you don't understand. Chaos Engineering makes those breaks visible and controlled.
 
 **Why production is essential:**
+
 - **Realistic load patterns**: Staging rarely matches production traffic characteristics
 - **Complete dependency graph**: Production includes all the integrations, configurations, and environmental factors that staging lacks
 - **Real alerting and response**: Only production exercises your actual incident response processes
 - **Genuine business impact**: Only production failures reveal true business-critical paths
 
 **Start small and build confidence:**
+
 - Begin with non-critical services during low-traffic periods
 - Use circuit breakers and feature flags to limit blast radius
 - Run experiments during business hours when your team is available to respond
@@ -77,6 +82,7 @@ This principle often generates the most resistance. "You want to break productio
 Manual chaos experiments are valuable for learning, but automated continuous chaos is what builds long-term resilience. Systems are constantly changing—new deployments, configuration updates, dependency changes. What was resilient last week might be fragile today.
 
 **Automated chaos provides:**
+
 - **Regression protection**: Ensures new changes don't break existing resilience
 - **Continuous learning**: Discovers new failure modes as the system evolves
 - **Improved MTTR**: Teams get regular practice responding to failures
@@ -87,6 +93,7 @@ Manual chaos experiments are valuable for learning, but automated continuous cha
 Start small and expand gradually. The goal is learning, not demonstrating how spectacularly your system can fail.
 
 **Blast radius progression:**
+
 1. **Single instance** → 2. **Small percentage of traffic** → 3. **Single availability zone** → 4. **Multiple zones** → 5. **Region-wide experiments**
 
 ## The Chaos Engineering Toolkit
@@ -96,16 +103,19 @@ As a Staff Engineer, you need to understand the tools available and when to use 
 ### Infrastructure-Level Chaos
 
 **AWS Fault Injection Simulator (FIS)**
+
 - Native AWS service for injecting failures into AWS resources
 - Can simulate EC2 instance failures, EBS volume issues, RDS problems
 - Integrates with AWS IAM for safe, controlled access
 
 **Gremlin**
+
 - Commercial platform providing comprehensive failure injection
 - Supports compute, network, and storage attacks
 - Excellent for teams wanting enterprise features and support
 
 **Chaos Toolkit**
+
 - Open-source framework for defining chaos experiments
 - Declarative YAML-based experiment definitions
 - Extensible with plugins for various platforms
@@ -113,16 +123,19 @@ As a Staff Engineer, you need to understand the tools available and when to use 
 ### Application-Level Chaos
 
 **Litmus**
+
 - Kubernetes-native chaos engineering platform
 - Focuses on cloud-native applications and container orchestration failures
 - Strong community and extensive experiment library
 
 **Chaos Monkey for Spring Boot**
+
 - Brings chaos engineering directly into Java applications
 - Can inject failures at the method level, HTTP requests, or component interactions
 - Perfect for testing application-level resilience patterns
 
 **Istio Fault Injection**
+
 - Service mesh-level failure injection
 - Can introduce delays, HTTP errors, and connection failures between services
 - Excellent for testing microservice communication resilience
@@ -132,6 +145,7 @@ As a Staff Engineer, you need to understand the tools available and when to use 
 Chaos Engineering is only as effective as your ability to observe the results. You need comprehensive monitoring to understand both the intended effects and any unintended consequences.
 
 **Essential observability for chaos experiments:**
+
 - **Real-time metrics**: System performance during experiments
 - **Distributed tracing**: Understanding request flow and bottlenecks
 - **Log aggregation**: Capturing error conditions and system responses
@@ -147,12 +161,14 @@ Once you've mastered basic failure injection, advanced patterns let you explore 
 Game Days are planned exercises where teams deliberately introduce failures to test response procedures and inter-team coordination.
 
 **Game Day structure:**
+
 1. **Pre-planning**: Define scenarios, success criteria, and participant roles
 2. **Scenario injection**: Introduce complex, multi-system failures
 3. **Response coordination**: Teams work together to diagnose and resolve issues
 4. **Debrief and learning**: Capture lessons learned and improvement opportunities
 
 **Example Game Day scenarios:**
+
 - Complete AWS availability zone failure during peak traffic
 - Critical database corruption requiring point-in-time recovery
 - Major third-party payment processor outage
@@ -163,6 +179,7 @@ Game Days are planned exercises where teams deliberately introduce failures to t
 Security chaos tests your system's resilience against attack patterns and security failures.
 
 **Security chaos experiments:**
+
 - **Certificate expiration**: What happens when TLS certificates expire unexpectedly?
 - **IAM role failures**: How does your system behave when authentication fails?
 - **Secrets rotation**: Can your applications handle credential rotation gracefully?
@@ -173,6 +190,7 @@ Security chaos tests your system's resilience against attack patterns and securi
 Technical failures aren't the only source of system instability. Organizational chaos tests how teams respond to coordination failures and communication breakdowns.
 
 **Organizational chaos experiments:**
+
 - **Communication channel failures**: What happens if Slack/Teams goes down during an incident?
 - **On-call unavailability**: How does the team respond when the primary on-call person is unreachable?
 - **Documentation inaccessibility**: Can the team respond to incidents when runbooks are unavailable?
@@ -185,18 +203,21 @@ As a Staff Engineer, you're often responsible for establishing chaos engineering
 ### Phase 1: Foundation (Months 1-3)
 
 **Technical Prerequisites:**
+
 - Comprehensive monitoring and alerting infrastructure
 - Distributed tracing for understanding system interactions
 - Feature flags for controlling experiment blast radius
 - Robust deployment and rollback procedures
 
 **Cultural Prerequisites:**
+
 - Leadership support for controlled production experiments
 - Blame-free post-mortem culture
 - Team agreement on the value of proactive failure testing
 - Clear communication about chaos engineering goals
 
 **Initial Experiments:**
+
 - Start with non-critical services during low-traffic periods
 - Focus on well-understood failure modes (instance termination, network delays)
 - Ensure someone is always monitoring experiments in real-time
@@ -205,18 +226,21 @@ As a Staff Engineer, you're often responsible for establishing chaos engineering
 ### Phase 2: Expansion (Months 4-8)
 
 **Broaden Experiment Scope:**
+
 - Introduce chaos to more critical services
 - Test more complex failure scenarios
 - Run experiments during higher-traffic periods
 - Begin automated experiment execution
 
 **Develop Team Capabilities:**
+
 - Train multiple team members in chaos engineering practices
 - Create experiment runbooks and response procedures
 - Establish regular chaos engineering reviews and retrospectives
 - Build relationships with other teams for coordinated experiments
 
 **Integrate with Development Process:**
+
 - Include resilience testing in code review processes
 - Make chaos experiments part of deployment verification
 - Create resilience requirements for new services
@@ -225,12 +249,14 @@ As a Staff Engineer, you're often responsible for establishing chaos engineering
 ### Phase 3: Maturity (Months 9+)
 
 **Continuous Chaos:**
+
 - Fully automated experiment execution and monitoring
 - Chaos experiments integrated into CI/CD pipelines
 - Regular Game Days involving multiple teams
 - Chaos engineering metrics included in service level objectives
 
 **Advanced Techniques:**
+
 - Custom failure injection tools tailored to your architecture
 - Chaos experiments informed by production incident patterns
 - Predictive chaos using machine learning to identify vulnerable system states
@@ -243,16 +269,19 @@ Traditional metrics like uptime and error rates don't capture the full value of 
 ### Technical Metrics
 
 **Mean Time to Recovery (MTTR) Improvement**
+
 - Track how quickly teams respond to and resolve incidents
 - Measure improvement over time as teams gain experience with failure scenarios
 - Compare MTTR for chaos-tested vs. untested failure modes
 
 **Incident Prevention**
+
 - Count production incidents prevented by discovering issues during chaos experiments
 - Track the severity of issues found during experiments vs. production
 - Measure the reduction in surprise failures
 
 **System Resilience Scores**
+
 - Develop custom metrics measuring how well services handle various failure types
 - Track resilience improvements over time
 - Create dashboards showing current resilience posture
@@ -260,16 +289,19 @@ Traditional metrics like uptime and error rates don't capture the full value of 
 ### Organizational Metrics
 
 **Team Confidence in Production Changes**
+
 - Survey teams about their confidence in deploying changes
 - Measure the frequency and size of production deployments
 - Track rollback rates and deployment success
 
 **Cross-Team Collaboration**
+
 - Measure participation in Game Days and coordinated chaos experiments
 - Track knowledge sharing between teams about resilience patterns
 - Count contributions to shared chaos engineering tools and processes
 
 **Learning and Improvement Velocity**
+
 - Track the number of resilience improvements implemented after chaos experiments
 - Measure time from chaos experiment discovery to production fix
 - Count the creation of new runbooks and response procedures
@@ -333,20 +365,24 @@ Remember: in production, failure is not a possibility—it's a certainty. The qu
 ## Cross-Reference Navigation
 
 ### Prerequisites for This Chapter
+
 - **[Site Reliability Engineering](site-reliability-engineering.md)** - Understanding SLOs and reliability principles provides foundation for chaos engineering practices
 - **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Testing fundamentals and quality practices inform chaos engineering approaches
 
 ### Related Concepts
+
 - **[Site Reliability Engineering](site-reliability-engineering.md)** - Chaos engineering supports SLO achievement and error budget management
 - **[Continuous Delivery](continuous-delivery.md)** - Chaos engineering integrates with deployment pipelines for resilience validation
 - **[Cost Optimization](../business/cost-optimization.md)** - Chaos engineering helps prevent costly outages through proactive failure discovery
 - **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Chaos engineering provides frameworks for handling system uncertainty and ambiguity
 
 ### Apply These Concepts
+
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your system reliability and chaos engineering capabilities
 - **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team readiness and culture for chaos engineering practices
 
 ### Next Steps in Your Learning Journey
+
 1. **[Site Reliability Engineering](site-reliability-engineering.md)** - Deepen understanding of reliability practices and SLO management
 2. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Learn comprehensive testing approaches that complement chaos engineering
 3. **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Understand how to introduce chaos engineering practices organizationally
@@ -354,16 +390,19 @@ Remember: in production, failure is not a possibility—it's a certainty. The qu
 ## Further Reading
 
 **Foundational Texts:**
-- *Chaos Engineering: System Resiliency in Practice* by Casey Rosenthal and Nora Jones
-- *The Site Reliability Engineering Handbook* by Google SRE Team  
-- *Antifragile: Things That Gain from Disorder* by Nassim Nicholas Taleb
+
+- _Chaos Engineering: System Resiliency in Practice_ by Casey Rosenthal and Nora Jones
+- _The Site Reliability Engineering Handbook_ by Google SRE Team
+- _Antifragile: Things That Gain from Disorder_ by Nassim Nicholas Taleb
 
 **Technical Implementation:**
+
 - Netflix Tech Blog: Chaos Engineering series
 - AWS Architecture Center: Fault Injection Testing
 - Gremlin's Chaos Engineering Handbook
 
 **Research Papers:**
+
 - "Lineage-driven Fault Injection" (ACM SIGMOD)
 - "Principles of Chaos Engineering" (Netflix Technology Blog)
 - "Testing Distributed Systems" by Kyle Kingsbury (Jepsen series)

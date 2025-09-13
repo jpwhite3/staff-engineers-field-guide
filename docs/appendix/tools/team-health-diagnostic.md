@@ -47,7 +47,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ### Domain 1: Psychological Safety & Trust
 
 **1.1 Speaking Up and Challenge**
-*"Team members feel safe to express concerns, ask questions, and challenge decisions"*
+_"Team members feel safe to express concerns, ask questions, and challenge decisions"_
 
 ```
 □ 5: Team members routinely challenge decisions and offer alternative perspectives, even to senior members
@@ -58,12 +58,13 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **Evidence to Consider:**
+
 - How often do team members ask questions in meetings?
 - Do junior members challenge senior members' technical decisions?
 - When someone makes a mistake, how does the team respond?
 
 **1.2 Learning from Failure**
-*"The team treats mistakes and failures as learning opportunities rather than blame events"*
+_"The team treats mistakes and failures as learning opportunities rather than blame events"_
 
 ```
 □ 5: Failures lead to systematic improvements and knowledge sharing across the organization
@@ -74,7 +75,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **1.3 Inclusion and Belonging**
-*"All team members feel valued, heard, and able to contribute their best work"*
+_"All team members feel valued, heard, and able to contribute their best work"_
 
 ```
 □ 5: Team actively leverages diverse perspectives and everyone regularly contributes
@@ -87,7 +88,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ### Domain 2: Technical Excellence & Practices
 
 **2.1 Code Quality and Maintainability**
-*"The codebase enables rapid, confident changes and is pleasant to work with"*
+_"The codebase enables rapid, confident changes and is pleasant to work with"_
 
 ```
 □ 5: Codebase is exemplary and enables very rapid feature development
@@ -98,7 +99,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **2.2 Testing and Quality Practices**
-*"Testing practices provide confidence and enable rapid iteration"*
+_"Testing practices provide confidence and enable rapid iteration"_
 
 ```
 □ 5: Comprehensive testing strategy enables fearless refactoring and rapid experimentation
@@ -109,7 +110,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **2.3 Delivery and Deployment Practices**
-*"Team can deploy changes safely, frequently, and with minimal manual overhead"*
+_"Team can deploy changes safely, frequently, and with minimal manual overhead"_
 
 ```
 □ 5: Fully automated deployment with advanced practices like feature flags and blue/green deployments
@@ -122,7 +123,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ### Domain 3: Communication & Collaboration
 
 **3.1 Information Sharing**
-*"Important information flows effectively throughout the team and to stakeholders"*
+_"Important information flows effectively throughout the team and to stakeholders"_
 
 ```
 □ 5: Information sharing is seamless and everyone has context they need when they need it
@@ -133,7 +134,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **3.2 Decision Making Process**
-*"The team has clear, effective processes for making technical and project decisions"*
+_"The team has clear, effective processes for making technical and project decisions"_
 
 ```
 □ 5: Decision-making is efficient, inclusive, and results in well-understood commitments
@@ -144,7 +145,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **3.3 Conflict Resolution**
-*"Team handles disagreements constructively and uses conflict to improve outcomes"*
+_"Team handles disagreements constructively and uses conflict to improve outcomes"_
 
 ```
 □ 5: Disagreements lead to better solutions and stronger team relationships
@@ -157,7 +158,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ### Domain 4: Goal Alignment & Strategic Focus
 
 **4.1 Purpose and Direction Clarity**
-*"Team members understand and are aligned on goals, priorities, and success metrics"*
+_"Team members understand and are aligned on goals, priorities, and success metrics"_
 
 ```
 □ 5: Everyone clearly understands priorities and can explain how their work drives business outcomes
@@ -168,7 +169,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **4.2 Stakeholder Relationship Management**
-*"Team maintains productive relationships with product managers, other teams, and leadership"*
+_"Team maintains productive relationships with product managers, other teams, and leadership"_
 
 ```
 □ 5: Exceptional stakeholder relationships that enable proactive collaboration and mutual support
@@ -179,7 +180,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **4.3 Adaptability and Learning**
-*"Team effectively adapts to changing requirements and learns from experience"*
+_"Team effectively adapts to changing requirements and learns from experience"_
 
 ```
 □ 5: Team proactively anticipates changes and rapidly adapts strategies and approaches
@@ -192,7 +193,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ### Domain 5: Individual Growth & Team Development
 
 **5.1 Skill Development and Learning**
-*"Team members are developing their capabilities and advancing their careers"*
+_"Team members are developing their capabilities and advancing their careers"_
 
 ```
 □ 5: Systematic approach to skill development with strong mentoring and growth opportunities
@@ -203,7 +204,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **5.2 Feedback and Coaching Culture**
-*"Team members give and receive effective feedback that drives improvement"*
+_"Team members give and receive effective feedback that drives improvement"_
 
 ```
 □ 5: Excellent feedback culture that accelerates everyone's growth and performance
@@ -214,7 +215,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **5.3 Recognition and Motivation**
-*"Team members feel recognized for their contributions and motivated by their work"*
+_"Team members feel recognized for their contributions and motivated by their work"_
 
 ```
 □ 5: Strong recognition culture with high motivation and engagement across the team
@@ -227,7 +228,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ### Domain 6: Operational Excellence & System Health
 
 **6.1 Monitoring and Observability**
-*"Team has excellent visibility into system health and can quickly identify and resolve issues"*
+_"Team has excellent visibility into system health and can quickly identify and resolve issues"_
 
 ```
 □ 5: Comprehensive observability that enables proactive problem resolution and optimization
@@ -238,7 +239,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **6.2 Incident Response and Learning**
-*"Team responds effectively to incidents and uses them as opportunities for improvement"*
+_"Team responds effectively to incidents and uses them as opportunities for improvement"_
 
 ```
 □ 5: Exceptional incident response with systematic learning and prevention improvements
@@ -249,7 +250,7 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ```
 
 **6.3 Technical Debt Management**
-*"Team actively manages technical debt and maintains system maintainability"*
+_"Team actively manages technical debt and maintains system maintainability"_
 
 ```
 □ 5: Proactive technical debt management that maintains excellent system health
@@ -262,16 +263,17 @@ The scoring scale is designed to help teams recognize both their strengths and t
 ## Scoring and Analysis
 
 ### Domain Score Calculation
+
 Calculate the average score for each domain:
 
-- **Domain 1 (Psychological Safety)**: ___/5
-- **Domain 2 (Technical Excellence)**: ___/5
-- **Domain 3 (Communication)**: ___/5
-- **Domain 4 (Goal Alignment)**: ___/5
-- **Domain 5 (Growth & Development)**: ___/5
-- **Domain 6 (Operational Excellence)**: ___/5
+- **Domain 1 (Psychological Safety)**: \_\_\_/5
+- **Domain 2 (Technical Excellence)**: \_\_\_/5
+- **Domain 3 (Communication)**: \_\_\_/5
+- **Domain 4 (Goal Alignment)**: \_\_\_/5
+- **Domain 5 (Growth & Development)**: \_\_\_/5
+- **Domain 6 (Operational Excellence)**: \_\_\_/5
 
-**Overall Team Health Score: ___/5**
+**Overall Team Health Score: \_\_\_/5**
 
 ### Team Health Matrix
 
@@ -284,7 +286,7 @@ High Performance (4.0-5.0)    |  Thriving Teams        |  High-Performing Teams
                               |                        |
                               |------------------------|
                               |                        |
-Low Performance (1.0-3.9)    |  Struggling Teams      |  Inconsistent Teams  
+Low Performance (1.0-3.9)    |  Struggling Teams      |  Inconsistent Teams
                               |  (Multiple challenges, |  (Some strengths,
                               |   needs intervention)  |   some challenges)
                               |                        |
@@ -304,28 +306,28 @@ Your team has built excellent fundamentals in human dynamics, communication, and
 
 The strength of your foundation means that targeted improvements in technical or process areas often generate significant performance gains quickly. Your strong team dynamics provide the collaboration and learning capacity needed to rapidly adopt new practices, and your sustainable work patterns mean you can maintain momentum for improvement efforts without risking burnout or quality degradation.
 
-*Priority Focus Areas:* Technical excellence practices, delivery process optimization, goal clarity and measurement systems, technical decision-making frameworks
+_Priority Focus Areas:_ Technical excellence practices, delivery process optimization, goal clarity and measurement systems, technical decision-making frameworks
 
 **High-Performing Teams (High Performance, High Sustainability)**
 Your team is operating at an exceptional level across all dimensions of team health—you're delivering excellent results while maintaining practices that support continued high performance over time. This represents the target state for team development, where strong technical practices, effective collaboration, clear goals, and individual growth create a reinforcing system of continuous improvement.
 
 At this level, your development focus shifts from addressing deficiencies to maintaining excellence, scaling your impact, and contributing to broader organizational capability. High-performing teams often become force multipliers by sharing their practices, mentoring other teams, and taking on complex challenges that require both technical excellence and strong collaboration.
 
-*Strategic Focus Areas:* Knowledge sharing across the organization, mentoring and developing other teams, innovation and experimentation, taking on high-complexity challenges that leverage your team's strengths
+_Strategic Focus Areas:_ Knowledge sharing across the organization, mentoring and developing other teams, innovation and experimentation, taking on high-complexity challenges that leverage your team's strengths
 
 **Struggling Teams (Low Performance, Low Sustainability)**  
 Multiple fundamental issues are limiting both your current delivery and your ability to improve over time. This pattern often indicates that basic team functioning needs attention before focusing on advanced technical practices or delivery optimization. The key insight is that trying to solve performance issues without addressing underlying team dynamics often fails because the collaboration and communication patterns needed for improvement aren't working effectively.
 
 The most effective approach typically involves prioritizing psychological safety and communication effectiveness first, which creates the foundation for addressing technical and process issues. This isn't about delaying technical improvements indefinitely, but about creating the team conditions that make technical improvements possible and sustainable.
 
-*Urgent Focus Areas:* Establishing psychological safety, improving basic communication patterns, clarifying roles and expectations, securing appropriate leadership support, building trust and collaboration foundations
+_Urgent Focus Areas:_ Establishing psychological safety, improving basic communication patterns, clarifying roles and expectations, securing appropriate leadership support, building trust and collaboration foundations
 
 **Inconsistent Teams (High Performance, Low Sustainability)**
 You're delivering strong results but may be doing so through approaches that aren't sustainable over time. This pattern often emerges when teams face high pressure to deliver and respond by working longer hours, cutting corners on technical practices, or reducing focus on team dynamics and individual growth. The short-term performance gains often come at the cost of future capability.
 
 The risk with this pattern is that performance often degrades over time as technical debt accumulates, team members burn out, or key contributors leave for more sustainable situations. The challenge is maintaining delivery expectations while investing in the practices and dynamics that support long-term sustainability.
 
-*Critical Focus Areas:* Sustainable work practices, team communication and conflict resolution, technical debt management, individual growth and retention, workload and expectation management
+_Critical Focus Areas:_ Sustainable work practices, team communication and conflict resolution, technical debt management, individual growth and retention, workload and expectation management
 
 ## Action Planning Framework
 
@@ -351,6 +353,7 @@ These often represent tactical improvements that can boost team morale or remove
 Examples might include simple process changes that remove administrative overhead, tool improvements that reduce daily frustration, or communication practices that improve day-to-day collaboration. The value comes from their ability to generate visible progress quickly while larger improvements develop over time.
 
 **Low Impact, Low Urgency (Monitor):**
+
 - Areas where the team is already performing well
 - Nice-to-have improvements without clear benefit
 
@@ -361,23 +364,23 @@ Sustainable team improvement happens through a carefully sequenced approach that
 **30 Days - Quick Wins and Foundation Setting:**
 Focus on changes that can be implemented quickly and will create immediate positive impact while establishing the foundation for larger improvements. These might include communication practice changes, simple process adjustments, or tool improvements that remove daily friction.
 
-- [ ] Specific action: *Choose 1-2 concrete changes that can be implemented immediately and will demonstrate the team's commitment to improvement*
-- [ ] Owner: *Assign clear ownership to ensure accountability and follow-through*
-- [ ] Success measure: *Define observable outcomes that will indicate whether the change is working*
+- [ ] Specific action: _Choose 1-2 concrete changes that can be implemented immediately and will demonstrate the team's commitment to improvement_
+- [ ] Owner: _Assign clear ownership to ensure accountability and follow-through_
+- [ ] Success measure: _Define observable outcomes that will indicate whether the change is working_
 
 **60 Days - Process Improvements and Skill Development:**
 Build on the momentum from quick wins to implement more substantial process improvements or begin skill development initiatives that require sustained effort but don't fundamentally change how the team operates. This might involve establishing new practices, improving existing workflows, or beginning team learning initiatives.
 
-- [ ] Specific action: *Focus on changes that improve how the team works together or delivers value*
-- [ ] Owner: *May involve multiple people but should have clear coordination responsibility*
-- [ ] Success measure: *Should include both implementation metrics and outcome measures*
+- [ ] Specific action: _Focus on changes that improve how the team works together or delivers value_
+- [ ] Owner: _May involve multiple people but should have clear coordination responsibility_
+- [ ] Success measure: _Should include both implementation metrics and outcome measures_
 
 **90 Days - Systematic Changes and Cultural Development:**
 Implement changes that affect fundamental team patterns, establish new norms that will persist over time, or address deeper organizational or technical issues that require sustained effort and coordination with other teams. These changes often build on the trust and capability developed through earlier improvement efforts.
 
-- [ ] Specific action: *Choose changes that will have lasting impact on team effectiveness*
-- [ ] Owner: *Often requires team-wide commitment with specific coordination roles*
-- [ ] Success measure: *Should focus on sustained behavior change and long-term outcome measures*
+- [ ] Specific action: _Choose changes that will have lasting impact on team effectiveness_
+- [ ] Owner: _Often requires team-wide commitment with specific coordination roles_
+- [ ] Success measure: _Should focus on sustained behavior change and long-term outcome measures_
 
 ### Tracking Progress
 
@@ -402,6 +405,7 @@ Use the full diagnostic framework to measure progress and guide strategic planni
 ## Advanced Analysis Techniques
 
 ### Response Pattern Analysis
+
 Look for patterns in how team members responded:
 
 **Consensus Areas:** Where most responses were similar (within 1 point)
@@ -411,6 +415,7 @@ Look for patterns in how team members responded:
 Divergent areas often indicate important discussion topics for the team.
 
 ### Correlation Analysis
+
 Look for relationships between domains:
 
 - Do teams with high psychological safety also have better technical practices?
@@ -420,6 +425,7 @@ Look for relationships between domains:
 These correlations can help identify root causes and systemic improvements.
 
 ### Benchmark Comparisons
+
 Compare your team's scores to:
 
 - Other teams in your organization
@@ -432,29 +438,35 @@ Remember that the goal isn't to rank teams but to identify improvement opportuni
 
 This diagnostic connects directly to field guide chapters for targeted team development:
 
-**Psychological Safety (Domain 1)**: 
+**Psychological Safety (Domain 1)**:
+
 - [Cultural Transformation & Psychological Safety](../../field-guide/teamwork/cultural-transformation-psychological-safety.md) - Building psychologically safe environments
 - [Psychological Safety & Trust](../../field-guide/leadership/psychological-safety-trust.md) - Leadership practices for safety
 
-**Technical Excellence (Domain 2)**: 
+**Technical Excellence (Domain 2)**:
+
 - [Clean Architecture](../../field-guide/engineering/clean-architecture.md) - Code quality and maintainability
 - [Test-Driven Development](../../field-guide/engineering/tdd.md) - Testing practices and quality
 - [Continuous Delivery](../../field-guide/engineering/continuous-delivery.md) - Deployment and delivery practices
 
-**Communication (Domain 3)**: 
+**Communication (Domain 3)**:
+
 - [Giving & Receiving Feedback](../../field-guide/leadership/giving-receiving-feedback.md) - Feedback culture development
 - [Delivering Difficult Messages](../../field-guide/leadership/delivering-difficult-messages.md) - Conflict resolution skills
 - [The Culture Map](../../field-guide/teamwork/culture-map.md) - Cross-cultural communication
 
-**Goal Alignment (Domain 4)**: 
+**Goal Alignment (Domain 4)**:
+
 - [Strategic Thinking](../../field-guide/execution/strategic-thinking.md) - OKR frameworks and business alignment
 - [Cross-Functional Collaboration](../../field-guide/teamwork/cross-functional-collaboration.md) - Stakeholder relationships
 
-**Growth & Development (Domain 5)**: 
+**Growth & Development (Domain 5)**:
+
 - [Advanced Mentorship & Career Development](../../field-guide/leadership/advanced-mentorship-career-development.md) - Skill development systems
 - [The Learning Organization](../../field-guide/learning/learning-organization.md) - Creating learning cultures
 
-**Operational Excellence (Domain 6)**: 
+**Operational Excellence (Domain 6)**:
+
 - [Site Reliability Engineering](../../field-guide/engineering/site-reliability-engineering.md) - Monitoring, incidents, and SRE practices
 - [DevOps & Automation](../../field-guide/engineering/devops.md) - Technical debt and operational practices
 

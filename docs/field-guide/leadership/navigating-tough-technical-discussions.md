@@ -26,12 +26,12 @@ Successfully navigating technical discussions, particularly when confronted with
 1.  **Anticipate & Prioritize:** Proactively prepare responses for the key risks and challenges in your project.
 2.  **Understand the Audience:** Tailor your explanation to the listener’s knowledge level.
 3.  **Frame the Question:** Acknowledge the question’s validity. "That’s a really important question..."
-4.  **Provide Context:** Explain *why* the question is relevant to the project's goals.
+4.  **Provide Context:** Explain _why_ the question is relevant to the project's goals.
 5.  **Offer a Range of Solutions:** Outline multiple options, discussing the pros and cons of each.
 6.  **Support Your Claims:** Back up your responses with data, metrics, or case studies.
 7.  **Emphasize Trade-offs:** Acknowledge that there’s rarely a perfect solution.
 
 ## Further Reading
 
--   *"Talking with Tech People"* by Michael Lopp
--   *"The Pragmatic Programmer"* by Andrew Hunt and David Thomas
+- _"Talking with Tech People"_ by Michael Lopp
+- _"The Pragmatic Programmer"_ by Andrew Hunt and David Thomas

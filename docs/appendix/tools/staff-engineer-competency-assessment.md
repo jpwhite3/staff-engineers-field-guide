@@ -11,100 +11,104 @@ This comprehensive assessment framework recognizes that technical leadership ope
 The assessment evaluates six core domains that research and practice have identified as essential for technical leadership effectiveness. Each domain builds on the others—strong technical architecture capabilities support strategic thinking, influence skills enable better communication, and critical thinking improves decision-making across all areas. Understanding your current capabilities across these domains provides a foundation for targeted development that maximizes your impact and career growth.
 
 !!! info "How to Use This Assessment"
-    The value of this assessment comes not from achieving perfect scores, but from honest self-reflection that guides continuous improvement. Answer based on your current demonstrated capabilities, not your aspirations or theoretical knowledge. Consider concrete evidence from your recent work—specific projects, decisions, interactions, and outcomes from the past six months. Use the results as a baseline for development planning, focusing on the 1-2 areas that will have the highest impact on your effectiveness in your current role and career goals. Revisit the assessment quarterly to track progress and adjust your development focus as your role and organizational context evolve.
+The value of this assessment comes not from achieving perfect scores, but from honest self-reflection that guides continuous improvement. Answer based on your current demonstrated capabilities, not your aspirations or theoretical knowledge. Consider concrete evidence from your recent work—specific projects, decisions, interactions, and outcomes from the past six months. Use the results as a baseline for development planning, focusing on the 1-2 areas that will have the highest impact on your effectiveness in your current role and career goals. Revisit the assessment quarterly to track progress and adjust your development focus as your role and organizational context evolve.
 
 ## Assessment Domains
 
 ### Domain 1: Technical Architecture & Engineering Excellence
 
 !!! question "1.1 Clean Architecture & System Design"
-    
+
     **Self-Assessment Scale:**
-    
+
     - [ ] **Novice (1):** Implement features within existing patterns
-    - [ ] **Developing (2):** Design individual services with clean principles  
+    - [ ] **Developing (2):** Design individual services with clean principles
     - [x] **Proficient (3):** Design system-wide architectures balancing excellence with business needs
     - [ ] **Advanced (4):** Influence multi-team decisions and refactor complex systems
     - [ ] **Expert (5):** Set organizational standards and mentor architectural thinking
-    
+
     **Current Level: 3/5** - Proficient
-    
+
     ??? example "Evidence Questions"
         - Have you designed or influenced a system architecture decision recently?
         - Can you give examples of applying clean architecture to solve business problems?
         - How do you balance technical perfection with delivery timelines?
 
 !!! question "1.2 Site Reliability & Operations Excellence"
-    
+
     **Self-Assessment Scale:**
-    
+
     - [ ] **Novice (1):** Monitor and debug applications in production
     - [x] **Developing (2):** Design basic observability and establish SLIs
     - [ ] **Proficient (3):** Establish comprehensive SLO frameworks and lead incident response
     - [ ] **Advanced (4):** Design resilience patterns and drive operational excellence
     - [ ] **Expert (5):** Establish organization-wide reliability practices
-    
+
     **Current Level: 2/5** - Developing
-    
+
     ??? example "Evidence Questions"
         - How do you approach setting SLOs for technical systems?
         - Can you describe an incident you led and what changes resulted?
         - How do you balance reliability investment with feature development?
 
 !!! question "1.3 Continuous Delivery & DevOps Culture"
-    
+
     **Self-Assessment Scale:**
-    
+
     - [ ] **Novice (1):** Use existing CI/CD pipelines for deployments
-    - [ ] **Developing (2):** Design deployment pipelines for individual services  
+    - [ ] **Developing (2):** Design deployment pipelines for individual services
     - [ ] **Proficient (3):** Establish comprehensive testing strategies and deployment practices
     - [x] **Advanced (4):** Design organization-wide delivery practices and cultural transformation
     - [ ] **Expert (5):** Transform organizational delivery capabilities and culture
-    
+
     **Current Level: 4/5** - Advanced
+
 □ Expert (5): I influence industry practices and drive delivery performance improvements
+
 ```
 
 ### Domain 2: Strategic Thinking & Business Alignment
 
 !!! question "2.1 Strategic Technical Decision Making"
-    
+
     **Self-Assessment Scale:**
-    
+
     - [ ] **Novice (1):** Execute technical projects with clear requirements
     - [ ] **Developing (2):** Connect technical work to team goals and business impact
     - [ ] **Proficient (3):** Identify technical opportunities that drive business outcomes
     - [x] **Advanced (4):** Influence product and business strategy through technical insights
     - [ ] **Expert (5):** Shape company strategy and identify new business opportunities
-    
+
     **Current Level: 4/5** - Advanced
-    
+
     ??? example "Evidence Questions"
         - How do you prioritize competing technical initiatives?
         - Can you give an example of a technical decision that significantly impacted business outcomes?
         - How do you communicate technical strategy to non-technical stakeholders?
 
 !!! question "2.2 OKR Development & Strategic Alignment"
-    
+
     **Self-Assessment Scale:**
-    
+
     - [ ] **Novice (1):** Contribute to team OKRs and understand their purpose
     - [ ] **Developing (2):** Write technical OKRs that connect to business objectives
     - [x] **Proficient (3):** Cascade strategy through technical layers and measure outcomes
     - [ ] **Advanced (4):** Design OKR frameworks aligning engineering with business strategy
     - [ ] **Expert (5):** Influence company-wide goal-setting and strategic measurement
-    
+
     **Current Level: 3/5** - Proficient
 
 ### Domain 3: Leadership & Influence
 
 **3.1 Influencing Without Authority**
 ```
+
 □ Novice (1): I can advocate for technical approaches within my team
 □ Developing (2): I can build support for technical initiatives across multiple stakeholders
 □ Proficient (3): I can influence technical decisions across teams using evidence and relationships
 □ Advanced (4): I can drive organizational technical transformation through influence and coalition building
 □ Expert (5): I regularly influence industry practices and set technical direction for multiple organizations
+
 ```
 
 **Evidence Questions:**
@@ -114,89 +118,107 @@ The assessment evaluates six core domains that research and practice have identi
 
 **3.2 Advanced Conflict Resolution**
 ```
+
 □ Novice (1): I can participate constructively in technical disagreements
 □ Developing (2): I can facilitate resolution of technical conflicts within my team
 □ Proficient (3): I can mediate complex technical disputes across teams and resolve underlying issues
 □ Advanced (4): I can transform organizational conflict patterns and establish better decision-making processes
 □ Expert (5): I'm regularly called upon to resolve high-stakes technical and organizational conflicts
+
 ```
 
 **3.3 Mentorship & Career Development**
 ```
+
 □ Novice (1): I can provide technical guidance to junior engineers on my team
 □ Developing (2): I can mentor engineers in technical skills and career development
 □ Proficient (3): I can develop systematic mentorship programs and career progression frameworks
 □ Advanced (4): I can design organization-wide talent development systems
 □ Expert (5): I influence industry practices for technical talent development
+
 ```
 
 ### Domain 4: Communication & Collaboration
 
 **4.1 Technical Communication Excellence**
 ```
+
 □ Novice (1): I can explain technical concepts clearly to other engineers
 □ Developing (2): I can write technical documentation and present to mixed audiences
 □ Proficient (3): I can tailor technical communication to different audiences and drive understanding
 □ Advanced (4): I can influence technical decisions through exceptional communication and storytelling
 □ Expert (5): My technical communication regularly influences industry practices and standards
+
 ```
 
 **4.2 Cross-Cultural & Remote Collaboration**
 ```
+
 □ Novice (1): I can work effectively with teammates from different backgrounds
 □ Developing (2): I can adapt my communication style for different cultural contexts
 □ Proficient (3): I can lead global teams and create inclusive collaboration practices
 □ Advanced (4): I can design organizational practices that leverage cultural diversity
 □ Expert (5): I influence industry practices for global technical collaboration
+
 ```
 
 **4.3 Difficult Conversations & Feedback**
 ```
+
 □ Novice (1): I can give and receive technical feedback constructively
 □ Developing (2): I can navigate difficult technical conversations and deliver challenging messages
 □ Proficient (3): I can transform conflict into learning opportunities and build stronger relationships
 □ Advanced (4): I can coach others in difficult conversation skills and improve team dynamics
 □ Expert (5): I design organizational practices that transform how teams handle difficult conversations
+
 ```
 
 ### Domain 5: Organizational Design & Team Effectiveness
 
 **5.1 Team Topology & Organizational Design**
 ```
+
 □ Novice (1): I understand how my team fits into the larger organization
 □ Developing (2): I can identify team interaction problems and suggest improvements
 □ Proficient (3): I can design team structures that enable effective delivery and collaboration
 □ Advanced (4): I can lead organizational design transformation and establish effective team patterns
 □ Expert (5): I influence industry practices for engineering organizational design
+
 ```
 
 **5.2 Psychological Safety & Culture**
 ```
+
 □ Novice (1): I contribute to a positive team culture and psychological safety
 □ Developing (2): I can identify and address team culture issues within my group
 □ Proficient (3): I can build psychologically safe environments and lead cultural transformation
 □ Advanced (4): I can design organization-wide culture initiatives and measure their impact
 □ Expert (5): I influence industry practices for engineering culture and psychological safety
+
 ```
 
 ### Domain 6: Critical Thinking & Decision Making
 
 **6.1 Systems Thinking & Complex Problem Solving**
 ```
+
 □ Novice (1): I can analyze technical problems and identify solutions
 □ Developing (2): I can identify system-level patterns and unintended consequences
 □ Proficient (3): I can design interventions that address root causes rather than symptoms
 □ Advanced (4): I can facilitate organizational learning and design better decision-making systems
 □ Expert (5): I influence how organizations think about complex technical and business problems
+
 ```
 
 **6.2 Cognitive Bias Awareness & Decision Quality**
 ```
+
 □ Novice (1): I can make technical decisions using available information
 □ Developing (2): I can identify when I might have incomplete information or bias
 □ Proficient (3): I can design decision processes that account for uncertainty and bias
 □ Advanced (4): I can coach others in decision-making quality and establish better organizational practices
 □ Expert (5): I influence industry practices for technical decision-making under uncertainty
+
 ```
 
 ## Competency Scoring & Interpretation
@@ -205,7 +227,7 @@ The assessment evaluates six core domains that research and practice have identi
 **Calculate your average score for each domain (1-5 scale):**
 
 - Domain 1 (Technical Architecture): ___/5
-- Domain 2 (Strategic Thinking): ___/5  
+- Domain 2 (Strategic Thinking): ___/5
 - Domain 3 (Leadership & Influence): ___/5
 - Domain 4 (Communication): ___/5
 - Domain 5 (Organizational Design): ___/5
@@ -222,7 +244,7 @@ At this stage, you're transitioning from individual contributor excellence to un
 
 The most effective development approach involves finding mentors who demonstrate excellence in your priority areas and actively seeking stretch assignments that require you to practice specific skills in real-world contexts. This isn't about reading about leadership—it's about progressively taking on more complex challenges that demand the capabilities you're trying to build. Your learning should be anchored in concrete experience, supported by foundational reading and reflection on both successes and failures.
 
-**Developing (2.0-2.9): Building Capability** 
+**Developing (2.0-2.9): Building Capability**
 Your solid foundations enable you to take on broader leadership responsibilities, but the key developmental challenge is expanding your impact beyond your immediate team context. This requires shifting from reactive problem-solving to proactive initiative-taking, from working within existing systems to improving the systems themselves, and from focusing on individual technical excellence to building technical capability across multiple people.
 
 Success at this level means developing systematic approaches to recurring problems rather than solving each instance independently. Whether it's establishing code review standards, improving deployment processes, or facilitating cross-team technical decisions, you're beginning to think about creating lasting improvements rather than point solutions. This is also where building your reputation through consistent technical excellence becomes important—your growing influence depends on others trusting your technical judgment and implementation capabilities.
@@ -255,7 +277,7 @@ Rather than trying to improve across all domains simultaneously, effective devel
 **High Impact, High Urgency (Do First):**
 These represent your most critical development opportunities—areas where improvement will immediately enhance your effectiveness and where gaps are currently limiting your impact. Domains scoring below 2.0 that are essential for your current role fall into this category, as do specific skills gaps that you've identified as blocking your ability to deliver on current responsibilities. Focus no more than 1-2 development areas in this quadrant to ensure you can make meaningful progress rather than spreading your efforts too thin.
 
-**High Impact, Low Urgency (Schedule):**  
+**High Impact, Low Urgency (Schedule):**
 These areas represent strategic investments in your future effectiveness—capabilities that will become increasingly important as you take on broader responsibilities or move toward your next career stage. Domains scoring 2.0-3.0 that align with your career goals typically fit here, along with skills that are important for roles you're preparing to take on. While these don't require immediate attention, scheduling regular progress on these areas prevents them from becoming urgent gaps later and positions you for advancement opportunities.
 
 **Low Impact, High Urgency (Delegate/Minimize):**
@@ -278,7 +300,7 @@ The most effective leadership development happens through deliberate practice in
 The goal of learning activities is to provide frameworks and mental models that inform your practice, not to accumulate knowledge for its own sake. Choose resources that connect directly to your development focus:
 
 - [ ] Field guide chapters to study: ___
-- [ ] Books to read: ___  
+- [ ] Books to read: ___
 - [ ] Skills to practice: ___
 
 **Application Opportunities:**
@@ -382,3 +404,4 @@ Each domain maps to carefully selected field guide chapters that provide both th
 This assessment framework provides a structured approach to technical leadership development that connects directly to the comprehensive guidance throughout this field guide. Think of it as a compass for your growth journey—it helps you understand your current position and identify the most valuable direction for continued development, but the real value comes from the deliberate practice and reflection you invest in building these capabilities.
 
 Remember that technical leadership is ultimately measured by your impact on the people, systems, and organizations you work with rather than by assessment scores. Use this framework to guide your development priorities and track your progress, but always stay focused on how your growing capabilities translate into more effective collaboration, better technical decisions, and stronger organizational outcomes.
+```

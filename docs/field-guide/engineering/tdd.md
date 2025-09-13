@@ -10,17 +10,17 @@ This team needs more than just "more tests"—they need a fundamental shift in h
 
 ### TDD Is:
 
-* A design approach that uses tests to drive implementation
-* A rapid feedback cycle for developers
-* A way to build a comprehensive regression suite as a byproduct of development
-* A technique for writing only the code that's needed
+- A design approach that uses tests to drive implementation
+- A rapid feedback cycle for developers
+- A way to build a comprehensive regression suite as a byproduct of development
+- A technique for writing only the code that's needed
 
 ### TDD Isn't:
 
-* Writing tests after implementation to verify behavior
-* A replacement for other types of testing (e.g., integration, system)
-* A guarantee of good design (it supports good design but doesn't ensure it)
-* A silver bullet for all quality problems
+- Writing tests after implementation to verify behavior
+- A replacement for other types of testing (e.g., integration, system)
+- A guarantee of good design (it supports good design but doesn't ensure it)
+- A silver bullet for all quality problems
 
 ## The TDD Cycle: Red, Green, Refactor
 
@@ -34,9 +34,9 @@ Write a small test that defines a function or improvement you want to make. Run 
 // Red: A failing test for a not-yet-implemented function
 test('should calculate total price including tax', () => {
   const cart = new ShoppingCart();
-  cart.add(new Product('book', 10.00));
-  
-  expect(cart.getTotalWithTax(0.10)).toBe(11.00); // 10.00 + 10% tax
+  cart.add(new Product('book', 10.0));
+
+  expect(cart.getTotalWithTax(0.1)).toBe(11.0); // 10.00 + 10% tax
 });
 ```
 
@@ -50,13 +50,16 @@ class ShoppingCart {
   constructor() {
     this.items = [];
   }
-  
+
   add(product) {
     this.items.push(product);
   }
-  
+
   getTotalWithTax(taxRate) {
-    const subtotal = this.items.reduce((sum, product) => sum + product.price, 0);
+    const subtotal = this.items.reduce(
+      (sum, product) => sum + product.price,
+      0
+    );
     return subtotal * (1 + taxRate);
   }
 }
@@ -72,15 +75,15 @@ class ShoppingCart {
   constructor() {
     this.items = [];
   }
-  
+
   add(product) {
     this.items.push(product);
   }
-  
+
   getSubtotal() {
     return this.items.reduce((sum, product) => sum + product.price, 0);
   }
-  
+
   getTotalWithTax(taxRate) {
     return this.getSubtotal() * (1 + taxRate);
   }
@@ -96,6 +99,7 @@ TDD's most powerful benefit isn't catching bugs—it's driving better design:
 TDD forces you to think about how your code will be used before you write it. This leads to more intuitive APIs and better abstraction.
 
 **Before TDD thinking:**
+
 ```javascript
 // Implementation-focused, unclear interface
 class UserService {
@@ -106,6 +110,7 @@ class UserService {
 ```
 
 **After TDD thinking:**
+
 ```javascript
 // Clear interface, separated concerns
 class UserService {
@@ -123,18 +128,18 @@ class NotificationService {
 
 When code is hard to test, it's usually a sign of poor design. TDD naturally pushes you toward:
 
-* Smaller, focused functions and classes
-* Dependency injection for better testability
-* Clear separation of business logic from I/O
-* Explicit rather than implicit dependencies
+- Smaller, focused functions and classes
+- Dependency injection for better testability
+- Clear separation of business logic from I/O
+- Explicit rather than implicit dependencies
 
 ### 3. Just Enough Generalization
 
 TDD helps you find the right level of abstraction:
 
-* Write one test: You'll likely hardcode a solution
-* Write two tests: You might duplicate logic
-* Write three tests: You'll likely refactor to a proper abstraction
+- Write one test: You'll likely hardcode a solution
+- Write two tests: You might duplicate logic
+- Write three tests: You'll likely refactor to a proper abstraction
 
 ## Testing Patterns for Different Code Types
 
@@ -142,22 +147,22 @@ Different types of code require different testing approaches:
 
 ### 1. Domain Logic and Algorithms
 
-* **Focus on:** Input/output pairs, edge cases, error conditions
-* **Pattern:** Write tests with representative examples of input data and expected outputs
+- **Focus on:** Input/output pairs, edge cases, error conditions
+- **Pattern:** Write tests with representative examples of input data and expected outputs
 
 ```javascript
 test('should calculate correct discounts for loyalty program', () => {
   const discountCalculator = new DiscountCalculator();
-  
+
   // New customer (0 years)
   expect(discountCalculator.calculate(100, 0)).toBe(0);
-  
+
   // 1-year customer (5% discount)
   expect(discountCalculator.calculate(100, 1)).toBe(5);
-  
+
   // 5-year customer (10% discount)
   expect(discountCalculator.calculate(100, 5)).toBe(10);
-  
+
   // Maximum discount cap (15%)
   expect(discountCalculator.calculate(100, 20)).toBe(15);
 });
@@ -165,18 +170,18 @@ test('should calculate correct discounts for loyalty program', () => {
 
 ### 2. Object-Oriented Code
 
-* **Focus on:** Behavior, state changes, interactions between objects
-* **Pattern:** Use given-when-then structure (Behavior-Driven Development style)
+- **Focus on:** Behavior, state changes, interactions between objects
+- **Pattern:** Use given-when-then structure (Behavior-Driven Development style)
 
 ```javascript
 test('order state should change when paid', () => {
   // Given
   const order = new Order(items, customer);
   expect(order.status).toBe('PENDING');
-  
+
   // When
   order.markAsPaid();
-  
+
   // Then
   expect(order.status).toBe('PAID');
   expect(order.paidAt).toBeDefined();
@@ -185,25 +190,27 @@ test('order state should change when paid', () => {
 
 ### 3. External Dependencies
 
-* **Focus on:** Isolating the system under test from external dependencies
-* **Pattern:** Use test doubles (mocks, stubs, spies)
+- **Focus on:** Isolating the system under test from external dependencies
+- **Pattern:** Use test doubles (mocks, stubs, spies)
 
 ```javascript
 test('should send notification when order is shipped', async () => {
   // Arrange
   const notificationService = {
-    sendShipmentNotification: jest.fn().mockResolvedValue(true)
+    sendShipmentNotification: jest.fn().mockResolvedValue(true),
   };
-  
+
   const order = new Order(items, customer);
   const shipmentService = new ShipmentService(notificationService);
-  
+
   // Act
   await shipmentService.ship(order);
-  
+
   // Assert
-  expect(notificationService.sendShipmentNotification)
-    .toHaveBeenCalledWith(customer.email, order.id);
+  expect(notificationService.sendShipmentNotification).toHaveBeenCalledWith(
+    customer.email,
+    order.id
+  );
 });
 ```
 
@@ -223,7 +230,7 @@ Most teams use test doubles inconsistently, creating confusion about when to use
 test('should create user account with any payment method', () => {
   const dummyPaymentMethod = {}; // Dummy - not used in this test
   const userService = new UserService(dummyPaymentMethod);
-  
+
   const user = userService.createAccount('test@example.com');
   expect(user.email).toBe('test@example.com');
 });
@@ -235,12 +242,12 @@ test('should create user account with any payment method', () => {
 test('should apply premium discount for premium customers', () => {
   // Stub always returns premium status
   const customerServiceStub = {
-    getCustomerTier: () => 'PREMIUM'
+    getCustomerTier: () => 'PREMIUM',
   };
-  
+
   const pricingService = new PricingService(customerServiceStub);
   const price = pricingService.calculatePrice(100, 'customer-123');
-  
+
   expect(price).toBe(85); // 15% premium discount applied
 });
 ```
@@ -250,15 +257,18 @@ test('should apply premium discount for premium customers', () => {
 ```javascript
 test('should notify audit service when user logs in', () => {
   const auditServiceMock = {
-    logUserActivity: jest.fn()
+    logUserActivity: jest.fn(),
   };
-  
+
   const authService = new AuthService(auditServiceMock);
   authService.login('user@example.com', 'password');
-  
+
   // Mock verifies the interaction occurred
-  expect(auditServiceMock.logUserActivity)
-    .toHaveBeenCalledWith('LOGIN', 'user@example.com', expect.any(Date));
+  expect(auditServiceMock.logUserActivity).toHaveBeenCalledWith(
+    'LOGIN',
+    'user@example.com',
+    expect.any(Date)
+  );
 });
 ```
 
@@ -271,15 +281,15 @@ class FakeUserRepository {
     this.users = new Map();
     this.nextId = 1;
   }
-  
+
   save(user) {
     if (!user.id) {
       user.id = this.nextId++;
     }
-    this.users.set(user.id, {...user});
+    this.users.set(user.id, { ...user });
     return user;
   }
-  
+
   findById(id) {
     return this.users.get(id) || null;
   }
@@ -303,24 +313,28 @@ class DatabaseTestFixture {
     this._database = null;
     this._testData = null;
   }
-  
+
   get database() {
     if (!this._database) {
       this._database = this.createTestDatabase();
     }
     return this._database;
   }
-  
+
   get testData() {
     if (!this._testData) {
       this._testData = this.loadTestData(this.database);
     }
     return this._testData;
   }
-  
+
   // Expensive operations only run when needed
-  createTestDatabase() { /* ... */ }
-  loadTestData(db) { /* ... */ }
+  createTestDatabase() {
+    /* ... */
+  }
+  loadTestData(db) {
+    /* ... */
+  }
 }
 ```
 
@@ -339,11 +353,11 @@ test('should process payment and update order status', () => {
     save: jest.fn(),
     findById: jest.fn().mockReturnValue(mockOrder)
   };
-  
+
   const orderService = new OrderService(paymentProcessor, orderRepository);
-  
+
   await orderService.processPayment('order-456');
-  
+
   // Behavior verification - check the interactions occurred
   expect(paymentProcessor).toHaveBeenCalledWith(mockOrder.amount, mockOrder.customerId);
   expect(orderRepository.save).toHaveBeenCalledWith(expect.objectContaining({
@@ -370,28 +384,28 @@ class TestDataBuilder {
       email: 'test@example.com',
       name: 'Test User',
       createdAt: new Date(),
-      ...overrides
+      ...overrides,
     };
   }
-  
+
   static order(user = null, overrides = {}) {
     return {
       id: 'test-order-' + Math.random(),
       customerId: user?.id || 'test-customer',
-      amount: 100.00,
+      amount: 100.0,
       status: 'PENDING',
-      ...overrides
+      ...overrides,
     };
   }
 }
 
 // Usage in tests becomes more expressive
 test('should calculate shipping for international orders', () => {
-  const internationalCustomer = TestDataBuilder.user({country: 'Canada'});
-  const order = TestDataBuilder.order(internationalCustomer, {amount: 50.00});
-  
+  const internationalCustomer = TestDataBuilder.user({ country: 'Canada' });
+  const order = TestDataBuilder.order(internationalCustomer, { amount: 50.0 });
+
   const shipping = shippingCalculator.calculate(order);
-  expect(shipping).toBe(15.00);
+  expect(shipping).toBe(15.0);
 });
 ```
 
@@ -409,25 +423,25 @@ Meszaros identifies several "test smells" that indicate problems with test desig
 
 ### 1. "TDD is too slow"
 
-* **Reality:** Initial TDD may feel slower, but it saves time by reducing debugging and rework
-* **Solution:** Start with critical paths and high-risk areas; measure the time spent on bugs before and after
+- **Reality:** Initial TDD may feel slower, but it saves time by reducing debugging and rework
+- **Solution:** Start with critical paths and high-risk areas; measure the time spent on bugs before and after
 
 ### 2. "I don't know what to test first"
 
-* **Solution:** Start with a simple "happy path" case, then add edge cases and error conditions
-* **Technique:** Write a test list before you begin coding to outline the scenarios you'll cover
+- **Solution:** Start with a simple "happy path" case, then add edge cases and error conditions
+- **Technique:** Write a test list before you begin coding to outline the scenarios you'll cover
 
 ### 3. "My code has too many dependencies to test easily"
 
-* **Reality:** This is a design smell TDD can help identify
-* **Solution:** Use dependency injection and interfaces to decouple your code
-* **Refactoring Pattern:** Extract Interface, Adapter, or Facade patterns to isolate hard-to-test components
+- **Reality:** This is a design smell TDD can help identify
+- **Solution:** Use dependency injection and interfaces to decouple your code
+- **Refactoring Pattern:** Extract Interface, Adapter, or Facade patterns to isolate hard-to-test components
 
 ### 4. "Tests become brittle and maintenance-heavy"
 
-* **Solution:** Focus tests on behavior, not implementation details
-* **Technique:** Use test fixtures and factories to reduce setup duplication
-* **Rule of Thumb:** If a minor code change breaks many tests, those tests are too coupled to implementation
+- **Solution:** Focus tests on behavior, not implementation details
+- **Technique:** Use test fixtures and factories to reduce setup duplication
+- **Rule of Thumb:** If a minor code change breaks many tests, those tests are too coupled to implementation
 
 ## Scaling TDD: From Individual Practice to Team Culture
 
@@ -435,27 +449,27 @@ As a Staff Engineer, your role isn't just to practice TDD yourself—it's to hel
 
 ### 1. Lead by Example
 
-* Demonstrate TDD in pair programming sessions
-* Share your test-first approach in code reviews
-* Make your thought process visible: "I'm starting with this test because..."
+- Demonstrate TDD in pair programming sessions
+- Share your test-first approach in code reviews
+- Make your thought process visible: "I'm starting with this test because..."
 
 ### 2. Provide the Right Tools
 
-* Set up fast, reliable test runners
-* Configure continuous integration to run tests automatically
-* Create test helpers and utilities that make testing easier
+- Set up fast, reliable test runners
+- Configure continuous integration to run tests automatically
+- Create test helpers and utilities that make testing easier
 
 ### 3. Establish Testing Norms
 
-* Define acceptable test coverage thresholds
-* Create shared patterns and idioms for tests
-* Recognize and praise good testing practices
+- Define acceptable test coverage thresholds
+- Create shared patterns and idioms for tests
+- Recognize and praise good testing practices
 
 ### 4. Address Systemic Barriers
 
-* Allocate time for improving test suites
-* Refactor hard-to-test code
-* Measure and celebrate improvements in quality metrics
+- Allocate time for improving test suites
+- Refactor hard-to-test code
+- Measure and celebrate improvements in quality metrics
 
 ## Advanced TDD Techniques
 
@@ -465,9 +479,9 @@ As your team matures in TDD practice, introduce more sophisticated techniques:
 
 Starting from high-level behavior and working inward:
 
-* Begin with acceptance tests describing user-visible behavior
-* Use mocks to define interfaces between components
-* Implement components to satisfy the interfaces
+- Begin with acceptance tests describing user-visible behavior
+- Use mocks to define interfaces between components
+- Implement components to satisfy the interfaces
 
 ### 2. Property-Based Testing
 
@@ -480,12 +494,15 @@ test('should sort numbers', () => {
 });
 
 // Property-based test:
-fc.property('sorted array has same elements in ascending order', 
-  fc.array(fc.integer()), (arr) => {
+fc.property(
+  'sorted array has same elements in ascending order',
+  fc.array(fc.integer()),
+  (arr) => {
     const sorted = sort(arr);
     expect(sorted.length).toBe(arr.length);
     expect([...sorted].sort((a, b) => a - b)).toEqual(sorted);
-});
+  }
+);
 ```
 
 ### 3. Mutation Testing
@@ -507,7 +524,7 @@ By mastering TDD and helping your team adopt it, you create a virtuous cycle: be
 
 - **Overengineering Tests:** Don't write tests for the sake of writing them. Each test should serve a specific purpose and test a clearly defined behavior.
 - **Neglecting Refactoring:** Remember, refactoring is not optional in TDD; it’s essential to keep your codebase healthy and manageable. Strive for clean, maintainable code.
-- **Test Duplication:** Avoid writing tests that simply replicate the functionality of existing code. Focus on testing the *behavior* of the code, not the implementation details.
+- **Test Duplication:** Avoid writing tests that simply replicate the functionality of existing code. Focus on testing the _behavior_ of the code, not the implementation details.
 
 ## A Practical Exercise: The Broken Calculator
 
@@ -517,14 +534,16 @@ By mastering TDD and helping your team adopt it, you create a virtuous cycle: be
 - **Debrief:** This quick game highlights the TDD rhythm and its collaborative nature.
 
 ## Prerequisites
+
 - **[Code Hygiene](code-hygiene.md)** - Understanding refactoring principles supports the refactor phase of the Red-Green-Refactor cycle
 
 ## Related Technical Concepts
+
 - **[Advanced Testing Strategies](advanced-testing-strategies.md)** - TDD provides foundation for comprehensive testing approaches and quality practices
 - **[Team Formation](../teamwork/team-formation.md)** - TDD adoption requires team culture changes and collaborative development practices
 
 ## Further Reading
 
-- *Test Driven Development: By Example* by Kent Beck
-- *Growing Object-Oriented Software, Guided by Tests* by Steve Freeman and Nat Pryce
-- *Working Effectively with Legacy Code* by Michael Feathers
+- _Test Driven Development: By Example_ by Kent Beck
+- _Growing Object-Oriented Software, Guided by Tests_ by Steve Freeman and Nat Pryce
+- _Working Effectively with Legacy Code_ by Michael Feathers

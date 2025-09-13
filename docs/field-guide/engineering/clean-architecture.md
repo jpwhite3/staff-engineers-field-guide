@@ -233,6 +233,7 @@ Notice how the Use Case coordinates multiple entities and services, but it depen
 The business logic speaks in terms of domain concepts—Orders, Products, Customers. The outside world speaks in terms of HTTP requests, database rows, JSON payloads. Interface Adapters handle the translation between these two languages.
 
 This layer includes:
+
 - **Controllers**: Convert web requests into use case inputs and use case outputs into web responses
 - **Repositories**: Translate between domain entities and database persistence
 - **Gateways**: Communicate with external services while presenting domain-appropriate interfaces
@@ -386,6 +387,7 @@ graph TB
 **Dependency Inversion at Boundaries**: When use cases need infrastructure (databases, external APIs), they depend on interfaces defined in the application layer. Infrastructure components implement these interfaces, creating the inversion.
 
 **Protection of Business Rules**: Your core business logic (entities and use cases) remain completely independent of frameworks, databases, and external services. This means:
+
 - You can test business logic without databases or web servers
 - You can change databases without touching business rules  
 - You can replace web frameworks without affecting use cases
@@ -419,6 +421,7 @@ class OrderService:
 ```
 
 **Problems with this approach:**
+
 - Can't test without a real database and payment API
 - Can't change database or payment provider without changing business logic
 - Business logic is scattered across infrastructure concerns
@@ -461,6 +464,7 @@ class PaymentProcessor(ABC):
 ```
 
 **Benefits of this approach:**
+
 - Business logic can be tested with mock implementations
 - Infrastructure can be changed without affecting business logic
 - Dependencies are explicit and manageable
@@ -704,6 +708,7 @@ Clean Architecture provides the foundation for evolutionary architecture—syste
 Because business logic is isolated from infrastructure concerns, you can migrate technologies incrementally:
 
 **Database Migration Example**:
+
 1. Start with PostgreSQL implementation
 2. Create MongoDB implementation of the same repository interface
 3. Switch implementations through configuration
@@ -711,6 +716,7 @@ Because business logic is isolated from infrastructure concerns, you can migrate
 5. Remove old implementation when migration is complete
 
 **Framework Migration Example**:
+
 1. Business logic remains unchanged
 2. Create new controllers in the target framework
 3. Route traffic gradually from old to new endpoints
@@ -721,11 +727,13 @@ Because business logic is isolated from infrastructure concerns, you can migrate
 Clean Architecture supports feature evolution by making dependencies explicit and boundaries clear:
 
 **Adding New Capabilities**:
+
 - New use cases can be added without changing existing ones
 - New entities can be introduced with minimal impact
 - Interface adapters can be extended to support new external systems
 
 **Modifying Existing Behavior**:
+
 - Business rule changes are isolated to specific entities or use cases
 - Infrastructure changes don't ripple into business logic
 - Testing ensures changes don't break existing functionality

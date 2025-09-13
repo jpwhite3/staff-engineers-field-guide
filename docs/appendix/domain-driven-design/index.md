@@ -8,27 +8,27 @@ description: Building software that mirrors the complexity of the business domai
 Domain-Driven Design (DDD) provides a framework for tackling complexity in the heart of software. As a Staff Engineer, DDD helps you bridge the gap between technical implementation and business requirements, creating systems that evolve with the domain they serve.
 
 !!! info "Navigation Approach"
-    This reference covers 7 essential DDD concepts and patterns. Start with the overview for foundational understanding, then explore specific patterns as needed.
+This reference covers 7 essential DDD concepts and patterns. Start with the overview for foundational understanding, then explore specific patterns as needed.
 
 ## Essential Overview
 
 <div class="grid cards" markdown>
 
--   :material-information: **Start Here**
-    
-    ---
-    
-    Fundamental DDD concepts and strategic design
-    
-    [:octicons-arrow-right-24: DDD Overview](ddd-overview.md)
+- :material-information: **Start Here**
 
--   :material-translate: **Ubiquitous Language**
-    
-    ---
-    
-    The foundation of reliable software communication
-    
-    [:octicons-arrow-right-24: Learn More](ubiquitous-language.md)
+  ***
+
+  Fundamental DDD concepts and strategic design
+
+  [:octicons-arrow-right-24: DDD Overview](ddd-overview.md)
+
+- :material-translate: **Ubiquitous Language**
+
+  ***
+
+  The foundation of reliable software communication
+
+  [:octicons-arrow-right-24: Learn More](ubiquitous-language.md)
 
 </div>
 
@@ -36,29 +36,29 @@ Domain-Driven Design (DDD) provides a framework for tackling complexity in the h
 
 <div class="grid cards" markdown>
 
--   :material-cube-outline: **Entities**
-    
-    ---
-    
-    Core concepts for robust domain systems
-    
-    [:octicons-arrow-right-24: Learn More](entity.md)
+- :material-cube-outline: **Entities**
 
--   :material-diamond: **Value Objects**
-    
-    ---
-    
-    Representing concepts with immutable data
-    
-    [:octicons-arrow-right-24: Learn More](value-object.md)
+  ***
 
--   :material-group: **Aggregates**
-    
-    ---
-    
-    Consistency boundaries in complex domains
-    
-    [:octicons-arrow-right-24: Learn More](aggregate-pattern.md)
+  Core concepts for robust domain systems
+
+  [:octicons-arrow-right-24: Learn More](entity.md)
+
+- :material-diamond: **Value Objects**
+
+  ***
+
+  Representing concepts with immutable data
+
+  [:octicons-arrow-right-24: Learn More](value-object.md)
+
+- :material-group: **Aggregates**
+
+  ***
+
+  Consistency boundaries in complex domains
+
+  [:octicons-arrow-right-24: Learn More](aggregate-pattern.md)
 
 </div>
 
@@ -66,13 +66,13 @@ Domain-Driven Design (DDD) provides a framework for tackling complexity in the h
 
 <div class="grid cards" markdown>
 
--   :material-shield-outline: **Anti-Corruption Layer**
-    
-    ---
-    
-    Protecting your domain model from external systems
-    
-    [:octicons-arrow-right-24: Learn More](anti-corruption-layer.md)
+- :material-shield-outline: **Anti-Corruption Layer**
+
+  ***
+
+  Protecting your domain model from external systems
+
+  [:octicons-arrow-right-24: Learn More](anti-corruption-layer.md)
 
 </div>
 
@@ -80,12 +80,12 @@ Domain-Driven Design (DDD) provides a framework for tackling complexity in the h
 
 <div class="grid cards" markdown>
 
--   :material-alert-circle: **Anemic Domain Model**
-    
-    ---
-    
-    Critical design flaw to avoid
-    
-    [:octicons-arrow-right-24: Learn More](anemic-model.md)
+- :material-alert-circle: **Anemic Domain Model**
+
+  ***
+
+  Critical design flaw to avoid
+
+  [:octicons-arrow-right-24: Learn More](anemic-model.md)
 
 </div>

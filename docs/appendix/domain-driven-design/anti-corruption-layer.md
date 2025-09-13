@@ -52,4 +52,3 @@ Anti-Corruption Layers are a fundamental defense against the inherent risks of i
 ### Call to Action: Begin Assessing Your Integrations
 
 Take a critical look at your current integrations. Are you relying on direct API calls within your domain model? If so, it’s time to introduce an ACL. Start small, focusing on the most critical integrations. By proactively implementing this defense, you’ll be well on your way to building a more resilient and understandable software architecture.
-

@@ -67,9 +67,6 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-extra_javascript:
-  - javascripts/homepage.js
-
 nav:
 - Home: index.md
 - Field Guide:
@@ -178,7 +175,5 @@ nav:
     - appendix/domain-driven-design/index.md
   - Assessment Tools:
     - appendix/tools/index.md
-  - Glossary & Resources:
-    - appendix/terms/index.md
-    - appendix/laws/index.md
+  - Books & Resources:
     - appendix/reading/index.md

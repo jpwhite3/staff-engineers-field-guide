@@ -53,18 +53,22 @@ When you start with "why," you're not explaining database choices or deployment 
 Let's look at some real examples. Notice how the weak versions focus on what we're doing, while the strong versions focus on why it matters:
 
 **Infrastructure Example:**
+
 - **Weak:** "We need to move to microservices"
 - **Strong:** "We believe that teams should be able to innovate independently without being blocked by other teams' decisions or timelines"
 
 **Architecture Example:**
+
 - **Weak:** "We should adopt event-driven architecture"  
 - **Strong:** "We believe our users deserve real-time experiences that feel magical, and our engineers deserve systems that are easy to understand and modify"
 
 **Platform Example:**
+
 - **Weak:** "We're building a developer portal"
 - **Strong:** "We believe that engineers should spend their time solving business problems, not fighting with tooling and infrastructure"
 
 **Security Example:**
+
 - **Weak:** "We need to implement zero-trust security"
 - **Strong:** "We believe that security should be invisible to users and automatic for developers, creating trust through transparency"
 
@@ -99,14 +103,17 @@ The "How" describes your technical principles, methodologies, and approach. This
 ### Technical How Examples
 
 **For API Design:**
+
 - **Why:** We believe developers should love using our APIs because great developer experience accelerates innovation
 - **How:** We design APIs with developer empathy, provide comprehensive documentation, maintain backwards compatibility, and measure success by developer satisfaction
 
 **For Testing Strategy:**
+
 - **Why:** We believe teams should ship fearlessly because confidence enables innovation  
 - **How:** We build comprehensive automated testing that catches issues before production, provides fast feedback, and gives teams confidence to deploy frequently
 
 **For Technical Debt Management:**
+
 - **Why:** We believe sustainable pace enables long-term excellence and team health
 - **How:** We treat technical debt as a first-class backlog item, measure it systematically, and invest consistently in improvement
 
@@ -149,11 +156,13 @@ Instead of leading with technical specifications, connect them to purpose:
 ### Technical Architecture Presentations
 
 **Traditional Approach (What → How):**
+
 1. "We're building a microservices architecture"
 2. "Here's the service design and API specifications"
 3. "We'll use Docker, Kubernetes, and service mesh"
 
 **Golden Circle Approach (Why → How → What):**
+
 1. **Why:** "We believe teams should own their destiny - able to innovate, deploy, and scale independently"
 2. **How:** "We're designing for team autonomy through service boundaries that match team boundaries, with clear contracts and independent deployment"
 3. **What:** "This manifests as microservices using Docker containers, Kubernetes orchestration, and service mesh communication"
@@ -210,6 +219,7 @@ The Golden Circle helps you build movements around technical vision rather than 
 ### Creating Technical Believers
 
 **People follow your Why, not your What:**
+
 - Engineers join teams for purpose, not just technology stacks
 - Stakeholders support initiatives for vision, not just features
 - Organizations adopt practices for beliefs, not just efficiency
@@ -217,6 +227,7 @@ The Golden Circle helps you build movements around technical vision rather than 
 ### Sustaining Technical Change
 
 **Purpose-driven change lasts longer:**
+
 - When challenges arise, purpose provides resilience
 - When priorities shift, core beliefs provide stability  
 - When people leave, the Why continues to attract new believers
@@ -224,6 +235,7 @@ The Golden Circle helps you build movements around technical vision rather than 
 ### Scaling Technical Influence
 
 **Why-based communication scales influence:**
+
 - Purpose resonates across organizational levels
 - Beliefs transcend specific technical implementations
 - Vision attracts contributors and supporters

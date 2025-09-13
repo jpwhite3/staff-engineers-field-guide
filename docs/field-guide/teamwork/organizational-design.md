@@ -205,6 +205,7 @@ Having the right team types is only half the battle. The other half is understan
 Think of collaboration mode as two teams sharing a workspace and a mission. They're in constant communication, making joint decisions, and sharing responsibility for outcomes. It's intense, it's high-bandwidth, and it's perfect for those moments when you need to move fast and learn quickly.
 
 **This is what happens** when you put two teams in collaboration mode:
+
 - Daily standups become joint standups
 - Architecture decisions are made together
 - Success and failure are shared equally
@@ -219,6 +220,7 @@ Think of collaboration mode as two teams sharing a workspace and a mission. They
 This is the holy grail of team interactions—one team provides a well-defined service to another with minimal ongoing communication. Think of how you use AWS: you don't have daily meetings with the EC2 team, you just use their APIs and trust they'll meet their SLAs.
 
 **What makes this work**:
+
 - Crystal-clear contracts and interfaces
 - Comprehensive documentation that actually gets maintained
 - Reliable SLAs and monitoring

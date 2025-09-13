@@ -8,7 +8,7 @@ description: Navigate the field guide by topic, skill, or context with comprehen
 The Staff Engineer's Field Guide is designed as an interconnected knowledge system. Each topic builds on and reinforces others, creating a comprehensive learning ecosystem for technical leaders.
 
 !!! info "How to Use This System"
-    Use tags below to explore content by theme, skill level, or application context. Each tagged section provides related concepts, prerequisites, and follow-up reading to maximize your learning journey.
+Use tags below to explore content by theme, skill level, or application context. Each tagged section provides related concepts, prerequisites, and follow-up reading to maximize your learning journey.
 
 ## Core Skills & Competencies
 
@@ -35,4 +35,4 @@ Find content organized by the fundamental skills every staff engineer needs:
 
 ---
 
-*This page is automatically updated as content is tagged. All cross-references are bidirectional, allowing you to explore connections from multiple perspectives.*
+_This page is automatically updated as content is tagged. All cross-references are bidirectional, allowing you to explore connections from multiple perspectives._

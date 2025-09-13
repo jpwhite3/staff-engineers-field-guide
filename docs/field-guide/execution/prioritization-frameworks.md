@@ -101,27 +101,31 @@ Follow up these exercises with retrospectives on real prioritization decisions m
 ## Cross-Reference Navigation
 
 ### Prerequisites for This Chapter
+
 - **[Strategic Thinking](strategic-thinking.md)** - Strategic thinking provides the foundation for aligning prioritization decisions with broader organizational objectives and market dynamics
 - **[Decision-Making Frameworks](decision-making-frameworks.md)** - General decision-making skills support systematic prioritization and help teams navigate uncertainty and competing alternatives
 
 ### Related Concepts
+
 - **[Agile Essentials](agile-essentials.md)** - Agile practices require continuous prioritization for backlog management, sprint planning, and adaptive response to changing requirements
 - **[Product-Engineering Collaboration](../business/product-engineering-collaboration.md)** - Cross-functional prioritization requires effective collaboration between product and engineering teams to balance customer needs with technical constraints
 - **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - Metrics provide essential data for evaluating the impact of prioritization decisions and improving future prioritization accuracy
 
 ### Apply These Concepts
+
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your execution and delivery leadership capabilities, including prioritization and resource allocation skills
 - **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team alignment and clarity on priorities, decision-making processes, and stakeholder communication
 
 ### Next Steps in Your Learning Journey
+
 1. **[Strategic Thinking](strategic-thinking.md)** - Deepen your ability to align prioritization decisions with broader strategic objectives and long-term organizational success
 2. **[Decision-Making Frameworks](decision-making-frameworks.md)** - Master systematic approaches to complex technical and business decisions that complement prioritization frameworks
 3. **[Product-Engineering Collaboration](../business/product-engineering-collaboration.md)** - Develop advanced skills for collaborative prioritization with product teams and cross-functional stakeholders
 
 ## Essential Resources for Mastering Prioritization
 
-*Inspired: How to Create Tech Products Customers Love* by Marty Cagan offers sophisticated frameworks for understanding customer value and making product prioritization decisions that balance user needs, business objectives, and technical constraints. Cagan's approach to discovery-driven prioritization complements the frameworks discussed in this chapter by providing methods for validating prioritization assumptions before committing significant development resources.
+_Inspired: How to Create Tech Products Customers Love_ by Marty Cagan offers sophisticated frameworks for understanding customer value and making product prioritization decisions that balance user needs, business objectives, and technical constraints. Cagan's approach to discovery-driven prioritization complements the frameworks discussed in this chapter by providing methods for validating prioritization assumptions before committing significant development resources.
 
-John Doerr's *Measure What Matters* provides comprehensive guidance on implementing OKR (Objectives and Key Results) frameworks that can significantly improve prioritization by creating clear alignment between team-level work and organizational goals. The book's emphasis on measurable outcomes and regular review cycles supports the quantitative rigor that makes prioritization frameworks most effective.
+John Doerr's _Measure What Matters_ provides comprehensive guidance on implementing OKR (Objectives and Key Results) frameworks that can significantly improve prioritization by creating clear alignment between team-level work and organizational goals. The book's emphasis on measurable outcomes and regular review cycles supports the quantitative rigor that makes prioritization frameworks most effective.
 
-Richard Rumelt's *Good Strategy Bad Strategy* offers essential context for understanding how prioritization decisions fit into broader strategic thinking, helping teams avoid the trap of optimizing locally while missing larger strategic opportunities or threats.
+Richard Rumelt's _Good Strategy Bad Strategy_ offers essential context for understanding how prioritization decisions fit into broader strategic thinking, helping teams avoid the trap of optimizing locally while missing larger strategic opportunities or threats.

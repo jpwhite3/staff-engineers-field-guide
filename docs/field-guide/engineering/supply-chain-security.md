@@ -10,11 +10,11 @@ This scenario illustrates a growing challenge in modern software development: su
 
 Your software supply chain includes everything that goes into your application:
 
-* **Direct dependencies:** Libraries your code explicitly imports
-* **Transitive dependencies:** Dependencies of your dependencies
-* **Development tools:** Compilers, build tools, CI/CD systems
-* **Infrastructure:** Container images, package repositories, cloud services
-* **Deployment pipeline:** The path from source code to production
+- **Direct dependencies:** Libraries your code explicitly imports
+- **Transitive dependencies:** Dependencies of your dependencies
+- **Development tools:** Compilers, build tools, CI/CD systems
+- **Infrastructure:** Container images, package repositories, cloud services
+- **Deployment pipeline:** The path from source code to production
 
 Each element represents a potential attack vector. The 2020 SolarWinds breach and 2021 Log4Shell vulnerability demonstrated how supply chain compromises can have devastating and far-reaching impacts.
 
@@ -24,37 +24,37 @@ Each element represents a potential attack vector. The 2020 SolarWinds breach an
 
 Knowing what's in your software:
 
-* **Software Bill of Materials (SBOM):** A comprehensive inventory of all components
-* **Dependency scanning:** Automated analysis of direct and transitive dependencies
-* **Version pinning:** Using exact versions rather than ranges
-* **Dependency review:** Evaluating new dependencies before adoption
+- **Software Bill of Materials (SBOM):** A comprehensive inventory of all components
+- **Dependency scanning:** Automated analysis of direct and transitive dependencies
+- **Version pinning:** Using exact versions rather than ranges
+- **Dependency review:** Evaluating new dependencies before adoption
 
 ### 2. Vulnerability Management
 
 Finding and fixing security issues:
 
-* **Vulnerability scanning:** Checking dependencies against vulnerability databases
-* **Patch management:** Process for quickly applying security updates
-* **Risk assessment:** Evaluating vulnerability severity and exploitability
-* **Automated updates:** Using tools like Dependabot for security patches
+- **Vulnerability scanning:** Checking dependencies against vulnerability databases
+- **Patch management:** Process for quickly applying security updates
+- **Risk assessment:** Evaluating vulnerability severity and exploitability
+- **Automated updates:** Using tools like Dependabot for security patches
 
 ### 3. Code Integrity
 
 Ensuring code hasn't been tampered with:
 
-* **Signed commits:** Cryptographically verifying code author identity
-* **Reproducible builds:** Ensuring builds are deterministic
-* **Artifact signing:** Signing built artifacts with keys
-* **Code review:** Human verification of changes
+- **Signed commits:** Cryptographically verifying code author identity
+- **Reproducible builds:** Ensuring builds are deterministic
+- **Artifact signing:** Signing built artifacts with keys
+- **Code review:** Human verification of changes
 
 ### 4. Access Control
 
 Limiting who can influence your supply chain:
 
-* **Least privilege:** Minimal access rights for systems and people
-* **Multi-factor authentication (MFA):** Requiring multiple verification methods
-* **Role-based access control:** Tailored permissions based on responsibilities
-* **Secret management:** Secure handling of credentials and API keys
+- **Least privilege:** Minimal access rights for systems and people
+- **Multi-factor authentication (MFA):** Requiring multiple verification methods
+- **Role-based access control:** Tailored permissions based on responsibilities
+- **Secret management:** Secure handling of credentials and API keys
 
 ## Implementing Supply Chain Security: A Practical Guide
 
@@ -62,9 +62,9 @@ Limiting who can influence your supply chain:
 
 An SBOM is an inventory of everything in your application. Modern formats include:
 
-* **CycloneDX:** Security-focused SBOM format
-* **SPDX:** Linux Foundation standard for software composition
-* **SWID:** ISO standard for software identification
+- **CycloneDX:** Security-focused SBOM format
+- **SPDX:** Linux Foundation standard for software composition
+- **SWID:** ISO standard for software identification
 
 **Example: Generating a CycloneDX SBOM for a Node.js project:**
 
@@ -82,10 +82,10 @@ The resulting SBOM contains a list of all dependencies, their versions, and meta
 
 Integrate security scanning into your development workflow:
 
-* **Pre-commit hooks:** Block commits with known vulnerabilities
-* **CI/CD integration:** Fail builds with high-severity issues
-* **Periodic scanning:** Regular checks of existing code
-* **Policy enforcement:** Automatically enforce security policies
+- **Pre-commit hooks:** Block commits with known vulnerabilities
+- **CI/CD integration:** Fail builds with high-severity issues
+- **Periodic scanning:** Regular checks of existing code
+- **Policy enforcement:** Automatically enforce security policies
 
 **Example: GitHub Dependabot Configuration:**
 
@@ -93,36 +93,36 @@ Integrate security scanning into your development workflow:
 # .github/dependabot.yml
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "daily"
+      interval: 'daily'
     allow:
-      - dependency-type: "direct"
-      - dependency-type: "indirect"
+      - dependency-type: 'direct'
+      - dependency-type: 'indirect'
     security-updates-only: true
     labels:
-      - "security"
-      - "dependencies"
+      - 'security'
+      - 'dependencies'
 ```
 
 ### 3. Establish a Dependency Governance Policy
 
 Create clear guidelines for dependency adoption:
 
-* **Evaluation criteria:** License compatibility, maintenance status, security history
-* **Approved sources:** Verified repositories and registries
-* **Dependency review process:** Who approves new dependencies
-* **Alternative analysis:** Consider build vs. buy for critical functions
+- **Evaluation criteria:** License compatibility, maintenance status, security history
+- **Approved sources:** Verified repositories and registries
+- **Dependency review process:** Who approves new dependencies
+- **Alternative analysis:** Consider build vs. buy for critical functions
 
 ### 4. Secure Your Build Environment
 
 Protect the systems that build your code:
 
-* **Isolated build environments:** Clean environments for each build
-* **Build provenance:** Record metadata about how artifacts were created
-* **Reproducible builds:** Ensure builds are deterministic
-* **Build signing:** Cryptographically sign build artifacts
+- **Isolated build environments:** Clean environments for each build
+- **Build provenance:** Record metadata about how artifacts were created
+- **Reproducible builds:** Ensure builds are deterministic
+- **Build signing:** Cryptographically sign build artifacts
 
 **Example: Binary Authorization in Kubernetes:**
 
@@ -143,10 +143,10 @@ spec:
 
 Ensure artifacts haven't been tampered with:
 
-* **Checksum verification:** Validate file integrity
-* **Digital signatures:** Verify artifact provenance
-* **Image scanning:** Check container images for vulnerabilities
-* **Immutable artifacts:** Prevent modification after creation
+- **Checksum verification:** Validate file integrity
+- **Digital signatures:** Verify artifact provenance
+- **Image scanning:** Check container images for vulnerabilities
+- **Immutable artifacts:** Prevent modification after creation
 
 **Example: Verifying package integrity with npm:**
 
@@ -161,8 +161,8 @@ npm audit signatures
 
 Use minimal container images with only your application and runtime dependencies:
 
-* **Benefits:** Smaller attack surface, reduced vulnerabilities
-* **Implementation:** Use distroless base images (e.g., Google's distroless)
+- **Benefits:** Smaller attack surface, reduced vulnerabilities
+- **Implementation:** Use distroless base images (e.g., Google's distroless)
 
 **Example: Distroless Dockerfile:**
 
@@ -182,8 +182,8 @@ CMD ["server.js"]
 
 Cryptographically attest to properties of your artifacts:
 
-* **Benefits:** Verifiable security properties, audit trail
-* **Implementation:** Use tools like Sigstore/Cosign, in-toto
+- **Benefits:** Verifiable security properties, audit trail
+- **Implementation:** Use tools like Sigstore/Cosign, in-toto
 
 **Example: Signing a container image with Cosign:**
 
@@ -199,8 +199,8 @@ cosign verify --key cosign.pub my-registry/my-app:latest
 
 Implement Supply-chain Levels for Software Artifacts (SLSA):
 
-* **Benefits:** Structured approach to improving security posture
-* **Implementation:** Progressive adoption of SLSA levels (1-4)
+- **Benefits:** Structured approach to improving security posture
+- **Implementation:** Progressive adoption of SLSA levels (1-4)
 
 **SLSA Level Requirements:**
 
@@ -215,24 +215,24 @@ Despite best efforts, incidents will occur. Be prepared with:
 
 ### 1. Incident Response Plan
 
-* Predefined roles and responsibilities
-* Communication templates and channels
-* Decision tree for vulnerability severity
-* Criteria for customer notification
+- Predefined roles and responsibilities
+- Communication templates and channels
+- Decision tree for vulnerability severity
+- Criteria for customer notification
 
 ### 2. Rapid Remediation Strategy
 
-* Process for emergency dependency updates
-* Hotfix deployment procedures
-* Offline backups of critical dependencies
-* Alternative sources for compromised packages
+- Process for emergency dependency updates
+- Hotfix deployment procedures
+- Offline backups of critical dependencies
+- Alternative sources for compromised packages
 
 ### 3. Post-Incident Analysis
 
-* Root cause analysis beyond the immediate vulnerability
-* Process improvements to prevent similar issues
-* Updates to risk assessment models
-* Knowledge sharing across teams
+- Root cause analysis beyond the immediate vulnerability
+- Process improvements to prevent similar issues
+- Updates to risk assessment models
+- Knowledge sharing across teams
 
 ## The Staff Engineer's Role in Supply Chain Security
 
@@ -240,50 +240,54 @@ As a Staff Engineer, your responsibilities include:
 
 ### 1. Technical Leadership
 
-* Evaluate and select appropriate security tools
-* Design architecture that minimizes supply chain risk
-* Define security requirements for build systems
-* Create patterns for secure dependency management
+- Evaluate and select appropriate security tools
+- Design architecture that minimizes supply chain risk
+- Define security requirements for build systems
+- Create patterns for secure dependency management
 
 ### 2. Organizational Influence
 
-* Advocate for security investments
-* Educate teams on supply chain risks
-* Collaborate with security teams
-* Establish security as a quality attribute
+- Advocate for security investments
+- Educate teams on supply chain risks
+- Collaborate with security teams
+- Establish security as a quality attribute
 
 ### 3. Risk Management
 
-* Assess the criticality of different components
-* Balance security controls with developer experience
-* Prioritize remediation efforts
-* Identify acceptable risk levels
+- Assess the criticality of different components
+- Balance security controls with developer experience
+- Prioritize remediation efforts
+- Identify acceptable risk levels
 
 By systematically addressing software supply chain security, you not only protect your organization from attacks but also build trust with customers and partners. In today's threat landscape, the integrity of your software supply chain is as important as the code you write.
 
 ## Cross-Reference Navigation
 
 ### Prerequisites for This Chapter
+
 - **[DevOps & Automation Engineering](devops.md)** - Understanding DevOps practices provides foundation for secure CI/CD pipeline implementation
 - **[Continuous Delivery](continuous-delivery.md)** - Secure supply chain practices must be integrated into deployment pipelines
 
 ### Related Concepts
+
 - **[DevOps & Automation Engineering](devops.md)** - DevOps practices must incorporate supply chain security considerations
 - **[Continuous Delivery](continuous-delivery.md)** - Deployment pipelines require security controls for safe and secure delivery
 - **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Security testing complements functional testing in comprehensive quality assurance
 - **[Privacy by Design](../ethics/privacy-by-design.md)** - Security and privacy engineering practices complement each other
 
 ### Apply These Concepts
+
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your security engineering and supply chain management capabilities
 - **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team security practices and supply chain risk management
 
 ### Next Steps in Your Learning Journey
+
 1. **[DevOps & Automation Engineering](devops.md)** - Master secure automation and infrastructure as code practices
 2. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Learn to integrate security testing into comprehensive quality assurance
 3. **[Privacy by Design](../ethics/privacy-by-design.md)** - Understand complementary privacy engineering principles and practices
 
 ## Further Reading
 
-- *Supply Chain Security: A Guide for Engineers, Managers, and Security Professionals* by Cassie Crossley
-- *Building Secure and Reliable Systems* by Google SRE Team
-- *The DevSecOps Playbook* by Sean Brady
+- _Supply Chain Security: A Guide for Engineers, Managers, and Security Professionals_ by Cassie Crossley
+- _Building Secure and Reliable Systems_ by Google SRE Team
+- _The DevSecOps Playbook_ by Sean Brady

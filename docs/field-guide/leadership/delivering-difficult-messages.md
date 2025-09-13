@@ -28,28 +28,33 @@ Before you say anything, get answers to the questions you know the team will ask
 
 ### 2. Deliver the Headline First
 
-Do not bury the lede. Rip off the band-aid cleanly and quickly.  
-* "Team, I have some difficult news to share. The decision has been made to cancel Project Phoenix, effective today."  
+Do not bury the lede. Rip off the band-aid cleanly and quickly.
+
+- "Team, I have some difficult news to share. The decision has been made to cancel Project Phoenix, effective today."
 
 ### 3. State the "Why" Clearly and Concisely
 
-Provide the strategic context without blame or excessive detail.  
-* "As part of the company's new focus on enterprise clients, leadership has decided to reallocate all our resources to the upcoming compliance features. This project no longer aligns with that top-level priority."  
+Provide the strategic context without blame or excessive detail.
+
+- "As part of the company's new focus on enterprise clients, leadership has decided to reallocate all our resources to the upcoming compliance features. This project no longer aligns with that top-level priority."
 
 ### 4. Acknowledge the Emotional Impact
 
-This is the empathy step. Validate their feelings.  
-* "I know this is incredibly disappointing. We've all poured a lot of energy and passion into this, and I am personally gutted. It's okay to be frustrated and upset."  
+This is the empathy step. Validate their feelings.
+
+- "I know this is incredibly disappointing. We've all poured a lot of energy and passion into this, and I am personally gutted. It's okay to be frustrated and upset."
 
 ### 5. Value the Work Done
 
-Frame the effort as a valuable lesson, not a waste.  
-* "I want to be clear: the work you did was not a waste. The prototype you built taught us a huge amount about integrating with the new payment gateway, and we will be using those learnings directly in the next project. You all did excellent work."  
+Frame the effort as a valuable lesson, not a waste.
+
+- "I want to be clear: the work you did was not a waste. The prototype you built taught us a huge amount about integrating with the new payment gateway, and we will be using those learnings directly in the next project. You all did excellent work."
 
 ### 6. Outline the Path Forward
 
-Provide immediate clarity on what happens next.  
-* "We will spend the rest of today documenting our key findings. Tomorrow, we will have a kickoff for our new project, which will be focused on the enterprise compliance work. I have the project brief here. Let's take a break, and then we can talk through any questions you have."
+Provide immediate clarity on what happens next.
+
+- "We will spend the rest of today documenting our key findings. Tomorrow, we will have a kickoff for our new project, which will be focused on the enterprise compliance work. I have the project brief here. Let's take a break, and then we can talk through any questions you have."
 
 ## The Impact of Clear, Compassionate Communication
 
@@ -137,5 +142,5 @@ Most importantly, reflect on what you learned. What assumptions turned out to be
 
 ## Further Reading
 
-- *Crucial Conversations: Tools for Talking When Stakes Are High* by Kerry Patterson et al.
-- *Nonviolent Communication: A Language of Life* by Marshall B. Rosenberg
+- _Crucial Conversations: Tools for Talking When Stakes Are High_ by Kerry Patterson et al.
+- _Nonviolent Communication: A Language of Life_ by Marshall B. Rosenberg

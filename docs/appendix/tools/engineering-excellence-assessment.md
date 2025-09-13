@@ -1,6 +1,6 @@
 # Engineering Excellence Assessment Framework
 
-> *"What gets measured gets managed."* - Peter Drucker
+> _"What gets measured gets managed."_ - Peter Drucker
 
 Picture this scenario: You're a Staff Engineer who just joined a promising startup that's scaling rapidly. The CTO hired you specifically to "level up our engineering practices," but when you ask what that means, you get vague answers like "make things more reliable" and "help teams move faster."
 
@@ -27,11 +27,12 @@ The framework evaluates six critical domains of engineering excellence, each wit
 Think of this assessment as conducting a thorough engineering audit. You wouldn't make architectural decisions based on a single data point, and you shouldn't make organizational improvements based on limited information either.
 
 **1. Gather Evidence from Multiple Sources**
+
 - **Quantitative data**: Deployment frequency, test coverage, incident metrics, code quality scores
 - **Qualitative insights**: Developer surveys, team interviews, process observations
 - **Behavioral indicators**: How teams actually work versus how they say they work
 
-**2. Score Each Practice Objectively** 
+**2. Score Each Practice Objectively**
 Rate current capability on a 1-5 scale, but resist the temptation to be either too generous or too critical. The goal is accuracy, not diplomacy.
 
 **3. Identify Patterns and Root Causes**
@@ -50,35 +51,35 @@ Engineering excellence isn't a destination—it's a continuous improvement journ
 
 Think of these maturity levels as evolutionary stages rather than grades. Most organizations will have practices at different levels across different domains, and that's normal. The goal isn't to achieve Level 5 in everything—it's to identify where investment in improvement will create the most value.
 
-> **Level 1 - Ad Hoc**: *"It depends on who's working today"*
-> 
+> **Level 1 - Ad Hoc**: _"It depends on who's working today"_
+>
 > Practices are inconsistent, undocumented, and completely dependent on individual knowledge and initiative. When key people are out, things break down.
-> 
-> *Example*: Deployments happen when Sarah is available because she's the only one who knows the process.
+>
+> _Example_: Deployments happen when Sarah is available because she's the only one who knows the process.
 
-> **Level 2 - Developing**: *"We're trying, but it's not quite working yet"*
+> **Level 2 - Developing**: _"We're trying, but it's not quite working yet"_
 >
 > Basic practices exist but they're informal, with significant gaps in execution. There's awareness of what should be done, but inconsistent follow-through.
 >
-> *Example*: There's a code review process, but reviews are often skipped when deadlines are tight.
+> _Example_: There's a code review process, but reviews are often skipped when deadlines are tight.
 
-> **Level 3 - Defined**: *"We have a documented process that people follow"*
+> **Level 3 - Defined**: _"We have a documented process that people follow"_
 >
 > Practices are documented, standardized, and generally followed, but not optimized or systematically measured for effectiveness.
 >
-> *Example*: All code goes through pull request reviews following documented guidelines, but no one tracks review quality or cycle time.
+> _Example_: All code goes through pull request reviews following documented guidelines, but no one tracks review quality or cycle time.
 
-> **Level 4 - Managed**: *"We measure, monitor, and improve our practices"*
+> **Level 4 - Managed**: _"We measure, monitor, and improve our practices"_
 >
 > Practices are quantitatively measured, monitored for effectiveness, and continuously improved based on data and feedback.
 >
-> *Example*: Code review metrics are tracked, bottlenecks are identified, and the process evolves based on what the data reveals.
+> _Example_: Code review metrics are tracked, bottlenecks are identified, and the process evolves based on what the data reveals.
 
-> **Level 5 - Optimized**: *"Our practices are so good that others want to learn from us"*
+> **Level 5 - Optimized**: _"Our practices are so good that others want to learn from us"_
 >
 > Practices represent a competitive advantage and organizational learning capability. Other teams and organizations study and adopt these practices.
 >
-> *Example*: Your deployment pipeline is so effective that it becomes a case study shared at industry conferences.
+> _Example_: Your deployment pipeline is so effective that it becomes a case study shared at industry conferences.
 
 ## Domain 1: Development Practices and Code Quality
 
@@ -88,18 +89,18 @@ Evaluates how teams write, review, and maintain code to ensure long-term sustain
 graph TB
     subgraph "Development Practices Assessment"
         TC[Test Coverage & Quality<br/>• Unit test coverage<br/>• Integration testing<br/>• Test automation<br/>• Test reliability]
-        
+
         CR[Code Review Process<br/>• Review requirements<br/>• Feedback quality<br/>• Review velocity<br/>• Knowledge sharing]
-        
+
         CC[Code Quality Standards<br/>• Coding standards<br/>• Static analysis<br/>• Technical debt management<br/>• Documentation quality]
-        
+
         VC[Version Control Practices<br/>• Branching strategy<br/>• Commit quality<br/>• Merge practices<br/>• History management]
     end
-    
+
     TC --> CR
     CR --> CC
     CC --> VC
-    
+
     style TC fill:#e1f5fe
     style CR fill:#f3e5f5
     style CC fill:#e8f5e8
@@ -109,17 +110,19 @@ graph TB
 ### Test Coverage and Quality
 
 **Assessment Questions:**
+
 - What percentage of code is covered by automated tests?
 - How reliable are the tests (what's the flaky test rate)?
 - How fast does the test suite execute?
 - Are tests written before or after implementation?
 
 **Evidence Collection:**
+
 ```python
 # Metrics to collect
 test_metrics = {
     "unit_test_coverage": "percentage",
-    "integration_test_coverage": "percentage", 
+    "integration_test_coverage": "percentage",
     "test_suite_execution_time": "minutes",
     "flaky_test_rate": "percentage",
     "test_failure_rate": "percentage",
@@ -129,7 +132,7 @@ test_metrics = {
 # Survey questions for team members
 test_quality_survey = [
     "How confident are you that tests catch regressions? (1-5)",
-    "How often do tests fail due to environmental issues? (1-5)", 
+    "How often do tests fail due to environmental issues? (1-5)",
     "How easy is it to understand what failed tests are testing? (1-5)",
     "How often do you write tests before implementing features? (1-5)"
 ]
@@ -138,30 +141,35 @@ test_quality_survey = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Test coverage below 40%
 - Manual testing required for most changes
 - Frequent test failures due to environment issues
 - Tests written only when required
 
 **Level 2 (Developing)**:
+
 - Test coverage 40-60%
 - Basic unit tests exist but integration testing is limited
 - Some automated testing in CI pipeline
 - Occasional TDD practices
 
 **Level 3 (Defined)**:
+
 - Test coverage 60-80%
 - Comprehensive unit and integration test suites
 - Consistent test automation practices
 - Regular test maintenance and improvement
 
 **Level 4 (Managed)**:
+
 - Test coverage 80-95%
 - Fast, reliable test execution
 - Test-driven development is common practice
 - Test quality metrics are tracked and improved
 
 **Level 5 (Optimized)**:
+
 - Comprehensive test coverage with quality gates
 - Tests are treated as first-class code
 - Advanced testing strategies (property-based, mutation testing)
@@ -170,12 +178,14 @@ test_quality_survey = [
 ### Code Review Process
 
 **Assessment Questions:**
+
 - Are all code changes reviewed before merging?
 - How thorough and constructive are code reviews?
 - What's the average time from review request to approval?
 - Do reviews effectively transfer knowledge and catch issues?
 
 **Evidence Collection:**
+
 ```python
 # Code review metrics
 review_metrics = {
@@ -199,30 +209,35 @@ review_quality_survey = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Code reviews are optional or inconsistent
 - Reviews focus mainly on style rather than substance
 - Long delays between review requests and responses
 - Limited knowledge transfer through reviews
 
 **Level 2 (Developing)**:
+
 - Most code changes are reviewed
 - Reviews catch some functional issues
 - Inconsistent review quality across teams
 - Some knowledge sharing occurs
 
 **Level 3 (Defined)**:
+
 - All code changes require review
 - Reviews follow documented standards
 - Reasonable review turnaround times
 - Regular knowledge sharing and mentoring
 
 **Level 4 (Managed)**:
+
 - High-quality, constructive reviews
 - Fast review cycles without compromising quality
 - Reviews effectively prevent defects
 - Review process continuously improved
 
 **Level 5 (Optimized)**:
+
 - Reviews are a key learning and quality mechanism
 - Advanced techniques (pair programming, mob programming)
 - Review practices shared and standardized
@@ -231,12 +246,14 @@ review_quality_survey = [
 ### Code Quality Standards
 
 **Assessment Questions:**
+
 - Are coding standards documented and enforced?
 - How is technical debt tracked and managed?
 - What static analysis tools are used?
 - How consistent is code quality across the codebase?
 
 **Evidence Collection:**
+
 ```python
 # Code quality metrics
 quality_metrics = {
@@ -260,30 +277,35 @@ debt_assessment = {
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - No consistent coding standards
 - Technical debt accumulates without tracking
 - Manual code quality checks only
 - High variability in code quality
 
 **Level 2 (Developing)**:
+
 - Basic coding standards exist
 - Some automated quality checks
 - Technical debt recognized but not systematically managed
 - Inconsistent application of standards
 
 **Level 3 (Defined)**:
+
 - Documented and enforced coding standards
 - Regular static analysis and quality gates
 - Technical debt tracked and occasionally addressed
 - Consistent code quality practices
 
 **Level 4 (Managed)**:
+
 - Comprehensive quality standards and automation
 - Proactive technical debt management
 - Quality metrics tracked and improved
 - High consistency across codebase
 
 **Level 5 (Optimized)**:
+
 - Quality standards drive architectural decisions
 - Technical debt is investment decision
 - Advanced quality practices (architecture fitness functions)
@@ -296,12 +318,14 @@ Evaluates the automation and reliability of build, test, and deployment processe
 ### Build and CI Pipeline
 
 **Assessment Questions:**
+
 - How long does it take to get feedback from CI?
 - How reliable is the build pipeline?
 - Are builds reproducible across environments?
 - How is build configuration managed?
 
 **Evidence Collection:**
+
 ```python
 # CI/CD metrics
 cicd_metrics = {
@@ -325,30 +349,35 @@ pipeline_assessment = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Manual or inconsistent build processes
 - Long build times with frequent failures
 - Different build processes across teams
 - Build configuration not version controlled
 
 **Level 2 (Developing)**:
+
 - Basic automated builds on code changes
 - Some consistency in build processes
 - Build failures addressed reactively
 - Limited build optimization
 
 **Level 3 (Defined)**:
+
 - Consistent CI pipelines across teams
 - Reasonable build times and reliability
 - Build configuration as code
 - Standard failure notification and resolution
 
 **Level 4 (Managed)**:
+
 - Fast, reliable builds with comprehensive testing
 - Build performance monitored and optimized
 - Advanced CI features (parallel builds, smart testing)
 - Proactive build health management
 
 **Level 5 (Optimized)**:
+
 - Industry-leading build performance and reliability
 - Advanced optimization (incremental builds, distributed testing)
 - Build infrastructure as competitive advantage
@@ -357,12 +386,14 @@ pipeline_assessment = [
 ### Deployment Practices
 
 **Assessment Questions:**
+
 - How frequently can teams deploy to production?
 - How risky are production deployments?
 - Can deployments be rolled back quickly?
 - Are deployments automated and consistent?
 
 **Evidence Collection:**
+
 ```python
 # Deployment metrics (DORA metrics)
 deployment_metrics = {
@@ -386,30 +417,35 @@ deployment_process = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Infrequent, risky deployments
 - Manual deployment processes
 - Long lead times from development to production
 - Deployment issues are common
 
 **Level 2 (Developing)**:
+
 - Some deployment automation
 - Weekly or bi-weekly deployment cycles
 - Basic rollback capabilities
 - Moderate deployment success rates
 
 **Level 3 (Defined)**:
+
 - Reliable automated deployment pipelines
 - Daily or more frequent deployments possible
 - Good rollback and monitoring capabilities
 - Consistent deployment practices
 
 **Level 4 (Managed)**:
+
 - Multiple daily deployments with high confidence
 - Advanced deployment patterns (blue-green, canary)
 - Fast recovery from deployment issues
 - Deployment metrics tracked and optimized
 
 **Level 5 (Optimized)**:
+
 - On-demand, low-risk deployments
 - Zero-downtime deployments as standard
 - Deployment practices as competitive advantage
@@ -422,12 +458,14 @@ Evaluates system reliability, observability, and operational practices.
 ### System Reliability
 
 **Assessment Questions:**
+
 - How reliable are production systems?
 - Are reliability targets defined and measured?
 - How quickly are outages detected and resolved?
 - What practices prevent reliability issues?
 
 **Evidence Collection:**
+
 ```python
 # SRE and reliability metrics
 reliability_metrics = {
@@ -442,7 +480,7 @@ reliability_metrics = {
 # Reliability practices assessment
 reliability_practices = [
     "Are SLOs defined and tracked for key services? (1-5)",
-    "How quickly are production issues detected? (1-5)", 
+    "How quickly are production issues detected? (1-5)",
     "How effective are post-incident reviews? (1-5)",
     "How proactive is reliability improvement? (1-5)"
 ]
@@ -451,30 +489,35 @@ reliability_practices = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Frequent outages and reliability issues
 - Reactive approach to reliability problems
 - No defined reliability targets
 - Limited incident response processes
 
 **Level 2 (Developing)**:
+
 - Basic monitoring and alerting in place
 - Some reliability targets defined
 - Incident response processes developing
 - Reliability issues addressed reactively
 
 **Level 3 (Defined)**:
+
 - SLOs defined for critical services
 - Comprehensive monitoring and alerting
 - Structured incident response and postmortems
 - Regular reliability improvements
 
 **Level 4 (Managed)**:
+
 - Proactive reliability management
 - Error budgets and SLO-based decision making
 - Advanced monitoring and observability
 - Continuous reliability improvement
 
 **Level 5 (Optimized)**:
+
 - Reliability as competitive advantage
 - Chaos engineering and proactive testing
 - Industry-leading reliability practices
@@ -483,12 +526,14 @@ reliability_practices = [
 ### Observability and Monitoring
 
 **Assessment Questions:**
+
 - Can teams quickly diagnose production issues?
 - Are systems instrumented with comprehensive telemetry?
 - How actionable are alerts and dashboards?
 - Can system behavior be understood from observability data?
 
 **Evidence Collection:**
+
 ```python
 # Observability metrics
 observability_metrics = {
@@ -512,30 +557,35 @@ observability_assessment = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Limited monitoring and observability
 - Reactive detection of issues
 - Poor visibility into system behavior
 - Manual diagnosis processes
 
 **Level 2 (Developing)**:
+
 - Basic monitoring and logging
 - Some automated alerting
 - Limited observability tooling
 - Inconsistent instrumentation
 
 **Level 3 (Defined)**:
+
 - Comprehensive monitoring and alerting
 - Structured logging and metrics
 - Standard observability practices
 - Good diagnostic capabilities
 
 **Level 4 (Managed)**:
+
 - Advanced observability (metrics, logs, traces)
 - Proactive monitoring and alerting
 - High-quality dashboards and runbooks
 - Fast issue diagnosis and resolution
 
 **Level 5 (Optimized)**:
+
 - Industry-leading observability practices
 - Advanced techniques (distributed tracing, chaos engineering)
 - Observability-driven development
@@ -548,12 +598,14 @@ Evaluates architectural practices, design quality, and system evolvability.
 ### System Architecture
 
 **Assessment Questions:**
+
 - How well does the architecture support business requirements?
 - How easy is it to make changes to the system?
 - How well are architectural decisions documented?
 - How does the architecture handle scale and complexity?
 
 **Evidence Collection:**
+
 ```python
 # Architecture assessment metrics
 architecture_metrics = {
@@ -577,30 +629,35 @@ architecture_survey = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Unclear or undocumented architecture
 - High coupling and low cohesion
 - Architectural decisions made ad-hoc
 - Difficult to make changes safely
 
 **Level 2 (Developing)**:
+
 - Basic architectural patterns in use
 - Some documentation of design decisions
 - Inconsistent architectural practices
 - Moderate change difficulty
 
 **Level 3 (Defined)**:
+
 - Clear architectural patterns and principles
 - Documented architectural decisions (ADRs)
 - Consistent architectural practices
 - Reasonable change velocity
 
 **Level 4 (Managed)**:
+
 - Evolutionary architecture practices
 - Architecture supports business agility
 - Regular architectural reviews and improvements
 - Strong architectural governance
 
 **Level 5 (Optimized)**:
+
 - Architecture as competitive advantage
 - Advanced architectural patterns and practices
 - Architecture expertise shared widely
@@ -609,12 +666,14 @@ architecture_survey = [
 ### Design Practices
 
 **Assessment Questions:**
+
 - How are design decisions made and documented?
 - How well do designs consider non-functional requirements?
 - How is design quality maintained over time?
 - How effectively do teams collaborate on design?
 
 **Evidence Collection:**
+
 ```python
 # Design process metrics
 design_metrics = {
@@ -638,30 +697,35 @@ design_assessment = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Design happens during implementation
 - Limited consideration of non-functional requirements
 - Inconsistent design practices
 - Poor design documentation
 
 **Level 2 (Developing)**:
+
 - Some upfront design for complex features
 - Basic design review processes
 - Informal design collaboration
 - Limited design pattern reuse
 
 **Level 3 (Defined)**:
+
 - Structured design processes
 - Regular design reviews and collaboration
 - Documented design patterns and standards
 - Good consideration of non-functional requirements
 
 **Level 4 (Managed)**:
+
 - Design-driven development practices
 - Comprehensive design reviews and validation
 - Strong design pattern library and reuse
 - Design quality metrics and improvement
 
 **Level 5 (Optimized)**:
+
 - Design excellence as organizational capability
 - Advanced design practices and tools
 - Design patterns as competitive advantage
@@ -674,12 +738,14 @@ Evaluates how teams work together, share knowledge, and continuously improve.
 ### Team Collaboration
 
 **Assessment Questions:**
+
 - How effectively do teams communicate and coordinate?
 - How well do teams share knowledge and learn from each other?
 - How are conflicts and disagreements resolved?
 - How well do teams support each other?
 
 **Evidence Collection:**
+
 ```python
 # Collaboration metrics
 collaboration_metrics = {
@@ -703,30 +769,35 @@ collaboration_survey = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Teams work in isolation
 - Limited cross-team communication
 - Knowledge hoarding and silos
 - Conflicts create lasting friction
 
 **Level 2 (Developing)**:
+
 - Basic cross-team communication
 - Some knowledge sharing activities
 - Conflicts sometimes resolved constructively
 - Inconsistent team support
 
 **Level 3 (Defined)**:
+
 - Regular cross-team collaboration
 - Structured knowledge sharing processes
 - Good conflict resolution practices
 - Strong peer support networks
 
 **Level 4 (Managed)**:
+
 - Seamless cross-team collaboration
 - Proactive knowledge sharing and mentoring
 - Constructive conflict resolution as norm
 - High levels of psychological safety
 
 **Level 5 (Optimized)**:
+
 - Collaboration as competitive advantage
 - Organization-wide learning and improvement
 - Advanced collaboration practices and tools
@@ -735,12 +806,14 @@ collaboration_survey = [
 ### Continuous Learning and Improvement
 
 **Assessment Questions:**
+
 - How do teams identify and implement improvements?
 - How is learning and development supported?
 - How are experiments and innovations encouraged?
 - How do teams learn from failures and successes?
 
 **Evidence Collection:**
+
 ```python
 # Learning and improvement metrics
 learning_metrics = {
@@ -764,30 +837,35 @@ learning_survey = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Learning happens only when necessary
 - Limited support for skill development
 - Failures blamed rather than learned from
 - Few improvement initiatives
 
 **Level 2 (Developing)**:
+
 - Some learning and development support
 - Basic retrospectives and improvement processes
 - Occasional experimentation
 - Mixed success with improvements
 
 **Level 3 (Defined)**:
+
 - Regular learning and development activities
 - Structured improvement processes
 - Encouraged experimentation and innovation
 - Good learning from failures
 
 **Level 4 (Managed)**:
+
 - Learning integrated into daily work
 - Systematic improvement and innovation
 - Strong learning culture and psychological safety
 - High success rate with improvements
 
 **Level 5 (Optimized)**:
+
 - Learning and improvement as core competency
 - Advanced practices (communities of practice, innovation time)
 - Learning culture as competitive advantage
@@ -800,12 +878,14 @@ Evaluates security practices, compliance management, and risk mitigation.
 ### Security Practices
 
 **Assessment Questions:**
+
 - How are security requirements integrated into development?
 - How is security testing performed?
 - How are security vulnerabilities managed?
 - How is security knowledge shared across teams?
 
 **Evidence Collection:**
+
 ```python
 # Security metrics
 security_metrics = {
@@ -829,30 +909,35 @@ security_survey = [
 **Maturity Levels:**
 
 **Level 1 (Ad Hoc)**:
+
 - Security considered after development
 - Manual, infrequent security testing
 - Slow response to security issues
 - Limited security knowledge across teams
 
 **Level 2 (Developing)**:
+
 - Some security requirements defined
 - Basic automated security scanning
 - Reactive approach to security issues
 - Inconsistent security practices
 
 **Level 3 (Defined)**:
+
 - Security integrated into development process
 - Regular security testing and scanning
 - Structured vulnerability management
 - Basic security training and awareness
 
 **Level 4 (Managed)**:
+
 - Security by design practices
 - Comprehensive automated security testing
 - Proactive security monitoring and response
 - Strong security culture and expertise
 
 **Level 5 (Optimized)**:
+
 - Security as competitive advantage
 - Advanced security practices (threat modeling, chaos security)
 - Security expertise shared organization-wide
@@ -865,7 +950,7 @@ security_survey = [
 ```python
 def calculate_overall_maturity(domain_scores: Dict[str, float]) -> AssessmentSummary:
     """Calculate overall engineering maturity from domain scores"""
-    
+
     # Weight domains based on organizational priorities
     domain_weights = {
         "development_practices": 0.20,
@@ -875,14 +960,14 @@ def calculate_overall_maturity(domain_scores: Dict[str, float]) -> AssessmentSum
         "team_collaboration": 0.15,
         "security_compliance": 0.10
     }
-    
+
     weighted_score = sum(
-        domain_scores[domain] * weight 
+        domain_scores[domain] * weight
         for domain, weight in domain_weights.items()
     )
-    
+
     maturity_level = get_maturity_level(weighted_score)
-    
+
     return AssessmentSummary(
         overall_score=weighted_score,
         maturity_level=maturity_level,
@@ -896,21 +981,25 @@ def calculate_overall_maturity(domain_scores: Dict[str, float]) -> AssessmentSum
 ### Action Planning Framework
 
 **High-Impact, Low-Effort (Quick Wins)**:
+
 - Automated code formatting and linting
 - Basic CI/CD pipeline improvements
 - Documentation and knowledge sharing initiatives
 
 **High-Impact, High-Effort (Strategic Initiatives)**:
+
 - Comprehensive test automation strategy
 - Site reliability engineering implementation
 - Architecture modernization programs
 
 **Low-Impact, Low-Effort (Fill-in Improvements)**:
+
 - Tool and process optimizations
 - Training and certification programs
 - Metrics and dashboard improvements
 
 **Low-Impact, High-Effort (Avoid or Defer)**:
+
 - Complex tool migrations without clear benefits
 - Over-engineering of processes
 - Premature optimization initiatives
@@ -935,8 +1024,8 @@ This assessment framework provides a foundation for understanding and improving 
 
 ## Further Reading
 
-- Forsgren, Nicole, Jez Humble, and Gene Kim. *Accelerate: The Science of Lean Software and DevOps*. 2018.
-- Skelton, Matthew, and Manuel Pais. *Team Topologies: Organizing Business and Technology Teams for Fast Flow*. 2019.
-- Beyer, Betsy, et al. *Site Reliability Engineering: How Google Runs Production Systems*. 2016.
-- Martin, Robert C. *Clean Code: A Handbook of Agile Software Craftsmanship*. 2008.
-- Humble, Jez, and David Farley. *Continuous Delivery: Reliable Software Releases*. 2010.
+- Forsgren, Nicole, Jez Humble, and Gene Kim. _Accelerate: The Science of Lean Software and DevOps_. 2018.
+- Skelton, Matthew, and Manuel Pais. _Team Topologies: Organizing Business and Technology Teams for Fast Flow_. 2019.
+- Beyer, Betsy, et al. _Site Reliability Engineering: How Google Runs Production Systems_. 2016.
+- Martin, Robert C. _Clean Code: A Handbook of Agile Software Craftsmanship_. 2008.
+- Humble, Jez, and David Farley. _Continuous Delivery: Reliable Software Releases_. 2010.

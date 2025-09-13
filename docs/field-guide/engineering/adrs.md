@@ -10,36 +10,37 @@ This scenario illustrates the need for Architecture Decision Records (ADRs). ADR
 
 An ADR is a short document that captures:
 
-* A significant architectural decision
-* The context in which it was made
-* The consequences of the decision
-* The alternatives that were considered
+- A significant architectural decision
+- The context in which it was made
+- The consequences of the decision
+- The alternatives that were considered
 
 ADRs are:
-* **Lightweight:** Short enough to actually be written and read
-* **Immutable:** Once written, they aren't changed (but can be superseded)
-* **Collective:** Maintained as a set that evolves over time
-* **Practical:** Focused on real decisions, not theoretical ideals
+
+- **Lightweight:** Short enough to actually be written and read
+- **Immutable:** Once written, they aren't changed (but can be superseded)
+- **Collective:** Maintained as a set that evolves over time
+- **Practical:** Focused on real decisions, not theoretical ideals
 
 ## Why ADRs Matter
 
 ### 1. Knowledge Preservation
 
-* **Onboard new team members faster:** Provide context beyond "what" to include "why"
-* **Prevent knowledge loss:** Reduce dependency on tribal knowledge
-* **Maintain architectural integrity:** Ensure consistent decision-making over time
+- **Onboard new team members faster:** Provide context beyond "what" to include "why"
+- **Prevent knowledge loss:** Reduce dependency on tribal knowledge
+- **Maintain architectural integrity:** Ensure consistent decision-making over time
 
 ### 2. Better Decision-Making
 
-* **Force clarity of thought:** The act of writing exposes fuzzy thinking
-* **Encourage thorough analysis:** Consider alternatives systematically
-* **Build consensus:** Provide a structure for team alignment
+- **Force clarity of thought:** The act of writing exposes fuzzy thinking
+- **Encourage thorough analysis:** Consider alternatives systematically
+- **Build consensus:** Provide a structure for team alignment
 
 ### 3. Reduced Re-litigation
 
-* **Prevent decision oscillation:** Avoid revisiting the same questions repeatedly
-* **Focus energy on new decisions:** Know which battles have already been fought
-* **Make deliberate changes:** When revisiting decisions, understand what's changed since the original
+- **Prevent decision oscillation:** Avoid revisiting the same questions repeatedly
+- **Focus energy on new decisions:** Know which battles have already been fought
+- **Make deliberate changes:** When revisiting decisions, understand what's changed since the original
 
 ## The ADR Template
 
@@ -49,36 +50,45 @@ A good ADR should be concise (typically 1-2 pages) and follow a consistent struc
 # ADR-0001: Use PostgreSQL for User Management Service
 
 ## Status
+
 Accepted (2023-05-15)
 
 ## Context
-The User Management Service needs a database to store user profiles, credentials, 
-and permission information. We anticipate eventually storing millions of user 
-records with complex permission relationships. We need ACID transactions for 
+
+The User Management Service needs a database to store user profiles, credentials,
+and permission information. We anticipate eventually storing millions of user
+records with complex permission relationships. We need ACID transactions for
 critical operations like user creation and permission changes.
 
 ## Decision
+
 We will use PostgreSQL as the primary database for the User Management Service.
 
 ## Consequences
+
 ### Positive
+
 - Strong transactional guarantees for critical user operations
 - Rich query capabilities for complex permission queries
 - Team has extensive PostgreSQL experience
 - Consistent with our other services that manage structured data
 
 ### Negative
+
 - Higher operational complexity than simpler databases
 - Requires more careful schema design up-front
 
 ## Alternatives Considered
+
 ### MongoDB
+
 - Pro: Flexible schema for evolving user attributes
 - Pro: Simpler horizontal scaling
 - Con: Weaker transaction support
 - Con: Less suitable for relational data like permissions
 
 ### DynamoDB
+
 - Pro: Fully managed with minimal operational overhead
 - Pro: Excellent scaling characteristics
 - Con: Limited query patterns
@@ -91,9 +101,9 @@ We will use PostgreSQL as the primary database for the User Management Service.
 
 Begin with a manageable scope:
 
-* **Document recent decisions first:** They're fresh in memory
-* **Focus on consequential decisions:** Not every technical choice needs an ADR
-* **Build momentum with quick wins:** Short, valuable ADRs encourage adoption
+- **Document recent decisions first:** They're fresh in memory
+- **Focus on consequential decisions:** Not every technical choice needs an ADR
+- **Build momentum with quick wins:** Short, valuable ADRs encourage adoption
 
 ### 2. Establish the Process
 
@@ -119,29 +129,28 @@ graph TD
     style D fill:#cfc,stroke:#333,stroke-width:2px
 ```
 
-
-* **Draft:** Author proposes the ADR
-* **Review:** Team discusses and provides feedback
-* **Decide:** Final decision is made (by consensus or designated decision-maker)
-* **Record:** ADR is finalized and added to the repository
+- **Draft:** Author proposes the ADR
+- **Review:** Team discusses and provides feedback
+- **Decide:** Final decision is made (by consensus or designated decision-maker)
+- **Record:** ADR is finalized and added to the repository
 
 ### 3. Make ADRs Discoverable
 
 Ensure ADRs are easy to find and reference:
 
-* **Store with code:** Keep ADRs in the repository they apply to
-* **Use consistent numbering:** `ADR-NNNN` with sequential numbers
-* **Maintain an index:** List all ADRs with brief descriptions
-* **Link to ADRs:** Reference them in code, PRs, and discussions
+- **Store with code:** Keep ADRs in the repository they apply to
+- **Use consistent numbering:** `ADR-NNNN` with sequential numbers
+- **Maintain an index:** List all ADRs with brief descriptions
+- **Link to ADRs:** Reference them in code, PRs, and discussions
 
 ### 4. Define the Scope of Architecture Decisions
 
 Be clear about what warrants an ADR:
 
-* **Structural choices:** Service boundaries, communication patterns
-* **Technology selections:** Frameworks, databases, languages
-* **Cross-cutting concerns:** Authentication, logging, monitoring
-* **Standards and patterns:** Coding conventions, design patterns
+- **Structural choices:** Service boundaries, communication patterns
+- **Technology selections:** Frameworks, databases, languages
+- **Cross-cutting concerns:** Authentication, logging, monitoring
+- **Standards and patterns:** Coding conventions, design patterns
 
 ## ADR Best Practices
 
@@ -149,34 +158,34 @@ Be clear about what warrants an ADR:
 
 Not every technical choice needs an ADR. Focus on decisions that:
 
-* Have long-term implications
-* Affect multiple components or teams
-* Would be expensive to change later
-* Represent meaningful trade-offs
+- Have long-term implications
+- Affect multiple components or teams
+- Would be expensive to change later
+- Represent meaningful trade-offs
 
 ### 2. Capture Context, Not Just Conclusions
 
 The "why" is more important than the "what":
 
-* **Record constraints:** Business requirements, deadlines, team expertise
-* **Note assumptions:** Expected scale, performance needs, security requirements
-* **Acknowledge timing:** "In Q1 2023, with our current scale, this was the right choice"
+- **Record constraints:** Business requirements, deadlines, team expertise
+- **Note assumptions:** Expected scale, performance needs, security requirements
+- **Acknowledge timing:** "In Q1 2023, with our current scale, this was the right choice"
 
 ### 3. Be Honest About Trade-offs
 
 Good ADRs acknowledge the downsides of the chosen approach:
 
-* **Document known limitations:** What won't work well with this decision?
-* **Identify risks:** What could go wrong?
-* **Specify mitigations:** How will you address the downsides?
+- **Document known limitations:** What won't work well with this decision?
+- **Identify risks:** What could go wrong?
+- **Specify mitigations:** How will you address the downsides?
 
 ### 4. Keep ADRs Evergreen
 
 ADRs should evolve with your system:
 
-* **Use status markers:** Proposed, Accepted, Deprecated, Superseded
-* **Create new ADRs:** Don't modify old ones; create new ones that reference them
-* **Review periodically:** Are past decisions still valid?
+- **Use status markers:** Proposed, Accepted, Deprecated, Superseded
+- **Create new ADRs:** Don't modify old ones; create new ones that reference them
+- **Review periodically:** Are past decisions still valid?
 
 ## Real-World ADR Patterns
 
@@ -188,10 +197,12 @@ When circumstances change, create a new ADR that references the old one:
 # ADR-0025: Switch from MongoDB to PostgreSQL for Analytics Service
 
 ## Status
+
 Accepted (2023-10-12)
 
 ## Context
-In ADR-0008, we chose MongoDB for the Analytics Service due to its schema 
+
+In ADR-0008, we chose MongoDB for the Analytics Service due to its schema
 flexibility and our uncertain reporting requirements. Since then:
 
 1. Our reporting needs have stabilized with clear schema requirements
@@ -199,9 +210,11 @@ flexibility and our uncertain reporting requirements. Since then:
 3. We now need to join analytics data with relational data from other services
 
 ## Decision
+
 We will migrate the Analytics Service from MongoDB to PostgreSQL.
 
 ## Consequences
+
 ...
 ```
 
@@ -213,17 +226,22 @@ For uncertain decisions, specify evaluation criteria and timeframes:
 # ADR-0017: Trial GraphQL for Mobile API (Experimental)
 
 ## Status
+
 Accepted (2023-08-01), to be evaluated after 3 months
 
 ## Context
-Our mobile apps need to fetch data from multiple backend services. The current 
+
+Our mobile apps need to fetch data from multiple backend services. The current
 REST APIs require multiple roundtrips and often return more data than needed.
 
 ## Decision
+
 We will implement a GraphQL API for our mobile clients on an experimental basis.
 
 ## Evaluation Criteria
+
 After 3 months, we will evaluate:
+
 1. Developer productivity (measured by feature delivery time)
 2. Network efficiency (measured by payload size and request count)
 3. Server performance (measured by CPU and memory usage)
@@ -240,13 +258,16 @@ Some ADRs establish patterns for future decisions:
 # ADR-0032: Service Ownership Model
 
 ## Status
+
 Accepted (2023-11-05)
 
 ## Context
-As we scale from 5 to 20+ services, we need a consistent model for service 
+
+As we scale from 5 to 20+ services, we need a consistent model for service
 ownership to ensure accountability and quality.
 
 ## Decision
+
 We will adopt a "you build it, you run it" ownership model where:
 
 1. Each service has a designated owner team
@@ -259,6 +280,7 @@ We will adopt a "you build it, you run it" ownership model where:
 3. Changes from non-owners require owner approval
 
 ## Consequences
+
 ...
 ```
 
@@ -268,27 +290,27 @@ As a Staff Engineer, you have unique responsibilities around ADRs:
 
 ### 1. Architect the ADR Process
 
-* Design an ADR template that works for your team
-* Establish criteria for what decisions need ADRs
-* Create tooling to make ADRs accessible (e.g., index generator, search)
+- Design an ADR template that works for your team
+- Establish criteria for what decisions need ADRs
+- Create tooling to make ADRs accessible (e.g., index generator, search)
 
 ### 2. Model Good ADR Writing
 
-* Write clear, thoughtful ADRs for your own decisions
-* Provide feedback on others' ADRs
-* Help team members articulate their technical reasoning
+- Write clear, thoughtful ADRs for your own decisions
+- Provide feedback on others' ADRs
+- Help team members articulate their technical reasoning
 
 ### 3. Champion the Practice
 
-* Advocate for ADRs in planning and design discussions
-* Reference ADRs in technical discussions
-* Recognize and celebrate good ADRs
+- Advocate for ADRs in planning and design discussions
+- Reference ADRs in technical discussions
+- Recognize and celebrate good ADRs
 
 ### 4. Maintain the Decision History
 
-* Periodically review older ADRs for continued relevance
-* Update the status of superseded decisions
-* Ensure the collection of ADRs tells a coherent story of the system's evolution
+- Periodically review older ADRs for continued relevance
+- Update the status of superseded decisions
+- Ensure the collection of ADRs tells a coherent story of the system's evolution
 
 By establishing ADRs as a regular practice, you create a living history of your architecture that builds institutional memory, promotes thoughtful decision-making, and allows your team to move forward with confidence rather than constantly revisiting the past.
 
@@ -306,13 +328,15 @@ By establishing ADRs as a regular practice, you create a living history of your 
 - **Debrief:** Discuss the value of documenting decisions, the benefits of collaborative decision-making, and the potential pitfalls of making assumptions.
 
 ## Prerequisites
+
 - **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Understanding systematic decision-making approaches supports effective ADR creation
 
-## Related Technical Concepts  
+## Related Technical Concepts
+
 - **[Technical Architecture](technical-architecture.md)** - ADRs document architectural decisions and trade-offs in system design
 - **[Strategic Thinking](../thinking/strategic-thinking.md)** - ADRs bridge technical decisions with strategic technical direction
 
 ## Further Reading
 
-- *Designing Data-Intensive Applications* by Martin Kleppmann
-- *The Staff Engineer's Path* by Tanya Reilly
+- _Designing Data-Intensive Applications_ by Martin Kleppmann
+- _The Staff Engineer's Path_ by Tanya Reilly

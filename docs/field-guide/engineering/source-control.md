@@ -86,7 +86,7 @@ Source control mastery, ultimately, is about enabling your team to work together
 
 ## Essential Resources for Deepening Your Practice
 
-*Pro Git* by Scott Chacon and Ben Straub remains the definitive resource for understanding Git's capabilities and design philosophy. The book excels at connecting Git's technical features to practical development scenarios, making it invaluable for both individual skill development and team training.
+_Pro Git_ by Scott Chacon and Ben Straub remains the definitive resource for understanding Git's capabilities and design philosophy. The book excels at connecting Git's technical features to practical development scenarios, making it invaluable for both individual skill development and team training.
 
 Atlassian's Git Tutorials provide excellent practical guidance for common workflows and challenging scenarios. Their visual approach to explaining Git concepts makes them particularly useful for teams developing shared understanding of branching and merging strategies.
 

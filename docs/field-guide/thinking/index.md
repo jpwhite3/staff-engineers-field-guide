@@ -57,8 +57,9 @@ This shift is crucial because Staff Engineers rarely solve problems in isolation
 The mental models in this chapter help you see the systems behind the systems. When a deployment pipeline keeps failing, the technical fix might be straightforward—but the systemic solution requires understanding why the process wasn't designed properly initially, why testing wasn't comprehensive, why monitoring wasn't adequate, and why the team culture doesn't prioritize operational excellence.
 
 Critical thinking skills let you:
+
 - **Analyze root causes** rather than just symptoms
-- **Predict unintended consequences** of proposed solutions  
+- **Predict unintended consequences** of proposed solutions
 - **Design interventions** that address systemic issues
 - **Communicate reasoning** to stakeholders with different backgrounds
 - **Make decisions** under uncertainty and time pressure
@@ -79,28 +80,32 @@ The analytical frameworks you master here directly enable the leadership skills 
 
 ## Discrete Topics Covered
 
-* [Mental Models](mental-models.md): Build a diverse toolkit of frameworks (like First Principles Thinking, Second-Order Thinking, and Inversion) to deconstruct and solve complex problems.
-* [Cognitive Biases](cognitive-biases.md): Learn to recognize and mitigate common biases (like Confirmation Bias, Planning Fallacy, and Sunk Cost Fallacy) that affect engineering decisions.
-* [Structured Problem-Solving](structured-problem-solving.md): Apply systematic methodologies like the 5 Whys, Fishbone Diagrams, and the Scientific Method to move from chaos to clarity.
-* [Mind Mapping](mind-mapping.md): Use visual thinking techniques to explore complex problem spaces, organize ideas, and communicate intricate system designs.
-* [Strategic Thinking](strategic-thinking.md): Connect day-to-day technical work to high-level business strategy and make decisions that align with long-term goals.
+- [Mental Models](mental-models.md): Build a diverse toolkit of frameworks (like First Principles Thinking, Second-Order Thinking, and Inversion) to deconstruct and solve complex problems.
+- [Cognitive Biases](cognitive-biases.md): Learn to recognize and mitigate common biases (like Confirmation Bias, Planning Fallacy, and Sunk Cost Fallacy) that affect engineering decisions.
+- [Structured Problem-Solving](structured-problem-solving.md): Apply systematic methodologies like the 5 Whys, Fishbone Diagrams, and the Scientific Method to move from chaos to clarity.
+- [Mind Mapping](mind-mapping.md): Use visual thinking techniques to explore complex problem spaces, organize ideas, and communicate intricate system designs.
+- [Strategic Thinking](strategic-thinking.md): Connect day-to-day technical work to high-level business strategy and make decisions that align with long-term goals.
 
 ## Cross-Reference Navigation
 
 ### Prerequisites for This Chapter
+
 - **[Staff Engineer Archetypes](../intro/index.md)** - Understanding your role context before developing advanced analytical capabilities
 - **[Continuous Learning](../learning/index.md)** - Learning frameworks needed to develop and maintain thinking skills
 
-### Related Concepts  
+### Related Concepts
+
 - **[Engineering Excellence](../engineering/index.md)** - Technical decision-making benefits from systematic mental models and structured thinking
 - **[Leadership & Influence](../leadership/index.md)** - Influencing others requires understanding cognitive biases and decision-making processes
 - **[Execution & Strategy](../execution/index.md)** - Strategic execution depends on clear thinking and systematic problem-solving
 
 ### Apply These Concepts
+
 - **[Critical Thinking Assessment](../../appendix/tools/critical-thinking-assessment.md)** - Evaluate your ability to apply mental models and avoid cognitive biases
 - **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Assess your analytical and strategic thinking capabilities
 
 ### Next Steps in Your Learning Journey
+
 1. **[Leadership & Influence](../leadership/index.md)** - Apply critical thinking skills to understand and influence people and teams
 2. **[Execution & Strategy](../execution/index.md)** - Use analytical frameworks for complex project and organizational challenges
 3. **[Business Integration](../business/index.md)** - Apply strategic thinking to business-technology alignment and decision-making
@@ -116,15 +121,18 @@ The analytical frameworks you master here directly enable the leadership skills 
 ## Further Reading
 
 **Core Mental Models and Cognitive Science**:
-- Kahneman, Daniel. *Thinking, Fast and Slow*. 2011. (Seminal work on cognitive biases and dual-system thinking)
-- Parrish, Shane. *The Great Mental Models* (Volumes 1-3). 2019-2021. (Practical series explaining essential mental models with examples)
-- Munger, Charles T. *Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger*. 2005. (Championing the "latticework of mental models" approach to decision-making)
+
+- Kahneman, Daniel. _Thinking, Fast and Slow_. 2011. (Seminal work on cognitive biases and dual-system thinking)
+- Parrish, Shane. _The Great Mental Models_ (Volumes 1-3). 2019-2021. (Practical series explaining essential mental models with examples)
+- Munger, Charles T. _Poor Charlie's Almanack: The Wit and Wisdom of Charles T. Munger_. 2005. (Championing the "latticework of mental models" approach to decision-making)
 
 **Systems Thinking and Problem-Solving**:
-- Meadows, Donella H. *Thinking in Systems: A Primer*. 2008. (Accessible introduction to systems thinking, feedback loops, and leverage points)
-- Weinberg, Gabriel, and Lauren McCann. *Super Thinking: The Big Book of Mental Models*. 2019. (Comprehensive survey of mental models from various disciplines)
-- Rother, Mike. *Toyota Kata: Managing People for Improvement, Adaptiveness, and Innovation*. 2009. (Structured problem-solving and continuous improvement methodologies)
+
+- Meadows, Donella H. _Thinking in Systems: A Primer_. 2008. (Accessible introduction to systems thinking, feedback loops, and leverage points)
+- Weinberg, Gabriel, and Lauren McCann. _Super Thinking: The Big Book of Mental Models_. 2019. (Comprehensive survey of mental models from various disciplines)
+- Rother, Mike. _Toyota Kata: Managing People for Improvement, Adaptiveness, and Innovation_. 2009. (Structured problem-solving and continuous improvement methodologies)
 
 **Strategic and Algorithmic Thinking**:
-- Christian, Brian, and Tom Griffiths. *Algorithms to Live By: The Computer Science of Human Decisions*. 2016. (Applying computational thinking to everyday and strategic decisions)
-- Rumelt, Richard. *Good Strategy Bad Strategy: The Difference and Why It Matters*. 2011. (Strategic thinking frameworks for complex business and technology decisions)
+
+- Christian, Brian, and Tom Griffiths. _Algorithms to Live By: The Computer Science of Human Decisions_. 2016. (Applying computational thinking to everyday and strategic decisions)
+- Rumelt, Richard. _Good Strategy Bad Strategy: The Difference and Why It Matters_. 2011. (Strategic thinking frameworks for complex business and technology decisions)

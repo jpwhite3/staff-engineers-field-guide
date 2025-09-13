@@ -14,41 +14,46 @@ Most engineers learn the basic Git commands, but fewer understand how to use Git
 
 A well-structured Git history should read like a logical progression of changes:
 
-* **Each commit should encapsulate one logical change**  
-  * Too small: Separate commits for fixing a typo and adding a semicolon
-  * Too large: "Implement user authentication" that touches 30 files
-  * Just right: "Add password strength validation to registration form"
+**Each commit should encapsulate one logical change**
 
-* **Commit messages should explain why, not just what**  
-  * Weak: "Fix bug in order processing"
-  * Better: "Fix race condition in order processing when inventory check and payment happen simultaneously"
-  * Best: "Fix race condition in order processing (Issue #123)
-    
-    When a user places an order, we were checking inventory and processing payment in parallel threads. If inventory became unavailable between these operations, we could process payment for out-of-stock items. Now we acquire a lock on the inventory item until the transaction completes."
+  - Too small: Separate commits for fixing a typo and adding a semicolon
+  - Too large: "Implement user authentication" that touches 30 files
+  - Just right: "Add password strength validation to registration form"
+
+**Commit messages should explain why, not just what**
+
+  - Weak: "Fix bug in order processing"
+  - Better: "Fix race condition in order processing when inventory check and payment happen simultaneously"
+  - Best: "Fix race condition in order processing (Issue #123)
+
+  When a user places an order, we were checking inventory and processing payment in parallel threads. If inventory became unavailable between these operations, we could process payment for out-of-stock items. Now we acquire a lock on the inventory item until the transaction completes."
 
 ### 2. Using Branches as Workspaces
 
 Different branching strategies support different team workflows:
 
-* **Trunk-based development**
-  * Few branches, short-lived
-  * Frequent integration to main branch
-  * Heavy use of feature flags
-  * Benefits: Reduced merge conflicts, continuous integration
-  * Challenges: Requires strong testing practices and team discipline
+**Trunk-based development**
 
-* **GitFlow**
-  * More structured with develop, feature, release, and hotfix branches
-  * Clear separation between in-progress and production-ready code
-  * Benefits: Clear processes for different types of changes
-  * Challenges: More complex, can delay integration
+  - Few branches, short-lived
+  - Frequent integration to main branch
+  - Heavy use of feature flags
+  - Benefits: Reduced merge conflicts, continuous integration
+  - Challenges: Requires strong testing practices and team discipline
 
-* **GitHub Flow**
-  * Feature branches from main
-  * Pull request for every change
-  * Deploy after merge to main
-  * Benefits: Simplicity, clear review process
-  * Challenges: Can create bottlenecks with many PRs
+**GitFlow**
+
+  - More structured with develop, feature, release, and hotfix branches
+  - Clear separation between in-progress and production-ready code
+  - Benefits: Clear processes for different types of changes
+  - Challenges: More complex, can delay integration
+
+**GitHub Flow**
+
+  - Feature branches from main
+  - Pull request for every change
+  - Deploy after merge to main
+  - Benefits: Simplicity, clear review process
+  - Challenges: Can create bottlenecks with many PRs
 
 The best strategy depends on team size, deployment frequency, and product stability requirements.
 
@@ -58,10 +63,10 @@ The best strategy depends on team size, deployment frequency, and product stabil
 
 Break changes into logical, atomic commits that can be understood independently:
 
-* **Step 1:** Refactor existing code to prepare for new functionality
-* **Step 2:** Add new functionality
-* **Step 3:** Update tests
-* **Step 4:** Update documentation
+- **Step 1:** Refactor existing code to prepare for new functionality
+- **Step 2:** Add new functionality
+- **Step 3:** Update tests
+- **Step 4:** Update documentation
 
 This makes code review more effective and history more useful.
 
@@ -69,33 +74,37 @@ This makes code review more effective and history more useful.
 
 A great PR is self-contained and self-describing:
 
-* **Clear title:** Summarize the change in under 50 characters
-* **Detailed description:**
-  * Why is this change needed?
-  * What approach did you take?
-  * What alternatives did you consider?
-  * How was it tested?
-* **Manageable size:** Generally under 500 lines changed
-* **Context links:** Reference issues, specs, or discussions
+**Clear title:** Summarize the change in under 50 characters
+
+**Detailed description:**
+
+  - Why is this change needed?
+  - What approach did you take?
+  - What alternatives did you consider?
+  - How was it tested?
+
+**Manageable size:** Generally under 500 lines changed
+
+**Context links:** Reference issues, specs, or discussions
 
 ### 3. The Pre-Review Cleanup Pattern
 
 Before requesting review, clean up your commits:
 
-* Use `git rebase -i` to:
-  * Squash "fix typo" commits into their parent
-  * Reorder commits for logical flow
-  * Edit commit messages for clarity
-* Result: A clean, reviewable history
+- Use `git rebase -i` to:
+  - Squash "fix typo" commits into their parent
+  - Reorder commits for logical flow
+  - Edit commit messages for clarity
+- Result: A clean, reviewable history
 
 ### 4. The Living Documentation Pattern
 
 Use Git history as living documentation:
 
-* Tag significant releases with semantic versions
-* Add detailed release notes to annotated tags
-* Maintain a CHANGELOG.md that references significant commits
-* Use `git blame` with intention to understand code rationale
+- Tag significant releases with semantic versions
+- Add detailed release notes to annotated tags
+- Maintain a CHANGELOG.md that references significant commits
+- Use `git blame` with intention to understand code rationale
 
 ## Git Workflows for Common Scenarios
 
@@ -160,27 +169,27 @@ As a Staff Engineer, your role is not just to follow these practices but to esta
 
 ### 1. Document and Standardize
 
-* Create a `CONTRIBUTING.md` with clear Git guidelines
-* Include commit message templates and examples
-* Document the chosen branching strategy
+- Create a `CONTRIBUTING.md` with clear Git guidelines
+- Include commit message templates and examples
+- Document the chosen branching strategy
 
 ### 2. Lead by Example
 
-* Model excellent commit messages and PR descriptions
-* When reviewing code, comment on Git practices as well as code
-* Share your Git workflow tips in team meetings
+- Model excellent commit messages and PR descriptions
+- When reviewing code, comment on Git practices as well as code
+- Share your Git workflow tips in team meetings
 
 ### 3. Automate Where Possible
 
-* Use commit hooks to enforce formatting standards
-* Add PR templates to guide developers
-* Set up CI checks for conventional commits if using that standard
+- Use commit hooks to enforce formatting standards
+- Add PR templates to guide developers
+- Set up CI checks for conventional commits if using that standard
 
 ### 4. Teach and Coach
 
-* Run workshops on advanced Git features
-* Pair with developers on complex merges or rebases
-* Share "Git archaeology" techniques for understanding code history
+- Run workshops on advanced Git features
+- Pair with developers on complex merges or rebases
+- Share "Git archaeology" techniques for understanding code history
 
 ## Advanced Git Techniques for Staff Engineers
 
@@ -188,21 +197,21 @@ As you grow in your role, these advanced techniques become increasingly valuable
 
 ### 1. Git Submodules/Subtrees for Managing Complex Repos
 
-* Use for shared components across multiple projects
-* Enables independent versioning of components
-* Requires careful management and team education
+- Use for shared components across multiple projects
+- Enables independent versioning of components
+- Requires careful management and team education
 
 ### 2. Git Reflog for Recovering Lost Work
 
-* Safety net for recovering from Git mistakes
-* Shows history of HEAD movement
-* Essential for helping team members recover from Git errors
+- Safety net for recovering from Git mistakes
+- Shows history of HEAD movement
+- Essential for helping team members recover from Git errors
 
 ### 3. Custom Git Aliases for Team Efficiency
 
-* Create standardized shortcuts for common workflows
-* Share them across the team for consistency
-* Examples:
+- Create standardized shortcuts for common workflows
+- Share them across the team for consistency
+- Examples:
   ```
   git config --global alias.st status
   git config --global alias.prune-branches '!git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
@@ -210,15 +219,17 @@ As you grow in your role, these advanced techniques become increasingly valuable
 
 ### 4. Git Hooks for Automation
 
-* Pre-commit hooks for code formatting and linting
-* Commit-msg hooks to enforce commit message standards
-* Post-receive hooks for deployment automation
+- Pre-commit hooks for code formatting and linting
+- Commit-msg hooks to enforce commit message standards
+- Post-receive hooks for deployment automation
 
 By elevating Git from a mere code storage tool to a central part of your engineering culture, you transform it into a powerful lever for team collaboration and code quality.
 
 ## Prerequisites
+
 - **[Team Formation](../teamwork/team-formation.md)** - Understanding team development stages helps implement Git practices that support collaboration
 
 ## Related Technical Concepts
+
 - **[Code Hygiene](code-hygiene.md)** - Git practices directly support code quality and refactoring workflows
 - **[Continuous Delivery](continuous-delivery.md)** - Source control practices enable effective CI/CD implementation

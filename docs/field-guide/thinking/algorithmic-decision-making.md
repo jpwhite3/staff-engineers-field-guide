@@ -91,6 +91,7 @@ flowchart TD
 **Algorithmic Insight**: The optimal strategy depends on your team's growth timeline and the "regret" cost of bad hires.
 
 **Framework Application**:
+
 - **Short timeline, high stakes** → Exploit (hire proven seniors)
 - **Long timeline, moderate stakes** → Explore (mix of seniors and promising juniors)  
 - **Learning opportunity exists** → Explore (junior hires provide learning about coaching/mentoring)
@@ -148,6 +149,7 @@ Imagine you're hiring for a critical role and will interview candidates in rando
 **Scenario**: Evaluating databases for a new service. You could spend weeks researching every option, or you could pick the first reasonable choice.
 
 **37% Rule Application**:
+
 1. **Define your search space**: How many options will you seriously consider?
 2. **Learning phase**: Spend 37% of your time/effort purely on information gathering
 3. **Decision phase**: Choose the first option that beats your learning baseline
@@ -166,6 +168,7 @@ Database selection with 2 weeks allocated:
 **Scenario**: How long should you spend on architecture reviews before implementation?
 
 **Modified Stopping Rule for Reviews**:
+
 - **Initial review threshold**: Stop when diminishing returns set in (new issues found per hour drops below threshold)
 - **Critical system modifier**: Extend review time proportionally to blast radius of potential failures
 - **Time pressure modifier**: Compress review time but increase post-implementation monitoring
@@ -196,6 +199,7 @@ class OptimalStoppingReview:
 **Problem**: When do you stop optimizing performance and ship the feature?
 
 **Optimal Stopping Approach**:
+
 1. **Establish baseline**: Measure current performance  
 2. **Learning phase**: Try several optimization approaches, establish what level of improvement is possible
 3. **Stopping rule**: Stop when marginal performance improvement per unit effort falls below threshold
@@ -261,6 +265,7 @@ Every Staff Engineer juggles multiple priorities, deadlines, and competing deman
 **Real-world complexity**: Many engineering tasks have dependencies. You can't deploy before you test, can't test before you code, can't code before you design.
 
 **Critical Path Method (CPM)**:
+
 1. **Map all dependencies** between tasks
 2. **Find the longest path** through the dependency graph (the critical path)
 3. **Optimize the critical path** first—any delay here delays the entire project
@@ -331,11 +336,13 @@ class PersonalKnowledgeCache:
 **Practical Applications**:
 
 **Documentation Strategy**:
+
 - **Hot cache**: Keep current project docs and frequently referenced materials easily accessible (bookmarks, desktop, wiki favorites)
 - **Warm cache**: Previous project docs, less common but sometimes needed references  
 - **Cold storage**: Old projects, rarely needed specs (searchable but not immediately accessible)
 
 **Learning Strategy**:
+
 - **Hot skills**: Current technology stack, active problem domains
 - **Warm skills**: Related technologies, adjacent domains
 - **Cold skills**: Past expertise that's not immediately relevant but might be useful
@@ -347,11 +354,13 @@ class PersonalKnowledgeCache:
 **Applications**:
 
 **Daily Work Organization**:
+
 - Keep today's relevant files, terminals, and browser tabs easily accessible
 - Use workspace management tools that preserve "working sets" of information
 - Organize communication tools (Slack channels, email folders) by recency and relevance
 
 **Meeting and Context Management**:
+
 - Maintain "hot context" for current projects (recent decisions, active discussions, key metrics)
 - Build systems to quickly restore context after interruptions
 - Use calendar blocks to batch similar work and preserve context
@@ -369,6 +378,7 @@ Level 5 (Long-term): Career knowledge, fundamental principles
 ```
 
 **Cache Invalidation Strategy**:
+
 - **Time-based**: Some information becomes stale (performance metrics, team structures)
 - **Event-based**: Major changes invalidate related information (architecture changes, team reorganizations)
 - **Version-based**: Keep track of when foundational knowledge was last updated
@@ -398,6 +408,7 @@ Team A Defect: A gets benefits     Both suffer degraded service
 ```
 
 **Optimal Strategy - Tit-for-Tat with Forgiveness**:
+
 1. **Start cooperatively** (assume good faith)
 2. **Mirror the other player's** previous move  
 3. **Occasionally forgive** defection to avoid endless retaliation cycles
@@ -435,6 +446,7 @@ class EngineeringCooperation:
 **Game Theory Insight**: This is a coordination game where aligned choices are better than misaligned ones, regardless of which specific choice is made.
 
 **Optimal Strategy**:
+
 1. **Establish communication** channels for coordination
 2. **Create focal points** (industry standards, existing organizational choices)
 3. **Use commitment devices** (public declarations of intent)
@@ -506,6 +518,7 @@ class EngineeringResourceAllocation:
 ```
 
 **Key Insights for Staff Engineers**:
+
 - **Make resource requests transparent** to encourage honest valuation
 - **Use objective value metrics** where possible (user impact, revenue, cost savings)
 - **Account for opportunity costs** in resource allocation decisions
@@ -588,18 +601,21 @@ class AlgorithmicDecisionFramework:
 ### **Building Your Algorithmic Intuition**
 
 **Daily Practice**:
+
 - **Morning planning**: Apply shortest-job-first to your daily task list
 - **Decision logging**: Record which algorithmic principles you applied and their outcomes
 - **Context switching**: Use LRU principles to organize your information environment
 - **Meeting efficiency**: Apply optimal stopping to discussions and research
 
 **Weekly Review**:
+
 - **Explore-exploit balance**: How much time did you spend on exploration vs. exploitation?
 - **Stopping decisions**: Did you gather information for the right amount of time?
 - **Coordination effectiveness**: How well did you align with stakeholders?
 - **Resource allocation**: Were your time and attention optimally distributed?
 
 **Monthly Assessment**:
+
 - **Decision quality**: Which algorithmic approaches led to better outcomes?
 - **Pattern recognition**: What types of decisions benefit most from systematic approaches?
 - **Stakeholder feedback**: How did strategic thinking improve your relationships and outcomes?
@@ -613,22 +629,22 @@ The most important algorithmic decision is **when to use algorithmic thinking** 
 
 ### **Algorithmic Thinking Is Most Valuable When**:
 
-**High stakes decisions** → The cost of being wrong is significant
-**Repeated decision types** → You'll face similar decisions again  
-**Multiple valid options** → No obviously correct choice
-**Time pressure** → Need efficient decision-making process
-**Multiple stakeholders** → Strategic considerations matter
-**Uncertain outcomes** → Probabilistic thinking helps
-**Resource constraints** → Optimization provides clear value
+- **High stakes decisions** → The cost of being wrong is significant
+- **Repeated decision types** → You'll face similar decisions again  
+- **Multiple valid options** → No obviously correct choice
+- **Time pressure** → Need efficient decision-making process
+- **Multiple stakeholders** → Strategic considerations matter
+- **Uncertain outcomes** → Probabilistic thinking helps
+- **Resource constraints** → Optimization provides clear value
 
 ### **Intuitive Thinking Is Better When**:
 
-**Unique, one-off decisions** → No pattern to optimize
-**Clear optimal choices** → Algorithm would reach same conclusion
-**Creative problems** → Need novel solutions, not optimal ones
-**Human relationship issues** → Emotional intelligence trumps optimization
-**Rapid response needed** → No time for systematic analysis
-**High context dependency** → Algorithms can't capture all nuances
+- **Unique, one-off decisions** → No pattern to optimize
+- **Clear optimal choices** → Algorithm would reach same conclusion
+- **Creative problems** → Need novel solutions, not optimal ones
+- **Human relationship issues** → Emotional intelligence trumps optimization
+- **Rapid response needed** → No time for systematic analysis
+- **High context dependency** → Algorithms can't capture all nuances
 
 ### **The Hybrid Approach**:
 
@@ -668,12 +684,12 @@ The goal isn't to become a decision-making robot. **The goal is to develop bette
 
 When you internalize these algorithmic approaches, you gain:
 
-**Better calibration** → Your confidence in decisions matches their actual quality
-**Faster decisions** → Systematic approaches cut through analysis paralysis
-**More consistent outcomes** → Reduce the variance in your decision quality
-**Clearer communication** → Explain your reasoning in terms others can follow
-**Reduced regret** → Confidence that you followed optimal processes
-**Transferable skills** → Apply proven approaches to novel problems
+- **Better calibration** → Your confidence in decisions matches their actual quality
+- **Faster decisions** → Systematic approaches cut through analysis paralysis
+- **More consistent outcomes** → Reduce the variance in your decision quality
+- **Clearer communication** → Explain your reasoning in terms others can follow
+- **Reduced regret** → Confidence that you followed optimal processes
+- **Transferable skills** → Apply proven approaches to novel problems
 
 **Algorithmic thinking becomes most powerful when it's internalized as enhanced intuition.** You're not mechanically applying formulas—you're using mathematical insights to guide your natural problem-solving abilities.
 
@@ -682,17 +698,21 @@ This is how Staff Engineers develop the judgment to make complex decisions quick
 ## Further Reading
 
 **Core Algorithmic Decision-Making**:
+
 - Christian, Brian, and Tom Griffiths. *Algorithms to Live By: The Computer Science of Human Decisions*. 2016.
 - Cormen, Thomas H., et al. *Introduction to Algorithms*. 2009.
 
 **Game Theory and Strategic Thinking**:
+
 - Dixit, Avinash, and Barry Nalebuff. *The Art of Strategy: A Game Theorist's Guide to Success*. 2008.
 - Harford, Tim. *The Logic of Life: The Rational Economics of an Irrational World*. 2008.
 
 **Decision Science and Behavioral Economics**:
+
 - Kahneman, Daniel. *Thinking, Fast and Slow*. 2011.
 - Thaler, Richard H., and Cass R. Sunstein. *Nudge: Improving Decisions About Health, Wealth, and Happiness*. 2008.
 
 **Systems and Optimization**:
+
 - Meadows, Donella. *Thinking in Systems: A Primer*. 2008.
 - Silver, Nate. *The Signal and the Noise: Why So Many Predictions Fail — but Some Don't*. 2012.

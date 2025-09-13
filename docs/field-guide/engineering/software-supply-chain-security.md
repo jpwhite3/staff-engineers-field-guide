@@ -8,33 +8,36 @@ As Staff Engineers, we are responsible for the entire ecosystem of our applicati
 
 ## Key Principles for Supply Chain Security
 
--   **Deep Dependency Mapping:** Don't just track your direct dependencies; understand the entire tree of transitive dependencies. Every component is a potential attack vector.
--   **Third-Party Risk Management:** Treat third-party suppliers as potential adversaries. Implement a formal program that includes due diligence, security assessments, and ongoing monitoring.
--   **Immutable Infrastructure & Build Provenance:** Move towards systems that cannot be altered after deployment. Establish a clear, verifiable trail for every component, from source to production.
--   **Automation is Key:** Manual processes cannot scale to manage the complexity of modern software supply chains. Automate dependency scanning, vulnerability assessments, and security testing.
+- **Deep Dependency Mapping:** Don't just track your direct dependencies; understand the entire tree of transitive dependencies. Every component is a potential attack vector.
+- **Third-Party Risk Management:** Treat third-party suppliers as potential adversaries. Implement a formal program that includes due diligence, security assessments, and ongoing monitoring.
+- **Immutable Infrastructure & Build Provenance:** Move towards systems that cannot be altered after deployment. Establish a clear, verifiable trail for every component, from source to production.
+- **Automation is Key:** Manual processes cannot scale to manage the complexity of modern software supply chains. Automate dependency scanning, vulnerability assessments, and security testing.
 
 ## A Staff Engineer's Toolkit
 
 1.  **Advanced Dependency Scanning:**
-    -   Go beyond basic tools like `npm audit`. Use solutions like Snyk, Sonatype, or Mend to get real-time vulnerability detection and risk scoring directly in your CI/CD pipeline and IDE.
+
+    - Go beyond basic tools like `npm audit`. Use solutions like Snyk, Sonatype, or Mend to get real-time vulnerability detection and risk scoring directly in your CI/CD pipeline and IDE.
 
 2.  **Secure Code Reviews:**
-    -   Pay extra attention to new dependencies. Investigate their maintenance history, community engagement, and reported vulnerabilities before integration.
+
+    - Pay extra attention to new dependencies. Investigate their maintenance history, community engagement, and reported vulnerabilities before integration.
 
 3.  **CI/CD Security Gates:**
-    -   Integrate security scanning tools directly into your CI/CD pipelines to automatically halt builds if critical vulnerabilities are detected.
+
+    - Integrate security scanning tools directly into your CI/CD pipelines to automatically halt builds if critical vulnerabilities are detected.
 
 4.  **Establish a Security Champion Program:**
-    -   Designate a Security Champion within your team to promote security awareness, training, and best practices.
+    - Designate a Security Champion within your team to promote security awareness, training, and best practices.
 
 ## A Practical Exercise: The "Broken Supply Chain" Simulation
 
--   **Objective:** To understand the challenges of identifying and mitigating supply chain risks.
--   **Setup:** Create a mock project with several dependencies, some with known (but documented for the exercise) vulnerabilities.
--   **Execution:** Have the team try to build the project and use automated tools to identify the vulnerable dependencies. Discuss the potential impact of each vulnerability.
--   **Debrief:** Discuss how to improve the process for identifying and mitigating these risks in your real-world projects.
+- **Objective:** To understand the challenges of identifying and mitigating supply chain risks.
+- **Setup:** Create a mock project with several dependencies, some with known (but documented for the exercise) vulnerabilities.
+- **Execution:** Have the team try to build the project and use automated tools to identify the vulnerable dependencies. Discuss the potential impact of each vulnerability.
+- **Debrief:** Discuss how to improve the process for identifying and mitigating these risks in your real-world projects.
 
 ## Further Reading
 
--   OWASP Software Supply Chain Security
--   The Software Supply Chain: A Practical Guide by Amy DeGreeff
+- OWASP Software Supply Chain Security
+- The Software Supply Chain: A Practical Guide by Amy DeGreeff

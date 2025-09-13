@@ -20,9 +20,9 @@ This is different from groupthink, where people suppress known dissent in favor 
 
 ### Your Playbook for Breaking the Paradox
 
--   **Recognize the Warning Signs:** Look for quick, passive agreement, low energy, and body language that doesn't match verbal consensus.
--   **Create Safety for Dissent:** Model constructive dissent by admitting your own uncertainty and showing appreciation for pushback.
--   **Use Structured Techniques:** Employ anonymous voting, have everyone write down thoughts before discussing, and explicitly invite different perspectives ("What are the downsides to this approach?").
+- **Recognize the Warning Signs:** Look for quick, passive agreement, low energy, and body language that doesn't match verbal consensus.
+- **Create Safety for Dissent:** Model constructive dissent by admitting your own uncertainty and showing appreciation for pushback.
+- **Use Structured Techniques:** Employ anonymous voting, have everyone write down thoughts before discussing, and explicitly invite different perspectives ("What are the downsides to this approach?").
 
 ## Groupthink: The Drive for Harmony Overrides Reason
 
@@ -37,19 +37,19 @@ Groupthink, a term coined by psychologist Irving Janis, is a phenomenon where a 
 
 ### Your Playbook for Countering Groupthink
 
--   **Cultivate Psychological Safety:** This is the bedrock. Team members must feel safe to voice dissenting opinions without fear of retribution.
--   **Assign a Devil's Advocate:** Formally assign a team member (rotate this responsibility) to rigorously challenge the prevailing assumptions and arguments.
--   **Use Structured Frameworks:** Employ models like the **Six Thinking Hats** to force the team to consider a decision from multiple perspectives (emotional, creative, logical, critical, optimistic, and process-oriented).
--   **Document Decisions & Rationale:** Clearly record the reasons behind decisions, including the dissenting viewpoints that were considered. This creates accountability and a record for future learning.
+- **Cultivate Psychological Safety:** This is the bedrock. Team members must feel safe to voice dissenting opinions without fear of retribution.
+- **Assign a Devil's Advocate:** Formally assign a team member (rotate this responsibility) to rigorously challenge the prevailing assumptions and arguments.
+- **Use Structured Frameworks:** Employ models like the **Six Thinking Hats** to force the team to consider a decision from multiple perspectives (emotional, creative, logical, critical, optimistic, and process-oriented).
+- **Document Decisions & Rationale:** Clearly record the reasons behind decisions, including the dissenting viewpoints that were considered. This creates accountability and a record for future learning.
 
 ## A Practical Exercise: The Silent Decision
 
--   **Objective:** To practice articulating perspectives and surfacing hidden assumptions.
--   **Setup:** Present the team with a complex decision (e.g., choosing a new database technology).
--   **Execution:** Have team members independently write down their preferred solution and rationale. Then, facilitate a discussion where each perspective is shared and debated.
--   **Debrief:** Discuss the differences in opinion and how the silent, independent thinking phase helped to avoid a premature or false consensus.
+- **Objective:** To practice articulating perspectives and surfacing hidden assumptions.
+- **Setup:** Present the team with a complex decision (e.g., choosing a new database technology).
+- **Execution:** Have team members independently write down their preferred solution and rationale. Then, facilitate a discussion where each perspective is shared and debated.
+- **Debrief:** Discuss the differences in opinion and how the silent, independent thinking phase helped to avoid a premature or false consensus.
 
 ## Further Reading
 
--   *Groupthink* by Irving Janis
--   *Thinking, Fast and Slow* by Daniel Kahneman
+- _Groupthink_ by Irving Janis
+- _Thinking, Fast and Slow_ by Daniel Kahneman

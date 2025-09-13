@@ -448,12 +448,12 @@ blockquote p {
 
 /* Enhanced Link Styling */
 .md-content a {
-  color: var(--interactive-primary) !important;
+  /* color: var(--interactive-primary) !important; */
   transition: color 0.2s ease, text-shadow 0.2s ease !important;
 }
 
 .md-content a:hover {
-  color: var(--interactive-hover) !important;
+  /* color: var(--interactive-hover) !important; */
   text-shadow: 0 1px 2px var(--black-alpha-5) !important;
 }
 

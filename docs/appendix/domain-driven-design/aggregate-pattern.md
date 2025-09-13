@@ -70,4 +70,3 @@ The Aggregate Pattern is a fundamental design pattern in domain-driven developme
 [Domain-Driven Design Fundamentals](https://www.pluralsight.com/courses/domain-driven-design-fundamentals) Pluralsight
 
 [Effective Aggregate Design](https://www.dddcommunity.org/library/vernon_2011/) - Vaughn Vernon
-
