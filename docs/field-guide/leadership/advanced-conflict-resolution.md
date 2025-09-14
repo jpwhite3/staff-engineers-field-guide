@@ -134,68 +134,66 @@ Roger Fisher and William Ury's "Getting to Yes" provides a framework for princip
 
 **The Four Principles Applied to Technical Environments**:
 
-**1. Separate People from Problems**
+=== "Separate People from Problems"
+    **Distinguish technical merit from personal dynamics.** In technical discussions, this means separating the value of ideas from the people who propose them. When teams violate this principle, they dismiss valuable insights based on who suggests them, take technical criticism personally, or make decisions based on politics rather than merit.
 
-In technical discussions, this means distinguishing between the technical merits of ideas and the people who propose them. Common violations include:
+    !!! danger "Common Violations"
+        - Dismissing ideas because of who suggests them ("That's just John being overly cautious again")
+        - Taking technical criticism personally ("You're saying my code is bad")
+        - Making technical decisions based on politics rather than merit
+        - Allowing past conflicts to influence current technical evaluations
 
-- Dismissing ideas because of who suggests them ("That's just John being overly cautious again")
-- Taking technical criticism personally ("You're saying my code is bad")
-- Making technical decisions based on politics rather than merit
-- Allowing past conflicts to influence current technical evaluations
+    !!! success "Better Approaches"
+        - Focus discussions on system requirements, constraints, and tradeoffs
+        - Acknowledge the expertise and good intentions of all team members
+        - Separate advocacy for specific solutions from evaluation of solutions
+        - Address interpersonal issues separately from technical decision-making
 
-**Better approaches**:
+=== "Focus on Interests, Not Positions"
+    **Explore underlying needs rather than advocating for specific solutions.** Technical discussions often get stuck when people argue for particular approaches without exploring the requirements those approaches address.
 
-- Focus discussions on system requirements, constraints, and tradeoffs
-- Acknowledge the expertise and good intentions of all team members
-- Separate advocacy for specific solutions from evaluation of solutions
-- Address interpersonal issues separately from technical decision-making
+    | Thinking Style | Example | Effectiveness |
+    |----------------|---------|---------------|
+    | **Position-based** | "We must use React" vs "We absolutely need Vue" | Creates win-lose scenarios |
+    | **Interest-based** | "We need a framework that our team can learn quickly, has good community support, and integrates well with our existing toolchain" | Enables creative solutions |
 
-**2. Focus on Interests, Not Positions**
+    **Common Technical Interests:**
+    - System performance, reliability, and scalability
+    - Code maintainability and team productivity
+    - Security, compliance, and risk management
+    - Cost control and resource efficiency
+    - Learning opportunities and career development
+    - User experience and business value delivery
 
-Technical discussions often get stuck when people argue for specific solutions (positions) rather than exploring the underlying needs those solutions address (interests).
+=== "Generate Options for Mutual Gain"
+    **Create multiple approaches that satisfy different interests simultaneously.** Rather than arguing for one "right" solution, effective technical leaders explore collaborative approaches that address various stakeholder needs.
 
-**Position-based thinking**: "We must use React" vs. "We absolutely need Vue"
-**Interest-based thinking**: "We need a framework that our team can learn quickly, has good community support, and integrates well with our existing toolchain"
+    **Brainstorming Techniques:**
 
-**Common technical interests include**:
+    | Technique | Application | Outcome |
+    |-----------|-------------|----------|
+    | **Time-boxed option generation** | Spend 30 minutes generating approaches before evaluation | Prevents premature narrowing |
+    | **Build on ideas** | Use "yes, and..." thinking to enhance proposals | Improves solution quality |
+    | **Prototype multiple approaches** | Build lightweight prototypes with real data | Evidence-based decisions |
+    | **Combine approaches** | Integrate best aspects of different solutions | Innovative hybrid solutions |
 
-- System performance, reliability, and scalability
-- Code maintainability and team productivity
-- Security, compliance, and risk management
-- Cost control and resource efficiency
-- Learning opportunities and career development
-- User experience and business value delivery
+    !!! example "Microservices vs Modular Monolith Solution"
+        - Start with a modular monolith and identify specific services to extract based on scaling needs
+        - Implement microservices patterns within the monolith to enable future extraction
+        - Use feature flags to experiment with different service boundaries
+        - Create a hybrid approach where some components are services and others remain in the monolith
 
-**3. Generate Options for Mutual Gain**
+=== "Use Objective Criteria"
+    **Base technical decisions on measurable criteria rather than subjective preferences.** This principle transforms technical discussions from opinion battles into collaborative problem-solving sessions guided by evidence.
 
-Rather than arguing for one "right" solution, explore multiple approaches that might satisfy different interests simultaneously.
-
-**Brainstorming techniques for technical problems**:
-
-- **Time-boxed option generation**: Spend 30 minutes generating as many approaches as possible before evaluating any of them
-- **Build on ideas**: Use "yes, and..." thinking to enhance proposed solutions rather than immediately finding fault
-- **Prototype multiple approaches**: Build lightweight prototypes to evaluate different options with real data
-- **Combine approaches**: Look for ways to integrate the best aspects of different proposed solutions
-
-**Example**: For the microservices vs. modular monolith discussion:
-
-- Start with a modular monolith and identify specific services to extract based on scaling needs
-- Implement microservices patterns within the monolith to enable future extraction
-- Use feature flags to experiment with different service boundaries
-- Create a hybrid approach where some components are services and others remain in the monolith
-
-**4. Use Objective Criteria**
-
-Base technical decisions on measurable criteria rather than subjective preferences or organizational politics.
-
-**Objective criteria for technical decisions**:
-
-- Performance benchmarks and scalability testing results
-- Code quality metrics (maintainability, test coverage, complexity)
-- Security assessment results and compliance requirements
-- Cost analysis (development time, operational expenses, technical debt)
-- Team capability assessment (existing skills, learning curve, available resources)
-- Risk analysis (probability and impact of different failure modes)
+    | Criteria Category | Specific Measures | Decision Impact |
+    |-------------------|-------------------|------------------|
+    | **Performance** | Benchmarks, scalability test results | System capability validation |
+    | **Quality** | Maintainability, test coverage, complexity metrics | Long-term sustainability |
+    | **Security** | Assessment results, compliance requirements | Risk mitigation verification |
+    | **Cost** | Development time, operational expenses, technical debt | Resource optimization |
+    | **Team Capability** | Existing skills, learning curve, available resources | Implementation feasibility |
+    | **Risk** | Probability and impact of different failure modes | Strategic decision support |
 
 ### BATNA Development in Technical Contexts
 

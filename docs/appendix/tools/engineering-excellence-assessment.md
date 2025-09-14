@@ -51,35 +51,13 @@ Engineering excellence isn't a destination—it's a continuous improvement journ
 
 Think of these maturity levels as evolutionary stages rather than grades. Most organizations will have practices at different levels across different domains, and that's normal. The goal isn't to achieve Level 5 in everything—it's to identify where investment in improvement will create the most value.
 
-> **Level 1 - Ad Hoc**: _"It depends on who's working today"_
->
-> Practices are inconsistent, undocumented, and completely dependent on individual knowledge and initiative. When key people are out, things break down.
->
-> _Example_: Deployments happen when Sarah is available because she's the only one who knows the process.
-
-> **Level 2 - Developing**: _"We're trying, but it's not quite working yet"_
->
-> Basic practices exist but they're informal, with significant gaps in execution. There's awareness of what should be done, but inconsistent follow-through.
->
-> _Example_: There's a code review process, but reviews are often skipped when deadlines are tight.
-
-> **Level 3 - Defined**: _"We have a documented process that people follow"_
->
-> Practices are documented, standardized, and generally followed, but not optimized or systematically measured for effectiveness.
->
-> _Example_: All code goes through pull request reviews following documented guidelines, but no one tracks review quality or cycle time.
-
-> **Level 4 - Managed**: _"We measure, monitor, and improve our practices"_
->
-> Practices are quantitatively measured, monitored for effectiveness, and continuously improved based on data and feedback.
->
-> _Example_: Code review metrics are tracked, bottlenecks are identified, and the process evolves based on what the data reveals.
-
-> **Level 5 - Optimized**: _"Our practices are so good that others want to learn from us"_
->
-> Practices represent a competitive advantage and organizational learning capability. Other teams and organizations study and adopt these practices.
->
-> _Example_: Your deployment pipeline is so effective that it becomes a case study shared at industry conferences.
+| Maturity Level | Characteristic | Practice State | Example Scenario |
+|----------------|----------------|----------------|-----------------|
+| **Level 1 - Ad Hoc** | _"It depends on who's working today"_ | Inconsistent, undocumented, person-dependent | Deployments happen when Sarah is available because she's the only one who knows the process |
+| **Level 2 - Developing** | _"We're trying, but it's not quite working yet"_ | Basic practices exist but informal with gaps | There's a code review process, but reviews are often skipped when deadlines are tight |
+| **Level 3 - Defined** | _"We have a documented process that people follow"_ | Documented, standardized, generally followed | All code goes through pull request reviews following documented guidelines, but no metrics tracked |
+| **Level 4 - Managed** | _"We measure, monitor, and improve our practices"_ | Quantitatively measured and continuously improved | Code review metrics are tracked, bottlenecks identified, and process evolves based on data |
+| **Level 5 - Optimized** | _"Our practices are so good that others want to learn from us"_ | Competitive advantage and organizational learning | Deployment pipeline becomes a case study shared at industry conferences |
 
 ## Domain 1: Development Practices and Code Quality
 
@@ -138,42 +116,22 @@ test_quality_survey = [
 ]
 ```
 
-**Maturity Levels:**
+**Maturity Assessment:**
 
-**Level 1 (Ad Hoc)**:
+=== "Level 1 (Ad Hoc)"
+    **Test coverage below 40% with significant manual testing requirements.** Organizations at this level struggle with frequent test failures due to environmental issues and approach testing reactively, writing tests only when explicitly required rather than as an integral part of development.
 
-- Test coverage below 40%
-- Manual testing required for most changes
-- Frequent test failures due to environment issues
-- Tests written only when required
+=== "Level 2 (Developing)"
+    **Test coverage 40-60% with basic automation beginning to take shape.** Teams have established fundamental unit testing practices, though integration testing remains limited. Some automated testing exists in CI pipelines, and occasional TDD practices emerge among forward-thinking developers.
 
-**Level 2 (Developing)**:
+=== "Level 3 (Defined)"
+    **Test coverage 60-80% with comprehensive test suites and consistent practices.** Organizations achieve reliable unit and integration testing across teams, with consistent automation practices and regular maintenance cycles that ensure test effectiveness over time.
 
-- Test coverage 40-60%
-- Basic unit tests exist but integration testing is limited
-- Some automated testing in CI pipeline
-- Occasional TDD practices
+=== "Level 4 (Managed)"
+    **Test coverage 80-95% with fast, reliable execution and systematic improvement.** Test-driven development becomes common practice, supported by quality metrics that drive continuous improvement in testing approaches and outcomes.
 
-**Level 3 (Defined)**:
-
-- Test coverage 60-80%
-- Comprehensive unit and integration test suites
-- Consistent test automation practices
-- Regular test maintenance and improvement
-
-**Level 4 (Managed)**:
-
-- Test coverage 80-95%
-- Fast, reliable test execution
-- Test-driven development is common practice
-- Test quality metrics are tracked and improved
-
-**Level 5 (Optimized)**:
-
-- Comprehensive test coverage with quality gates
-- Tests are treated as first-class code
-- Advanced testing strategies (property-based, mutation testing)
-- Testing expertise shared across organization
+=== "Level 5 (Optimized)"
+    **Comprehensive test coverage with quality gates and advanced strategies.** Testing expertise becomes a competitive advantage, with advanced techniques like property-based and mutation testing, while test practices are shared organization-wide as industry best practices.
 
 ### Code Review Process
 

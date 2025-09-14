@@ -76,25 +76,37 @@ Let's look at some real examples. Notice how the weak versions focus on what we'
 
 ### Crafting Your Technical Why
 
-To develop your technical "Why," consider these questions:
+To develop your technical "Why," explore these fundamental questions that connect technology to human impact:
 
-#### Impact Questions
-- What problem are we really trying to solve?
-- Who benefits from this technical decision, and how?
-- What future are we trying to create?
-- What do we believe about technology's role in that future?
+=== "Impact Questions"
+    **Focus on the outcomes technology enables for real people.**
 
-#### Values Questions  
-- What principles guide our technical decisions?
-- What do we stand for as a technical organization?
-- What would we refuse to compromise on?
-- What legacy do we want to leave?
+    | Question | Purpose | Example Answer |
+    |----------|---------|----------------|
+    | What problem are we really trying to solve? | Root cause identification | "Teams waiting on each other instead of serving users" |
+    | Who benefits from this technical decision, and how? | Stakeholder clarity | "Developers gain autonomy, users get faster features" |
+    | What future are we trying to create? | Vision articulation | "Teams that innovate independently and fearlessly" |
+    | What do we believe about technology's role in that future? | Philosophical foundation | "Technology should amplify human potential" |
 
-#### Motivation Questions
-- Why does this matter beyond just working software?
-- What gets us excited about this technical approach?
-- Why would someone want to be part of this technical vision?
-- What change do we want to see in the world?
+=== "Values Questions"
+    **Identify the principles that guide your technical decisions.**
+
+    | Question | Purpose | Example Answer |
+    |----------|---------|----------------|
+    | What principles guide our technical decisions? | Decision framework | "Simplicity over cleverness, user impact over perfection" |
+    | What do we stand for as a technical organization? | Identity definition | "Engineering excellence that enables business innovation" |
+    | What would we refuse to compromise on? | Boundaries and standards | "Security, accessibility, and maintainability" |
+    | What legacy do we want to leave? | Long-term vision | "Systems that teams love to work with and users love to use" |
+
+=== "Motivation Questions"
+    **Connect technical work to deeper purpose and excitement.**
+
+    | Question | Purpose | Example Answer |
+    |----------|---------|----------------|
+    | Why does this matter beyond just working software? | Broader significance | "Enables teams to move from reactive to proactive innovation" |
+    | What gets us excited about this technical approach? | Emotional connection | "Seeing teams deploy confidently multiple times per day" |
+    | Why would someone want to be part of this technical vision? | Engagement driver | "Opportunity to solve problems that matter at scale" |
+    | What change do we want to see in the world? | Transformational goal | "Engineering teams that create more value with less friction" |
 
 ## How: Your Technical Principles and Approach
 
@@ -119,19 +131,27 @@ The "How" describes your technical principles, methodologies, and approach. This
 
 ### Developing Your Technical How
 
-Your "How" should reflect:
+Your "How" should reflect the principles and approaches that make your implementation unique and aligned with your purpose:
 
-#### Process Principles
-- What methodologies align with your purpose?
-- What practices support your beliefs?
-- What standards reflect your values?
-- What decision-making frameworks serve your vision?
+=== "Process Principles"
+    **Define the methodologies that support your technical vision.**
 
-#### Cultural Principles
-- How do you want teams to work together?
-- What behaviors do you want to encourage?
-- What practices build the culture you envision?
-- How do you measure success beyond technical metrics?
+    | Principle Category | Guiding Questions | Implementation Example |
+    |-------------------|-------------------|------------------------|
+    | **Methodologies** | What methodologies align with your purpose? | Agile for responsiveness, DevOps for flow |
+    | **Practices** | What practices support your beliefs? | Code review for knowledge sharing, TDD for confidence |
+    | **Standards** | What standards reflect your values? | API-first design, accessibility requirements |
+    | **Decisions** | What frameworks serve your vision? | Data-driven decisions with user impact focus |
+
+=== "Cultural Principles"
+    **Shape the collaborative environment that enables technical excellence.**
+
+    | Culture Area | Defining Questions | Practical Outcome |
+    |--------------|-------------------|-------------------|
+    | **Collaboration** | How do you want teams to work together? | Cross-functional pairing, shared ownership |
+    | **Behaviors** | What behaviors do you want to encourage? | Psychological safety, continuous learning |
+    | **Practices** | What practices build the culture you envision? | Blameless post-mortems, regular retrospectives |
+    | **Success Metrics** | How do you measure success beyond technical metrics? | Team satisfaction, learning velocity, innovation rate |
 
 ## What: The Tangible Technical Outcomes
 

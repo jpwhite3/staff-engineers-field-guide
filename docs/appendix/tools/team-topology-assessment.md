@@ -124,40 +124,44 @@ flowchart TD
 
 Rate each item from 1 (Poor) to 5 (Excellent):
 
-#### Knowledge Transfer Excellence (Weight: 35%)
+=== "Knowledge Transfer Excellence (Weight: 35%)"
+    | Assessment Criteria | Score (1-5) | Notes |
+    |--------------------|-----------:|-------|
+    | Team has strong teaching and coaching skills | ___ | |
+    | Team creates lasting capability in other teams | ___ | |
+    | Team's engagements have clear success criteria | ___ | |
+    | Team measures success by other teams' capability growth | ___ | |
 
-- [ ] Team has strong teaching and coaching skills (1-5)
-- [ ] Team creates lasting capability in other teams (1-5)
-- [ ] Team's engagements have clear success criteria (1-5)
-- [ ] Team measures success by other teams' capability growth (1-5)
+    **Score: ___/20 → Weighted Score: ___/7**
 
-**Score: **_/20 → Weighted Score: _**/7**
+=== "Expertise Depth (Weight: 25%)"
+    | Assessment Criteria | Score (1-5) | Notes |
+    |--------------------|-----------:|-------|
+    | Team has deep expertise in their specialized area | ___ | |
+    | Team stays current with industry best practices | ___ | |
+    | Team can solve complex problems others cannot | ___ | |
+    | Team's expertise is recognized across the organization | ___ | |
 
-#### Expertise Depth (Weight: 25%)
+    **Score: ___/20 → Weighted Score: ___/5**
 
-- [ ] Team has deep expertise in their specialized area (1-5)
-- [ ] Team stays current with industry best practices (1-5)
-- [ ] Team can solve complex problems others cannot (1-5)
-- [ ] Team's expertise is recognized across the organization (1-5)
+=== "Engagement Model (Weight: 25%)"
+    | Assessment Criteria | Score (1-5) | Notes |
+    |--------------------|-----------:|-------|
+    | Team has clear engagement processes and boundaries | ___ | |
+    | Team balances multiple concurrent engagements effectively | ___ | |
+    | Team knows when to end engagements | ___ | |
+    | Team avoids becoming a permanent dependency | ___ | |
 
-**Score: **_/20 → Weighted Score: _**/5**
+    **Score: ___/20 → Weighted Score: ___/5**
 
-#### Engagement Model (Weight: 25%)
+=== "Organizational Impact (Weight: 15%)"
+    | Assessment Criteria | Score (1-5) | Notes |
+    |--------------------|-----------:|-------|
+    | Team addresses systemic rather than just local problems | ___ | |
+    | Team's work has multiplier effects across the organization | ___ | |
+    | Team identifies and fills capability gaps proactively | ___ | |
 
-- [ ] Team has clear engagement processes and boundaries (1-5)
-- [ ] Team balances multiple concurrent engagements effectively (1-5)
-- [ ] Team knows when to end engagements (1-5)
-- [ ] Team avoids becoming a permanent dependency (1-5)
-
-**Score: **_/20 → Weighted Score: _**/5**
-
-#### Organizational Impact (Weight: 15%)
-
-- [ ] Team addresses systemic rather than just local problems (1-5)
-- [ ] Team's work has multiplier effects across the organization (1-5)
-- [ ] Team identifies and fills capability gaps proactively (1-5)
-
-**Score: **_/15 → Weighted Score: _**/3**
+    **Score: ___/15 → Weighted Score: ___/3**
 
 **Overall Enabling Team Health: \_\_\_/20**
 
@@ -175,29 +179,38 @@ For each pair of teams that interact, identify the current interaction mode:
 
 ### Interaction Mode Health Indicators
 
-#### Collaboration Mode Health
+=== "Collaboration Mode"
+    **Effective collaboration requires high trust, shared goals, and sustainable communication patterns.** Teams operating in this mode should demonstrate strong psychological safety that enables open dialogue, establish regular communication channels that support joint decision-making, and maintain shared success metrics that align efforts across organizational boundaries.
 
-- [ ] High trust and psychological safety between teams
-- [ ] Regular, effective communication channels established
-- [ ] Shared goals and success metrics
-- [ ] Joint problem-solving and decision-making
-- [ ] Acceptable cognitive load from high communication
+    | Health Indicator | Status |
+    |------------------|:------:|
+    | High trust and psychological safety between teams | ☑️/❌ |
+    | Regular, effective communication channels established | ☑️/❌ |
+    | Shared goals and success metrics | ☑️/❌ |
+    | Joint problem-solving and decision-making | ☑️/❌ |
+    | Acceptable cognitive load from high communication | ☑️/❌ |
 
-#### X-as-a-Service Mode Health
+=== "X-as-a-Service Mode"
+    **Service-oriented interactions thrive on clear interfaces, minimal communication overhead, and reliable service delivery.** Teams should establish well-documented APIs that enable independence, maintain consistent SLA performance, and provide appropriate escalation paths when issues arise.
 
-- [ ] Clear, well-documented APIs and contracts
-- [ ] Minimal communication needed for routine interactions
-- [ ] Service provider meets agreed SLAs consistently
-- [ ] Consumer team can use service independently
-- [ ] Appropriate escalation paths for issues
+    | Health Indicator | Status |
+    |------------------|:------:|
+    | Clear, well-documented APIs and contracts | ☑️/❌ |
+    | Minimal communication needed for routine interactions | ☑️/❌ |
+    | Service provider meets agreed SLAs consistently | ☑️/❌ |
+    | Consumer team can use service independently | ☑️/❌ |
+    | Appropriate escalation paths for issues | ☑️/❌ |
 
-#### Facilitating Mode Health
+=== "Facilitating Mode"
+    **Effective facilitation focuses on temporary capability building rather than permanent dependency creation.** Teams should establish clear engagement models, measure knowledge transfer effectiveness, and maintain discipline around the temporary nature of their involvement.
 
-- [ ] Clear engagement model and success criteria
-- [ ] Knowledge transfer is effective and measurable
-- [ ] Temporary nature of engagement is respected
-- [ ] Capability building rather than just problem-solving
-- [ ] Clear exit strategy when capability is established
+    | Health Indicator | Status |
+    |------------------|:------:|
+    | Clear engagement model and success criteria | ☑️/❌ |
+    | Knowledge transfer is effective and measurable | ☑️/❌ |
+    | Temporary nature of engagement is respected | ☑️/❌ |
+    | Capability building rather than just problem-solving | ☑️/❌ |
+    | Clear exit strategy when capability is established | ☑️/❌ |
 
 ## Cognitive Load Assessment
 

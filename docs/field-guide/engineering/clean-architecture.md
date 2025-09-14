@@ -107,15 +107,53 @@ graph TD
 
 Understanding each layer's purpose and boundaries is crucial for applying Clean Architecture effectively:
 
-### Entities: The Heart of Your Business
+=== "Entities: Business Heart"
+    **The timeless essence of your business domain.**
 
-**In plain English**: These are the objects and rules that would exist even if you weren't building software.
+    These are the objects and rules that would exist even if you weren't building software. Imagine you're building e-commerce software, but suddenly all computers disappear. Your business would still exist—you'd still have products to sell, customers who want to buy them, and orders to fulfill. You might go back to paper catalogs and handwritten orders, but the fundamental concepts would remain exactly the same.
 
-Let's do a thought experiment. Imagine you're building e-commerce software, but suddenly all computers disappear. Your business would still exist, right? You'd still have products to sell, customers who want to buy them, and orders to fulfill. You might go back to paper catalogs and handwritten orders, but the fundamental concepts—Product, Customer, Order, Inventory—would remain exactly the same.
+    | Characteristic | Description | Example |
+    |----------------|-------------|----------|
+    | **Independence** | No technical dependencies | Product entity knows nothing about databases |
+    | **Business Rules** | Enforces domain invariants | Product price must be positive |
+    | **Rich Behavior** | Intelligent objects, not data containers | Product can validate its own state |
+    | **Timeless** | Unchanged by technology shifts | Customer concept exists regardless of storage |
 
-**That's what Entities capture: the timeless essence of your business domain.**
+=== "Use Cases: Application Logic"
+    **Application-specific workflows that orchestrate business entities.**
 
-These aren't just database tables with getters and setters. Entities are rich, intelligent objects that know how to protect themselves and enforce the rules that make your business work. Think of them as the guardians of business truth.
+    While Entities represent timeless business concepts, Use Cases represent the specific workflows that make your application unique. They're the conductors of your business orchestra, coordinating multiple Entities, validating business rules, and handling complex scenarios.
+
+    | Responsibility | Purpose | Implementation Focus |
+    |----------------|---------|---------------------|
+    | **Orchestration** | Coordinate multiple entities | PlaceOrderUseCase coordinates Product, Customer, Inventory |
+    | **Workflow Logic** | Handle application-specific processes | Multi-step checkout process with validation |
+    | **Business Rules** | Apply application-level constraints | Discount rules based on customer history |
+    | **Error Handling** | Manage complex failure scenarios | Handle inventory shortage during checkout |
+
+=== "Interface Adapters"
+    **Translation layer between business logic and external systems.**
+
+    These components translate between the pure business language of your inner layers and the specific technical requirements of your outer layers. They're bilingual translators that speak both business logic and technical implementation.
+
+    | Component Type | Role | Examples |
+    |----------------|------|----------|
+    | **Controllers** | Handle external requests | REST API endpoints, GraphQL resolvers |
+    | **Repositories** | Abstract data persistence | UserRepository with database-specific implementations |
+    | **Presenters** | Format output for external consumption | JSON serializers, HTML templating |
+    | **Gateways** | Connect to external services | Payment processor clients, email service adapters |
+
+=== "Frameworks & Drivers"
+    **Infrastructure and implementation details.**
+
+    The outermost layer contains all the messy details that change frequently: specific databases, web frameworks, external APIs, and file systems. This layer is deliberately disposable—you should be able to swap out any component here without affecting your business logic.
+
+    | Infrastructure Type | Changeability | Business Impact |
+    |--------------------|--------------|-----------------|
+    | **Web Frameworks** | High (Express → FastAPI) | Zero if properly isolated |
+    | **Databases** | Medium (PostgreSQL → MongoDB) | Zero if repositories abstract properly |
+    | **External APIs** | High (Stripe → PayPal) | Minimal if gateways handle translation |
+    | **File Systems** | Low but possible | Zero if storage is abstracted |
 
 Consider a Product entity in an e-commerce system. It's not just a container for a name and price—it's a business concept that understands crucial rules:
 

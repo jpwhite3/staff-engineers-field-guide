@@ -16,14 +16,16 @@ The framework recognizes that critical thinking for technical leaders involves m
 
 ## Framework Overview
 
-The assessment evaluates four interconnected dimensions of critical thinking:
+=== "Assessment Dimensions"
+    | Dimension | Focus Area | Key Skills |
+    |-----------|------------|------------|
+    | **Mental Model Mastery** | Core thinking frameworks | Understanding and applying systematic approaches |
+    | **Algorithmic Decision-Making** | Systematic problem-solving | Using computational thinking for complex problems |
+    | **Strategic Reasoning** | Business alignment | Connecting tactical decisions to organizational goals |
+    | **Cognitive Bias Awareness** | Decision quality | Recognizing and mitigating systematic thinking errors |
 
-- **Mental Model Mastery**: Understanding and applying core thinking frameworks
-- **Algorithmic Decision-Making**: Using systematic approaches to complex problems
-- **Strategic Reasoning**: Connecting tactical decisions to broader organizational goals
-- **Cognitive Bias Awareness**: Recognizing and mitigating systematic thinking errors
-
-Each dimension includes both self-assessment questions and practical application exercises designed to surface real thinking patterns rather than theoretical knowledge.
+=== "Assessment Method"
+    Each dimension includes both **self-assessment questions** and **practical application exercises** designed to surface real thinking patterns rather than theoretical knowledge. The combination provides a comprehensive view of your current critical thinking capabilities and specific areas for development.
 
 ## Dimension 1: Mental Model Mastery
 
@@ -237,33 +239,12 @@ Each dimension includes both self-assessment questions and practical application
 
 ### Proficiency Levels
 
-**Level 1: Developing**
-
-- Relies primarily on intuitive decision-making
-- Limited awareness of systematic thinking frameworks
-- Occasional recognition of cognitive biases in hindsight
-- Tactical focus with limited strategic integration
-
-**Level 2: Practicing**
-
-- Consistently applies basic mental models to complex problems
-- Uses some algorithmic approaches for well-defined challenges
-- Recognizes common cognitive biases and implements basic mitigation strategies
-- Connects tactical decisions to strategic objectives
-
-**Level 3: Proficient**
-
-- Integrates multiple mental models for comprehensive analysis
-- Systematically applies algorithmic thinking to ambiguous problems
-- Proactively designs processes to mitigate cognitive biases
-- Balances strategic thinking with practical execution constraints
-
-**Level 4: Advanced**
-
-- Creates novel applications of thinking frameworks for unique challenges
-- Teaches others to apply systematic decision-making approaches
-- Designs organizational systems that promote better collective thinking
-- Seamlessly integrates multiple dimensions of critical thinking
+| Level | Capability Profile | Decision-Making | Framework Usage | Bias Management | Strategic Integration |
+|-------|-------------------|-----------------|-----------------|-----------------|----------------------|
+| **Level 1: Developing** | Foundation Building | Primarily intuitive | Limited awareness | Occasional hindsight recognition | Tactical focus only |
+| **Level 2: Practicing** | Skill Application | Basic systematic approaches | Applies frameworks to defined problems | Recognizes common biases | Connects to strategic objectives |
+| **Level 3: Proficient** | Integrated Practice | Multiple model integration | Systematic approach to ambiguous problems | Proactive bias mitigation | Balances strategy with execution |
+| **Level 4: Advanced** | Innovation & Leadership | Novel framework applications | Teaches systematic approaches | Designs organizational systems | Seamless multi-dimensional integration |
 
 ### Scoring Guidelines
 
