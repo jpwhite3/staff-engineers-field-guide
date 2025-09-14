@@ -190,7 +190,7 @@ The Force Multiplier archetype offers career advancement opportunities focused o
 - **[Psychological Safety](../teamwork/psychological-safety.md)** - Creating safe environments where teams can perform at their best is a key Force Multiplier capability
 - **[Organizational Design](../teamwork/organizational-design.md)** - Systems thinking about organizational structure supports effective multiplication
 - **[Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md)** - Force Multipliers often drive positive cultural changes that improve organizational effectiveness
-- **[Advanced Career Development](../learning/advanced-mentorship-career-development.md)** - Sophisticated approaches to developing others are core Force Multiplier capabilities
+- **[Advanced Mentorship & Career Development](../leadership/advanced-mentorship-career-development.md)** - Sophisticated approaches to developing others are core Force Multiplier capabilities
 
 #### Apply These Concepts
 

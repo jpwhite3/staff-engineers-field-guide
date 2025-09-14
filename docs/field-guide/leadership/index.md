@@ -440,35 +440,35 @@ Whether you're pitching a technical proposal, resolving conflicts, or guiding a 
 
 **Essential Prerequisites:** Understanding these concepts deepens your leadership effectiveness:
 
-- **[Staff Engineer Archetypes](../../intro/index.md)** - Understand how Level 5 Leadership applies to your specific role: Tech Lead, Architect, Solver, or Right Hand
-- **[Mental Models for Engineers](../../thinking/mental-models.md)** - System 1/System 2 thinking improves leadership decision-making under pressure
-- **[Cognitive Biases](../../thinking/cognitive-biases.md)** - Awareness of biases is crucial for Level 5 Leadership's personal humility requirement
+- **[Staff Engineer Archetypes](../intro/index.md)** - Understand how Level 5 Leadership applies to your specific role: Tech Lead, Architect, Solver, or Right Hand
+- **[Mental Models for Engineers](../thinking/mental-models.md)** - System 1/System 2 thinking improves leadership decision-making under pressure
+- **[Cognitive Biases](../thinking/cognitive-biases.md)** - Awareness of biases is crucial for Level 5 Leadership's personal humility requirement
 
 **Immediate Applications:** Apply leadership concepts through these related practices:
 
 - **[Advanced Conflict Resolution](advanced-conflict-resolution.md)** - Level 5 Leadership principles applied to difficult technical disagreements
-- **[Team Formation](../../teamwork/team-formation.md)** - Building high-performing teams using Team Topologies and psychological safety principles
-- **[Organizational Design](../../teamwork/organizational-design.md)** - Aligning team structures with communication patterns for maximum effectiveness
-- **[Strategic Thinking](../../execution/strategic-thinking.md)** - Channel Level 5 institutional focus into long-term organizational strategy
+- **[Team Formation](../teamwork/team-formation.md)** - Building high-performing teams using Team Topologies and psychological safety principles
+- **[Organizational Design](../teamwork/organizational-design.md)** - Aligning team structures with communication patterns for maximum effectiveness
+- **[Strategic Thinking](../execution/strategic-thinking.md)** - Channel Level 5 institutional focus into long-term organizational strategy
 
 **Business Integration:** Connect technical leadership to organizational outcomes:
 
-- **[Product-Engineering Collaboration](../../business/product-engineering-collaboration.md)** - Use influence skills to align technical and product strategy
-- **[Engineering Metrics & Business Alignment](../../business/engineering-metrics-business-alignment.md)** - Apply institutional focus to measurement systems that matter
-- **[Pitching to Executives](../../business/pitching-to-executives.md)** - Technical storytelling techniques for leadership communication
+- **[Product-Engineering Collaboration](../business/product-engineering-collaboration.md)** - Use influence skills to align technical and product strategy
+- **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - Apply institutional focus to measurement systems that matter
+- **[Pitching to Executives](../business/pitching-to-executives.md)** - Technical storytelling techniques for leadership communication
 
 **Advanced Development:** Scale your leadership impact across the organization:
 
-- **[Cultural Transformation & Psychological Safety](../../teamwork/cultural-transformation-psychological-safety.md)** - Lead organizational change through Level 5 principles
+- **[Cultural Transformation & Psychological Safety](../teamwork/cultural-transformation-psychological-safety.md)** - Lead organizational change through Level 5 principles
 - **[Advanced Mentorship & Career Development](advanced-mentorship-career-development.md)** - Building others as the ultimate Level 5 Leadership expression
-- **[Change Management for Technical Transformations](../../execution/change-management-technical-transformations.md)** - Systematic approach to leading technical and cultural change
+- **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Systematic approach to leading technical and cultural change
 
 !!! tip "Learning Path Recommendations"
-    **For New Staff Engineers:** Start with [Staff Engineer Archetypes](../../intro/index.md) → [Mental Models](../../thinking/mental-models.md) → This Chapter → [Team Formation](../../teamwork/team-formation.md)
-    
-    **For Experienced Technical Leaders:** Focus on [Advanced Conflict Resolution](advanced-conflict-resolution.md) → [Cultural Transformation](../../teamwork/cultural-transformation-psychological-safety.md) → [Change Management](../../execution/change-management-technical-transformations.md)
-    
-    **For Business Integration:** Combine with [Strategic Thinking](../../execution/strategic-thinking.md) → [Product Collaboration](../../business/product-engineering-collaboration.md) → [Executive Communication](../../business/pitching-to-executives.md)
+    **For New Staff Engineers:** Start with [Staff Engineer Archetypes](../intro/index.md) → [Mental Models](../thinking/mental-models.md) → This Chapter → [Team Formation](../teamwork/team-formation.md)
+
+    **For Experienced Technical Leaders:** Focus on [Advanced Conflict Resolution](advanced-conflict-resolution.md) → [Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md) → [Change Management](../execution/change-management-technical-transformations.md)
+
+    **For Business Integration:** Combine with [Strategic Thinking](../execution/strategic-thinking.md) → [Product Collaboration](../business/product-engineering-collaboration.md) → [Executive Communication](../business/pitching-to-executives.md)
 
 ## Further Reading
 

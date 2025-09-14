@@ -55,58 +55,58 @@ Choose the path that matches your current role and growth objectives:
 ### New to Staff Engineering
 **Foundation Track** - Start here for comprehensive skill building
 
-[Staff Engineer Archetypes](field-guide/intro/) → [Engineering Excellence](field-guide/engineering/) → [Critical Thinking](field-guide/thinking/) → [Leadership & Influence](field-guide/leadership/)
+[Staff Engineer Archetypes](field-guide/intro/index.md) → [Engineering Excellence](field-guide/engineering/index.md) → [Critical Thinking](field-guide/thinking/index.md) → [Leadership & Influence](field-guide/leadership/index.md)
 
 **Time Investment:** 4-6 weeks | **Focus:** Core competencies
 
 ### Experienced Technical Lead
 **Advanced Leadership Track** - Deepen your influence and impact
 
-[Team Formation](field-guide/teamwork/team-formation/) → [Advanced Conflict Resolution](field-guide/leadership/advanced-conflict-resolution/) → [Strategic Thinking](field-guide/execution/strategic-thinking/)
+[Team Formation](field-guide/teamwork/team-formation.md) → [Advanced Conflict Resolution](field-guide/leadership/advanced-conflict-resolution.md) → [Strategic Thinking](field-guide/execution/strategic-thinking.md)
 
 **Time Investment:** 2-3 weeks | **Focus:** Leadership mastery
 
 ### Building Business Partnership
 **Business Integration Track** - Bridge technical and business strategy
 
-[Product-Engineering Collaboration](field-guide/business/product-engineering-collaboration/) → [Engineering Metrics](field-guide/business/engineering-metrics-business-alignment/) → [Executive Communication](field-guide/business/pitching-to-executives/)
+[Product-Engineering Collaboration](field-guide/business/product-engineering-collaboration.md) → [Engineering Metrics](field-guide/business/engineering-metrics-business-alignment.md) → [Executive Communication](field-guide/business/pitching-to-executives.md)
 
 **Time Investment:** 2-4 weeks | **Focus:** Strategic alignment
 
 ### Team & Culture Focus
 **Organizational Excellence Track** - Transform teams and culture
 
-[Organizational Design](field-guide/teamwork/organizational-design/) → [Cultural Transformation](field-guide/teamwork/cultural-transformation-psychological-safety/) → [Change Management](field-guide/execution/change-management-technical-transformations/)
+[Organizational Design](field-guide/teamwork/organizational-design.md) → [Cultural Transformation](field-guide/teamwork/cultural-transformation-psychological-safety.md) → [Change Management](field-guide/execution/change-management-technical-transformations.md)
 
 **Time Investment:** 3-5 weeks | **Focus:** Systemic change
 
 ## Chapter Overview
 
-### [Setting the Stage](field-guide/intro/)
+### [Setting the Stage](field-guide/intro/index.md)
 What It Means to Be a Staff Engineer - Understanding archetypes and role expectations
 
-### [Continuous Learning](field-guide/learning/)
+### [Continuous Learning](field-guide/learning/index.md)
 Growth & Development Frameworks - Staying current and building expertise
 
-### [Core Engineering](field-guide/engineering/)
+### [Core Engineering](field-guide/engineering/index.md)
 Skills & Practices for Excellence - Technical leadership fundamentals
 
-### [Critical Thinking](field-guide/thinking/)
+### [Critical Thinking](field-guide/thinking/index.md)
 Problem-Solving & Decision Making - Mental models and cognitive frameworks
 
-### [Leadership](field-guide/leadership/)
+### [Leadership](field-guide/leadership/index.md)
 Influence & Communication - Building leadership presence and impact
 
-### [Teamwork](field-guide/teamwork/)
+### [Teamwork](field-guide/teamwork/index.md)
 Team Behavior & Collaboration - Organizational dynamics and team formation
 
-### [Execution](field-guide/execution/)
+### [Execution](field-guide/execution/index.md)
 Delivery & Results - Strategy, prioritization, and getting things done
 
-### [Business](field-guide/business/)
+### [Business](field-guide/business/index.md)
 The Business of Engineering - Aligning technical and business objectives
 
-### [Ethics](field-guide/ethics/)
+### [Ethics](field-guide/ethics/index.md)
 Engineering Ethics & Decision-Making - Responsible technology leadership
 
 ## Start Your Journey
@@ -115,8 +115,8 @@ Ready to transform your technical leadership? Whether you're an aspiring staff e
 
 **Your next step:** Choose a learning path above, or dive into the foundational concepts that will transform how you approach technical leadership.
 
-[Begin with Staff Engineer Archetypes](field-guide/intro/){ .md-button .md-button--primary }
-[Explore Assessment Tools](appendix/tools/){ .md-button }
+[Begin with Staff Engineer Archetypes](field-guide/intro/index.md){ .md-button .md-button--primary }
+[Explore Assessment Tools](appendix/tools/index.md){ .md-button }
 
 **Remember:** The path to staff engineering excellence isn't about perfection—it's about continuous growth, systematic skill development, and the courage to lead with both technical depth and human insight.
 
