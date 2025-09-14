@@ -60,20 +60,11 @@ Based on Chris Voss's FBI negotiation techniques, tactical empathy involves unde
 
 ### The Empathy Toolkit
 
-**Labeling**: Acknowledge others' emotions to reduce their power and build connection
-- "It sounds like you're frustrated with the current deployment process"
-- "It seems like you're concerned about the performance implications"
-- "You appear to be worried about the timeline"
+**Labeling**: Acknowledge others' emotions to reduce their power and build connection by verbalizing what you observe, using phrases like "It sounds like you're frustrated with the current deployment process," "It seems like you're concerned about the performance implications," or "You appear to be worried about the timeline." This technique validates their emotional experience while reducing the intensity of negative feelings through acknowledgment.
 
-**Mirroring**: Repeat the last 1-3 words someone said to encourage them to elaborate
-- Them: "This architecture change is going to be really complex"
-- You: "Really complex?"
-- Result: They explain their specific concerns, giving you information to address
+**Mirroring**: Repeat the last 1-3 words someone said to encourage them to elaborate and provide more information. When they say "This architecture change is going to be really complex," you respond with "Really complex?" which prompts them to explain their specific concerns and gives you crucial information to address their underlying issues rather than arguing against surface-level objections.
 
-**Calibrated Questions**: Ask open-ended questions that give the other person control while gathering information
-- "How do you see this working?"
-- "What makes this challenging for your team?"
-- "How can we make this work for everyone?"
+**Calibrated Questions**: Ask open-ended questions that give the other person control while gathering the information you need to find mutually beneficial solutions. Questions like "How do you see this working?", "What makes this challenging for your team?", and "How can we make this work for everyone?" invite collaboration rather than defensiveness while uncovering the real constraints and requirements you need to understand.
 
 ### Building Rapport Through Understanding
 

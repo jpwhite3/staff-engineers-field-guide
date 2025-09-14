@@ -243,6 +243,48 @@ By investing in robust CI/CD practices, you don't just improve your team's effic
 - **Challenge:** Introduce "breakdowns" – simulated bugs or integration issues – into the repository. Teams must react quickly, troubleshoot the issues, fix them, and get the pipeline green again.
 - **Debrief:** The team that most efficiently resolves the "broken pipeline" wins. Discuss the communication and debugging strategies that worked best.
 
+## Cross-Reference Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-test-tube: Quality & Testing Integration**
+
+    **Pipeline Quality Foundation**
+
+    Master [Advanced Testing Strategies](advanced-testing-strategies.md) for comprehensive test automation and [Test-Driven Development](tdd.md) for quality-focused development practices
+
+- **:material-rocket-launch: Advanced Delivery Practices**
+
+    **Production-Ready Deployment**
+
+    Progress to [Continuous Delivery](continuous-delivery.md) for advanced deployment patterns and [Site Reliability Engineering](site-reliability-engineering.md) for operational excellence
+
+- **:material-cog-outline: Cultural & Operational Excellence**
+
+    **DevOps Integration**
+
+    Connect with [DevOps & Automation Engineering](devops.md) for cultural transformation and [Code Hygiene](code-hygiene.md) for maintainable automation code
+
+- **:material-sitemap: Architecture for CI/CD**
+
+    **System Design Integration**
+
+    Apply to [Clean Architecture](clean-architecture.md) for testable systems and [Evolutionary Architecture](evolutionary-architecture.md) for CI/CD-enabled architectural evolution
+
+- **:material-clipboard-check: Assessment & Progress Tracking**
+
+    **Evaluate CI/CD Maturity**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for technical delivery evaluation and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for automation culture assessment
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Automation Excellence**
+
+    Advance to [Continuous Delivery](continuous-delivery.md) mastery, [Site Reliability Engineering](site-reliability-engineering.md) practices, and [Engineering Metrics](../business/engineering-metrics-business-alignment.md) for business alignment
+
+</div>
+
 ## Further Reading
 
 - _Continuous Delivery_ by Jez Humble and David Farley

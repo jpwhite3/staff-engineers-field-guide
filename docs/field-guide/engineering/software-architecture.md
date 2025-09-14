@@ -227,7 +227,7 @@ Design systems around well-defined APIs:
 **Foundational Patterns:**
 - **[Clean Architecture](clean-architecture.md)** - Detailed clean architecture implementation
 - **[Technical Architecture](technical-architecture.md)** - Strategic architecture planning
-- **[Domain-Driven Design](../../appendix/design-patterns/domain-driven-design.md)** - Business-focused architecture
+- **[Domain-Driven Design Overview](../../appendix/domain-driven-design/ddd-overview.md)** - Business-focused architecture
 
 **Implementation Practices:**
 - **[Microservices Architecture](microservices-architecture.md)** - Distributed systems architecture

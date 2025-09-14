@@ -13,9 +13,15 @@ The assessment evaluates six core domains that research and practice have identi
 !!! info "How to Use This Assessment"
 The value of this assessment comes not from achieving perfect scores, but from honest self-reflection that guides continuous improvement. Answer based on your current demonstrated capabilities, not your aspirations or theoretical knowledge. Consider concrete evidence from your recent work—specific projects, decisions, interactions, and outcomes from the past six months. Use the results as a baseline for development planning, focusing on the 1-2 areas that will have the highest impact on your effectiveness in your current role and career goals. Revisit the assessment quarterly to track progress and adjust your development focus as your role and organizational context evolve.
 
-## Assessment Domains
+## Interactive Competency Assessment
 
-### Domain 1: Technical Architecture & Engineering Excellence
+Use the tabs below to navigate through the six core domains of staff engineer competency. Each domain includes self-assessment scales, evidence questions, and development guidance.
+
+=== "Technical Excellence"
+
+    # :material-cog-outline: Domain 1: Technical Architecture & Engineering Excellence
+
+    Master the technical foundation that enables all other aspects of staff engineering leadership through clean architecture, operational excellence, and delivery practices.
 
 !!! question "1.1 Clean Architecture & System Design"
 
@@ -67,7 +73,11 @@ The value of this assessment comes not from achieving perfect scores, but from h
 
 ```
 
-### Domain 2: Strategic Thinking & Business Alignment
+=== "Strategic Thinking"
+
+    # :material-strategy: Domain 2: Strategic Thinking & Business Alignment
+
+    Connect technical decisions to business outcomes and develop strategic thinking that guides architectural and organizational choices.
 
 !!! question "2.1 Strategic Technical Decision Making"
 
@@ -98,7 +108,11 @@ The value of this assessment comes not from achieving perfect scores, but from h
 
     **Current Level: 3/5** - Proficient
 
-### Domain 3: Leadership & Influence
+=== "Leadership Impact"
+
+    # :material-account-group: Domain 3: Leadership & Influence
+
+    Develop the ability to influence without formal authority and lead technical initiatives that span multiple teams and organizational boundaries.
 
 **3.1 Influencing Without Authority**
 ```
@@ -138,7 +152,11 @@ The value of this assessment comes not from achieving perfect scores, but from h
 
 ```
 
-### Domain 4: Communication & Collaboration
+=== "Communication Skills"
+
+    # :material-forum: Domain 4: Communication & Collaboration
+
+    Master the communication skills that enable technical leaders to bridge technical depth with stakeholder needs across organizational levels.
 
 **4.1 Technical Communication Excellence**
 ```
@@ -173,7 +191,11 @@ The value of this assessment comes not from achieving perfect scores, but from h
 
 ```
 
-### Domain 5: Organizational Design & Team Effectiveness
+=== "Team Excellence"
+
+    # :material-sitemap: Domain 5: Organizational Design & Team Effectiveness
+
+    Apply organizational design principles to build high-performing teams and optimize the sociotechnical systems that drive engineering productivity.
 
 **5.1 Team Topology & Organizational Design**
 ```
@@ -197,7 +219,11 @@ The value of this assessment comes not from achieving perfect scores, but from h
 
 ```
 
-### Domain 6: Critical Thinking & Decision Making
+=== "Decision Making"
+
+    # :material-brain: Domain 6: Critical Thinking & Decision Making
+
+    Develop systematic approaches to complex technical decisions using frameworks that balance analytical rigor with practical constraints.
 
 **6.1 Systems Thinking & Complex Problem Solving**
 ```
@@ -219,7 +245,23 @@ The value of this assessment comes not from achieving perfect scores, but from h
 □ Advanced (4): I can coach others in decision-making quality and establish better organizational practices
 □ Expert (5): I influence industry practices for technical decision-making under uncertainty
 
-```
+## Assessment Progress Tracker
+
+Use this framework to track your development over time and identify high-impact growth opportunities.
+
+### Overall Competency Profile
+
+| Domain | Current Level | Target Level | Priority | Development Focus |
+| :--- | :---: | :---: | :---: | :--- |
+| **Technical Excellence** | _/5 | _/5 | High/Medium/Low | Architecture, SRE, or Delivery |
+| **Strategic Thinking** | _/5 | _/5 | High/Medium/Low | Business alignment, Vision, or Decision-making |
+| **Leadership Impact** | _/5 | _/5 | High/Medium/Low | Influence, Mentoring, or Team building |
+| **Communication Skills** | _/5 | _/5 | High/Medium/Low | Technical writing, Presentations, or Stakeholder management |
+| **Team Excellence** | _/5 | _/5 | High/Medium/Low | Organizational design, Culture, or Collaboration |
+| **Decision Making** | _/5 | _/5 | High/Medium/Low | Frameworks, Analysis, or Judgment |
+
+!!! tip "Progress Tracking Guidelines"
+    **Quarterly Review Cycle**: Reassess every 3 months to track genuine capability development rather than temporary project outcomes. **Focus on 1-2 Domains**: Concentrate development effort on the highest-impact areas rather than trying to improve everything simultaneously. **Evidence-Based Assessment**: Base level ratings on concrete examples and measurable outcomes from your recent work, not self-perception or aspirational goals.
 
 ## Competency Scoring & Interpretation
 

@@ -84,11 +84,7 @@ These teams own the gnarly technical stuff that would overwhelm other teams, but
 
 **Key formation priorities:**
 
-**Establish domain authority**: Make sure the team has or develops deep expertise in their specialized area—this is their primary value proposition.
-
-**Build interface thinking**: They need to excel at hiding complexity behind clean, well-documented APIs. Complexity containment is as important as problem-solving.
-
-**Maintain connection**: Set up regular interaction patterns with stream teams to ensure the subsystem evolves in ways that support broader system goals.
+Successful complicated subsystem teams focus on three interconnected priorities that enable them to serve the organization effectively. They must establish domain authority by ensuring the team has or develops deep expertise in their specialized area, as this technical credibility forms their primary value proposition to the organization. They need to build interface thinking, excelling at hiding complexity behind clean, well-documented APIs where complexity containment becomes as important as problem-solving itself. Finally, they must maintain connection through regular interaction patterns with stream teams, ensuring the subsystem evolves in ways that support broader system goals rather than becoming an isolated technical silo.
 
 ## The Four Stages
 
@@ -288,35 +284,14 @@ Different team types have different cognitive load patterns that affect their fo
 
 ## Assessment Framework: Team Formation Health
 
-Use this checklist to evaluate team formation progress:
+Evaluate team formation progress through systematic assessment across four critical dimensions that determine long-term team effectiveness and organizational impact.
 
-### Team Type Clarity
-
-- [ ] Clear understanding of team type (stream, platform, enabling, complicated subsystem)
-- [ ] Team composition matches team type requirements
-- [ ] Success metrics align with team type purpose
-- [ ] Interaction patterns appropriate for team type
-
-### Development Stage Health
-
-- [ ] Recognition of current Tuckman stage (forming, storming, norming, performing)
-- [ ] Leadership approach matches current stage needs
-- [ ] Conflicts are being addressed constructively (during storming)
-- [ ] Team autonomy growing appropriately through stages
-
-### Cognitive Load Management
-
-- [ ] Team's cognitive load is appropriate for their capacity
-- [ ] Clear boundaries reduce unnecessary complexity
-- [ ] Focus on intrinsic load related to team's core purpose
-- [ ] Support systems reduce extraneous load
-
-### Interaction Mode Evolution
-
-- [ ] Appropriate interaction modes with other teams
-- [ ] Evolution from collaboration to X-as-a-Service where appropriate
-- [ ] Clear interfaces and contracts with dependent teams
-- [ ] Regular assessment of interaction effectiveness
+| Assessment Dimension | Key Indicators |
+| :--- | :--- |
+| **Team Type Clarity** | Clear understanding of team type (stream, platform, enabling, complicated subsystem) with composition matching requirements, success metrics aligned with purpose, and appropriate interaction patterns |
+| **Development Stage Health** | Recognition of current Tuckman stage with leadership approach matching stage needs, constructive conflict resolution during storming, and appropriate autonomy growth through stages |
+| **Cognitive Load Management** | Team's cognitive load appropriate for capacity, clear boundaries reducing unnecessary complexity, focus on intrinsic load related to core purpose, and support systems reducing extraneous load |
+| **Interaction Mode Evolution** | Appropriate interaction modes with other teams, evolution from collaboration to X-as-a-Service where suitable, clear interfaces and contracts with dependent teams, and regular assessment of interaction effectiveness |
 
 Recognizing these stages and team types allows you to be a thermostat, not a thermometer. You don't just reflect the team's temperature; you actively regulate it, guiding them through the inevitable storms while building the right organizational structure for high performance.
 

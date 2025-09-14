@@ -264,18 +264,45 @@ Automate debt detection and management where possible:
 
 ## Cross-Reference Navigation
 
-**Quality Practices:**
-- **[Engineering Excellence](engineering-excellence.md)** - Systematic quality improvement approaches including code reviews
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Testing practices that reduce technical debt
+<div class="grid cards" markdown>
 
-**Architecture and Design:**
-- **[Clean Architecture](clean-architecture.md)** - Architectural patterns that minimize debt accumulation
-- **[Software Architecture](software-architecture.md)** - Design decisions that impact long-term maintainability
-- **[Evolutionary Architecture](evolutionary-architecture.md)** - Architectures designed for change
+- **:material-cog-outline: Quality Practice Foundations**
 
-**Team and Process:**
-- **[Engineering Metrics](../business/engineering-metrics-business-alignment.md)** - Measuring engineering effectiveness including debt management
-- **[Strategic Thinking](../execution/strategic-thinking.md)** - Long-term planning that includes debt management
+    **Engineering Excellence Integration**
+
+    Master [Engineering Excellence](engineering-excellence.md) for systematic quality improvement and [Advanced Testing Strategies](advanced-testing-strategies.md) for debt-reducing testing practices
+
+- **:material-sitemap: Architecture & Design Integration**
+
+    **Debt-Resistant System Design**
+
+    Apply [Clean Architecture](clean-architecture.md) patterns to minimize debt accumulation, design with [Software Architecture](software-architecture.md) principles for maintainability, and use [Evolutionary Architecture](evolutionary-architecture.md) for change-resilient systems
+
+- **:material-chart-line: Measurement & Strategy Integration**
+
+    **Business-Aligned Debt Management**
+
+    Connect to [Engineering Metrics](../business/engineering-metrics-business-alignment.md) for effectiveness measurement and [Strategic Thinking](../execution/strategic-thinking.md) for long-term debt planning
+
+- **:material-brush: Code Quality Practices**
+
+    **Daily Debt Prevention**
+
+    Integrate with [Code Hygiene](code-hygiene.md) for preventive practices and [Source Control](source-control.md) for debt-tracking workflows
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Debt Management Maturity**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for technical leadership evaluation and [Development Tracking System](../../appendix/tools/development-tracking-system.md) for debt management skill development
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen System Sustainability**
+
+    Progress to [Engineering Excellence](engineering-excellence.md) mastery, [Clean Architecture](clean-architecture.md) implementation, and [Strategic Thinking](../execution/strategic-thinking.md) for comprehensive technical debt strategy
+
+</div>
 
 ## Further Reading
 

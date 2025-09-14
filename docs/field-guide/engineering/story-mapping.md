@@ -265,3 +265,45 @@ Help the team learn effective story splitting techniques. Review proposed splits
 Question assumptions about what must be built together versus what can be separated. Often, what seems coupled can be decoupled with creative thinking.
 
 By mastering story mapping and story splitting, you help your team focus on delivering value incrementally rather than building components that only deliver value when integrated. This results in faster feedback, earlier return on investment, and more satisfied users.
+
+## Cross-Reference Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-account-group: Team Collaboration Integration**
+
+    **User-Centric Development**
+
+    Connect with [Team Formation](../teamwork/team-formation.md) for collaborative development practices and [Product Engineering Collaboration](../business/product-engineering-collaboration.md) for effective product-engineering partnerships
+
+- **:material-chart-line: Strategic & Business Alignment**
+
+    **Value-Driven Development**
+
+    Integrate with [Strategic Thinking](../execution/strategic-thinking.md) for business-aligned technical decisions and [Engineering Metrics](../business/engineering-metrics-business-alignment.md) for value measurement
+
+- **:material-sitemap: Architecture & System Design**
+
+    **Incremental Architecture**
+
+    Apply to [Clean Architecture](clean-architecture.md) for modular, incrementally deliverable systems and [Evolutionary Architecture](evolutionary-architecture.md) for value-driven architectural evolution
+
+- **:material-rocket-launch: Delivery & Quality Integration**
+
+    **Incremental Delivery Excellence**
+
+    Support with [Continuous Delivery](continuous-delivery.md) for frequent value delivery and [Advanced Testing Strategies](advanced-testing-strategies.md) for story-level quality assurance
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Collaboration Skills**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for product collaboration evaluation and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for cross-functional team effectiveness
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Product Leadership**
+
+    Progress to [Product Engineering Collaboration](../business/product-engineering-collaboration.md) mastery, [Strategic Thinking](../execution/strategic-thinking.md) development, and [Business Integration](../business/index.md) for comprehensive product-engineering expertise
+
+</div>

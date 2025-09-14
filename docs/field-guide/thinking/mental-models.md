@@ -19,12 +19,7 @@ Before diving into specific models, let's understand why our brains need help wi
 ### **System 1: The Intuitive Brain**
 *Fast, automatic, pattern-matching, emotion-driven*
 
-This is your engineering intuition in action. When you immediately spot that a piece of code "smells wrong" or sense that a proposed architecture won't scale, that's System 1 at work. It's incredibly powerful for:
-
-- **Pattern recognition**: Spotting familiar code anti-patterns
-- **Rapid assessment**: Getting a quick "feel" for system complexity  
-- **Risk detection**: Sensing when something seems off
-- **Creative leaps**: Making connections between seemingly unrelated concepts
+This is your engineering intuition in action. When you immediately spot that a piece of code "smells wrong" or sense that a proposed architecture won't scale, that's System 1 at work. It's incredibly powerful for pattern recognition, allowing you to instantly spot familiar code anti-patterns that you've encountered before. System 1 enables rapid assessment of system complexity, giving you an intuitive "feel" for whether an approach will work at scale. It excels at risk detection, creating that nagging sense when something seems off even if you can't immediately articulate why. Perhaps most valuably, System 1 facilitates creative leaps by making unexpected connections between seemingly unrelated concepts, often leading to breakthrough insights and innovative solutions.
 
 !!! warning "System 1 Blind Spots"
     **Dangerous cognitive traps to watch for:**
@@ -125,17 +120,16 @@ Engineering is fundamentally about building complex systems that work reliably. 
 
 Imagine you're investigating why your service is experiencing intermittent slowdowns. Instead of looking at individual metrics, use stock and flow thinking:
 
-**Stocks in your system:**
-- Queue depth (accumulated requests waiting for processing)
-- Database connection pool (available connections)
-- Memory usage (accumulated objects in heap)
-- CPU utilization (percentage of processing capacity used)
+**System Analysis Framework:**
 
-**Flows affecting these stocks:**
-- Request arrival rate (increasing queue depth)
-- Request processing rate (decreasing queue depth)
-- Connection allocation/release rate (affecting pool availability)
-- Garbage collection rate (freeing memory)
+| System Component | Stock (What Accumulates) | Inflow (Increases Stock) | Outflow (Decreases Stock) |
+| :--- | :--- | :--- | :--- |
+| **Request Processing** | Queue depth (waiting requests) | Request arrival rate | Request processing rate |
+| **Database Access** | Connection pool availability | Connection creation | Connection allocation/release |
+| **Memory Management** | Heap utilization (objects) | Object creation rate | Garbage collection rate |
+| **CPU Resources** | Processing capacity used | New task allocation | Task completion rate |
+
+This framework reveals the dynamic relationships between system components and helps identify bottlenecks before they become critical issues.
 
 **The Stock and Flow Mental Model in Action:** (1)
 { .annotate }
@@ -635,6 +629,150 @@ The investment in building this cognitive toolkit pays compound returns througho
 
 **This is how Staff Engineers become force multipliers—not just through their individual decisions, but through the quality of thinking they bring to their teams and organizations.**
 
+## Mental Models Self-Assessment Framework
+
+Evaluate your current proficiency with different categories of mental models to identify development opportunities and strengthen your cognitive toolkit for engineering leadership.
+
+=== "Systems Thinking"
+
+    **Understanding Complex Interactions & Emergence**
+
+    Assess your ability to analyze complex systems, identify leverage points, and understand how components interact to create emergent behaviors.
+
+    <div class="grid cards" markdown>
+
+    -   :material-chart-line-variant: **Feedback Loops & System Dynamics**
+
+        ---
+
+        Can you identify reinforcing and balancing feedback loops in technical systems and organizational processes? Do you recognize how delays in feedback create system instability?
+
+        **Evidence**: Point to examples where you've identified and addressed feedback loops in system design or team processes.
+
+    -   :material-network: **Systems Mapping & Interactions**
+
+        ---
+
+        Do you naturally think about component interactions, dependencies, and how changes ripple through complex systems? Can you visualize system boundaries and interfaces?
+
+        **Evidence**: Describe instances where systems thinking helped you solve complex architectural or organizational problems.
+
+    -   :material-layers: **Leverage Points & Intervention**
+
+        ---
+
+        Can you identify high-impact intervention points where small changes create large improvements? Do you understand the hierarchy of leverage in complex systems?
+
+        **Evidence**: Give examples of strategic interventions that created disproportionate positive impact.
+
+    -   :material-chart-donut: **Stock and Flow Analysis**
+
+        ---
+
+        Do you distinguish between quantities (stocks) and rates of change (flows) when analyzing system performance and capacity planning?
+
+        **Evidence**: Show how stock/flow thinking has improved your capacity planning or performance analysis.
+
+    </div>
+
+=== "Decision-Making"
+
+    **Cognitive Process Optimization & Bias Management**
+
+    Evaluate your effectiveness at making decisions under uncertainty while recognizing and mitigating cognitive biases that can lead to poor choices.
+
+    <div class="grid cards" markdown>
+
+    -   :material-scale-balance: **Trade-off Analysis & Constraints**
+
+        ---
+
+        How effectively do you evaluate competing priorities, constraints, and opportunity costs? Can you systematically compare alternatives across multiple dimensions?
+
+        **Evidence**: Describe decisions where systematic trade-off analysis led to better outcomes than intuitive choices.
+
+    -   :material-brain: **Bias Recognition & Mitigation**
+
+        ---
+
+        Can you identify confirmation bias, anchoring, availability heuristic, and other cognitive biases in your own decision-making? Do you have systematic approaches to counteract these biases?
+
+        **Evidence**: Give examples where recognizing bias changed your approach to a significant decision.
+
+    -   :material-timer: **Time Horizons & Temporal Reasoning**
+
+        ---
+
+        Do you consider appropriate time scales for different types of decisions? Can you balance short-term pressures with long-term consequences?
+
+        **Evidence**: Point to decisions where temporal reasoning helped you avoid short-term thinking traps.
+
+    -   :material-dice-multiple: **Probabilistic & Bayesian Thinking**
+
+        ---
+
+        Do you think in probabilities rather than certainties? Can you update your beliefs systematically as new evidence becomes available?
+
+        **Evidence**: Show how probabilistic thinking has improved your engineering estimates or risk assessments.
+
+    </div>
+
+=== "Strategic Analysis"
+
+    **Long-term Vision & Competitive Thinking**
+
+    Assess your ability to think strategically about technology choices, competitive positioning, and long-term organizational capabilities.
+
+    <div class="grid cards" markdown>
+
+    -   :material-strategy: **Strategic Options & Positioning**
+
+        ---
+
+        Can you identify and evaluate strategic alternatives for technology investments and architectural directions? Do you consider competitive implications of technical decisions?
+
+        **Evidence**: Describe strategic technical decisions that created competitive advantages or strategic optionality.
+
+    -   :material-map: **Mental Model Integration**
+
+        ---
+
+        Can you combine multiple mental models to analyze complex problems from different perspectives? Do you switch between models appropriately based on context?
+
+        **Evidence**: Give examples where combining different mental models led to insights that single-model thinking would miss.
+
+    -   :material-trending-up: **Second-Order Thinking**
+
+        ---
+
+        Do you routinely consider second and third-order consequences of decisions? Can you anticipate how systems and people will adapt to changes you introduce?
+
+        **Evidence**: Point to examples where second-order thinking prevented unintended consequences or created unexpected benefits.
+
+    -   :material-target: **Outcome vs Output Orientation**
+
+        ---
+
+        Do you focus on outcomes (business results) rather than just outputs (features delivered)? Can you connect technical work to measurable business impact?
+
+        **Evidence**: Show how outcome-oriented thinking has improved your project prioritization and technical decision-making.
+
+    </div>
+
+### Assessment Scoring & Development Planning
+
+**Mental Model Proficiency Levels:**
+
+- **Novice (1)**: Aware of the concept but don't consistently apply it
+- **Developing (2)**: Apply the model in familiar contexts with conscious effort
+- **Proficient (3)**: Apply the model naturally in most relevant situations
+- **Advanced (4)**: Teach the model to others and adapt it to novel contexts
+- **Expert (5)**: Integrate the model with others to create new insights
+
+**Development Recommendations:**
+
+Focus on 2-3 mental models where improvement would have the highest impact on your current role and responsibilities. Practice applying these models to real engineering decisions and seek feedback from others on your reasoning process. Most importantly, keep a decision journal to track when and how different mental models improve your thinking and outcomes.
+
 ---
 
 ## Prerequisites and Related Learning
@@ -649,16 +787,51 @@ The investment in building this cognitive toolkit pays compound returns througho
 - **[Cognitive Biases](cognitive-biases.md)** - Understand how mental shortcuts can lead thinking astray
 - **[Decision-Making Frameworks](../execution/decision-making-frameworks.md)** - Integrate mental models into formal decision processes
 
-### **Apply These Mental Models**
-- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your critical thinking and decision-making capabilities
-- **[Critical Thinking Assessment](../../appendix/tools/critical-thinking-assessment.md)** - Test your ability to apply various mental models to engineering scenarios
-- **[Technical Debt Management Framework](../../appendix/tools/technical-debt-management-framework.md)** - Use systems thinking to analyze and manage technical debt
+Mental models become powerful tools when applied systematically to real-world challenges. These resources help you put theory into practice and continue developing your critical thinking capabilities.
 
-### **Next Steps in Your Learning Journey**
-1. **[Strategic Thinking](strategic-thinking.md)** - Learn to apply mental models to business strategy and competitive analysis
-2. **[Leadership Influence](../leadership/influencing-without-authority.md)** - Use psychological models to build influence and guide technical decisions
-3. **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)** - Apply mental models to navigate complex stakeholder disagreements
-4. **[Revenue vs Risk Decision-Making](../business/revenue-vs-risk.md)** - Use probabilistic thinking and decision models for business-technical tradeoffs
+<div class="grid cards" markdown>
+
+-   :material-clipboard-check: **Apply These Mental Models**
+
+    ---
+
+    Put mental models to work through practical assessment and analysis
+
+    **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)**
+
+    Evaluate your critical thinking and decision-making capabilities
+
+    **[Critical Thinking Assessment](../../appendix/tools/critical-thinking-assessment.md)**
+
+    Test your ability to apply various mental models to engineering scenarios
+
+    **[Technical Debt Management Framework](../../appendix/tools/technical-debt-management-framework.md)**
+
+    Use systems thinking to analyze and manage technical debt
+
+-   :material-map: **Next Steps in Your Learning Journey**
+
+    ---
+
+    Build on mental models with advanced thinking and leadership skills
+
+    **[Strategic Thinking](strategic-thinking.md)**
+
+    Learn to apply mental models to business strategy and competitive analysis
+
+    **[Leadership Influence](../leadership/influencing-without-authority.md)**
+
+    Use psychological models to build influence and guide technical decisions
+
+    **[Advanced Conflict Resolution](../leadership/advanced-conflict-resolution.md)**
+
+    Apply mental models to navigate complex stakeholder disagreements
+
+    **[Revenue vs Risk Decision-Making](../business/revenue-vs-risk.md)**
+
+    Use probabilistic thinking and decision models for business-technical tradeoffs
+
+</div>
 
 ### **Learning Path Recommendations**
 

@@ -84,6 +84,48 @@ The goal is creating a development workflow where good practices are supported a
 
 Source control mastery, ultimately, is about enabling your team to work together effectively on complex systems that evolve over time. It's about creating practices that scale with both team size and system complexity, that support rather than hinder velocity, and that turn the challenge of collaborative development into a competitive advantage. The investment in building these practices pays dividends every time your team needs to understand, modify, or debug your systems—which is to say, every single day.
 
+## Cross-Reference Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-brush: Code Quality Integration**
+
+    **Development Excellence**
+
+    Connect with [Code Hygiene](code-hygiene.md) for quality-focused development workflows and [Test-Driven Development](tdd.md) for test-supported collaborative development
+
+- **:material-rocket-launch: Automation & Pipeline Integration**
+
+    **CI/CD Workflow Integration**
+
+    Integrate with [Continuous Integration/Delivery](cicd.md) for automated workflow validation and [Continuous Delivery](continuous-delivery.md) for source-controlled deployment practices
+
+- **:material-account-group: Team Collaboration**
+
+    **Collaborative Development**
+
+    Apply to [Team Formation](../teamwork/team-formation.md) for effective collaboration patterns and [Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md) for trust-based development culture
+
+- **:material-sitemap: Architecture & System Evolution**
+
+    **Code Organization & Evolution**
+
+    Support [Clean Architecture](clean-architecture.md) with organized, traceable changes and [Evolutionary Architecture](evolutionary-architecture.md) with version-controlled architectural decisions
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Collaboration Skills**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for technical collaboration evaluation and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for development workflow assessment
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Technical Leadership**
+
+    Progress to [Code Hygiene](code-hygiene.md) mastery, [Advanced Testing Strategies](advanced-testing-strategies.md), and [Technical Debt Management](technical-debt-management-framework.md) for comprehensive development excellence
+
+</div>
+
 ## Essential Resources for Deepening Your Practice
 
 _Pro Git_ by Scott Chacon and Ben Straub remains the definitive resource for understanding Git's capabilities and design philosophy. The book excels at connecting Git's technical features to practical development scenarios, making it invaluable for both individual skill development and team training.

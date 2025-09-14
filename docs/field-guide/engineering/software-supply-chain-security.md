@@ -37,6 +37,48 @@ As Staff Engineers, we are responsible for the entire ecosystem of our applicati
 - **Execution:** Have the team try to build the project and use automated tools to identify the vulnerable dependencies. Discuss the potential impact of each vulnerability.
 - **Debrief:** Discuss how to improve the process for identifying and mitigating these risks in your real-world projects.
 
+## Cross-Reference Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-rocket-launch: CI/CD Integration**
+
+    **Automated Security Gates**
+
+    Integrate with [Continuous Integration/Delivery](cicd.md) for automated vulnerability scanning and [Continuous Delivery](continuous-delivery.md) for secure deployment practices
+
+- **:material-cog-outline: Quality & Testing Integration**
+
+    **Security-Focused Quality**
+
+    Connect with [Advanced Testing Strategies](advanced-testing-strategies.md) for security testing practices and [Engineering Excellence](engineering-excellence.md) for comprehensive security quality gates
+
+- **:material-sitemap: Architecture & Risk Management**
+
+    **Secure System Design**
+
+    Apply to [Clean Architecture](clean-architecture.md) for dependency isolation and [Evolutionary Architecture](evolutionary-architecture.md) for security-conscious architectural evolution
+
+- **:material-cash-multiple: Business Risk & Compliance**
+
+    **Strategic Security Alignment**
+
+    Connect to [Cost Optimization](../business/cost-optimization.md) for security investment decisions and [Revenue vs Risk](../business/revenue-vs-risk.md) for comprehensive security risk management
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Security Maturity**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for security leadership evaluation and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for security culture assessment
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Security Expertise**
+
+    Progress to [Advanced Testing Strategies](advanced-testing-strategies.md) for security testing, [Site Reliability Engineering](site-reliability-engineering.md) for operational security, and [Change Management](../execution/change-management-technical-transformations.md) for security transformation
+
+</div>
+
 ## Further Reading
 
 - OWASP Software Supply Chain Security

@@ -108,19 +108,14 @@ Here's a scenario every engineering team faces: Product wants to ship a new feat
 
 This transforms the relationship between development velocity and system reliability from adversarial to collaborative:
 
-**When you have error budget remaining:**
+**Error Budget Decision Framework:**
 
-- Deploy more frequently
-- Experiment with new features
-- Try performance optimizations
-- Make architectural improvements
+| Error Budget Status | Risk Tolerance | Development Approach | Focus Areas |
+| :--- | :---: | :--- | :--- |
+| **Budget Remaining** | Higher | Accelerated innovation | Deploy more frequently, experiment with new features, try performance optimizations, make architectural improvements |
+| **Budget Depleted** | Lower | Reliability-focused | Slow down feature development, focus on reliability improvements, increase testing and review rigor, postpone risky changes |
 
-**When you're approaching your error budget:**
-
-- Slow down feature development
-- Focus on reliability improvements
-- Increase testing and review rigor
-- Postpone risky changes
+This framework transforms reliability from a constraint on innovation into a strategic resource that enables calculated risk-taking when conditions are favorable.
 
 The beauty of error budgets is that they make reliability a shared responsibility between development and operations, with clear incentives aligned around business objectives.
 
@@ -507,6 +502,48 @@ Use this framework to evaluate your current SRE practices and identify improveme
 6. **Automation is essential for scale**: Manual processes become bottlenecks and failure points as systems grow in complexity
 
 Site Reliability Engineering provides a framework for building systems that users can depend on while maintaining the agility to innovate and grow. As a Staff Engineer, your role is to champion these practices, demonstrate their value through implementation, and build organizational capability that creates lasting competitive advantage.
+
+## Cross-Reference Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-foundation: Operational Excellence Foundations**
+
+    **Essential Prerequisites**
+
+    Master [Advanced Testing Strategies](advanced-testing-strategies.md) for quality foundations and explore [Continuous Delivery](continuous-delivery.md) for deployment reliability patterns
+
+- **:material-test-tube-off: Resilience Testing Integration**
+
+    **System Validation**
+
+    Implement [Chaos Engineering](chaos-engineering.md) for proactive failure testing and use [Advanced Testing Strategies](advanced-testing-strategies.md) to validate SLI/SLO achievement
+
+- **:material-rocket-launch: Delivery Pipeline Integration**
+
+    **Automated Reliability**
+
+    Connect with [Continuous Integration/Delivery](cicd.md) for automated quality gates and integrate [Continuous Delivery](continuous-delivery.md) practices for reliable deployment patterns
+
+- **:material-sitemap: Architecture for Reliability**
+
+    **System Design Integration**
+
+    Apply to [Clean Architecture](clean-architecture.md) for testable, maintainable systems and use [Evolutionary Architecture](evolutionary-architecture.md) for adaptable reliability practices
+
+- **:material-cash-multiple: Business Value & Risk**
+
+    **Strategic Alignment**
+
+    Connect with [Cost Optimization](../business/cost-optimization.md) for infrastructure efficiency and [Strategic Thinking](../execution/strategic-thinking.md) for business-aligned reliability targets
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Reliability Maturity**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for system reliability evaluation and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for operational culture assessment
+
+</div>
 
 ## Further Reading
 

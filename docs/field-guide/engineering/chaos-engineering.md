@@ -364,28 +364,39 @@ Remember: in production, failure is not a possibility—it's a certainty. The qu
 
 ## Cross-Reference Navigation
 
-### Prerequisites for This Chapter
+<div class="grid cards" markdown>
 
-- **[Site Reliability Engineering](site-reliability-engineering.md)** - Understanding SLOs and reliability principles provides foundation for chaos engineering practices
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Testing fundamentals and quality practices inform chaos engineering approaches
+- **:material-shield-half-full: Reliability Foundations**
 
-### Related Concepts
+    **Prerequisites for Chaos Engineering**
 
-- **[Site Reliability Engineering](site-reliability-engineering.md)** - Chaos engineering supports SLO achievement and error budget management
-- **[Continuous Delivery](continuous-delivery.md)** - Chaos engineering integrates with deployment pipelines for resilience validation
-- **[Cost Optimization](../business/cost-optimization.md)** - Chaos engineering helps prevent costly outages through proactive failure discovery
-- **[Navigating Uncertainty](../execution/navigating-uncertainty.md)** - Chaos engineering provides frameworks for handling system uncertainty and ambiguity
+    Master [Site Reliability Engineering](site-reliability-engineering.md) for SLO understanding and resilience principles, then explore [Advanced Testing Strategies](advanced-testing-strategies.md) for comprehensive quality practices
 
-### Apply These Concepts
+- **:material-cogs: System Reliability Integration**
 
-- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your system reliability and chaos engineering capabilities
-- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team readiness and culture for chaos engineering practices
+    **Production Resilience**
 
-### Next Steps in Your Learning Journey
+    Connect with [Site Reliability Engineering](site-reliability-engineering.md) for SLO achievement and error budget management, integrate with [Continuous Delivery](continuous-delivery.md) for deployment pipeline resilience validation
 
-1. **[Site Reliability Engineering](site-reliability-engineering.md)** - Deepen understanding of reliability practices and SLO management
-2. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Learn comprehensive testing approaches that complement chaos engineering
-3. **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Understand how to introduce chaos engineering practices organizationally
+- **:material-cash-multiple: Business Impact Management**
+
+    **Risk & Uncertainty Handling**
+
+    Apply to [Cost Optimization](../business/cost-optimization.md) for preventing costly outages and use [Navigating Uncertainty](../execution/navigating-uncertainty.md) frameworks for systematic uncertainty management
+
+- **:material-clipboard-check: Assessment & Team Readiness**
+
+    **Evaluate and Track Progress**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for system reliability capabilities and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for chaos engineering culture readiness
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Reliability Expertise**
+
+    Progress to deeper [Site Reliability Engineering](site-reliability-engineering.md) mastery, comprehensive [Advanced Testing Strategies](advanced-testing-strategies.md), and [Change Management](../execution/change-management-technical-transformations.md) for organizational adoption
+
+</div>
 
 ## Further Reading
 

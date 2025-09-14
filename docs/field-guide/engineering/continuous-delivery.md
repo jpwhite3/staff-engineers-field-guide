@@ -905,28 +905,45 @@ Continuous Delivery transforms software development from a risky, batch-oriented
 
 ## Cross-Reference Navigation
 
-### Prerequisites for This Chapter
+<div class="grid cards" markdown>
 
-- **[DevOps & Automation Engineering](devops.md)** - Understanding DevOps principles provides the cultural foundation for continuous delivery practices
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Comprehensive testing practices are essential for reliable continuous delivery pipelines
+- **:material-cog-outline: Cultural & Operational Foundations**
 
-### Related Concepts
+    **Essential Prerequisites**
 
-- **[DevOps & Automation Engineering](devops.md)** - DevOps culture and practices complement continuous delivery implementation
-- **[Site Reliability Engineering](site-reliability-engineering.md)** - SRE practices support CD with reliability engineering and error budget management
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Testing strategies must align with CD pipeline requirements and feedback loops
-- **[Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md)** - DORA metrics and CD effectiveness measurement connect to business value
+    Master [DevOps & Automation Engineering](devops.md) for cultural foundations and [Advanced Testing Strategies](advanced-testing-strategies.md) for quality-focused pipeline design
 
-### Apply These Concepts
+- **:material-rocket-launch: Delivery Excellence Integration**
 
-- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your technical delivery and automation engineering capabilities
-- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team readiness for continuous delivery practices and culture
+    **Production-Ready Practices**
 
-### Next Steps in Your Learning Journey
+    Connect with [DevOps & Automation Engineering](devops.md) for culture alignment and [Site Reliability Engineering](site-reliability-engineering.md) for reliability engineering and error budget management
 
-1. **[DevOps & Automation Engineering](devops.md)** - Master the cultural and organizational aspects of DevOps that enable CD success
-2. **[Site Reliability Engineering](site-reliability-engineering.md)** - Learn reliability engineering practices that complement continuous delivery
-3. **[Change Management for Technical Transformations](../execution/change-management-technical-transformations.md)** - Understand how to drive CD adoption across engineering organizations
+- **:material-test-tube: Quality Assurance Integration**
+
+    **Pipeline Quality Gates**
+
+    Align [Advanced Testing Strategies](advanced-testing-strategies.md) with CD pipeline requirements and feedback loop optimization for comprehensive quality assurance
+
+- **:material-chart-line: Metrics & Business Value**
+
+    **Measurement and Impact**
+
+    Connect to [Engineering Metrics & Business Alignment](../business/engineering-metrics-business-alignment.md) for DORA metrics implementation and business value demonstration
+
+- **:material-clipboard-check: Assessment & Team Readiness**
+
+    **Evaluate and Track Progress**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for delivery capabilities and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for CD culture readiness
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Delivery Excellence**
+
+    Progress to [DevOps & Automation Engineering](devops.md) mastery, [Site Reliability Engineering](site-reliability-engineering.md) practices, and [Change Management](../execution/change-management-technical-transformations.md) for organizational transformation
+
+</div>
 
 ## Further Reading
 

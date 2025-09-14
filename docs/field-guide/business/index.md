@@ -107,11 +107,45 @@ The business fluency you develop here becomes crucial for the ethical decision-m
 
 ### Learning Path Recommendations
 
-**For New Staff Engineers**: Start with **[Product-Engineering Collaboration](product-engineering-collaboration.md)** and **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)**, then progress to **[Business Case Development](business-case.md)** as you gain experience communicating technical value in business terms.
+Develop business partnership skills systematically based on your current role and experience level in technical-business collaboration.
 
-**For Experienced Technical Leaders**: Focus on **[Pitching to Executives](pitching-to-executives.md)** and **[Revenue vs Risk Decision-Making](revenue-vs-risk.md)**, especially if you're moving into roles with significant business impact and strategic decision-making responsibilities.
+<div class="grid cards" markdown>
 
-**For Technical Strategists and Architects**: Emphasize **[Aligning Technology with Business Strategy](aligning-technology.md)** and **[Cost Optimization](cost-optimization.md)** for making architectural and technology decisions with clear business rationale and measurable outcomes.
+-   :material-handshake: **For New Staff Engineers**
+
+    ---
+
+    Build foundational business collaboration skills
+
+    **[Product-Engineering Collaboration](product-engineering-collaboration.md)** and **[Engineering Metrics & Business Alignment](engineering-metrics-business-alignment.md)**
+
+    Then progress to **[Business Case Development](business-case.md)**
+
+    Focus: Communicating technical value in business terms
+
+-   :material-presentation: **For Experienced Technical Leaders**
+
+    ---
+
+    Advanced business influence and strategic decision-making
+
+    **[Pitching to Executives](pitching-to-executives.md)** and **[Revenue vs Risk Decision-Making](revenue-vs-risk.md)**
+
+    Essential for roles with significant business impact
+
+    Focus: Strategic decision-making and executive communication
+
+-   :material-strategy: **For Technical Strategists and Architects**
+
+    ---
+
+    Strategic alignment of technology and business objectives
+
+    **[Aligning Technology with Business Strategy](aligning-technology.md)** and **[Cost Optimization](cost-optimization.md)**
+
+    Focus: Architectural decisions with clear business rationale and measurable outcomes
+
+</div>
 
 ## Further Reading
 

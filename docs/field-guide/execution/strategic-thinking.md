@@ -64,24 +64,11 @@ Look for recurring themes, specific metrics, and explicit priorities.
 
 ### 2. The Implicit Strategy
 
-Sometimes the real strategy isn't written down. Observe:
-
-- Where the company is investing resources
-- Which projects get executive attention
-- What gets celebrated and rewarded
-- How conflicts between teams are resolved
-
-Actions often reveal priorities more clearly than words.
+Sometimes the real strategy isn't written down but becomes visible through organizational behavior patterns. Observe where the company is actually investing resources, not just where they say they're investing, as budget allocation reveals true priorities. Notice which projects consistently get executive attention and intervention, as this indicates strategic importance beyond formal documentation. Pay attention to what gets celebrated and rewarded in company meetings and performance reviews, as recognition patterns reveal organizational values in action. Finally, watch how conflicts between teams are resolved, as resolution patterns demonstrate the hierarchy of actual priorities when different strategic goals compete for resources. Actions often reveal priorities more clearly than words.
 
 ### 3. The External Context
 
-Understand the broader landscape:
-
-- Who are your competitors and what are they doing?
-- What technology trends could disrupt your business?
-- What are the major market shifts in your industry?
-
-This context helps you anticipate future strategic shifts.
+Understand the broader landscape through systematic external analysis that informs strategic thinking. Research who your competitors are and what strategic moves they're making, as competitive intelligence helps you understand market dynamics and potential strategic responses. Identify technology trends that could disrupt your business model, focusing on innovations that could fundamentally change how your industry operates rather than incremental improvements. Track major market shifts in your industry, including regulatory changes, customer behavior evolution, and new business models that could reshape competitive dynamics. This external context helps you anticipate future strategic shifts and position your technical decisions to support organizational adaptability and competitive advantage.
 
 ## OKRs: The Strategic Alignment Engine
 

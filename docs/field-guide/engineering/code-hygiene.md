@@ -399,15 +399,47 @@ By promoting code hygiene as a daily practice rather than a special event, you c
 - **Process:** Provide the team with snippets of code containing intentional “smells” (e.g., long methods, duplicated code). Task them with identifying the smells and proposing refactoring solutions.
 - **Debrief:** Discuss the proposed solutions as a group, focusing on the trade-offs of each approach.
 
-## Prerequisites
+## Cross-Reference Navigation
 
-- **[Team Formation](../teamwork/team-formation.md)** - Understanding team dynamics supports establishing code quality culture across development teams
+<div class="grid cards" markdown>
 
-## Related Technical Concepts
+- **:material-account-group: Team & Cultural Foundations**
 
-- **[Git Practices](git-practices.md)** - Source control practices directly support code hygiene through structured development workflows
-- **[Test-Driven Development](tdd.md)** - TDD practices provide the testing foundation necessary for safe refactoring and code improvement
-- **[Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md)** - Code quality improvements require cultural changes that support continuous improvement
+    **Prerequisites for Quality Culture**
+
+    Master [Team Formation](../teamwork/team-formation.md) for quality-focused team dynamics and explore [Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md) for continuous improvement culture
+
+- **:material-source-branch: Development Practices Integration**
+
+    **Technical Excellence**
+
+    Connect with [Git Practices](git-practices.md) for structured development workflows and [Test-Driven Development](tdd.md) for safe refactoring foundations
+
+- **:material-sitemap: Architecture & Design Quality**
+
+    **System-Level Hygiene**
+
+    Apply to [Clean Architecture](clean-architecture.md) for maintainable system structure and [Technical Debt Management](technical-debt-management-framework.md) for systematic code improvement
+
+- **:material-rocket-launch: Automation & Pipeline Integration**
+
+    **Automated Quality Gates**
+
+    Integrate with [Continuous Integration/Delivery](cicd.md) for automated code quality checks and [Continuous Delivery](continuous-delivery.md) for quality-focused deployment practices
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Code Quality Improvement**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for technical excellence evaluation and [Development Tracking System](../../appendix/tools/development-tracking-system.md) for code quality progress
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Technical Excellence**
+
+    Progress to [Clean Architecture](clean-architecture.md) mastery, [Advanced Testing Strategies](advanced-testing-strategies.md), and [Technical Debt Management](technical-debt-management-framework.md) for comprehensive quality engineering
+
+</div>
 
 ## Further Reading
 

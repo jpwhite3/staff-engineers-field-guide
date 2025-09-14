@@ -263,28 +263,45 @@ By systematically addressing software supply chain security, you not only protec
 
 ## Cross-Reference Navigation
 
-### Prerequisites for This Chapter
+<div class="grid cards" markdown>
 
-- **[DevOps & Automation Engineering](devops.md)** - Understanding DevOps practices provides foundation for secure CI/CD pipeline implementation
-- **[Continuous Delivery](continuous-delivery.md)** - Secure supply chain practices must be integrated into deployment pipelines
+- **:material-cog-outline: DevOps & Automation Foundations**
 
-### Related Concepts
+    **Secure Pipeline Prerequisites**
 
-- **[DevOps & Automation Engineering](devops.md)** - DevOps practices must incorporate supply chain security considerations
-- **[Continuous Delivery](continuous-delivery.md)** - Deployment pipelines require security controls for safe and secure delivery
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Security testing complements functional testing in comprehensive quality assurance
-- **[Privacy by Design](../ethics/privacy-by-design.md)** - Security and privacy engineering practices complement each other
+    Master [DevOps & Automation Engineering](devops.md) for secure CI/CD foundations and [Continuous Delivery](continuous-delivery.md) for secure deployment pipeline integration
 
-### Apply These Concepts
+- **:material-rocket-launch: Delivery & Operations Integration**
 
-- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your security engineering and supply chain management capabilities
-- **[Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md)** - Assess team security practices and supply chain risk management
+    **Secure Production Practices**
 
-### Next Steps in Your Learning Journey
+    Connect with [DevOps & Automation Engineering](devops.md) for supply chain-aware practices and [Continuous Delivery](continuous-delivery.md) for security-controlled deployment processes
 
-1. **[DevOps & Automation Engineering](devops.md)** - Master secure automation and infrastructure as code practices
-2. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Learn to integrate security testing into comprehensive quality assurance
-3. **[Privacy by Design](../ethics/privacy-by-design.md)** - Understand complementary privacy engineering principles and practices
+- **:material-test-tube: Quality & Security Testing**
+
+    **Comprehensive Security Assurance**
+
+    Integrate [Advanced Testing Strategies](advanced-testing-strategies.md) for security testing and connect with [Privacy by Design](../ethics/privacy-by-design.md) for complementary privacy engineering practices
+
+- **:material-sitemap: Architecture & Risk Management**
+
+    **Secure System Design**
+
+    Apply to [Clean Architecture](clean-architecture.md) for secure dependency management and [Site Reliability Engineering](site-reliability-engineering.md) for operational security monitoring
+
+- **:material-clipboard-check: Assessment & Team Readiness**
+
+    **Evaluate Security Maturity**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) for security leadership evaluation and [Team Health Diagnostic](../../appendix/tools/team-health-diagnostic.md) for security practice assessment
+
+- **:material-map-marker-path: Learning Progression**
+
+    **Deepen Security Engineering**
+
+    Progress to [DevOps & Automation Engineering](devops.md) mastery, [Advanced Testing Strategies](advanced-testing-strategies.md) for security testing, and [Privacy by Design](../ethics/privacy-by-design.md) for comprehensive privacy-security integration
+
+</div>
 
 ## Further Reading
 

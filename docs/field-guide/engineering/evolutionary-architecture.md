@@ -713,6 +713,48 @@ def measure_technology_health():
 
 Evolutionary Architecture recognizes that change is the only constant in software systems. By designing for evolution from the beginning, you create systems that improve over time rather than decay. As a Staff Engineer, your role is to champion these practices and help your organization build architectures that thrive in the face of uncertainty and change.
 
+## Cross-Reference Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-foundation: Architecture Foundations**
+
+    **Core Design Principles**
+
+    Master [Clean Architecture](clean-architecture.md) principles for foundational structure and explore [Hexagonal Architecture](hexagonal-architecture.md) for concrete boundary patterns that support evolution
+
+- **:material-test-tube: Quality & Testing Integration**
+
+    **Evolutionary Testing Strategy**
+
+    Implement [Advanced Testing Strategies](advanced-testing-strategies.md) to ensure architectural changes don't break existing functionality and support confident evolution
+
+- **:material-cogs: Continuous Integration**
+
+    **Automated Evolution Support**
+
+    Use [Continuous Integration/Delivery](cicd.md) and [Continuous Delivery](continuous-delivery.md) practices to automate fitness function execution and enable rapid architectural feedback
+
+- **:material-sitemap: System Design & Operations**
+
+    **Production-Ready Evolution**
+
+    Connect with [Site Reliability Engineering](site-reliability-engineering.md) for monitoring architectural health and [Technical Debt Management](technical-debt-management-framework.md) for systematic evolution planning
+
+- **:material-account-group: Organizational Evolution**
+
+    **Team Structure Integration**
+
+    Apply [Team Formation](../teamwork/team-formation.md) principles and [Organizational Design](../teamwork/organizational-design.md) to align team structure with evolving architecture patterns
+
+- **:material-clipboard-check: Assessment & Development**
+
+    **Track Evolutionary Progress**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) to evaluate architectural leadership and [Development Tracking System](../../appendix/tools/development-tracking-system.md) to measure evolution capabilities
+
+</div>
+
 ## Further Reading
 
 - Ford, Neal, Rebecca Parsons, and Patrick Kua. _Building Evolutionary Architectures: Support Constant Change_. 2017.

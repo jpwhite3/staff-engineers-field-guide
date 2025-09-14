@@ -75,7 +75,7 @@ System design, patterns, and technical decision-making:
 
 - [Technical Architecture & Systems Design](../field-guide/engineering/technical-architecture.md)
 - [Clean Architecture Principles](../field-guide/engineering/clean-architecture.md)
-- [Domain-Driven Design](../appendix/design-patterns/domain-driven-design.md)
+- [Domain-Driven Design Overview](../appendix/domain-driven-design/ddd-overview.md)
 - [Architecture Decision Records](../field-guide/engineering/adrs.md)
 
 ## Team Dynamics

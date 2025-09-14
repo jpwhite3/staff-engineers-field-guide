@@ -80,35 +80,117 @@ Engineering excellence isn't just about writing better code—it's about buildin
 
 ## Cross-Reference Navigation
 
-### Prerequisites for This Chapter
+<div class="grid cards" markdown>
 
-- **[Staff Engineer Archetypes](../intro/index.md)** - Understanding your role context before diving into technical practices
-- **[Continuous Learning](../learning/index.md)** - Learning frameworks needed to stay current with evolving engineering practices
+- **:material-account-school: Engineering Foundations**
 
-### Related Concepts
+    **Prerequisites for Technical Credibility**
 
-- **[Critical Thinking](../thinking/index.md)** - Mental models and decision-making frameworks that inform technical choices
-- **[Strategic Thinking](../execution/strategic-thinking.md)** - Understanding how technical decisions align with business strategy
-- **[Technical Vision](../leadership/technical-vision.md)** - Communicating technical direction and architectural choices
+    Build your foundation with [Staff Engineer Archetypes](../intro/index.md) for role clarity and [Continuous Learning](../learning/index.md) frameworks to stay current with evolving practices
 
-### Apply These Concepts
+- **:material-brain: Technical Decision-Making**
 
-- **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Evaluate your technical leadership capabilities across engineering domains
-- **[Technical Debt Management Framework](../../appendix/tools/technical-debt-management-framework.md)** - Apply engineering excellence principles to manage technical debt systematically
+    **Advanced Thinking Integration**
 
-### Next Steps in Your Learning Journey
+    Connect with [Critical Thinking](../thinking/index.md) mental models, [Strategic Thinking](../execution/strategic-thinking.md) for business alignment, and [Technical Vision](../leadership/technical-vision.md) communication
 
-1. **[Critical Thinking](../thinking/index.md)** - Develop mental models for complex technical decision-making
-2. **[Leadership & Influence](../leadership/index.md)** - Build on technical credibility to develop leadership capabilities
-3. **[Business Integration](../business/index.md)** - Connect engineering excellence to business value and outcomes
+- **:material-clipboard-check: Assessment & Application**
+
+    **Measure and Apply Engineering Excellence**
+
+    Use [Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md) to evaluate capabilities and [Technical Debt Management Framework](../../appendix/tools/technical-debt-management-framework.md) for systematic improvement
+
+- **:material-map-marker-path: Leadership Development Path**
+
+    **Next Steps in Your Journey**
+
+    Progress to [Critical Thinking](../thinking/index.md) for complex decision-making, [Leadership & Influence](../leadership/index.md) for technical authority, and [Business Integration](../business/index.md) for value alignment
+
+</div>
+
+## Engineering Discipline Navigation
+
+<div class="grid cards" markdown>
+
+- **:material-sitemap: System Architecture**
+
+    **Design Patterns & Structure**
+
+    [Clean Architecture](clean-architecture.md) for maintainable systems, [Hexagonal Architecture](hexagonal-architecture.md) for domain protection, and [Evolutionary Architecture](evolutionary-architecture.md) for adaptive design
+
+- **:material-test-tube: Quality Assurance**
+
+    **Testing Excellence & Reliability**
+
+    [Advanced Testing Strategies](advanced-testing-strategies.md) for comprehensive coverage, [Test-Driven Development](tdd.md) for design confidence, and [Chaos Engineering](chaos-engineering.md) for resilience validation
+
+- **:material-rocket-launch: Delivery & Operations**
+
+    **CI/CD & Site Reliability**
+
+    [Continuous Integration/Delivery](cicd.md) for deployment automation, [Site Reliability Engineering](site-reliability-engineering.md) for scalable operations, and [Continuous Delivery](continuous-delivery.md) for release confidence
+
+- **:material-code-brackets: Code Excellence**
+
+    **Practices & Hygiene**
+
+    [Code Hygiene](code-hygiene.md) for maintainable codebases, [Source Control](source-control.md) best practices, and [Technical Debt Management](technical-debt-management-framework.md) for sustainable development
+
+- **:material-shield-check: Security & Supply Chain**
+
+    **Risk Management & Compliance**
+
+    [Software Supply Chain Security](software-supply-chain-security.md) for dependency management and secure development practices that protect your software ecosystem
+
+- **:material-map: Product Engineering**
+
+    **User-Centric Development**
+
+    [Story Mapping](story-mapping.md) for understanding user journeys and delivering incremental value aligned with business objectives
+
+</div>
 
 ### Learning Path Recommendations
 
-**For New Staff Engineers**: Start with **[Test-Driven Development](tdd.md)** and **[Clean Architecture](clean-architecture.md)**, then progress to **[CI/CD](cicd.md)** and **[Site Reliability Engineering](site-reliability-engineering.md)** as you gain confidence with quality-focused development practices.
+Choose the learning path that matches your current experience level and engineering focus for maximum impact and skill development.
 
-**For Experienced Technical Leaders**: Focus on **[Evolutionary Architecture](evolutionary-architecture.md)** and **[Advanced Testing Strategies](advanced-testing-strategies.md)**, especially if you're responsible for long-term system design and organizational quality standards.
+<div class="grid cards" markdown>
 
-**For Architecture-Focused Engineers**: Emphasize **[Architecture Decision Records](adrs.md)**, **[Hexagonal Architecture](hexagonal-architecture.md)**, and **[Clean Architecture](clean-architecture.md)** for making and documenting architectural decisions with lasting impact.
+-   :material-school: **For New Staff Engineers**
+
+    ---
+
+    Build foundational engineering excellence skills
+
+    **[Test-Driven Development](tdd.md)** and **[Clean Architecture](clean-architecture.md)**
+
+    Then progress to **[CI/CD](cicd.md)** and **[Site Reliability Engineering](site-reliability-engineering.md)**
+
+    Focus: Quality-focused development practices and systematic thinking
+
+-   :material-account-tie: **For Experienced Technical Leaders**
+
+    ---
+
+    Advanced practices for organizational impact
+
+    **[Evolutionary Architecture](evolutionary-architecture.md)** and **[Advanced Testing Strategies](advanced-testing-strategies.md)**
+
+    Essential for long-term system design and organizational quality standards
+
+    Focus: Strategic technical leadership and system evolution
+
+-   :material-architect: **For Architecture-Focused Engineers**
+
+    ---
+
+    Specialized skills for architectural decision-making
+
+    **[Architecture Decision Records](adrs.md)**, **[Hexagonal Architecture](hexagonal-architecture.md)**, and **[Clean Architecture](clean-architecture.md)**
+
+    Focus: Making and documenting architectural decisions with lasting impact
+
+</div>
 
 ## Further Reading
 

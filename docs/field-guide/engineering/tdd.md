@@ -533,14 +533,91 @@ By mastering TDD and helping your team adopt it, you create a virtuous cycle: be
 - **Execution:** The test writer creates a failing test (Red). The implementer writes just enough code to make it pass (Green). Then, they refactor the code together while keeping the test green (Refactor). Switch roles and repeat for the next function.
 - **Debrief:** This quick game highlights the TDD rhythm and its collaborative nature.
 
-## Prerequisites
+## Cross-Reference Navigation
 
-- **[Code Hygiene](code-hygiene.md)** - Understanding refactoring principles supports the refactor phase of the Red-Green-Refactor cycle
+### Prerequisites for This Chapter
 
-## Related Technical Concepts
+<div class="grid cards" markdown>
 
-- **[Advanced Testing Strategies](advanced-testing-strategies.md)** - TDD provides foundation for comprehensive testing approaches and quality practices
-- **[Team Formation](../teamwork/team-formation.md)** - TDD adoption requires team culture changes and collaborative development practices
+-   :material-brush: **Code Quality Fundamentals**
+
+    ---
+
+    **Refactoring and Clean Code Practices**
+
+    **[Code Hygiene](code-hygiene.md)** - Understanding refactoring principles supports the refactor phase of the Red-Green-Refactor cycle
+
+    **[Engineering Excellence](engineering-excellence.md)** - Quality practices and measurement frameworks provide foundation for TDD adoption
+
+</div>
+
+### Related Concepts
+
+<div class="grid cards" markdown>
+
+-   :material-test-tube: **Advanced Testing Practices**
+
+    ---
+
+    **Comprehensive Testing Strategies**
+
+    **[Advanced Testing Strategies](advanced-testing-strategies.md)** - TDD provides foundation for comprehensive testing approaches and quality engineering practices
+
+    **[Engineering Excellence](engineering-excellence.md)** - Quality practices and testing frameworks support TDD implementation
+
+-   :material-account-group: **Team & Cultural Development**
+
+    ---
+
+    **Collaborative Development Practices**
+
+    **[Team Formation](../teamwork/team-formation.md)** - TDD adoption requires team culture changes and collaborative development practices
+
+    **[Cultural Transformation](../teamwork/cultural-transformation-psychological-safety.md)** - Building psychological safety for TDD experimentation and learning
+
+-   :material-sitemap: **Architecture & Design**
+
+    ---
+
+    **Design for Testability**
+
+    **[Clean Architecture](clean-architecture.md)** - Dependency inversion and layer separation enable comprehensive TDD practice
+
+    **[Hexagonal Architecture](hexagonal-architecture.md)** - Port and adapter patterns support TDD through clear interface definition
+
+</div>
+
+### Apply These Concepts
+
+<div class="grid cards" markdown>
+
+-   :material-clipboard-check: **Assessment & Development**
+
+    ---
+
+    **Evaluate and track your TDD capabilities**
+
+    **[Staff Engineer Competency Assessment](../../appendix/tools/staff-engineer-competency-assessment.md)** - Assess your technical excellence and quality engineering capabilities including TDD proficiency
+
+    **[Development Tracking System](../../appendix/tools/development-tracking-system.md)** - Track progress in developing TDD and quality engineering skills
+
+</div>
+
+### Next Steps in Your Learning Journey
+
+<div class="grid cards" markdown>
+
+-   :material-chart-line: **Expand Testing Excellence**
+
+    ---
+
+    **Master comprehensive quality engineering practices**
+
+    1. **[Advanced Testing Strategies](advanced-testing-strategies.md)** - Build on TDD foundation with comprehensive testing approaches and quality practices
+    2. **[Clean Architecture](clean-architecture.md)** - Learn architectural patterns that enable effective TDD through testable design
+    3. **[Continuous Delivery](continuous-delivery.md)** - Integrate TDD practices with automated deployment pipelines and quality gates
+
+</div>
 
 ## Further Reading
 
