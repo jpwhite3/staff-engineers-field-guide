@@ -1,0 +1,881 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Team Health Diagnostic: A Comprehensive Assessment Framework - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#team-health-diagnostic-a-comprehensive-assessment-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Team Health Diagnostic: A Comprehensive Assessment Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="team-health-diagnostic-a-comprehensive-assessment-framework">Team Health Diagnostic: A Comprehensive Assessment Framework</h1>
+<h2 id="introduction-beyond-velocity-metrics">Introduction: Beyond Velocity Metrics</h2>
+<p>The story points completed this sprint tell you what your team delivered, but they don't tell you whether your team is positioned to accelerate delivery next quarter, handle the increased complexity that comes with product growth, or retain the talented engineers who drive your success. The deployment frequency metrics show you how often you ship, but they don't reveal whether your team has the psychological safety needed to catch critical bugs before they reach production, or the technical practices that prevent technical debt from slowly undermining your architecture.</p>
+<p>This diagnostic recognizes that sustainable high performance in engineering teams emerges from the complex interactions between human dynamics, technical practices, organizational alignment, and system health. Teams that excel in only one or two of these areas often find their performance plateauing or becoming unsustainable as they scale, while teams that develop strength across all dimensions create the foundation for continuous improvement and adaptation.</p>
+<p>The framework evaluates six interconnected domains that research and practice have identified as essential for team effectiveness: psychological safety that enables learning and innovation, technical excellence that supports sustainable delivery, communication patterns that facilitate collaboration, goal alignment that connects daily work to strategic outcomes, individual growth systems that develop team capability, and operational practices that maintain system health. Understanding your team's current state across these dimensions provides the foundation for targeted improvements that compound over time.</p>
+<p>Unlike generic team assessments, every dimension evaluated here reflects the specific challenges that engineering teams face: balancing speed with quality, managing technical complexity while delivering business value, maintaining individual growth while optimizing for collective outcomes, and building systems that are both reliable and adaptable to changing requirements.</p>
+<h2 id="how-to-use-this-diagnostic">How to Use This Diagnostic</h2>
+<p>The effectiveness of this diagnostic depends not just on honest assessment, but on the process you use to gather, analyze, and act on the results. The approach below has been refined through use with dozens of engineering teams and reflects best practices for turning assessment insights into meaningful improvement.</p>
+<h3 id="recommended-process">Recommended Process</h3>
+<p>The diagnostic process is designed to surface both individual perspectives and collective patterns while building team ownership of improvement efforts rather than imposing external solutions.</p>
+<ol>
+<li>
+<p><strong>Individual Assessment</strong>: Each team member completes the assessment independently, ensuring that their responses reflect their genuine experience rather than what they think others want to hear. This individual phase captures the diversity of perspectives that exists within any team and prevents group dynamics from obscuring important concerns or insights.</p>
+</li>
+<li>
+<p><strong>Aggregate Results</strong>: Compile responses to identify patterns across team members, paying particular attention to areas where responses vary significantly. Wide variation in scores often indicates that team members are having fundamentally different experiences, which may be more important to address than the average score in any particular domain.</p>
+</li>
+<li>
+<p><strong>Team Discussion</strong>: Discuss results together with a focus on understanding why different people may be having different experiences and identifying improvement opportunities that will benefit everyone. The goal is collective problem-solving rather than debate about whether specific scores are "accurate."</p>
+</li>
+<li>
+<p><strong>Action Planning</strong>: Identify 2-3 high-impact improvements to implement over the next quarter, ensuring that plans are specific enough to guide daily behavior and measurable enough to track progress. Avoid the temptation to address everything simultaneously—sustained improvement comes from focused effort that builds momentum.</p>
+</li>
+<li>
+<p><strong>Regular Check-ins</strong>: Reassess quarterly and track progress over time, using results to guide continuous adjustment of your improvement approach. The diagnostic becomes more valuable over time as you develop baseline understanding and can recognize trends in team health.</p>
+</li>
+</ol>
+<h3 id="scoring-guidelines">Scoring Guidelines</h3>
+<p>The scoring scale is designed to help teams recognize both their strengths and their improvement opportunities while providing clear guidance about the relative priority of different areas for development.</p>
+<ul>
+<li>
+<p><strong>5 - Excellent</strong>: This represents team performance that others could learn from—areas where your practices and outcomes serve as examples of what's possible. Teams scoring consistently at this level in a domain have developed approaches that work reliably and could teach other teams.</p>
+</li>
+<li>
+<p><strong>4 - Good</strong>: Performance that is generally working well with only minor improvement opportunities. Teams scoring at this level have solid foundations and systems that support effectiveness, though there may be opportunities for optimization or refinement.</p>
+</li>
+<li>
+<p><strong>3 - Adequate</strong>: Functional performance with clear opportunities for enhancement. This level indicates that basic needs are being met but that significant value could be gained from focused improvement efforts.</p>
+</li>
+<li>
+<p><strong>2 - Needs Improvement</strong>: Performance that is creating friction or limiting team effectiveness. Areas scoring at this level should be prioritized for improvement as they're likely constraining team potential and may worsen over time without attention.</p>
+</li>
+<li>
+<p><strong>1 - Critical Issue</strong>: Performance that is actively undermining team success and must be addressed before other improvements can be effective. These are urgent issues that typically require immediate attention and may benefit from external support or intervention.</p>
+</li>
+</ul>
+<h2 id="assessment-domains">Assessment Domains</h2>
+<h3 id="domain-1-psychological-safety-trust">Domain 1: Psychological Safety &amp; Trust</h3>
+<p><strong>1.1 Speaking Up and Challenge</strong>
+<em>"Team members feel safe to express concerns, ask questions, and challenge decisions"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Team members routinely challenge decisions and offer alternative perspectives, even to senior members
+□ 4: Most team members feel comfortable speaking up about concerns and asking questions
+□ 3: Some team members speak up, but others remain quiet in discussions
+□ 2: Only a few team members feel comfortable challenging decisions or expressing concerns
+□ 1: Team members avoid speaking up due to fear of judgment or negative consequences
+</code></pre></div>
+<p><strong>Evidence to Consider:</strong></p>
+<ul>
+<li>How often do team members ask questions in meetings?</li>
+<li>Do junior members challenge senior members' technical decisions?</li>
+<li>When someone makes a mistake, how does the team respond?</li>
+</ul>
+<p><strong>1.2 Learning from Failure</strong>
+<em>"The team treats mistakes and failures as learning opportunities rather than blame events"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Failures lead to systematic improvements and knowledge sharing across the organization
+□ 4: Team openly discusses failures and implements process improvements
+□ 3: Failures are discussed but improvements are inconsistently implemented
+□ 2: Failures are acknowledged but blame and defensive responses are common
+□ 1: Failures lead to blame, finger-pointing, and people becoming more risk-averse
+</code></pre></div>
+<p><strong>1.3 Inclusion and Belonging</strong>
+<em>"All team members feel valued, heard, and able to contribute their best work"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Team actively leverages diverse perspectives and everyone regularly contributes
+□ 4: Most team members feel included and their contributions are recognized
+□ 3: Some team members participate more than others in decisions and discussions
+□ 2: Certain voices dominate while others are consistently overlooked
+□ 1: Some team members feel excluded or undervalued
+</code></pre></div>
+<h3 id="domain-2-technical-excellence-practices">Domain 2: Technical Excellence &amp; Practices</h3>
+<p><strong>2.1 Code Quality and Maintainability</strong>
+<em>"The codebase enables rapid, confident changes and is pleasant to work with"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Codebase is exemplary and enables very rapid feature development
+□ 4: Code is generally clean, well-tested, and easy to modify
+□ 3: Code quality is acceptable but some areas are difficult to work with
+□ 2: Technical debt regularly slows down development and creates frustration
+□ 1: Code quality issues severely impact team velocity and morale
+</code></pre></div>
+<p><strong>2.2 Testing and Quality Practices</strong>
+<em>"Testing practices provide confidence and enable rapid iteration"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Comprehensive testing strategy enables fearless refactoring and rapid experimentation
+□ 4: Good test coverage and practices catch most issues before production
+□ 3: Basic testing in place but gaps exist in coverage or effectiveness
+□ 2: Inconsistent testing leads to regular production issues
+□ 1: Lack of testing creates fear of making changes and frequent production problems
+</code></pre></div>
+<p><strong>2.3 Delivery and Deployment Practices</strong>
+<em>"Team can deploy changes safely, frequently, and with minimal manual overhead"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Fully automated deployment with advanced practices like feature flags and blue/green deployments
+□ 4: Reliable automated deployment with good monitoring and rollback capabilities
+□ 3: Mostly automated deployment with some manual steps or oversight required
+□ 2: Deployment requires significant manual work and creates risk
+□ 1: Deployment is painful, risky, and significantly impacts team velocity
+</code></pre></div>
+<h3 id="domain-3-communication-collaboration">Domain 3: Communication &amp; Collaboration</h3>
+<p><strong>3.1 Information Sharing</strong>
+<em>"Important information flows effectively throughout the team and to stakeholders"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Information sharing is seamless and everyone has context they need when they need it
+□ 4: Good communication practices with regular updates and accessible documentation
+□ 3: Basic information sharing but some people occasionally lack important context
+□ 2: Information silos exist and important details are sometimes missed
+□ 1: Poor communication leads to duplicated work, misaligned efforts, or missed requirements
+</code></pre></div>
+<p><strong>3.2 Decision Making Process</strong>
+<em>"The team has clear, effective processes for making technical and project decisions"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Decision-making is efficient, inclusive, and results in well-understood commitments
+□ 4: Most decisions are made effectively with appropriate input and clear ownership
+□ 3: Decision-making works but could be more efficient or inclusive
+□ 2: Decision processes are unclear or decisions are frequently revisited
+□ 1: Poor decision-making leads to confusion, rework, or team frustration
+</code></pre></div>
+<p><strong>3.3 Conflict Resolution</strong>
+<em>"Team handles disagreements constructively and uses conflict to improve outcomes"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Disagreements lead to better solutions and stronger team relationships
+□ 4: Team handles most conflicts well and learns from disagreements
+□ 3: Conflicts are generally resolved but not always constructively
+□ 2: Some conflicts linger or are avoided rather than resolved
+□ 1: Conflicts create lasting tension and damage team effectiveness
+</code></pre></div>
+<h3 id="domain-4-goal-alignment-strategic-focus">Domain 4: Goal Alignment &amp; Strategic Focus</h3>
+<p><strong>4.1 Purpose and Direction Clarity</strong>
+<em>"Team members understand and are aligned on goals, priorities, and success metrics"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Everyone clearly understands priorities and can explain how their work drives business outcomes
+□ 4: Team has good alignment on goals and most members understand business context
+□ 3: Basic alignment exists but some confusion about priorities or business impact
+□ 2: Limited understanding of business goals or how technical work connects to outcomes
+□ 1: Team lacks clear direction or members work at cross-purposes
+</code></pre></div>
+<p><strong>4.2 Stakeholder Relationship Management</strong>
+<em>"Team maintains productive relationships with product managers, other teams, and leadership"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Exceptional stakeholder relationships that enable proactive collaboration and mutual support
+□ 4: Good relationships with regular communication and mutual understanding
+□ 3: Adequate stakeholder relationships with occasional communication issues
+□ 2: Some stakeholder relationship challenges that create friction or miscommunication
+□ 1: Poor stakeholder relationships that regularly create problems for the team
+</code></pre></div>
+<p><strong>4.3 Adaptability and Learning</strong>
+<em>"Team effectively adapts to changing requirements and learns from experience"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Team proactively anticipates changes and rapidly adapts strategies and approaches
+□ 4: Team handles most changes well and incorporates learning into future work
+□ 3: Team adapts to changes but sometimes with difficulty or resistance
+□ 2: Changes are challenging and team struggles to incorporate lessons learned
+□ 1: Team has difficulty adapting to change and repeats past mistakes
+</code></pre></div>
+<h3 id="domain-5-individual-growth-team-development">Domain 5: Individual Growth &amp; Team Development</h3>
+<p><strong>5.1 Skill Development and Learning</strong>
+<em>"Team members are developing their capabilities and advancing their careers"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Systematic approach to skill development with strong mentoring and growth opportunities
+□ 4: Good learning culture with regular skill development and knowledge sharing
+□ 3: Some learning opportunities but inconsistent focus on skill development
+□ 2: Limited learning opportunities and little focus on professional growth
+□ 1: Team members feel stagnant and lack opportunities for skill development
+</code></pre></div>
+<p><strong>5.2 Feedback and Coaching Culture</strong>
+<em>"Team members give and receive effective feedback that drives improvement"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Excellent feedback culture that accelerates everyone&#39;s growth and performance
+□ 4: Regular, effective feedback with good coaching and development support
+□ 3: Some feedback but could be more consistent or effective
+□ 2: Limited feedback with missed opportunities for growth and improvement
+□ 1: Little feedback given or received, limiting team and individual development
+</code></pre></div>
+<p><strong>5.3 Recognition and Motivation</strong>
+<em>"Team members feel recognized for their contributions and motivated by their work"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Strong recognition culture with high motivation and engagement across the team
+□ 4: Good recognition practices with most team members feeling motivated
+□ 3: Basic recognition with adequate motivation levels
+□ 2: Inconsistent recognition leading to some team members feeling undervalued
+□ 1: Little recognition or motivation, leading to disengagement
+</code></pre></div>
+<h3 id="domain-6-operational-excellence-system-health">Domain 6: Operational Excellence &amp; System Health</h3>
+<p><strong>6.1 Monitoring and Observability</strong>
+<em>"Team has excellent visibility into system health and can quickly identify and resolve issues"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Comprehensive observability that enables proactive problem resolution and optimization
+□ 4: Good monitoring and alerting with effective incident response
+□ 3: Basic monitoring in place but some visibility gaps
+□ 2: Limited monitoring leading to reactive problem-solving
+□ 1: Poor visibility into system health leading to frequent surprises and lengthy outages
+</code></pre></div>
+<p><strong>6.2 Incident Response and Learning</strong>
+<em>"Team responds effectively to incidents and uses them as opportunities for improvement"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Exceptional incident response with systematic learning and prevention improvements
+□ 4: Good incident response process with regular post-mortem learning
+□ 3: Adequate incident response but inconsistent learning or improvement
+□ 2: Incident response is reactive with limited learning from events
+□ 1: Poor incident response that creates stress and doesn&#39;t prevent recurring issues
+</code></pre></div>
+<p><strong>6.3 Technical Debt Management</strong>
+<em>"Team actively manages technical debt and maintains system maintainability"</em></p>
+<div class="highlight"><pre><span></span><code>□ 5: Proactive technical debt management that maintains excellent system health
+□ 4: Good balance of feature development and technical debt reduction
+□ 3: Technical debt is addressed but not systematically managed
+□ 2: Technical debt accumulates faster than it&#39;s addressed
+□ 1: Technical debt significantly impacts team velocity and system reliability
+</code></pre></div>
+<h2 id="scoring-and-analysis">Scoring and Analysis</h2>
+<h3 id="domain-score-calculation">Domain Score Calculation</h3>
+<p>Calculate the average score for each domain:</p>
+<ul>
+<li><strong>Domain 1 (Psychological Safety)</strong>: ___/5</li>
+<li><strong>Domain 2 (Technical Excellence)</strong>: ___/5</li>
+<li><strong>Domain 3 (Communication)</strong>: ___/5</li>
+<li><strong>Domain 4 (Goal Alignment)</strong>: ___/5</li>
+<li><strong>Domain 5 (Growth &amp; Development)</strong>: ___/5</li>
+<li><strong>Domain 6 (Operational Excellence)</strong>: ___/5</li>
+</ul>
+<p><strong>Overall Team Health Score: ___/5</strong></p>
+<h3 id="team-health-matrix">Team Health Matrix</h3>
+<p>Plot your team's position on this matrix:</p>
+<div class="highlight"><pre><span></span><code>High Performance (4.0-5.0)    |  Thriving Teams        |  High-Performing Teams
+                              |  (Strong foundation,   |  (Sustained excellence,
+                              |   growing capability)  |   organizational model)
+                              |                        |
+                              |------------------------|
+                              |                        |
+Low Performance (1.0-3.9)    |  Struggling Teams      |  Inconsistent Teams
+                              |  (Multiple challenges, |  (Some strengths,
+                              |   needs intervention)  |   some challenges)
+                              |                        |
+                              Low Sustainability       High Sustainability
+                              (1.0-3.9)              (4.0-5.0)
+</code></pre></div>
+<p><strong>Performance</strong> = Average of Domains 2, 4, 6 (Technical Excellence, Goal Alignment, Operational Excellence)
+<strong>Sustainability</strong> = Average of Domains 1, 3, 5 (Psychological Safety, Communication, Growth)</p>
+<h3 id="interpretation-guide">Interpretation Guide</h3>
+<p>Understanding your team's assessment results requires recognizing that team health operates across multiple dimensions and that different patterns of strengths and challenges call for different improvement strategies. The categories below represent common patterns that teams experience, but remember that your specific context and challenges may require adapted approaches.</p>
+<p><strong>Thriving Teams (High Sustainability, Low-Moderate Performance)</strong>
+Your team has built excellent fundamentals in human dynamics, communication, and individual growth, but may need focused attention on technical practices, delivery processes, or goal alignment to translate this foundation into higher performance. This pattern is often seen in newer teams that have invested heavily in building good relationships and work practices but haven't yet developed the technical systems and delivery capabilities that enable efficient execution.</p>
+<p>The strength of your foundation means that targeted improvements in technical or process areas often generate significant performance gains quickly. Your strong team dynamics provide the collaboration and learning capacity needed to rapidly adopt new practices, and your sustainable work patterns mean you can maintain momentum for improvement efforts without risking burnout or quality degradation.</p>
+<p><em>Priority Focus Areas:</em> Technical excellence practices, delivery process optimization, goal clarity and measurement systems, technical decision-making frameworks</p>
+<p><strong>High-Performing Teams (High Performance, High Sustainability)</strong>
+Your team is operating at an exceptional level across all dimensions of team health—you're delivering excellent results while maintaining practices that support continued high performance over time. This represents the target state for team development, where strong technical practices, effective collaboration, clear goals, and individual growth create a reinforcing system of continuous improvement.</p>
+<p>At this level, your development focus shifts from addressing deficiencies to maintaining excellence, scaling your impact, and contributing to broader organizational capability. High-performing teams often become force multipliers by sharing their practices, mentoring other teams, and taking on complex challenges that require both technical excellence and strong collaboration.</p>
+<p><em>Strategic Focus Areas:</em> Knowledge sharing across the organization, mentoring and developing other teams, innovation and experimentation, taking on high-complexity challenges that leverage your team's strengths</p>
+<p><strong>Struggling Teams (Low Performance, Low Sustainability)</strong><br />
+Multiple fundamental issues are limiting both your current delivery and your ability to improve over time. This pattern often indicates that basic team functioning needs attention before focusing on advanced technical practices or delivery optimization. The key insight is that trying to solve performance issues without addressing underlying team dynamics often fails because the collaboration and communication patterns needed for improvement aren't working effectively.</p>
+<p>The most effective approach typically involves prioritizing psychological safety and communication effectiveness first, which creates the foundation for addressing technical and process issues. This isn't about delaying technical improvements indefinitely, but about creating the team conditions that make technical improvements possible and sustainable.</p>
+<p><em>Urgent Focus Areas:</em> Establishing psychological safety, improving basic communication patterns, clarifying roles and expectations, securing appropriate leadership support, building trust and collaboration foundations</p>
+<p><strong>Inconsistent Teams (High Performance, Low Sustainability)</strong>
+You're delivering strong results but may be doing so through approaches that aren't sustainable over time. This pattern often emerges when teams face high pressure to deliver and respond by working longer hours, cutting corners on technical practices, or reducing focus on team dynamics and individual growth. The short-term performance gains often come at the cost of future capability.</p>
+<p>The risk with this pattern is that performance often degrades over time as technical debt accumulates, team members burn out, or key contributors leave for more sustainable situations. The challenge is maintaining delivery expectations while investing in the practices and dynamics that support long-term sustainability.</p>
+<p><em>Critical Focus Areas:</em> Sustainable work practices, team communication and conflict resolution, technical debt management, individual growth and retention, workload and expectation management</p>
+<h2 id="action-planning-framework">Action Planning Framework</h2>
+<p>Translating assessment results into meaningful team improvement requires strategic thinking about where to focus energy and how to sequence changes for maximum impact. The most successful team improvement efforts start with understanding the interdependencies between different areas and choosing initiatives that create positive momentum while addressing the most critical constraints to team effectiveness.</p>
+<h3 id="priority-matrix">Priority Matrix</h3>
+<p>Rather than trying to address all identified areas simultaneously, effective action planning focuses effort where it will generate the highest return on investment while considering both the impact potential and the urgency of different opportunities.</p>
+<p><strong>High Impact, High Urgency (Address Immediately):</strong>
+These represent critical constraints that are actively limiting team effectiveness and should receive immediate attention. Any domain scoring below 2.0 falls into this category, as do specific issues that team members identify as significantly affecting their ability to collaborate, deliver, or maintain motivation. Focus on no more than 1-2 items in this category to ensure meaningful progress rather than dispersed effort.</p>
+<p>Critical issues in psychological safety or communication often require immediate attention because they undermine the team's ability to work on other improvements effectively. Technical or process issues that are causing significant delays or quality problems also deserve urgent focus when they're clearly constraining delivery capability.</p>
+<p><strong>High Impact, Low Urgency (Plan and Schedule):</strong>
+These areas represent strategic investments that will become increasingly important for team effectiveness but don't require immediate crisis-level attention. Domains scoring 2.0-3.0 that align with team goals typically fit here, along with foundational improvements that will enable future growth and performance gains.</p>
+<p>The key with this category is creating a systematic approach to making progress without letting these areas become urgent problems later. This might involve dedicating a portion of each sprint to improvement work, scheduling regular team learning sessions, or establishing practices that gradually build capability in these areas.</p>
+<p><strong>Low Impact, High Urgency (Quick Wins):</strong>
+These often represent tactical improvements that can boost team morale or remove immediate friction without requiring significant investment of time or energy. While they may not address fundamental team health issues, they can create positive momentum that supports larger improvement efforts and demonstrate the team's commitment to continuous improvement.</p>
+<p>Examples might include simple process changes that remove administrative overhead, tool improvements that reduce daily frustration, or communication practices that improve day-to-day collaboration. The value comes from their ability to generate visible progress quickly while larger improvements develop over time.</p>
+<p><strong>Low Impact, Low Urgency (Monitor):</strong></p>
+<ul>
+<li>Areas where the team is already performing well</li>
+<li>Nice-to-have improvements without clear benefit</li>
+</ul>
+<h3 id="30-60-90-day-improvement-plan">30-60-90 Day Improvement Plan</h3>
+<p>Sustainable team improvement happens through a carefully sequenced approach that builds momentum through early wins while establishing the foundation for more significant changes. This timeline recognizes that different types of improvements require different approaches and that the most effective changes often depend on earlier improvements creating the necessary conditions for success.</p>
+<p><strong>30 Days - Quick Wins and Foundation Setting:</strong>
+Focus on changes that can be implemented quickly and will create immediate positive impact while establishing the foundation for larger improvements. These might include communication practice changes, simple process adjustments, or tool improvements that remove daily friction.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Specific action: <em>Choose 1-2 concrete changes that can be implemented immediately and will demonstrate the team's commitment to improvement</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Owner: <em>Assign clear ownership to ensure accountability and follow-through</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Success measure: <em>Define observable outcomes that will indicate whether the change is working</em></li>
+</ul>
+<p><strong>60 Days - Process Improvements and Skill Development:</strong>
+Build on the momentum from quick wins to implement more substantial process improvements or begin skill development initiatives that require sustained effort but don't fundamentally change how the team operates. This might involve establishing new practices, improving existing workflows, or beginning team learning initiatives.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Specific action: <em>Focus on changes that improve how the team works together or delivers value</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Owner: <em>May involve multiple people but should have clear coordination responsibility</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Success measure: <em>Should include both implementation metrics and outcome measures</em></li>
+</ul>
+<p><strong>90 Days - Systematic Changes and Cultural Development:</strong>
+Implement changes that affect fundamental team patterns, establish new norms that will persist over time, or address deeper organizational or technical issues that require sustained effort and coordination with other teams. These changes often build on the trust and capability developed through earlier improvement efforts.</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Specific action: <em>Choose changes that will have lasting impact on team effectiveness</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Owner: <em>Often requires team-wide commitment with specific coordination roles</em></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Success measure: <em>Should focus on sustained behavior change and long-term outcome measures</em></li>
+</ul>
+<h3 id="tracking-progress">Tracking Progress</h3>
+<p>Regular progress monitoring serves multiple functions: it helps teams recognize improvements that might not be immediately obvious, identifies obstacles that need to be addressed, and provides information needed to adjust improvement approaches based on what's working or not working in practice.</p>
+<p><strong>Monthly Check-ins:</strong>
+Structure monthly conversations to capture both progress and learning, ensuring that improvement efforts adapt based on experience rather than following a rigid plan regardless of results.</p>
+<ul>
+<li>What specific improvements have we implemented, and how consistently are we following through?</li>
+<li>What concrete impact have we observed in team effectiveness, collaboration, or delivery?</li>
+<li>What obstacles or challenges have we encountered that weren't anticipated in our planning?</li>
+<li>Based on our experience so far, what adjustments should we make to our approach or priorities?</li>
+</ul>
+<p><strong>Quarterly Reassessment:</strong>
+Use the full diagnostic framework to measure progress and guide strategic planning for continued improvement, ensuring that improvement efforts remain aligned with evolving team needs and organizational context.</p>
+<ul>
+<li>Complete the diagnostic assessment again, maintaining consistency with the original process</li>
+<li>Compare scores across domains to identify trends and areas where improvement efforts have been effective</li>
+<li>Celebrate concrete progress and acknowledge team efforts, recognizing that sustainable change takes time</li>
+<li>Set improvement priorities for the next quarter based on current results and any changes in team context or goals</li>
+</ul>
+<h2 id="advanced-analysis-techniques">Advanced Analysis Techniques</h2>
+<h3 id="response-pattern-analysis">Response Pattern Analysis</h3>
+<p>Look for patterns in how team members responded:</p>
+<p><strong>Consensus Areas:</strong> Where most responses were similar (within 1 point)
+<strong>Divergent Areas:</strong> Where responses varied significantly (2+ points difference)
+<strong>Blind Spots:</strong> Where senior and junior members scored very differently</p>
+<p>Divergent areas often indicate important discussion topics for the team.</p>
+<h3 id="correlation-analysis">Correlation Analysis</h3>
+<p>Look for relationships between domains:</p>
+<ul>
+<li>Do teams with high psychological safety also have better technical practices?</li>
+<li>Is there a correlation between communication scores and goal alignment?</li>
+<li>Do operational excellence scores predict overall team performance?</li>
+</ul>
+<p>These correlations can help identify root causes and systemic improvements.</p>
+<h3 id="benchmark-comparisons">Benchmark Comparisons</h3>
+<p>Compare your team's scores to:</p>
+<ul>
+<li>Other teams in your organization</li>
+<li>Industry benchmarks (if available)</li>
+<li>Your team's past performance</li>
+</ul>
+<p>Remember that the goal isn't to rank teams but to identify improvement opportunities.</p>
+<h2 id="integration-with-field-guide-content">Integration with Field Guide Content</h2>
+<p>This diagnostic connects directly to field guide chapters for targeted team development:</p>
+<p><strong>Psychological Safety (Domain 1)</strong>:</p>
+<ul>
+<li><a href="../../../field-guide/teamwork/cultural-transformation-psychological-safety/">Cultural Transformation &amp; Psychological Safety</a> - Building psychologically safe environments</li>
+<li><a href="../../../field-guide/leadership/psychological-safety-trust/">Psychological Safety &amp; Trust</a> - Leadership practices for safety</li>
+</ul>
+<p><strong>Technical Excellence (Domain 2)</strong>:</p>
+<ul>
+<li><a href="../../../field-guide/engineering/clean-architecture/">Clean Architecture</a> - Code quality and maintainability</li>
+<li><a href="../../../field-guide/engineering/tdd/">Test-Driven Development</a> - Testing practices and quality</li>
+<li><a href="../../../field-guide/engineering/continuous-delivery/">Continuous Delivery</a> - Deployment and delivery practices</li>
+</ul>
+<p><strong>Communication (Domain 3)</strong>:</p>
+<ul>
+<li><a href="../../../field-guide/leadership/giving-receiving-feedback/">Giving &amp; Receiving Feedback</a> - Feedback culture development</li>
+<li><a href="../../../field-guide/leadership/delivering-difficult-messages/">Delivering Difficult Messages</a> - Conflict resolution skills</li>
+<li><a href="../../../field-guide/teamwork/culture-map/">The Culture Map</a> - Cross-cultural communication</li>
+</ul>
+<p><strong>Goal Alignment (Domain 4)</strong>:</p>
+<ul>
+<li><a href="../../../field-guide/execution/strategic-thinking/">Strategic Thinking</a> - OKR frameworks and business alignment</li>
+<li><a href="../../../field-guide/teamwork/cross-functional-collaboration/">Cross-Functional Collaboration</a> - Stakeholder relationships</li>
+</ul>
+<p><strong>Growth &amp; Development (Domain 5)</strong>:</p>
+<ul>
+<li><a href="../../../field-guide/leadership/advanced-mentorship-career-development/">Advanced Mentorship &amp; Career Development</a> - Skill development systems</li>
+<li><a href="../../../field-guide/learning/learning-organization/">The Learning Organization</a> - Creating learning cultures</li>
+</ul>
+<p><strong>Operational Excellence (Domain 6)</strong>:</p>
+<ul>
+<li><a href="../../../field-guide/engineering/site-reliability-engineering/">Site Reliability Engineering</a> - Monitoring, incidents, and SRE practices</li>
+<li><a href="../../../field-guide/engineering/devops/">DevOps &amp; Automation</a> - Technical debt and operational practices</li>
+</ul>
+<p>Use this diagnostic to identify which field guide content would be most valuable for your team's development, creating a personalized learning path based on your specific needs and improvement opportunities.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

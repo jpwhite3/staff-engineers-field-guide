@@ -1,0 +1,4168 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../team-formation/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Organizational Design - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#organizational-design-for-technology-teams" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Organizational Design
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../intro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Field Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Staff Engineer Archetypes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Staff Engineer Archetypes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/tech-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Tech Lead
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Solver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/right-hand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Right Hand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/force-multiplier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Becoming a Force Multiplier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learning/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Continuous Learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/developing-expertise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/mentorship-sponsorship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mentorship & Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/staying-current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Staying Current
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/learning-organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Learning Organization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/teaching-to-learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching to Learn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../engineering/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Excellence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Excellence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/site-reliability-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Reliability Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/continuous-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/advanced-testing-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Testing Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/evolutionary-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolutionary Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/software-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps & Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/source-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/code-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Hygiene & Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/hexagonal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/story-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Story Mapping & Splitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/chaos-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chaos Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../thinking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Critical Thinking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Critical Thinking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mental-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mental Models for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/algorithmic-decision-making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/cognitive-biases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cognitive Biases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/structured-problem-solving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured Problem-Solving
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mind-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mind Mapping & Visual Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leadership/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Influence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Leadership & Influence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/influencing-without-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Influencing Without Authority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-conflict-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Conflict Resolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/giving-receiving-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving & Receiving Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/delivering-difficult-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delivering Difficult Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-mentorship-career-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Mentorship & Career Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/vulnerability-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerability in Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/self-awareness-personality-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-Awareness & Personality Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/psychological-safety-trust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety & Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/power-influence-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power & Influence in Organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/storytelling-for-engineers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-writing-for-influence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Writing for Influence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/presentation-persuasion-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Persuasion Skills
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/working-across-boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Across Boundaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/async-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asynchronous Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/navigating-tough-technical-discussions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Tough Technical Discussions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Teamwork & Collaboration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teamwork & Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-four-fundamental-team-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Four Fundamental Team Types
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Four Fundamental Team Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stream-aligned-teams-your-value-delivery-engine" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stream-Aligned Teams: Your Value Delivery Engine
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-teams-the-enablers-behind-the-scenes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Teams: The Enablers Behind the Scenes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-teams-the-consultants-and-teachers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enabling Teams: The Consultants and Teachers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#complicated-subsystem-teams-the-deep-specialists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Complicated Subsystem Teams: The Deep Specialists
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-teams-talk-to-each-other-matters-more-than-you-think" class="md-nav__link">
+    <span class="md-ellipsis">
+      How Teams Talk to Each Other Matters More Than You Think
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How Teams Talk to Each Other Matters More Than You Think">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collaboration-mode-working-side-by-side" class="md-nav__link">
+    <span class="md-ellipsis">
+      Collaboration Mode: Working Side by Side
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#x-as-a-service-mode-the-professional-handoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      X-as-a-Service Mode: The Professional Handoff
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#facilitating-mode-the-temporary-partnership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Facilitating Mode: The Temporary Partnership
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conways-law-and-organizational-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conway's Law and Organizational Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conway&#39;s Law and Organizational Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-inverse-conway-maneuver" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Inverse Conway Maneuver
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#team-interaction-patterns-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Interaction Patterns Framework
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cognitive-load-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cognitive Load Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cognitive Load Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#intrinsic-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intrinsic Load
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraneous-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extraneous Load
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#germane-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      Germane Load
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#systems-thinking-for-organizational-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Systems Thinking for Organizational Design
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Systems Thinking for Organizational Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-organizations-as-living-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Organizations as Living Systems
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizational-evolution-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      Organizational Evolution Patterns
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizational Evolution Patterns">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-up-to-scale-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start-up to Scale-up
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monolith-to-microservices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Monolith to Microservices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-emergence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Emergence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assessment-framework-team-topology-health-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assessment Framework: Team Topology Health Check
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Assessment Framework: Team Topology Health Check">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stream-team-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stream Team Health
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-team-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      Platform Team Health
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#team-interaction-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team Interaction Health
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cognitive-load-health" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cognitive Load Health
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-guidance-for-staff-engineers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Implementation Guidance for Staff Engineers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Implementation Guidance for Staff Engineers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-start-with-stream-identification" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Start with Stream Identification
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-apply-team-first-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Apply Team First Thinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-evolve-interaction-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Evolve Interaction Modes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-monitor-and-adjust" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Monitor and Adjust
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-invest-in-enabling-capabilities" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Invest in Enabling Capabilities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-anti-patterns-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Anti-Patterns to Avoid
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Anti-Patterns to Avoid">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-feature-factory" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Feature Factory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-ivory-tower-platform" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Ivory Tower Platform
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-eternal-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Eternal Collaboration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-skill-silo" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Skill Silo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites-and-related-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites and Related Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites and Related Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites-for-this-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites for This Chapter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-team-topologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply Team Topologies
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-steps-in-your-learning-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps in Your Learning Journey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-path-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Path Recommendations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../team-formation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Team Formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cultural-transformation-psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cultural Transformation & Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../five-dysfunctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Five Dysfunctions of a Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cross-functional-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Functional Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mismanagement-agreement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mismanagement Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../culture-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Culture Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../execution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Execution & Delivery
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Execution & Delivery
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/agile-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agile Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/decision-making-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision-Making Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/change-management-technical-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change Management for Technical Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/speed-vs-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed vs. Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/navigating-uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Uncertainty & Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/prioritization-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prioritization Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/organizational-transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../business/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Business Alignment
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Business Alignment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/aligning-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aligning Technology to Business Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/product-engineering-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product-Engineering Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/engineering-metrics-business-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engineering Metrics & Business Alignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/pitching-to-executives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Better Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/revenue-vs-risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revenue vs. Risk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/cost-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/empowered-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empowered Teams & Engineering Culture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ethics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Ethics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/bias-in-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias in Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/data-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Privacy & User Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethical-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethics-of-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Ethics of Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/responsible-innovation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Responsible Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="organizational-design-for-technology-teams">Organizational Design for Technology Teams</h1>
+<blockquote>
+<p><em>"Organizations which design systems... are constrained to produce designs which are copies of the communication structures of these organizations."</em> - Conway's Law</p>
+</blockquote>
+<p>Here's a scenario you've probably lived through: Your engineering organization has grown from a tight-knit team of 8 engineers who could all fit around a single table to 50+ engineers spread across multiple floors. What used to be quick hallway conversations have become week-long email threads. Simple feature deployments now require coordination across six different teams. Your microservices architecture looks suspiciously like your org chart—which is to say, it's a mess.</p>
+<p>Sound familiar? You're experiencing Conway's Law in real time.</p>
+<p>As a Staff Engineer, you're uniquely positioned to influence not just what your teams build, but how they're structured to build it. The design of your organization isn't just an HR concern—it's one of the most critical technical decisions you'll make. <strong>The structure of your teams will determine the structure of your systems, whether you plan it or not.</strong></p>
+<p>This section explores how to intentionally design team structures that enable rather than constrain your technical goals. We'll dive deep into research from Matthew Skelton and Manuel Pais, whose groundbreaking work "Team Topologies" provides the clearest framework yet for thinking about organizational design in technology companies.</p>
+<h2 id="the-four-fundamental-team-types">The Four Fundamental Team Types</h2>
+<p>Think about every high-performing engineering organization you've encountered. Despite their differences in size, industry, or technology stack, they all tend to organize around the same four fundamental patterns. Skelton and Pais identified these patterns through extensive research across technology companies, and once you see them, you can't unsee them.</p>
+<p><strong>Here's the key insight</strong>: Most organizational problems in tech companies stem from having too many team types, not too few. The magic happens when you constrain yourself to just these four:</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.5 12A2.5 2.5 0 0 0 19 9.5 2.5 2.5 0 0 0 16.5 7 2.5 2.5 0 0 0 14 9.5a2.5 2.5 0 0 0 2.5 2.5M9 11a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m7.5 3c-1.83 0-5.5.92-5.5 2.75V19h11v-2.25c0-1.83-3.67-2.75-5.5-2.75M9 13c-2.33 0-7 1.17-7 3.5V19h7v-2.25c0-.85.33-2.34 2.37-3.47C10.5 13.1 9.66 13 9 13"/></svg></span> <strong>Stream-Aligned Team</strong></p>
+<hr />
+<p><strong>Focus:</strong> Product/feature delivery</p>
+<ul>
+<li>End-to-end ownership</li>
+<li>Direct user value</li>
+<li>Cross-functional skills</li>
+<li>Autonomous deployment</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M9 5h1V3H9zm0 8h1v-2H9zm0 8h1v-2H9zM5 3v2h2V3zm0 8v2h2v-2zm0 8v2h2v-2z"/></svg></span> <strong>Platform Team</strong></p>
+<hr />
+<p><strong>Focus:</strong> Internal services</p>
+<ul>
+<li>Developer tooling</li>
+<li>Infrastructure foundation</li>
+<li>Self-service capabilities</li>
+<li>Treats other teams as customers</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.91V17h2V9M5 13.18v4L12 21l7-3.82v-4L12 17z"/></svg></span> <strong>Enabling Team</strong></p>
+<hr />
+<p><strong>Focus:</strong> Capability building</p>
+<ul>
+<li>Research &amp; guidance  </li>
+<li>Temporary coaching</li>
+<li>Knowledge transfer</li>
+<li>Removes team blockers</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 11H19V7a2 2 0 0 0-2-2h-4V3.5A2.5 2.5 0 0 0 10.5 1 2.5 2.5 0 0 0 8 3.5V5H4a2 2 0 0 0-2 2v3.8h1.5c1.5 0 2.7 1.2 2.7 2.7S5 16.2 3.5 16.2H2V20a2 2 0 0 0 2 2h3.8v-1.5c0-1.5 1.2-2.7 2.7-2.7s2.7 1.2 2.7 2.7V22H17a2 2 0 0 0 2-2v-4h1.5a2.5 2.5 0 0 0 2.5-2.5 2.5 2.5 0 0 0-2.5-2.5"/></svg></span> <strong>Complicated Subsystem Team</strong></p>
+<hr />
+<p><strong>Focus:</strong> Specialized domains</p>
+<ul>
+<li>Complex technical knowledge</li>
+<li>Platform components</li>
+<li>Clean interfaces</li>
+<li>Rare but necessary</li>
+</ul>
+</li>
+</ul>
+</div>
+<h3 id="stream-aligned-teams-your-value-delivery-engine">Stream-Aligned Teams: Your Value Delivery Engine</h3>
+<blockquote>
+<p><strong>In plain English</strong>: These are the teams that build features users actually see and use.</p>
+</blockquote>
+<p>If you've ever worked at a company where product teams could ship features without waiting for "the platform team" or "the infrastructure team" or "the security team," you've seen a well-functioning stream-aligned team in action. These teams are your primary value delivery mechanism—the ones who turn product ideas into working software that customers love.</p>
+<p><strong>Think of them as end-to-end owners</strong> of a particular slice of user value. A great stream-aligned team can take a feature request on Monday and have it running in production by Friday, without needing approvals, hand-offs, or coordination with other teams.</p>
+<p>Here's what makes them special:</p>
+<p><strong>Complete ownership</strong>: They build it, they ship it, they run it. No throwing code over the wall.</p>
+<p><strong>Cross-functional</strong>: All the skills needed for their stream live within the team—frontend, backend, testing, operations, even some design and product sense.</p>
+<p><strong>User-focused metrics</strong>: They measure success by user outcomes, not engineering outputs. Did usage go up? Did customer satisfaction improve? Did the feature solve the problem?</p>
+<p><strong>Your role as a Staff Engineer</strong> is to help these teams succeed by defining clear stream boundaries (what's in their domain vs. what's not), ensuring they have the technical capabilities they need, and ruthlessly removing dependencies that slow them down.</p>
+<h3 id="platform-teams-the-enablers-behind-the-scenes">Platform Teams: The Enablers Behind the Scenes</h3>
+<blockquote>
+<p><strong>In plain English</strong>: These are the teams that make other engineering teams faster and more effective.</p>
+</blockquote>
+<p>Here's a question that reveals a lot about an organization's maturity: When a product team wants to deploy a new service, do they spend their time writing business logic, or do they spend their time figuring out Kubernetes configurations, setting up monitoring, and wrestling with CI/CD pipelines?</p>
+<p>If it's the latter, you need platform teams.</p>
+<p><strong>Platform teams are the unsung heroes</strong> of great engineering organizations. They treat other engineering teams as their customers and build internal products—tools, services, and frameworks—that make everyone else more productive. Think of them as the team behind the team.</p>
+<p>The best platform teams understand a crucial truth: <strong>engineering teams don't want to think about infrastructure any more than you want to think about how your electricity gets generated when you flip a light switch.</strong> They want it to just work, reliably and invisibly.</p>
+<p>What makes platform teams effective:</p>
+<p><strong>Product mindset</strong>: They don't just build tools, they build <em>products</em> with real users (other engineers) who have real problems.</p>
+<p><strong>Adoption metrics</strong>: A platform that nobody uses is just expensive tech debt. They measure success by how many teams adopt their services and how much faster those teams ship.</p>
+<p><strong>Self-service everything</strong>: The goal is to eliminate the "please open a ticket" interactions. Teams should be able to provision infrastructure, deploy services, and get monitoring without talking to anyone.</p>
+<p><strong>Your role as a Staff Engineer</strong> is to define the platform strategy (what should be standardized vs. what teams should choose freely), ensure the platform evolves based on real team needs, and maintain that delicate balance between consistency and autonomy.</p>
+<h3 id="enabling-teams-the-consultants-and-teachers">Enabling Teams: The Consultants and Teachers</h3>
+<blockquote>
+<p><strong>In plain English</strong>: These are the experts who help other teams level up their skills and overcome specific challenges.</p>
+</blockquote>
+<p>Picture this: Your stream-aligned teams are humming along nicely, shipping features and delighting users. But then you realize that none of them really understand security testing, or they're all struggling with performance optimization, or they need to learn a new technology that's critical to the company's future.</p>
+<p>You could hire security experts for every team (expensive and probably impossible), or you could create an enabling team of security specialists who work with each team temporarily to build that capability.</p>
+<p><strong>Enabling teams are like internal consultants with a twist</strong>: their success is measured not by how indispensable they become, but by how quickly they can make themselves unnecessary. They're teachers and coaches, not service providers.</p>
+<p>The magic happens in how they work:</p>
+<p><strong>Teaching, not doing</strong>: They don't take over the work—they pair with team members to build skills and knowledge that persist after they leave.</p>
+<p><strong>Temporary by design</strong>: Engagements typically last weeks or months, not years. If an enabling team is still "helping" the same team a year later, something's wrong.</p>
+<p><strong>Capability focused</strong>: They're not just solving today's problem; they're building the team's ability to solve similar problems in the future.</p>
+<p><strong>Your role as a Staff Engineer</strong> is to spot capability gaps across teams (often you're the one who can see patterns across the organization), coordinate enabling team interventions, and most importantly, ensure that knowledge actually transfers and sticks.</p>
+<h3 id="complicated-subsystem-teams-the-deep-specialists">Complicated Subsystem Teams: The Deep Specialists</h3>
+<blockquote>
+<p><strong>In plain English</strong>: These are the teams that handle the really gnarly technical stuff that would bog down everyone else.</p>
+</blockquote>
+<p>Every system has that one component that makes everyone's eyes glaze over when you mention it. Maybe it's the machine learning inference engine that requires deep knowledge of statistical models and linear algebra. Maybe it's the real-time video processing pipeline that needs to squeeze every millisecond of latency out of custom hardware. Or maybe it's the payment processing system that has to navigate the Byzantine world of international banking regulations.</p>
+<p><strong>These are the subsystems that, if you tried to distribute their ownership across stream-aligned teams, would grind your entire engineering organization to a halt.</strong> Not because your engineers aren't smart, but because cognitive load is real and finite.</p>
+<p>Complicated subsystem teams are the specialists who own these intricate pieces:</p>
+<p><strong>Deep domain expertise</strong>: They have the mathematical, scientific, or regulatory knowledge needed to make sense of the complexity.</p>
+<p><strong>Interface masters</strong>: They hide complexity behind clean, well-documented APIs so other teams can use their subsystem without understanding its internals.</p>
+<p><strong>Performance obsessed</strong>: They measure success by subsystem reliability, performance, and how well they enable other teams to build on top of their work.</p>
+<p>The key insight here is <strong>when to use them</strong>. Not everything needs a complicated subsystem team—most complexity can and should be handled within stream-aligned teams. But when you encounter true irreducible complexity that requires specialized knowledge, these teams prevent that complexity from spreading throughout your organization.</p>
+<p><strong>Your role as a Staff Engineer</strong> is to identify when complexity truly requires separation (vs. when it's just unfamiliar), help define clean interfaces that hide the complexity, and ensure the subsystem continues to evolve in ways that support broader system goals.</p>
+<h2 id="how-teams-talk-to-each-other-matters-more-than-you-think">How Teams Talk to Each Other Matters More Than You Think</h2>
+<p>Having the right team types is only half the battle. The other half is understanding how teams should interact with each other. Get this wrong, and even perfectly structured teams will struggle. Get it right, and you'll see productivity and satisfaction soar across your entire engineering organization.</p>
+<p><strong>Here's what most people miss</strong>: the interaction mode between two teams is just as important as the teams themselves. Skelton and Pais identified three fundamental ways teams can interact, and knowing which to use when is the difference between smooth collaboration and organizational friction.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Collaboration Mode</label><label for="__tabbed_1_2">X-as-a-Service Mode</label><label for="__tabbed_1_3">Facilitating Mode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>When to Use:</strong> Figuring things out together, unclear boundaries, rapid innovation needed</p>
+<pre class="mermaid"><code>graph LR
+    A[Team A] &lt;--&gt; B[Team B]
+    A -.-&gt; C[Joint Planning]
+    B -.-&gt; C</code></pre>
+<p><strong>Characteristics:</strong>
+- High communication bandwidth
+- Shared decision making
+- Joint success metrics
+- Discovery-focused</p>
+</div>
+<div class="tabbed-block">
+<p><strong>When to Use:</strong> Clear interfaces, well-understood domains, need for autonomy</p>
+<pre class="mermaid"><code>graph LR
+    A[Consumer Team] --&gt; B[Provider Team]
+    B --&gt; C[Clear SLA]
+    B --&gt; D[Self-Service Interface]</code></pre>
+<p><strong>Characteristics:</strong>
+- Minimal ongoing communication
+- Clear contracts and SLAs
+- Provider sets standards
+- Efficiency-focused</p>
+</div>
+<div class="tabbed-block">
+<p><strong>When to Use:</strong> Building team capabilities, knowledge transfer, overcoming obstacles</p>
+<pre class="mermaid"><code>graph LR
+    A[Stream Team] &lt;--&gt; B[Enabling Team]
+    B -.-&gt; C[Knowledge Transfer]
+    C -.-&gt; D[Team Independence]</code></pre>
+<p><strong>Characteristics:</strong>
+- Temporary relationship
+- Focus on capability building
+- Success = reduced dependency
+- Teaching-focused</p>
+</div>
+</div>
+</div>
+<h3 id="collaboration-mode-working-side-by-side">Collaboration Mode: Working Side by Side</h3>
+<blockquote>
+<p><strong>When to use</strong>: When you're figuring things out together, boundaries are unclear, or you need rapid innovation.</p>
+</blockquote>
+<p>Think of collaboration mode as two teams sharing a workspace and a mission. They're in constant communication, making joint decisions, and sharing responsibility for outcomes. It's intense, it's high-bandwidth, and it's perfect for those moments when you need to move fast and learn quickly.</p>
+<p><strong>This is what happens</strong> when you put two teams in collaboration mode:</p>
+<ul>
+<li>Daily standups become joint standups</li>
+<li>Architecture decisions are made together</li>
+<li>Success and failure are shared equally</li>
+<li>Everyone's calendar fills up with cross-team meetings</li>
+</ul>
+<p><strong>The trade-off is real</strong>: you get rapid learning and innovation, but you also get high cognitive load and communication overhead. Use collaboration mode when discovery and speed matter more than efficiency.</p>
+<h3 id="x-as-a-service-mode-the-professional-handoff">X-as-a-Service Mode: The Professional Handoff</h3>
+<blockquote>
+<p><strong>When to use</strong>: When interfaces are clear, domains are well-understood, and teams need autonomy.</p>
+</blockquote>
+<p>This is the holy grail of team interactions—one team provides a well-defined service to another with minimal ongoing communication. Think of how you use AWS: you don't have daily meetings with the EC2 team, you just use their APIs and trust they'll meet their SLAs.</p>
+<p><strong>What makes this work</strong>:</p>
+<ul>
+<li>Crystal-clear contracts and interfaces</li>
+<li>Comprehensive documentation that actually gets maintained</li>
+<li>Reliable SLAs and monitoring</li>
+<li>Minimal communication needed for day-to-day operations</li>
+</ul>
+<p><strong>The beauty of X-as-a-Service</strong> is that both teams can operate independently, with maximum autonomy and minimal coordination overhead. But it only works when the service boundaries are mature and well-understood.</p>
+<h3 id="facilitating-mode-the-temporary-partnership">Facilitating Mode: The Temporary Partnership</h3>
+<blockquote>
+<p><strong>When to use</strong>: When one team needs to build capability, transfer knowledge, or overcome specific obstacles.</p>
+</blockquote>
+<p>Facilitating mode is like having a mentor relationship between teams. One team (usually an enabling team) temporarily partners with another to build skills, solve problems, or implement new practices.</p>
+<p><strong>The key word is temporary</strong>. If a facilitating relationship lasts more than a few months, something's gone wrong. The goal is always to transfer knowledge and capabilities, not create dependencies.</p>
+<p><strong>What success looks like</strong>: The facilitated team can handle similar challenges independently in the future, and the enabling team moves on to help other teams.</p>
+<h2 id="conways-law-and-organizational-design">Conway's Law and Organizational Design</h2>
+<p>Conway's Law states that system design reflects organizational communication patterns. This means:</p>
+<ul>
+<li><strong>Monolithic organizations produce monolithic software</strong></li>
+<li><strong>Siloed teams create tightly coupled systems</strong></li>
+<li><strong>Poor team communication results in brittle interfaces</strong></li>
+</ul>
+<p>As a Staff Engineer, you can use this law intentionally:</p>
+<h3 id="the-inverse-conway-maneuver">The Inverse Conway Maneuver</h3>
+<p>Design your team structure to promote the architecture you want:</p>
+<pre class="mermaid"><code>graph TB
+    subgraph "Desired Architecture"
+        MA[Microservice A] 
+        MB[Microservice B]
+        MC[Microservice C]
+        MA -.-&gt; MB
+        MB -.-&gt; MC
+    end
+
+    subgraph "Team Structure (Mirror)"
+        TA[Team A&lt;br/&gt;Owns Service A]
+        TB[Team B&lt;br/&gt;Owns Service B] 
+        TC[Team C&lt;br/&gt;Owns Service C]
+        TA -.-&gt; TB
+        TB -.-&gt; TC
+    end
+
+    style MA fill:#e1f5fe
+    style MB fill:#e1f5fe
+    style MC fill:#e1f5fe
+    style TA fill:#f3e5f5
+    style TB fill:#f3e5f5  
+    style TC fill:#f3e5f5</code></pre>
+<h3 id="team-interaction-patterns-framework"><strong>Team Interaction Patterns Framework</strong></h3>
+<p>The way teams interact is just as important as their individual structure. Team Topologies identifies three fundamental interaction modes that determine both system architecture and team effectiveness:</p>
+<pre class="mermaid"><code>flowchart TD
+    subgraph "Collaboration Pattern"
+        C1[Team A] &lt;--&gt; C2[Team B]
+        C3[Shared Problem&lt;br/&gt;Temporary Collaboration&lt;br/&gt;High Communication Overhead]
+        C1 -.-&gt; C3
+        C2 -.-&gt; C3
+    end
+
+    subgraph "X-as-a-Service Pattern" 
+        X1[Consuming Team] --&gt; X2[Providing Team]
+        X3[Clear Interface&lt;br/&gt;Minimal Communication&lt;br/&gt;Provider Sets Standards]
+        X1 -.-&gt; X3
+        X2 -.-&gt; X3
+    end
+
+    subgraph "Facilitating Pattern"
+        F1[Stream-Aligned Team] &lt;--&gt; F2[Enabling Team]
+        F3[Knowledge Transfer&lt;br/&gt;Capability Building&lt;br/&gt;Temporary Relationship]
+        F1 -.-&gt; F3
+        F2 -.-&gt; F3
+    end
+
+    subgraph "Evolution Over Time"
+        E1[Collaboration] --&gt; E2[X-as-a-Service]
+        E3[Facilitating] --&gt; E4[Independence]
+
+        E5[Problem Discovery&lt;br/&gt;&amp; Solution Development]
+        E6[Mature Service&lt;br/&gt;with Clear Interface]
+        E7[Knowledge Transfer&lt;br/&gt;Complete]  
+        E8[Team Self-Sufficient]
+
+        E1 -.-&gt; E5
+        E2 -.-&gt; E6
+        E3 -.-&gt; E7
+        E4 -.-&gt; E8
+    end
+
+    style C1 fill:#e3f2fd
+    style C2 fill:#e3f2fd
+    style X1 fill:#e8f5e8
+    style X2 fill:#f3e5f5
+    style F1 fill:#e1f5fe
+    style F2 fill:#fff3e0
+    style E1 fill:#fce4ec
+    style E2 fill:#e8f5e8
+    style E3 fill:#fff8e1
+    style E4 fill:#f1f8e9</code></pre>
+<p><strong>Key Insights for Staff Engineers:</strong></p>
+<p><strong>1. Collaboration Mode</strong> (High-touch, temporary):
+- Use when exploring new problem domains
+- Expect high communication overhead
+- Plan for eventual transition to other modes
+- Best for innovation and discovery phases</p>
+<p><strong>2. X-as-a-Service Mode</strong> (Low-touch, stable):
+- Use when interfaces are well-defined
+- Minimize communication to prevent coupling
+- Provider team sets standards and SLAs
+- Best for stable, mature capabilities</p>
+<p><strong>3. Facilitating Mode</strong> (Knowledge transfer focus):
+- Use when building team capabilities
+- Temporary relationship with clear end goal
+- Enabling team helps stream-aligned team become self-sufficient
+- Best for introducing new technologies or practices</p>
+<p><strong>Strategic Application:</strong>
+Most organizational friction comes from teams stuck in the wrong interaction mode. Stream-aligned teams collaborating when they should be consuming services. Platform teams trying to provide services before interfaces are mature. Enabling teams that never successfully transfer knowledge and create dependency instead of capability.</p>
+<h2 id="cognitive-load-management">Cognitive Load Management</h2>
+<p>Every team has a limited cognitive capacity. Effective organizational design manages three types of cognitive load:</p>
+<h3 id="intrinsic-load">Intrinsic Load</h3>
+<p>The effort of processing information inherent to the problem itself.</p>
+<p><strong>Staff Engineer Strategy:</strong> Help teams focus on their core domain by reducing unnecessary complexity.</p>
+<h3 id="extraneous-load">Extraneous Load</h3>
+<p>The effort of processing information that isn't directly relevant to the main task.</p>
+<p><strong>Staff Engineer Strategy:</strong> Eliminate bureaucracy, simplify tooling, and remove unnecessary process overhead.</p>
+<h3 id="germane-load">Germane Load</h3>
+<p>The effort of processing information that contributes to building long-term capabilities.</p>
+<p><strong>Staff Engineer Strategy:</strong> Invest in practices that build team capability (documentation, knowledge sharing, skill development).</p>
+<h2 id="systems-thinking-for-organizational-design">Systems Thinking for Organizational Design</h2>
+<h3 id="understanding-organizations-as-living-systems">Understanding Organizations as Living Systems</h3>
+<p>Here's something most engineering leaders miss: organizations aren't machines that you can fix by replacing broken parts—they're living systems that adapt, evolve, and respond to changes in ways that often surprise us. Peter Senge's work on organizational learning reveals that the most persistent problems in engineering organizations aren't caused by external forces or individual incompetence, but by the underlying systems and structures that we've created ourselves.</p>
+<p>Think about the last organizational problem you tried to solve. Maybe teams were duplicating work, or communication was breaking down between engineering and product, or technical debt kept accumulating despite everyone's best intentions. You probably focused on the immediate symptoms: implemented new processes, reorganized teams, or sent people to training. But did the fundamental problems actually get solved, or did they just pop up in new forms?</p>
+<p>That's the nature of systems problems—they resist quick fixes because the underlying structures that create them remain unchanged.</p>
+<div class="admonition info">
+<p class="admonition-title">Leverage Points in Engineering Organizations</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Mental Models &amp; Paradigms</label><label for="__tabbed_2_2">System Structure &amp; Power</label><label for="__tabbed_2_3">Information Flow &amp; Feedback</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Highest Leverage</strong></p>
+<p>Shift from viewing teams as resources to be optimized → complex adaptive systems needing the right conditions</p>
+<ul>
+<li>Ask: "What enables teams' best work?" not "How can teams work harder?"</li>
+<li>Optimize for flow and learning, not resource utilization</li>
+<li>Create diversity within coherent frameworks</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>High Leverage</strong></p>
+<p>Distribute architectural decision-making to teams closest to problems</p>
+<ul>
+<li>Stream teams: autonomy over implementation details</li>
+<li>Within clear boundaries and platform standards</li>
+<li>Structured autonomy enables speed + coherence</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Medium Leverage</strong></p>
+<p>Create fast, accurate feedback loops throughout organization</p>
+<ul>
+<li>Regular cross-team retrospectives</li>
+<li>Real-time metrics on team interaction health</li>
+<li>Architectural fitness functions for boundary violations</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<p><strong>Learning from System Archetypes</strong></p>
+<p>Engineering organizations tend to fall into predictable patterns of dysfunction—what Senge calls "system archetypes." Recognizing these patterns helps you address root causes rather than just symptoms:</p>
+<p><strong>Fixes That Fail</strong></p>
+<p>You implement a new process to solve a team coordination problem. Initially, it helps—people follow the process, and coordination improves. But over time, the process becomes bureaucratic overhead. People find workarounds, exception cases multiply, and you end up with less coordination than you started with, plus additional process complexity.</p>
+<p><strong>Sound familiar?</strong> This archetype shows up constantly in engineering organizations. The solution isn't better processes—it's designing team structures that need less coordination in the first place.</p>
+<p><strong>Limits to Growth</strong></p>
+<p>Your engineering team is productive, so you hire more engineers to be even more productive. But as the team grows, communication overhead increases exponentially. What used to be quick hallway conversations become week-long email threads. The team gets slower, not faster.</p>
+<p>Instead of just adding people, systems thinking suggests examining the underlying structures that enable or constrain productivity as teams scale.</p>
+<p><strong>Tragedy of the Commons</strong></p>
+<p>Every team optimizes for their local goals, but these local optimizations create system-wide problems. The mobile team caches aggressively to improve their performance, overwhelming the API team. The API team adds rate limiting to protect their services, slowing down the web team. The web team implements client-side workarounds that create data consistency issues for the mobile team.</p>
+<p>The solution isn't better coordination—it's aligning team incentives with system-wide outcomes.</p>
+<h2 id="organizational-evolution-patterns">Organizational Evolution Patterns</h2>
+<p>Organizations aren't static. They evolve as businesses and technologies change. Common evolution patterns include:</p>
+<h3 id="start-up-to-scale-up">Start-up to Scale-up</h3>
+<p><strong>Pattern:</strong> Single team → Multiple stream-aligned teams + emerging platform needs</p>
+<p><strong>Staff Engineer Role:</strong> Help identify when to split teams and what platform capabilities to build.</p>
+<h3 id="monolith-to-microservices">Monolith to Microservices</h3>
+<p><strong>Pattern:</strong> Single large team → Multiple service teams with clear boundaries</p>
+<p><strong>Staff Engineer Role:</strong> Define service boundaries that align with team boundaries and business capabilities.</p>
+<h3 id="platform-emergence">Platform Emergence</h3>
+<p><strong>Pattern:</strong> Duplicated infrastructure → Dedicated platform team</p>
+<p><strong>Staff Engineer Role:</strong> Identify common needs across teams and advocate for platform investment.</p>
+<h2 id="assessment-framework-team-topology-health-check">Assessment Framework: Team Topology Health Check</h2>
+<p>Use this framework to evaluate your current team structure:</p>
+<h3 id="stream-team-health">Stream Team Health</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can deploy independently without coordinating with other teams</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Has all skills needed for their value stream  </li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clear understanding of user needs and business metrics</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Owns their services in production</li>
+</ul>
+<h3 id="platform-team-health">Platform Team Health</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Treats other teams as customers, not users</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Provides self-service capabilities</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Measures success by stream team adoption and satisfaction</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Maintains clear APIs and backwards compatibility</li>
+</ul>
+<h3 id="team-interaction-health">Team Interaction Health</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clear understanding of interaction modes with other teams</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Communication patterns match intended architecture</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Regular assessment of interaction effectiveness</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Evolution of interaction modes based on learning</li>
+</ul>
+<h3 id="cognitive-load-health">Cognitive Load Health</h3>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Teams can handle their assigned responsibilities</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Minimal context switching between unrelated domains</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Clear ownership boundaries reduce coordination overhead</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Regular assessment of team workload and complexity</li>
+</ul>
+<h2 id="implementation-guidance-for-staff-engineers">Implementation Guidance for Staff Engineers</h2>
+<h3 id="1-start-with-stream-identification">1. Start with Stream Identification</h3>
+<p>Map your business capabilities and user value streams. This becomes the foundation for team design.</p>
+<h3 id="2-apply-team-first-thinking">2. Apply Team First Thinking</h3>
+<p>Design teams before architecture. Let team boundaries influence system boundaries.</p>
+<h3 id="3-evolve-interaction-modes">3. Evolve Interaction Modes</h3>
+<p>Start with collaboration for discovery, evolve to X-as-a-Service for stability.</p>
+<h3 id="4-monitor-and-adjust">4. Monitor and Adjust</h3>
+<p>Regularly assess team health and interaction effectiveness. Organizational design is never "done."</p>
+<h3 id="5-invest-in-enabling-capabilities">5. Invest in Enabling Capabilities</h3>
+<p>Build enabling team capabilities to help stream teams overcome obstacles and acquire new skills.</p>
+<h2 id="common-anti-patterns-to-avoid">Common Anti-Patterns to Avoid</h2>
+<h3 id="the-feature-factory">The Feature Factory</h3>
+<p><strong>Problem:</strong> Teams optimized for output rather than outcomes
+<strong>Solution:</strong> Focus stream teams on user value and business results</p>
+<h3 id="the-ivory-tower-platform">The Ivory Tower Platform</h3>
+<p><strong>Problem:</strong> Platform teams that don't understand user needs
+<strong>Solution:</strong> Treat platform as a product with engineering teams as customers</p>
+<h3 id="the-eternal-collaboration">The Eternal Collaboration</h3>
+<p><strong>Problem:</strong> Teams that never evolve beyond collaboration mode<br />
+<strong>Solution:</strong> Intentionally evolve to X-as-a-Service when appropriate</p>
+<h3 id="the-skill-silo">The Skill Silo</h3>
+<p><strong>Problem:</strong> Teams organized by technology rather than value stream
+<strong>Solution:</strong> Cross-functional teams aligned to business capabilities</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li><strong>Organizational design is a technical decision</strong> that directly impacts software architecture and delivery capability</li>
+<li><strong>Four team types</strong> provide a foundation for scalable organization design</li>
+<li><strong>Three interaction modes</strong> enable appropriate coordination between teams</li>
+<li><strong>Conway's Law</strong> can be used intentionally to promote desired architecture</li>
+<li><strong>Cognitive load management</strong> is essential for team effectiveness</li>
+<li><strong>Evolution patterns</strong> help navigate organizational growth and change</li>
+</ol>
+<hr />
+<h2 id="prerequisites-and-related-learning">Prerequisites and Related Learning</h2>
+<h3 id="prerequisites-for-this-chapter"><strong>Prerequisites for This Chapter</strong></h3>
+<ul>
+<li><strong><a href="../../engineering/">Engineering Excellence</a></strong> - Technical credibility provides foundation for influencing organizational structure decisions</li>
+<li><strong><a href="../../thinking/strategic-thinking/">Strategic Thinking</a></strong> - Systems thinking and OODA loops help analyze organizational dynamics and design interventions</li>
+<li><strong><a href="../../leadership/influencing-without-authority/">Leadership Influence</a></strong> - Organizational design requires influence skills to drive structural changes</li>
+</ul>
+<h3 id="related-concepts"><strong>Related Concepts</strong></h3>
+<ul>
+<li><strong><a href="../team-formation/">Team Formation</a></strong> - Apply Team Topologies patterns to guide teams through development stages</li>
+<li><strong><a href="../cross-functional-collaboration/">Cross-Functional Collaboration</a></strong> - Use interaction patterns to optimize engineering-product-design coordination</li>
+<li><strong><a href="../psychological-safety/">Psychological Safety</a></strong> - Create safe environments that enable effective team interaction patterns</li>
+<li><strong><a href="../../engineering/clean-architecture/">Clean Architecture</a></strong> - Align software architecture with team structure using Conway's Law</li>
+</ul>
+<h3 id="apply-team-topologies"><strong>Apply Team Topologies</strong></h3>
+<ul>
+<li><strong><a href="../../../appendix/tools/team-topology-assessment/">Team Topology Assessment Framework</a></strong> - Evaluate your current team structure and identify optimization opportunities</li>
+<li><strong><a href="../../../appendix/tools/team-health-diagnostic/">Team Health Diagnostic</a></strong> - Assess team effectiveness within organizational design context</li>
+<li><strong><a href="../../execution/organizational-transformation/">Organizational Transformation</a></strong> - Use Team Topologies to guide large-scale organizational change</li>
+</ul>
+<h3 id="next-steps-in-your-learning-journey"><strong>Next Steps in Your Learning Journey</strong></h3>
+<ol>
+<li><strong><a href="../team-formation/">Team Formation</a></strong> - Learn how teams evolve through predictable stages within topological patterns</li>
+<li><strong><a href="../../execution/">Execution Excellence</a></strong> - Apply organizational design thinking to project delivery and change management</li>
+<li><strong><a href="../../business/aligning-technology/">Business Alignment</a></strong> - Connect team structure to business strategy and value delivery</li>
+<li><strong><a href="../cultural-transformation-psychological-safety/">Cultural Transformation</a></strong> - Create organizational cultures that support optimal team topologies</li>
+</ol>
+<h3 id="learning-path-recommendations"><strong>Learning Path Recommendations</strong></h3>
+<p><strong>For Engineering Managers</strong>: Focus on <strong>Team Interaction Patterns</strong> and <strong>Cognitive Load Management</strong> to optimize team structure and reduce coordination overhead.</p>
+<p><strong>For Technical Architects</strong>: Emphasize <strong>Conway's Law</strong> and <strong>System-Team Alignment</strong> to ensure architecture and organization co-evolve effectively.</p>
+<p><strong>For Organizational Leaders</strong>: Develop <strong>Evolution Patterns</strong> and <strong>Anti-Pattern Recognition</strong> skills to guide organizational growth and prevent common dysfunction patterns.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Skelton, Matthew, and Manuel Pais. <em>Team Topologies: Organizing Business and Technology Teams for Fast Flow</em>. 2019.</li>
+<li>Conway, Melvin E. "How Do Committees Invent?" <em>Datamation</em> 14, no. 4 (1968): 28-31.</li>
+<li>Miller, George A. "The Magical Number Seven, Plus or Minus Two." <em>Psychological Review</em> 63, no. 2 (1956): 81-97.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: High-Performance Teams: The Art and Science of Technical Collaboration">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                High-Performance Teams: The Art and Science of Technical Collaboration
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../team-formation/" class="md-footer__link md-footer__link--next" aria-label="Next: Team Formation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Team Formation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

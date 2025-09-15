@@ -1,0 +1,3499 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../mentorship-sponsorship/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Developing Expertise - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#developing-expertise-beyond-surface-level-knowledge" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Developing Expertise
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../intro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Field Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Staff Engineer Archetypes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Staff Engineer Archetypes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/tech-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Tech Lead
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Solver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/right-hand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Right Hand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/force-multiplier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Becoming a Force Multiplier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Continuous Learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-myth-of-the-10000-hour-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Myth of the 10,000-Hour Rule
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-expertise-development-cycle-for-engineers" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Expertise Development Cycle for Engineers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Expertise Development Cycle for Engineers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-map-the-territory-understanding-the-knowledge-landscape" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Map the Territory: Understanding the Knowledge Landscape
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-develop-a-learning-plan-from-novice-to-expert" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Develop a Learning Plan: From Novice to Expert
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-build-a-mental-model-understanding-the-why-not-just-the-how" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Build a Mental Model: Understanding the Why, Not Just the How
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-engage-in-deliberate-practice-beyond-passive-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Engage in Deliberate Practice: Beyond Passive Consumption
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-teach-and-articulate-solidifying-your-understanding" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Teach and Articulate: Solidifying Your Understanding
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overcoming-the-plateaus-when-learning-gets-hard" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overcoming the Plateaus: When Learning Gets Hard
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-t-shaped-engineer-balancing-depth-and-breadth" class="md-nav__link">
+    <span class="md-ellipsis">
+      The T-Shaped Engineer: Balancing Depth and Breadth
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-long-game-expertise-as-a-career-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Long Game: Expertise as a Career Strategy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-reference-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Reference Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cross-Reference Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites-for-this-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites for This Chapter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-these-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply These Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-steps-in-your-learning-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps in Your Learning Journey
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mentorship-sponsorship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mentorship & Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../staying-current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Staying Current
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../learning-organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Learning Organization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teaching-to-learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching to Learn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../engineering/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Excellence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Excellence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/site-reliability-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Reliability Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/continuous-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/advanced-testing-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Testing Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/evolutionary-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolutionary Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/software-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps & Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/source-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/code-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Hygiene & Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/hexagonal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/story-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Story Mapping & Splitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/chaos-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chaos Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../thinking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Critical Thinking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Critical Thinking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mental-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mental Models for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/algorithmic-decision-making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/cognitive-biases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cognitive Biases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/structured-problem-solving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured Problem-Solving
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mind-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mind Mapping & Visual Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leadership/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Influence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Leadership & Influence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/influencing-without-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Influencing Without Authority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-conflict-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Conflict Resolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/giving-receiving-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving & Receiving Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/delivering-difficult-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delivering Difficult Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-mentorship-career-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Mentorship & Career Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/vulnerability-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerability in Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/self-awareness-personality-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-Awareness & Personality Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/psychological-safety-trust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety & Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/power-influence-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power & Influence in Organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/storytelling-for-engineers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-writing-for-influence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Writing for Influence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/presentation-persuasion-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Persuasion Skills
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/working-across-boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Across Boundaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/async-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asynchronous Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/navigating-tough-technical-discussions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Tough Technical Discussions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../teamwork/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Teamwork & Collaboration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teamwork & Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/organizational-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/team-formation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Team Formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cultural-transformation-psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cultural Transformation & Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/five-dysfunctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Five Dysfunctions of a Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cross-functional-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Functional Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/mismanagement-agreement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mismanagement Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/culture-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Culture Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../execution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Execution & Delivery
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Execution & Delivery
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/agile-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agile Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/decision-making-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision-Making Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/change-management-technical-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change Management for Technical Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/speed-vs-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed vs. Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/navigating-uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Uncertainty & Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/prioritization-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prioritization Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/organizational-transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../business/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Business Alignment
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Business Alignment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/aligning-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aligning Technology to Business Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/product-engineering-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product-Engineering Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/engineering-metrics-business-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engineering Metrics & Business Alignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/pitching-to-executives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Better Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/revenue-vs-risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revenue vs. Risk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/cost-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/empowered-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empowered Teams & Engineering Culture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ethics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Ethics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/bias-in-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias in Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/data-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Privacy & User Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethical-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethics-of-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Ethics of Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/responsible-innovation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Responsible Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="developing-expertise-beyond-surface-level-knowledge">Developing Expertise: Beyond Surface-Level Knowledge</h1>
+<h2 id="the-scenario">The Scenario</h2>
+<p>A Senior Engineer is promoted to Staff Engineer based on their deep knowledge of the company's core service. They've spent five years working on this system and know every corner of the codebase. Six months into their new role, the organization decides to migrate to a new architecture that renders much of their specific knowledge obsolete. Suddenly, they feel adrift. Their identity was tied to being "the person who knows system X," but now they need to become an expert in something entirely new—and fast.</p>
+<p>This scenario highlights a critical truth: expertise is not just about what you know; it's about <em>how you learn</em>. As a Staff Engineer, your value isn't defined by your current knowledge but by your ability to develop deep expertise in whatever domain your organization needs. This is the difference between having knowledge and developing true expertise.</p>
+<h2 id="the-myth-of-the-10000-hour-rule">The Myth of the 10,000-Hour Rule</h2>
+<p>The popular notion that expertise requires 10,000 hours of practice is a misinterpretation of the research. The original studies by Anders Ericsson showed that what matters is not just the time spent but the <em>quality</em> of that time. World-class performers don't just practice; they engage in what Ericsson called <strong>deliberate practice</strong>—a specific type of practice designed to improve performance.</p>
+<p><strong>The Four Elements of Deliberate Practice:</strong></p>
+<ol>
+<li><strong>Well-defined, specific goals:</strong> Not "I'll learn about databases" but "I will understand the specific trade-offs between different consistency models in distributed databases."</li>
+<li><strong>Full concentration and effort:</strong> Deliberate practice is not comfortable. It requires pushing beyond your current abilities.</li>
+<li><strong>Immediate feedback:</strong> You need to know whether you're doing it right or wrong.</li>
+<li><strong>Repetition with reflection and refinement:</strong> You must continuously analyze your performance and adjust your approach.</li>
+</ol>
+<h2 id="the-expertise-development-cycle-for-engineers">The Expertise Development Cycle for Engineers</h2>
+<p>Developing expertise as an engineer requires a structured approach. Here's a framework for cultivating deep expertise in any technical domain:</p>
+<h3 id="1-map-the-territory-understanding-the-knowledge-landscape">1. Map the Territory: Understanding the Knowledge Landscape</h3>
+<p>Before diving deep, you need to understand the breadth of the domain. This is about creating a mental map of the territory.</p>
+<p><strong>Practical Strategies:</strong></p>
+<p>Begin your expertise development by creating a comprehensive knowledge graph that maps out the key concepts, tools, and techniques within your chosen domain, establishing both the fundamental principles that form the theoretical foundation and the cutting-edge developments that represent the current frontier of innovation. This mapping process naturally leads you to identify the recognized authorities in the field—the researchers, practitioners, and thought leaders whose work has shaped the domain—and to discover what they have written or built that provides crucial insights into both established practices and emerging trends. Finally, compile the canonical resources that every serious practitioner should engage with, including the essential books, seminal papers, and reference codebases that define the domain's intellectual heritage and current best practices.</p>
+<p><strong>Example:</strong> If you're developing expertise in distributed systems, your knowledge graph might include concepts like consistency models, partition tolerance, and replication strategies. The experts might include researchers like Leslie Lamport and practitioners like Werner Vogels. The canonical resources would include papers like the Paxos algorithm and books like "Designing Data-Intensive Applications."</p>
+<h3 id="2-develop-a-learning-plan-from-novice-to-expert">2. Develop a Learning Plan: From Novice to Expert</h3>
+<p>With your map in hand, create a structured learning plan that takes you from your current level to your target level of expertise.</p>
+<p><strong>The Five Stages of Expertise:</strong></p>
+<ol>
+<li><strong>Novice:</strong> You follow rules and recipes without context.</li>
+<li><strong>Advanced Beginner:</strong> You start to recognize patterns and develop intuition.</li>
+<li><strong>Competent:</strong> You can solve problems independently and make informed decisions.</li>
+<li><strong>Proficient:</strong> You see the big picture and can prioritize what's important.</li>
+<li><strong>Expert:</strong> You have intuitive mastery and can innovate within the domain.</li>
+</ol>
+<p><strong>Practical Strategies:</strong></p>
+<p>Develop your learning plan through honest self-assessment, candidly evaluating what you can accomplish without assistance and identifying the concepts or techniques that still cause confusion or uncertainty. Transform this assessment into concrete learning milestones with specific, measurable outcomes—for instance, committing to implement a simple distributed consensus algorithm from scratch by month's end rather than vaguely aspiring to "understand consensus protocols better." Most critically, allocate dedicated learning time in your calendar specifically for deliberate practice, recognizing that this focused, intentional skill development differs fundamentally from the opportunistic learning that occurs during regular work activities.</p>
+<h3 id="3-build-a-mental-model-understanding-the-why-not-just-the-how">3. Build a Mental Model: Understanding the Why, Not Just the How</h3>
+<p>Surface-level knowledge is about memorizing facts and procedures. Deep expertise is about developing rich mental models that allow you to reason about the domain.</p>
+<p><strong>Practical Strategies:</strong></p>
+<p>Build robust mental models using the Feynman Technique—attempting to explain complex concepts in simple terms as if teaching them to someone else—which reliably exposes gaps in your understanding and forces you to confront areas where your knowledge remains superficial. Complement this with first principles thinking, systematically breaking down complex systems into their fundamental truths and reasoning upward from these core assumptions rather than relying on conventional wisdom or inherited solutions. Deepen your understanding through comparative analysis, studying multiple approaches to the same problem and investigating why different experts made different choices, as these decision points often reveal the underlying trade-offs and constraints that define expertise in the domain.</p>
+<p><strong>Example:</strong> Don't just learn how to use a particular database; understand the fundamental trade-offs that led to its design. Why does it use this consistency model? What are the performance implications of its storage engine? How does it handle failure scenarios?</p>
+<h3 id="4-engage-in-deliberate-practice-beyond-passive-consumption">4. Engage in Deliberate Practice: Beyond Passive Consumption</h3>
+<p>Reading books and articles is necessary but not sufficient. Expertise requires active engagement and practice.</p>
+<p><strong>Practical Strategies:</strong></p>
+<p>Engage in active practice by building toy implementations that simplify the systems you're studying—creating a basic consensus algorithm or simple database storage engine forces you to grapple with implementation details that theory alone cannot teach. Expand your practice through open source contributions, finding projects within your domain of interest and beginning with documentation improvements or small bug fixes, which gradually builds both technical confidence and community connections. Most importantly, solve real problems by applying your developing knowledge to actual challenges in your work environment, as theory only transforms into genuine expertise when tested against the messy constraints and unexpected complications of reality. Throughout this process, actively seek feedback from experts, sharing your work with more experienced practitioners and asking for specific, actionable criticism that can accelerate your learning beyond what solo practice can achieve.</p>
+<h3 id="5-teach-and-articulate-solidifying-your-understanding">5. Teach and Articulate: Solidifying Your Understanding</h3>
+<p>The ultimate test of understanding is the ability to teach others. Teaching forces you to organize your knowledge and identify gaps in your understanding.</p>
+<p><strong>Practical Strategies:</strong></p>
+<p>Solidify your understanding through teaching and articulation, beginning with technical blog posts that force you to organize your thoughts clearly and communicate complex concepts to a broader audience. Expand your teaching through internal tech talks, presenting your learnings to your team or organization in formats that require you to anticipate questions and explain concepts from multiple angles. The most powerful teaching opportunity comes from mentoring junior engineers, as guiding someone else's learning journey provides the ultimate test of your own understanding while creating feedback loops that reveal gaps you didn't know existed. Complement these formal teaching opportunities by answering questions in public forums like Stack Overflow or GitHub Discussions, where the diversity of questions and peer review process continuously test and refine your knowledge while building your reputation within the technical community.</p>
+<h2 id="overcoming-the-plateaus-when-learning-gets-hard">Overcoming the Plateaus: When Learning Gets Hard</h2>
+<p>The path to expertise is not linear. You will inevitably hit plateaus where your progress seems to stall. These plateaus are not failures; they are natural parts of the learning process.</p>
+<p><strong>Strategies for Breaking Through Plateaus:</strong></p>
+<p>When progress stalls, systematically change your learning approach—if reading books isn't yielding breakthroughs, shift to pair programming with an expert who can provide real-time feedback and alternative perspectives, or if solo practice feels stagnant, join a study group where collective problem-solving can unlock new insights. Deliberately seek challenges at the edge of your ability, taking on problems that stretch just beyond your current skill level to maintain the productive discomfort that drives growth. Consider engaging a coach or mentor who can provide the outside perspective necessary to identify blind spots and patterns that may be limiting your progress. Sometimes, however, the most effective strategy is to temporarily step back from intensive learning, allowing your subconscious mind to process and integrate what you've absorbed—often leading to sudden insights and connections that focused effort alone cannot produce.</p>
+<h2 id="the-t-shaped-engineer-balancing-depth-and-breadth">The T-Shaped Engineer: Balancing Depth and Breadth</h2>
+<p>While deep expertise is valuable, the most effective Staff Engineers are "T-shaped"—they have deep expertise in one or two domains (the vertical bar of the T) and broad knowledge across many domains (the horizontal bar).</p>
+<p><strong>Strategies for T-Shaped Development:</strong></p>
+<ul>
+<li><strong>Develop primary and secondary domains of expertise:</strong> Choose one domain for deep expertise and a couple of adjacent domains for solid competence.</li>
+<li><strong>Rotate through different projects:</strong> Seek opportunities to work in different parts of the system or with different technologies.</li>
+<li><strong>Allocate your learning time:</strong> Spend 70% of your learning time on your primary domain, 20% on adjacent domains, and 10% exploring entirely new areas.</li>
+</ul>
+<h2 id="the-long-game-expertise-as-a-career-strategy">The Long Game: Expertise as a Career Strategy</h2>
+<p>Developing expertise is not just about the immediate project; it's about your long-term career. The domains you choose to invest in will shape your opportunities for years to come.</p>
+<p><strong>Strategic Questions to Ask:</strong></p>
+<ul>
+<li><strong>Industry relevance:</strong> Is this domain likely to grow in importance over the next decade?</li>
+<li><strong>Personal interest:</strong> Does this domain genuinely fascinate you? Sustained interest is essential for the long journey to expertise.</li>
+<li><strong>Organizational need:</strong> Does your organization value and need expertise in this domain?</li>
+<li><strong>Competitive advantage:</strong> Is this an area where you can develop a unique combination of skills that few others possess?</li>
+</ul>
+<p>Remember, the goal is not to know everything about everything—that's impossible. The goal is to develop a unique and valuable combination of deep expertise and broad knowledge that allows you to solve complex problems and lead technical initiatives effectively. This is the essence of being a Staff Engineer.</p>
+<h2 id="cross-reference-navigation">Cross-Reference Navigation</h2>
+<h3 id="prerequisites-for-this-chapter">Prerequisites for This Chapter</h3>
+<ul>
+<li><strong><a href="../../thinking/mental-models/">Mental Models</a></strong> - Understanding how expertise and learning work provides foundation for systematic skill development</li>
+<li><strong><a href="../staying-current-technology/">Staying Current with Technology</a></strong> - Keeping up with technological change supports continuous expertise development</li>
+</ul>
+<h3 id="related-concepts">Related Concepts</h3>
+<ul>
+<li><strong><a href="../mentorship-sponsorship/">Mentorship &amp; Sponsorship</a></strong> - Learning from experts accelerates expertise development through mentorship relationships</li>
+<li><strong><a href="../staying-current-technology/">Staying Current with Technology</a></strong> - Continuous learning practices maintain and expand expertise in evolving fields</li>
+<li><strong><a href="../advanced-career-development/">Advanced Career Development</a></strong> - Expertise development is central to strategic career advancement</li>
+<li><strong><a href="../networking-community-building/">Networking &amp; Community Building</a></strong> - Professional communities provide learning opportunities and expertise validation</li>
+</ul>
+<h3 id="apply-these-concepts">Apply These Concepts</h3>
+<ul>
+<li><strong><a href="../../../appendix/tools/staff-engineer-competency-assessment/">Staff Engineer Competency Assessment</a></strong> - Evaluate your current expertise levels and identify development opportunities</li>
+<li><strong><a href="../../../appendix/tools/development-tracking-system/">Development Tracking System</a></strong> - Track your progress in developing expertise across different domains</li>
+</ul>
+<h3 id="next-steps-in-your-learning-journey">Next Steps in Your Learning Journey</h3>
+<ol>
+<li><strong><a href="../mentorship-sponsorship/">Mentorship &amp; Sponsorship</a></strong> - Learn to leverage mentorship for accelerated expertise development</li>
+<li><strong><a href="../advanced-career-development/">Advanced Career Development</a></strong> - Understand how expertise development connects to long-term career strategy</li>
+<li><strong><a href="../staying-current-technology/">Staying Current with Technology</a></strong> - Master techniques for continuous learning and expertise maintenance</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Peak: Secrets from the New Science of Expertise</em> by Anders Ericsson and Robert Pool</li>
+<li><em>So Good They Can't Ignore You</em> by Cal Newport</li>
+<li><em>The Talent Code</em> by Daniel Coyle</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Continuous Learning &amp;amp; Growth: The Engine of Staff Engineer Excellence">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Continuous Learning &amp; Growth: The Engine of Staff Engineer Excellence
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../mentorship-sponsorship/" class="md-footer__link md-footer__link--next" aria-label="Next: Mentorship &amp; Sponsorship">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Mentorship & Sponsorship
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

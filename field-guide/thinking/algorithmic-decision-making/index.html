@@ -1,0 +1,4234 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+        <link rel="prev" href="../mental-models/">
+      
+      
+        <link rel="next" href="../cognitive-biases/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Algorithmic Decision-Making - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#algorithmic-decision-making-computer-science-tools-for-human-problems" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Algorithmic Decision-Making
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../intro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Field Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Staff Engineer Archetypes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Staff Engineer Archetypes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/tech-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Tech Lead
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Solver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/right-hand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Right Hand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/force-multiplier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Becoming a Force Multiplier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learning/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Continuous Learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/developing-expertise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/mentorship-sponsorship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mentorship & Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/staying-current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Staying Current
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/learning-organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Learning Organization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/teaching-to-learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching to Learn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../engineering/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Excellence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Excellence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/site-reliability-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Reliability Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/continuous-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/advanced-testing-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Testing Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/evolutionary-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolutionary Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/software-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps & Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/source-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/code-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Hygiene & Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/hexagonal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/story-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Story Mapping & Splitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/chaos-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chaos Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Critical Thinking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Critical Thinking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mental-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mental Models for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-explore-exploit-dilemma-when-to-try-new-things-vs-stick-with-what-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Explore-Exploit Dilemma: When to Try New Things vs. Stick with What Works
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Explore-Exploit Dilemma: When to Try New Things vs. Stick with What Works">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-mathematical-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Mathematical Foundation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineering-applications" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engineering Applications
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Engineering Applications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-selection-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Selection Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hiring-and-team-building-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Hiring and Team Building Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-upper-confidence-bound-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Upper Confidence Bound Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-optimal-stopping-problem-when-to-stop-searching-and-decide" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Optimal Stopping Problem: When to Stop Searching and Decide
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Optimal Stopping Problem: When to Stop Searching and Decide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-secretary-problem-foundation" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Secretary Problem Foundation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#engineering-applications-of-optimal-stopping" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engineering Applications of Optimal Stopping
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Engineering Applications of Optimal Stopping">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-evaluation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Evaluation Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-review-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Review Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization-stopping-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance Optimization Stopping Point
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scheduling-and-priority-management-the-algorithms-of-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scheduling and Priority Management: The Algorithms of Time
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scheduling and Priority Management: The Algorithms of Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shortest-processing-time-spt-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shortest Processing Time (SPT) Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#earliest-deadline-first-edf-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      Earliest Deadline First (EDF) Algorithm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-precedence-constraint-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Precedence Constraint Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temporal-locality-in-engineering-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Temporal Locality in Engineering Work
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-optimal-cache-hierarchy" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Optimal Cache Hierarchy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-theory-for-engineering-decisions-strategic-thinking-in-multi-player-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Game Theory for Engineering Decisions: Strategic Thinking in Multi-Player Environments
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Game Theory for Engineering Decisions: Strategic Thinking in Multi-Player Environments">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-prisoners-dilemma-in-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Prisoner's Dilemma in Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordination-games-aligning-on-technical-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      Coordination Games: Aligning on Technical Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auction-theory-resource-allocation-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Auction Theory: Resource Allocation Decisions
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-implementation-your-algorithmic-decision-making-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Implementation: Your Algorithmic Decision-Making Toolkit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical Implementation: Your Algorithmic Decision-Making Toolkit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-decision-making-framework-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Decision-Making Framework Integration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#algorithmic-decision-patterns-for-common-engineering-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmic Decision Patterns for Common Engineering Scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Algorithmic Decision Patterns for Common Engineering Scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technology-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technology Selection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#architecture-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architecture Design
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#team-and-resource-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team and Resource Planning
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-your-algorithmic-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Your Algorithmic Intuition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-meta-algorithm-when-and-how-to-apply-algorithmic-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Meta-Algorithm: When and How to Apply Algorithmic Thinking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Meta-Algorithm: When and How to Apply Algorithmic Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#algorithmic-thinking-is-most-valuable-when" class="md-nav__link">
+    <span class="md-ellipsis">
+      Algorithmic Thinking Is Most Valuable When:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#intuitive-thinking-is-better-when" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intuitive Thinking Is Better When:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-hybrid-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Hybrid Approach:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-compound-effect-building-systematic-decision-making-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Compound Effect: Building Systematic Decision-Making Capability
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cognitive-biases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cognitive Biases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../structured-problem-solving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured Problem-Solving
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mind-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mind Mapping & Visual Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leadership/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Influence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Leadership & Influence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/influencing-without-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Influencing Without Authority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-conflict-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Conflict Resolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/giving-receiving-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving & Receiving Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/delivering-difficult-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delivering Difficult Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-mentorship-career-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Mentorship & Career Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/vulnerability-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerability in Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/self-awareness-personality-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-Awareness & Personality Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/psychological-safety-trust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety & Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/power-influence-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power & Influence in Organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/storytelling-for-engineers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-writing-for-influence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Writing for Influence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/presentation-persuasion-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Persuasion Skills
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/working-across-boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Across Boundaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/async-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asynchronous Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/navigating-tough-technical-discussions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Tough Technical Discussions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../teamwork/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Teamwork & Collaboration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teamwork & Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/organizational-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/team-formation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Team Formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cultural-transformation-psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cultural Transformation & Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/five-dysfunctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Five Dysfunctions of a Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cross-functional-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Functional Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/mismanagement-agreement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mismanagement Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/culture-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Culture Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../execution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Execution & Delivery
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Execution & Delivery
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/agile-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agile Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/decision-making-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision-Making Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/change-management-technical-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change Management for Technical Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/speed-vs-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed vs. Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/navigating-uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Uncertainty & Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/prioritization-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prioritization Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/organizational-transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../business/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Business Alignment
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Business Alignment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/aligning-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aligning Technology to Business Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/product-engineering-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product-Engineering Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/engineering-metrics-business-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engineering Metrics & Business Alignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/pitching-to-executives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Better Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/revenue-vs-risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revenue vs. Risk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/cost-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/empowered-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empowered Teams & Engineering Culture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ethics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Ethics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/bias-in-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias in Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/data-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Privacy & User Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethical-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethics-of-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Ethics of Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/responsible-innovation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Responsible Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="algorithmic-decision-making-computer-science-tools-for-human-problems">Algorithmic Decision-Making: Computer Science Tools for Human Problems</h1>
+<blockquote>
+<p><em>"The key insight is that we can use the tools of computer science not just to understand how to make computers work better, but to understand how to make human decisions better."</em> - Brian Christian &amp; Tom Griffiths</p>
+</blockquote>
+<p>Imagine you're leading a team through a complex technical decision: choosing between three different database architectures for your next-generation platform. You have limited time to evaluate options, incomplete information about future requirements, and multiple stakeholders with conflicting priorities. Meanwhile, your current system is showing strain, and every day of delay costs potential users and revenue.</p>
+<p><strong>How do you make the best decision under these constraints?</strong></p>
+<p>Most engineers approach this intuitively—gathering some information, debating trade-offs, and eventually picking what "feels right." But what if there were systematic, mathematically-proven approaches to decision-making under uncertainty that could guide you to better outcomes?</p>
+<p><strong>This is the promise of algorithmic decision-making.</strong> Computer scientists have spent decades developing optimal strategies for problems that sound remarkably similar to the challenges Staff Engineers face every day: How much should you explore new options versus exploit known solutions? When should you stop gathering information and make a decision? How do you balance competing priorities with limited resources?</p>
+<p>The breakthrough insight from Brian Christian and Tom Griffiths in "Algorithms to Live By" is that these aren't just computer problems—they're fundamental challenges of decision-making under constraint. <strong>The same mathematical principles that help computers make optimal choices can help humans navigate complex engineering decisions.</strong></p>
+<p>This isn't about turning engineers into robots. It's about augmenting human judgment with systematic approaches that have been proven optimal under specific conditions. When you understand the mathematical foundations of good decision-making, you can make better choices faster, with greater confidence, and with less regret about the roads not taken.</p>
+<h2 id="the-explore-exploit-dilemma-when-to-try-new-things-vs-stick-with-what-works">The Explore-Exploit Dilemma: When to Try New Things vs. Stick with What Works</h2>
+<p>Every Staff Engineer faces this fundamental trade-off constantly: Should you invest time exploring new technologies, architectures, or approaches, or should you stick with proven solutions that you know work well?</p>
+<p><strong>This is the multi-armed bandit problem</strong> from computer science: Imagine a gambler facing a row of slot machines, each with an unknown payout rate. How do you balance trying new machines (exploring) versus playing the machine that's paid out best so far (exploiting)?</p>
+<h3 id="the-mathematical-foundation"><strong>The Mathematical Foundation</strong></h3>
+<p>Computer scientists have proven that the optimal strategy follows a specific pattern that balances exploration and exploitation based on:</p>
+<ul>
+<li><strong>How much time you have left</strong> (exploration becomes less valuable as time runs out)</li>
+<li><strong>How uncertain you are</strong> about your options (more uncertainty justifies more exploration)  </li>
+<li><strong>The cost of switching</strong> between options (high switching costs favor exploitation)</li>
+<li><strong>How much you've already learned</strong> about each option (diminishing returns to exploration)</li>
+</ul>
+<h3 id="engineering-applications"><strong>Engineering Applications</strong></h3>
+<h4 id="technology-selection-strategy"><strong>Technology Selection Strategy</strong></h4>
+<p><strong>Scenario</strong>: Your team needs to choose a frontend framework. You could stick with React (known quantity) or explore newer options like Svelte, SolidJS, or Qwik.</p>
+<p><strong>Algorithmic Approach</strong>:</p>
+<pre class="mermaid"><code>flowchart TD
+    A[Technology Decision Needed] --&gt; B{Time Horizon?}
+    B --&gt;|Long-term Project| C[Explore 20-30%]
+    B --&gt;|Medium-term| D[Explore 10-15%]
+    B --&gt;|Near Deadline| E[Exploit Known Solutions]
+
+    C --&gt; F{Switching Cost?}
+    F --&gt;|High| G[Thorough Upfront Exploration&lt;br/&gt;Deep evaluation of alternatives]
+    F --&gt;|Low| H[Incremental Exploration&lt;br/&gt;Try options gradually]
+
+    D --&gt; I{Confidence Level?}
+    I --&gt;|High| J[Stick with Current Choice]
+    I --&gt;|Low| K[Limited Exploration&lt;br/&gt;Focus on highest-potential options]
+
+    E --&gt; L[Use Known Technology&lt;br/&gt;Optimize implementation]
+
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#ffcdd2</code></pre>
+<div class="admonition tip">
+<p class="admonition-title">Practical Guidelines</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Early Project</label><label for="__tabbed_1_2">Mid-Project</label><label for="__tabbed_1_3">Near Deadlines</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Explore 20-30% of time</strong></p>
+<ul>
+<li>High uncertainty justifies exploration</li>
+<li>Switching costs are lower early on</li>
+<li>More time to recover from mistakes</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Explore 10-15% of time</strong></p>
+<ul>
+<li>Balance learning with delivery</li>
+<li>Focus on high-impact improvements only</li>
+<li>Document findings for future projects</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Focus on known solutions</strong></p>
+<ul>
+<li>Exploitation over exploration</li>
+<li>Optimize existing implementations</li>
+<li>Save new approaches for next iteration</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<blockquote>
+<p><strong>High switching costs</strong> → Explore more thoroughly upfront</p>
+<p><strong>Low switching costs</strong> → Comfortable with incremental exploration</p>
+</blockquote>
+<h4 id="hiring-and-team-building-strategy"><strong>Hiring and Team Building Strategy</strong></h4>
+<p><strong>Scenario</strong>: You're building a team and must decide between hiring proven senior engineers versus taking chances on promising junior candidates.</p>
+<p><strong>Algorithmic Insight</strong>: The optimal strategy depends on your team's growth timeline and the "regret" cost of bad hires.</p>
+<p><strong>Framework Application</strong>:</p>
+<ul>
+<li><strong>Short timeline, high stakes</strong> → Exploit (hire proven seniors)</li>
+<li><strong>Long timeline, moderate stakes</strong> → Explore (mix of seniors and promising juniors)  </li>
+<li><strong>Learning opportunity exists</strong> → Explore (junior hires provide learning about coaching/mentoring)</li>
+<li><strong>Critical path roles</strong> → Exploit (stick with known quantities)</li>
+</ul>
+<h3 id="the-upper-confidence-bound-strategy"><strong>The Upper Confidence Bound Strategy</strong></h3>
+<p>When you must balance exploration and exploitation simultaneously, use the Upper Confidence Bound (UCB) algorithm:</p>
+<p><strong>For each option, calculate</strong>: <code>Estimated Value + Confidence Interval Width</code></p>
+<p><strong>Choose the option with the highest UCB score</strong>. This naturally balances:
+- High estimated value (exploitation)
+- High uncertainty (exploration - give uncertain options a chance to prove themselves)</p>
+<p><strong>Engineering Example - Architecture Decision</strong>:
+<div class="highlight"><pre><span></span><code>Option A (Microservices): 
+  Estimated Value: 7/10 (based on research)
+  Confidence: High (lots of data) = ±1
+  UCB Score: 7 + 1 = 8
+
+Option B (Modular Monolith):
+  Estimated Value: 6/10 (based on research)  
+  Confidence: Medium (some data) = ±2
+  UCB Score: 6 + 2 = 8
+
+Option C (Event Sourcing):
+  Estimated Value: 5/10 (based on research)
+  Confidence: Low (little data) = ±4  
+  UCB Score: 5 + 4 = 9  &lt;- Choose this to reduce uncertainty
+</code></pre></div></p>
+<p><strong>The Counter-Intuitive Insight</strong>: Sometimes you should choose the option you're most uncertain about, because reducing that uncertainty has high information value.</p>
+<hr />
+<h2 id="the-optimal-stopping-problem-when-to-stop-searching-and-decide">The Optimal Stopping Problem: When to Stop Searching and Decide</h2>
+<p>One of the hardest decisions in engineering is knowing when to stop gathering information and commit to a choice. Spend too little time researching, and you might miss the perfect solution. Spend too much time, and you suffer from analysis paralysis.</p>
+<p><strong>Computer science provides a mathematically optimal answer</strong>: the 37% rule.</p>
+<h3 id="the-secretary-problem-foundation"><strong>The Secretary Problem Foundation</strong></h3>
+<p>Imagine you're hiring for a critical role and will interview candidates in random order. You can't go back to previous candidates, and you must decide immediately after each interview whether to hire them. <strong>What strategy maximizes your chance of hiring the best candidate?</strong></p>
+<p><strong>The optimal strategy</strong>: Interview 37% of candidates purely for learning (reject them all), then hire the first candidate who's better than anyone in that learning sample.</p>
+<h3 id="engineering-applications-of-optimal-stopping"><strong>Engineering Applications of Optimal Stopping</strong></h3>
+<h4 id="technology-evaluation-process"><strong>Technology Evaluation Process</strong></h4>
+<p><strong>Scenario</strong>: Evaluating databases for a new service. You could spend weeks researching every option, or you could pick the first reasonable choice.</p>
+<p><strong>37% Rule Application</strong>:</p>
+<ol>
+<li><strong>Define your search space</strong>: How many options will you seriously consider?</li>
+<li><strong>Learning phase</strong>: Spend 37% of your time/effort purely on information gathering</li>
+<li><strong>Decision phase</strong>: Choose the first option that beats your learning baseline</li>
+</ol>
+<p><strong>Practical Example</strong>:
+<div class="highlight"><pre><span></span><code>Database selection with 2 weeks allocated:
+- Learning phase: 5 days researching PostgreSQL, MongoDB, Cassandra
+- Establish baseline: What constitutes &quot;good enough&quot; performance, scalability, ops complexity
+- Decision phase: Evaluate remaining options (Redis, DynamoDB, etc.)
+- Choose: First option that clearly beats the baseline from learning phase
+</code></pre></div></p>
+<h4 id="architecture-review-process"><strong>Architecture Review Process</strong></h4>
+<p><strong>Scenario</strong>: How long should you spend on architecture reviews before implementation?</p>
+<p><strong>Modified Stopping Rule for Reviews</strong>:</p>
+<ul>
+<li><strong>Initial review threshold</strong>: Stop when diminishing returns set in (new issues found per hour drops below threshold)</li>
+<li><strong>Critical system modifier</strong>: Extend review time proportionally to blast radius of potential failures</li>
+<li><strong>Time pressure modifier</strong>: Compress review time but increase post-implementation monitoring</li>
+</ul>
+<p><strong>Framework</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">OptimalStoppingReview</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">system_criticality</span><span class="p">,</span> <span class="n">time_pressure</span><span class="p">,</span> <span class="n">team_experience</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_review_time</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate_base_time</span><span class="p">(</span><span class="n">system_criticality</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stopping_threshold</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate_threshold</span><span class="p">(</span><span class="n">team_experience</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pressure_modifier</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate_pressure_modifier</span><span class="p">(</span><span class="n">time_pressure</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">should_continue_review</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">issues_found_last_hour</span><span class="p">,</span> <span class="n">total_review_time</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">total_review_time</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_review_time</span> <span class="o">*</span> <span class="mf">0.37</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">True</span>  <span class="c1"># Still in learning phase</span>
+
+        <span class="k">if</span> <span class="n">issues_found_last_hour</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">stopping_threshold</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>  <span class="c1"># Diminishing returns</span>
+
+        <span class="k">if</span> <span class="n">total_review_time</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_review_time</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">pressure_modifier</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">False</span>  <span class="c1"># Time pressure override</span>
+
+        <span class="k">return</span> <span class="kc">True</span>
+</code></pre></div></p>
+<h4 id="performance-optimization-stopping-point"><strong>Performance Optimization Stopping Point</strong></h4>
+<p><strong>Problem</strong>: When do you stop optimizing performance and ship the feature?</p>
+<p><strong>Optimal Stopping Approach</strong>:</p>
+<ol>
+<li><strong>Establish baseline</strong>: Measure current performance  </li>
+<li><strong>Learning phase</strong>: Try several optimization approaches, establish what level of improvement is possible</li>
+<li><strong>Stopping rule</strong>: Stop when marginal performance improvement per unit effort falls below threshold</li>
+<li><strong>Ship with monitoring</strong>: Deploy with sufficient monitoring to catch any issues</li>
+</ol>
+<p><strong>Example Timeline</strong>:
+<div class="highlight"><pre><span></span><code>Week 1: Measure baseline, identify top 3 bottlenecks (learning)
+Week 2: Implement obvious optimizations (learning continues)  
+Week 3: Evaluate if remaining optimizations beat 37% baseline improvement
+Decision: If yes, implement best remaining optimization and ship
+         If no, ship current version with monitoring
+</code></pre></div></p>
+<hr />
+<h2 id="scheduling-and-priority-management-the-algorithms-of-time">Scheduling and Priority Management: The Algorithms of Time</h2>
+<p>Every Staff Engineer juggles multiple priorities, deadlines, and competing demands. How do you optimally sequence work to maximize value and minimize stress?</p>
+<p><strong>Computer scientists have developed provably optimal scheduling algorithms</strong> that can guide human decision-making about time allocation and priority management.</p>
+<h3 id="shortest-processing-time-spt-algorithm"><strong>Shortest Processing Time (SPT) Algorithm</strong></h3>
+<p><strong>The Principle</strong>: When you want to minimize total completion time and maximize the number of tasks finished, do the shortest tasks first.</p>
+<p><strong>Why It Works</strong>: Getting small tasks done quickly creates momentum, reduces the psychological burden of an long todo list, and often unblocks other work.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Shortest Processing Time (SPT)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>When to Use:</strong>
+- High context-switching overhead
+- Team morale needs momentum
+- Uncertain requirements</p>
+<p><strong>Benefits:</strong>
+- Maximizes completed tasks
+- Builds momentum
+- Reduces psychological burden</p>
+<p><strong>Application:</strong> Sprint planning with quick wins first</p>
+</div>
+</div>
+</div>
+<h3 id="earliest-deadline-first-edf-algorithm"><strong>Earliest Deadline First (EDF) Algorithm</strong></h3>
+<p><strong>The Principle</strong>: When you have hard deadlines, work on tasks in order of deadline proximity.</p>
+<p><strong>Why It's Optimal</strong>: This is the only strategy that will meet all deadlines if meeting all deadlines is possible.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Earliest Deadline First (EDF)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>When to Use:</strong>
+- Hard deadlines exist
+- Must meet all commitments
+- Clear timeline constraints</p>
+<p><strong>Benefits:</strong>
+- Optimal for deadline compliance
+- Prevents missed commitments
+- Clear prioritization logic</p>
+<p><strong>Application:</strong> Release planning and milestone management</p>
+</div>
+</div>
+</div>
+<h3 id="the-precedence-constraint-challenge"><strong>The Precedence Constraint Challenge</strong></h3>
+<p><strong>Real-world complexity</strong>: Many engineering tasks have dependencies. You can't deploy before you test, can't test before you code, can't code before you design.</p>
+<p><strong>Critical Path Method (CPM)</strong>:</p>
+<ol>
+<li><strong>Map all dependencies</strong> between tasks</li>
+<li><strong>Find the longest path</strong> through the dependency graph (the critical path)</li>
+<li><strong>Optimize the critical path</strong> first—any delay here delays the entire project</li>
+<li><strong>Parallelize non-critical work</strong> to fill slack time</li>
+</ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Critical Path Method (CPM)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>When to Use:</strong>
+- Complex dependencies
+- Large project coordination
+- Resource optimization needed</p>
+<p><strong>Benefits:</strong>
+- Identifies bottlenecks
+- Enables parallelization
+- Optimizes resource allocation</p>
+<p><strong>Example Critical Path:</strong>
+Requirements → Design → Implementation → Integration → Testing → Deploy</p>
+</div>
+</div>
+</div>
+<ol>
+<li>Junior engineers work on parallel tracks  </li>
+<li>Front-load risky/uncertain tasks (push them earlier in critical path)</li>
+<li>Build slack time before hard deadlines
+<div class="highlight"><pre><span></span><code>---
+
+## Caching and Memory Management: Information Architecture for Humans
+
+Just as computers use sophisticated caching strategies to manage limited memory, humans can apply these same principles to manage attention, knowledge, and information effectively.
+
+### **The Least Recently Used (LRU) Principle**
+
+**Computer Science**: Keep recently accessed data in fast memory, evict the least recently used data when space is needed.
+
+**Human Application**: Organize your information environment to keep recently needed knowledge easily accessible.
+
+**Engineering Information Architecture**:
+
+```python
+class PersonalKnowledgeCache:
+    def __init__(self, cache_size=100):  # 100 &quot;hot&quot; topics you can access quickly
+        self.hot_knowledge = {}  # Recently accessed technical knowledge
+        self.warm_knowledge = {}  # Accessible but requires some effort
+        self.cold_storage = {}   # Requires research to re-access
+
+    def access_knowledge(self, topic):
+        if topic in self.hot_knowledge:
+            self.hot_knowledge[topic].last_accessed = datetime.now()
+            return self.hot_knowledge[topic]
+
+        elif topic in self.warm_knowledge:
+            # Move to hot cache
+            knowledge = self.warm_knowledge.pop(topic)
+            self.hot_knowledge[topic] = knowledge
+            self.evict_if_needed()
+            return knowledge
+
+        else:
+            # Research required
+            return self.research_and_cache(topic)
+
+    def evict_if_needed(self):
+        if len(self.hot_knowledge) &gt; self.cache_size:
+            lru_topic = min(self.hot_knowledge.keys(), 
+                           key=lambda t: self.hot_knowledge[t].last_accessed)
+            self.warm_knowledge[lru_topic] = self.hot_knowledge.pop(lru_topic)
+</code></pre></div></li>
+</ol>
+<p><strong>Practical Applications</strong>:</p>
+<p><strong>Documentation Strategy</strong>:</p>
+<ul>
+<li><strong>Hot cache</strong>: Keep current project docs and frequently referenced materials easily accessible (bookmarks, desktop, wiki favorites)</li>
+<li><strong>Warm cache</strong>: Previous project docs, less common but sometimes needed references  </li>
+<li><strong>Cold storage</strong>: Old projects, rarely needed specs (searchable but not immediately accessible)</li>
+</ul>
+<p><strong>Learning Strategy</strong>:</p>
+<ul>
+<li><strong>Hot skills</strong>: Current technology stack, active problem domains</li>
+<li><strong>Warm skills</strong>: Related technologies, adjacent domains</li>
+<li><strong>Cold skills</strong>: Past expertise that's not immediately relevant but might be useful</li>
+</ul>
+<h3 id="temporal-locality-in-engineering-work"><strong>Temporal Locality in Engineering Work</strong></h3>
+<p><strong>Principle</strong>: Recently accessed information is likely to be accessed again soon.</p>
+<p><strong>Applications</strong>:</p>
+<p><strong>Daily Work Organization</strong>:</p>
+<ul>
+<li>Keep today's relevant files, terminals, and browser tabs easily accessible</li>
+<li>Use workspace management tools that preserve "working sets" of information</li>
+<li>Organize communication tools (Slack channels, email folders) by recency and relevance</li>
+</ul>
+<p><strong>Meeting and Context Management</strong>:</p>
+<ul>
+<li>Maintain "hot context" for current projects (recent decisions, active discussions, key metrics)</li>
+<li>Build systems to quickly restore context after interruptions</li>
+<li>Use calendar blocks to batch similar work and preserve context</li>
+</ul>
+<h3 id="the-optimal-cache-hierarchy"><strong>The Optimal Cache Hierarchy</strong></h3>
+<p><strong>Multi-level caching strategy for engineering information</strong>:</p>
+<div class="highlight"><pre><span></span><code>Level 1 (Immediate): Current sprint information, today&#39;s priorities
+Level 2 (Daily): Current project context, frequently used references  
+Level 3 (Weekly): Related project information, team knowledge
+Level 4 (Monthly): Organization knowledge, industry best practices
+Level 5 (Long-term): Career knowledge, fundamental principles
+</code></pre></div>
+<p><strong>Cache Invalidation Strategy</strong>:</p>
+<ul>
+<li><strong>Time-based</strong>: Some information becomes stale (performance metrics, team structures)</li>
+<li><strong>Event-based</strong>: Major changes invalidate related information (architecture changes, team reorganizations)</li>
+<li><strong>Version-based</strong>: Keep track of when foundational knowledge was last updated</li>
+</ul>
+<hr />
+<h2 id="game-theory-for-engineering-decisions-strategic-thinking-in-multi-player-environments">Game Theory for Engineering Decisions: Strategic Thinking in Multi-Player Environments</h2>
+<p>Engineering decisions don't happen in isolation—they involve multiple stakeholders with different incentives, priorities, and constraints. Game theory provides frameworks for making optimal decisions when other intelligent agents are also making strategic choices.</p>
+<h3 id="the-prisoners-dilemma-in-engineering"><strong>The Prisoner's Dilemma in Engineering</strong></h3>
+<p><strong>Classic Setup</strong>: Two players can either cooperate or defect. Mutual cooperation is better for both than mutual defection, but individual defection is tempting.</p>
+<p><strong>Engineering Manifestation</strong>: Team contributions to shared infrastructure, technical debt cleanup, or documentation.</p>
+<p><strong>Example Scenario</strong>:
+<div class="highlight"><pre><span></span><code>Two teams share a common service:
+- Cooperate: Invest time in improving shared service
+- Defect: Only use service, don&#39;t contribute improvements
+
+Payoff Matrix:
+               Team B Cooperates    Team B Defects
+Team A Coop:   Both get benefits   A pays cost, B gets benefits  
+Team A Defect: A gets benefits     Both suffer degraded service
+</code></pre></div></p>
+<p><strong>Optimal Strategy - Tit-for-Tat with Forgiveness</strong>:</p>
+<ol>
+<li><strong>Start cooperatively</strong> (assume good faith)</li>
+<li><strong>Mirror the other player's</strong> previous move  </li>
+<li><strong>Occasionally forgive</strong> defection to avoid endless retaliation cycles</li>
+<li><strong>Be transparent</strong> about your strategy</li>
+</ol>
+<p><strong>Practical Implementation</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">EngineeringCooperation</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">forgiveness_rate</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">forgiveness_rate</span> <span class="o">=</span> <span class="n">forgiveness_rate</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">history</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">decide_action</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other_team_history</span><span class="p">):</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">other_team_history</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;cooperate&quot;</span>  <span class="c1"># Start cooperatively</span>
+
+        <span class="n">last_action</span> <span class="o">=</span> <span class="n">other_team_history</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">last_action</span> <span class="o">==</span> <span class="s2">&quot;defect&quot;</span> <span class="ow">and</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">forgiveness_rate</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;defect&quot;</span>  <span class="c1"># Retaliate, but with some forgiveness</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;cooperate&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">signal_strategy</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Make your strategy known to encourage cooperation</span>
+        <span class="k">return</span> <span class="s2">&quot;I&#39;ll match your contribution level, but I prefer cooperation&quot;</span>
+</code></pre></div></p>
+<h3 id="coordination-games-aligning-on-technical-standards"><strong>Coordination Games: Aligning on Technical Standards</strong></h3>
+<p><strong>Problem</strong>: Multiple teams need to choose compatible technologies, but the specific choice matters less than alignment.</p>
+<p><strong>Example</strong>: Choosing between TypeScript and JavaScript for frontend development across the organization.</p>
+<p><strong>Game Theory Insight</strong>: This is a coordination game where aligned choices are better than misaligned ones, regardless of which specific choice is made.</p>
+<p><strong>Optimal Strategy</strong>:</p>
+<ol>
+<li><strong>Establish communication</strong> channels for coordination</li>
+<li><strong>Create focal points</strong> (industry standards, existing organizational choices)</li>
+<li><strong>Use commitment devices</strong> (public declarations of intent)</li>
+<li><strong>Build momentum</strong> around emerging consensus</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">TechnicalStandardCoordination</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">teams</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">teams</span> <span class="o">=</span> <span class="n">teams</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">preferences</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># Each team&#39;s technology preferences</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">commitments</span> <span class="o">=</span> <span class="p">{}</span>  <span class="c1"># Public commitments made</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">find_schelling_point</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c1"># Look for natural focal points for coordination</span>
+        <span class="n">industry_standard</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_industry_standard</span><span class="p">()</span>
+        <span class="n">existing_org_choice</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_current_org_standard</span><span class="p">()</span>
+        <span class="n">highest_preference</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_most_preferred_choice</span><span class="p">()</span>
+
+        <span class="c1"># Weight factors: existing momentum &gt; industry standard &gt; preferences</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate_schelling_point</span><span class="p">(</span>
+            <span class="n">industry_standard</span><span class="p">,</span> <span class="n">existing_org_choice</span><span class="p">,</span> <span class="n">highest_preference</span>
+        <span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">create_commitment_device</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">choice</span><span class="p">):</span>
+        <span class="c1"># Make public commitment to encourage others to coordinate</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Our team commits to </span><span class="si">{</span><span class="n">choice</span><span class="si">}</span><span class="s2"> for new projects starting </span><span class="si">{</span><span class="n">date</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<h3 id="auction-theory-resource-allocation-decisions"><strong>Auction Theory: Resource Allocation Decisions</strong></h3>
+<p><strong>Engineering Resource Allocation</strong>: When multiple projects compete for limited engineering resources (senior engineers, infrastructure budget, platform team support).</p>
+<p><strong>Vickrey Auction Principle</strong>: Each bidder submits sealed bids, highest bidder wins but pays the second-highest bid.</p>
+<p><strong>Why It's Optimal</strong>: Incentivizes truthful bidding about the real value of resources.</p>
+<p><strong>Engineering Application</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">EngineeringResourceAllocation</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">resource_requests</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">submit_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">project</span><span class="p">,</span> <span class="n">resource_type</span><span class="p">,</span> <span class="n">value_estimate</span><span class="p">,</span> <span class="n">justification</span><span class="p">):</span>
+        <span class="c1"># Projects submit their true valuation of resources</span>
+        <span class="k">return</span> <span class="p">{</span>
+            <span class="s1">&#39;project&#39;</span><span class="p">:</span> <span class="n">project</span><span class="p">,</span>
+            <span class="s1">&#39;resource&#39;</span><span class="p">:</span> <span class="n">resource_type</span><span class="p">,</span>
+            <span class="s1">&#39;value&#39;</span><span class="p">:</span> <span class="n">value_estimate</span><span class="p">,</span>  <span class="c1"># Business value if they get resources</span>
+            <span class="s1">&#39;justification&#39;</span><span class="p">:</span> <span class="n">justification</span><span class="p">,</span>
+            <span class="s1">&#39;opportunity_cost&#39;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">calculate_opportunity_cost</span><span class="p">(</span><span class="n">project</span><span class="p">)</span>
+        <span class="p">}</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">allocate_resources</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">requests</span><span class="p">):</span>
+        <span class="c1"># Sort by value density (value per unit resource)</span>
+        <span class="n">sorted_requests</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">requests</span><span class="p">,</span> 
+                               <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">r</span><span class="p">:</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;value&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">r</span><span class="p">[</span><span class="s1">&#39;resource_cost&#39;</span><span class="p">],</span> 
+                               <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+        <span class="c1"># Allocate to highest value projects until resources exhausted</span>
+        <span class="n">allocated</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">remaining_resources</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_resources</span>
+
+        <span class="k">for</span> <span class="n">request</span> <span class="ow">in</span> <span class="n">sorted_requests</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">request</span><span class="p">[</span><span class="s1">&#39;resource_cost&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">remaining_resources</span><span class="p">:</span>
+                <span class="n">allocated</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+                <span class="n">remaining_resources</span> <span class="o">-=</span> <span class="n">request</span><span class="p">[</span><span class="s1">&#39;resource_cost&#39;</span><span class="p">]</span>
+
+        <span class="k">return</span> <span class="n">allocated</span>
+</code></pre></div></p>
+<p><strong>Key Insights for Staff Engineers</strong>:</p>
+<ul>
+<li><strong>Make resource requests transparent</strong> to encourage honest valuation</li>
+<li><strong>Use objective value metrics</strong> where possible (user impact, revenue, cost savings)</li>
+<li><strong>Account for opportunity costs</strong> in resource allocation decisions</li>
+<li><strong>Create mechanisms for continuous reallocation</strong> as priorities change</li>
+</ul>
+<hr />
+<h2 id="practical-implementation-your-algorithmic-decision-making-toolkit">Practical Implementation: Your Algorithmic Decision-Making Toolkit</h2>
+<h3 id="the-decision-making-framework-integration"><strong>The Decision-Making Framework Integration</strong></h3>
+<p>Combine multiple algorithmic approaches into a systematic decision-making process:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">AlgorithmicDecisionFramework</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">context</span> <span class="o">=</span> <span class="n">context</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">time_pressure</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">urgency_level</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stakeholder_count</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">context</span><span class="o">.</span><span class="n">stakeholders</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reversibility</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">decision_reversibility</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">make_decision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">,</span> <span class="n">constraints</span><span class="p">):</span>
+        <span class="c1"># Step 1: Determine if this is explore vs exploit</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">should_explore_more</span><span class="p">(</span><span class="n">options</span><span class="p">):</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">exploration_strategy</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+        <span class="c1"># Step 2: Apply optimal stopping rule</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_sufficient_information</span><span class="p">():</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stopping_decision</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+        <span class="c1"># Step 3: Consider game theory aspects</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">stakeholder_count</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">strategic_decision</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+        <span class="c1"># Step 4: Apply scheduling optimization</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">scheduling_optimized_decision</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">exploration_strategy</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="c1"># Apply explore-exploit with UCB</span>
+        <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="o">.</span><span class="n">estimated_value</span> <span class="o">+</span> <span class="n">o</span><span class="o">.</span><span class="n">uncertainty</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">stopping_decision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="c1"># Apply 37% rule or diminishing returns analysis</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluation_time</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">total_time</span> <span class="o">*</span> <span class="mf">0.37</span><span class="p">:</span>
+            <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">o</span><span class="p">:</span> <span class="n">o</span><span class="o">.</span><span class="n">estimated_value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="kc">None</span>  <span class="c1"># Continue evaluating</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">strategic_decision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="c1"># Consider stakeholder incentives and coordination needs</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">find_nash_equilibrium</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">scheduling_optimized_decision</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">options</span><span class="p">):</span>
+        <span class="c1"># Consider deadlines and dependencies</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_hard_deadlines</span><span class="p">():</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">earliest_deadline_first</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">shortest_processing_time</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="algorithmic-decision-patterns-for-common-engineering-scenarios"><strong>Algorithmic Decision Patterns for Common Engineering Scenarios</strong></h3>
+<h4 id="technology-selection"><strong>Technology Selection</strong></h4>
+<ol>
+<li><strong>Exploration phase</strong> (37% of allocated time): Research options, build proof-of-concepts</li>
+<li><strong>Evaluation criteria</strong>: Performance, learning curve, ecosystem, future roadmap</li>
+<li><strong>Stopping rule</strong>: When marginal information gain &lt; time cost</li>
+<li><strong>Caching strategy</strong>: Document evaluation for future similar decisions</li>
+</ol>
+<h4 id="architecture-design"><strong>Architecture Design</strong></h4>
+<ol>
+<li><strong>Game theory check</strong>: Who are the stakeholders? What are their incentives?</li>
+<li><strong>Optimal stopping</strong>: How much design is enough before implementation feedback?</li>
+<li><strong>Scheduling optimization</strong>: What's the critical path through design → implementation → validation?</li>
+<li><strong>Explore-exploit</strong>: New patterns vs. proven approaches?</li>
+</ol>
+<h4 id="team-and-resource-planning"><strong>Team and Resource Planning</strong></h4>
+<ol>
+<li><strong>Coordination game</strong>: How do we align multiple teams on shared goals?</li>
+<li><strong>Resource allocation</strong>: What's the most efficient distribution of engineering effort?</li>
+<li><strong>Scheduling</strong>: How do we optimize for both individual and team throughput?</li>
+<li><strong>Caching</strong>: What knowledge and context need to be readily available?</li>
+</ol>
+<h3 id="building-your-algorithmic-intuition"><strong>Building Your Algorithmic Intuition</strong></h3>
+<p><strong>Daily Practice</strong>:</p>
+<ul>
+<li><strong>Morning planning</strong>: Apply shortest-job-first to your daily task list</li>
+<li><strong>Decision logging</strong>: Record which algorithmic principles you applied and their outcomes</li>
+<li><strong>Context switching</strong>: Use LRU principles to organize your information environment</li>
+<li><strong>Meeting efficiency</strong>: Apply optimal stopping to discussions and research</li>
+</ul>
+<p><strong>Weekly Review</strong>:</p>
+<ul>
+<li><strong>Explore-exploit balance</strong>: How much time did you spend on exploration vs. exploitation?</li>
+<li><strong>Stopping decisions</strong>: Did you gather information for the right amount of time?</li>
+<li><strong>Coordination effectiveness</strong>: How well did you align with stakeholders?</li>
+<li><strong>Resource allocation</strong>: Were your time and attention optimally distributed?</li>
+</ul>
+<p><strong>Monthly Assessment</strong>:</p>
+<ul>
+<li><strong>Decision quality</strong>: Which algorithmic approaches led to better outcomes?</li>
+<li><strong>Pattern recognition</strong>: What types of decisions benefit most from systematic approaches?</li>
+<li><strong>Stakeholder feedback</strong>: How did strategic thinking improve your relationships and outcomes?</li>
+<li><strong>Knowledge caching</strong>: How effectively are you managing your learning and information?</li>
+</ul>
+<hr />
+<h2 id="the-meta-algorithm-when-and-how-to-apply-algorithmic-thinking">The Meta-Algorithm: When and How to Apply Algorithmic Thinking</h2>
+<p>The most important algorithmic decision is <strong>when to use algorithmic thinking</strong> versus when to rely on intuition, experience, or other approaches.</p>
+<h3 id="algorithmic-thinking-is-most-valuable-when"><strong>Algorithmic Thinking Is Most Valuable When</strong>:</h3>
+<ul>
+<li><strong>High stakes decisions</strong> → The cost of being wrong is significant</li>
+<li><strong>Repeated decision types</strong> → You'll face similar decisions again  </li>
+<li><strong>Multiple valid options</strong> → No obviously correct choice</li>
+<li><strong>Time pressure</strong> → Need efficient decision-making process</li>
+<li><strong>Multiple stakeholders</strong> → Strategic considerations matter</li>
+<li><strong>Uncertain outcomes</strong> → Probabilistic thinking helps</li>
+<li><strong>Resource constraints</strong> → Optimization provides clear value</li>
+</ul>
+<h3 id="intuitive-thinking-is-better-when"><strong>Intuitive Thinking Is Better When</strong>:</h3>
+<ul>
+<li><strong>Unique, one-off decisions</strong> → No pattern to optimize</li>
+<li><strong>Clear optimal choices</strong> → Algorithm would reach same conclusion</li>
+<li><strong>Creative problems</strong> → Need novel solutions, not optimal ones</li>
+<li><strong>Human relationship issues</strong> → Emotional intelligence trumps optimization</li>
+<li><strong>Rapid response needed</strong> → No time for systematic analysis</li>
+<li><strong>High context dependency</strong> → Algorithms can't capture all nuances</li>
+</ul>
+<h3 id="the-hybrid-approach"><strong>The Hybrid Approach</strong>:</h3>
+<p>Most real engineering decisions benefit from <strong>combining algorithmic thinking with human judgment</strong>:</p>
+<ol>
+<li><strong>Use algorithms to structure the problem</strong> and identify key trade-offs</li>
+<li><strong>Apply intuition and experience</strong> to weight factors the algorithm can't capture</li>
+<li><strong>Validate intuitive decisions</strong> against algorithmic analysis</li>
+<li><strong>Use systematic approaches</strong> to avoid known cognitive biases</li>
+</ol>
+<p><strong>Example - Hybrid Architecture Decision</strong>:
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">hybrid_architecture_decision</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="c1"># Algorithmic analysis</span>
+    <span class="n">algorithmic_ranking</span> <span class="o">=</span> <span class="n">evaluate_with_algorithms</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+
+    <span class="c1"># Intuitive assessment  </span>
+    <span class="n">intuitive_ranking</span> <span class="o">=</span> <span class="n">team_experience_evaluation</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>
+
+    <span class="c1"># Stakeholder considerations</span>
+    <span class="n">strategic_ranking</span> <span class="o">=</span> <span class="n">game_theory_analysis</span><span class="p">(</span><span class="n">options</span><span class="p">,</span> <span class="n">context</span><span class="o">.</span><span class="n">stakeholders</span><span class="p">)</span>
+
+    <span class="c1"># Synthesize approaches</span>
+    <span class="k">return</span> <span class="n">synthesize_rankings</span><span class="p">(</span>
+        <span class="n">algorithmic</span><span class="o">=</span><span class="n">algorithmic_ranking</span><span class="p">,</span>
+        <span class="n">intuitive</span><span class="o">=</span><span class="n">intuitive_ranking</span><span class="p">,</span> 
+        <span class="n">strategic</span><span class="o">=</span><span class="n">strategic_ranking</span><span class="p">,</span>
+        <span class="n">weights</span><span class="o">=</span><span class="n">determine_weights</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div></p>
+<hr />
+<h2 id="the-compound-effect-building-systematic-decision-making-capability">The Compound Effect: Building Systematic Decision-Making Capability</h2>
+<p>The goal isn't to become a decision-making robot. <strong>The goal is to develop better judgment by understanding the mathematical principles underlying good decisions.</strong></p>
+<p>When you internalize these algorithmic approaches, you gain:</p>
+<ul>
+<li><strong>Better calibration</strong> → Your confidence in decisions matches their actual quality</li>
+<li><strong>Faster decisions</strong> → Systematic approaches cut through analysis paralysis</li>
+<li><strong>More consistent outcomes</strong> → Reduce the variance in your decision quality</li>
+<li><strong>Clearer communication</strong> → Explain your reasoning in terms others can follow</li>
+<li><strong>Reduced regret</strong> → Confidence that you followed optimal processes</li>
+<li><strong>Transferable skills</strong> → Apply proven approaches to novel problems</li>
+</ul>
+<p><strong>Algorithmic thinking becomes most powerful when it's internalized as enhanced intuition.</strong> You're not mechanically applying formulas—you're using mathematical insights to guide your natural problem-solving abilities.</p>
+<p>This is how Staff Engineers develop the judgment to make complex decisions quickly and confidently, even under uncertainty and pressure. <strong>You're not just choosing between options—you're choosing the best process for choosing, based on proven optimal strategies.</strong></p>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>Core Algorithmic Decision-Making</strong>:</p>
+<ul>
+<li>Christian, Brian, and Tom Griffiths. <em>Algorithms to Live By: The Computer Science of Human Decisions</em>. 2016.</li>
+<li>Cormen, Thomas H., et al. <em>Introduction to Algorithms</em>. 2009.</li>
+</ul>
+<p><strong>Game Theory and Strategic Thinking</strong>:</p>
+<ul>
+<li>Dixit, Avinash, and Barry Nalebuff. <em>The Art of Strategy: A Game Theorist's Guide to Success</em>. 2008.</li>
+<li>Harford, Tim. <em>The Logic of Life: The Rational Economics of an Irrational World</em>. 2008.</li>
+</ul>
+<p><strong>Decision Science and Behavioral Economics</strong>:</p>
+<ul>
+<li>Kahneman, Daniel. <em>Thinking, Fast and Slow</em>. 2011.</li>
+<li>Thaler, Richard H., and Cass R. Sunstein. <em>Nudge: Improving Decisions About Health, Wealth, and Happiness</em>. 2008.</li>
+</ul>
+<p><strong>Systems and Optimization</strong>:</p>
+<ul>
+<li>Meadows, Donella. <em>Thinking in Systems: A Primer</em>. 2008.</li>
+<li>Silver, Nate. <em>The Signal and the Noise: Why So Many Predictions Fail — but Some Don't</em>. 2012.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../mental-models/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Mental Models for Engineers">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Mental Models for Engineers
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cognitive-biases/" class="md-footer__link md-footer__link--next" aria-label="Next: Cognitive Biases">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cognitive Biases
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

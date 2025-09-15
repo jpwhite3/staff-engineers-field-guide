@@ -1,0 +1,1070 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Staff Engineer Competency Assessment Framework - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#staff-engineer-competency-assessment-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Staff Engineer Competency Assessment Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="staff-engineer-competency-assessment-framework">Staff Engineer Competency Assessment Framework</h1>
+<h2 id="introduction-your-technical-leadership-journey">Introduction: Your Technical Leadership Journey</h2>
+<p>The path from senior engineer to staff engineer isn't just about writing more complex code or understanding deeper technical concepts. It's a fundamental shift from optimizing individual contribution to amplifying organizational capability—from solving technical problems to solving the human and systemic challenges that prevent teams from solving technical problems effectively.</p>
+<p>This transformation requires developing capabilities that most engineering education and early career experiences don't explicitly teach: strategic thinking that connects technical decisions to business outcomes, influence skills that work without formal authority, communication abilities that bridge technical depth with stakeholder needs, and systems thinking that sees beyond code to the complex interactions between people, processes, and technology.</p>
+<p>This comprehensive assessment framework recognizes that technical leadership operates across multiple interconnected domains. Unlike generic leadership assessments that might work for any professional context, every dimension evaluated here reflects the specific challenges that senior individual contributors face: architecting systems that balance technical excellence with business constraints, building technical capability across teams while remaining individually productive, and navigating the organizational complexity that emerges as systems and teams scale.</p>
+<p>The assessment evaluates six core domains that research and practice have identified as essential for technical leadership effectiveness. Each domain builds on the others—strong technical architecture capabilities support strategic thinking, influence skills enable better communication, and critical thinking improves decision-making across all areas. Understanding your current capabilities across these domains provides a foundation for targeted development that maximizes your impact and career growth.</p>
+<div class="admonition info">
+<p class="admonition-title">How to Use This Assessment</p>
+</div>
+<p>The value of this assessment comes not from achieving perfect scores, but from honest self-reflection that guides continuous improvement. Answer based on your current demonstrated capabilities, not your aspirations or theoretical knowledge. Consider concrete evidence from your recent work—specific projects, decisions, interactions, and outcomes from the past six months. Use the results as a baseline for development planning, focusing on the 1-2 areas that will have the highest impact on your effectiveness in your current role and career goals. Revisit the assessment quarterly to track progress and adjust your development focus as your role and organizational context evolve.</p>
+<h2 id="interactive-competency-assessment">Interactive Competency Assessment</h2>
+<p>Use the tabs below to navigate through the six core domains of staff engineer competency. Each domain includes self-assessment scales, evidence questions, and development guidance.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Technical Excellence</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<h1 id="domain-1-technical-architecture-engineering-excellence"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 2a2 2 0 0 0-2 2 2 2 0 0 0 2 2 2 2 0 0 0 2-2 2 2 0 0 0-2-2m-2 12c-.25 0-.46-.18-.5-.42l-.37-2.65c-.63-.25-1.17-.59-1.69-.99l-2.49 1.01c-.22.08-.49 0-.61-.22l-2-3.46a.493.493 0 0 1 .12-.64l2.11-1.66L4.5 12l.07-1-2.11-1.63a.493.493 0 0 1-.12-.64l2-3.46c.12-.22.39-.31.61-.22l2.49 1c.52-.39 1.06-.73 1.69-.98l.37-2.65c.04-.24.25-.42.5-.42h4c.25 0 .46.18.5.42l.37 2.65c.63.25 1.17.59 1.69.98l2.49-1c.22-.09.49 0 .61.22l2 3.46c.13.22.07.49-.12.64L19.43 11l.07 1-.07 1 2.11 1.63c.19.15.25.42.12.64l-2 3.46c-.12.22-.39.31-.61.22l-2.49-1c-.52.39-1.06.73-1.69.98l-.37 2.65c-.04.24-.25.42-.5.42zm1.25-18-.37 2.61c-1.2.25-2.26.89-3.03 1.78L5.44 7.35l-.75 1.3L6.8 10.2a5.55 5.55 0 0 0 0 3.6l-2.12 1.56.75 1.3 2.43-1.04c.77.88 1.82 1.52 3.01 1.76l.37 2.62h1.52l.37-2.61c1.19-.25 2.24-.89 3.01-1.77l2.43 1.04.75-1.3-2.12-1.55c.4-1.17.4-2.44 0-3.61l2.11-1.55-.75-1.3-2.41 1.04a5.42 5.42 0 0 0-3.03-1.77L12.75 4z"/></svg></span> Domain 1: Technical Architecture &amp; Engineering Excellence</h1>
+<p>Master the technical foundation that enables all other aspects of staff engineering leadership through clean architecture, operational excellence, and delivery practices.</p>
+</div>
+</div>
+</div>
+<div class="admonition question">
+<p class="admonition-title">1.1 Clean Architecture &amp; System Design</p>
+<p><strong>Self-Assessment Scale:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Capability</th>
+<th style="text-align: center;">Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Novice (1)</strong></td>
+<td>Implement features within existing patterns</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Developing (2)</strong></td>
+<td>Design individual services with clean principles</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Proficient (3)</strong></td>
+<td>Design system-wide architectures balancing excellence with business needs</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Advanced (4)</strong></td>
+<td>Influence multi-team decisions and refactor complex systems</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Expert (5)</strong></td>
+<td>Set organizational standards and mentor architectural thinking</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current Level: 3/5</strong> - Proficient</p>
+<details class="example">
+<summary>Evidence Questions</summary>
+<ul>
+<li>Have you designed or influenced a system architecture decision recently?</li>
+<li>Can you give examples of applying clean architecture to solve business problems?</li>
+<li>How do you balance technical perfection with delivery timelines?</li>
+</ul>
+</details>
+</div>
+<div class="admonition question">
+<p class="admonition-title">1.2 Site Reliability &amp; Operations Excellence</p>
+<p><strong>Self-Assessment Scale:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Capability</th>
+<th style="text-align: center;">Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Novice (1)</strong></td>
+<td>Monitor and debug applications in production</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Developing (2)</strong></td>
+<td>Design basic observability and establish SLIs</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Proficient (3)</strong></td>
+<td>Establish comprehensive SLO frameworks and lead incident response</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Advanced (4)</strong></td>
+<td>Design resilience patterns and drive operational excellence</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Expert (5)</strong></td>
+<td>Establish organization-wide reliability practices</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current Level: 2/5</strong> - Developing</p>
+<details class="example">
+<summary>Evidence Questions</summary>
+<ul>
+<li>How do you approach setting SLOs for technical systems?</li>
+<li>Can you describe an incident you led and what changes resulted?</li>
+<li>How do you balance reliability investment with feature development?</li>
+</ul>
+</details>
+</div>
+<div class="admonition question">
+<p class="admonition-title">1.3 Continuous Delivery &amp; DevOps Culture</p>
+<p><strong>Self-Assessment Scale:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Capability</th>
+<th style="text-align: center;">Current</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Novice (1)</strong></td>
+<td>Use existing CI/CD pipelines for deployments</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Developing (2)</strong></td>
+<td>Design deployment pipelines for individual services</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Proficient (3)</strong></td>
+<td>Establish comprehensive testing strategies and deployment practices</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+<tr>
+<td><strong>Advanced (4)</strong></td>
+<td>Design organization-wide delivery practices and cultural transformation</td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><strong>Expert (5)</strong></td>
+<td>Transform organizational delivery capabilities and culture</td>
+<td style="text-align: center;">⚪</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Current Level: 4/5</strong> - Advanced</p>
+</div>
+<p>□ Expert (5): I influence industry practices and drive delivery performance improvements</p>
+<div class="highlight"><pre><span></span><code>=== &quot;Strategic Thinking&quot;
+
+    # :material-strategy: Domain 2: Strategic Thinking &amp; Business Alignment
+
+    Connect technical decisions to business outcomes and develop strategic thinking that guides architectural and organizational choices.
+
+!!! question &quot;2.1 Strategic Technical Decision Making&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | Execute technical projects with clear requirements | ⚪ |
+    | **Developing (2)** | Connect technical work to team goals and business impact | ⚪ |
+    | **Proficient (3)** | Identify technical opportunities that drive business outcomes | ⚪ |
+    | **Advanced (4)** | Influence product and business strategy through technical insights | ✅ |
+    | **Expert (5)** | Shape company strategy and identify new business opportunities | ⚪ |
+
+    **Current Level: 4/5** - Advanced
+
+    ??? example &quot;Evidence Questions&quot;
+        - How do you prioritize competing technical initiatives?
+        - Can you give an example of a technical decision that significantly impacted business outcomes?
+        - How do you communicate technical strategy to non-technical stakeholders?
+
+!!! question &quot;2.2 OKR Development &amp; Strategic Alignment&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | Contribute to team OKRs and understand their purpose | ⚪ |
+    | **Developing (2)** | Write technical OKRs that connect to business objectives | ⚪ |
+    | **Proficient (3)** | Cascade strategy through technical layers and measure outcomes | ✅ |
+    | **Advanced (4)** | Design OKR frameworks aligning engineering with business strategy | ⚪ |
+    | **Expert (5)** | Influence company-wide goal-setting and strategic measurement | ⚪ |
+
+    **Current Level: 3/5** - Proficient
+
+=== &quot;Leadership Impact&quot;
+
+    # :material-account-group: Domain 3: Leadership &amp; Influence
+
+    Develop the ability to influence without formal authority and lead technical initiatives that span multiple teams and organizational boundaries.
+
+!!! question &quot;3.1 Influencing Without Authority&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can advocate for technical approaches within my team | ⚪ |
+    | **Developing (2)** | I can build support for technical initiatives across multiple stakeholders | ⚪ |
+    | **Proficient (3)** | I can influence technical decisions across teams using evidence and relationships | ⚪ |
+    | **Advanced (4)** | I can drive organizational technical transformation through influence and coalition building | ⚪ |
+    | **Expert (5)** | I regularly influence industry practices and set technical direction for multiple organizations | ⚪ |
+
+    ??? example &quot;Evidence Questions&quot;
+        - Describe a time you influenced a significant technical decision without having direct authority
+        - How do you build coalitions to support technical initiatives?
+        - What techniques do you use to persuade skeptical stakeholders?
+
+!!! question &quot;3.2 Advanced Conflict Resolution&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can participate constructively in technical disagreements | ⚪ |
+    | **Developing (2)** | I can facilitate resolution of technical conflicts within my team | ⚪ |
+    | **Proficient (3)** | I can mediate complex technical disputes across teams and resolve underlying issues | ⚪ |
+    | **Advanced (4)** | I can transform organizational conflict patterns and establish better decision-making processes | ⚪ |
+    | **Expert (5)** | I&#39;m regularly called upon to resolve high-stakes technical and organizational conflicts | ⚪ |
+
+!!! question &quot;3.3 Mentorship &amp; Career Development&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can provide technical guidance to junior engineers on my team | ⚪ |
+    | **Developing (2)** | I can mentor engineers in technical skills and career development | ⚪ |
+    | **Proficient (3)** | I can develop systematic mentorship programs and career progression frameworks | ⚪ |
+    | **Advanced (4)** | I can design organization-wide talent development systems | ⚪ |
+    | **Expert (5)** | I influence industry practices for technical talent development | ⚪ |
+
+=== &quot;Communication Skills&quot;
+
+    # :material-forum: Domain 4: Communication &amp; Collaboration
+
+    Master the communication skills that enable technical leaders to bridge technical depth with stakeholder needs across organizational levels.
+
+!!! question &quot;4.1 Technical Communication Excellence&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can explain technical concepts clearly to other engineers | ⚪ |
+    | **Developing (2)** | I can write technical documentation and present to mixed audiences | ⚪ |
+    | **Proficient (3)** | I can tailor technical communication to different audiences and drive understanding | ⚪ |
+    | **Advanced (4)** | I can influence technical decisions through exceptional communication and storytelling | ⚪ |
+    | **Expert (5)** | My technical communication regularly influences industry practices and standards | ⚪ |
+
+!!! question &quot;4.2 Cross-Cultural &amp; Remote Collaboration&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can work effectively with teammates from different backgrounds | ⚪ |
+    | **Developing (2)** | I can adapt my communication style for different cultural contexts | ⚪ |
+    | **Proficient (3)** | I can lead global teams and create inclusive collaboration practices | ⚪ |
+    | **Advanced (4)** | I can design organizational practices that leverage cultural diversity | ⚪ |
+    | **Expert (5)** | I influence industry practices for global technical collaboration | ⚪ |
+
+!!! question &quot;4.3 Difficult Conversations &amp; Feedback&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can give and receive technical feedback constructively | ⚪ |
+    | **Developing (2)** | I can navigate difficult technical conversations and deliver challenging messages | ⚪ |
+    | **Proficient (3)** | I can transform conflict into learning opportunities and build stronger relationships | ⚪ |
+    | **Advanced (4)** | I can coach others in difficult conversation skills and improve team dynamics | ⚪ |
+    | **Expert (5)** | I design organizational practices that transform how teams handle difficult conversations | ⚪ |
+
+=== &quot;Team Excellence&quot;
+
+    # :material-sitemap: Domain 5: Organizational Design &amp; Team Effectiveness
+
+    Apply organizational design principles to build high-performing teams and optimize the sociotechnical systems that drive engineering productivity.
+
+!!! question &quot;5.1 Team Topology &amp; Organizational Design&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I understand how my team fits into the larger organization | ⚪ |
+    | **Developing (2)** | I can identify team interaction problems and suggest improvements | ⚪ |
+    | **Proficient (3)** | I can design team structures that enable effective delivery and collaboration | ⚪ |
+    | **Advanced (4)** | I can lead organizational design transformation and establish effective team patterns | ⚪ |
+    | **Expert (5)** | I influence industry practices for engineering organizational design | ⚪ |
+
+!!! question &quot;5.2 Psychological Safety &amp; Culture&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I contribute to a positive team culture and psychological safety | ⚪ |
+    | **Developing (2)** | I can identify and address team culture issues within my group | ⚪ |
+    | **Proficient (3)** | I can build psychologically safe environments and lead cultural transformation | ⚪ |
+    | **Advanced (4)** | I can design organization-wide culture initiatives and measure their impact | ⚪ |
+    | **Expert (5)** | I influence industry practices for engineering culture and psychological safety | ⚪ |
+
+=== &quot;Decision Making&quot;
+
+    # :material-brain: Domain 6: Critical Thinking &amp; Decision Making
+
+    Develop systematic approaches to complex technical decisions using frameworks that balance analytical rigor with practical constraints.
+
+!!! question &quot;6.1 Systems Thinking &amp; Complex Problem Solving&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can analyze technical problems and identify solutions | ⚪ |
+    | **Developing (2)** | I can identify system-level patterns and unintended consequences | ⚪ |
+    | **Proficient (3)** | I can design interventions that address root causes rather than symptoms | ⚪ |
+    | **Advanced (4)** | I can facilitate organizational learning and design better decision-making systems | ⚪ |
+    | **Expert (5)** | I influence how organizations think about complex technical and business problems | ⚪ |
+
+!!! question &quot;6.2 Cognitive Bias Awareness &amp; Decision Quality&quot;
+
+    **Self-Assessment Scale:**
+
+    | Level | Capability | Current |
+    |-------|------------|:-------:|
+    | **Novice (1)** | I can make technical decisions using available information | ⚪ |
+    | **Developing (2)** | I can identify when I might have incomplete information or bias | ⚪ |
+    | **Proficient (3)** | I can design decision processes that account for uncertainty and bias | ⚪ |
+    | **Advanced (4)** | I can coach others in decision-making quality and establish better organizational practices | ⚪ |
+    | **Expert (5)** | I influence industry practices for technical decision-making under uncertainty | ⚪ |
+
+## Assessment Progress Tracker
+
+Use this framework to track your development over time and identify high-impact growth opportunities.
+
+### Overall Competency Profile
+
+| Domain | Current Level | Target Level | Priority | Development Focus |
+| :--- | :---: | :---: | :---: | :--- |
+| **Technical Excellence** | _/5 | _/5 | High/Medium/Low | Architecture, SRE, or Delivery |
+| **Strategic Thinking** | _/5 | _/5 | High/Medium/Low | Business alignment, Vision, or Decision-making |
+| **Leadership Impact** | _/5 | _/5 | High/Medium/Low | Influence, Mentoring, or Team building |
+| **Communication Skills** | _/5 | _/5 | High/Medium/Low | Technical writing, Presentations, or Stakeholder management |
+| **Team Excellence** | _/5 | _/5 | High/Medium/Low | Organizational design, Culture, or Collaboration |
+| **Decision Making** | _/5 | _/5 | High/Medium/Low | Frameworks, Analysis, or Judgment |
+
+!!! tip &quot;Progress Tracking Guidelines&quot;
+    **Quarterly Review Cycle**: Reassess every 3 months to track genuine capability development rather than temporary project outcomes. **Focus on 1-2 Domains**: Concentrate development effort on the highest-impact areas rather than trying to improve everything simultaneously. **Evidence-Based Assessment**: Base level ratings on concrete examples and measurable outcomes from your recent work, not self-perception or aspirational goals.
+
+## Competency Scoring &amp; Interpretation
+
+### Individual Domain Scores
+**Calculate your average score for each domain (1-5 scale):**
+
+- Domain 1 (Technical Architecture): ___/5
+- Domain 2 (Strategic Thinking): ___/5
+- Domain 3 (Leadership &amp; Influence): ___/5
+- Domain 4 (Communication): ___/5
+- Domain 5 (Organizational Design): ___/5
+- Domain 6 (Critical Thinking): ___/5
+
+**Overall Technical Leadership Score: ___/5**
+
+### Interpretation Guidelines
+
+Understanding your assessment results requires recognizing that technical leadership development is not a linear progression but rather a complex journey of building interconnected capabilities. The levels described below represent characteristic patterns of impact and approach rather than rigid categories, and most experienced technical leaders will find themselves at different levels across different domains based on their experience, organizational context, and career focus.
+
+**Novice (1.0-1.9): Developing Foundation**
+At this stage, you&#39;re transitioning from individual contributor excellence to understanding the broader scope of technical leadership. The key insight is that trying to improve everywhere simultaneously often leads to mediocre progress across all areas. Instead, focus on mastering fundamental competencies in 2-3 domains that are most critical for your current role effectiveness. This might mean deeply developing your architectural thinking if you&#39;re working on complex system design, or focusing on influence and communication skills if you&#39;re trying to drive adoption of technical practices across teams.
+
+The most effective development approach involves finding mentors who demonstrate excellence in your priority areas and actively seeking stretch assignments that require you to practice specific skills in real-world contexts. This isn&#39;t about reading about leadership—it&#39;s about progressively taking on more complex challenges that demand the capabilities you&#39;re trying to build. Your learning should be anchored in concrete experience, supported by foundational reading and reflection on both successes and failures.
+
+**Developing (2.0-2.9): Building Capability**
+Your solid foundations enable you to take on broader leadership responsibilities, but the key developmental challenge is expanding your impact beyond your immediate team context. This requires shifting from reactive problem-solving to proactive initiative-taking, from working within existing systems to improving the systems themselves, and from focusing on individual technical excellence to building technical capability across multiple people.
+
+Success at this level means developing systematic approaches to recurring problems rather than solving each instance independently. Whether it&#39;s establishing code review standards, improving deployment processes, or facilitating cross-team technical decisions, you&#39;re beginning to think about creating lasting improvements rather than point solutions. This is also where building your reputation through consistent technical excellence becomes important—your growing influence depends on others trusting your technical judgment and implementation capabilities.
+
+**Proficient (3.0-3.9): Strong Technical Leader**
+As an effective staff-level technical leader, your impact extends beyond immediate technical contributions to include systemic organizational improvements. The distinguishing characteristic at this level is your ability to scale your impact through creating systems, processes, and capabilities that enable others to be more effective. This might involve designing architectural patterns that multiple teams can adopt, establishing technical practices that improve organizational capability, or mentoring individuals who then multiply your impact through their own contributions.
+
+Your development focus shifts toward driving initiatives that have lasting organizational impact—changes that continue to generate value even when you&#39;re not directly involved. This requires sophisticated understanding of how technical decisions connect to business outcomes, how to navigate organizational dynamics to implement change, and how to build consensus around complex technical directions. Contributing to industry knowledge through writing, speaking, or open source work becomes valuable both for establishing your expertise and for refining your own thinking through external engagement.
+
+**Advanced (4.0-4.9): Senior Technical Leader**
+Operating at principal or distinguished engineer level means your influence extends beyond your immediate organization to shape industry practices and technical direction. The key capability at this level is driving transformation initiatives that create lasting change in how organizations approach technical challenges, whether through establishing new patterns that others adopt, contributing to standards and practices that influence broader industry approaches, or building technical leadership capabilities across multiple organizations.
+
+Your development focus expands to establishing yourself as a recognized expert in specific domains where your unique perspective and experience can contribute to advancing the state of practice. This requires not just technical depth but also the communication and influence skills necessary to shape how other technical leaders think about complex problems. The most effective senior technical leaders combine deep domain expertise with broad systems thinking that helps them identify leverage points for industry-wide improvement.
+
+**Expert (5.0): Industry Technical Leader**
+At the highest level, you&#39;re influencing industry-wide practices and setting technical direction that affects how the entire field approaches certain classes of problems. This level of impact requires not just individual excellence but also the ability to develop the next generation of technical leaders who can continue pushing the boundaries of what&#39;s possible.
+
+Your focus shifts toward contributing to fundamental advances in technical leadership practices—developing new frameworks, approaches, or insights that change how technical leaders think about their role and responsibilities. This might involve research that advances understanding of how technical and organizational systems interact, establishing new practices that other organizations adopt, or creating educational content that shapes how future technical leaders develop their capabilities. The ultimate measure of success at this level is leaving a lasting impact on the technology industry that continues to generate value long after your direct involvement.
+
+## Development Planning Framework
+
+Effective technical leadership development requires strategic thinking about where to invest your limited time and energy. Unlike individual contributor skill development, which often follows predictable technical learning paths, leadership development is highly contextual and depends on your current role requirements, career aspirations, organizational dynamics, and personal strengths and interests.
+
+The most successful technical leaders approach their development with the same systematic thinking they apply to technical problems: they identify the highest-impact opportunities, understand the interdependencies between different capabilities, and create focused plans that build momentum through early wins while working toward longer-term objectives.
+
+### Priority Setting Matrix
+
+Rather than trying to improve across all domains simultaneously, effective development focuses on the areas that will generate the highest return on investment in your specific context. This prioritization framework helps you identify where to focus your energy based on both impact potential and urgency of need.
+
+**High Impact, High Urgency (Do First):**
+These represent your most critical development opportunities—areas where improvement will immediately enhance your effectiveness and where gaps are currently limiting your impact. Domains scoring below 2.0 that are essential for your current role fall into this category, as do specific skills gaps that you&#39;ve identified as blocking your ability to deliver on current responsibilities. Focus no more than 1-2 development areas in this quadrant to ensure you can make meaningful progress rather than spreading your efforts too thin.
+
+**High Impact, Low Urgency (Schedule):**
+These areas represent strategic investments in your future effectiveness—capabilities that will become increasingly important as you take on broader responsibilities or move toward your next career stage. Domains scoring 2.0-3.0 that align with your career goals typically fit here, along with skills that are important for roles you&#39;re preparing to take on. While these don&#39;t require immediate attention, scheduling regular progress on these areas prevents them from becoming urgent gaps later and positions you for advancement opportunities.
+
+**Low Impact, High Urgency (Delegate/Minimize):**
+These areas often represent tasks or expectations that feel pressing but don&#39;t significantly contribute to your long-term effectiveness as a technical leader. This might include skills that others on your team can handle more effectively, or areas where achieving &quot;good enough&quot; performance is sufficient for your current needs. The key insight is that investing significant development energy in these areas prevents you from focusing on higher-impact opportunities.
+
+**Low Impact, Low Urgency (Eliminate):**
+These represent capabilities that are not relevant to your current or future roles, or areas where you&#39;ve already developed sufficient strength. While it can be tempting to continue improving areas where you already excel, focusing on these areas often provides diminishing returns compared to developing new capabilities that expand your impact potential. The discipline of explicitly eliminating certain development areas helps ensure your energy goes toward maximum-impact opportunities.
+
+### 90-Day Development Plan Template
+
+The most effective leadership development happens through deliberate practice in real-world contexts rather than purely theoretical learning. This template helps you create a focused plan that combines learning input with practical application, ensuring that your development efforts translate into demonstrable capability improvements.
+
+**Primary Focus Area:** [Choose 1-2 domains from assessment]
+*Resist the temptation to work on everything simultaneously. Deep development in 1-2 areas will generate more impact than superficial improvement across many areas.*
+
+**Development Goal:** [Specific, measurable improvement target]
+*Frame this in terms of observable behaviors or outcomes rather than knowledge acquisition. For example: &quot;Lead a cross-team technical decision process that results in clear architectural direction and stakeholder alignment&quot; rather than &quot;Learn about architectural decision-making.&quot;*
+
+**Learning Activities:**
+The goal of learning activities is to provide frameworks and mental models that inform your practice, not to accumulate knowledge for its own sake. Choose resources that connect directly to your development focus:
+
+| Resource Type | Specific Items | Priority |
+|---------------|----------------|----------|
+| Field guide chapters | ___ | High/Medium/Low |
+| Books to read | ___ | High/Medium/Low |
+| Skills to practice | ___ | High/Medium/Low |
+
+**Application Opportunities:**
+Development happens through progressively challenging real-world application. Identify specific contexts where you can practice your target capabilities with appropriate support and feedback:
+
+| Opportunity Type | Specific Actions | Timeline |
+|------------------|------------------|----------|
+| Projects to volunteer for | ___ | ___ |
+| Stretch assignments to request | ___ | ___ |
+| Mentoring relationships to establish | ___ | ___ |
+
+**Success Metrics:**
+Define how you&#39;ll recognize progress and know when you&#39;ve achieved your development goal. Focus on observable behaviors and outcomes rather than internal feelings or theoretical understanding:
+
+| Metric Category | Specific Measures | Target |
+|-----------------|-------------------|--------|
+| Specific behaviors to demonstrate | ___ | ___ |
+| Feedback to gather | ___ | ___ |
+| Outcomes to measure | ___ | ___ |
+
+**Monthly Check-ins:**
+Regular reflection helps you adjust your approach based on what you&#39;re learning and how your context might be changing:
+
+- Month 1: What progress have you made? What obstacles have you encountered? What adjustments to your approach might improve your effectiveness?
+- Month 2: How has your understanding evolved? What patterns are you noticing in your successes and challenges? What additional support or resources would be helpful?
+- Month 3: What evidence shows improvement? How has your capability in this area changed your effectiveness in other domains? What should you focus on next to build on this progress?
+
+## Reassessment Protocol
+
+Technical leadership development is not a linear process, and regular reassessment serves multiple important functions beyond simply tracking score improvements. It helps you recognize progress that might not be immediately obvious, identify how your development priorities should evolve as your role and context change, and maintain momentum by celebrating growth while staying focused on continuous improvement.
+
+**Recommended Frequency:** Every 3-4 months
+
+This cadence balances the need for regular reflection with allowing sufficient time for meaningful development to occur. More frequent assessment can lead to frustration when progress feels slow, while less frequent assessment can result in missed opportunities to adjust your development approach based on changing circumstances.
+
+**Before Reassessing:**
+Effective reassessment requires gathering concrete evidence of your capabilities rather than relying solely on your subjective sense of improvement. Your perception of your own growth can be skewed by recent experiences, and building the discipline of evidence-based self-assessment improves the accuracy of your development planning.
+
+1. **Gather specific evidence from your work:** Document concrete examples of how you&#39;ve applied capabilities from each domain over the past quarter. Look for instances where you influenced decisions, led technical initiatives, navigated organizational challenges, or contributed to team effectiveness.
+
+2. **Seek feedback from colleagues, managers, and team members:** Others often see changes in your effectiveness before you recognize them yourself. Ask specific questions about areas you&#39;ve been working to develop rather than requesting general feedback.
+
+3. **Review your development plan progress:** Assess not just what you accomplished, but what you learned about effective approaches to capability development and how your understanding of your role and opportunities has evolved.
+
+4. **Consider recent challenges and how you handled them:** Pay particular attention to situations that stretched your current capabilities and how your approach or effectiveness differed from how you might have handled similar challenges in the past.
+
+**After Reassessing:**
+The value of reassessment comes not from the scores themselves but from the reflection and planning that follows. Use your results to guide both recognition of progress and strategic planning for continued development.
+
+1. **Compare scores to identify trends and improvements:** Look for patterns across domains rather than focusing on individual score changes. Consider how development in one area might have contributed to improvements in others.
+
+2. **Celebrate progress and acknowledge growth:** Technical leaders often struggle to recognize their own development, particularly when it involves complex capabilities like influence or strategic thinking. Explicitly celebrating progress helps maintain motivation and confidence for continued development.
+
+3. **Identify new development priorities based on role changes or career goals:** Your development priorities should evolve as your role responsibilities change, as you advance in your career, or as your organizational context shifts.
+
+4. **Update your development plan for the next quarter:** Use insights from your recent development experience to refine your approach, choosing more effective learning activities or application opportunities based on what worked well or less well in the previous quarter.
+
+**Tracking Your Journey:**
+Maintaining a simple log of your assessment results over time helps you recognize longer-term patterns and development trends that might not be obvious from quarter-to-quarter comparisons:
+
+| Date | Domain 1 | Domain 2 | Domain 3 | Domain 4 | Domain 5 | Domain 6 | Overall | Notes |
+|------|----------|----------|----------|----------|----------|----------|---------|-------|
+|      |          |          |          |          |          |          |         |       |
+|      |          |          |          |          |          |          |         |       |
+|      |          |          |          |          |          |          |         |       |
+
+*Use the Notes column to capture significant role changes, organizational context shifts, or key development focuses that help explain changes in your assessment results.*
+
+## Integration with Field Guide Content
+
+This assessment framework is designed to work seamlessly with the comprehensive content throughout the Staff Engineer&#39;s Field Guide. Rather than treating development as an abstract process, the integration provides specific, targeted resources that connect your assessment results to concrete learning and application opportunities.
+
+Each domain maps to carefully selected field guide chapters that provide both theoretical frameworks and practical guidance for capability development. The connections below represent the most direct pathways from assessment results to actionable development resources, but remember that technical leadership capabilities are interconnected—developing strength in one area often contributes to improvement in others.
+
+**Domain 1 (Technical Architecture &amp; Engineering Excellence):**
+- [Clean Architecture](../../field-guide/engineering/clean-architecture.md) - System design principles and practices
+- [Site Reliability Engineering](../../field-guide/engineering/site-reliability-engineering.md) - SLI/SLO frameworks and operational excellence
+- [Continuous Delivery](../../field-guide/engineering/continuous-delivery.md) - Deployment practices and DevOps culture
+
+**Domain 2 (Strategic Thinking &amp; Business Alignment):**
+- [Strategic Thinking](../../field-guide/execution/strategic-thinking.md) - OKR frameworks and business alignment
+- [Technical Vision &amp; Purpose](../../field-guide/leadership/technical-vision.md) - Strategic technical decision making
+- [Building a Business Case](../../field-guide/execution/business-case.md) - Connecting technology to business outcomes
+
+**Domain 3 (Leadership &amp; Influence):**
+- [Influencing Without Authority](../../field-guide/leadership/influencing-without-authority.md) - Psychology of technical influence
+- [Advanced Conflict Resolution](../../field-guide/leadership/advanced-conflict-resolution.md) - Mediation and negotiation skills
+- [Advanced Mentorship &amp; Career Development](../../field-guide/leadership/advanced-mentorship-career-development.md) - Developing others
+
+**Domain 4 (Communication &amp; Collaboration):**
+- [Giving &amp; Receiving Feedback](../../field-guide/leadership/giving-receiving-feedback.md) - Intentional listening and feedback skills
+- [Delivering Difficult Messages](../../field-guide/leadership/delivering-difficult-messages.md) - Difficult conversation frameworks
+- [The Culture Map](../../field-guide/teamwork/culture-map.md) - Cross-cultural collaboration practices
+
+**Domain 5 (Organizational Design &amp; Team Effectiveness):**
+- [Organizational Design](../../field-guide/teamwork/organizational-design.md) - Team topology and systems thinking
+- [Cultural Transformation &amp; Psychological Safety](../../field-guide/teamwork/cultural-transformation-psychological-safety.md) - Culture building practices
+- [Team Formation](../../field-guide/teamwork/team-formation.md) - Building high-performing teams
+
+**Domain 6 (Critical Thinking &amp; Decision Making):**
+- [Mental Models for Engineers](../../field-guide/thinking/mental-models.md) - Systems thinking and problem-solving frameworks for complex technical and organizational challenges
+- [Algorithmic Decision-Making](../../field-guide/thinking/algorithmic-decision-making.md) - Computational thinking approaches that help technical leaders make better systematic decisions
+- [Cognitive Biases](../../field-guide/thinking/cognitive-biases.md) - Understanding how psychological patterns affect technical decision-making and team dynamics
+
+This assessment framework provides a structured approach to technical leadership development that connects directly to the comprehensive guidance throughout this field guide. Think of it as a compass for your growth journey—it helps you understand your current position and identify the most valuable direction for continued development, but the real value comes from the deliberate practice and reflection you invest in building these capabilities.
+
+Remember that technical leadership is ultimately measured by your impact on the people, systems, and organizations you work with rather than by assessment scores. Use this framework to guide your development priorities and track your progress, but always stay focused on how your growing capabilities translate into more effective collaboration, better technical decisions, and stronger organizational outcomes.
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

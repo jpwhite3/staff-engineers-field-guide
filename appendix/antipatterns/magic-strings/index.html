@@ -1,0 +1,592 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Eliminating Magic Strings: A Critical Architectural Pattern - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#eliminating-magic-strings-a-critical-architectural-pattern" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Eliminating Magic Strings: A Critical Architectural Pattern
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="eliminating-magic-strings-a-critical-architectural-pattern">Eliminating Magic Strings: A Critical Architectural Pattern</h1>
+<h2 id="introduction-the-hidden-cost-of-implicit-dependencies">Introduction: The Hidden Cost of Implicit Dependencies</h2>
+<p>Magic strings – string literals embedded directly within your application code – represent a pervasive architectural anti-pattern. While seemingly innocuous on the surface, they introduce a complex web of dependencies and create a significant source of bugs and maintainability headaches. Ignoring them can quietly erode your codebase’s resilience, increase the risk of regressions during changes, and ultimately, diminish the overall quality of your software. Consider this: a simple misconfiguration of a database connection string, represented by a magic string, could lead to widespread downtime, or a subtle change in a URL pattern used for external API calls could cause significant data inconsistencies. Understanding and eliminating magic strings is, therefore, a cornerstone of robust and maintainable software development – a critical skill for any staff engineer.</p>
+<h2 id="what-are-magic-strings">What are Magic Strings?</h2>
+<p>A magic string is a string literal that serves as a mutable dependency within your application’s code. It’s a string value that’s referenced multiple times without a clear or explicit representation. This typically happens when a string represents a configuration setting, a database key, a URL endpoint, or any other piece of data that might change over time. The problem arises when these strings are duplicated throughout the codebase, making it difficult to track changes, update them consistently, and, critically, test the impact of those changes.</p>
+<h2 id="the-risks-of-magic-strings">The Risks of Magic Strings</h2>
+<p>Let’s examine the potential consequences of relying on magic strings:</p>
+<ul>
+<li><strong>Increased Risk of Regression:</strong> When a string value changes, you must manually update <em>every</em> instance of that string throughout the application. This is prone to human error, and it's easy to miss one occurrence, leading to unexpected behavior.</li>
+<li><strong>Reduced Testability:</strong> Magic strings make it difficult to write effective unit tests. You can’t reliably test code that depends on a string value that might be different in each test run.</li>
+<li><strong>Code Duplication:</strong> As we've discussed, magic strings are frequently duplicated, leading to redundant code and increased maintenance effort.</li>
+<li><strong>Difficult Refactoring:</strong> Refactoring code that uses magic strings is extremely risky because any change could introduce subtle bugs.</li>
+<li><strong>Lack of Centralized Control:</strong> Without a central location for managing string values, it’s difficult to ensure consistency across the application.</li>
+</ul>
+<h2 id="real-world-examples">Real-World Examples</h2>
+<p>Let's look at how magic strings manifest themselves in different contexts:</p>
+<ul>
+<li><strong>Configuration Management:</strong> Imagine a microservice that uses a magic string to represent the URL of a third-party API. If the API endpoint changes, you'll need to update <em>every</em> instance of that string in the service's code.</li>
+<li><strong>Database Connections:</strong> A magic string representing the database connection string is a common culprit. Even a minor change in the connection string (e.g., a different port number) can have far-reaching consequences.</li>
+<li><strong>File Paths:</strong> Applications often use magic strings to represent file paths. If the file system structure changes, updating these strings becomes a critical and potentially disruptive task.</li>
+<li><strong>UI String Localization:</strong> Magic strings used to display localized content can quickly become a nightmare to manage when dealing with multiple languages and translations.</li>
+</ul>
+<h2 id="eliminating-magic-strings-best-practices">Eliminating Magic Strings: Best Practices</h2>
+<p>Here’s how to combat magic strings:</p>
+<ol>
+<li>
+<p><strong>Introduce Constants:</strong> The most straightforward solution is to define a constant for each magic string. This provides a single, authoritative source of truth for the string value.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Instead of:</span>
+<span class="c1">// String apiUrl = &quot;http://example.com/api/v1&quot;;</span>
+
+<span class="c1">// Use:</span>
+<span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">API_URL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;http://example.com/api/v1&quot;</span><span class="p">;</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>Factories or Configuration Managers:</strong> For more complex scenarios (e.g., URLs that are constructed based on parameters), consider using a factory pattern or a configuration manager. This allows you to dynamically generate string values at runtime.</p>
+</li>
+<li>
+<p><strong>Use String Templates/Interpolation (Carefully):</strong> String templates or interpolation can provide a concise way to build strings, but be extremely cautious about the potential for unintended consequences. Ensure that the template is properly validated and that you have adequate testing.</p>
+</li>
+<li>
+<p><strong>Centralized Configuration:</strong> Where possible, move configuration settings to a central location, such as a configuration file or a dedicated configuration service. This allows you to manage configuration settings in a consistent and controlled manner.</p>
+</li>
+</ol>
+<h2 id="example-refactoring-a-magic-string">Example: Refactoring a Magic String</h2>
+<p>Let’s revisit the original Java code snippet and illustrate the refactoring process:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">public</span><span class="w"> </span><span class="n">SomeType</span><span class="w"> </span><span class="nf">GetValue</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="n">someValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cache</span><span class="err">\</span><span class="o">[</span><span class="s">&quot;valueKey&quot;</span><span class="err">\</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">someValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cache</span><span class="err">\</span><span class="o">[</span><span class="s">&quot;valueKey&quot;</span><span class="err">\</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CalculateValue</span><span class="p">();</span>
+<span class="w">    </span><span class="n">someValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cache</span><span class="err">\</span><span class="o">[</span><span class="s">&quot;valueKey&quot;</span><span class="err">\</span><span class="o">]</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">someValue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Refactored Code:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kd">private</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kd">final</span><span class="w"> </span><span class="n">String</span><span class="w"> </span><span class="n">CACHE_KEY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;valueKey&quot;</span><span class="p">;</span>
+
+<span class="kd">public</span><span class="w"> </span><span class="n">SomeType</span><span class="w"> </span><span class="nf">GetValue</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">  </span><span class="kd">var</span><span class="w"> </span><span class="n">someValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cache</span><span class="o">[</span><span class="n">CACHE_KEY</span><span class="o">]</span><span class="p">;</span>
+
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">someValue</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="kc">null</span><span class="p">)</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cache</span><span class="o">[</span><span class="n">CACHE_KEY</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CalculateValue</span><span class="p">();</span>
+<span class="w">    </span><span class="n">someValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cache</span><span class="o">[</span><span class="n">CACHE_KEY</span><span class="o">]</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="n">someValue</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>We've replaced the magic string <code>"valueKey"</code> with the constant <code>CACHE_KEY</code>. This immediately improves readability and reduces the risk of typos.</p>
+<h2 id="conclusion-mastering-the-art-of-string-management">Conclusion: Mastering the Art of String Management</h2>
+<p>Eliminating magic strings is not merely a coding convention – it's a fundamental architectural principle. It’s a critical step towards building robust, maintainable, and testable software. By proactively managing string values and avoiding the pitfalls of magic strings, you’ll not only reduce the risk of bugs, but also significantly improve your team's productivity and overall software quality. Mastering this simple yet powerful technique is a hallmark of a skilled staff engineer. Take the time to implement these practices, and you’ll be well on your way to building more resilient and adaptable systems.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

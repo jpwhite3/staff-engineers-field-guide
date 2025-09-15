@@ -1,0 +1,4064 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+        <link rel="prev" href="../revenue-vs-risk/">
+      
+      
+        <link rel="next" href="../empowered-teams/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Cost Optimization & FinOps - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cost-optimization-finops-engineering-the-bottom-line" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cost Optimization & FinOps
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../intro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Field Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Staff Engineer Archetypes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Staff Engineer Archetypes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/tech-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Tech Lead
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Solver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/right-hand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Right Hand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/force-multiplier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Becoming a Force Multiplier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learning/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Continuous Learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/developing-expertise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/mentorship-sponsorship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mentorship & Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/staying-current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Staying Current
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/learning-organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Learning Organization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/teaching-to-learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching to Learn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../engineering/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Excellence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Excellence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/site-reliability-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Reliability Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/continuous-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/advanced-testing-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Testing Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/evolutionary-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolutionary Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/software-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps & Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/source-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/code-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Hygiene & Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/hexagonal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/story-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Story Mapping & Splitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/chaos-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chaos Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../thinking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Critical Thinking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Critical Thinking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mental-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mental Models for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/algorithmic-decision-making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/cognitive-biases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cognitive Biases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/structured-problem-solving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured Problem-Solving
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mind-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mind Mapping & Visual Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leadership/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Influence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Leadership & Influence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/influencing-without-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Influencing Without Authority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-conflict-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Conflict Resolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/giving-receiving-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving & Receiving Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/delivering-difficult-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delivering Difficult Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-mentorship-career-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Mentorship & Career Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/vulnerability-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerability in Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/self-awareness-personality-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-Awareness & Personality Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/psychological-safety-trust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety & Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/power-influence-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power & Influence in Organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/storytelling-for-engineers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-writing-for-influence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Writing for Influence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/presentation-persuasion-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Persuasion Skills
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/working-across-boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Across Boundaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/async-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asynchronous Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/navigating-tough-technical-discussions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Tough Technical Discussions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../teamwork/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Teamwork & Collaboration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teamwork & Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/organizational-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/team-formation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Team Formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cultural-transformation-psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cultural Transformation & Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/five-dysfunctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Five Dysfunctions of a Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cross-functional-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Functional Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/mismanagement-agreement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mismanagement Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/culture-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Culture Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../execution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Execution & Delivery
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Execution & Delivery
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/agile-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agile Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/decision-making-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision-Making Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/change-management-technical-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change Management for Technical Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/speed-vs-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed vs. Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/navigating-uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Uncertainty & Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/prioritization-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prioritization Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/organizational-transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Business Alignment
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Business Alignment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aligning-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aligning Technology to Business Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-engineering-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product-Engineering Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-metrics-business-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engineering Metrics & Business Alignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pitching-to-executives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Better Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../revenue-vs-risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revenue vs. Risk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-finops-where-engineering-meets-finance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding FinOps: Where Engineering Meets Finance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding FinOps: Where Engineering Meets Finance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-three-core-principles-of-finops" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Three Core Principles of FinOps
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-engineers-need-to-care-about-cost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why Engineers Need to Care About Cost
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-finops-lifecycle-making-cost-optimization-continuous" class="md-nav__link">
+    <span class="md-ellipsis">
+      The FinOps Lifecycle: Making Cost Optimization Continuous
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The FinOps Lifecycle: Making Cost Optimization Continuous">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-inform-visibility-and-allocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Inform: Visibility and Allocation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-optimize-taking-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Optimize: Taking Action
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-operate-building-in-financial-accountability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Operate: Building in Financial Accountability
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#technical-strategies-for-cost-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Strategies for Cost Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Technical Strategies for Cost Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-infrastructure-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Infrastructure Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-storage-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Storage Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-network-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Network Optimization
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-application-level-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Application-Level Optimization
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architectural-patterns-for-cost-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      Architectural Patterns for Cost Efficiency
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architectural Patterns for Cost Efficiency">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-multi-tenancy-with-resource-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Multi-Tenancy with Resource Sharing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-serverless-for-variable-workloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Serverless for Variable Workloads
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-choreography-over-orchestration" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Choreography over Orchestration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-data-hierarchy-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Data Hierarchy Management
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-finops-culture-in-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a FinOps Culture in Engineering
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building a FinOps Culture in Engineering">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-make-cost-visible" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Make Cost Visible
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-accountability" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Create Accountability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-build-knowledge" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Build Knowledge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-balance-priorities" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Balance Priorities
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-staff-engineers-finops-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Staff Engineer's FinOps Toolkit
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Staff Engineer&#39;s FinOps Toolkit">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cloud-provider-cost-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Cloud Provider Cost Tools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-third-party-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Third-Party Solutions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-custom-tooling" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Custom Tooling
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-financial-metrics-for-engineers" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Financial Metrics for Engineers
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-in-cost-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls in Cost Optimization
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Common Pitfalls in Cost Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-false-economy" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. False Economy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-hidden-trade-offs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Hidden Trade-offs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-tool-proliferation" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Tool Proliferation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-optimization-obsession" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Optimization Obsession
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-study-finops-in-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Study: FinOps in Action
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Case Study: FinOps in Action">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Challenge
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Results
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-thoughts-cost-as-a-design-parameter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Thoughts: Cost as a Design Parameter
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-practical-exercise-the-cost-optimization-challenge" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Practical Exercise: The Cost Optimization Challenge
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-reference-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Reference Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cross-Reference Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites-for-this-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites for This Chapter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-these-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply These Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-steps-in-your-learning-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps in Your Learning Journey
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empowered-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empowered Teams & Engineering Culture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ethics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Ethics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/bias-in-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias in Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/data-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Privacy & User Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethical-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethics-of-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Ethics of Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/responsible-innovation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Responsible Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cost-optimization-finops-engineering-the-bottom-line">Cost Optimization &amp; FinOps: Engineering the Bottom Line</h1>
+<h2 id="the-scenario">The Scenario</h2>
+<p>A rapidly growing startup has embraced the cloud to power their SaaS platform. With customer growth accelerating, the engineering team has focused on scaling quickly and adding new features. At the monthly executive meeting, the CFO delivers alarming news: cloud costs have tripled in six months, far outpacing revenue growth. The CEO looks to the engineering leaders: "I thought the cloud was supposed to save us money? What's going on here?"</p>
+<p>The team realizes they've been optimizing for speed and flexibility, but not for cost. They have no clear visibility into which services or features drive the highest costs, no guardrails around resource provisioning, and no process for evaluating the financial impact of technical decisions. What started as an engineering problem has become a business crisis.</p>
+<p>This scenario illustrates why cost optimization is now a critical engineering discipline. As a Staff Engineer, understanding and managing the financial impact of your technical decisions is no longer optional—it's a core responsibility. Welcome to the world of FinOps.</p>
+<h2 id="understanding-finops-where-engineering-meets-finance">Understanding FinOps: Where Engineering Meets Finance</h2>
+<p>FinOps (Financial Operations) is the practice of bringing financial accountability to cloud spending. It represents a cultural shift where engineers take ownership of their cloud costs.</p>
+<h3 id="the-three-core-principles-of-finops">The Three Core Principles of FinOps</h3>
+<ol>
+<li><strong>Teams must collaborate:</strong> Engineering, finance, and business stakeholders work together</li>
+<li><strong>Everyone takes ownership:</strong> Engineers are accountable for their cloud usage</li>
+<li><strong>A centralized team drives best practices:</strong> Standards, tools, and processes enable optimization</li>
+</ol>
+<h3 id="why-engineers-need-to-care-about-cost">Why Engineers Need to Care About Cost</h3>
+<p>Traditionally, engineers focus on performance, reliability, and feature delivery. Cost was someone else's problem. That mindset no longer works because:</p>
+<ol>
+<li>
+<p><strong>Cloud changes everything:</strong> With on-premise infrastructure, capacity was fixed and paid for upfront. In the cloud, every technical decision has immediate financial consequences.</p>
+</li>
+<li>
+<p><strong>Costs are now variable:</strong> Inefficient code, over-provisioned resources, and architectural choices directly impact monthly bills.</p>
+</li>
+<li>
+<p><strong>Engineers control spending:</strong> The people writing code and configuring infrastructure are making dozens of financial decisions daily, often without realizing it.</p>
+</li>
+<li>
+<p><strong>Optimization enables innovation:</strong> By reducing waste, you free up resources for new initiatives. Cost efficiency creates room for experimentation and growth.</p>
+</li>
+</ol>
+<h2 id="the-finops-lifecycle-making-cost-optimization-continuous">The FinOps Lifecycle: Making Cost Optimization Continuous</h2>
+<p>FinOps is not a one-time project but a continuous process following this lifecycle:</p>
+<h3 id="1-inform-visibility-and-allocation">1. Inform: Visibility and Allocation</h3>
+<p>You can't manage what you can't measure. Start by creating visibility:</p>
+<ul>
+<li><strong>Tag everything:</strong> Implement consistent tagging for cost attribution by team, feature, environment, etc.</li>
+<li><strong>Allocate costs:</strong> Map cloud spending to business units, products, and features</li>
+<li><strong>Create dashboards:</strong> Make costs visible to engineering teams in real time</li>
+<li><strong>Set baselines:</strong> Establish current spend patterns to measure improvements against</li>
+</ul>
+<p><strong>Example - AWS Cost Explorer Dashboard:</strong></p>
+<div class="highlight"><pre><span></span><code>Monthly Cost by Service:
+- EC2: $45,000 (45%)
+- RDS: $25,000 (25%)
+- S3: $15,000 (15%)
+- Data Transfer: $10,000 (10%)
+- Other: $5,000 (5%)
+</code></pre></div>
+<h3 id="2-optimize-taking-action">2. Optimize: Taking Action</h3>
+<p>With visibility established, implement optimizations:</p>
+<ul>
+<li><strong>Right-sizing:</strong> Match resources to actual needs</li>
+<li><strong>Scheduling:</strong> Turn off non-production resources when not in use</li>
+<li><strong>Pricing models:</strong> Use reserved instances, savings plans, and spot instances</li>
+<li><strong>Architecture review:</strong> Refactor to use more cost-efficient services</li>
+<li><strong>Performance optimization:</strong> Improve efficiency to reduce resource needs</li>
+</ul>
+<p><strong>Example - Cost Optimization Levers:</strong></p>
+<div class="highlight"><pre><span></span><code>Optimization      | Effort | Potential Savings | Risk
+------------------|--------|-------------------|------
+Dev/Test shutdown | Low    | 10-15%            | Low
+Right-sizing      | Medium | 15-30%            | Low
+Reserved Instances| Low    | 20-40%            | Medium
+Architecture      | High   | 30-50%            | High
+</code></pre></div>
+<h3 id="3-operate-building-in-financial-accountability">3. Operate: Building in Financial Accountability</h3>
+<p>Embed cost awareness into daily engineering operations:</p>
+<ul>
+<li><strong>Budgets and alerts:</strong> Set spending limits and notify when approaching thresholds</li>
+<li><strong>Cost in CI/CD:</strong> Include cost impact analysis in your deployment pipeline</li>
+<li><strong>Chargeback models:</strong> Make teams accountable for their spending</li>
+<li><strong>Cost anomaly detection:</strong> Quickly identify unexpected spending increases</li>
+<li><strong>Regular reviews:</strong> Hold cost optimization reviews with engineering teams</li>
+</ul>
+<p><strong>Example - Team Cost Accountability:</strong></p>
+<div class="highlight"><pre><span></span><code>Team       | Monthly Budget | Current Spend | Trend
+-----------|---------------|---------------|------
+Auth       | $12,000       | $10,500       | ↓ -5%
+Payments   | $25,000       | $27,200       | ↑ +8%
+Analytics  | $18,000       | $23,400       | ↑ +25%
+</code></pre></div>
+<h2 id="technical-strategies-for-cost-optimization">Technical Strategies for Cost Optimization</h2>
+<p>Here are specific technical approaches for optimizing costs across different layers:</p>
+<h3 id="1-infrastructure-optimization">1. Infrastructure Optimization</h3>
+<p><strong>Right-sizing Resources:</strong></p>
+<ul>
+<li>Use metrics to identify over-provisioned resources</li>
+<li>Implement auto-scaling based on actual demand</li>
+<li>Choose appropriate instance types for workloads</li>
+<li>Rightsize databases based on IOPS, storage, and memory requirements</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># AWS Lambda function to rightsize EC2 instances</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rightsize_ec2</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+    <span class="n">ec2</span> <span class="o">=</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s1">&#39;ec2&#39;</span><span class="p">)</span>
+    <span class="n">cloudwatch</span> <span class="o">=</span> <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">(</span><span class="s1">&#39;cloudwatch&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Get instances with &lt; 20% CPU utilization for past 2 weeks</span>
+    <span class="n">underutilized_instances</span> <span class="o">=</span> <span class="n">get_underutilized_instances</span><span class="p">(</span><span class="n">cloudwatch</span><span class="p">)</span>
+
+    <span class="c1"># Recommend downsizing</span>
+    <span class="k">for</span> <span class="n">instance</span> <span class="ow">in</span> <span class="n">underutilized_instances</span><span class="p">:</span>
+        <span class="n">current_type</span> <span class="o">=</span> <span class="n">instance</span><span class="p">[</span><span class="s1">&#39;InstanceType&#39;</span><span class="p">]</span>
+        <span class="n">recommended_type</span> <span class="o">=</span> <span class="n">get_recommended_type</span><span class="p">(</span><span class="n">current_type</span><span class="p">)</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Instance </span><span class="si">{</span><span class="n">instance</span><span class="p">[</span><span class="s1">&#39;InstanceId&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> could be downsized from &quot;</span>
+              <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">current_type</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="n">recommended_type</span><span class="si">}</span><span class="s2"> for a 40% cost reduction&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Scheduling Non-Production Resources:</strong></p>
+<ul>
+<li>Turn off development/test environments during non-working hours</li>
+<li>Use AWS Instance Scheduler or GCP start/stop schedules</li>
+<li>Implement automated shutdown for abandoned resources</li>
+</ul>
+<p><strong>Example - Terraform schedule:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="kr">resource</span><span class="w"> </span><span class="nc">&quot;aws_scheduler_schedule&quot;</span><span class="w"> </span><span class="nv">&quot;dev_shutdown&quot;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="na">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;dev-env-shutdown&quot;</span>
+
+<span class="w">  </span><span class="nb">flexible_time_window</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">mode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;OFF&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="na">schedule_expression</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;cron(0 18 ? * MON-FRI *)&quot;</span><span class="c1"> # 6PM weekdays</span>
+
+<span class="w">  </span><span class="nb">target</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">arn</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="nv">aws_lambda_function.stop_resources.arn</span>
+<span class="w">    </span><span class="na">role_arn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">aws_iam_role.scheduler_role.arn</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="2-storage-optimization">2. Storage Optimization</h3>
+<p><strong>Data Lifecycle Management:</strong></p>
+<ul>
+<li>Implement tiered storage (hot → warm → cold → archive)</li>
+<li>Set up automated lifecycle policies</li>
+<li>Delete unnecessary snapshots and backups</li>
+</ul>
+<p><strong>Example - S3 Lifecycle Policy:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;Rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;ID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Move to Infrequent Access then Glacier&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Status&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Enabled&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Prefix&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;logs/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;Transitions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Days&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;StorageClass&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;STANDARD_IA&quot;</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;Days&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">90</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;StorageClass&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;GLACIER&quot;</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;Expiration&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;Days&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Compress and Deduplicate:</strong></p>
+<ul>
+<li>Use compression where appropriate</li>
+<li>Implement deduplication for backups and object storage</li>
+<li>Optimize database storage with proper indexing and archiving</li>
+</ul>
+<h3 id="3-network-optimization">3. Network Optimization</h3>
+<p><strong>Data Transfer Costs:</strong></p>
+<ul>
+<li>Keep traffic within regions/zones when possible</li>
+<li>Use CDNs to reduce origin server traffic</li>
+<li>Implement caching at multiple layers</li>
+<li>Compress API responses</li>
+</ul>
+<p><strong>Example - Analyzing network costs:</strong></p>
+<div class="highlight"><pre><span></span><code>Source → Destination       | Monthly Cost | Optimization
+--------------------------|--------------|------------------
+us-east-1 → us-west-2     | $2,500       | Move compute closer to data
+EC2 → Internet            | $4,200       | Implement CloudFront CDN
+Cross-AZ traffic          | $1,800       | Redesign for AZ-awareness
+</code></pre></div>
+<h3 id="4-application-level-optimization">4. Application-Level Optimization</h3>
+<p><strong>Resource Efficiency:</strong></p>
+<ul>
+<li>Optimize algorithms and queries</li>
+<li>Implement caching strategically</li>
+<li>Use connection pooling</li>
+<li>Batch operations where appropriate</li>
+</ul>
+<p><strong>Example - Redis caching to reduce database load:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_user_profile</span><span class="p">(</span><span class="n">user_id</span><span class="p">):</span>
+    <span class="c1"># Try cache first</span>
+    <span class="n">cached_profile</span> <span class="o">=</span> <span class="n">redis_client</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;user:</span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">cached_profile</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">cached_profile</span><span class="p">)</span>
+
+    <span class="c1"># Cache miss - query database</span>
+    <span class="n">profile</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;SELECT * FROM users WHERE id = </span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Update cache with 1-hour expiration</span>
+    <span class="n">redis_client</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;user:</span><span class="si">{</span><span class="n">user_id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">profile</span><span class="p">),</span> <span class="n">ex</span><span class="o">=</span><span class="mi">3600</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">profile</span>
+</code></pre></div>
+<p><strong>Optimizing Serverless:</strong></p>
+<ul>
+<li>Choose appropriate memory settings</li>
+<li>Optimize cold start frequency</li>
+<li>Manage concurrency effectively</li>
+<li>Consider container reuse</li>
+</ul>
+<h2 id="architectural-patterns-for-cost-efficiency">Architectural Patterns for Cost Efficiency</h2>
+<p>Certain architectural approaches inherently lead to better cost optimization:</p>
+<h3 id="1-multi-tenancy-with-resource-sharing">1. Multi-Tenancy with Resource Sharing</h3>
+<p><strong>The Pattern:</strong> Multiple customers share the same infrastructure with logical isolation.</p>
+<p><strong>Cost Benefit:</strong> Higher utilization rates and better resource amortization.</p>
+<p><strong>Example:</strong> A single Kubernetes cluster hosting services for multiple customers, with namespace isolation.</p>
+<h3 id="2-serverless-for-variable-workloads">2. Serverless for Variable Workloads</h3>
+<p><strong>The Pattern:</strong> Use serverless computing for workloads with variable or unpredictable traffic.</p>
+<p><strong>Cost Benefit:</strong> Pay only for actual usage with no idle capacity.</p>
+<p><strong>Example:</strong> Image processing pipeline using Lambda functions that scales to zero when inactive.</p>
+<h3 id="3-choreography-over-orchestration">3. Choreography over Orchestration</h3>
+<p><strong>The Pattern:</strong> Services communicate through events rather than central coordination.</p>
+<p><strong>Cost Benefit:</strong> Better scalability and resource utilization under variable load.</p>
+<p><strong>Example:</strong> Order processing system using event-driven architecture with SQS/SNS instead of a centralized workflow engine.</p>
+<h3 id="4-data-hierarchy-management">4. Data Hierarchy Management</h3>
+<p><strong>The Pattern:</strong> Store and process data at appropriate tiers based on access patterns.</p>
+<p><strong>Cost Benefit:</strong> Minimize expenses for infrequently accessed data.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Hot data: In-memory cache (Redis)</li>
+<li>Warm data: Fast databases (Aurora)</li>
+<li>Cold data: Object storage (S3)</li>
+<li>Archive: Deep archive (Glacier)</li>
+</ul>
+<h2 id="building-a-finops-culture-in-engineering">Building a FinOps Culture in Engineering</h2>
+<p>Cost optimization isn't just about technical changes—it requires cultural change:</p>
+<h3 id="1-make-cost-visible">1. Make Cost Visible</h3>
+<ul>
+<li><strong>Cost dashboards:</strong> Add cost metrics to engineering dashboards</li>
+<li><strong>Cost reviews:</strong> Include cost in sprint reviews and retrospectives</li>
+<li><strong>Cost anomaly alerts:</strong> Notify teams when spending patterns change</li>
+</ul>
+<h3 id="2-create-accountability">2. Create Accountability</h3>
+<ul>
+<li><strong>Team budgets:</strong> Give teams ownership of their cloud spending</li>
+<li><strong>Cost goals:</strong> Set optimization targets alongside performance goals</li>
+<li><strong>Recognition:</strong> Reward cost-saving initiatives</li>
+</ul>
+<h3 id="3-build-knowledge">3. Build Knowledge</h3>
+<ul>
+<li><strong>Training:</strong> Educate engineers on cloud pricing models</li>
+<li><strong>Best practices:</strong> Document and share cost optimization patterns</li>
+<li><strong>Tools:</strong> Provide tools for engineers to analyze their costs</li>
+</ul>
+<h3 id="4-balance-priorities">4. Balance Priorities</h3>
+<ul>
+<li><strong>Cost vs. speed:</strong> Define when to prioritize time-to-market</li>
+<li><strong>Cost vs. reliability:</strong> Establish appropriate redundancy levels</li>
+<li><strong>Cost vs. performance:</strong> Determine acceptable performance trade-offs</li>
+</ul>
+<h2 id="the-staff-engineers-finops-toolkit">The Staff Engineer's FinOps Toolkit</h2>
+<p>As a Staff Engineer, you need specific tools to lead cost optimization:</p>
+<h3 id="1-cloud-provider-cost-tools">1. Cloud Provider Cost Tools</h3>
+<ul>
+<li><strong>AWS:</strong> Cost Explorer, Budgets, Trusted Advisor</li>
+<li><strong>GCP:</strong> Cost Management, Recommender</li>
+<li><strong>Azure:</strong> Cost Management, Advisor Recommendations</li>
+</ul>
+<h3 id="2-third-party-solutions">2. Third-Party Solutions</h3>
+<ul>
+<li><strong>Cloud Management Platforms:</strong> CloudHealth, Cloudability, Apptio</li>
+<li><strong>Engineering Tools:</strong> Infracost, Cloud Custodian, Komiser</li>
+<li><strong>Open Source:</strong> OpenCost (Kubernetes), Kube-resource-report</li>
+</ul>
+<h3 id="3-custom-tooling">3. Custom Tooling</h3>
+<ul>
+<li>Cost allocation tagging automation</li>
+<li>Rightsizing recommendation engines</li>
+<li>Idle resource detection and cleanup</li>
+</ul>
+<h3 id="4-financial-metrics-for-engineers">4. Financial Metrics for Engineers</h3>
+<ul>
+<li><strong>Unit economics:</strong> Cost per customer/transaction</li>
+<li><strong>Cost anomaly detection:</strong> Statistical methods to identify outliers</li>
+<li><strong>Efficiency ratios:</strong> Cost relative to business metrics</li>
+</ul>
+<h2 id="common-pitfalls-in-cost-optimization">Common Pitfalls in Cost Optimization</h2>
+<p>Avoid these common mistakes:</p>
+<h3 id="1-false-economy">1. False Economy</h3>
+<p>Cutting costs in ways that increase risk or reduce capability. Example: Eliminating redundancy to save money, only to incur massive costs during an outage.</p>
+<h3 id="2-hidden-trade-offs">2. Hidden Trade-offs</h3>
+<p>Not recognizing the full impact of cost decisions. Example: Switching to spot instances without proper handling of instance terminations, causing production issues.</p>
+<h3 id="3-tool-proliferation">3. Tool Proliferation</h3>
+<p>Adding too many cost optimization tools without integration. Example: Having five different dashboards that give conflicting information about cost allocation.</p>
+<h3 id="4-optimization-obsession">4. Optimization Obsession</h3>
+<p>Spending more on engineering time than the savings are worth. Example: Having a team spend three weeks to save $100/month in cloud costs.</p>
+<h2 id="case-study-finops-in-action">Case Study: FinOps in Action</h2>
+<h3 id="the-challenge">The Challenge</h3>
+<p>A midsize SaaS company was spending $250,000/month on cloud infrastructure with 30% month-over-month growth in costs, exceeding their revenue growth rate.</p>
+<h3 id="the-approach">The Approach</h3>
+<ol>
+<li><strong>Discovery:</strong> Implemented comprehensive tagging and established cost allocation</li>
+<li><strong>Quick Wins:</strong> Identified and shut down orphaned resources (dev environments, forgotten test instances)</li>
+<li><strong>Reserved Instances:</strong> Moved stable workloads to reserved instances</li>
+<li><strong>Architecture Review:</strong> Refactored a key service from real-time processing to batch processing</li>
+<li><strong>Cultural Change:</strong> Created team-level dashboards and cost accountability</li>
+</ol>
+<h3 id="the-results">The Results</h3>
+<ul>
+<li>40% cost reduction in the first quarter</li>
+<li>Cost growth reduced to match revenue growth</li>
+<li>Engineering teams empowered to make cost-efficient decisions</li>
+<li>More predictable cloud spending</li>
+</ul>
+<h2 id="final-thoughts-cost-as-a-design-parameter">Final Thoughts: Cost as a Design Parameter</h2>
+<p>As a Staff Engineer, your ultimate goal is to make cost a first-class design parameter, considered alongside performance, reliability, and other architectural qualities. When cost awareness is built into your engineering culture from the beginning, you don't need special cost-cutting initiatives—efficiency becomes part of your team's DNA.</p>
+<p>By mastering FinOps principles and tools, you not only help your company's bottom line but also become a more valuable technical leader who understands the business impact of engineering decisions.</p>
+<h2 id="a-practical-exercise-the-cost-optimization-challenge">A Practical Exercise: The Cost Optimization Challenge</h2>
+<ul>
+<li><strong>Objective:</strong> To have teams practice optimizing a cloud architecture for cost without compromising performance.</li>
+<li><strong>Setup:</strong> Provide each team with a simplified, pre-configured cloud environment and a budget. The environment should have a running application with a reasonable workload.</li>
+<li><strong>Task:</strong> Teams must analyze the current resource usage, identify areas for optimization, and implement their chosen strategies (e.g., tagging, right-sizing, scheduling).</li>
+<li><strong>Debrief:</strong> Each team presents their optimization strategy, the tools they used, and the expected impact on costs and performance. Discuss the different approaches and best practices.</li>
+</ul>
+<h2 id="cross-reference-navigation">Cross-Reference Navigation</h2>
+<h3 id="prerequisites-for-this-chapter">Prerequisites for This Chapter</h3>
+<ul>
+<li><strong><a href="../engineering-metrics-business-alignment/">Engineering Metrics &amp; Business Alignment</a></strong> - Understanding how to measure and communicate engineering impact provides foundation for cost optimization</li>
+<li><strong><a href="../../leadership/technical-vision/">Technical Vision</a></strong> - Cost optimization requires strategic technical decision-making aligned with business objectives</li>
+</ul>
+<h3 id="related-concepts">Related Concepts</h3>
+<ul>
+<li><strong><a href="../aligning-technology/">Aligning Technology with Business Strategy</a></strong> - Cost optimization is a key aspect of strategic technology-business alignment</li>
+<li><strong><a href="../../engineering/site-reliability-engineering/">Site Reliability Engineering</a></strong> - SLO-driven engineering practices help balance cost with reliability requirements</li>
+<li><strong><a href="../revenue-vs-risk/">Revenue vs Risk Decision-Making</a></strong> - Framework for making cost decisions that balance business opportunity with technical investment</li>
+<li><strong><a href="../business-case/">Business Case Development</a></strong> - Building compelling cases for cost optimization initiatives and infrastructure investments</li>
+</ul>
+<h3 id="apply-these-concepts">Apply These Concepts</h3>
+<ul>
+<li><strong><a href="../../../appendix/tools/staff-engineer-competency-assessment/">Staff Engineer Competency Assessment</a></strong> - Evaluate your business collaboration and cost management capabilities</li>
+<li><strong><a href="../engineering-metrics-business-alignment/">Engineering Metrics &amp; Business Alignment</a></strong> - Apply cost optimization principles to measure and improve engineering efficiency</li>
+</ul>
+<h3 id="next-steps-in-your-learning-journey">Next Steps in Your Learning Journey</h3>
+<ol>
+<li><strong><a href="../engineering-metrics-business-alignment/">Engineering Metrics &amp; Business Alignment</a></strong> - Learn to measure and communicate the business impact of cost optimization efforts</li>
+<li><strong><a href="../../engineering/site-reliability-engineering/">Site Reliability Engineering</a></strong> - Understand how to balance cost optimization with reliability and performance requirements</li>
+<li><strong><a href="../../execution/strategic-thinking/">Strategic Thinking</a></strong> - Develop strategic perspective on long-term cost optimization and infrastructure planning</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<p><strong>Cloud Cost Management and FinOps:</strong></p>
+<ul>
+<li>Higgins, J.R., and Phillip Campbell. <em>FinOps: A Practical Guide to Cloud Financial Management</em>. 2022. (Comprehensive guide to financial operations practices for cloud cost management and optimization)</li>
+<li>Amazon Web Services. <em>AWS Well-Architected Framework: Cost Optimization Pillar</em>. 2023. (Industry-standard framework for designing cost-effective cloud architectures and operations)</li>
+<li>Limoncelli, Thomas A. <em>The Practice of Cloud System Administration: Designing and Operating Large Distributed Systems</em>. 2014. (Operational practices for cost-effective management of large-scale cloud systems)</li>
+</ul>
+<p><strong>Business-Technology Alignment:</strong></p>
+<ul>
+<li>Kim, Gene, Kevin Behr, and George Spafford. <em>The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win</em>. 2018. (Business fiction demonstrating how technology cost optimization enables business success)</li>
+<li>Humble, Jez, Joanne Molesky, and Barry O'Reilly. <em>Lean Enterprise: How High Performance Organizations Innovate at Scale</em>. 2014. (Lean principles applied to technology cost optimization and business value delivery)</li>
+<li>Reifer, Donald J. <em>Making the Software Business Case: Improvement by the Numbers</em>. 2002. (Frameworks for building business cases for technology cost optimization initiatives)</li>
+</ul>
+<p><strong>Performance and Efficiency Engineering:</strong></p>
+<ul>
+<li>Gregg, Brendan. <em>Systems Performance: Enterprise and the Cloud</em>. 2020. (Technical approaches to system optimization that reduce costs through improved efficiency)</li>
+<li>Newman, Sam. <em>Monolith to Microservices: Evolutionary Patterns to Transform Your Monolith</em>. 2019. (Architectural patterns for cost-effective system evolution and optimization)</li>
+<li>Kleppmann, Martin. <em>Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems</em>. 2017. (System design principles that support long-term cost optimization and operational efficiency)</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../revenue-vs-risk/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Revenue vs. Risk">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Revenue vs. Risk
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../empowered-teams/" class="md-footer__link md-footer__link--next" aria-label="Next: Empowered Teams &amp; Engineering Culture">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Empowered Teams & Engineering Culture
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

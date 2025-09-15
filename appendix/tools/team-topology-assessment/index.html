@@ -1,0 +1,1119 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Team Topology Assessment Framework - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#team-topology-assessment-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Team Topology Assessment Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="team-topology-assessment-framework">Team Topology Assessment Framework</h1>
+<blockquote>
+<p><em>"You can't improve what you don't measure, and you can't measure what you don't understand."</em></p>
+</blockquote>
+<p>Ever walked into an engineering organization and immediately sensed something was "off"? Maybe teams seemed frustrated, delivery was slower than it should be, or there was constant friction between groups? Often, the root cause isn't technical—it's organizational.</p>
+<p><strong>This assessment framework helps you diagnose organizational health using Team Topologies principles.</strong> Think of it as a health check for your engineering organization, designed to identify problems before they become crises and find opportunities for improvement.</p>
+<p>Whether you're joining a new company, restructuring existing teams, or just trying to understand why things feel harder than they should be, these tools will give you the data you need to make informed decisions about team structure and evolution.</p>
+<h2 id="quick-team-type-assessment">Quick Team Type Assessment</h2>
+<p>Use this flowchart to identify the appropriate team type for a given team or proposed team:</p>
+<pre class="mermaid"><code>flowchart TD
+    A[New Team Need] --&gt; B{Primary Purpose?}
+
+    B --&gt;|Deliver user value| C{End-to-end capability?}
+    B --&gt;|Enable other teams| D{Temporary engagement?}
+    B --&gt;|Serve internal teams| E{Developer tooling/infrastructure?}
+    B --&gt;|Complex specialized domain| F[Complicated Subsystem Team]
+
+    C --&gt;|Yes| G[Stream-Aligned Team]
+    C --&gt;|No - depends on others| H{Can dependencies be minimized?}
+    H --&gt;|Yes| G
+    H --&gt;|No| I[Consider splitting value stream]
+
+    D --&gt;|Yes| J[Enabling Team]
+    D --&gt;|No| K[Consider Platform Team or different structure]
+
+    E --&gt;|Yes| L[Platform Team]
+    E --&gt;|No| M[Reassess team purpose]
+
+    style G fill:#e1f5fe
+    style J fill:#e8f5e8
+    style L fill:#f3e5f5
+    style F fill:#fff3e0</code></pre>
+<h2 id="how-healthy-are-your-teams-a-comprehensive-assessment">How Healthy Are Your Teams? A Comprehensive Assessment</h2>
+<p><strong>Before you start:</strong> These assessments work best when completed by multiple people (team members, stakeholders, leadership) and compared. Different perspectives often reveal blind spots.</p>
+<h3 id="stream-aligned-team-health-check">Stream-Aligned Team Health Check</h3>
+<blockquote>
+<p><strong>Quick gut check</strong>: Is this team able to deliver value to users independently, or are they constantly waiting for other teams?</p>
+</blockquote>
+<p><strong>Rate each dimension from 1 (Poor) to 5 (Excellent).</strong> Be honest—this is about identifying opportunities for improvement, not scoring perfect 5s.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Stream-Aligned Team Health Assessment</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:4"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Value Stream Clarity (25%)</label><label for="__tabbed_1_2">Technical Capability (30%)</label><label for="__tabbed_1_3">Autonomy &amp; Flow (25%)</label><label for="__tabbed_1_4">Cognitive Load (20%)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Clear understanding of users and needs</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Can articulate business value creation</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Has direct access to user feedback</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Measures success through outcomes</li>
+</ul>
+<p><strong>Score: 2/4</strong> - Need better user feedback loops</p>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Has all needed skills for value stream</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Can build, test, deploy, and operate</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can resolve production issues independently</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Technical decisions align with architecture</li>
+</ul>
+<p><strong>Score: 3/4</strong> - Improve production issue resolution</p>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can deploy without coordinating with others</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Minimal waiting for external dependencies</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Makes most technical decisions independently</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Work batch sizes appropriate</li>
+</ul>
+<p><strong>Score: 2/4</strong> - Address deployment dependencies</p>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Workload appropriate for capacity</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Focus on core domain</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Adequate time for learning</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Not overwhelmed by tool complexity</li>
+</ul>
+<p><strong>Score: 3/4</strong> - Create more learning time</p>
+</div>
+</div>
+</div>
+<p><strong>Overall Health: Strong (10/16)</strong> - Focus on independence and feedback loops</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Platform Team Health Assessment</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Customer Focus (30%)</label><label for="__tabbed_2_2">Product Excellence (25%)</label><label for="__tabbed_2_3">Developer Experience (25%)</label><label for="__tabbed_2_4">Strategic Alignment (20%)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Treats engineering teams as customers</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Regularly collects feedback from stream teams</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Measures success by team adoption</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Understands stream team pain points</li>
+</ul>
+<p><strong>Score: 2/4</strong> - Improve feedback collection and pain point understanding</p>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Provides self-service capabilities</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Has clear APIs and documentation</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Maintains backwards compatibility</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Has appropriate reliability/performance</li>
+</ul>
+<p><strong>Score: 3/4</strong> - Focus on backwards compatibility</p>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Reduces cognitive load for stream teams</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Accelerates stream team delivery</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Easy to onboard and use</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Helpful error messages and debugging</li>
+</ul>
+<p><strong>Score: 2/4</strong> - Improve delivery acceleration and debugging experience</p>
+</div>
+<div class="tabbed-block">
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Roadmap aligns with organizational strategy</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Balances standardization with flexibility</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Investment appropriate for scale</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Enables rather than constrains innovation</li>
+</ul>
+<p><strong>Score: 3/4</strong> - Ensure platform enables innovation</p>
+</div>
+</div>
+</div>
+<p><strong>Overall Health: Good (10/16)</strong> - Focus on feedback loops and developer experience</p>
+</div>
+<h3 id="enabling-team-health-check">Enabling Team Health Check</h3>
+<p>Rate each item from 1 (Poor) to 5 (Excellent):</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Knowledge Transfer Excellence (Weight: 35%)</label><label for="__tabbed_3_2">Expertise Depth (Weight: 25%)</label><label for="__tabbed_3_3">Engagement Model (Weight: 25%)</label><label for="__tabbed_3_4">Organizational Impact (Weight: 15%)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Assessment Criteria</th>
+<th style="text-align: right;">Score (1-5)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team has strong teaching and coaching skills</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team creates lasting capability in other teams</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team's engagements have clear success criteria</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team measures success by other teams' capability growth</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Score: <strong><em>/20 → Weighted Score: </em></strong>/7</strong></p>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Assessment Criteria</th>
+<th style="text-align: right;">Score (1-5)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team has deep expertise in their specialized area</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team stays current with industry best practices</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team can solve complex problems others cannot</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team's expertise is recognized across the organization</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Score: <strong><em>/20 → Weighted Score: </em></strong>/5</strong></p>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Assessment Criteria</th>
+<th style="text-align: right;">Score (1-5)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team has clear engagement processes and boundaries</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team balances multiple concurrent engagements effectively</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team knows when to end engagements</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team avoids becoming a permanent dependency</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Score: <strong><em>/20 → Weighted Score: </em></strong>/5</strong></p>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Assessment Criteria</th>
+<th style="text-align: right;">Score (1-5)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Team addresses systemic rather than just local problems</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team's work has multiplier effects across the organization</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+<tr>
+<td>Team identifies and fills capability gaps proactively</td>
+<td style="text-align: right;">___</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Score: <strong><em>/15 → Weighted Score: </em></strong>/3</strong></p>
+</div>
+</div>
+</div>
+<p><strong>Overall Enabling Team Health: ___/20</strong></p>
+<h2 id="team-interaction-assessment">Team Interaction Assessment</h2>
+<h3 id="current-state-mapping">Current State Mapping</h3>
+<p>For each pair of teams that interact, identify the current interaction mode:</p>
+<table>
+<thead>
+<tr>
+<th>Team A</th>
+<th>Team B</th>
+<th>Current Mode</th>
+<th>Desired Mode</th>
+<th>Health (1-5)</th>
+<th>Actions Needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>Collaboration/X-as-a-Service/Facilitating</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="interaction-mode-health-indicators">Interaction Mode Health Indicators</h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Collaboration Mode</label><label for="__tabbed_4_2">X-as-a-Service Mode</label><label for="__tabbed_4_3">Facilitating Mode</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Effective collaboration requires high trust, shared goals, and sustainable communication patterns.</strong> Teams operating in this mode should demonstrate strong psychological safety that enables open dialogue, establish regular communication channels that support joint decision-making, and maintain shared success metrics that align efforts across organizational boundaries.</p>
+<table>
+<thead>
+<tr>
+<th>Health Indicator</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High trust and psychological safety between teams</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Regular, effective communication channels established</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Shared goals and success metrics</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Joint problem-solving and decision-making</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Acceptable cognitive load from high communication</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Service-oriented interactions thrive on clear interfaces, minimal communication overhead, and reliable service delivery.</strong> Teams should establish well-documented APIs that enable independence, maintain consistent SLA performance, and provide appropriate escalation paths when issues arise.</p>
+<table>
+<thead>
+<tr>
+<th>Health Indicator</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clear, well-documented APIs and contracts</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Minimal communication needed for routine interactions</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Service provider meets agreed SLAs consistently</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Consumer team can use service independently</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Appropriate escalation paths for issues</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Effective facilitation focuses on temporary capability building rather than permanent dependency creation.</strong> Teams should establish clear engagement models, measure knowledge transfer effectiveness, and maintain discipline around the temporary nature of their involvement.</p>
+<table>
+<thead>
+<tr>
+<th>Health Indicator</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clear engagement model and success criteria</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Knowledge transfer is effective and measurable</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Temporary nature of engagement is respected</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Capability building rather than just problem-solving</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+<tr>
+<td>Clear exit strategy when capability is established</td>
+<td style="text-align: center;">☑️/❌</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="cognitive-load-assessment">Cognitive Load Assessment</h2>
+<h3 id="individual-team-assessment">Individual Team Assessment</h3>
+<p>For each team, assess their cognitive load across three dimensions:</p>
+<h4 id="intrinsic-load-domain-complexity">Intrinsic Load (Domain Complexity)</h4>
+<p>Rate the inherent complexity of the team's primary domain:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Business domain complexity (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Technical domain complexity (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> User needs complexity (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Regulatory/compliance complexity (1-5)</li>
+</ul>
+<p><strong>Intrinsic Load Score: ___/20</strong></p>
+<h4 id="extraneous-load-unnecessary-complexity">Extraneous Load (Unnecessary Complexity)</h4>
+<p>Rate sources of unnecessary cognitive burden:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Tool complexity and proliferation (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Process overhead and bureaucracy (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Context switching between unrelated domains (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Poor documentation and knowledge management (1-5)</li>
+</ul>
+<p><strong>Extraneous Load Score: ___/20</strong> (Lower is better)</p>
+<h4 id="germane-load-capability-building">Germane Load (Capability Building)</h4>
+<p>Rate investment in building long-term capabilities:</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Time available for learning and skill development (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Knowledge sharing and documentation practices (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Investment in automation and tooling (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Reflection and continuous improvement activities (1-5)</li>
+</ul>
+<p><strong>Germane Load Score: ___/20</strong></p>
+<h3 id="team-capacity-assessment">Team Capacity Assessment</h3>
+<table>
+<thead>
+<tr>
+<th>Team</th>
+<th>Team Size</th>
+<th>Intrinsic Load</th>
+<th>Extraneous Load</th>
+<th>Germane Load</th>
+<th>Load Balance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td>___/20</td>
+<td>___/20</td>
+<td>___/20</td>
+<td>Healthy/At Risk/Overloaded</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li><strong>Healthy:</strong> Intrinsic + Extraneous ≤ 12, Germane ≥ 12</li>
+<li><strong>At Risk:</strong> Intrinsic + Extraneous 13-16, Germane 8-11</li>
+<li><strong>Overloaded:</strong> Intrinsic + Extraneous ≥ 17, Germane ≤ 7</li>
+</ul>
+<h2 id="organizational-design-maturity-assessment">Organizational Design Maturity Assessment</h2>
+<h3 id="conways-law-alignment">Conway's Law Alignment</h3>
+<p>Rate how well your team structure supports your desired architecture:</p>
+<h4 id="architecture-team-alignment-weight-40">Architecture-Team Alignment (Weight: 40%)</h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Service boundaries match team boundaries (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Team communication patterns support desired system design (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Dependencies between systems match dependencies between teams (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Team ownership model supports system reliability needs (1-5)</li>
+</ul>
+<p><strong>Score: </strong><em>/20 → Weighted Score: </em><strong>/8</strong></p>
+<h4 id="organizational-evolution-capability-weight-30">Organizational Evolution Capability (Weight: 30%)</h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Organization can restructure teams as architecture evolves (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Teams can split or merge based on changing needs (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> New team types can be introduced when needed (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Team interaction modes can evolve appropriately (1-5)</li>
+</ul>
+<p><strong>Score: </strong><em>/20 → Weighted Score: </em><strong>/6</strong></p>
+<h4 id="information-flow-optimization-weight-30">Information Flow Optimization (Weight: 30%)</h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Information flows efficiently to where decisions are made (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Teams have appropriate autonomy for their scope (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Communication overhead is minimized (1-5)</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Knowledge sharing happens effectively across teams (1-5)</li>
+</ul>
+<p><strong>Score: </strong><em>/20 → Weighted Score: </em><strong>/6</strong></p>
+<p><strong>Overall Organizational Design Maturity: ___/20</strong></p>
+<h2 id="action-planning-template">Action Planning Template</h2>
+<h3 id="priority-issues-identified">Priority Issues Identified</h3>
+<table>
+<thead>
+<tr>
+<th>Issue</th>
+<th>Impact (1-5)</th>
+<th>Effort (1-5)</th>
+<th>Priority</th>
+<th>Target Team(s)</th>
+<th>Timeline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td>High/Medium/Low</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="improvement-roadmap">Improvement Roadmap</h3>
+<h4 id="phase-1-quick-wins-0-3-months">Phase 1: Quick Wins (0-3 months)</h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 1</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 2</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 3</li>
+</ul>
+<h4 id="phase-2-structural-changes-3-9-months">Phase 2: Structural Changes (3-9 months)</h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 1</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 2</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 3</li>
+</ul>
+<h4 id="phase-3-cultural-evolution-6-18-months">Phase 3: Cultural Evolution (6-18 months)</h4>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 1</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 2</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Action item 3</li>
+</ul>
+<h3 id="success-metrics">Success Metrics</h3>
+<p>Define specific, measurable outcomes for your team topology improvements:</p>
+<h4 id="delivery-metrics">Delivery Metrics</h4>
+<ul>
+<li>Lead time: From idea to production</li>
+<li>Deployment frequency: How often teams can deploy</li>
+<li>Change failure rate: Percentage of deployments causing issues</li>
+<li>Recovery time: Time to resolve production issues</li>
+</ul>
+<h4 id="team-health-metrics">Team Health Metrics</h4>
+<ul>
+<li>Team satisfaction and engagement scores</li>
+<li>Knowledge sharing and learning indicators</li>
+<li>Cognitive load and workload sustainability</li>
+<li>Inter-team collaboration effectiveness</li>
+</ul>
+<h4 id="business-outcome-metrics">Business Outcome Metrics</h4>
+<ul>
+<li>Feature adoption and user engagement</li>
+<li>Business value delivery velocity</li>
+<li>Innovation and experimentation rate</li>
+<li>Technical debt and maintenance overhead</li>
+</ul>
+<h2 id="regular-assessment-schedule">Regular Assessment Schedule</h2>
+<h3 id="monthly-team-health-checks">Monthly Team Health Checks</h3>
+<ul>
+<li>Individual team health scores</li>
+<li>Interaction mode effectiveness review</li>
+<li>Cognitive load monitoring</li>
+</ul>
+<h3 id="quarterly-organizational-review">Quarterly Organizational Review</h3>
+<ul>
+<li>Overall team topology assessment</li>
+<li>Conway's Law alignment evaluation</li>
+<li>Structural improvement planning</li>
+</ul>
+<h3 id="annual-strategic-assessment">Annual Strategic Assessment</h3>
+<ul>
+<li>Organizational design maturity evaluation</li>
+<li>Long-term evolution planning</li>
+<li>Success metrics and outcome review</li>
+</ul>
+<p>This assessment framework provides the data needed to make informed decisions about team structure and evolution. Regular use helps ensure your organization continues to optimize for flow, learning, and business outcomes.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Skelton, Matthew, and Manuel Pais. <em>Team Topologies: Organizing Business and Technology Teams for Fast Flow</em>. 2019.</li>
+<li>Forsgren, Nicole, Jez Humble, and Gene Kim. <em>Accelerate: The Science of Lean Software and DevOps</em>. 2018.</li>
+<li>Conway, Melvin E. "How Do Committees Invent?" <em>Datamation</em> 14, no. 4 (1968): 28-31.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

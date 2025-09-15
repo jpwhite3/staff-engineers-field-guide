@@ -1,0 +1,890 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+        <link rel="next" href="field-guide/intro/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#staff-engineers-field-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#welcome-to-your-technical-leadership-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Welcome to Your Technical Leadership Journey
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-this-field-guide-is-different" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why This Field Guide Is Different
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#authority-depth-you-can-trust" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authority &amp; Depth You Can Trust
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Authority &amp; Depth You Can Trust">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#leadership-excellence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leadership Excellence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-excellence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Excellence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decision-science" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision Science
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business Integration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-paths" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Paths
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning Paths">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#new-to-staff-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      New to Staff Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#experienced-technical-lead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Experienced Technical Lead
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#building-business-partnership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Business Partnership
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#team-culture-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Team &amp; Culture Focus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Chapter Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Chapter Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setting-the-stage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting the Stage
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#continuous-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Continuous Learning
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#core-engineering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Core Engineering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#critical-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Critical Thinking
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leadership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Leadership
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#teamwork" class="md-nav__link">
+    <span class="md-ellipsis">
+      Teamwork
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#business" class="md-nav__link">
+    <span class="md-ellipsis">
+      Business
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ethics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ethics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#start-your-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start Your Journey
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="staff-engineers-field-guide">Staff Engineer's Field Guide</h1>
+<p>The definitive guide to staff engineering excellence—from individual contributor to organizational force multiplier.</p>
+<h2 id="welcome-to-your-technical-leadership-journey">Welcome to Your Technical Leadership Journey</h2>
+<p>The path from Senior to Staff Engineer represents one of the most challenging and transformative transitions in a software engineer's career. It's not merely a promotion—it's a fundamental shift from individual excellence to organizational impact, from solving problems to multiplying solutions, from personal success to building enduring technical capabilities.</p>
+<p>This guide bridges that gap. Drawing from 30+ authoritative sources including Jim Collins' "Good to Great," Simon Sinek's "Start with Why," Marty Cagan's "INSPIRED," and research from Google's SRE teams, it provides the comprehensive framework you need to excel at the intersection of technical depth and leadership influence.</p>
+<p><strong>This is your field manual for becoming the technical leader your organization needs.</strong></p>
+<h2 id="why-this-field-guide-is-different">Why This Field Guide Is Different</h2>
+<p><strong>Synthesis of 30+ Authority Sources</strong> - Integrated insights from Collins, Sinek, Cagan, Google SRE, and so many more. No single-source bias.</p>
+<p><strong>300+ Cross-References</strong> - Every concept connects to related ideas and practical applications using a systems thinking approach.</p>
+<p><strong>60+ Visual Frameworks</strong> - Mermaid diagrams, decision trees, and assessment tools for visual learning.</p>
+<p><strong>Comprehensive Assessment System</strong> - Self-evaluation tools for every major competency area to measure your progress.</p>
+<p><strong>Multiple Learning Paths</strong> - Tailored journeys for different roles and experience levels with a personalized approach.</p>
+<p><strong>Immediately Actionable</strong> - Every chapter includes practical tools and frameworks you can apply today.</p>
+<h2 id="authority-depth-you-can-trust">Authority &amp; Depth You Can Trust</h2>
+<p>Built on <strong>Industry-Leading Research</strong> — This field guide synthesizes insights from the most respected voices in technical leadership, organizational psychology, and engineering excellence.</p>
+<h3 id="leadership-excellence">Leadership Excellence</h3>
+<ul>
+<li><strong>Jim Collins</strong> - Level 5 Leadership from "Good to Great"</li>
+<li><strong>Simon Sinek</strong> - Purpose-driven leadership from "Start with Why"</li>
+<li><strong>Brené Brown</strong> - Vulnerability in leadership from "Dare to Lead"</li>
+</ul>
+<h3 id="technical-excellence">Technical Excellence</h3>
+<ul>
+<li><strong>Google SRE Team</strong> - Reliability engineering principles</li>
+<li><strong>Martin Fowler</strong> - Software architecture patterns</li>
+<li><strong>Kent Beck</strong> - Test-driven development mastery</li>
+</ul>
+<h3 id="decision-science">Decision Science</h3>
+<ul>
+<li><strong>Daniel Kahneman</strong> - Cognitive science from "Thinking, Fast and Slow"</li>
+<li><strong>Richard Rumelt</strong> - Strategic thinking from "Good Strategy Bad Strategy"</li>
+<li><strong>Brian Christian</strong> - Algorithmic decision-making</li>
+</ul>
+<h3 id="business-integration">Business Integration</h3>
+<ul>
+<li><strong>Marty Cagan</strong> - Product-engineering collaboration from "INSPIRED"</li>
+<li><strong>John Doerr</strong> - OKR frameworks from "Measure What Matters"</li>
+<li><strong>Nicole Forsgren</strong> - Engineering metrics from "Accelerate"</li>
+</ul>
+<h2 id="learning-paths">Learning Paths</h2>
+<p>Choose the path that matches your current role and growth objectives:</p>
+<h3 id="new-to-staff-engineering">New to Staff Engineering</h3>
+<p><strong>Foundation Track</strong> - Start here for comprehensive skill building</p>
+<p><a href="field-guide/intro/">Staff Engineer Archetypes</a> → <a href="field-guide/engineering/">Engineering Excellence</a> → <a href="field-guide/thinking/">Critical Thinking</a> → <a href="field-guide/leadership/">Leadership &amp; Influence</a></p>
+<p><strong>Time Investment:</strong> 4-6 weeks | <strong>Focus:</strong> Core competencies</p>
+<h3 id="experienced-technical-lead">Experienced Technical Lead</h3>
+<p><strong>Advanced Leadership Track</strong> - Deepen your influence and impact</p>
+<p><a href="field-guide/teamwork/team-formation/">Team Formation</a> → <a href="field-guide/leadership/advanced-conflict-resolution/">Advanced Conflict Resolution</a> → <a href="field-guide/execution/strategic-thinking/">Strategic Thinking</a></p>
+<p><strong>Time Investment:</strong> 2-3 weeks | <strong>Focus:</strong> Leadership mastery</p>
+<h3 id="building-business-partnership">Building Business Partnership</h3>
+<p><strong>Business Integration Track</strong> - Bridge technical and business strategy</p>
+<p><a href="field-guide/business/product-engineering-collaboration/">Product-Engineering Collaboration</a> → <a href="field-guide/business/engineering-metrics-business-alignment/">Engineering Metrics</a> → <a href="field-guide/business/pitching-to-executives/">Executive Communication</a></p>
+<p><strong>Time Investment:</strong> 2-4 weeks | <strong>Focus:</strong> Strategic alignment</p>
+<h3 id="team-culture-focus">Team &amp; Culture Focus</h3>
+<p><strong>Organizational Excellence Track</strong> - Transform teams and culture</p>
+<p><a href="field-guide/teamwork/organizational-design/">Organizational Design</a> → <a href="field-guide/teamwork/cultural-transformation-psychological-safety/">Cultural Transformation</a> → <a href="field-guide/execution/change-management-technical-transformations/">Change Management</a></p>
+<p><strong>Time Investment:</strong> 3-5 weeks | <strong>Focus:</strong> Systemic change</p>
+<h2 id="chapter-overview">Chapter Overview</h2>
+<h3 id="setting-the-stage"><a href="field-guide/intro/">Setting the Stage</a></h3>
+<p>What It Means to Be a Staff Engineer - Understanding archetypes and role expectations</p>
+<h3 id="continuous-learning"><a href="field-guide/learning/">Continuous Learning</a></h3>
+<p>Growth &amp; Development Frameworks - Staying current and building expertise</p>
+<h3 id="core-engineering"><a href="field-guide/engineering/">Core Engineering</a></h3>
+<p>Skills &amp; Practices for Excellence - Technical leadership fundamentals</p>
+<h3 id="critical-thinking"><a href="field-guide/thinking/">Critical Thinking</a></h3>
+<p>Problem-Solving &amp; Decision Making - Mental models and cognitive frameworks</p>
+<h3 id="leadership"><a href="field-guide/leadership/">Leadership</a></h3>
+<p>Influence &amp; Communication - Building leadership presence and impact</p>
+<h3 id="teamwork"><a href="field-guide/teamwork/">Teamwork</a></h3>
+<p>Team Behavior &amp; Collaboration - Organizational dynamics and team formation</p>
+<h3 id="execution"><a href="field-guide/execution/">Execution</a></h3>
+<p>Delivery &amp; Results - Strategy, prioritization, and getting things done</p>
+<h3 id="business"><a href="field-guide/business/">Business</a></h3>
+<p>The Business of Engineering - Aligning technical and business objectives</p>
+<h3 id="ethics"><a href="field-guide/ethics/">Ethics</a></h3>
+<p>Engineering Ethics &amp; Decision-Making - Responsible technology leadership</p>
+<h2 id="start-your-journey">Start Your Journey</h2>
+<p>Ready to transform your technical leadership? Whether you're an aspiring staff engineer, newly promoted technical leader, or experienced practitioner looking to deepen your impact, this field guide provides the comprehensive framework you need to excel.</p>
+<p><strong>Your next step:</strong> Choose a learning path above, or dive into the foundational concepts that will transform how you approach technical leadership.</p>
+<p><a class="md-button md-button--primary" href="field-guide/intro/">Begin with Staff Engineer Archetypes</a>
+<a class="md-button" href="appendix/tools/">Explore Assessment Tools</a></p>
+<p><strong>Remember:</strong> The path to staff engineering excellence isn't about perfection—it's about continuous growth, systematic skill development, and the courage to lead with both technical depth and human insight.</p>
+<p><strong>Welcome to your field guide for technical leadership. Your journey starts now.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="field-guide/intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Setting the Stage: What It Means to Be a Staff Engineer">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Setting the Stage: What It Means to Be a Staff Engineer
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

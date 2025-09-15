@@ -1,0 +1,4045 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../influencing-without-authority/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Technical Vision & Purpose - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#technical-vision-leading-with-purpose-and-the-golden-circle" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Technical Vision & Purpose
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../intro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Field Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Staff Engineer Archetypes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Staff Engineer Archetypes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/tech-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Tech Lead
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Solver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/right-hand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Right Hand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/force-multiplier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Becoming a Force Multiplier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learning/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Continuous Learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/developing-expertise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/mentorship-sponsorship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mentorship & Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/staying-current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Staying Current
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/learning-organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Learning Organization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/teaching-to-learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching to Learn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../engineering/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Excellence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Excellence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/site-reliability-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Reliability Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/continuous-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/advanced-testing-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Testing Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/evolutionary-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolutionary Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/software-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps & Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/source-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/code-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Hygiene & Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/hexagonal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/story-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Story Mapping & Splitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/chaos-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chaos Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../thinking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Critical Thinking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Critical Thinking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mental-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mental Models for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/algorithmic-decision-making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/cognitive-biases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cognitive Biases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/structured-problem-solving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured Problem-Solving
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mind-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mind Mapping & Visual Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_6" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Influence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Leadership & Influence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-golden-circle-framework-for-technical-leadership" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Golden Circle Framework for Technical Leadership
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-the-purpose-behind-technical-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why: The Purpose Behind Technical Decisions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Why: The Purpose Behind Technical Decisions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-difference-between-weak-and-powerful-technical-why-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Difference Between Weak and Powerful Technical "Why" Statements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crafting-your-technical-why" class="md-nav__link">
+    <span class="md-ellipsis">
+      Crafting Your Technical Why
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-your-technical-principles-and-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      How: Your Technical Principles and Approach
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How: Your Technical Principles and Approach">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-how-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical How Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#developing-your-technical-how" class="md-nav__link">
+    <span class="md-ellipsis">
+      Developing Your Technical How
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-the-tangible-technical-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      What: The Tangible Technical Outcomes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What: The Tangible Technical Outcomes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#making-what-compelling-through-why-and-how" class="md-nav__link">
+    <span class="md-ellipsis">
+      Making What Compelling Through Why and How
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golden-circle-applied-to-staff-engineer-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golden Circle Applied to Staff Engineer Communication
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Golden Circle Applied to Staff Engineer Communication">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#technical-architecture-presentations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Architecture Presentations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-decision-records-tdrs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Technical Decision Records (TDRs)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stakeholder-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stakeholder Communication
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-technical-movements-not-just-solutions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Technical Movements, Not Just Solutions
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Technical Movements, Not Just Solutions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-technical-believers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating Technical Believers
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sustaining-technical-change" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sustaining Technical Change
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-technical-influence" class="md-nav__link">
+    <span class="md-ellipsis">
+      Scaling Technical Influence
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-application-the-golden-circle-workshop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Application: The Golden Circle Workshop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#golden-circle-anti-patterns-for-technical-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golden Circle Anti-Patterns for Technical Leaders
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measuring-the-impact-of-purpose-driven-technical-leadership" class="md-nav__link">
+    <span class="md-ellipsis">
+      Measuring the Impact of Purpose-Driven Technical Leadership
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Measuring the Impact of Purpose-Driven Technical Leadership">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#engagement-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Engagement Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#influence-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Influence Metrics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#outcome-metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Outcome Metrics
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      Key Takeaways
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cross-reference-navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-Reference Navigation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Cross-Reference Navigation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites-for-this-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites for This Chapter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-these-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply These Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-steps-in-your-learning-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps in Your Learning Journey
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../influencing-without-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Influencing Without Authority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-conflict-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Conflict Resolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../giving-receiving-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving & Receiving Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../delivering-difficult-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delivering Difficult Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-mentorship-career-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Mentorship & Career Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vulnerability-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerability in Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../self-awareness-personality-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-Awareness & Personality Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../psychological-safety-trust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety & Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../power-influence-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power & Influence in Organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../storytelling-for-engineers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../technical-writing-for-influence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Writing for Influence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../presentation-persuasion-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Persuasion Skills
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../working-across-boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Across Boundaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../async-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asynchronous Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigating-tough-technical-discussions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Tough Technical Discussions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../teamwork/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Teamwork & Collaboration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teamwork & Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/organizational-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/team-formation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Team Formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cultural-transformation-psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cultural Transformation & Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/five-dysfunctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Five Dysfunctions of a Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cross-functional-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Functional Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/mismanagement-agreement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mismanagement Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/culture-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Culture Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../execution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Execution & Delivery
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Execution & Delivery
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/agile-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agile Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/decision-making-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision-Making Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/change-management-technical-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change Management for Technical Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/speed-vs-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed vs. Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/navigating-uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Uncertainty & Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/prioritization-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prioritization Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/organizational-transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../business/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Business Alignment
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Business Alignment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/aligning-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aligning Technology to Business Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/product-engineering-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product-Engineering Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/engineering-metrics-business-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engineering Metrics & Business Alignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/pitching-to-executives/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Better Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/revenue-vs-risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revenue vs. Risk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/cost-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../business/empowered-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empowered Teams & Engineering Culture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ethics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Ethics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/bias-in-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias in Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/data-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Privacy & User Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethical-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethics-of-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Ethics of Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/responsible-innovation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Responsible Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="technical-vision-leading-with-purpose-and-the-golden-circle">Technical Vision: Leading with Purpose and the Golden Circle</h1>
+<blockquote>
+<p><em>"People don't buy what you do; they buy why you do it."</em> - Simon Sinek</p>
+</blockquote>
+<p>Here's a scenario you've probably witnessed: An engineering leader walks into a room full of stakeholders and says, "We need to adopt microservices. Here's our migration plan and timeline." Half the room looks confused, a quarter looks skeptical, and the rest are already mentally composing questions about cost and risk.</p>
+<p>Now imagine a different approach: "Our teams are spending 60% of their time waiting for other teams to deploy changes instead of building features for users. We believe teams should be able to innovate independently, so we're proposing an architecture that gives each team control over their own destiny."</p>
+<p>Same technical proposal, completely different reaction.</p>
+<p><strong>The difference? The second leader started with why.</strong></p>
+<p>As a Staff Engineer, your technical decisions have far-reaching consequences—not just for systems, but for teams, budgets, and business outcomes. The most effective technical leaders understand that before diving into the "what" and "how" of technical solutions, you need to establish the "why." Simon Sinek's Golden Circle framework isn't just for TED talks—it's one of the most powerful tools you can use for technical leadership.</p>
+<h2 id="the-golden-circle-framework-for-technical-leadership">The Golden Circle Framework for Technical Leadership</h2>
+<p>The Golden Circle consists of three concentric circles, with "Why" at the center, surrounded by "How," and finally "What" on the outside. Most technical communications start with "What" (the features we're building) and sometimes get to "How" (the implementation approach), but rarely address "Why" (the purpose and belief driving the decision).</p>
+<pre class="mermaid"><code>graph TB
+    subgraph "Golden Circle for Technical Vision"
+        subgraph Why ["🎯 WHY&lt;br/&gt;Purpose &amp; Belief&lt;br/&gt;&lt;i&gt;The inspiring center&lt;/i&gt;"]
+            W1["• Why does this matter?&lt;br/&gt;• What impact will it have?&lt;br/&gt;• What do we believe?"]
+        end
+
+        subgraph How ["🛠️ HOW&lt;br/&gt;Process &amp; Approach&lt;br/&gt;&lt;i&gt;What makes us unique&lt;/i&gt;"] 
+            H1["• How will we implement?&lt;br/&gt;• What principles guide us?&lt;br/&gt;• What makes us different?"]
+        end
+
+        subgraph What ["📦 WHAT&lt;br/&gt;Result &amp; Evidence&lt;br/&gt;&lt;i&gt;What people see&lt;/i&gt;"]
+            WH1["• What are we building?&lt;br/&gt;• What are the features?&lt;br/&gt;• What are the specs?"]
+        end
+    end
+
+    Why --&gt; How
+    How --&gt; What
+
+    style Why fill:#e1f5fe,stroke:#1976d2,stroke-width:3px
+    style How fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px  
+    style What fill:#e8f5e8,stroke:#388e3c,stroke-width:2px</code></pre>
+<h2 id="why-the-purpose-behind-technical-decisions">Why: The Purpose Behind Technical Decisions</h2>
+<p><strong>Here's the thing most engineers get wrong</strong>: they think "why" is about technology. It's not. Your "why" is about people—the impact technology can have on users, teams, and the organization.</p>
+<p>When you start with "why," you're not explaining database choices or deployment strategies. You're articulating your beliefs about how technology should serve human needs. You're painting a picture of the future you want to create and why it matters.</p>
+<p><strong>The most compelling technical "why" statements aren't about systems—they're about the outcomes those systems enable.</strong></p>
+<h3 id="the-difference-between-weak-and-powerful-technical-why-statements">The Difference Between Weak and Powerful Technical "Why" Statements</h3>
+<p>Let's look at some real examples. Notice how the weak versions focus on what we're doing, while the strong versions focus on why it matters:</p>
+<p><strong>Infrastructure Example:</strong></p>
+<ul>
+<li><strong>Weak:</strong> "We need to move to microservices"</li>
+<li><strong>Strong:</strong> "We believe that teams should be able to innovate independently without being blocked by other teams' decisions or timelines"</li>
+</ul>
+<p><strong>Architecture Example:</strong></p>
+<ul>
+<li><strong>Weak:</strong> "We should adopt event-driven architecture"  </li>
+<li><strong>Strong:</strong> "We believe our users deserve real-time experiences that feel magical, and our engineers deserve systems that are easy to understand and modify"</li>
+</ul>
+<p><strong>Platform Example:</strong></p>
+<ul>
+<li><strong>Weak:</strong> "We're building a developer portal"</li>
+<li><strong>Strong:</strong> "We believe that engineers should spend their time solving business problems, not fighting with tooling and infrastructure"</li>
+</ul>
+<p><strong>Security Example:</strong></p>
+<ul>
+<li><strong>Weak:</strong> "We need to implement zero-trust security"</li>
+<li><strong>Strong:</strong> "We believe that security should be invisible to users and automatic for developers, creating trust through transparency"</li>
+</ul>
+<p><strong>See the pattern?</strong> The strong versions all contain beliefs about how things should work and why that matters to people. They paint a picture of a better future state that gets people excited to be part of the journey.</p>
+<h3 id="crafting-your-technical-why">Crafting Your Technical Why</h3>
+<p>To develop your technical "Why," explore these fundamental questions that connect technology to human impact:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Impact Questions</label><label for="__tabbed_1_2">Values Questions</label><label for="__tabbed_1_3">Motivation Questions</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Focus on the outcomes technology enables for real people.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Purpose</th>
+<th>Example Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What problem are we really trying to solve?</td>
+<td>Root cause identification</td>
+<td>"Teams waiting on each other instead of serving users"</td>
+</tr>
+<tr>
+<td>Who benefits from this technical decision, and how?</td>
+<td>Stakeholder clarity</td>
+<td>"Developers gain autonomy, users get faster features"</td>
+</tr>
+<tr>
+<td>What future are we trying to create?</td>
+<td>Vision articulation</td>
+<td>"Teams that innovate independently and fearlessly"</td>
+</tr>
+<tr>
+<td>What do we believe about technology's role in that future?</td>
+<td>Philosophical foundation</td>
+<td>"Technology should amplify human potential"</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Identify the principles that guide your technical decisions.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Purpose</th>
+<th>Example Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What principles guide our technical decisions?</td>
+<td>Decision framework</td>
+<td>"Simplicity over cleverness, user impact over perfection"</td>
+</tr>
+<tr>
+<td>What do we stand for as a technical organization?</td>
+<td>Identity definition</td>
+<td>"Engineering excellence that enables business innovation"</td>
+</tr>
+<tr>
+<td>What would we refuse to compromise on?</td>
+<td>Boundaries and standards</td>
+<td>"Security, accessibility, and maintainability"</td>
+</tr>
+<tr>
+<td>What legacy do we want to leave?</td>
+<td>Long-term vision</td>
+<td>"Systems that teams love to work with and users love to use"</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Connect technical work to deeper purpose and excitement.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Purpose</th>
+<th>Example Answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Why does this matter beyond just working software?</td>
+<td>Broader significance</td>
+<td>"Enables teams to move from reactive to proactive innovation"</td>
+</tr>
+<tr>
+<td>What gets us excited about this technical approach?</td>
+<td>Emotional connection</td>
+<td>"Seeing teams deploy confidently multiple times per day"</td>
+</tr>
+<tr>
+<td>Why would someone want to be part of this technical vision?</td>
+<td>Engagement driver</td>
+<td>"Opportunity to solve problems that matter at scale"</td>
+</tr>
+<tr>
+<td>What change do we want to see in the world?</td>
+<td>Transformational goal</td>
+<td>"Engineering teams that create more value with less friction"</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="how-your-technical-principles-and-approach">How: Your Technical Principles and Approach</h2>
+<p>The "How" describes your technical principles, methodologies, and approach. This is what makes your implementation unique and aligned with your purpose.</p>
+<h3 id="technical-how-examples">Technical How Examples</h3>
+<p><strong>For API Design:</strong></p>
+<ul>
+<li><strong>Why:</strong> We believe developers should love using our APIs because great developer experience accelerates innovation</li>
+<li><strong>How:</strong> We design APIs with developer empathy, provide comprehensive documentation, maintain backwards compatibility, and measure success by developer satisfaction</li>
+</ul>
+<p><strong>For Testing Strategy:</strong></p>
+<ul>
+<li><strong>Why:</strong> We believe teams should ship fearlessly because confidence enables innovation  </li>
+<li><strong>How:</strong> We build comprehensive automated testing that catches issues before production, provides fast feedback, and gives teams confidence to deploy frequently</li>
+</ul>
+<p><strong>For Technical Debt Management:</strong></p>
+<ul>
+<li><strong>Why:</strong> We believe sustainable pace enables long-term excellence and team health</li>
+<li><strong>How:</strong> We treat technical debt as a first-class backlog item, measure it systematically, and invest consistently in improvement</li>
+</ul>
+<h3 id="developing-your-technical-how">Developing Your Technical How</h3>
+<p>Your "How" should reflect the principles and approaches that make your implementation unique and aligned with your purpose:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Process Principles</label><label for="__tabbed_2_2">Cultural Principles</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Define the methodologies that support your technical vision.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Principle Category</th>
+<th>Guiding Questions</th>
+<th>Implementation Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Methodologies</strong></td>
+<td>What methodologies align with your purpose?</td>
+<td>Agile for responsiveness, DevOps for flow</td>
+</tr>
+<tr>
+<td><strong>Practices</strong></td>
+<td>What practices support your beliefs?</td>
+<td>Code review for knowledge sharing, TDD for confidence</td>
+</tr>
+<tr>
+<td><strong>Standards</strong></td>
+<td>What standards reflect your values?</td>
+<td>API-first design, accessibility requirements</td>
+</tr>
+<tr>
+<td><strong>Decisions</strong></td>
+<td>What frameworks serve your vision?</td>
+<td>Data-driven decisions with user impact focus</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p><strong>Shape the collaborative environment that enables technical excellence.</strong></p>
+<table>
+<thead>
+<tr>
+<th>Culture Area</th>
+<th>Defining Questions</th>
+<th>Practical Outcome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Collaboration</strong></td>
+<td>How do you want teams to work together?</td>
+<td>Cross-functional pairing, shared ownership</td>
+</tr>
+<tr>
+<td><strong>Behaviors</strong></td>
+<td>What behaviors do you want to encourage?</td>
+<td>Psychological safety, continuous learning</td>
+</tr>
+<tr>
+<td><strong>Practices</strong></td>
+<td>What practices build the culture you envision?</td>
+<td>Blameless post-mortems, regular retrospectives</td>
+</tr>
+<tr>
+<td><strong>Success Metrics</strong></td>
+<td>How do you measure success beyond technical metrics?</td>
+<td>Team satisfaction, learning velocity, innovation rate</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<h2 id="what-the-tangible-technical-outcomes">What: The Tangible Technical Outcomes</h2>
+<p>The "What" is the specific technical implementation - the systems, features, and solutions that manifest your purpose and approach.</p>
+<h3 id="making-what-compelling-through-why-and-how">Making What Compelling Through Why and How</h3>
+<p>Instead of leading with technical specifications, connect them to purpose:</p>
+<p><strong>Traditional Technical Presentation:</strong>
+"We're implementing a message queue system using Apache Kafka with 99.9% uptime SLA, supporting 100K messages per second with configurable retention policies."</p>
+<p><strong>Golden Circle Technical Presentation:</strong>
+"<strong>Why:</strong> We believe our users deserve real-time experiences that feel magical, and our teams should be able to build features independently without system-wide coordination.</p>
+<p><strong>How:</strong> We're building event-driven systems that decouple services, enable independent deployment, and provide real-time data flow with built-in reliability.</p>
+<p><strong>What:</strong> We're implementing Apache Kafka as our message backbone, targeting 99.9% uptime and 100K message throughput, with team-configurable retention policies."</p>
+<h2 id="golden-circle-applied-to-staff-engineer-communication">Golden Circle Applied to Staff Engineer Communication</h2>
+<h3 id="technical-architecture-presentations">Technical Architecture Presentations</h3>
+<p><strong>Traditional Approach (What → How):</strong></p>
+<ol>
+<li>"We're building a microservices architecture"</li>
+<li>"Here's the service design and API specifications"</li>
+<li>"We'll use Docker, Kubernetes, and service mesh"</li>
+</ol>
+<p><strong>Golden Circle Approach (Why → How → What):</strong></p>
+<ol>
+<li><strong>Why:</strong> "We believe teams should own their destiny - able to innovate, deploy, and scale independently"</li>
+<li><strong>How:</strong> "We're designing for team autonomy through service boundaries that match team boundaries, with clear contracts and independent deployment"</li>
+<li><strong>What:</strong> "This manifests as microservices using Docker containers, Kubernetes orchestration, and service mesh communication"</li>
+</ol>
+<h3 id="technical-decision-records-tdrs">Technical Decision Records (TDRs)</h3>
+<p>Structure your TDRs using the Golden Circle:</p>
+<div class="highlight"><pre><span></span><code><span class="gh"># TDR: Adopting GraphQL for Internal APIs</span>
+
+<span class="gu">## Why (Purpose)</span>
+We believe teams should be able to build user interfaces quickly without being blocked by API limitations or over-fetching data concerns...
+
+<span class="gu">## How (Approach)  </span>
+We will implement a schema-first GraphQL approach that enables frontend teams to request exactly the data they need while maintaining backwards compatibility...
+
+<span class="gu">## What (Decision)</span>
+We are adopting Apollo GraphQL Server with schema federation, implementing resolver patterns, and establishing GraphQL governance practices...
+</code></pre></div>
+<h3 id="stakeholder-communication">Stakeholder Communication</h3>
+<p>When communicating with different audiences, adjust your emphasis while maintaining the Why-How-What structure:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Engineering Teams</label><label for="__tabbed_3_2">Product Teams</label><label for="__tabbed_3_3">Executive Leadership</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Focus: How + What</strong></p>
+<ul>
+<li>Lead with purpose but emphasize implementation</li>
+<li>Connect daily work to larger vision</li>
+<li>Highlight principles and practices</li>
+<li>Include technical details and trade-offs</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Focus: Why + What</strong></p>
+<ul>
+<li>Lead with user and business impact</li>
+<li>Connect to product outcomes</li>
+<li>Focus on capabilities enabled</li>
+<li>Minimize technical implementation details</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p><strong>Focus: Why</strong></p>
+<ul>
+<li>Lead with business purpose and competitive advantage</li>
+<li>Connect to strategic objectives</li>
+<li>Focus on outcomes and value</li>
+<li>Provide high-level implementation confidence</li>
+</ul>
+</div>
+</div>
+</div>
+<h2 id="building-technical-movements-not-just-solutions">Building Technical Movements, Not Just Solutions</h2>
+<p>The Golden Circle helps you build movements around technical vision rather than just implementing solutions.</p>
+<h3 id="creating-technical-believers">Creating Technical Believers</h3>
+<p><strong>People follow your Why, not your What:</strong></p>
+<ul>
+<li>Engineers join teams for purpose, not just technology stacks</li>
+<li>Stakeholders support initiatives for vision, not just features</li>
+<li>Organizations adopt practices for beliefs, not just efficiency</li>
+</ul>
+<h3 id="sustaining-technical-change">Sustaining Technical Change</h3>
+<p><strong>Purpose-driven change lasts longer:</strong></p>
+<ul>
+<li>When challenges arise, purpose provides resilience</li>
+<li>When priorities shift, core beliefs provide stability  </li>
+<li>When people leave, the Why continues to attract new believers</li>
+</ul>
+<h3 id="scaling-technical-influence">Scaling Technical Influence</h3>
+<p><strong>Why-based communication scales influence:</strong></p>
+<ul>
+<li>Purpose resonates across organizational levels</li>
+<li>Beliefs transcend specific technical implementations</li>
+<li>Vision attracts contributors and supporters</li>
+</ul>
+<h2 id="practical-application-the-golden-circle-workshop">Practical Application: The Golden Circle Workshop</h2>
+<p>Use this workshop format to develop your technical vision:</p>
+<div class="grid cards">
+<ul>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m4.2 14.2L11 13V7h1.5v5.2l4.5 2.7z"/></svg></span> <strong>Step 1: Individual Reflection</strong></p>
+<hr />
+<p><strong>Duration:</strong> 15 minutes</p>
+<ul>
+<li>What do you believe about technology's role?</li>
+<li>What impact do you want to have?</li>
+<li>What would you never compromise on?</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg></span> <strong>Step 2: Small Group Why Development</strong></p>
+<hr />
+<p><strong>Duration:</strong> 30 minutes</p>
+<ul>
+<li>Share individual reflections</li>
+<li>Identify common themes and beliefs</li>
+<li>Draft collective purpose statements</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.19 14.19 6 18l3.81-8.19L18 6m-6-4A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 8.9a1.1 1.1 0 0 0-1.1 1.1 1.1 1.1 0 0 0 1.1 1.1 1.1 1.1 0 0 0 1.1-1.1 1.1 1.1 0 0 0-1.1-1.1"/></svg></span> <strong>Step 3: How Alignment</strong></p>
+<hr />
+<p><strong>Duration:</strong> 20 minutes</p>
+<ul>
+<li>What principles support our Why?</li>
+<li>What approaches align with our beliefs?</li>
+<li>What practices reflect our values?</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"/></svg></span> <strong>Step 4: What Prioritization</strong></p>
+<hr />
+<p><strong>Duration:</strong> 15 minutes</p>
+<ul>
+<li>Which technical solutions best serve our Why?</li>
+<li>What implementations support our How?</li>
+<li>What features deliver on our promises?</li>
+</ul>
+</li>
+<li>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 3h8a2 2 0 0 1 2-2 2 2 0 0 1 2 2h8v2h-1v11h-5.75L17 22h-2l-1.75-6h-2.5L9 22H7l1.75-6H3V5H2zm3 2v9h14V5z"/></svg></span> <strong>Step 5: Communication Practice</strong></p>
+<hr />
+<p><strong>Duration:</strong> 20 minutes</p>
+<ul>
+<li>Present technical decisions using Why-How-What structure</li>
+<li>Get feedback on clarity and inspiration</li>
+<li>Refine messaging for different audiences</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="golden-circle-anti-patterns-for-technical-leaders">Golden Circle Anti-Patterns for Technical Leaders</h2>
+<div class="admonition warning">
+<p class="admonition-title">The Fake Why</p>
+<p><strong>Problem:</strong> Using mission statements or buzzwords instead of genuine beliefs</p>
+<p><strong>Example:</strong> "We believe in best practices and industry standards"</p>
+<p><strong>Solution:</strong> Dig deeper into personal and organizational convictions</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">The How-Heavy Why</p>
+<p><strong>Problem:</strong> Describing methodologies instead of purpose</p>
+<p><strong>Example:</strong> "We believe in agile development and continuous integration"</p>
+<p><strong>Solution:</strong> Focus on the outcomes and impact you want to create</p>
+</div>
+<div class="admonition error">
+<p class="admonition-title">The What-Only Communication</p>
+<p><strong>Problem:</strong> Leading with features and specifications</p>
+<p><strong>Example:</strong> Starting presentations with "We built a REST API with these endpoints"</p>
+<p><strong>Solution:</strong> Always start with purpose and impact</p>
+</div>
+<div class="admonition caution">
+<p class="admonition-title">The Generic Vision</p>
+<p><strong>Problem:</strong> Using vague, universal statements that don't differentiate</p>
+<p><strong>Example:</strong> "We want to build reliable, scalable software"</p>
+<p><strong>Solution:</strong> Find what makes your specific vision unique and compelling</p>
+</div>
+<h2 id="measuring-the-impact-of-purpose-driven-technical-leadership">Measuring the Impact of Purpose-Driven Technical Leadership</h2>
+<h3 id="engagement-metrics">Engagement Metrics</h3>
+<ul>
+<li>Team motivation and satisfaction scores</li>
+<li>Voluntary participation in technical initiatives</li>
+<li>Cross-team collaboration and support</li>
+<li>Retention of high-performing engineers</li>
+</ul>
+<h3 id="influence-metrics">Influence Metrics</h3>
+<ul>
+<li>Adoption rate of technical recommendations</li>
+<li>Stakeholder buy-in for technical investments</li>
+<li>Success in securing resources for technical vision</li>
+<li>Recognition and speaking opportunities</li>
+</ul>
+<h3 id="outcome-metrics">Outcome Metrics</h3>
+<ul>
+<li>Achievement of technical vision milestones</li>
+<li>User and business impact from technical decisions</li>
+<li>Long-term sustainability of technical approaches</li>
+<li>Cultural change and practice adoption</li>
+</ul>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li><strong>Start with Why</strong>: Technical decisions are more compelling when grounded in purpose and belief</li>
+<li><strong>How differentiates</strong>: Your approach and principles make your technical vision unique</li>
+<li><strong>What manifests</strong>: Specific implementations should serve your larger purpose</li>
+<li><strong>Communication scales</strong>: Why-based messaging resonates across audiences and organizational levels</li>
+<li><strong>Purpose sustains</strong>: Vision-driven technical change outlasts individual tenure and market shifts</li>
+<li><strong>Movements beat mandates</strong>: People follow technical leaders who inspire, not just instruct</li>
+</ol>
+<p>Technical leadership isn't just about making good technical decisions—it's about inspiring others to believe in a vision of what technology can achieve. The Golden Circle framework helps you communicate not just what you're building, but why it matters and how it will change things for the better.</p>
+<h2 id="cross-reference-navigation">Cross-Reference Navigation</h2>
+<h3 id="prerequisites-for-this-chapter">Prerequisites for This Chapter</h3>
+<ul>
+<li><strong><a href="../communication-presentation-skills/">Communication &amp; Presentation Skills</a></strong> - Effective communication skills are essential for articulating and sharing technical vision</li>
+<li><strong><a href="../../execution/strategic-thinking/">Strategic Thinking</a></strong> - Strategic thinking provides foundation for developing compelling technical visions</li>
+</ul>
+<h3 id="related-concepts">Related Concepts</h3>
+<ul>
+<li><strong><a href="../storytelling-for-engineers/">Storytelling for Engineers</a></strong> - Storytelling techniques help communicate technical vision in compelling ways</li>
+<li><strong><a href="../influence-without-authority/">Influence Without Authority</a></strong> - Technical vision requires influencing others to adopt new approaches and directions</li>
+<li><strong><a href="../../business/aligning-technology/">Aligning Technology with Business Strategy</a></strong> - Technical vision must align with and support broader business strategy</li>
+<li><strong><a href="../../execution/change-management-technical-transformations/">Change Management for Technical Transformations</a></strong> - Implementing technical vision requires systematic change management</li>
+</ul>
+<h3 id="apply-these-concepts">Apply These Concepts</h3>
+<ul>
+<li><strong><a href="../../../appendix/tools/staff-engineer-competency-assessment/">Staff Engineer Competency Assessment</a></strong> - Evaluate your technical leadership and vision communication capabilities</li>
+<li><strong><a href="../../../appendix/tools/development-tracking-system/">Development Tracking System</a></strong> - Track your progress in developing vision articulation and leadership skills</li>
+</ul>
+<h3 id="next-steps-in-your-learning-journey">Next Steps in Your Learning Journey</h3>
+<ol>
+<li><strong><a href="../storytelling-for-engineers/">Storytelling for Engineers</a></strong> - Master narrative techniques for communicating technical vision effectively</li>
+<li><strong><a href="../influence-without-authority/">Influence Without Authority</a></strong> - Develop skills for building support and adoption for your technical vision</li>
+<li><strong><a href="../../execution/change-management-technical-transformations/">Change Management for Technical Transformations</a></strong> - Learn to implement technical vision through systematic organizational change</li>
+</ol>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Sinek, Simon. <em>Start with Why: How Great Leaders Inspire Everyone to Take Action</em>. 2009.</li>
+<li>Sinek, Simon. <em>Leaders Eat Last: Why Some Teams Pull Together and Others Don't</em>. 2014.</li>
+<li>Heath, Chip, and Dan Heath. <em>Made to Stick: Why Some Ideas Survive and Others Die</em>. 2007.</li>
+<li>Collins, Jim. <em>Good to Great: Why Some Companies Make the Leap... and Others Don't</em>. 2001.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Leadership, Influence &amp; Communication">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Leadership, Influence & Communication
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../influencing-without-authority/" class="md-footer__link md-footer__link--next" aria-label="Next: Influencing Without Authority">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Influencing Without Authority
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

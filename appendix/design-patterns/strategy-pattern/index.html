@@ -1,0 +1,632 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The Strategy Design Pattern allows an object to have some or all of its behavior defined in terms of another object which follows a particular interface.">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Strategy Design Pattern - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-strategy-pattern-architecting-for-algorithmic-flexibility" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Strategy Design Pattern
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="the-strategy-pattern-architecting-for-algorithmic-flexibility">The Strategy Pattern: Architecting for Algorithmic Flexibility</h1>
+<h2 id="introduction-when-algorithms-need-to-evolve">Introduction: When Algorithms Need to Evolve</h2>
+<p>Imagine you're architecting a pricing system for an e-commerce platform that serves both B2B and B2C customers across multiple geographic markets. Your initial implementation might handle standard retail pricing with simple percentage discounts, but business requirements quickly evolve: enterprise customers need volume-based tiered pricing, international markets require currency conversion with regional tax calculations, seasonal promotions demand dynamic pricing algorithms, and A/B testing requires the ability to deploy different pricing strategies to different customer segments simultaneously.</p>
+<p>Without careful architectural planning, this algorithmic complexity can quickly transform a simple pricing function into an unmaintainable monolith filled with conditional logic, feature flags, and deeply nested decision trees. Each new pricing requirement forces modifications to core business logic, increasing the risk of regression bugs and making it increasingly difficult to test individual pricing strategies in isolation.</p>
+<p>The Strategy Design Pattern provides a sophisticated solution to this challenge by treating algorithms as first-class objects that can be selected, composed, and modified independently of the clients that use them. Rather than embedding algorithmic variations directly within business logic, the pattern encapsulates different approaches behind a common interface, enabling runtime algorithm selection and independent algorithm evolution.</p>
+<p>This architectural approach becomes particularly valuable for staff engineers building systems that must adapt to changing business requirements while maintaining reliability, testability, and performance. The Strategy Pattern transforms algorithmic complexity from a maintenance burden into a competitive advantage, enabling teams to rapidly deploy new behavioral variations without destabilizing existing functionality.</p>
+<h2 id="intent">Intent</h2>
+<p>Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy allows the algorithm to vary independently from clients that use it. This approach decouples the client from the specific implementation details of an algorithm, enabling dynamic switching and customization at runtime. [GoF](http://amzn.to/vep3BT)</p>
+<h2 id="the-architectural-forces-at-play">The Architectural Forces at Play</h2>
+<p>The need for the Strategy Pattern emerges when systems face algorithmic complexity that must remain flexible while maintaining reliability. Consider the evolution of a payment processing system in a growing fintech application. Initially, the system might handle only credit card transactions through a single payment processor, with straightforward validation and settlement logic embedded directly in the checkout flow.</p>
+<p>As the business scales, new requirements emerge rapidly: PayPal integration for users who prefer not to enter credit card information, cryptocurrency payments for international customers avoiding traditional banking fees, buy-now-pay-later services for younger demographics, and enterprise payment methods like ACH transfers for B2B customers. Each payment method brings unique validation rules, settlement timelines, fee structures, and error handling requirements.</p>
+<p>Without strategic architectural planning, teams often implement these requirements through expanding conditional logic within existing payment classes. The result becomes a maintenance nightmare: a single <code>PaymentProcessor</code> class containing hundreds of lines of if-else statements, switch cases, and feature flags. Adding Apple Pay requires modifying this core class, potentially introducing bugs in Bitcoin processing. Testing requires covering exponentially complex combinations of payment methods, market conditions, and edge cases.</p>
+<p>The Strategy Pattern addresses these challenges by recognizing that payment methods represent a family of related algorithms that share common objectives but differ in implementation details. Rather than managing this complexity through conditional logic, the pattern promotes algorithmic encapsulation: each payment method becomes a discrete strategy class that implements a common <code>PaymentStrategy</code> interface.</p>
+<p>This architectural approach provides immediate benefits: new payment methods can be added without modifying existing code, individual payment strategies can be tested in isolation, different payment methods can evolve independently based on their specific requirements, and the core checkout logic remains focused on orchestration rather than implementation details. The pattern aligns naturally with the Single Responsibility Principle, ensuring that each class has a focused, well-defined purpose within the larger system architecture.</p>
+<h2 id="conceptual-breakdown">Conceptual Breakdown</h2>
+<p>Let’s delve deeper into the key concepts within the Strategy Pattern:</p>
+<ul>
+<li>
+<p><strong>Strategy Interface:</strong> This defines the common interface that all strategy implementations must adhere to. It specifies the methods that the strategy must implement (e.g., <code>ProcessPayment()</code>, <code>ValidateDetails()</code>). This acts as the contract for all algorithm variations.</p>
+</li>
+<li>
+<p><strong>Concrete Strategies:</strong> These are the specific implementations of the strategy interface. Each concrete strategy represents a particular algorithm or behavioral variation. Examples include <code>CreditCardStrategy</code>, <code>PayPalStrategy</code>, <code>BitcoinStrategy</code>.</p>
+</li>
+<li>
+<p><strong>Context:</strong> The context is the class that uses the strategy. It holds a reference to the selected strategy and delegates calls to the strategy's methods. The context is responsible for orchestrating the execution of the chosen algorithm.</p>
+</li>
+<li>
+<p><strong>Dynamic Switching:</strong> A key benefit of the Strategy pattern is the ability to switch between different strategies at runtime. This can be done through configuration, user input, or other mechanisms, providing flexibility and adaptability.</p>
+</li>
+</ul>
+<h2 id="real-world-examples">Real-World Examples</h2>
+<ul>
+<li>
+<p><strong>Video Encoding:</strong> A media player could utilize the Strategy pattern to switch between different video encoding algorithms (e.g., H.264, H.265) based on the available hardware and desired quality settings.</p>
+</li>
+<li>
+<p><strong>Data Validation:</strong> A web form could employ different validation strategies (e.g., client-side validation, server-side validation) depending on the user’s input and the system's requirements.</p>
+</li>
+<li>
+<p><strong>Database Query Optimization:</strong> In a database system, different query optimization strategies could be chosen based on the size of the data, the complexity of the query, and the available hardware resources.</p>
+</li>
+<li>
+<p><strong>Security Policies:</strong> A web application might dynamically switch between different security policies (e.g., stricter authentication, rate limiting) based on the perceived threat level or user privileges.</p>
+</li>
+</ul>
+<h2 id="technical-illustration">Technical Illustration</h2>
+<p><strong>Note:</strong> The UML diagram for the Strategy Pattern is currently unavailable.</p>
+<p>The diagram would illustrate the relationships between:</p>
+<ol>
+<li><strong>Context</strong> - The class that uses the strategy</li>
+<li><strong>Strategy Interface</strong> - The common interface for all concrete strategies</li>
+<li><strong>Concrete Strategies</strong> - The specific implementations of the strategy interface</li>
+</ol>
+<p>The diagram illustrates the core relationships. The Context uses the Strategy interface, and multiple concrete strategies can be implemented and used.</p>
+<h2 id="example-c">Example (C#)</h2>
+<div class="highlight"><pre><span></span><code><span class="c1">// Strategy Interface</span>
+<span class="k">public</span><span class="w"> </span><span class="k">interface</span><span class="w"> </span><span class="n">IPaymentStrategy</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">void</span><span class="w"> </span><span class="nf">ProcessPayment</span><span class="p">(</span><span class="kt">decimal</span><span class="w"> </span><span class="n">amount</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">details</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Concrete Strategy: Credit Card</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">CreditCardStrategy</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IPaymentStrategy</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ProcessPayment</span><span class="p">(</span><span class="kt">decimal</span><span class="w"> </span><span class="n">amount</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">details</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Processing {amount} using Credit Card: {details}&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Implement credit card payment logic here</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Concrete Strategy: PayPal</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PayPalStrategy</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">IPaymentStrategy</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ProcessPayment</span><span class="p">(</span><span class="kt">decimal</span><span class="w"> </span><span class="n">amount</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">details</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&quot;Processing {amount} using PayPal: {details}&quot;</span><span class="p">);</span>
+<span class="w">        </span><span class="c1">// Implement PayPal payment logic here</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Context</span>
+<span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">PaymentContext</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">private</span><span class="w"> </span><span class="n">IPaymentStrategy</span><span class="w"> </span><span class="n">_strategy</span><span class="p">;</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="nf">PaymentContext</span><span class="p">(</span><span class="n">IPaymentStrategy</span><span class="w"> </span><span class="n">strategy</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_strategy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">strategy</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ProcessPayment</span><span class="p">(</span><span class="kt">decimal</span><span class="w"> </span><span class="n">amount</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">details</span><span class="p">)</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">_strategy</span><span class="p">.</span><span class="n">ProcessPayment</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span><span class="w"> </span><span class="n">details</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Usage Example</span>
+<span class="n">PaymentContext</span><span class="w"> </span><span class="n">paymentContext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PaymentContext</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">CreditCardStrategy</span><span class="p">());</span>
+<span class="n">paymentContext</span><span class="p">.</span><span class="n">ProcessPayment</span><span class="p">(</span><span class="mf">100.00m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;CC1234567890&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Processes using Credit Card</span>
+<span class="n">paymentContext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">PaymentContext</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">PayPalStrategy</span><span class="p">());</span><span class="w"> </span><span class="c1">// Switch to PayPal</span>
+<span class="n">paymentContext</span><span class="p">.</span><span class="n">ProcessPayment</span><span class="p">(</span><span class="mf">50.00m</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;PayPalAccount&quot;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Processes using PayPal</span>
+</code></pre></div>
+<h2 id="references">References</h2>
+<ul>
+<li>
+<p><strong>Design Patterns: Elements of Reusable Object-Oriented Software</strong> by the Gang of Four (GoF) - <a href="http://amzn.to/vep3BT">http://amzn.to/vep3BT</a></p>
+</li>
+<li>
+<p><strong>Ardalis - New is Glue:</strong> <a href="http://ardalis.com/new-is-glue">http://ardalis.com/new-is-glue</a> - A key concept related to dependency injection and avoiding unnecessary instantiation.</p>
+</li>
+</ul>
+<h2 id="call-to-action">Call to Action</h2>
+<p>Mastering the Strategy Design Pattern is a crucial investment for any software engineer. By understanding and applying this pattern, you’ll be able to build more flexible, maintainable, and testable systems. This directly impacts your team's velocity, reduces technical debt, and enables you to confidently adapt to evolving requirements. Start incorporating the Strategy Pattern into your design process – it’s an essential tool for building robust and adaptable software. Failure to deeply understand this pattern will result in systems that are brittle, difficult to change, and prone to errors, negatively impacting both development speed and system stability.</p>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

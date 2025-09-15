@@ -1,0 +1,3950 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+        <link rel="prev" href="../engineering-metrics-business-alignment/">
+      
+      
+        <link rel="next" href="../business-case/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Pitching to Executives - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-to-pitch-engineering-projects-to-executives-selling-your-vision" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Pitching to Executives
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../intro/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Field Guide
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Staff Engineer Archetypes
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Staff Engineer Archetypes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/tech-lead/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Tech Lead
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/architect/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Architect
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/solver/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Solver
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/right-hand/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Right Hand
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../intro/force-multiplier/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Becoming a Force Multiplier
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../learning/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Continuous Learning
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Continuous Learning
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/developing-expertise/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Developing Expertise
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/mentorship-sponsorship/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mentorship & Sponsorship
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/staying-current/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Staying Current
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/learning-organization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Learning Organization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../learning/teaching-to-learn/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Teaching to Learn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../engineering/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Excellence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_4" id="__nav_2_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Excellence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/site-reliability-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Site Reliability Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/continuous-delivery/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Continuous Delivery
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/cicd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CI/CD
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/tdd/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Test-Driven Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/advanced-testing-strategies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Testing Strategies
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/clean-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Clean Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/evolutionary-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Evolutionary Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/software-supply-chain-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Software Supply Chain Security
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/devops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DevOps & Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Git Best Practices
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/source-control/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Source Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/code-hygiene/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Code Hygiene & Refactoring
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/adrs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Architecture Decision Records
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/hexagonal-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hexagonal Architecture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/story-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Story Mapping & Splitting
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/chaos-engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Chaos Engineering
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../thinking/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Critical Thinking
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Critical Thinking
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mental-models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mental Models for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/algorithmic-decision-making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Algorithmic Decision-Making
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/cognitive-biases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cognitive Biases
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/structured-problem-solving/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Structured Problem-Solving
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/mind-mapping/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mind Mapping & Visual Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thinking/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../leadership/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Leadership & Influence
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_6" id="__nav_2_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_6">
+            <span class="md-nav__icon md-icon"></span>
+            Leadership & Influence
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-vision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Vision & Purpose
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/influencing-without-authority/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Influencing Without Authority
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-conflict-resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Conflict Resolution
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/giving-receiving-feedback/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Giving & Receiving Feedback
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/delivering-difficult-messages/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Delivering Difficult Messages
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/advanced-mentorship-career-development/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Mentorship & Career Development
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/vulnerability-leadership/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vulnerability in Leadership
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/self-awareness-personality-types/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Self-Awareness & Personality Types
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/psychological-safety-trust/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety & Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/power-influence-organizations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Power & Influence in Organizations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/storytelling-for-engineers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Storytelling for Engineers
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/technical-writing-for-influence/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Writing for Influence
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/presentation-persuasion-skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentation & Persuasion Skills
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/working-across-boundaries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Working Across Boundaries
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/async-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Asynchronous Communication
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../leadership/navigating-tough-technical-discussions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Tough Technical Discussions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../teamwork/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Teamwork & Collaboration
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_7">
+            <span class="md-nav__icon md-icon"></span>
+            Teamwork & Collaboration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/organizational-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Design
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/team-formation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Team Formation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cultural-transformation-psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cultural Transformation & Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/five-dysfunctions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Five Dysfunctions of a Team
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/cross-functional-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cross-Functional Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/mismanagement-agreement/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Mismanagement Agreement
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/psychological-safety/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Psychological Safety
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../teamwork/culture-map/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Culture Map
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../execution/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Execution & Delivery
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Execution & Delivery
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/agile-essentials/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Agile Essentials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/decision-making-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Decision-Making Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/strategic-thinking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Strategic Thinking
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/change-management-technical-transformations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Change Management for Technical Transformations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/speed-vs-quality/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Speed vs. Quality
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/navigating-uncertainty/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Navigating Uncertainty & Change
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/prioritization-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Prioritization Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../execution/organizational-transformation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Organizational Transformation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Business Alignment
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
+            <span class="md-nav__icon md-icon"></span>
+            Business Alignment
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aligning-technology/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Aligning Technology to Business Strategy
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../product-engineering-collaboration/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Product-Engineering Collaboration
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering-metrics-business-alignment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Engineering Metrics & Business Alignment
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Pitching to Executives
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-scenario" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Scenario
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#understanding-your-audience-the-executive-mindset" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding Your Audience: The Executive Mindset
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Understanding Your Audience: The Executive Mindset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-focus-on-outcomes-not-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Focus on Outcomes, Not Activities
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-resource-allocation-mindset" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Resource Allocation Mindset
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-risk-management-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Risk Management Perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-time-horizon-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Time Horizon Differences
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-vocabulary-differences" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Vocabulary Differences
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-anatomy-of-a-compelling-executive-pitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Anatomy of a Compelling Executive Pitch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The Anatomy of a Compelling Executive Pitch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-hook-start-with-why" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Hook: Start with Why
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-business-case-quantify-the-value" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. The Business Case: Quantify the Value
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-the-urgency-why-now" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. The Urgency: Why Now
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-the-plan-show-thoughtful-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. The Plan: Show Thoughtful Execution
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-the-alternatives-show-due-diligence" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. The Alternatives: Show Due Diligence
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-the-ask-be-specific" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. The Ask: Be Specific
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentation-strategies-for-technical-leaders" class="md-nav__link">
+    <span class="md-ellipsis">
+      Presentation Strategies for Technical Leaders
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Presentation Strategies for Technical Leaders">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-executive-summary-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The Executive Summary Approach
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-narrative-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. The Narrative Structure
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-the-visualization-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. The Visualization Strategy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-the-objection-anticipation-technique" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. The Objection Anticipation Technique
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tailoring-your-pitch-to-different-executive-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tailoring Your Pitch to Different Executive Roles
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tailoring Your Pitch to Different Executive Roles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-the-ceo" class="md-nav__link">
+    <span class="md-ellipsis">
+      For the CEO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-the-cfo" class="md-nav__link">
+    <span class="md-ellipsis">
+      For the CFO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-the-ctocio" class="md-nav__link">
+    <span class="md-ellipsis">
+      For the CTO/CIO
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-the-cpo-chief-product-officer" class="md-nav__link">
+    <span class="md-ellipsis">
+      For the CPO (Chief Product Officer)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handling-tough-questions-and-pushback" class="md-nav__link">
+    <span class="md-ellipsis">
+      Handling Tough Questions and Pushback
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Handling Tough Questions and Pushback">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-the-why-cant-we-just-patch-it-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. The "Why Can't We Just Patch It?" Question
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-the-cant-we-do-this-while-building-features-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. The "Can't We Do This While Building Features?" Question
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-the-whats-the-minimum-we-can-do-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. The "What's the Minimum We Can Do?" Question
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-the-how-do-we-know-this-will-work-question" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. The "How Do We Know This Will Work?" Question
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-executive-relationships-beyond-the-pitch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building Executive Relationships Beyond the Pitch
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Building Executive Relationships Beyond the Pitch">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-visibility-into-technical-challenges" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Create Visibility Into Technical Challenges
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-demonstrate-business-acumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Demonstrate Business Acumen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-build-trust-through-small-wins" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Build Trust Through Small Wins
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-establish-yourself-as-a-strategic-partner" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Establish Yourself as a Strategic Partner
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learning-from-pitch-outcomes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning From Pitch Outcomes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Learning From Pitch Outcomes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-your-pitch-is-approved" class="md-nav__link">
+    <span class="md-ellipsis">
+      If Your Pitch Is Approved
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-your-pitch-is-rejected" class="md-nav__link">
+    <span class="md-ellipsis">
+      If Your Pitch Is Rejected
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-pitfalls-to-avoid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Common Pitfalls to Avoid
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prerequisites-and-related-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites and Related Learning
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Prerequisites and Related Learning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites-for-this-chapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prerequisites for This Chapter
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apply-executive-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      Apply Executive Communication
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#next-steps-in-your-learning-journey" class="md-nav__link">
+    <span class="md-ellipsis">
+      Next Steps in Your Learning Journey
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#learning-path-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Learning Path Recommendations
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../business-case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Building a Better Business Case
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../revenue-vs-risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Revenue vs. Risk
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cost-optimization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cost Optimization & FinOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empowered-teams/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Empowered Teams & Engineering Culture
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ethics/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    Engineering Ethics
+    
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_10">
+            <span class="md-nav__icon md-icon"></span>
+            Engineering Ethics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/bias-in-automation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Bias in Automation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/data-privacy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Data Privacy & User Trust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethical-frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ethical Frameworks
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/ethics-of-scale/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    The Ethics of Scale
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ethics/responsible-innovation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Responsible Innovation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="how-to-pitch-engineering-projects-to-executives-selling-your-vision">How to Pitch Engineering Projects to Executives: Selling Your Vision</h1>
+<h2 id="the-scenario">The Scenario</h2>
+<p>A Staff Engineer has identified a critical opportunity to rearchitect a core system. The current architecture is reaching its limits, causing increasing incidents and slowing down development. A comprehensive refactoring would enable faster feature development, improved reliability, and support the next three years of growth. The engineer has a solid technical plan but needs executive approval and resources. Their first attempt at pitching the project—a 20-slide deep dive into the technical architecture—is met with blank stares and polite dismissal. "This sounds like an engineering nice-to-have. Let's focus on customer-facing features for now."</p>
+<p>This scenario highlights a common challenge for technical leaders: translating technical necessity into business value that executives can understand and support. As a Staff Engineer, your ability to successfully pitch technical initiatives to executives can be the difference between a critical project moving forward or being indefinitely deferred. This isn't about manipulation or politics—it's about effective communication across the technical-business divide.</p>
+<h2 id="understanding-your-audience-the-executive-mindset">Understanding Your Audience: The Executive Mindset</h2>
+<p>Executives think differently than engineers. To pitch effectively, you need to understand their perspective:</p>
+<h3 id="1-focus-on-outcomes-not-activities">1. Focus on Outcomes, Not Activities</h3>
+<p>Executives focus intensively on business results, market position, and competitive advantage rather than the technical elegance, implementation details, or development journey that engineers naturally emphasize. This fundamental difference in perspective means that successful pitches must translate technical capabilities into measurable business outcomes that directly impact organizational success.</p>
+<h3 id="2-resource-allocation-mindset">2. Resource Allocation Mindset</h3>
+<p>Every executive pitch occurs within a context of scarce resources and competing priorities, where executives constantly evaluate whether any given initiative represents the best use of limited time, budget, and personnel. They're simultaneously balancing multiple competing initiatives across the entire business, from product development to marketing campaigns to operational improvements. Your technical project must clearly demonstrate why it deserves resources over these other business-critical investments.</p>
+<h3 id="3-risk-management-perspective">3. Risk Management Perspective</h3>
+<p>Executive thinking is deeply shaped by risk management concerns, particularly around business continuity, reputation damage, and missed market opportunities that could affect organizational viability. They require concrete assurance about implementation risk, detailed transition plans that minimize business disruption, and clear fallback options that protect the organization if technical initiatives encounter unexpected challenges.</p>
+<h3 id="4-time-horizon-differences">4. Time Horizon Differences</h3>
+<p>Executives operate primarily within quarterly and fiscal year planning cycles that align with board reporting, investor communications, and business performance evaluation, while engineers naturally think in terms of sprints and technical milestones that reflect development velocity and implementation progress. Successful technical pitches bridge this temporal gap by demonstrating both short-term wins that provide immediate business value and long-term strategic alignment that supports multi-year organizational objectives.</p>
+<h3 id="5-vocabulary-differences">5. Vocabulary Differences</h3>
+<p>The communication challenge extends beyond concepts to language itself, where executives speak fluently in terms of ROI, market share, customer acquisition, and competitive advantage that directly relate to business performance, while engineers communicate through concepts like refactoring, technical debt, architecture, and scalability that describe system capabilities. Your role as a Staff Engineer requires becoming bilingual, translating between these vocabularies so that technical necessity becomes comprehensible business opportunity.</p>
+<h2 id="the-anatomy-of-a-compelling-executive-pitch">The Anatomy of a Compelling Executive Pitch</h2>
+<p>A successful executive pitch follows a proven structure that aligns technical necessity with business value. This framework transforms complex technical projects into compelling business investments:</p>
+<pre class="mermaid"><code>graph TD
+    A[Executive Pitch Structure] --&gt; B[1. The Hook&lt;br/&gt;Start with Why]
+    A --&gt; C[2. Business Case&lt;br/&gt;Quantify Value]
+    A --&gt; D[3. Urgency&lt;br/&gt;Why Now]
+    A --&gt; E[4. Execution Plan&lt;br/&gt;Show Thoughtfulness]
+    A --&gt; F[5. Alternatives&lt;br/&gt;Due Diligence]
+    A --&gt; G[6. Resources&lt;br/&gt;What You Need]
+    A --&gt; H[7. Risk Mitigation&lt;br/&gt;Address Concerns]
+
+    B --&gt; B1[Business Problem&lt;br/&gt;• Impact on metrics&lt;br/&gt;• Customer/revenue effect&lt;br/&gt;• Competitive disadvantage]
+
+    C --&gt; C1[Value Metrics&lt;br/&gt;• Cost savings&lt;br/&gt;• Revenue increase&lt;br/&gt;• Risk reduction&lt;br/&gt;• Time savings]
+
+    D --&gt; D1[Timing Factors&lt;br/&gt;• Cost of delay&lt;br/&gt;• Market window&lt;br/&gt;• Resource availability&lt;br/&gt;• Dependencies]
+
+    E --&gt; E1[Phased Approach&lt;br/&gt;• Incremental delivery&lt;br/&gt;• Risk mitigation&lt;br/&gt;• Clear milestones&lt;br/&gt;• Rollback options]
+
+    F --&gt; F1[Options Analysis&lt;br/&gt;• Status quo costs&lt;br/&gt;• Alternative solutions&lt;br/&gt;• Buy vs build&lt;br/&gt;• Recommended path]
+
+    G --&gt; G1[Resource Request&lt;br/&gt;• Team allocation&lt;br/&gt;• Budget requirements&lt;br/&gt;• Timeline commitment&lt;br/&gt;• Success metrics]
+
+    H --&gt; H1[Risk Management&lt;br/&gt;• Technical risks&lt;br/&gt;• Business risks&lt;br/&gt;• Mitigation strategies&lt;br/&gt;• Contingency plans]
+
+    style A fill:#e1f5fe,stroke:#1976d2,stroke-width:3px
+    style B1 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    style C1 fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    style D1 fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    style E1 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style F1 fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    style G1 fill:#f1f8e9,stroke:#33691e,stroke-width:2px
+    style H1 fill:#efebe9,stroke:#5d4037,stroke-width:2px</code></pre>
+<h3 id="1-the-hook-start-with-why">1. The Hook: Start with Why</h3>
+<p>Begin with a clear, compelling business reason for the project that aligns with executive priorities.</p>
+<p><strong>Weak:</strong> "Our monolith has become unwieldy and needs to be broken into microservices."</p>
+<p><strong>Strong:</strong> "Our ability to deliver new features is declining by 20% each quarter due to our current architecture. This project will restore our delivery velocity, enabling us to meet our commitment of releasing the enterprise features that represent a $2M revenue opportunity this fiscal year."</p>
+<h3 id="2-the-business-case-quantify-the-value">2. The Business Case: Quantify the Value</h3>
+<p>Express the value in terms executives care about, with clear metrics whenever possible.</p>
+<p><strong>Weak:</strong> "This will reduce technical debt."</p>
+<p><strong>Strong:</strong> "This initiative will deliver:</p>
+<ul>
+<li>40% reduction in production incidents (improving our enterprise SLA compliance)</li>
+<li>50% faster feature development (enabling 4 additional major features this year)</li>
+<li>30% reduction in infrastructure costs ($400K annual savings)</li>
+<li>Ability to scale to 10x our current user base (supporting our expansion goals)"</li>
+</ul>
+<h3 id="3-the-urgency-why-now">3. The Urgency: Why Now</h3>
+<p>Explain why this needs to happen now rather than later.</p>
+<p><strong>Weak:</strong> "We should do this sometime this year."</p>
+<p><strong>Strong:</strong> "Every month we delay costs us:</p>
+<ul>
+<li>$50K in preventable incidents</li>
+<li>$30K in excess infrastructure costs</li>
+<li>One engineering week per feature in additional development time</li>
+<li>Additionally, starting now allows us to complete the transition before our peak season in Q4, minimizing business risk."</li>
+</ul>
+<h3 id="4-the-plan-show-thoughtful-execution">4. The Plan: Show Thoughtful Execution</h3>
+<p>Demonstrate that you've thought through the implementation carefully, focusing on risk mitigation and incremental delivery.</p>
+<p><strong>Weak:</strong> "We'll need 6 months to rebuild the system."</p>
+<p><strong>Strong:</strong> "We've designed a phased approach with clear milestones:</p>
+<ul>
+<li>Phase 1 (4 weeks): Extract authentication services with zero customer impact</li>
+<li>Phase 2 (6 weeks): Migrate payment processing with canary testing to ensure reliability</li>
+<li>Phase 3 (8 weeks): Refactor core workflow with parallel systems to enable safe rollback</li>
+<li>Each phase delivers standalone business value and can be evaluated before proceeding."</li>
+</ul>
+<h3 id="5-the-alternatives-show-due-diligence">5. The Alternatives: Show Due Diligence</h3>
+<p>Acknowledge alternatives you've considered, demonstrating that your recommendation is the result of careful analysis.</p>
+<p><strong>Weak:</strong> [No mention of alternatives]</p>
+<p><strong>Strong:</strong> "We evaluated three approaches:</p>
+<ol>
+<li><strong>Minimal patch (rejected):</strong> Quick but fails to address root causes and limits future growth</li>
+<li><strong>Partial refactor (recommended):</strong> Balanced approach with incremental benefits and manageable risk</li>
+<li><strong>Complete rewrite (rejected):</strong> Most comprehensive but highest risk and longest time to value"</li>
+</ol>
+<h3 id="6-the-ask-be-specific">6. The Ask: Be Specific</h3>
+<p>Close with a clear, specific request.</p>
+<p><strong>Weak:</strong> "We need support for this project."</p>
+<p><strong>Strong:</strong> "To move forward, we need:</p>
+<ol>
+<li>Two engineers dedicated to this initiative for 4 months</li>
+<li>Executive sponsorship from you in the prioritization process</li>
+<li>Agreement on the success metrics we'll use to evaluate progress</li>
+<li>Decision by November 15th to meet our Q1 delivery timeline"</li>
+</ol>
+<h2 id="presentation-strategies-for-technical-leaders">Presentation Strategies for Technical Leaders</h2>
+<h3 id="1-the-executive-summary-approach">1. The Executive Summary Approach</h3>
+<p>Executives are busy and may have limited time. Structure your pitch to accommodate this:</p>
+<ul>
+<li><strong>First 2 minutes:</strong> Core business case that stands alone</li>
+<li><strong>Next 5 minutes:</strong> Implementation strategy and risk mitigation</li>
+<li><strong>Final portion:</strong> Supporting details and technical validation</li>
+</ul>
+<p>This ensures that even if your time is cut short, your core message lands.</p>
+<h3 id="2-the-narrative-structure">2. The Narrative Structure</h3>
+<p>Humans respond to stories. Structure your pitch as a narrative:</p>
+<ul>
+<li><strong>Setting:</strong> The current business context and challenge</li>
+<li><strong>Conflict:</strong> The growing pain points and risks of inaction</li>
+<li><strong>Resolution:</strong> How your proposed solution transforms the situation</li>
+<li><strong>Future:</strong> The new capabilities and opportunities that will result</li>
+</ul>
+<h3 id="3-the-visualization-strategy">3. The Visualization Strategy</h3>
+<p>Reduce cognitive load with visual representations:</p>
+<ul>
+<li><strong>Before/After Diagrams:</strong> Show the current vs. future state</li>
+<li><strong>Impact Graphs:</strong> Visualize trends with and without the project</li>
+<li><strong>Simple Architecture Diagrams:</strong> Use business-friendly visualizations</li>
+<li><strong>Timeline:</strong> Show phased implementation with business milestones</li>
+</ul>
+<h3 id="4-the-objection-anticipation-technique">4. The Objection Anticipation Technique</h3>
+<p>Preemptively address likely concerns:</p>
+<ul>
+<li>"You might be wondering about the risk of disruption..."</li>
+<li>"A question you may have is how this affects our Q2 commitments..."</li>
+<li>"Let me address the resource allocation concern directly..."</li>
+</ul>
+<h2 id="tailoring-your-pitch-to-different-executive-roles">Tailoring Your Pitch to Different Executive Roles</h2>
+<h3 id="for-the-ceo">For the CEO</h3>
+<ul>
+<li><strong>Focus on:</strong> Market position, competitive advantage, company vision</li>
+<li><strong>Connect to:</strong> Revenue growth, market share, strategic differentiation</li>
+<li><strong>Example:</strong> "This architecture enables the flexibility we need to outpace Competitor X's feature release cadence, who's currently launching new capabilities 2x faster than us."</li>
+</ul>
+<h3 id="for-the-cfo">For the CFO</h3>
+<ul>
+<li><strong>Focus on:</strong> Financial implications, resource efficiency</li>
+<li><strong>Connect to:</strong> Cost savings, ROI, resource optimization</li>
+<li><strong>Example:</strong> "The $400K investment will yield $1.2M in combined cost savings and incremental revenue within 18 months, representing a 3x ROI."</li>
+</ul>
+<h3 id="for-the-ctocio">For the CTO/CIO</h3>
+<ul>
+<li><strong>Focus on:</strong> Technical strategy, platform capabilities</li>
+<li><strong>Connect to:</strong> Technology roadmap, technical risk, future flexibility</li>
+<li><strong>Example:</strong> "This foundation supports all five key initiatives in our 2023 technology roadmap, particularly the API marketplace strategy."</li>
+</ul>
+<h3 id="for-the-cpo-chief-product-officer">For the CPO (Chief Product Officer)</h3>
+<ul>
+<li><strong>Focus on:</strong> Product capabilities, customer experience</li>
+<li><strong>Connect to:</strong> Feature velocity, customer satisfaction, competitive features</li>
+<li><strong>Example:</strong> "This will enable the personalization engine the product team has prioritized for Q3, which our top 5 enterprise customers have requested."</li>
+</ul>
+<h2 id="handling-tough-questions-and-pushback">Handling Tough Questions and Pushback</h2>
+<h3 id="1-the-why-cant-we-just-patch-it-question">1. The "Why Can't We Just Patch It?" Question</h3>
+<p><strong>Response Strategy:</strong> Explain the economics of technical debt and declining returns on patches.</p>
+<p><strong>Example:</strong> "We've been patching for 18 months. Each patch now takes 3x longer to implement and lasts half as long before new issues emerge. We've reached the point where patching actually costs more than fixing the root cause."</p>
+<h3 id="2-the-cant-we-do-this-while-building-features-question">2. The "Can't We Do This While Building Features?" Question</h3>
+<p><strong>Response Strategy:</strong> Be honest about capacity and quality trade-offs.</p>
+<p><strong>Example:</strong> "We've analyzed this approach carefully. Doing both simultaneously would extend the project from 4 months to 9 months, increase the risk of production issues by 40%, and reduce feature quality. A focused effort actually delivers both objectives faster."</p>
+<h3 id="3-the-whats-the-minimum-we-can-do-question">3. The "What's the Minimum We Can Do?" Question</h3>
+<p><strong>Response Strategy:</strong> Have a pre-planned minimal viable option.</p>
+<p><strong>Example:</strong> "If resources are constrained, we can implement Phase 1 only, which addresses 60% of the incidents for 30% of the total cost. However, this would only be a 6-month solution before we need to address Phases 2 and 3."</p>
+<h3 id="4-the-how-do-we-know-this-will-work-question">4. The "How Do We Know This Will Work?" Question</h3>
+<p><strong>Response Strategy:</strong> Provide evidence and de-risking strategies.</p>
+<p><strong>Example:</strong> "We've validated this approach with a proof-of-concept for the most critical component. Additionally, our phased approach allows us to verify success at each stage before continuing, and we've designed rollback capabilities for every change."</p>
+<h2 id="building-executive-relationships-beyond-the-pitch">Building Executive Relationships Beyond the Pitch</h2>
+<p>A successful pitch rarely happens in isolation. Build relationships with executives before you need their support:</p>
+<h3 id="1-create-visibility-into-technical-challenges">1. Create Visibility Into Technical Challenges</h3>
+<ul>
+<li>Share periodic updates on system health and technical metrics</li>
+<li>Translate technical monitoring into business impact</li>
+<li>Educate on emerging technical trends relevant to the business</li>
+</ul>
+<h3 id="2-demonstrate-business-acumen">2. Demonstrate Business Acumen</h3>
+<ul>
+<li>Participate in strategic planning sessions</li>
+<li>Connect your technical work to business outcomes</li>
+<li>Show interest in business metrics and challenges</li>
+</ul>
+<h3 id="3-build-trust-through-small-wins">3. Build Trust Through Small Wins</h3>
+<ul>
+<li>Deliver consistently on smaller commitments</li>
+<li>Provide transparent status updates, especially about challenges</li>
+<li>Demonstrate good judgment in technical decisions</li>
+</ul>
+<h3 id="4-establish-yourself-as-a-strategic-partner">4. Establish Yourself as a Strategic Partner</h3>
+<ul>
+<li>Bring business-relevant insights from the technical domain</li>
+<li>Propose solutions to business problems, not just technical ones</li>
+<li>Think beyond your immediate team to company-wide impact</li>
+</ul>
+<h2 id="learning-from-pitch-outcomes">Learning From Pitch Outcomes</h2>
+<p>Whether your pitch succeeds or fails, there are valuable lessons:</p>
+<h3 id="if-your-pitch-is-approved">If Your Pitch Is Approved</h3>
+<ul>
+<li>Document the promised outcomes and timeline</li>
+<li>Establish regular check-ins with executive sponsors</li>
+<li>Create a communication plan for progress and challenges</li>
+<li>Deliver early wins to build confidence</li>
+</ul>
+<h3 id="if-your-pitch-is-rejected">If Your Pitch Is Rejected</h3>
+<ul>
+<li>Seek to understand the specific concerns</li>
+<li>Ask what would make the proposal more compelling</li>
+<li>Consider if a smaller scope might be more approachable</li>
+<li>Plan how to gather data that would strengthen your case</li>
+</ul>
+<p>Remember that executive pitches are often iterative. A "no" today can become a "yes" tomorrow with the right approach, timing, and evidence. By mastering the art of pitching to executives, you transform from a technical implementer to a business leader capable of driving strategic technical direction.</p>
+<h2 id="common-pitfalls-to-avoid">Common Pitfalls to Avoid</h2>
+<ul>
+<li><strong>Over-Technical Explanations:</strong> Instead of describing the architecture, describe what the architecture <em>enables</em> for the business.</li>
+<li><strong>Ignoring Business Impact:</strong> Don't just state the technical improvement; state the resulting business outcome (e.g., cost savings, revenue unlocked, risk reduced).</li>
+<li><strong>Lack of Executive Sponsorship:</strong> Engage with a potential executive sponsor <em>before</em> the pitch to build alignment and get feedback.</li>
+</ul>
+<hr />
+<h2 id="prerequisites-and-related-learning">Prerequisites and Related Learning</h2>
+<h3 id="prerequisites-for-this-chapter"><strong>Prerequisites for This Chapter</strong></h3>
+<ul>
+<li><strong><a href="../../thinking/strategic-thinking/">Strategic Thinking</a></strong> - Strategic frameworks help you connect technical projects to business value and competitive advantage</li>
+<li><strong><a href="../../leadership/influencing-without-authority/">Influencing Without Authority</a></strong> - Tactical empathy and persuasion principles are essential for executive communication</li>
+<li><strong><a href="../business-case/">Building Business Cases</a></strong> - Quantitative business case development provides the foundation for executive-level proposals</li>
+</ul>
+<h3 id="related-concepts"><strong>Related Concepts</strong></h3>
+<ul>
+<li><strong><a href="../revenue-vs-risk/">Revenue vs Risk Decision-Making</a></strong> - Apply executive thinking to business-technical tradeoffs and investment decisions</li>
+<li><strong><a href="../aligning-technology/">Aligning Technology to Business Strategy</a></strong> - Position technical projects within broader strategic business initiatives</li>
+<li><strong><a href="../../leadership/technical-vision/">Technical Vision</a></strong> - Translate technical vision into compelling business value propositions</li>
+<li><strong><a href="../../leadership/presentation-persuasion-skills/">Presentation &amp; Persuasion Skills</a></strong> - Apply advanced presentation techniques to executive communication</li>
+<li><strong><a href="../../leadership/working-across-boundaries/">Working Across Boundaries</a></strong> - Navigate organizational dynamics when proposing cross-functional technical initiatives</li>
+</ul>
+<h3 id="apply-executive-communication"><strong>Apply Executive Communication</strong></h3>
+<ul>
+<li><strong><a href="../../../appendix/tools/staff-engineer-competency-assessment/">Staff Engineer Competency Assessment</a></strong> - Evaluate your business partnership and executive communication capabilities</li>
+<li><strong><a href="../engineering-metrics-business-alignment/">Engineering Metrics &amp; Business Alignment</a></strong> - Use business-focused metrics to strengthen your executive presentations</li>
+</ul>
+<h3 id="next-steps-in-your-learning-journey"><strong>Next Steps in Your Learning Journey</strong></h3>
+<ol>
+<li><strong><a href="../aligning-technology/">Aligning Technology to Business Strategy</a></strong> - Deepen your ability to position technical work within strategic business context</li>
+<li><strong><a href="../product-engineering-collaboration/">Product-Engineering Collaboration</a></strong> - Build partnerships that strengthen your business case development and stakeholder support</li>
+<li><strong><a href="../cost-optimization/">Cost Optimization &amp; FinOps</a></strong> - Add financial optimization expertise to your executive communication toolkit</li>
+<li><strong><a href="../../ethics/">Engineering Ethics</a></strong> - Navigate ethical considerations when balancing technical recommendations with business pressures</li>
+</ol>
+<h3 id="learning-path-recommendations"><strong>Learning Path Recommendations</strong></h3>
+<p><strong>For Technical Individual Contributors</strong>: Start with <strong>Business Case Development</strong> and <strong>Strategic Thinking</strong> before attempting complex executive communication scenarios.</p>
+<p><strong>For Team Leads</strong>: Focus on <strong>Revenue vs Risk Frameworks</strong> and <strong>Cross-Functional Collaboration</strong> to build credibility for larger organizational proposals.</p>
+<p><strong>For Business-Focused Staff Engineers</strong>: Master <strong>Executive Stakeholder Management</strong> and <strong>Strategic Technology Communication</strong> to become effective technical partners to senior leadership.</p>
+<hr />
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Lean Startup</em> by Eric Ries</li>
+<li><em>Presentation Zen</em> by Garr Reynolds</li>
+<li><em>Made to Stick</em> by Chip Heath &amp; Dan Heath</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../engineering-metrics-business-alignment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Engineering Metrics &amp; Business Alignment">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Engineering Metrics & Business Alignment
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../business-case/" class="md-footer__link md-footer__link--next" aria-label="Next: Building a Better Business Case">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Building a Better Business Case
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

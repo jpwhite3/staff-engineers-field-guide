@@ -1,0 +1,1041 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Critical Thinking & Decision-Making Assessment - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#critical-thinking-decision-making-assessment" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Critical Thinking &amp; Decision-Making Assessment
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="critical-thinking-decision-making-assessment">Critical Thinking &amp; Decision-Making Assessment</h1>
+<p>An integrated assessment framework designed to evaluate and enhance critical thinking capabilities for technical leaders, combining systematic evaluation of mental models, algorithmic reasoning, and strategic thinking skills.</p>
+<h2 id="introduction-the-complexity-challenge">Introduction: The Complexity Challenge</h2>
+<p>Picture this scenario: Your engineering team faces a critical architectural decision that will shape the next two years of development. The current system is approaching capacity limits with 200ms response times during peak traffic, three different stakeholder groups are advocating for incompatible solutions, and your engineering budget needs to deliver measurable business impact by Q3. Each potential solution presents distinct trade-offs: the microservices approach offers scalability but introduces operational complexity, the caching solution provides immediate relief but doesn't address underlying architectural limitations, and the complete rewrite promises long-term benefits while creating significant delivery risk.</p>
+<p>How do you navigate this complexity while avoiding the cognitive traps that derail even experienced technical leaders? How do you balance the pressure for quick decisions with the need for thorough analysis? How do you ensure that your architectural thinking serves broader organizational goals rather than just solving immediate technical problems?</p>
+<p>This scenario illustrates the critical thinking challenges that define senior technical leadership: operating in environments where multiple valid approaches exist, where information is incomplete and changing, where technical decisions have cascading business implications, and where the stakes are high enough that decision-making quality directly affects organizational success.</p>
+<p>This assessment framework provides a systematic approach to evaluating and developing the critical thinking capabilities that enable technical leaders to navigate such complexity effectively. Rather than relying on intuition, experience, or technical expertise alone, it helps you identify thinking patterns that support good decisions, recognize cognitive blind spots that can undermine even strong technical knowledge, and develop more robust analytical capabilities that improve with practice and reflection.</p>
+<p>The framework recognizes that critical thinking for technical leaders involves more than just logical analysis—it requires understanding how human psychology affects decision-making, how to structure complex problems for systematic evaluation, how to balance competing priorities and constraints, and how to communicate reasoning in ways that build confidence and alignment among stakeholders with different perspectives and expertise.</p>
+<h2 id="framework-overview">Framework Overview</h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Assessment Dimensions</label><label for="__tabbed_1_2">Assessment Method</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Dimension</th>
+<th>Focus Area</th>
+<th>Key Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mental Model Mastery</strong></td>
+<td>Core thinking frameworks</td>
+<td>Understanding and applying systematic approaches</td>
+</tr>
+<tr>
+<td><strong>Algorithmic Decision-Making</strong></td>
+<td>Systematic problem-solving</td>
+<td>Using computational thinking for complex problems</td>
+</tr>
+<tr>
+<td><strong>Strategic Reasoning</strong></td>
+<td>Business alignment</td>
+<td>Connecting tactical decisions to organizational goals</td>
+</tr>
+<tr>
+<td><strong>Cognitive Bias Awareness</strong></td>
+<td>Decision quality</td>
+<td>Recognizing and mitigating systematic thinking errors</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<p>Each dimension includes both <strong>self-assessment questions</strong> and <strong>practical application exercises</strong> designed to surface real thinking patterns rather than theoretical knowledge. The combination provides a comprehensive view of your current critical thinking capabilities and specific areas for development.</p>
+</div>
+</div>
+</div>
+<h2 id="dimension-1-mental-model-mastery">Dimension 1: Mental Model Mastery</h2>
+<h3 id="systems-thinking-assessment">Systems Thinking Assessment</h3>
+<p><strong>Scenario</strong>: Your team's microservice architecture is experiencing cascading failures during peak load periods.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Feedback Loop Identification</strong> (System 1 vs System 2 Thinking)</p>
+</li>
+<li>
+<p>How quickly can you identify the primary feedback loops causing the cascading failures?</p>
+</li>
+<li>Rate your initial response: Was it intuitive (System 1) or analytical (System 2)?</li>
+<li>
+<p>What additional information would shift your analysis from intuitive to systematic?</p>
+</li>
+<li>
+<p><strong>Leverage Point Recognition</strong></p>
+</li>
+<li>
+<p>Where would you intervene to achieve maximum impact with minimum effort?</p>
+</li>
+<li>How do you balance addressing symptoms versus root causes?</li>
+<li>
+<p>What might be the unintended consequences of your proposed intervention?</p>
+</li>
+<li>
+<p><strong>Mental Model Integration</strong></p>
+</li>
+<li>How does this situation relate to other system failures you've encountered?</li>
+<li>What patterns emerge when you apply different mental models (e.g., Cynefin framework, Conway's Law)?</li>
+<li>Which mental models prove most useful for this specific context?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Document a recent complex technical decision you made. Identify which mental models you applied consciously versus unconsciously. What additional frameworks might have improved your analysis?</p>
+<h3 id="probabilistic-thinking-assessment">Probabilistic Thinking Assessment</h3>
+<p><strong>Scenario</strong>: You're evaluating whether to adopt a new technology stack that promises 40% performance improvements but requires significant team retraining.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Uncertainty Quantification</strong></p>
+</li>
+<li>
+<p>How do you assign confidence intervals to the claimed performance benefits?</p>
+</li>
+<li>What's your estimated probability that the retraining effort will exceed planned timelines?</li>
+<li>
+<p>How do you account for unknown unknowns in your analysis?</p>
+</li>
+<li>
+<p><strong>Bayesian Reasoning Application</strong></p>
+</li>
+<li>
+<p>How does your team's historical performance with technology adoption inform this decision?</p>
+</li>
+<li>What evidence would most significantly update your probability estimates?</li>
+<li>
+<p>How do you balance prior experience with new information?</p>
+</li>
+<li>
+<p><strong>Expected Value Calculation</strong></p>
+</li>
+<li>How do you quantify both the potential gains and hidden costs?</li>
+<li>What sensitivity analysis would you perform on key assumptions?</li>
+<li>How do you communicate uncertainty to stakeholders who prefer definitive answers?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Apply probabilistic thinking to a current technical decision. Create explicit probability distributions for key outcomes and document how your confidence levels change with additional information.</p>
+<h2 id="dimension-2-algorithmic-decision-making">Dimension 2: Algorithmic Decision-Making</h2>
+<h3 id="explore-exploit-balance-assessment">Explore-Exploit Balance Assessment</h3>
+<p><strong>Scenario</strong>: Your team has developed expertise in a particular technology stack, but market trends suggest other approaches might offer competitive advantages.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Information Value Assessment</strong></p>
+</li>
+<li>
+<p>How do you determine when you have sufficient information to make a decision?</p>
+</li>
+<li>What criteria help you distinguish between productive exploration and wasteful experimentation?</li>
+<li>
+<p>How do you balance the team's current expertise against potential future value?</p>
+</li>
+<li>
+<p><strong>Multi-Armed Bandit Strategy</strong></p>
+</li>
+<li>
+<p>How would you design experiments to test alternative approaches without jeopardizing current capabilities?</p>
+</li>
+<li>What metrics would indicate when to shift resources from exploration to exploitation?</li>
+<li>
+<p>How do you account for the learning curve in your calculations?</p>
+</li>
+<li>
+<p><strong>Optimal Stopping Implementation</strong></p>
+</li>
+<li>At what point would you commit to a particular technology direction?</li>
+<li>How do you avoid both premature optimization and analysis paralysis?</li>
+<li>What signals indicate that continued exploration has diminishing returns?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Identify a current situation where your team faces an explore-exploit trade-off. Apply the multi-armed bandit framework to design a systematic approach for gathering information while maintaining productivity.</p>
+<h3 id="scheduling-and-prioritization-assessment">Scheduling and Prioritization Assessment</h3>
+<p><strong>Scenario</strong>: You're managing a complex project with interdependent tasks, uncertain durations, and competing stakeholder priorities.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Algorithmic Scheduling Application</strong></p>
+</li>
+<li>
+<p>How do you apply shortest processing time versus earliest due date strategies?</p>
+</li>
+<li>When does context switching cost outweigh parallelization benefits?</li>
+<li>
+<p>How do you account for uncertainty in task duration estimates?</p>
+</li>
+<li>
+<p><strong>Caching Strategy for Decisions</strong></p>
+</li>
+<li>
+<p>Which decisions are worth extensive analysis versus quick heuristics?</p>
+</li>
+<li>How do you create reusable decision templates for recurring situations?</li>
+<li>
+<p>What information do you cache for future similar decisions?</p>
+</li>
+<li>
+<p><strong>Game Theory Applications</strong></p>
+</li>
+<li>How do you model stakeholder interactions and competing priorities?</li>
+<li>What Nash equilibrium solutions apply to resource allocation conflicts?</li>
+<li>When do cooperative versus competitive strategies yield better outcomes?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Apply algorithmic thinking to your current project prioritization challenges. Create explicit rules for task sequencing and document how game theory concepts influence your stakeholder interactions.</p>
+<h2 id="dimension-3-strategic-reasoning">Dimension 3: Strategic Reasoning</h2>
+<h3 id="strategic-diagnosis-assessment">Strategic Diagnosis Assessment</h3>
+<p><strong>Scenario</strong>: Your organization's engineering velocity has decreased despite hiring additional engineers, and technical debt is becoming increasingly problematic.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Problem Definition Clarity</strong></p>
+</li>
+<li>
+<p>How do you distinguish between symptoms and root causes?</p>
+</li>
+<li>What data would you collect to validate your diagnosis?</li>
+<li>
+<p>How do you avoid the narrative fallacy when explaining performance issues?</p>
+</li>
+<li>
+<p><strong>Strategic Kernel Development</strong></p>
+</li>
+<li>
+<p>What's your hypothesis about the core challenge facing the engineering organization?</p>
+</li>
+<li>What guiding policy would address this challenge most effectively?</li>
+<li>
+<p>How do you ensure coherent action across multiple engineering teams?</p>
+</li>
+<li>
+<p><strong>Systems Integration</strong></p>
+</li>
+<li>How does this engineering challenge connect to broader organizational strategy?</li>
+<li>What upstream and downstream effects must you consider?</li>
+<li>How do you balance technical excellence with business objectives?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Apply Rumelt's strategic thinking framework to a current organizational challenge. Document your diagnosis, guiding policy, and coherent actions. Test your strategy against the "kernel test" criteria.</p>
+<h3 id="okr-implementation-assessment">OKR Implementation Assessment</h3>
+<p><strong>Scenario</strong>: You need to align multiple engineering teams around a ambitious technical modernization initiative while maintaining current system reliability.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Objective Setting Quality</strong></p>
+</li>
+<li>
+<p>How do you balance aspirational goals with achievable targets?</p>
+</li>
+<li>What makes an objective meaningful rather than merely measurable?</li>
+<li>
+<p>How do you ensure objectives connect individual work to organizational purpose?</p>
+</li>
+<li>
+<p><strong>Key Results Design</strong></p>
+</li>
+<li>
+<p>How do you choose metrics that drive behavior rather than just measure it?</p>
+</li>
+<li>What balance do you maintain between leading and lagging indicators?</li>
+<li>
+<p>How do you account for interdependencies between teams' key results?</p>
+</li>
+<li>
+<p><strong>Alignment and Autonomy Balance</strong></p>
+</li>
+<li>How do you cascade objectives while preserving team autonomy?</li>
+<li>What decision-making authority do teams retain within the OKR framework?</li>
+<li>How do you handle conflicts between team OKRs and organizational priorities?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Design OKRs for a significant technical initiative. Apply Doerr's criteria for effective objectives and key results. Document how these OKRs would influence daily decision-making across multiple teams.</p>
+<h2 id="dimension-4-cognitive-bias-awareness">Dimension 4: Cognitive Bias Awareness</h2>
+<h3 id="bias-recognition-assessment">Bias Recognition Assessment</h3>
+<p><strong>Scenario</strong>: Your team strongly advocates for a particular technical solution based on their recent positive experience with similar technology.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Availability Heuristic Management</strong></p>
+</li>
+<li>
+<p>How do you distinguish between relevant experience and recency bias?</p>
+</li>
+<li>What processes help you access broader organizational knowledge beyond immediate team experience?</li>
+<li>
+<p>How do you weight anecdotal evidence against systematic data?</p>
+</li>
+<li>
+<p><strong>Confirmation Bias Mitigation</strong></p>
+</li>
+<li>
+<p>How do you actively seek disconfirming evidence for preferred solutions?</p>
+</li>
+<li>What role do devil's advocates or red team exercises play in your decision-making?</li>
+<li>
+<p>How do you create psychological safety for dissenting opinions?</p>
+</li>
+<li>
+<p><strong>Anchoring Effect Awareness</strong></p>
+</li>
+<li>How do you recognize when initial proposals inappropriately anchor subsequent discussions?</li>
+<li>What techniques help you explore a broader solution space?</li>
+<li>How do you reset discussions when anchoring effects become apparent?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Review a recent technical decision where your team reached quick consensus. Identify potential cognitive biases that may have influenced the outcome. Design a process that would have surfaced alternative perspectives.</p>
+<h3 id="decision-architecture-assessment">Decision Architecture Assessment</h3>
+<p><strong>Scenario</strong>: You're establishing decision-making processes for a rapidly scaling engineering organization.</p>
+<p><strong>Assessment Questions</strong>:</p>
+<ol>
+<li>
+<p><strong>Choice Architecture Design</strong></p>
+</li>
+<li>
+<p>How do you structure options to promote better decision-making without limiting autonomy?</p>
+</li>
+<li>What default choices encourage sound technical practices?</li>
+<li>
+<p>How do you make consequences more visible to decision-makers?</p>
+</li>
+<li>
+<p><strong>Cognitive Load Management</strong></p>
+</li>
+<li>
+<p>How do you simplify complex decisions without oversimplifying important trade-offs?</p>
+</li>
+<li>What information do you standardize versus customize for different contexts?</li>
+<li>
+<p>How do you balance comprehensive analysis with decision speed?</p>
+</li>
+<li>
+<p><strong>Systematic Error Prevention</strong></p>
+</li>
+<li>What processes catch systematic thinking errors before they impact outcomes?</li>
+<li>How do you create feedback loops that surface decision-making blind spots?</li>
+<li>What role do diverse perspectives play in your decision architecture?</li>
+</ol>
+<p><strong>Practical Exercise</strong>: Design a decision-making process for your organization that explicitly addresses cognitive biases. Include specific interventions for the most common biases in technical decision-making.</p>
+<h2 id="integrated-assessment-scoring">Integrated Assessment Scoring</h2>
+<h3 id="proficiency-levels">Proficiency Levels</h3>
+<table>
+<thead>
+<tr>
+<th>Level</th>
+<th>Capability Profile</th>
+<th>Decision-Making</th>
+<th>Framework Usage</th>
+<th>Bias Management</th>
+<th>Strategic Integration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level 1: Developing</strong></td>
+<td>Foundation Building</td>
+<td>Primarily intuitive</td>
+<td>Limited awareness</td>
+<td>Occasional hindsight recognition</td>
+<td>Tactical focus only</td>
+</tr>
+<tr>
+<td><strong>Level 2: Practicing</strong></td>
+<td>Skill Application</td>
+<td>Basic systematic approaches</td>
+<td>Applies frameworks to defined problems</td>
+<td>Recognizes common biases</td>
+<td>Connects to strategic objectives</td>
+</tr>
+<tr>
+<td><strong>Level 3: Proficient</strong></td>
+<td>Integrated Practice</td>
+<td>Multiple model integration</td>
+<td>Systematic approach to ambiguous problems</td>
+<td>Proactive bias mitigation</td>
+<td>Balances strategy with execution</td>
+</tr>
+<tr>
+<td><strong>Level 4: Advanced</strong></td>
+<td>Innovation &amp; Leadership</td>
+<td>Novel framework applications</td>
+<td>Teaches systematic approaches</td>
+<td>Designs organizational systems</td>
+<td>Seamless multi-dimensional integration</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scoring-guidelines">Scoring Guidelines</h3>
+<p>For each dimension, evaluate your responses using this framework:</p>
+<ul>
+<li><strong>Mental Model Mastery</strong>: Score based on ability to apply appropriate frameworks, integrate multiple models, and adapt thinking approaches to context</li>
+<li><strong>Algorithmic Decision-Making</strong>: Score based on systematic approach to complex problems, use of quantitative reasoning, and balance of different optimization strategies</li>
+<li><strong>Strategic Reasoning</strong>: Score based on connection between tactical and strategic thinking, quality of problem diagnosis, and coherence of proposed solutions</li>
+<li><strong>Cognitive Bias Awareness</strong>: Score based on recognition of thinking errors, implementation of bias mitigation strategies, and design of decision processes</li>
+</ul>
+<h2 id="development-recommendations">Development Recommendations</h2>
+<p>Critical thinking development for technical leaders requires intentional practice that connects theoretical frameworks to real-world decision-making challenges. The recommendations below are structured to match different proficiency levels, but remember that development isn't purely linear—you may be advanced in some areas while still developing foundational skills in others.</p>
+<h3 id="for-developing-level-practitioners">For Developing Level Practitioners</h3>
+<p>At this stage, you're building awareness of how thinking patterns affect decision quality and beginning to apply systematic approaches to complex problems. The key is developing consistent habits around reflection and deliberate practice rather than trying to master advanced techniques immediately.</p>
+<p><strong>Focus Areas</strong>:
+Building familiarity with core mental models requires moving beyond theoretical knowledge to consistent application in daily work contexts. Start with 2-3 fundamental frameworks—such as first principles thinking, probabilistic reasoning, or systems thinking—and practice applying them to recurring decisions until they become natural parts of your problem-solving approach.</p>
+<p>Developing probabilistic thinking skills means learning to think in terms of ranges and uncertainty rather than point estimates. Practice estimating confidence levels for your predictions, tracking prediction accuracy over time, and explicitly considering multiple scenarios when making decisions with uncertain outcomes.</p>
+<p>Learning to recognize System 1 versus System 2 thinking patterns helps you understand when you're operating on intuition and pattern recognition versus deliberate analytical reasoning. Both modes have value, but knowing which one you're using helps you apply appropriate quality controls and know when to slow down for more careful analysis.</p>
+<p>Practicing basic strategic frameworks means connecting your technical decisions to broader organizational goals and constraints. This might involve understanding how OKR frameworks work, how to evaluate technical decisions in terms of business impact, or how to balance short-term and long-term considerations in architectural choices.</p>
+<p><strong>Recommended Activities</strong>:
+Maintaining a decision journal creates a feedback loop that helps you identify patterns in your reasoning and track improvements in decision quality over time. Focus on documenting not just what you decided, but why you decided it and what information you used. Review entries periodically to identify recurring biases or blind spots.</p>
+<p>Joining communities focused on rational decision-making provides exposure to different thinking approaches and creates accountability for continuous improvement. This might involve online forums, local meetups, book clubs, or professional organizations that emphasize decision science and critical thinking.</p>
+<p>Applying one new mental model per month to real work challenges ensures consistent skill development while preventing overwhelming complexity. Choose models that are relevant to your current responsibilities and practice them until they feel natural before adding new frameworks.</p>
+<p>Seeking feedback on reasoning quality helps calibrate your self-assessment and identify improvement opportunities that aren't obvious from your own perspective. Ask colleagues to review your analysis of important decisions and provide specific feedback on your reasoning process rather than just outcome approval.</p>
+<h3 id="for-practicing-level-practitioners">For Practicing Level Practitioners</h3>
+<p>At this level, you have solid foundations in individual thinking frameworks and are ready to tackle more complex integration challenges while building capability in others around you. Your development focus shifts from learning individual techniques to understanding how different approaches work together and how to apply them in team contexts.</p>
+<p><strong>Focus Areas</strong>:
+Integrating multiple thinking frameworks for complex problems means learning to combine systems thinking with probabilistic reasoning, strategic analysis with bias mitigation, and quantitative methods with qualitative insight. Practice identifying which combinations of frameworks are most effective for different types of decisions and developing fluency in moving between different analytical approaches within a single problem-solving process.</p>
+<p>Developing expertise in specific algorithmic approaches relevant to your domain involves going deeper into decision-making methods that are particularly valuable in your technical context. This might mean mastering optimization approaches for resource allocation, game theory for competitive analysis, or simulation techniques for evaluating system design alternatives.</p>
+<p>Creating systematic processes for bias mitigation means moving beyond individual awareness to designing team practices that help groups make better decisions. This includes facilitation techniques that prevent groupthink, structured processes that surface diverse perspectives, and decision architectures that make biases visible and addressable.</p>
+<p>Strengthening connections between individual decisions and organizational strategy requires developing fluency in translating between technical choices and business outcomes, understanding how local optimizations might undermine global objectives, and designing decision processes that maintain alignment with strategic priorities while preserving technical flexibility.</p>
+<p><strong>Recommended Activities</strong>:
+Leading structured decision-making processes for team challenges helps you develop facilitation skills while improving team decision quality. Practice designing and running processes that combine multiple analytical approaches, ensure diverse perspective inclusion, and produce decisions that stakeholders understand and support.</p>
+<p>Teaching mental models and decision-making frameworks to junior colleagues deepens your own understanding while building organizational capability. Focus on helping others develop intuition for when and how to apply different frameworks rather than just explaining theoretical concepts.</p>
+<p>Experimenting with different OKR approaches and measurement strategies provides practical experience with strategic alignment frameworks while helping you understand how measurement systems affect behavior and decision-making at both individual and team levels.</p>
+<p>Conducting regular post-mortems that analyze decision-making quality creates feedback loops for continuous improvement while building team awareness of decision patterns. Focus on process analysis—what information was considered, what frameworks were used, what assumptions were made—rather than just outcome evaluation.</p>
+<h3 id="for-proficient-level-practitioners">For Proficient Level Practitioners</h3>
+<p>Your expertise enables you to tackle novel challenges and create systematic improvements in how your organization approaches complex decisions. Your development focus expands to include organizational design and contributing to the broader field of decision science in technical contexts.</p>
+<p><strong>Focus Areas</strong>:
+Developing novel applications of thinking frameworks to unique challenges means adapting existing models for new contexts or combining frameworks in innovative ways that address complex problems without established solution patterns. This requires both deep understanding of individual frameworks and creative insight into how they might be modified or combined for new applications.</p>
+<p>Creating organizational systems that promote better collective decision-making involves designing structures, processes, and incentives that help groups overcome common decision-making challenges. This might include information systems that present relevant data effectively, meeting structures that optimize for decision quality, or role definitions that ensure appropriate expertise gets applied to different types of decisions.</p>
+<p>Mastering advanced game theory and strategic reasoning concepts provides sophisticated tools for understanding competitive dynamics, stakeholder interactions, and multi-party decision scenarios that characterize complex organizational and technical challenges.</p>
+<p>Building expertise in choice architecture and behavioral design means understanding how to structure decision environments to support better choices, how to design systems that account for human psychology, and how to create processes that help people make decisions that align with their long-term objectives.</p>
+<p><strong>Recommended Activities</strong>:
+Designing and facilitating strategic planning sessions using systematic frameworks helps organizations make better long-term decisions while providing you with experience in scaling decision-making approaches to complex, high-stakes contexts involving multiple stakeholders with different perspectives and expertise.</p>
+<p>Creating organizational decision-making templates and processes helps scale good decision-making practices beyond individual expertise while providing reusable tools that improve decision consistency and quality across teams and contexts.</p>
+<p>Mentoring other senior practitioners in advanced thinking techniques builds organizational capability while deepening your own expertise through teaching and collaborative problem-solving on complex challenges.</p>
+<p>Researching and adapting cutting-edge decision science concepts for engineering contexts helps advance the state of practice while providing you with exposure to new approaches that might address previously unsolvable challenges.</p>
+<h3 id="for-advanced-level-practitioners">For Advanced Level Practitioners</h3>
+<p>At the highest level, you're contributing to the development of the field itself while building decision-making capability at organizational and industry scale. Your impact extends beyond your immediate context to influence how technical leaders approach complex challenges more broadly.</p>
+<p><strong>Focus Areas</strong>:
+Contributing to the development of decision-making frameworks and tools means creating new approaches that address gaps in existing methods or adapting frameworks from other domains for technical leadership contexts. This requires both deep expertise in existing approaches and creative insight into what new capabilities might be needed.</p>
+<p>Leading organizational transformation in thinking and decision-making capabilities involves designing and implementing comprehensive changes that affect how entire organizations approach complex challenges, make strategic decisions, and develop analytical capabilities in their people.</p>
+<p>Bridging multiple disciplines to create comprehensive approaches to complex challenges means integrating insights from psychology, economics, systems science, operations research, and other fields to address problems that can't be solved effectively using frameworks from any single domain.</p>
+<p>Developing others who can operate at advanced proficiency levels requires not just individual mentoring but creating educational systems and developmental experiences that help people build sophisticated analytical capabilities.</p>
+<p><strong>Recommended Activities</strong>:
+Publishing frameworks, tools, or research that advances the field contributes to the broader knowledge base while establishing you as a recognized expert in decision-making approaches for technical leadership.</p>
+<p>Designing organizational structures that optimize collective intelligence involves creating systems that help groups make better decisions than any individual could make alone while avoiding the common pitfalls that often make group decisions worse than individual ones.</p>
+<p>Creating educational programs that develop systematic thinking skills helps scale the impact of good decision-making approaches while contributing to the broader development of technical leadership capabilities.</p>
+<p>Serving as an external advisor helping other organizations improve decision-making allows you to test and refine your approaches across different contexts while contributing to the success of other technical organizations.</p>
+<h2 id="implementation-guide">Implementation Guide</h2>
+<p>Developing sophisticated critical thinking capabilities requires systematic practice over extended time periods, with deliberate attention to both individual skill development and application in real-world contexts. The implementation approaches below provide structured pathways for development at individual, team, and organizational levels.</p>
+<h3 id="personal-development-path">Personal Development Path</h3>
+<p>The most effective approach to personal development combines assessment-based awareness with deliberate practice in contexts where the stakes are real but manageable. This creates conditions for genuine skill development while providing feedback that helps calibrate your progress.</p>
+<p><strong>Month 1-3: Foundation Building</strong>
+Your initial focus should be on building awareness of your thinking patterns and establishing consistent practices that support more systematic decision-making. Complete the initial assessment across all four dimensions to establish your baseline capabilities and identify the areas where investment will generate the highest return.</p>
+<p>Focus on developing System 2 thinking awareness—the ability to recognize when you're operating on automatic pilot versus engaging in deliberate analytical thinking. Practice catching yourself making rapid judgments and deliberately slowing down to apply more systematic analysis to decisions that merit careful consideration.</p>
+<p>Practice basic mental model application by choosing 2-3 frameworks that are relevant to your current work challenges and consciously applying them to real decisions. Start with models like first principles thinking, probabilistic reasoning, or simple cost-benefit analysis that can be applied broadly across different types of problems.</p>
+<p>Begin decision journaling to create a feedback loop for your reasoning development. Document not just your decisions but your reasoning process, the information you used, the alternatives you considered, and your confidence levels. Review entries monthly to identify patterns and improvement opportunities.</p>
+<p><strong>Month 4-6: Skill Integration</strong>
+As individual frameworks become more natural, shift your focus to integration challenges—learning how to combine different analytical approaches and apply systematic thinking to more complex problems that require multiple perspectives.</p>
+<p>Apply algorithmic thinking to complex work problems by practicing structured approaches to resource allocation, prioritization, or system design challenges. Focus on developing intuition for when quantitative analysis adds value versus when qualitative reasoning is more appropriate.</p>
+<p>Implement basic bias mitigation strategies in team processes by designing meeting structures or decision processes that help groups avoid common thinking traps like anchoring, confirmation bias, or groupthink. Practice facilitating decisions that surface diverse perspectives and make reasoning visible.</p>
+<p>Connect individual decisions to strategic objectives using OKR or similar frameworks, developing fluency in translating between immediate technical choices and broader organizational goals. Practice articulating how architectural or process decisions support strategic outcomes.</p>
+<p>Seek feedback on reasoning quality and decision outcomes by asking trusted colleagues to review your analysis of important decisions. Focus on process feedback—was the analysis thorough, were alternatives adequately considered, was uncertainty handled appropriately—rather than just outcome evaluation.</p>
+<p><strong>Month 7-12: Advanced Application</strong>
+With solid foundations established, focus on creating systematic approaches to recurring challenges while building capability in others around you. Your development emphasis shifts toward scaling impact through organizational improvement rather than just individual skill enhancement.</p>
+<p>Design systematic approaches for recurring complex decisions by creating templates, checklists, or processes that help ensure consistent quality in your decision-making while reducing the cognitive load of applying multiple frameworks simultaneously.</p>
+<p>Lead team processes that integrate multiple thinking frameworks, practicing the facilitation and communication skills needed to help groups apply systematic approaches to complex challenges without creating overwhelming complexity or analysis paralysis.</p>
+<p>Teach others to apply critical thinking skills to their challenges, deepening your own understanding while building organizational capability. Focus on helping others develop intuition for when and how to apply different frameworks rather than just explaining theoretical concepts.</p>
+<p>Conduct regular assessment updates to track skill development and adjust your learning focus based on changing roles, responsibilities, or interests. Use the assessment results to guide your continued development while maintaining focus on practical application rather than abstract improvement.</p>
+<h3 id="team-development-approach">Team Development Approach</h3>
+<p><strong>Assessment Phase</strong> (2-4 weeks):</p>
+<ul>
+<li>Team members complete individual assessments</li>
+<li>Identify collective strengths and development opportunities</li>
+<li>Design team learning objectives based on assessment results</li>
+<li>Establish baseline metrics for decision-making quality</li>
+</ul>
+<p><strong>Skill Building Phase</strong> (3-6 months):</p>
+<ul>
+<li>Regular team exercises applying different thinking frameworks</li>
+<li>Rotate responsibility for leading systematic decision processes</li>
+<li>Create team templates for common decision types</li>
+<li>Implement peer feedback systems for reasoning quality</li>
+</ul>
+<p><strong>Integration Phase</strong> (6-12 months):</p>
+<ul>
+<li>Apply advanced thinking frameworks to major team challenges</li>
+<li>Design organizational processes that embed systematic thinking</li>
+<li>Mentor other teams in developing critical thinking capabilities</li>
+<li>Conduct retrospectives focused on decision-making effectiveness</li>
+</ul>
+<h3 id="organizational-scaling-strategy">Organizational Scaling Strategy</h3>
+<p><strong>Individual Adoption</strong> (Months 1-6):</p>
+<ul>
+<li>Train champions in systematic thinking approaches</li>
+<li>Create resources and templates for common decision types</li>
+<li>Establish communities of practice around rational decision-making</li>
+<li>Document and share success stories from early adopters</li>
+</ul>
+<p><strong>Team Integration</strong> (Months 6-18):</p>
+<ul>
+<li>Mandate systematic frameworks for major technical decisions</li>
+<li>Incorporate thinking skills into performance evaluation criteria</li>
+<li>Create organizational roles focused on decision-making quality</li>
+<li>Establish metrics for collective decision-making effectiveness</li>
+</ul>
+<p><strong>Cultural Transformation</strong> (Months 18-36):</p>
+<ul>
+<li>Embed systematic thinking in hiring and promotion criteria</li>
+<li>Design organizational structures that optimize collective intelligence</li>
+<li>Create external partnerships focused on decision science advancement</li>
+<li>Establish the organization as a leader in engineering decision-making</li>
+</ul>
+<h2 id="continuous-improvement">Continuous Improvement</h2>
+<h3 id="regular-assessment-schedule">Regular Assessment Schedule</h3>
+<p><strong>Monthly Reviews</strong>:</p>
+<ul>
+<li>Update decision journal with recent complex choices</li>
+<li>Reflect on mental model application effectiveness</li>
+<li>Identify cognitive biases that influenced recent decisions</li>
+<li>Plan learning objectives for the upcoming month</li>
+</ul>
+<p><strong>Quarterly Deep Assessments</strong>:</p>
+<ul>
+<li>Complete comprehensive assessment across all dimensions</li>
+<li>Compare current scores with previous assessments</li>
+<li>Adjust development focus based on progress patterns</li>
+<li>Seek feedback from colleagues on observed changes</li>
+</ul>
+<p><strong>Annual Strategic Reviews</strong>:</p>
+<ul>
+<li>Evaluate connection between improved thinking skills and career outcomes</li>
+<li>Design advanced development objectives for the upcoming year</li>
+<li>Consider opportunities to contribute to organizational decision-making capabilities</li>
+<li>Plan knowledge sharing activities to help others develop similar skills</li>
+</ul>
+<h3 id="measurement-and-metrics">Measurement and Metrics</h3>
+<p><strong>Decision Quality Indicators</strong>:</p>
+<ul>
+<li>Frequency of decisions that meet or exceed intended outcomes</li>
+<li>Speed of decision-making for complex, ambiguous challenges</li>
+<li>Stakeholder satisfaction with decision-making processes</li>
+<li>Organizational impact of strategic thinking contributions</li>
+</ul>
+<p><strong>Skill Development Metrics</strong>:</p>
+<ul>
+<li>Assessment score improvements across all dimensions</li>
+<li>Peer feedback quality on reasoning and decision-making</li>
+<li>Success rate in teaching others to apply systematic thinking</li>
+<li>Innovation in applying frameworks to novel organizational challenges</li>
+</ul>
+<p><strong>Organizational Impact Measures</strong>:</p>
+<ul>
+<li>Engineering team decision-making velocity and quality</li>
+<li>Reduction in decision-related conflicts and rework</li>
+<li>Strategic initiative success rates and organizational alignment</li>
+<li>Cultural indicators of rational decision-making adoption</li>
+</ul>
+<p>The path to mastery in critical thinking requires consistent practice, systematic feedback, and continuous adaptation. This assessment framework provides structure for that development journey while recognizing that expertise emerges through real-world application rather than theoretical study alone.</p>
+<p>Through regular use of this assessment, technical leaders develop the sophisticated thinking capabilities essential for navigating the complex challenges that define senior engineering roles.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>

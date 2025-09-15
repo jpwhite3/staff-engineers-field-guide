@@ -1,0 +1,1444 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A comprehensive guide for staff engineers and technical leaders">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Engineering Excellence Assessment Framework - Staff Engineer's Field Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#engineering-excellence-assessment-framework" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-header__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Staff Engineer's Field Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Engineering Excellence Assessment Framework
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../field-guide/intro/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Field Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../reference/tags/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Staff Engineer&#39;s Field Guide" class="md-nav__button md-logo" aria-label="Staff Engineer's Field Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Staff Engineer's Field Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../field-guide/intro/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Field Guide
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+    <a href="../../../reference/tags/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    Reference
+    
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="engineering-excellence-assessment-framework">Engineering Excellence Assessment Framework</h1>
+<blockquote>
+<p><em>"What gets measured gets managed."</em> - Peter Drucker</p>
+</blockquote>
+<p>Picture this scenario: You're a Staff Engineer who just joined a promising startup that's scaling rapidly. The CTO hired you specifically to "level up our engineering practices," but when you ask what that means, you get vague answers like "make things more reliable" and "help teams move faster."</p>
+<p>Your first week is a whirlwind of meetings, code reviews, and system walkthroughs. Everyone seems smart and well-intentioned, but you're seeing mixed signals everywhere:</p>
+<ul>
+<li>The deployment process takes 45 minutes and requires manual testing</li>
+<li>Some teams have excellent test coverage; others have almost none</li>
+<li>There are three different logging systems and two different monitoring approaches</li>
+<li>Code reviews are thorough but slow; some PRs sit for days</li>
+<li>The on-call process exists but feels reactive and stressful</li>
+</ul>
+<p><strong>Sound familiar?</strong> This is the reality of most growing engineering organizations—pockets of excellence mixed with areas that need attention, but no clear picture of overall engineering maturity or systematic approach to improvement.</p>
+<p><strong>What you need is a diagnostic tool that cuts through the complexity and gives you an objective, comprehensive view of where the organization stands.</strong></p>
+<p>Think of this assessment framework as the engineering equivalent of a medical checkup. Just as a doctor doesn't diagnose your health by asking "how do you feel?", you can't assess engineering excellence with informal conversations and gut feelings. You need systematic measurement across multiple dimensions, evidence-based evaluation criteria, and a clear path from current state to desired state.</p>
+<p>The framework evaluates six critical domains of engineering excellence, each with specific practices, measurement criteria, and maturity levels. Use this tool to baseline your organization's current state, identify improvement priorities, and track progress over time.</p>
+<h2 id="how-to-use-this-assessment">How to Use This Assessment</h2>
+<h3 id="assessment-process">Assessment Process</h3>
+<p>Think of this assessment as conducting a thorough engineering audit. You wouldn't make architectural decisions based on a single data point, and you shouldn't make organizational improvements based on limited information either.</p>
+<p><strong>1. Gather Evidence from Multiple Sources</strong></p>
+<ul>
+<li><strong>Quantitative data</strong>: Deployment frequency, test coverage, incident metrics, code quality scores</li>
+<li><strong>Qualitative insights</strong>: Developer surveys, team interviews, process observations</li>
+<li><strong>Behavioral indicators</strong>: How teams actually work versus how they say they work</li>
+</ul>
+<p><strong>2. Score Each Practice Objectively</strong>
+Rate current capability on a 1-5 scale, but resist the temptation to be either too generous or too critical. The goal is accuracy, not diplomacy.</p>
+<p><strong>3. Identify Patterns and Root Causes</strong>
+Look beyond individual scores to understand systemic issues. Are all the low scores in one domain? Do certain teams consistently outperform others? What organizational factors drive these patterns?</p>
+<p><strong>4. Prioritize High-Impact Improvements</strong>
+Focus on changes that will create the most value with the least disruption. Sometimes fixing one foundational issue unlocks improvements across multiple domains.</p>
+<p><strong>5. Create Specific, Measurable Action Plans</strong>
+Vague improvement goals like "get better at testing" don't drive change. Specific goals like "increase unit test coverage from 45% to 75% over six months" create accountability and momentum.</p>
+<p><strong>6. Track Progress Through Regular Re-assessment</strong>
+Engineering excellence isn't a destination—it's a continuous improvement journey. Re-assess quarterly to measure progress and adjust your improvement strategy.</p>
+<h3 id="scoring-guidelines">Scoring Guidelines</h3>
+<p>Think of these maturity levels as evolutionary stages rather than grades. Most organizations will have practices at different levels across different domains, and that's normal. The goal isn't to achieve Level 5 in everything—it's to identify where investment in improvement will create the most value.</p>
+<table>
+<thead>
+<tr>
+<th>Maturity Level</th>
+<th>Characteristic</th>
+<th>Practice State</th>
+<th>Example Scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level 1 - Ad Hoc</strong></td>
+<td><em>"It depends on who's working today"</em></td>
+<td>Inconsistent, undocumented, person-dependent</td>
+<td>Deployments happen when Sarah is available because she's the only one who knows the process</td>
+</tr>
+<tr>
+<td><strong>Level 2 - Developing</strong></td>
+<td><em>"We're trying, but it's not quite working yet"</em></td>
+<td>Basic practices exist but informal with gaps</td>
+<td>There's a code review process, but reviews are often skipped when deadlines are tight</td>
+</tr>
+<tr>
+<td><strong>Level 3 - Defined</strong></td>
+<td><em>"We have a documented process that people follow"</em></td>
+<td>Documented, standardized, generally followed</td>
+<td>All code goes through pull request reviews following documented guidelines, but no metrics tracked</td>
+</tr>
+<tr>
+<td><strong>Level 4 - Managed</strong></td>
+<td><em>"We measure, monitor, and improve our practices"</em></td>
+<td>Quantitatively measured and continuously improved</td>
+<td>Code review metrics are tracked, bottlenecks identified, and process evolves based on data</td>
+</tr>
+<tr>
+<td><strong>Level 5 - Optimized</strong></td>
+<td><em>"Our practices are so good that others want to learn from us"</em></td>
+<td>Competitive advantage and organizational learning</td>
+<td>Deployment pipeline becomes a case study shared at industry conferences</td>
+</tr>
+</tbody>
+</table>
+<h2 id="domain-1-development-practices-and-code-quality">Domain 1: Development Practices and Code Quality</h2>
+<p>Evaluates how teams write, review, and maintain code to ensure long-term sustainability and quality.</p>
+<pre class="mermaid"><code>graph TB
+    subgraph "Development Practices Assessment"
+        TC[Test Coverage &amp; Quality&lt;br/&gt;• Unit test coverage&lt;br/&gt;• Integration testing&lt;br/&gt;• Test automation&lt;br/&gt;• Test reliability]
+
+        CR[Code Review Process&lt;br/&gt;• Review requirements&lt;br/&gt;• Feedback quality&lt;br/&gt;• Review velocity&lt;br/&gt;• Knowledge sharing]
+
+        CC[Code Quality Standards&lt;br/&gt;• Coding standards&lt;br/&gt;• Static analysis&lt;br/&gt;• Technical debt management&lt;br/&gt;• Documentation quality]
+
+        VC[Version Control Practices&lt;br/&gt;• Branching strategy&lt;br/&gt;• Commit quality&lt;br/&gt;• Merge practices&lt;br/&gt;• History management]
+    end
+
+    TC --&gt; CR
+    CR --&gt; CC
+    CC --&gt; VC
+
+    style TC fill:#e1f5fe
+    style CR fill:#f3e5f5
+    style CC fill:#e8f5e8
+    style VC fill:#fff3e0</code></pre>
+<h3 id="test-coverage-and-quality">Test Coverage and Quality</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>What percentage of code is covered by automated tests?</li>
+<li>How reliable are the tests (what's the flaky test rate)?</li>
+<li>How fast does the test suite execute?</li>
+<li>Are tests written before or after implementation?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Metrics to collect</span>
+<span class="n">test_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;unit_test_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;integration_test_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;test_suite_execution_time&quot;</span><span class="p">:</span> <span class="s2">&quot;minutes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;flaky_test_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;test_failure_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;tests_per_feature&quot;</span><span class="p">:</span> <span class="s2">&quot;ratio&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Survey questions for team members</span>
+<span class="n">test_quality_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How confident are you that tests catch regressions? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How often do tests fail due to environmental issues? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How easy is it to understand what failed tests are testing? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How often do you write tests before implementing features? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Assessment:</strong></p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Level 1 (Ad Hoc)</label><label for="__tabbed_1_2">Level 2 (Developing)</label><label for="__tabbed_1_3">Level 3 (Defined)</label><label for="__tabbed_1_4">Level 4 (Managed)</label><label for="__tabbed_1_5">Level 5 (Optimized)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><strong>Test coverage below 40% with significant manual testing requirements.</strong> Organizations at this level struggle with frequent test failures due to environmental issues and approach testing reactively, writing tests only when explicitly required rather than as an integral part of development.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Test coverage 40-60% with basic automation beginning to take shape.</strong> Teams have established fundamental unit testing practices, though integration testing remains limited. Some automated testing exists in CI pipelines, and occasional TDD practices emerge among forward-thinking developers.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Test coverage 60-80% with comprehensive test suites and consistent practices.</strong> Organizations achieve reliable unit and integration testing across teams, with consistent automation practices and regular maintenance cycles that ensure test effectiveness over time.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Test coverage 80-95% with fast, reliable execution and systematic improvement.</strong> Test-driven development becomes common practice, supported by quality metrics that drive continuous improvement in testing approaches and outcomes.</p>
+</div>
+<div class="tabbed-block">
+<p><strong>Comprehensive test coverage with quality gates and advanced strategies.</strong> Testing expertise becomes a competitive advantage, with advanced techniques like property-based and mutation testing, while test practices are shared organization-wide as industry best practices.</p>
+</div>
+</div>
+</div>
+<h3 id="code-review-process">Code Review Process</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>Are all code changes reviewed before merging?</li>
+<li>How thorough and constructive are code reviews?</li>
+<li>What's the average time from review request to approval?</li>
+<li>Do reviews effectively transfer knowledge and catch issues?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Code review metrics</span>
+<span class="n">review_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;review_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage of PRs reviewed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;review_time&quot;</span><span class="p">:</span> <span class="s2">&quot;hours from request to approval&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;review_comments_per_PR&quot;</span><span class="p">:</span> <span class="s2">&quot;average number&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;review_rounds_per_PR&quot;</span><span class="p">:</span> <span class="s2">&quot;average iterations&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;defects_found_in_review&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;post_merge_issues&quot;</span><span class="p">:</span> <span class="s2">&quot;issues found after merge&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Qualitative assessment through surveys</span>
+<span class="n">review_quality_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How often do code reviews catch potential bugs? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How helpful are review comments for learning? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How respectful and constructive are review discussions? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How consistent are review standards across teams? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Code reviews are optional or inconsistent</li>
+<li>Reviews focus mainly on style rather than substance</li>
+<li>Long delays between review requests and responses</li>
+<li>Limited knowledge transfer through reviews</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Most code changes are reviewed</li>
+<li>Reviews catch some functional issues</li>
+<li>Inconsistent review quality across teams</li>
+<li>Some knowledge sharing occurs</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>All code changes require review</li>
+<li>Reviews follow documented standards</li>
+<li>Reasonable review turnaround times</li>
+<li>Regular knowledge sharing and mentoring</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>High-quality, constructive reviews</li>
+<li>Fast review cycles without compromising quality</li>
+<li>Reviews effectively prevent defects</li>
+<li>Review process continuously improved</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Reviews are a key learning and quality mechanism</li>
+<li>Advanced techniques (pair programming, mob programming)</li>
+<li>Review practices shared and standardized</li>
+<li>Metrics drive continuous improvement</li>
+</ul>
+<h3 id="code-quality-standards">Code Quality Standards</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>Are coding standards documented and enforced?</li>
+<li>How is technical debt tracked and managed?</li>
+<li>What static analysis tools are used?</li>
+<li>How consistent is code quality across the codebase?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Code quality metrics</span>
+<span class="n">quality_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;cyclomatic_complexity&quot;</span><span class="p">:</span> <span class="s2">&quot;average per method&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;code_duplication&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;technical_debt_ratio&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;static_analysis_violations&quot;</span><span class="p">:</span> <span class="s2">&quot;count per KLOC&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;documentation_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;code_consistency_score&quot;</span><span class="p">:</span> <span class="s2">&quot;automated measurement&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Technical debt assessment</span>
+<span class="n">debt_assessment</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;debt_identification&quot;</span><span class="p">:</span> <span class="s2">&quot;How is technical debt identified?&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;debt_prioritization&quot;</span><span class="p">:</span> <span class="s2">&quot;How is debt prioritized for resolution?&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;debt_resolution&quot;</span><span class="p">:</span> <span class="s2">&quot;How often is debt actually addressed?&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;debt_prevention&quot;</span><span class="p">:</span> <span class="s2">&quot;What prevents new debt introduction?&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>No consistent coding standards</li>
+<li>Technical debt accumulates without tracking</li>
+<li>Manual code quality checks only</li>
+<li>High variability in code quality</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Basic coding standards exist</li>
+<li>Some automated quality checks</li>
+<li>Technical debt recognized but not systematically managed</li>
+<li>Inconsistent application of standards</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Documented and enforced coding standards</li>
+<li>Regular static analysis and quality gates</li>
+<li>Technical debt tracked and occasionally addressed</li>
+<li>Consistent code quality practices</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Comprehensive quality standards and automation</li>
+<li>Proactive technical debt management</li>
+<li>Quality metrics tracked and improved</li>
+<li>High consistency across codebase</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Quality standards drive architectural decisions</li>
+<li>Technical debt is investment decision</li>
+<li>Advanced quality practices (architecture fitness functions)</li>
+<li>Quality practices shared organization-wide</li>
+</ul>
+<h2 id="domain-2-continuous-integration-and-deployment">Domain 2: Continuous Integration and Deployment</h2>
+<p>Evaluates the automation and reliability of build, test, and deployment processes.</p>
+<h3 id="build-and-ci-pipeline">Build and CI Pipeline</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How long does it take to get feedback from CI?</li>
+<li>How reliable is the build pipeline?</li>
+<li>Are builds reproducible across environments?</li>
+<li>How is build configuration managed?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># CI/CD metrics</span>
+<span class="n">cicd_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;build_time&quot;</span><span class="p">:</span> <span class="s2">&quot;minutes from commit to feedback&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;build_success_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;build_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;builds per day&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;pipeline_stages&quot;</span><span class="p">:</span> <span class="s2">&quot;number and types&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;feedback_time&quot;</span><span class="p">:</span> <span class="s2">&quot;time to first failure notification&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;resource_utilization&quot;</span><span class="p">:</span> <span class="s2">&quot;build infrastructure efficiency&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Pipeline quality assessment</span>
+<span class="n">pipeline_assessment</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How often do builds fail due to infrastructure issues? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How easy is it to reproduce build failures locally? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How quickly can build issues be diagnosed and fixed? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How confident are you in build and test results? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Manual or inconsistent build processes</li>
+<li>Long build times with frequent failures</li>
+<li>Different build processes across teams</li>
+<li>Build configuration not version controlled</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Basic automated builds on code changes</li>
+<li>Some consistency in build processes</li>
+<li>Build failures addressed reactively</li>
+<li>Limited build optimization</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Consistent CI pipelines across teams</li>
+<li>Reasonable build times and reliability</li>
+<li>Build configuration as code</li>
+<li>Standard failure notification and resolution</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Fast, reliable builds with comprehensive testing</li>
+<li>Build performance monitored and optimized</li>
+<li>Advanced CI features (parallel builds, smart testing)</li>
+<li>Proactive build health management</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Industry-leading build performance and reliability</li>
+<li>Advanced optimization (incremental builds, distributed testing)</li>
+<li>Build infrastructure as competitive advantage</li>
+<li>Best practices shared across organization</li>
+</ul>
+<h3 id="deployment-practices">Deployment Practices</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How frequently can teams deploy to production?</li>
+<li>How risky are production deployments?</li>
+<li>Can deployments be rolled back quickly?</li>
+<li>Are deployments automated and consistent?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Deployment metrics (DORA metrics)</span>
+<span class="n">deployment_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;deployment_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;deployments per day/week&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;lead_time&quot;</span><span class="p">:</span> <span class="s2">&quot;commit to production time&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;change_failure_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage requiring rollback/hotfix&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;recovery_time&quot;</span><span class="p">:</span> <span class="s2">&quot;time to recover from failures&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;deployment_success_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;rollback_capability&quot;</span><span class="p">:</span> <span class="s2">&quot;time to rollback&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Deployment process assessment</span>
+<span class="n">deployment_process</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How confident are you making production deployments? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How often do deployments cause production issues? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How quickly can you rollback a problematic deployment? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How much manual work is required for deployments? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Infrequent, risky deployments</li>
+<li>Manual deployment processes</li>
+<li>Long lead times from development to production</li>
+<li>Deployment issues are common</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Some deployment automation</li>
+<li>Weekly or bi-weekly deployment cycles</li>
+<li>Basic rollback capabilities</li>
+<li>Moderate deployment success rates</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Reliable automated deployment pipelines</li>
+<li>Daily or more frequent deployments possible</li>
+<li>Good rollback and monitoring capabilities</li>
+<li>Consistent deployment practices</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Multiple daily deployments with high confidence</li>
+<li>Advanced deployment patterns (blue-green, canary)</li>
+<li>Fast recovery from deployment issues</li>
+<li>Deployment metrics tracked and optimized</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>On-demand, low-risk deployments</li>
+<li>Zero-downtime deployments as standard</li>
+<li>Deployment practices as competitive advantage</li>
+<li>Advanced patterns (feature flags, progressive delivery)</li>
+</ul>
+<h2 id="domain-3-site-reliability-and-operations">Domain 3: Site Reliability and Operations</h2>
+<p>Evaluates system reliability, observability, and operational practices.</p>
+<h3 id="system-reliability">System Reliability</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How reliable are production systems?</li>
+<li>Are reliability targets defined and measured?</li>
+<li>How quickly are outages detected and resolved?</li>
+<li>What practices prevent reliability issues?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># SRE and reliability metrics</span>
+<span class="n">reliability_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;uptime_percentage&quot;</span><span class="p">:</span> <span class="s2">&quot;availability SLI&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;error_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage of failed requests&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;response_time_p95&quot;</span><span class="p">:</span> <span class="s2">&quot;95th percentile latency&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mean_time_to_detection&quot;</span><span class="p">:</span> <span class="s2">&quot;MTTD for issues&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mean_time_to_resolution&quot;</span><span class="p">:</span> <span class="s2">&quot;MTTR for issues&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;incident_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;incidents per month&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Reliability practices assessment</span>
+<span class="n">reliability_practices</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;Are SLOs defined and tracked for key services? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How quickly are production issues detected? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How effective are post-incident reviews? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How proactive is reliability improvement? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Frequent outages and reliability issues</li>
+<li>Reactive approach to reliability problems</li>
+<li>No defined reliability targets</li>
+<li>Limited incident response processes</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Basic monitoring and alerting in place</li>
+<li>Some reliability targets defined</li>
+<li>Incident response processes developing</li>
+<li>Reliability issues addressed reactively</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>SLOs defined for critical services</li>
+<li>Comprehensive monitoring and alerting</li>
+<li>Structured incident response and postmortems</li>
+<li>Regular reliability improvements</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Proactive reliability management</li>
+<li>Error budgets and SLO-based decision making</li>
+<li>Advanced monitoring and observability</li>
+<li>Continuous reliability improvement</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Reliability as competitive advantage</li>
+<li>Chaos engineering and proactive testing</li>
+<li>Industry-leading reliability practices</li>
+<li>Reliability expertise shared organization-wide</li>
+</ul>
+<h3 id="observability-and-monitoring">Observability and Monitoring</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>Can teams quickly diagnose production issues?</li>
+<li>Are systems instrumented with comprehensive telemetry?</li>
+<li>How actionable are alerts and dashboards?</li>
+<li>Can system behavior be understood from observability data?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Observability metrics</span>
+<span class="n">observability_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;monitoring_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage of services monitored&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;alert_precision&quot;</span><span class="p">:</span> <span class="s2">&quot;true positive rate&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;dashboard_usage&quot;</span><span class="p">:</span> <span class="s2">&quot;active dashboard usage&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;trace_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage of requests traced&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;log_completeness&quot;</span><span class="p">:</span> <span class="s2">&quot;critical paths covered&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;diagnostic_time&quot;</span><span class="p">:</span> <span class="s2">&quot;time to understand issues&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Observability effectiveness</span>
+<span class="n">observability_assessment</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How quickly can you diagnose production issues? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How actionable are your alerts? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How complete is your system instrumentation? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How useful are your dashboards for operations? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Limited monitoring and observability</li>
+<li>Reactive detection of issues</li>
+<li>Poor visibility into system behavior</li>
+<li>Manual diagnosis processes</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Basic monitoring and logging</li>
+<li>Some automated alerting</li>
+<li>Limited observability tooling</li>
+<li>Inconsistent instrumentation</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Comprehensive monitoring and alerting</li>
+<li>Structured logging and metrics</li>
+<li>Standard observability practices</li>
+<li>Good diagnostic capabilities</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Advanced observability (metrics, logs, traces)</li>
+<li>Proactive monitoring and alerting</li>
+<li>High-quality dashboards and runbooks</li>
+<li>Fast issue diagnosis and resolution</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Industry-leading observability practices</li>
+<li>Advanced techniques (distributed tracing, chaos engineering)</li>
+<li>Observability-driven development</li>
+<li>Observability expertise shared widely</li>
+</ul>
+<h2 id="domain-4-architecture-and-design">Domain 4: Architecture and Design</h2>
+<p>Evaluates architectural practices, design quality, and system evolvability.</p>
+<h3 id="system-architecture">System Architecture</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How well does the architecture support business requirements?</li>
+<li>How easy is it to make changes to the system?</li>
+<li>How well are architectural decisions documented?</li>
+<li>How does the architecture handle scale and complexity?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Architecture assessment metrics</span>
+<span class="n">architecture_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;coupling_metrics&quot;</span><span class="p">:</span> <span class="s2">&quot;dependencies between components&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cohesion_metrics&quot;</span><span class="p">:</span> <span class="s2">&quot;relatedness within components&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;change_impact&quot;</span><span class="p">:</span> <span class="s2">&quot;components affected by typical changes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;scalability_limits&quot;</span><span class="p">:</span> <span class="s2">&quot;known performance bottlenecks&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;technical_debt_impact&quot;</span><span class="p">:</span> <span class="s2">&quot;architecture debt assessment&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;decision_documentation&quot;</span><span class="p">:</span> <span class="s2">&quot;ADR coverage and quality&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Architecture quality survey</span>
+<span class="n">architecture_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How easy is it to understand the system architecture? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How easy is it to make changes without side effects? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How well documented are architectural decisions? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How well does the architecture support team autonomy? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Unclear or undocumented architecture</li>
+<li>High coupling and low cohesion</li>
+<li>Architectural decisions made ad-hoc</li>
+<li>Difficult to make changes safely</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Basic architectural patterns in use</li>
+<li>Some documentation of design decisions</li>
+<li>Inconsistent architectural practices</li>
+<li>Moderate change difficulty</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Clear architectural patterns and principles</li>
+<li>Documented architectural decisions (ADRs)</li>
+<li>Consistent architectural practices</li>
+<li>Reasonable change velocity</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Evolutionary architecture practices</li>
+<li>Architecture supports business agility</li>
+<li>Regular architectural reviews and improvements</li>
+<li>Strong architectural governance</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Architecture as competitive advantage</li>
+<li>Advanced architectural patterns and practices</li>
+<li>Architecture expertise shared widely</li>
+<li>Continuous architectural innovation</li>
+</ul>
+<h3 id="design-practices">Design Practices</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How are design decisions made and documented?</li>
+<li>How well do designs consider non-functional requirements?</li>
+<li>How is design quality maintained over time?</li>
+<li>How effectively do teams collaborate on design?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Design process metrics</span>
+<span class="n">design_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;design_review_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage of features reviewed&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;design_iteration_time&quot;</span><span class="p">:</span> <span class="s2">&quot;time from concept to implementation&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;design_change_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;post-implementation design changes&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;cross_team_design_collaboration&quot;</span><span class="p">:</span> <span class="s2">&quot;involvement in design decisions&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;design_pattern_consistency&quot;</span><span class="p">:</span> <span class="s2">&quot;reuse of established patterns&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;non_functional_consideration&quot;</span><span class="p">:</span> <span class="s2">&quot;performance, security, etc.&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Design quality assessment</span>
+<span class="n">design_assessment</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How thorough is the design process before implementation? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How well do designs consider operational requirements? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How effectively do teams collaborate on design? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How consistent are design patterns across the organization? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Design happens during implementation</li>
+<li>Limited consideration of non-functional requirements</li>
+<li>Inconsistent design practices</li>
+<li>Poor design documentation</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Some upfront design for complex features</li>
+<li>Basic design review processes</li>
+<li>Informal design collaboration</li>
+<li>Limited design pattern reuse</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Structured design processes</li>
+<li>Regular design reviews and collaboration</li>
+<li>Documented design patterns and standards</li>
+<li>Good consideration of non-functional requirements</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Design-driven development practices</li>
+<li>Comprehensive design reviews and validation</li>
+<li>Strong design pattern library and reuse</li>
+<li>Design quality metrics and improvement</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Design excellence as organizational capability</li>
+<li>Advanced design practices and tools</li>
+<li>Design patterns as competitive advantage</li>
+<li>Design expertise shared organization-wide</li>
+</ul>
+<h2 id="domain-5-team-practices-and-collaboration">Domain 5: Team Practices and Collaboration</h2>
+<p>Evaluates how teams work together, share knowledge, and continuously improve.</p>
+<h3 id="team-collaboration">Team Collaboration</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How effectively do teams communicate and coordinate?</li>
+<li>How well do teams share knowledge and learn from each other?</li>
+<li>How are conflicts and disagreements resolved?</li>
+<li>How well do teams support each other?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Collaboration metrics</span>
+<span class="n">collaboration_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;cross_team_contributions&quot;</span><span class="p">:</span> <span class="s2">&quot;PRs/issues across team boundaries&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;knowledge_sharing_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;documentation, presentations, etc.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;incident_collaboration&quot;</span><span class="p">:</span> <span class="s2">&quot;teams involved in incident response&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;design_review_participation&quot;</span><span class="p">:</span> <span class="s2">&quot;cross-team involvement&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mentorship_activity&quot;</span><span class="p">:</span> <span class="s2">&quot;formal and informal mentoring&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;team_satisfaction&quot;</span><span class="p">:</span> <span class="s2">&quot;survey scores&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Collaboration effectiveness survey</span>
+<span class="n">collaboration_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How easy is it to get help from other teams? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How effectively do teams share knowledge? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How well are conflicts resolved constructively? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How supported do you feel by your peers? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Teams work in isolation</li>
+<li>Limited cross-team communication</li>
+<li>Knowledge hoarding and silos</li>
+<li>Conflicts create lasting friction</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Basic cross-team communication</li>
+<li>Some knowledge sharing activities</li>
+<li>Conflicts sometimes resolved constructively</li>
+<li>Inconsistent team support</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Regular cross-team collaboration</li>
+<li>Structured knowledge sharing processes</li>
+<li>Good conflict resolution practices</li>
+<li>Strong peer support networks</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Seamless cross-team collaboration</li>
+<li>Proactive knowledge sharing and mentoring</li>
+<li>Constructive conflict resolution as norm</li>
+<li>High levels of psychological safety</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Collaboration as competitive advantage</li>
+<li>Organization-wide learning and improvement</li>
+<li>Advanced collaboration practices and tools</li>
+<li>Collaboration expertise shared widely</li>
+</ul>
+<h3 id="continuous-learning-and-improvement">Continuous Learning and Improvement</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How do teams identify and implement improvements?</li>
+<li>How is learning and development supported?</li>
+<li>How are experiments and innovations encouraged?</li>
+<li>How do teams learn from failures and successes?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Learning and improvement metrics</span>
+<span class="n">learning_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;improvement_initiatives&quot;</span><span class="p">:</span> <span class="s2">&quot;number and success rate&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;experiment_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;A/B tests, trials, etc.&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;learning_time_allocation&quot;</span><span class="p">:</span> <span class="s2">&quot;percentage of time for learning&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;conference_attendance&quot;</span><span class="p">:</span> <span class="s2">&quot;external learning participation&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;internal_training&quot;</span><span class="p">:</span> <span class="s2">&quot;training sessions and workshops&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;innovation_projects&quot;</span><span class="p">:</span> <span class="s2">&quot;non-roadmap exploration&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Learning culture assessment</span>
+<span class="n">learning_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How supported are you in learning new skills? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How encouraged are experimentation and innovation? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How effectively do teams learn from failures? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How well do improvement initiatives succeed? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Learning happens only when necessary</li>
+<li>Limited support for skill development</li>
+<li>Failures blamed rather than learned from</li>
+<li>Few improvement initiatives</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Some learning and development support</li>
+<li>Basic retrospectives and improvement processes</li>
+<li>Occasional experimentation</li>
+<li>Mixed success with improvements</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Regular learning and development activities</li>
+<li>Structured improvement processes</li>
+<li>Encouraged experimentation and innovation</li>
+<li>Good learning from failures</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Learning integrated into daily work</li>
+<li>Systematic improvement and innovation</li>
+<li>Strong learning culture and psychological safety</li>
+<li>High success rate with improvements</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Learning and improvement as core competency</li>
+<li>Advanced practices (communities of practice, innovation time)</li>
+<li>Learning culture as competitive advantage</li>
+<li>Learning practices shared organization-wide</li>
+</ul>
+<h2 id="domain-6-security-and-compliance">Domain 6: Security and Compliance</h2>
+<p>Evaluates security practices, compliance management, and risk mitigation.</p>
+<h3 id="security-practices">Security Practices</h3>
+<p><strong>Assessment Questions:</strong></p>
+<ul>
+<li>How are security requirements integrated into development?</li>
+<li>How is security testing performed?</li>
+<li>How are security vulnerabilities managed?</li>
+<li>How is security knowledge shared across teams?</li>
+</ul>
+<p><strong>Evidence Collection:</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1"># Security metrics</span>
+<span class="n">security_metrics</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;vulnerability_detection_time&quot;</span><span class="p">:</span> <span class="s2">&quot;time to identify security issues&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;vulnerability_resolution_time&quot;</span><span class="p">:</span> <span class="s2">&quot;time to fix security issues&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;security_test_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;automated security testing&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;dependency_vulnerability_rate&quot;</span><span class="p">:</span> <span class="s2">&quot;known vulnerabilities in dependencies&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;security_incident_frequency&quot;</span><span class="p">:</span> <span class="s2">&quot;security-related incidents&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;security_training_coverage&quot;</span><span class="p">:</span> <span class="s2">&quot;team members with security training&quot;</span>
+<span class="p">}</span>
+
+<span class="c1"># Security practices assessment</span>
+<span class="n">security_survey</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;How well integrated is security into development? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How confident are you in the security of your systems? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How quickly are security issues identified and resolved? (1-5)&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;How well do teams understand security requirements? (1-5)&quot;</span>
+<span class="p">]</span>
+</code></pre></div>
+<p><strong>Maturity Levels:</strong></p>
+<p><strong>Level 1 (Ad Hoc)</strong>:</p>
+<ul>
+<li>Security considered after development</li>
+<li>Manual, infrequent security testing</li>
+<li>Slow response to security issues</li>
+<li>Limited security knowledge across teams</li>
+</ul>
+<p><strong>Level 2 (Developing)</strong>:</p>
+<ul>
+<li>Some security requirements defined</li>
+<li>Basic automated security scanning</li>
+<li>Reactive approach to security issues</li>
+<li>Inconsistent security practices</li>
+</ul>
+<p><strong>Level 3 (Defined)</strong>:</p>
+<ul>
+<li>Security integrated into development process</li>
+<li>Regular security testing and scanning</li>
+<li>Structured vulnerability management</li>
+<li>Basic security training and awareness</li>
+</ul>
+<p><strong>Level 4 (Managed)</strong>:</p>
+<ul>
+<li>Security by design practices</li>
+<li>Comprehensive automated security testing</li>
+<li>Proactive security monitoring and response</li>
+<li>Strong security culture and expertise</li>
+</ul>
+<p><strong>Level 5 (Optimized)</strong>:</p>
+<ul>
+<li>Security as competitive advantage</li>
+<li>Advanced security practices (threat modeling, chaos security)</li>
+<li>Security expertise shared organization-wide</li>
+<li>Industry-leading security posture</li>
+</ul>
+<h2 id="comprehensive-assessment-summary">Comprehensive Assessment Summary</h2>
+<h3 id="overall-maturity-calculation">Overall Maturity Calculation</h3>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">calculate_overall_maturity</span><span class="p">(</span><span class="n">domain_scores</span><span class="p">:</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">float</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">AssessmentSummary</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Calculate overall engineering maturity from domain scores&quot;&quot;&quot;</span>
+
+    <span class="c1"># Weight domains based on organizational priorities</span>
+    <span class="n">domain_weights</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;development_practices&quot;</span><span class="p">:</span> <span class="mf">0.20</span><span class="p">,</span>
+        <span class="s2">&quot;cicd_practices&quot;</span><span class="p">:</span> <span class="mf">0.20</span><span class="p">,</span>
+        <span class="s2">&quot;reliability_operations&quot;</span><span class="p">:</span> <span class="mf">0.20</span><span class="p">,</span>
+        <span class="s2">&quot;architecture_design&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+        <span class="s2">&quot;team_collaboration&quot;</span><span class="p">:</span> <span class="mf">0.15</span><span class="p">,</span>
+        <span class="s2">&quot;security_compliance&quot;</span><span class="p">:</span> <span class="mf">0.10</span>
+    <span class="p">}</span>
+
+    <span class="n">weighted_score</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span>
+        <span class="n">domain_scores</span><span class="p">[</span><span class="n">domain</span><span class="p">]</span> <span class="o">*</span> <span class="n">weight</span>
+        <span class="k">for</span> <span class="n">domain</span><span class="p">,</span> <span class="n">weight</span> <span class="ow">in</span> <span class="n">domain_weights</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="p">)</span>
+
+    <span class="n">maturity_level</span> <span class="o">=</span> <span class="n">get_maturity_level</span><span class="p">(</span><span class="n">weighted_score</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">AssessmentSummary</span><span class="p">(</span>
+        <span class="n">overall_score</span><span class="o">=</span><span class="n">weighted_score</span><span class="p">,</span>
+        <span class="n">maturity_level</span><span class="o">=</span><span class="n">maturity_level</span><span class="p">,</span>
+        <span class="n">domain_scores</span><span class="o">=</span><span class="n">domain_scores</span><span class="p">,</span>
+        <span class="n">strengths</span><span class="o">=</span><span class="n">identify_strengths</span><span class="p">(</span><span class="n">domain_scores</span><span class="p">),</span>
+        <span class="n">improvement_areas</span><span class="o">=</span><span class="n">identify_gaps</span><span class="p">(</span><span class="n">domain_scores</span><span class="p">),</span>
+        <span class="n">recommended_actions</span><span class="o">=</span><span class="n">generate_recommendations</span><span class="p">(</span><span class="n">domain_scores</span><span class="p">)</span>
+    <span class="p">)</span>
+</code></pre></div>
+<h3 id="action-planning-framework">Action Planning Framework</h3>
+<p><strong>High-Impact, Low-Effort (Quick Wins)</strong>:</p>
+<ul>
+<li>Automated code formatting and linting</li>
+<li>Basic CI/CD pipeline improvements</li>
+<li>Documentation and knowledge sharing initiatives</li>
+</ul>
+<p><strong>High-Impact, High-Effort (Strategic Initiatives)</strong>:</p>
+<ul>
+<li>Comprehensive test automation strategy</li>
+<li>Site reliability engineering implementation</li>
+<li>Architecture modernization programs</li>
+</ul>
+<p><strong>Low-Impact, Low-Effort (Fill-in Improvements)</strong>:</p>
+<ul>
+<li>Tool and process optimizations</li>
+<li>Training and certification programs</li>
+<li>Metrics and dashboard improvements</li>
+</ul>
+<p><strong>Low-Impact, High-Effort (Avoid or Defer)</strong>:</p>
+<ul>
+<li>Complex tool migrations without clear benefits</li>
+<li>Over-engineering of processes</li>
+<li>Premature optimization initiatives</li>
+</ul>
+<h3 id="continuous-assessment-process">Continuous Assessment Process</h3>
+<p><strong>Monthly</strong>: Update metrics and track progress on active initiatives
+<strong>Quarterly</strong>: Conduct mini-assessments focusing on areas of active improvement
+<strong>Annually</strong>: Comprehensive assessment across all domains with stakeholder input
+<strong>As-needed</strong>: Targeted assessments when major changes occur (reorganization, new technology, etc.)</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<ol>
+<li><strong>Systematic assessment reveals hidden gaps</strong>: Use structured evaluation to uncover issues that informal observation might miss</li>
+<li><strong>Multiple perspectives provide complete picture</strong>: Combine quantitative metrics with qualitative surveys and interviews</li>
+<li><strong>Maturity is contextual</strong>: What works for one organization may not work for another - adapt the framework to your context</li>
+<li><strong>Improvement requires sustained focus</strong>: Engineering excellence develops over time through consistent, incremental improvements</li>
+<li><strong>Culture matters as much as technology</strong>: The highest-performing organizations excel in both technical practices and team collaboration</li>
+<li><strong>Measurement drives improvement</strong>: What gets measured and tracked is what gets improved over time</li>
+</ol>
+<p>This assessment framework provides a foundation for understanding and improving engineering excellence. Use it as a starting point, adapt it to your organizational context, and evolve it based on your experiences and changing industry best practices.</p>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Forsgren, Nicole, Jez Humble, and Gene Kim. <em>Accelerate: The Science of Lean Software and DevOps</em>. 2018.</li>
+<li>Skelton, Matthew, and Manuel Pais. <em>Team Topologies: Organizing Business and Technology Teams for Fast Flow</em>. 2019.</li>
+<li>Beyer, Betsy, et al. <em>Site Reliability Engineering: How Google Runs Production Systems</em>. 2016.</li>
+<li>Martin, Robert C. <em>Clean Code: A Handbook of Agile Software Craftsmanship</em>. 2008.</li>
+<li>Humble, Jez, and David Farley. <em>Continuous Delivery: Reliable Software Releases</em>. 2010.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.prune", "navigation.indexes", "navigation.expand", "navigation.top", "navigation.footer", "toc.integrate", "toc.follow", "content.tabs.link", "content.code.annotate", "content.action.edit", "content.action.view", "content.tooltips", "search.highlight", "search.suggest", "search.share"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
