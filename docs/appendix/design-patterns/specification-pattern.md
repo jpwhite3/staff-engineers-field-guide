@@ -1,6 +1,5 @@
 ---
 title: The Specification Pattern - A Robust Approach to Querying and Filtering Data
-date: 2017-02-14
 description: The Specification pattern offers a disciplined and maintainable way to handle complex querying and filtering logic, particularly within Domain-Driven Design (DDD).
 ---
 

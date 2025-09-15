@@ -8,7 +8,7 @@ description: A collection of common software development antipatterns and how to
 Antipatterns are common solutions to problems that initially appear effective but ultimately prove counterproductive. As a Staff Engineer, recognizing these patterns helps you avoid costly architectural mistakes and guide teams away from destructive practices.
 
 !!! info "Navigation Approach"
-This reference contains 30+ detailed antipattern analyses. Use the organized sections below for quick discovery, or search for specific patterns.
+    This reference contains 30+ detailed antipattern analyses. Use the organized sections below for quick discovery, or search for specific patterns.
 
 ## Essential Overview
 
@@ -16,7 +16,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-information: **Start Here**
 
-  ***
+  ---
 
   Fundamental understanding of antipatterns
 
@@ -30,7 +30,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-home-flood: **Big Ball of Mud**
 
-  ***
+  ---
 
   Critical architectural anti-pattern
 
@@ -38,7 +38,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-chart-bubble: **The Blob**
 
-  ***
+  ---
 
   Dangerous growth pattern
 
@@ -46,7 +46,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-layers-off: **Spaghetti Code**
 
-  ***
+  ---
 
   Systemic threat to maintainability
 
@@ -54,7 +54,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-puzzle: **Frankencode**
 
-  ***
+  ---
 
   The Frankenstein of software systems
 
@@ -68,7 +68,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-content-copy: **Copy-Paste Programming**
 
-  ***
+  ---
 
   Critical anti-pattern in development
 
@@ -76,7 +76,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-calendar-alert: **Death March**
 
-  ***
+  ---
 
   Recognizing unsustainable projects
 
@@ -84,7 +84,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-calendar-clock: **Death by Planning**
 
-  ***
+  ---
 
   Prioritizing velocity over roadmaps
 
@@ -92,7 +92,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-fast-forward: **Fast Beats Right**
 
-  ***
+  ---
 
   The cost of speeding through quality
 
@@ -106,7 +106,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-nose: **Code Smells**
 
-  ***
+  ---
 
   Recognizing problems in your code
 
@@ -114,7 +114,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-window-open-variant: **Broken Windows**
 
-  ***
+  ---
 
   Maintaining code health through small actions
 
@@ -122,7 +122,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-text-recognition: **Magic Strings**
 
-  ***
+  ---
 
   Critical architectural pattern to eliminate
 
@@ -130,7 +130,7 @@ This reference contains 30+ detailed antipattern analyses. Use the organized sec
 
 - :material-flag: **Flags Over Objects**
 
-  ***
+  ---
 
   Deep dive into critical code smell
 

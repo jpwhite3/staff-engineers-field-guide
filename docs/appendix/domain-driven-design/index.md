@@ -8,7 +8,7 @@ description: Building software that mirrors the complexity of the business domai
 Domain-Driven Design (DDD) provides a framework for tackling complexity in the heart of software. As a Staff Engineer, DDD helps you bridge the gap between technical implementation and business requirements, creating systems that evolve with the domain they serve.
 
 !!! info "Navigation Approach"
-This reference covers 7 essential DDD concepts and patterns. Start with the overview for foundational understanding, then explore specific patterns as needed.
+    This reference covers 7 essential DDD concepts and patterns. Start with the overview for foundational understanding, then explore specific patterns as needed.
 
 ## Essential Overview
 
@@ -16,7 +16,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-information: **Start Here**
 
-  ***
+  ---
 
   Fundamental DDD concepts and strategic design
 
@@ -24,7 +24,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-translate: **Ubiquitous Language**
 
-  ***
+  ---
 
   The foundation of reliable software communication
 
@@ -38,7 +38,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-cube-outline: **Entities**
 
-  ***
+  ---
 
   Core concepts for robust domain systems
 
@@ -46,7 +46,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-diamond: **Value Objects**
 
-  ***
+  ---
 
   Representing concepts with immutable data
 
@@ -54,7 +54,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-group: **Aggregates**
 
-  ***
+  ---
 
   Consistency boundaries in complex domains
 
@@ -68,7 +68,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-shield-outline: **Anti-Corruption Layer**
 
-  ***
+  ---
 
   Protecting your domain model from external systems
 
@@ -82,7 +82,7 @@ This reference covers 7 essential DDD concepts and patterns. Start with the over
 
 - :material-alert-circle: **Anemic Domain Model**
 
-  ***
+  ---
 
   Critical design flaw to avoid
 

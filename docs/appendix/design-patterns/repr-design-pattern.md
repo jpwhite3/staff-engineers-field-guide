@@ -1,10 +1,5 @@
 # The REPR Design Pattern: A Streamlined Approach to API Development
 
-**Date:** 2021-07-21
-**Description:** The REPR (Request-Endpoint-Response) Design Pattern offers a simplified and more focused approach to designing web API endpoints, significantly reducing complexity compared to traditional MVC patterns and promoting a robust, maintainable API architecture.
-
----
-
 For decades, the Model-View-Controller (MVC) pattern has served as the cornerstone of UI application development. While undeniably successful in its intended domain, applying MVC to API development often leads to unnecessary complexity. The introduction of ViewModels, complex controllers, and intricate routing mechanisms can create a tangled mess, hindering development velocity and increasing the potential for errors. Think of it like this: MVC is an elegant solution for presenting information to a user, but APIs are fundamentally about _exchanging_ data—a much more direct and streamlined need.
 
 The core issue stems from treating API development as a UI-driven process, when it's fundamentally a data exchange mechanism. Imagine trying to build a railway system with all the added complexity of constructing a train and designing the cabin, when the goal is simply to move goods from point A to point B efficiently.

@@ -8,7 +8,7 @@ description: Proven solutions to recurring design problems in software architect
 Design patterns provide tested, proven development paradigms. As a Staff Engineer, mastering these patterns enables you to communicate solutions effectively, mentor other developers, and build systems that are both elegant and maintainable.
 
 !!! info "Navigation Approach"
-This collection contains 11 essential design patterns for staff engineers. Use the organized sections below for quick discovery, or start with the overview for fundamental concepts.
+    This collection contains 11 essential design patterns for staff engineers. Use the organized sections below for quick discovery, or start with the overview for fundamental concepts.
 
 ## Essential Overview
 
@@ -16,7 +16,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-information: **Start Here**
 
-  ***
+  ---
 
   Fundamental understanding of design patterns
 
@@ -30,7 +30,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-swap-horizontal: **Adapter Pattern**
 
-  ***
+  ---
 
   Bridging incompatible interfaces
 
@@ -38,7 +38,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-archive-outline: **Repository Pattern**
 
-  ***
+  ---
 
   Data access abstraction layer
 
@@ -46,7 +46,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-shield-outline: **Anti-Corruption Layer**
 
-  ***
+  ---
 
   Protecting your domain model
 
@@ -60,7 +60,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-hammer-wrench: **Builder Pattern**
 
-  ***
+  ---
 
   Constructing complex objects with control
 
@@ -68,7 +68,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-numeric-1-circle: **Singleton Pattern**
 
-  ***
+  ---
 
   Ensuring single instance with global access
 
@@ -76,7 +76,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-null: **Null Object Pattern**
 
-  ***
+  ---
 
   Robust strategy for handling missing data
 
@@ -90,7 +90,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-state-machine: **State Pattern**
 
-  ***
+  ---
 
   Managing object state transitions
 
@@ -98,7 +98,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-strategy: **Strategy Pattern**
 
-  ***
+  ---
 
   Encapsulating algorithm families
 
@@ -106,7 +106,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-filter-outline: **Specification Pattern**
 
-  ***
+  ---
 
   Robust approach to querying and filtering
 
@@ -120,7 +120,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-shield-check: **Guard Clauses**
 
-  ***
+  ---
 
   Defensive programming for clarity
 
@@ -128,7 +128,7 @@ This collection contains 11 essential design patterns for staff engineers. Use t
 
 - :material-api: **REPR Pattern**
 
-  ***
+  ---
 
   Streamlined approach to API development
 

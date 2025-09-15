@@ -1,6 +1,5 @@
 ---
 title: Adapter Design Pattern - Bridging the Gap Between Incompatible Interfaces
-date: 2024-02-29
 description: The Adapter design pattern enables two classes with incompatible interfaces to work together seamlessly, promoting flexibility and reducing coupling.
 ---
 

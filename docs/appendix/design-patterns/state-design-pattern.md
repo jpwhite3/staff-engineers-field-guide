@@ -1,10 +1,5 @@
 # State Design Pattern
 
-date: "2018-01-03"
-description: The State Design Pattern is used to model changes in the status or state of an object by delegating rules for such changes to individual objects representing each possible state.
-
----
-
 Imagine you're managing a complex system – perhaps an insurance policy management system. This system handles everything from initial quote generation to final claim processing. As the policy moves through different phases—unwritten, open, closed, cancelled, and void—the rules governing its behavior change drastically. Simply adding `if` and `switch` statements to handle these state transitions would quickly lead to a sprawling, unmaintainable codebase. This is where the State Design Pattern shines, offering a cleaner, more manageable solution.
 
 ![Policy States](images/PolicyStates.jpg)

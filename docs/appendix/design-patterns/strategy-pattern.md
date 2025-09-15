@@ -1,6 +1,5 @@
 ---
 title: 'Strategy Design Pattern'
-date: '2014-11-26'
 description: The Strategy Design Pattern allows an object to have some or all of its behavior defined in terms of another object which follows a particular interface.
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Repository Pattern
-date: 2014-11-26
 description: The Repository pattern is a common design pattern used to abstract data access logic, promoting loose coupling and testability. While widely adopted, it's often misunderstood and misused.
 ---
 
